@@ -47,5 +47,13 @@ If you benchmark memory usage, you also need to keep in mind the following. The 
 
 - uBO's dashboard is opened;
 - uBO's logger is opened;
+- uBO's element picker is currently active on a web page;
 - You looked up from which filter list(s) a filter originate in uBO's logger;
-- You did not let your browser's garbage collector do its job after a memory intensive operation.
+- You did not let your browser's garbage collector do its job after a memory intensive operation, for example:
+    - uBO's popup panel was opened very recently;
+    - uBO's dashboard was opened very recently;
+    - uBO's logger was in use very recently;
+    - uBO's popup panel was opened very recently;
+    - uBO's element picker was in use very recently;
+    - The filter lists were reloaded very recently;
+    - You looked up the origin of a filter from the uBO's logger less than 10-15 minutes ago;
