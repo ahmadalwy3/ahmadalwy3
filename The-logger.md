@@ -17,7 +17,7 @@ The request logger will open in a new tab (which was moved to its own window bel
 The color of a row hints at how the resource was filtered:
 - No color: The request for the resource was allowed to go through because it matched no filter/rule.
 - Red: The request for the resource was canceled because of a block filter/rule.
-- Green: The request for the resource was allowed to go through as a result of a filter/rule to bypass existing block filters/rules.
+- Green: The request for the resource was allowed to go through because it matched a filter/rule which purpose is to bypass a matching block filter/rule.
 - Yellow:
     - A DOM element which was blocked by a cosmetic filter; OR
     - A blocked request for a resource was redirected to a local replacement resource.
