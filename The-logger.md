@@ -14,6 +14,16 @@ The request logger will open in a new tab (which was moved to its own window bel
 
 ![Figure 2](https://cloud.githubusercontent.com/assets/585534/8034785/0cb141bc-0db9-11e5-9365-1e45ccc50263.png)
 
+The color of a row hints at how a how the resource was filtered:
+- No color: The resource was untouched, i.e. allowed to go through.
+- Red: The remote resource was blocked.
+- Green: The remote resource was allowed to go through as a result of an explicit bypass of existing block filters/rules.
+- Yellow:
+    - A DOM element which was blocked by a cosmetic filter; OR
+    - A blocked network resource which was redirected to a local replacement resource.
+
+When a resource is blocked/allowed/hidden/redirected, the 3rd column in the row will provide further information. For blocked/allowed/hidden resources, the column will contains the responsible filter. For redirection, the column will contains the local resource used as replacement to the blocked network request.
+
 Take note that the network request logger in uBlock is a forward-looking logger: this means only future requests can be logged.
 
 In the spirit of efficiency, uBlock will log entries **IF AND ONLY IF** the logger is opened. Otherwise, if the logger is not opened, no CPU/memory resources are consumed by uBlock for logging purpose.
