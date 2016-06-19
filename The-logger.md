@@ -14,7 +14,7 @@ The request logger will open in a new tab (which was moved to its own window bel
 
 ![Figure 2](https://cloud.githubusercontent.com/assets/585534/8034785/0cb141bc-0db9-11e5-9365-1e45ccc50263.png)
 
-The color of a row hints at how a how the resource was filtered:
+The color of a row hints at how the resource was filtered:
 - No color: The resource was untouched, i.e. allowed to go through.
 - Red: The remote resource was blocked.
 - Green: The remote resource was allowed to go through as a result of an explicit bypass of existing block filters/rules.
