@@ -16,11 +16,11 @@ The request logger will open in a new tab (which was moved to its own window bel
 
 The color of a row hints at how the resource was filtered:
 - No color: The resource was untouched, i.e. allowed to go through.
-- Red: The remote resource was blocked.
-- Green: The remote resource was allowed to go through as a result of an explicit bypass of existing block filters/rules.
+- Red: The request for the remote resource was canceled.
+- Green: The request for the remote resource was allowed to go through as a result of an explicit bypass of existing block filters/rules.
 - Yellow:
     - A DOM element which was blocked by a cosmetic filter; OR
-    - A blocked network resource which was redirected to a local replacement resource.
+    - A blocked request for a remote resource was redirected to a local replacement resource.
 
 When a resource is blocked/allowed/hidden/redirected, the 3rd column in the row will provide further information. For blocked/allowed/hidden resources, the column will contains the responsible filter. For redirection, the column will contains the local resource used as replacement to the blocked network request.
 
