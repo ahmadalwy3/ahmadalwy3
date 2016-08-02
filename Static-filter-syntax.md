@@ -116,7 +116,7 @@ By default, the implicit purpose of cosmetic filters is to hide unwanted DOM ele
 
     example.com##h1:style(background-color: blue !important)
 
-So mainly it's exactly the same syntax of plain cosmetic filters, except that the `:style(...)` suffix is appended at the end. The content in the parentheses must be one or more [CSS property declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) (separated by the standard `;`).
+So mainly it's exactly the same syntax of plain cosmetic filters, except that the `:style(...)` suffix is appended at the end. The content in the parentheses must be one or more [CSS property declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) (separated by the standard `;`). It is not allowed to use property values with `url(...)`, such `style:`-based cosmetic filters will be discarded.
 
 As with the other new cosmetic filtering selectors, the `:style` can be used only for _specific_ cosmetic filters, i.e. there must be a hostname of entity specified for the filter.
 
