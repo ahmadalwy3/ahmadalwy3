@@ -28,7 +28,7 @@ So in uBO, any entry which can be read as a valid hostname, will be assumed to b
 
     example.com/*
 
-#### "All URLs"
+#### `*` aka "all URLs"
 
 The wildcard character `*` can be used to apply a filter to **all** URLs. This is not recommended though, unless you further narrow the filter using filter options. Examples:
 
