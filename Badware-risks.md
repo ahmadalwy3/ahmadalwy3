@@ -26,6 +26,9 @@ Below are sites currently part of the list, or sites being candidate for the lis
 - 2013-10-22: [Take care when downloading on Baixaki] (http://mcaf.ee/w92g5)
 - 2013-03-25: [Careful Baixaki Installer] (http://www.linhadefensiva.org/2013/03/alerta-da-linha-instalador-baixaki-e-outros-sites-de-download/)
 
+#### fosshub.com (temporary)
+- 2016-08-03: ["the download link (FOSSHUB) on the main page is infected"](http://www.classicshell.net/forum/viewtopic.php?f=12&t=6434#p27960)
+
 #### macupdate.com (candidate)
 - 2015-11-02: [Has MacUpdate fallen to the adware plague](https://blog.malwarebytes.org/news/2015/11/has-macupdate-fallen-to-the-adware-plague/)
 - 2014-02-12: [MacUpdate.com served bitcoin stealing malware](http://www.tripwire.com/state-of-security/latest-security-news/download-com-macupdate-com-served-bitcoin-stealing-malware/)
