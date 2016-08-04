@@ -29,10 +29,6 @@ Below are sites currently part of the list, or sites being candidate for the lis
 #### fosshub.com (temporary)
 - 2016-08-03: ["the download link (FOSSHUB) on the main page is infected"](http://www.classicshell.net/forum/viewtopic.php?f=12&t=6434#p27960)
 
-#### macupdate.com (candidate)
-- 2015-11-02: [Has MacUpdate fallen to the adware plague](https://blog.malwarebytes.org/news/2015/11/has-macupdate-fallen-to-the-adware-plague/)
-- 2014-02-12: [MacUpdate.com served bitcoin stealing malware](http://www.tripwire.com/state-of-security/latest-security-news/download-com-macupdate-com-served-bitcoin-stealing-malware/)
-
 #### chip.de
 - [CHIP-Installer - was ist das?] http://anleitung.trojaner-board.de/chip-installer [en](https://translate.google.de/translate?sl=de&tl=en&js=y&prev=_t&hl=de&ie=UTF-8&u=http%3A%2F%2Fanleitung.trojaner-board.de%2Fchip-installer&edit-text=&act=url)
 - 2015-05-04: [Downloads von Chip.de über den Chip-Installer vermeiden] (http://www.randombrick.de/downloads-von-chip-de-ueber-den-chip-installer-vermeiden/) [en](https://translate.google.de/translate?hl=de&sl=de&tl=en&u=http%3A%2F%2Fwww.randombrick.de%2Fdownloads-von-chip-de-ueber-den-chip-installer-vermeiden%2F)
@@ -66,6 +62,10 @@ Below are sites currently part of the list, or sites being candidate for the lis
 #### freewarefiles.com (candidate)
 
 - 2015-01-21: [Yes, _Every_ Freeware Download Site is Serving Crapware (Here’s the Proof)](http://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/)
+
+#### macupdate.com (candidate)
+- 2015-11-02: [Has MacUpdate fallen to the adware plague](https://blog.malwarebytes.org/news/2015/11/has-macupdate-fallen-to-the-adware-plague/)
+- 2014-02-12: [MacUpdate.com served bitcoin stealing malware](http://www.tripwire.com/state-of-security/latest-security-news/download-com-macupdate-com-served-bitcoin-stealing-malware/)
 
 #### majorgeeks.com (candidate)
 
