@@ -45,10 +45,10 @@ _My rules_ pane:
 
 With few clicks, you can easily fall back into lesser blocking modes, if ever you do not have the willingness to figure the necessary rules for a given site.
 
-Fall back into [medium mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode):
+Fall back into [medium mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode) for the current site:
 - set a local noop rule for the _3rd-party_ cell.
 
-Fall back into [easy mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode): set a 
+Fall back into [easy mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode) for the current site:
 - set a local noop rule for the _3rd-party_ cell.
 - set a local noop rule for the _3rd-party script_ cell.
 - Optionally, set a local noop rule for the _3rd-party frames_ cell.
