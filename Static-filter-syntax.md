@@ -99,6 +99,12 @@ uBO's implementation is simplified so as to ensure performance. The `:has` opera
 
 In this example, `yandex.ru` is the hostname. The part preceding `:has(...)` -- `.serp-item` above -- is the DOM node which will be targeted (i.e. hidden by uBO), and must be a valid CSS expression. The part inside the `:has` parentheses -- `.label_color_yellow` above -- must be a valid CSS expression, and is the condition that must be fulfilled -- i.e. in the above example, nodes which have a class `serp-item` will be hidden if and only if they have a descendant with class `label_color_yellow`.
 
+#### `:matches-css()`
+
+Currently only available in dev build 1.8.5.
+
+This cosmetic filter allows to filter DOM elements based on their computed CSS properties.
+
 #### `:xpath()`
 
 This new cosmetic filter operator is to support and leverage the power of [XPaths](https://en.wikipedia.org/wiki/XPath). The `:xpath()` operator must always be used in a _specific_ cosmetic filter, i.e. they must apply to at least one hostname or entity. An example of its use (to solve a real reported case) for [this web page](http://forum.pcastuces.com/envahi_par_des_popup-f25s77301.htm):
