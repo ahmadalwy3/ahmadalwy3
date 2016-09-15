@@ -54,6 +54,8 @@ Different classes of cosmetic filters are applied differently:
 - Cached generic cosmetic filters: injected before page's root DOM is loaded
     - No flickering
 
+Also, a very simple test to see how sturdy is cosmetic filtering in your blocker: <http://raymondhill.net/ublock/adbox.html>.
+
 #### More details regarding network filtering
 
 When a network request is filtered, **both** uBlock and ABP will collapse the DOM counterpart -- if any -- of a blocked network request. They both work the same way in such scenario, in the absence of a cosmetic filter matching the DOM counterpart of a blocked network request.
