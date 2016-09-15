@@ -54,7 +54,7 @@ Different classes of cosmetic filters are applied differently:
 - Cached generic cosmetic filters: injected before page's root DOM is loaded
     - No flickering
 
-Also, a very simple test to see how sturdy is cosmetic filtering in your blocker: <http://raymondhill.net/ublock/adbox.html>.
+Also, a very simple test page to find out if cosmetic filtering can be bypassed in your blocker: <http://raymondhill.net/ublock/adbox.html>.
 
 #### More details regarding network filtering
 
