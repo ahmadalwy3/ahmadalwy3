@@ -111,7 +111,7 @@ The _uBlock filters_ list, which is selected by default, already contains a coup
 
 Because blocking inline script tags are conceptually closer to cosmetic filtering than network filtering: inline script tags are embedded in a web page, so if the web page is downloaded, the inline script tags are downloaded -- there is no way around this.
 
-Whatever can't be blocked using a network request filter can be taken care by a cosmetic filter, which is the hiding of DOM elements from a web page. Hence inline script tag filtering is implemented using the cosmetic filter syntax -- the only difference is that when blocked, inline script tags are not removed from view (they are already invisible) but instead the execution of the javascript code inside the script tag is blocked.
+Whatever can't be blocked using a network request filter can be taken care by a cosmetic filter, which is the hiding of DOM elements in a web page. Hence inline script tag filtering is implemented using the cosmetic filter syntax -- the only difference is that when blocked, inline script tags are not removed from view (they are already invisible) but instead the execution of the javascript code inside the script tag is blocked.
 
 ***
 
