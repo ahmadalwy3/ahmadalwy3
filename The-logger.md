@@ -151,6 +151,8 @@ You can find out from which filter list(s) a static filter originates, by simply
 
 ![a](https://cloud.githubusercontent.com/assets/585534/8145768/e431716a-11e3-11e5-859c-794d37c7c41e.png)
 
+When the filter list is rendered as a link, clicking on it will bring you to the support site for that list.
+
 ***
 
 #### Creating filters
