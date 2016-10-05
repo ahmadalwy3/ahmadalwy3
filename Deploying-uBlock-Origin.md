@@ -2,6 +2,8 @@ I do not know much about that administrator stuff, so I will let a knowledgeable
 - [Managing Google Chrome with adblocking and security](https://decentsecurity.com/enterprise/#/ublock-for-google-chrome-deployment/) by [SwiftOnSecurity](https://twitter.com/SwiftOnSecurity/status/783348579943317504)
 - [Deploying uBlock Origin for Firefox with CCK2 and Group Policy](https://decentsecurity.com/enterprise/#/ublock-for-firefox-deployment/) by [SwiftOnSecurity](https://twitter.com/SwiftOnSecurity/status/783348579943317504)
 
+### Customizing the settings
+
 Administrators can force specific configurations to deployed uBlock Origin ("uBO"). At launch time, uBO will look for a setting named `adminSettings`, and if it exists, it will parse, extract and overwrite a user's settings with the administrator-assigned ones.
 
 This is still a work in progress, there are limitations. For example, it is not possible to merge an admin's settings with the user's ones -- a setting can only be overwritten. Hopefully I will address this limitation eventually, as time permit. (See https://github.com/gorhill/uBlock/issues/832#issuecomment-248138558).
