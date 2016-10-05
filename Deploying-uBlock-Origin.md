@@ -6,6 +6,10 @@ I do not know much about that administrator stuff, so I will let a knowledgeable
 
 Administrators can force specific configurations to deployed uBlock Origin ("uBO"). At launch time, uBO will look for a setting named `adminSettings`, and if it exists, it will parse, extract and overwrite a user's settings with the administrator-assigned ones.
 
+For Firefox, the `adminSettings` entry must be added to `about:config`, the key name is `extensions.ublock0.adminSettings`, and the value is a plain string -- which must be JSON-parseable.
+
+For Chrome, `adminSettings` must be a value part of the policy for the extensions. See <http://www.chromium.org/administrators/configuring-policy-for-extensions>.
+
 This is still a work in progress, there are limitations. For example, it is not possible to merge an admin's settings with the user's ones -- a setting can only be overwritten. Hopefully I will address this limitation eventually, as time permit. (See https://github.com/gorhill/uBlock/issues/832#issuecomment-248138558).
 
 The content of `adminSettings` is pretty straightforward: configure uBO as you wish for your users, then create a backup using the _"Backup to file"_ in the _Settings_ pane. Now open this backup file using a text editor, and remove all entries you do not want to overwrite, while taking care to end up with a valid JSON file (mind trailing commas, etc.). All the entries left are the ones which will be overwritten on the user's side.
