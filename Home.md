@@ -40,6 +40,7 @@
         - [Overview of uBlock's network filtering engine: details](https://github.com/gorhill/uBlock/wiki/Overview-of-uBlock's-network-filtering-engine:-details)
         - [Does uBlock block ads or just hide them?](https://github.com/gorhill/uBlock/wiki/Does-uBlock-block-ads-or-just-hide-them%3F)
 - [Tools](https://github.com/gorhill/uBlock/wiki/Tools)
+- [Deploying uBlock Origin](https://github.com/gorhill/uBlock/wiki/Deploying-uBlock-Origin)
 - [Troubleshooting](https://github.com/gorhill/uBlock/wiki/Troubleshooting)
     - [Software known to have uninstalled uBlock Origin](https://github.com/gorhill/uBlock/wiki/Software-known-to-have-uninstalled-uBlock-Origin)
 - [Notes on media coverage of uBlock Origin](https://github.com/gorhill/uBlock/wiki/Notes-on-media-coverage-of-uBlock-Origin)
