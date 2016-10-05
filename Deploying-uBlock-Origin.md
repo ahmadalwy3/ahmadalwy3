@@ -17,9 +17,9 @@ The content of `adminSettings` is pretty straightforward: configure uBO as you w
 An example, I created a backup file after having customized uBO, and removed everything except for the _"Color-blind friendly"_ setting, to force that setting to be set on the user's side. Resulting text file:
 
     {
-        "userSettings": {
-            "colorBlindFriendly": true
-        }
+      "userSettings": {
+        "colorBlindFriendly": true
+      }
     }
 
 Now, the value for `adminSettings` must itself be a plain string, and this means we need to encode the above text into a string, using `JSON.stringify`. Here is a small utility to help you deal with this step: <http://raymondhill.net/ublock/adminSetting.html>.
