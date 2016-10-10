@@ -8,9 +8,6 @@ There seems to be underhanded attempts to discredit uBlock lately in various ven
 
 The statement above is plain fear-using-disinformation. That kind of disinformation happens to be convenient to the incumbent blockers, **or** to those who have an interest in people using those incumbent blockers. 
 
-<sub>Crass incompetence or hidden agenda?</sub><br>
-![](https://cloud.githubusercontent.com/assets/585534/19246018/2eb01c78-8ef2-11e6-95ee-f6fa74902bee.png)
-
 Also another myth: I've seen in [many](https://np.reddit.com/r/AskReddit/comments/35s2je/whats_a_product_that_everybody_uses_but_nobody/cr7h8l6) [places](https://twitter.com/1v1MeInBed/status/611658444244951040) [lately](https://np.reddit.com/r/explainlikeimfive/comments/363569/eli5_how_come_adblockublock_doesnt_let_the_ad/crafo5p?context=3) [the](https://www.reddit.com/r/softwaregore/comments/3g8gg3/youtube_has_found_a_new_way_to_prevent_you_from/ctvybvc) following assertion:
 
 > ublock blocks ads just like adblock plus, but triggers the ads API to think it got viewed
