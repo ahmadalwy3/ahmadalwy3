@@ -3,6 +3,7 @@
 - [About the required permissions in Chromium](https://github.com/gorhill/uBlock/wiki/About-the-required-permissions)
     - [Can you trust uBlock?](https://github.com/gorhill/uBlock/wiki/Can-you-trust-uBlock%3F)
 - [Privacy policy](https://github.com/gorhill/uBlock/wiki/Privacy-policy)
+- [How to ...](https://github.com/gorhill/uBlock/wiki/How-to-...)
 - Quick guides:
     - [The popup user interface](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface)
         - [The per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
