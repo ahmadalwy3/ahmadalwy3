@@ -1,4 +1,4 @@
-**TL;DR:** if you worry about uBO's added overhead for non-bloated sites, just [disable cosmetic filtering](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering) on a per-site basis, it is the optimal approach: this will keep you protected security- and privacy-wise while minimizing the added overhead.
+**TL;DR:** if you worry about uBO's added overhead for non-bloated sites, just [disable cosmetic filtering](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering) on a per-site basis, it is the optimal approach: this will keep you protected security- and privacy-wise (as far as your filters/rules allow) while minimizing the added overhead.
 
 ***
 
