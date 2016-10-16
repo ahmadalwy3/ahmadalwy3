@@ -7,6 +7,8 @@ Support for cloud storage started with uBlock Origin 1.1.0.0.
 
 _Cloud storage_ in uBlock Origin is supported through your browser's _sync_ feature, as in [_Firefox Sync_](https://support.mozilla.org/1/firefox/43.0a1/Linux/en-US/prefs-weave), or [Chrome browser's Google account](https://support.google.com/chrome/answer/165139), i.e. through your browser's ability to synchronize extensions settings across multiple devices.
 
+If your browser/environment does not support cloud storage, the feature will be disabled.
+
 Using your browser's built-in sync ability means uBlock Origin does not need a remote server of its own, your browser's specific solution for syncing data will be used, assuming you enabled such feature in your browser.
 
 In uBlock Origin, cloud storage support must be explicitly enabled by the user, from the _Settings_ pane in the dashboard: check the _"Enable cloud storage support"_ checkbox.
