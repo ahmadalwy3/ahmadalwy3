@@ -15,10 +15,6 @@ Advanced user mode can be enabled from the _Settings_ tab in uBlock's dashboard.
 .. behave in ways unexpected to you.
 </td></tr></table>
 
-If you think the documentation needs more work, you are more than welcome to contribute. Look for the grey <kbd>Edit</kbd> button on any wiki page — here's what it looks like: ![Edit button](http://i.imgur.com/RElN8kr.png)
-
-If you don't see this button, you can [suggest your edit on the issue tracker](https://github.com/gorhill/uBlock/issues) instead.
-
 ## Differences
 
 ### Dynamic filtering
