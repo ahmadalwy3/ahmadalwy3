@@ -1,4 +1,4 @@
-Advanced user mode can be enabled from the _Settings_ tab in uBlock's dashboard. **Enable at your own risk.**
+Advanced user mode can be enabled from the _Settings_ tab in uBlock Origin's dashboard. **Enable at your own risk.**
 
 ## Read the docs
 <table><tr><td width="130" align="center">
@@ -6,7 +6,7 @@ Advanced user mode can be enabled from the _Settings_ tab in uBlock's dashboard.
 </td><td>
 <p><b>Advanced users are expected to read the documentation. This is very important.</b></p>
 
-<p>If you use advanced features without fully understanding them, uBlock:</p>
+<p>If you use advanced features without fully understanding them, uBlock Origin ("uBO"):</p>
 
 <ul>
 <li>might</li>
@@ -21,7 +21,7 @@ Advanced user mode can be enabled from the _Settings_ tab in uBlock's dashboard.
 
 Dynamic filtering ([quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)) will become available to advanced users.
 
-Novice users could easily mess up uBlock's filtering through dynamic filtering, thus it is not available by default.
+Novice users could easily mess up uBO's filtering through dynamic filtering, thus it is not available by default.
 
 On the other hand, if you are familiar with [RequestPolicy](https://www.requestpolicy.com/), then you should have no problem dealing with dynamic filtering.
 
