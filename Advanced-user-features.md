@@ -1,4 +1,4 @@
-Advanced user mode can be enabled from the _Settings_ tab in uBlock Origin's dashboard. **Enable at your own risk.**
+Advanced user mode can be enabled from the _Settings_ tab in uBlock Origin's ("uBO") dashboard. **Enable at your own risk.**
 
 ## Read the docs
 <table><tr><td width="130" align="center">
@@ -6,7 +6,7 @@ Advanced user mode can be enabled from the _Settings_ tab in uBlock Origin's das
 </td><td>
 <p><b>Advanced users are expected to read the documentation. This is very important.</b></p>
 
-<p>If you use advanced features without fully understanding them, uBlock Origin ("uBO"):</p>
+<p>If you use advanced features without fully understanding them, uBlock Origin:</p>
 
 <ul>
 <li>might</li>
