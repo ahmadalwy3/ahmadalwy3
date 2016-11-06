@@ -29,6 +29,8 @@ Unchecking this disables the dynamic filtering. And the dynamic filtering pane i
 
 _Advanced user_ mode also gives access to the advanced settings (normally hidden), and enables the ability to filter [behind-the-scene network requests](https://github.com/gorhill/uBlock/wiki/Behind-the-scene-network-requests).
 
+You should avoid playing with advanced features and settings unless [you understand fully what you are doing](https://github.com/gorhill/uBlock/wiki/Advanced-user-features).
+
 ***
 
 #### Disable pre-fetching
