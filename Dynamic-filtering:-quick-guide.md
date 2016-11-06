@@ -14,7 +14,7 @@ Dynamic filtering pane ([available only to advanced users](https://github.com/go
 
 ![figure 2](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-02.png)
 
-As you can see, you can create dynamic filtering rules for object types, or hostnames according to their origin.
+As you can see, you can create dynamic filtering rules for resource types, or hostnames according to their origin.
 
 The color of an entry indicates whether all requests were blocked (reddish), all requests were allowed (greenish), or some were blocked some were allowed (yellowish).
 
