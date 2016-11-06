@@ -19,7 +19,13 @@ Advanced user mode can be enabled from the _Settings_ tab in uBlock Origin's das
 
 ### Advanced settings
 
-You will be given the ability to access the advanced settings. Some of these settings are experimental, they may become standard settings or disappear in the future.
+You will be given the ability to access the advanced settings:
+
+![How to access "advanced settings"](https://cloud.githubusercontent.com/assets/585534/20042797/2800dcd4-a44e-11e6-9bc8-a5e0c960262c.png)
+
+Some of these settings are experimental, they may become standard settings or disappear in the future.
+
+***
 
 ### Dynamic filtering
 
@@ -30,6 +36,8 @@ Novice users could easily mess up uBO's filtering through dynamic filtering, thu
 On the other hand, if you are familiar with [RequestPolicy](https://www.requestpolicy.com/), then you should have no problem dealing with dynamic filtering.
 
 **Important note:** Dynamic filtering engine is completely turned off when you un-check the setting _"I am an advanced user"_. Your dynamic filtering rules are kept intact though, in case you re-enable _advanced user_ mode again.
+
+***
 
 ### Ability to filter behind-the-scene network requests
 
