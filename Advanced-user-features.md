@@ -17,6 +17,10 @@ Advanced user mode can be enabled from the _Settings_ tab in uBlock Origin's das
 
 ## Differences
 
+### Advanced settings
+
+You will be given the ability to access the advanced settings. Some of these settings are experimental, they may become standard settings or disappear in the future.
+
 ### Dynamic filtering
 
 Dynamic filtering ([quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)) will become available to advanced users.
