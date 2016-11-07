@@ -15,7 +15,7 @@
             - [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
         - _My rules_ pane (TODO)
             - [Dynamic filtering rule syntax](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax)
-        - _Whitelist_ pane (TODO)
+        - [_Whitelist_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Whitelist)
             - [How to whitelist a web site](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)
         - [Settings: importing from/exporting to cloud storage](https://github.com/gorhill/uBlock/wiki/Cloud-storage)
     - [Blocking mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode)
