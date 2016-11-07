@@ -52,7 +52,7 @@ Given that whitelist directives dictate where uBO should be completely disabled,
 
 #### A Youtube channel
 
-There is a user script on [Greasy Fork](https://greasyfork.org/): [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/22308-youtube-whitelist-channels-in-ublock-origin). I can't vouch for the script, you will have to find out yourself whether it works.
+There are user scripts on [Greasy Fork](https://greasyfork.org/), for example: [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/22308-youtube-whitelist-channels-in-ublock-origin). I can't vouch for the scripts, you will have to find out yourself whether they work.
 
 ### Other details
 
