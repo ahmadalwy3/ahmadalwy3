@@ -46,7 +46,9 @@ Wildcards can be used at any position. However, when a wildcard is used within t
 - `/^https?://192\.168\.0\.\d+//`
 - `/^https://[0-9a-z-]+//`
 
-When you are facing a case where no other directive syntax work, you may use a regular expression. When a whitelist directive starts and ends with a forward slash (`/`), uBO will treat the directive as a regular expression-based one.
+When you are facing a case where no other directive syntax work, you may use a regular expression ("regex") as a last resort solution. When a whitelist directive starts and ends with a forward slash (`/`), uBO will treat the directive as a regex-based one.
+
+Given that whitelist directives dictate where uBO should be completely disabled, be very careful with regex-based directives, you could easily mistakenly cause uBO to be disabled on more sites than you intended. Typically, only advanced users will resort to regex-based directives, and only for cases where no other syntax can do the job.
 
 #### A Youtube channel
 
