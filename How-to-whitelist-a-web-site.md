@@ -41,6 +41,13 @@ If no `/` appears in a whitelist directive, and if the directive contains charac
 
 Wildcards can be used at any position. However, when a wildcard is used within the hostname portion of a directive, it cannot be at the end of the hostname, and also must be at the boundary of a hostname label.
 
+#### Regular expression (1.9.17+)
+
+- `/^https?://192\.168\.0\.\d+//`
+- `/^https://[0-9a-z-]+//`
+
+When you are facing a case where no other directive syntax work, you may use a regular expression. When a whitelist directive starts and ends with a forward slash (`/`), uBO will treat the directive as a regular expression-based one.
+
 #### A Youtube channel
 
 There is a user script on [Greasy Fork](https://greasyfork.org/): [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/22308-youtube-whitelist-channels-in-ublock-origin). I can't vouch for the script, you will have to find out yourself whether it works.
