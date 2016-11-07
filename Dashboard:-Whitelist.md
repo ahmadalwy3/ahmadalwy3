@@ -9,7 +9,7 @@ When uBO is disabled for a site, its toolbar icon will be grayed, and the large 
 
 When you visit a web page, uBO will try to match the URL of the page in the address bar against the existing whitelist directives. When there is a match, uBO will be disabled for that page.
 
-The easiest way to create a whitelist directive is by toggling the large "power" button in uBO's popup panel -- this will cause a site-wide whitelist directive to be automatically created and added to the _Whitelist_ pane.
+The easiest way to create a whitelist directive is by toggling the large "power" button in uBO's popup panel -- this will cause a site-wide whitelist directive to be automatically created for the current site, and added to the _Whitelist_ pane.
 
 The _Whitelist_ pane allows you to review or edit the exisiting whitelist directives, or to manually add new ones.
 
