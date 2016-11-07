@@ -13,6 +13,14 @@ The easiest way to create a whitelist directive is by toggling the large "power"
 
 The _Whitelist_ pane allows you to review or edit the exisiting whitelist directives, or to manually add new ones.
 
-**Important:** there are predefined whitelist directives when you first install uBO. You should not remove these predefined whitelist directives, unless you know _exactly_ the consequences of doing so. Removing the predefined whitelist directives without understanding the consequences could cause your browser to malfunction. This is especially true for the `behind-the-scene` whitelist directive.
+### Important: read carefully
+
+There are predefined whitelist directives when you first install uBO. You should not remove these predefined whitelist directives, unless you know _exactly_ the consequences of doing so.
+
+Removing the predefined whitelist directives without understanding the consequences could cause your browser to malfunction. **This is especially true for the `behind-the-scene` whitelist directive.**
+
+If despite this warning you still want to remove one or more of the predefined whitelist directives, I strongly suggest to comment out an entry rather than outright delete it. To comment out an entry, just prefix it with `# `. This way you do not have to remember which predefined whitelist directive you removed, it will be just a matter of removing the `# ` prefix if ever you want to restore an entry.
+
+### Whitelist directive syntax
 
 Further details about the supported syntax for whitelist directives can be found at ["How to whitelist a web site"](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site).
