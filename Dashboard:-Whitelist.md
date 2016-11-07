@@ -3,7 +3,7 @@
 
 ***
 
-The _Whitelist_ pane lists all the _whitelist directives_. The purpose of a whitelist directive is to tell on which site uBlock Origin ("uBO") should disable itself completely. When uBO is disabled on a page, there will be no filtering applied to that page.
+The _Whitelist_ pane lists all the _whitelist directives_. The purpose of a whitelist directive is to tell on which page uBlock Origin ("uBO") should disable itself completely. When uBO is disabled on a page, there will be no filtering applied to that page.
 
 When uBO is disabled for a site, its toolbar icon will be grayed, and the large blue "power" button in the popup panel is grayed.
 
