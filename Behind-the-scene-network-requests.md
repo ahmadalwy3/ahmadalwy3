@@ -17,6 +17,14 @@ For the Chromium browser, examples of _behind-the-scene_ network requests:
 - made by web pages using [`navigator.sendBeacon()`](https://developer.mozilla.org/en-US/docs/Web/API/navigator.sendBeacon), [hyperlink auditing](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/), et al.
 - made by installed extensions for not-so-good or good reasons (uBlock makes _behind-the-scene_ requests to fetch the filter lists when they need to be updated)
 
+### How to inspect the behind-the-scene popup panel
+
+- uBO from Chrome store: `chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/popup.html?tabId=-1&fullsize=1`.
+- uBO from Opera store: `chrome-extension://kccohkcpppjjkkjppopfnflnebibpida/popup.html?tabId=-1&fullsize=1`.
+- uBO from AMO (Firefox): `chrome://ublock0/content/popup.html?tabId=-1&fullsize=1`.
+
+For Chromium-based browsers, if you install uBO manually, you will have to replace the id part (i.e. `cjpalhdlnbpafiamejdnhcphjbkeiagm`) by the id used in your installation.
+
 ### How to inspect behind-the-scene network requests
 
 Starting with uBlock version 0.8.6.0, you can inspect _behind-the-scene_ network requests using the network request logger. Simply select the _"Behind the scene"_ entry in the drop down list.
