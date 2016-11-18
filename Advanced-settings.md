@@ -10,11 +10,16 @@ These advanced settings can be easily accessed only when the setting [_"I am an 
 
 The advanced settings available are described below. Be aware that those settings may change or be removed in the future, or more may be added.
 
-- `ignoreRedirectFilters`: if set to `true`, uBO will no longer attempt to redirect blocked network requests to a local, neutered version of a resource. The main purpose of redirect filters is to minimize web page breakage as a result of blocking resources.
-- `ignoreScriptInjectFilters`: if set to `true`, uBO will no longer lookup and inject scriplets into web pages. The main purpose of the scriptlets is to defuse anti-blocker mechanisms present on some sites.
-- `popupFontSize`: a valid CSS font size value to use for the popup panel. Use if you are unhappy with the default size.
-- `suspendTabsUntilReady` (experimental): if set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
-
 If you want to reset a specific setting to its defautl value, just delete the value, uBO will fill the missing value with the default one.
 
 If you want to reset all settings to their default values, delete everything then press _"Apply changes"_.
+
+***
+
+`ignoreRedirectFilters`: if set to `true`, uBO will no longer attempt to redirect blocked network requests to a local, neutered version of a resource. The main purpose of redirect filters is to minimize web page breakage as a result of blocking resources.
+
+`ignoreScriptInjectFilters`: if set to `true`, uBO will no longer lookup and inject scriplets into web pages. The main purpose of the scriptlets is to defuse anti-blocker mechanisms present on some sites.
+
+`popupFontSize`: a valid CSS font size value to use for the popup panel. Use if you are unhappy with the default size.
+
+`suspendTabsUntilReady` (experimental): if set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
