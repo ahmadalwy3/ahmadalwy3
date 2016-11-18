@@ -19,11 +19,7 @@ Advanced user mode can be enabled from the _Settings_ tab in uBlock Origin's ("u
 
 ### Advanced settings
 
-You will be given the ability to access the [advanced settings](https://github.com/gorhill/uBlock/wiki/Advanced-settings):
-
-![How to access "advanced settings"](https://cloud.githubusercontent.com/assets/585534/20042797/2800dcd4-a44e-11e6-9bc8-a5e0c960262c.png)
-
-Some of these settings are experimental, they may become standard settings or disappear in the future.
+You will be given the ability to access the [advanced settings](https://github.com/gorhill/uBlock/wiki/Advanced-settings). Some of these settings are experimental, they may become standard settings or disappear in the future.
 
 ***
 
