@@ -20,6 +20,6 @@ If you want to reset all settings to their default values, delete everything the
 
 `ignoreScriptInjectFilters`: if set to `true`, uBO will no longer lookup and inject scriplets into web pages. The main purpose of the scriptlets is to defuse anti-blocker mechanisms present on some sites.
 
-`popupFontSize`: a valid CSS font size value to use for the popup panel. Use if you are unhappy with the default size.
+`popupFontSize`: a valid CSS font size value to use for the popup panel. Use if you are unhappy with the default size. For reference, the default size is currently `14px`.
 
 `suspendTabsUntilReady` (experimental): if set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
