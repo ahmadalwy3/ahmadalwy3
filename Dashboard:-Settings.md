@@ -49,11 +49,9 @@ Google's [_"Make webpages load faster"_](https://support.google.com/chrome/answe
 
 ***
 
-#### Disable hyperlink auditing/beacon
+#### Disable hyperlink auditing
 
-Checking this will prevent hyperlink auditing/beacon<sup>[1]</sup>. _Hyperlink auditing_ and _Send beacon_ are best summarized as "phone home" features (or even "phone anywhere"). The details are well explained [here](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/).
-
-<sub>**[1] Important note:** _"Send beacon"_ can not be disabled in Chromium. Advanced users can filter behind-the-scene network requests, where the beacon-related network requests show up.</sub>
+Checking this will prevent hyperlink auditing<sup>[1]</sup>. _Hyperlink auditing_ is best summarized as "phone home" features (or more accurately "phone anywhere"). The details are well explained [here](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/).
 
 ***
 
