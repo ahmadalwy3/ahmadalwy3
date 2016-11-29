@@ -16,10 +16,32 @@ If you want to reset all settings to their default values, delete everything the
 
 ***
 
-`ignoreRedirectFilters`: if set to `true`, uBO will no longer attempt to redirect blocked network requests to a local, neutered version of a resource. The main purpose of redirect filters is to minimize web page breakage as a result of blocking resources.
+#### `ignoreRedirectFilters`
 
-`ignoreScriptInjectFilters`: if set to `true`, uBO will no longer lookup and inject scriplets into web pages. The main purpose of the scriptlets is to defuse anti-blocker mechanisms present on some sites.
+Default: `false`.
 
-`popupFontSize`: a valid CSS font size value to use for the popup panel. Use if you are unhappy with the default size. For reference, the default size is currently `14px`.
+If set to `true`, uBO will no longer attempt to redirect blocked network requests to a local, neutered version of a resource. The main purpose of redirect filters is to minimize web page breakage as a result of blocking resources.
 
-`suspendTabsUntilReady` (experimental): if set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
+***
+
+#### `ignoreScriptInjectFilters`
+
+Default: `false`.
+
+If set to `true`, uBO will no longer lookup and inject scriplets into web pages. The main purpose of the scriptlets is to defuse anti-blocker mechanisms present on some sites.
+
+***
+
+#### `popupFontSize`
+
+Default: `14px`.
+
+A valid CSS font size value to use for the popup panel. Use if you are unhappy with the default size.
+
+***
+
+#### `suspendTabsUntilReady` (experimental)
+
+Default: `false`.
+
+If set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
