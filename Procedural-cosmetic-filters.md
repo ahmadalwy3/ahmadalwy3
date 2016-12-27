@@ -31,7 +31,7 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 - Description: Select element _subject_ if and only if the result of evaluating _arg_ is one or more elements.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- _arg_: A valid plain CSS selector or procedural cosmetic filter.
+- _arg_: A valid plain CSS selector or procedural cosmetic filter, which is evaluated in the context of the _subject_ element.
 - Examples:
     - `mobile.twitter.com##main [role="region"] > [role="grid"] > [role="rowgroup"] [role="row"]:if(div:last-of-type span:has-text(/^Promoted by/))`
 
