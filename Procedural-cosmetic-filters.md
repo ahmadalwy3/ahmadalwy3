@@ -40,3 +40,17 @@ The purpose of `:if(...)` resembles the purpose of the `:has(...)` operator, how
 ### `subject:if-not(arg)`
 
 Essentially the same as the `:if(...)` operator, except that the element _subject_ is selected if and only if the result of evaluating _arg_ is exactly zero elements.
+
+### `subject:matches-css(arg)`
+
+- Description: Select element _subject_ if and only if the result of evaluating _arg_ is one or more elements.
+- Chainable: Yes.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- _arg_: A declaration in the form `name: value`, where `name` is a valid CSS style property, and `value` is the expected value for that style property. `value` can be a literal text or literal regular expression.
+- Examples:
+    - `extratorrent.*##body > div[class]:matches-css(position: absolute)`
+    - `facet.wp.pl##div[class^="_"]:matches-css(background-image: /^url\("data:image/png;base64,/)`
+
+### `subject:matches-css-before(arg)` or `subject:matches-css-after(arg)`
+
+Same as `:matches-css(...)`, except that the style will be looked-up for the `:before` or `:after` pseudo-class of the _subject_ element.
