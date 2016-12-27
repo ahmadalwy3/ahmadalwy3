@@ -79,6 +79,12 @@ Examples: `google.*`  will apply to all similar Google domain names: `google.com
 
 Since the base domain name is used to derive the name of the "entity", `google.evil.biz` would **not** match `google.*`.
 
+#### Procedural cosmetic filters
+
+`:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:xpath(...)`.
+
+See [detailed documentation](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters).
+
 #### `script:contains(...)`
 
 uBO supports a special cosmetic filter which purpose is to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
@@ -88,31 +94,6 @@ uBO supports a special cosmetic filter which purpose is to prevent the execution
 This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
 
 Generic `script:inject` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##script:inject(yavli-defuser.js)`.
-
-#### `:has()`
-
-This is a planned CSS4 operator, but no browser supports it yet. I decided to go ahead and implement it so that it can already be used. See [The Relational Pseudo-class: `:has()`](https://drafts.csswg.org/selectors/#relational) in the Selector Level 4/Editor's Draft.
-
-uBO's implementation is simplified so as to ensure performance. The `:has` operator **must** be used with at least one hostname (it must be _specific_), and must be of the form (example):
-
-    yandex.ru##.serp-item:has(.label_color_yellow)
-
-In this example, `yandex.ru` is the hostname. The part preceding `:has(...)` -- `.serp-item` above -- is the DOM node which will be targeted (i.e. hidden by uBO), and must be a valid CSS expression. The part inside the `:has` parentheses -- `.label_color_yellow` above -- must be a valid CSS expression, and is the condition that must be fulfilled -- i.e. in the above example, nodes which have a class `serp-item` will be hidden if and only if they have a descendant with class `label_color_yellow`.
-
-#### `:matches-css()`
-
-Currently only available in dev build 1.8.5.
-
-This cosmetic filter allows to filter DOM elements based on their computed CSS properties.
-
-#### `:xpath()`
-
-This new cosmetic filter operator is to support and leverage the power of [XPaths](https://en.wikipedia.org/wiki/XPath). The `:xpath()` operator must always be used in a _specific_ cosmetic filter, i.e. they must apply to at least one hostname or entity. An example of its use (to solve a real reported case) for [this web page](http://forum.pcastuces.com/envahi_par_des_popup-f25s77301.htm):
-
-    forum.pcastuces.com##:xpath(/html/body/table//tr[@class="formsubtitle2"][.//text()="Publicité"])
-    forum.pcastuces.com##:xpath(/html/body/table//tr[@class="formsubtitle2"][.//text()="Publicité"]/following-sibling::tr[1])
-
-Notice how these xpath-based cosmetic filters allows to uniquely solve the issue here, by filtering based on the _text content_ of the child nodes in the DOM. This is not possible with standard ABP-compatible filtering syntax. (Use the per-site switch to toggle cosmetic filtering on/off to more easily see the effect of these filters on the page).
 
 #### `:style()`
 
