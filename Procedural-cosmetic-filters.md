@@ -39,4 +39,4 @@ The purpose of `:if(...)` resembles the purpose of the `:has(...)` operator, how
 
 ### `subject:if-not(arg)`
 
-Essentially the same as the `:if(...)` operator, except that the element _subject_ is selected if the result of evaluating _arg_ is zero elements.
+Essentially the same as the `:if(...)` operator, except that the element _subject_ is selected if and only if the result of evaluating _arg_ is exactly zero elements.
