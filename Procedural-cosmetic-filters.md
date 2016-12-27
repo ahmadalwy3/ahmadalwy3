@@ -21,8 +21,18 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 
 - Description: Select element _subject_ if and only if the text _needle_ is found inside the element _subject_.
 - Chainable: Yes.
-- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter (i.e. chainable).
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
 - _needle_: The literal text which must be found, or a literal regular expression.
 - Examples:
     - `example.com##body > div:last-of-type span:has-text(/^Promoted by/)`
 
+### `subject:if(arg)`
+
+- Description: Select element _subject_ if and only if the result of evaluating _arg_ is one or more elements.
+- Chainable: Yes.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- _arg_: A valid plain CSS selector or procedural cosmetic filter.
+- Examples:
+    - `mobile.twitter.com##main [role="region"] > [role="grid"] > [role="rowgroup"] [role="row"]:if(div:last-of-type span:has-text(/^Promoted by/))`
+
+The purpose of `:if(...)` ressembles the purpose of the `:has(...)` operator, however the difference is that the argument for the `:has(...)` operator **can not** be anything else than a plain CSS selector. This limitation to the `:has(...)` operator is to ensure that they will be able to be implemented declaratively once a browser supports `:has(...)` as a valid CSS4 selector.
