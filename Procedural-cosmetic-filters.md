@@ -51,6 +51,10 @@ Essentially the same as the `:if(...)` operator, except that the element _subjec
     - `extratorrent.*##body > div[class]:matches-css(position: absolute)`
     - `facet.wp.pl##div[class^="_"]:matches-css(background-image: /^url\("data:image/png;base64,/)`
 
-### `subject:matches-css-before(arg)` or `subject:matches-css-after(arg)`
+### `subject:matches-css-before(arg)`
 
-Same as `:matches-css(...)`, except that the style will be looked-up for the `:before` or `:after` pseudo-class of the _subject_ element.
+Same as `:matches-css(...)`, except that the style will be looked-up for the `:before` pseudo-class of the _subject_ element.
+
+### `subject:matches-css-after(arg)`
+
+Same as `:matches-css(...)` except that the style will be looked-up for `:after` pseudo-class of the _subject_ element.
