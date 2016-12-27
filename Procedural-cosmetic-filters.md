@@ -58,3 +58,14 @@ Same as `:matches-css(...)`, except that the style will be looked-up for the `:b
 ### `subject:matches-css-after(arg)`
 
 Same as `:matches-css(...)` except that the style will be looked-up for `:after` pseudo-class of the _subject_ element.
+
+### `subject:xpath(arg)`
+
+- Description: Create a new set of elements by evaluating a XPath using _subject_ as the context node (optional) and _arg_ as the expression.
+- Chainable: Yes.
+- _subject_: Optional. Can be a plain CSS selector, or a procedural cosmetic filter.
+- _arg_: A valid XPath expression.
+- Examples:
+    - `facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="People You May Know"])`
+
+The `:xpath(...)` operator is different than other operators. Whereas all other operators are used to filter down a resultset of elements, the `:xpath(...)` operator can be used bot to create a new resultset or filter down an existing one. For this reason, _subject_ is optional.
