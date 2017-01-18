@@ -54,7 +54,15 @@ If set to `true`, uBO will no longer attempt to redirect blocked network request
 
 Default: `false`.
 
-If set to `true`, uBO will no longer lookup and inject scriplets into web pages. The main purpose of the scriptlets is to defuse anti-blocker mechanisms present on some sites.
+If set to `true`, uBO will no longer lookup and inject scriptlets into web pages. The main purpose of the scriptlets is to defuse anti-blocker mechanisms present on some sites.
+
+***
+
+#### `manualUpdateAssetFetchPeriod`
+
+Default: `2000` milliseconds.
+
+When clicking the _"Update now"_ button in the _"3rd-party filters"_ pane in the dashboard, this is the number of milliseconds to wait before fetching the next asset which needs to be updated. The delay helps spread the load incurred as a result of loading/processing new filter lists, and its purpose is also to be considerate to remote servers by not subjecting them to rapid-fire requests.
 
 ***
 
