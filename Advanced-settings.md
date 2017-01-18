@@ -20,7 +20,7 @@ If you want to reset all settings to their default values, delete everything the
 
 Default: `7` hours.
 
-The time to wait in hours between each update session<sup>[1]</sup>. uBO will always start an update session a few minutes after launch when auto-update is enabled. Once that first update session is completed, uBO will wait `autoUpdatePeriod` hours before starting a another update session.
+The time to wait in hours between each update session<sup>[1]</sup>. uBO will always start an update session a few minutes after launch when auto-update is enabled. Once that first update session is completed, uBO will wait `autoUpdatePeriod` hours before starting a new update session.
 
 <sub>[1] "Update session" means that uBO will lookup and update assets deemed out of date, if any.</sub>
 
