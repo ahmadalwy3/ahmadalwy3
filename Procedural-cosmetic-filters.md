@@ -35,7 +35,7 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 - Examples:
     - `mobile.twitter.com##main [role="region"] > [role="grid"] > [role="rowgroup"] [role="row"]:if(div:last-of-type span:has-text(/^Promoted by/))`
 
-The purpose of `:if(...)` resembles the purpose of the `:has(...)` operator, however the difference is that the argument for the `:has(...)` operator **can not** be anything else than a plain CSS selector. This limitation to the `:has(...)` operator is to ensure that they will be able to be implemented declaratively once a browser supports `:has(...)` as a valid CSS4 selector.
+The purpose of `:if(...)` resembles the purpose of the `:has(...)` operator, however the difference is that the argument for the `:has(...)` operator **can not** be anything else than a plain CSS selector. This limitation to the `:has(...)` operator is to ensure that they can be implemented declaratively once a browser supports `:has(...)` as a valid CSS4 selector.
 
 ### `subject:if-not(arg)`
 
