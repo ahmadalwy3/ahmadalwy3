@@ -1,4 +1,4 @@
-The concept of procedural cosmetic filtering was introduced with uBlock Origin ("uBO") [version 1.8.0](https://github.com/gorhill/uBlock/releases/tag/1.8.0). The initial implementation was revised to allow chained/recursive use of the procedural operators with version 1.10.5+.
+The concept of procedural cosmetic filtering was introduced with uBlock Origin ("uBO") [version 1.8.0](https://github.com/gorhill/uBlock/releases/tag/1.8.0). The initial implementation was revised to allow chained/recursive use of the procedural operators with version 1.11.0+.
 
 Normal, standard cosmetic filters are _declarative_, i.e. they are used as selector in a CSS rule, and completely handled by browsers through `style` tag elements.
 
