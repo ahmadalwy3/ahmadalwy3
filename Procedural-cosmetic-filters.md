@@ -1,6 +1,6 @@
 The concept of procedural cosmetic filtering was introduced with uBlock Origin ("uBO") [version 1.8.0](https://github.com/gorhill/uBlock/releases/tag/1.8.0).
 
-The initial implementation was revised to allow chained/recursive use of the procedural operators with version 1.11.0+. There is no limit on the number of operators chained, or the number of recursion level, aside common sense. As a reminder, use procedural cosmetic filters only for when plain CSS selectors won't solve a case.
+The initial implementation was revised to allow chained/recursive use of the procedural operators with version [1.11.0](https://github.com/gorhill/uBlock/releases/tag/1.11.0)+. There is no limit on the number of operators chained, or the number of recursion level, aside common sense. As a reminder, use procedural cosmetic filters only for when plain CSS selectors won't solve a case.
 
 Normal, standard cosmetic filters are _declarative_, i.e. they are used as selector in a CSS rule, and completely handled by browsers through `style` tag elements.
 
