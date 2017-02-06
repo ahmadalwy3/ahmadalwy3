@@ -1,8 +1,12 @@
-The concept of procedural cosmetic filtering was introduced with uBlock Origin ("uBO") [version 1.8.0](https://github.com/gorhill/uBlock/releases/tag/1.8.0). The initial implementation was revised to allow chained/recursive use of the procedural operators with version 1.11.0+.
+The concept of procedural cosmetic filtering was introduced with uBlock Origin ("uBO") [version 1.8.0](https://github.com/gorhill/uBlock/releases/tag/1.8.0).
+
+The initial implementation was revised to allow chained/recursive use of the procedural operators with version 1.11.0+. There is no limit on the number of operators chained, or the number of recursion level, aside common sense. As a reminder, use procedural cosmetic filters only for when plain CSS selectors won't solve a case.
 
 Normal, standard cosmetic filters are _declarative_, i.e. they are used as selector in a CSS rule, and completely handled by browsers through `style` tag elements.
 
 _Procedural_ means javascript code is used to find DOM elements which must be hidden. A procedural cosmetic filter makes use of cosmetic filter _operator_, which will tell uBO how to find/filter DOM elements in order to find which DOM elements to target.
+
+Efficient procedural cosmetic filters (or any cosmetic filters really) are the ones which result in the smallest set of nodes to visit. The element picker input field will display the number of elements matching the current filter. The element picker will only consider the entered text up to the first line break, while leaving the rest as is. You can use this feature to break up your filter to find out the size of the resultset of the first part(s) of your filter: the smallest resultset the most efficient is your cosmetic filter.
 
 ## Cosmetic filter operators
 
