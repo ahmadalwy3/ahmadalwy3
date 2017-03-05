@@ -80,8 +80,10 @@ Default: `false`.
 
 If set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
 
-#### `userResourcesLocation` (uBO 1.11.3 and above) 
+#### `userResourcesLocation` 
 
 Default: `unset`.
+
+uBO 1.11.3 and above.
 
 If set to a valid URL, uBO will load the content of the URL and parse it as token-identified resources to be used for `redirect` or `script:inject` purpose. For example, I use this setting with a `file:///`-based URL to test resources before publishing them for [uAssets](https://github.com/uBlockOrigin/uAssets). uBO expects valid content such as [resources.txt](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt), anything else will lead to undefined results.
