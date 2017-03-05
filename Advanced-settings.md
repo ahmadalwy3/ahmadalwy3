@@ -80,7 +80,7 @@ Default: `false`.
 
 If set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
 
-#### `userResourcesLocation`
+#### `userResourcesLocation` (uBO 1.11.3 and above) 
 
 Default: `unset`.
 
