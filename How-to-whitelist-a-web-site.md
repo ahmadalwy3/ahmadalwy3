@@ -54,6 +54,8 @@ Given that whitelist directives dictate where uBO should be completely disabled,
 
 There are user scripts on [Greasy Fork](https://greasyfork.org/), for example: [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/22308-youtube-whitelist-channels-in-ublock-origin). I can't vouch for the scripts, you will have to find out yourself whether they work.
 
+Someone posted instructions on reddit: <https://www.reddit.com/r/ublock/comments/4x4jol/any_way_to_whitelist_certain_youtube_channels/>.
+
 ### Other details
 
 If you re-enable uBlock by clicking the whitelist button in the popup while a whitelist directive you handcrafted is in effect, your handcrafted whitelist directive will simply be commented out. This way you can bring it back to life if ever you un-whitelist by mistake.
