@@ -54,7 +54,7 @@ Given that whitelist directives dictate where uBO should be completely disabled,
 
 There are user scripts on [Greasy Fork](https://greasyfork.org/), for example: [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/22308-youtube-whitelist-channels-in-ublock-origin). I can't vouch for the scripts, you will have to find out yourself whether they work.
 
-Someone posted instructions on reddit: <https://www.reddit.com/r/ublock/comments/4x4jol/any_way_to_whitelist_certain_youtube_channels/>.
+Someone posted instructions on reddit: [Any way to whitelist certain youtube channels?](https://www.reddit.com/r/ublock/comments/4x4jol/any_way_to_whitelist_certain_youtube_channels/).
 
 ### Other details
 
