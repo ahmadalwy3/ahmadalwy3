@@ -42,7 +42,7 @@ So I did the **exact** above steps for no blocker, ABP, uBlock.
     - No blocker: 175 MB + 1,397 MB = **1,572 MB** (reference memory usage)
     - **Adblock Plus** 2.8.2: 241 MB + 626 MB = **867 MB** (reference _minus_ 705 MB)
     - **uBlock Origin** 1.11.4: 176 MB + 488 MB = **664 MB** (reference _minus_ 908 MB, ABP _minus_ 203 MB)
-- **Chromium** (benchmark results updated on April 3rd, 2017)
+- **Chrome 59** (benchmark results updated on April 3rd, 2017)
     - No blocker: **1,615 MB** (reference memory usage)
     - **Adblock Plus** 1.13.2: **1,253 MB** (reference _minus_ 362 MB)
     - **uBlock Origin** 1.11.4: **832 MB** (reference _minus_ 783 MB, ABP _minus_ 421 MB)
