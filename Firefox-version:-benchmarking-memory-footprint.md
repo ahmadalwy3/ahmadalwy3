@@ -10,10 +10,9 @@
     - EasyList
     - Peter Lowe's Ad server list
     - EasyPrivacy
-    - Fanboy's Social Blocking List
     - Malware domain lists
     - ABP-specifics: _"Acceptable ads"_ disabled
-    - uBlock-specifics: uBlock's filters enabled (+140 filters), extra malware domains (+1,487 filters)
+    - uBlock-specifics: uBlock's default filters enabled
 
 #### Steps
 
@@ -56,7 +55,7 @@ So I did the **exact** above steps for no blocker, ABP, uBlock.
 
 #### Notes
 
-Tested on Firefox 41.0 64-bit and Chromium 45.0.2454.85 64-bit on Linux Mint. No other extensions were present.
+No other extensions were present.
 
 For Firefox, I chose the _"Explicit Allocations"_  figure because as per Firefox, it is "the single best number to focus on" with regard to memory usage.
 
