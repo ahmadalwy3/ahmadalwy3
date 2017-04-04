@@ -6,13 +6,9 @@
 
 1. Ensure the blocker is the only active extension (to avoid results to be polluted by other extensions)
 1. Ensure click-to-play (or whatever equivalent) is enabled before launching the benchmark
-1. Select the following filter lists in the benchmarked blockers:
-    - EasyList
-    - Peter Lowe's Ad server list
-    - EasyPrivacy
-    - Malware domain lists
-    - ABP-specifics: _"Acceptable ads"_ disabled
-    - uBlock-specifics: uBlock's default filters enabled
+1. How blockers were configured:
+    - uBlock Origin: default settings.
+    - Adblock Plus: EasyList + EasyPrivacy, minus "acceptable ads".
 
 #### Steps
 
