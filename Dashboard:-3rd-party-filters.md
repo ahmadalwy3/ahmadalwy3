@@ -11,7 +11,7 @@ If you remove filter lists, it is still strongly advised to at least keep _uBloc
 
 The more filter lists one add, the higher the likelihood some web pages may not render properly. When this occurs, you may want to report the issue to the maintainers of the filter list causing the issue, or create your own exception filters to fix the issue.
 
-![3rd-party filter pane](https://cloud.githubusercontent.com/assets/585534/9589096/0b6cc212-4ffa-11e5-82f1-d276b71fef91.png)
+![3rd-party filter pane](https://cloud.githubusercontent.com/assets/585534/24972255/cbf77306-1f88-11e7-808e-1e1ac934120f.png)
 
 uBlock Origin discards duplicate filters, so the number of filters used within a filter list depends on how many duplicate filters were detected within that filter list. The order in which the filter lists are loaded into memory is undefined.
 
