@@ -25,13 +25,13 @@ Related: [_"Launch and filter lists load performance"_](https://github.com/gorhi
 
 If you check this option, uBlock Origin will update automatically the currently selected filter lists at regular interval. This option is checked by default (recommended).
 
-Filter lists are automatically updated roughly every 4-5 days, or for uBO's own filter lists (_"uBlock filters ..."_), when a new version is available.
+Filter lists are automatically updated roughly every 5 days by default, or according to the _Expires_ directive present in some filter lists.
 
 ##### Update now
 
 This button is available for use if and only if there is at least one filter list which is deemed outdated. If this condition is fulfilled, you can force an update of all filter lists which are deemed out of date.
 
-When a filter list has been updated using a newer version from its remote location, a button `purge cache` will be available for that filter list. You can force an update of a single filter list by purging the cache of that filter list only -- by clicking its `purge cache` button. This will cause the _"Update now"_ button to become available for use.
+When a filter list has been updated using a newer version from its remote location, a clock icon will be present aside the filter list. You can force an update of a single filter list by clicking the clock icon of that filter list only. This will cause the _"Update now"_ button to become available for use.
 
 ##### Purge all caches
 
