@@ -31,7 +31,9 @@ Filter lists are automatically updated roughly every 5 days by default, or accor
 
 This button is available for use if and only if there is at least one filter list which is deemed outdated. If this condition is fulfilled, you can force an update of all filter lists which are deemed out of date.
 
-When a filter list has been updated using a newer version from its remote location, a clock icon will be present aside the filter list. You can force an update of a single filter list by clicking the clock icon of that filter list only. This will cause the _"Update now"_ button to become available for use.
+When a filter list has been updated using a newer version from its remote location, a clock icon will be present aside the filter list. You can force an update of a single filter list by clicking the clock icon of that filter list only. This will cause the _"Update now"_ button to become available for use:
+
+![](https://cloud.githubusercontent.com/assets/585534/25020937/4a6a55b6-205e-11e7-94ac-9c51697f9f90.gif)
 
 ##### Purge all caches
 
