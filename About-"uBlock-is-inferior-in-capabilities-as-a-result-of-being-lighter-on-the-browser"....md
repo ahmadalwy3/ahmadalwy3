@@ -13,7 +13,7 @@ uBlock Origin is lighter on the browser because of many choices which were made 
     - Example, `&ad_zones=` (filter found in EasyList).
         - ABP's code conceptually is: `/&ad_zones=/.test(url)` -- the whole URL must be scanned
         - uBO's code conceptually is: `url.startsWith('&ad_zones=', i)` -- no scanning of the URL
-- does **not** unconditionally inject 18000+ (that is with EasyList only) generic CSS rules in all pages/frames<br><sup>meaning no undue [memory usage issues](https://bugzilla.mozilla.org/show_bug.cgi?id=1320872)</sup>
+- does **not** unconditionally inject 18,000+ (that is with EasyList only) generic CSS rules in all pages/frames<br><sup>meaning no undue [memory usage issues](https://bugzilla.mozilla.org/show_bug.cgi?id=1320872)</sup>
 
 Do these design choices really cause uBO to be _"inferior in capabilities"_ compared to ABP? See the capabilities comparison grid below for an answer (at time of writing):
 
