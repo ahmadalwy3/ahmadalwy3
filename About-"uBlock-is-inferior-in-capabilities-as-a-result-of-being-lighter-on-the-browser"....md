@@ -39,7 +39,7 @@ entity-based filters |     | yes
 `script:contains` |     | Firefox only
 `script:inject`<br><sup>key to counter anti-blockers</sup> |     | yes
 **privacy**
-pro-user default settings<br><sup>uBO is not monetized, this means it does not need to [compromise](https://adblockplus.org/forum/viewtopic.php?f=17&t=50215) on pro-user interests</sup> |     | yes
+pro-user default settings<br><sup>uBO is not monetized, it's under no pressure to [compromise](https://adblockplus.org/forum/viewtopic.php?f=17&t=50215) on pro-user interests</sup> |     | yes
 disable pre-fetching |     | yes
 disable hyperlink auditing |     | yes
 disable local IP addresses leakage through WebRTC |     | yes
