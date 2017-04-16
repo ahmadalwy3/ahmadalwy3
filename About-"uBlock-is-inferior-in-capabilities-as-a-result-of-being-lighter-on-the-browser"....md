@@ -4,6 +4,8 @@ Motivation for creating this page, this comment made in the spirit of _Fake News
 
 There is nothing wrong with preferring ABP to uBO. There is however something wrong when someone engages in misinformation regarding uBO because of their preference for ABP.
 
+This is my reference answer to such claims.
+
 uBlock Origin is lighter on the browser because of many choices which were made regarding how the filtering engine is designed internally. A coarse enumeration of these choices are:
 - lean in-memory filter representation
 - plain string comparisons instead of regular expressions wherever possible
