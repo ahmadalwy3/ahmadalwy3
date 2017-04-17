@@ -62,5 +62,4 @@
     - [uBlock and others: Blocking ads, trackers, malwares](https://github.com/gorhill/uBlock/wiki/uBlock-and-others:-Blocking-ads,-trackers,-malwares)
     - [About "This other extension reports more stuff blocked!"](https://github.com/gorhill/uBlock/wiki/About-%22This-other-extension-reports-more-stuff-blocked!%22)
     - [Various videos showing side by side comparison of the load speed of complex sites](https://github.com/gorhill/uBlock/wiki/Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites)
-- [What uBlock can and can not (currently) do](https://github.com/gorhill/uBlock/wiki/What-uBlock-can-and-can-not-(currently)-do)
 - [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
