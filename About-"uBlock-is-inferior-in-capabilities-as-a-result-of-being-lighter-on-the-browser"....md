@@ -35,7 +35,7 @@ entity-based filters |     | yes
 `-abp-properties` | yes | [no](https://github.com/gorhill/uBlock/issues/139)
 `:has` | [not yet](https://issues.adblockplus.org/ticket/2360) | yes
 `:has-text`<br>`:if` `:if-not`<br>`:matches-css` `:matches-css-before` `:matches-css-after`<br>`:xpath` |     | yes
-`:style` |     | yes
+`:style` | [no](https://issues.adblockplus.org/ticket/756) | yes
 `script:contains` |     | Firefox only
 `script:inject`<br><sup>key to counter anti-blockers</sup> |     | yes
 **privacy**
