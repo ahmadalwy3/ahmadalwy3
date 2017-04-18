@@ -15,7 +15,17 @@ The _Whitelist_ pane allows you to review or edit the exisiting whitelist direct
 
 ### Important: read carefully
 
-There are predefined whitelist directives when you first install uBO. You should not remove these predefined whitelist directives, unless you know _exactly_ the consequences of doing so.
+There are predefined whitelist directives when you first install uBO:
+
+    about-scheme
+    behind-the-scene
+    chrome-extension-scheme
+    chrome-scheme
+    moz-extension-scheme
+    opera-scheme
+    vivaldi-scheme
+
+You should not remove these predefined whitelist directives, unless you know _exactly_ the consequences of doing so.
 
 Removing the predefined whitelist directives without understanding the consequences could cause your browser to malfunction. **This is especially true for the `behind-the-scene` whitelist directive.**
 
