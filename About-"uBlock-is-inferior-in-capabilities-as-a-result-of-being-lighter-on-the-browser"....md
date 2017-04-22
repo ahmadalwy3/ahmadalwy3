@@ -56,5 +56,5 @@ point-and-click per-site no-popups |     | yes
 point-and-click per site no-cosmetic-filtering |     | yes
 point-and-click per site no-large-media-elements |     | yes
 point-and-click per site no-remote-fonts |     | yes
-integrated element picker | Chrome only | yes
+integrated element picker | Chromium-based browsers only | yes
 easy backup/restore of all settings | Firefox only | yes
