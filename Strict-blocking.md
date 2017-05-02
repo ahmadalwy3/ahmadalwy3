@@ -1,7 +1,7 @@
 [Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
 
 ***
-In uBlock Origin ("uBO"), _strict blocking_ is the blocking of a whole page, i.e. even the root document is blocked, so that not a single connection is made to the remote server hosting the web page.
+In uBlock Origin ("uBO"), _strict blocking_ is the blocking of a whole page, i.e. the _root_ document is blocked, so that not a single connection is made to the remote server hosting the web page.
 
 By default, strict blocking is enabled in uBO (this is the opposite of Adblock Plus).
 
