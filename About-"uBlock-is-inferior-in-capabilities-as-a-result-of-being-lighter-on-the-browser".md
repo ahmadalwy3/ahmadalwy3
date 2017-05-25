@@ -41,11 +41,11 @@ entity-based filters |     | [yes](https://github.com/gorhill/uBlock/wiki/Static
 `script:inject`<br><sup>key to counter anti-blockers</sup> |     | yes
 **privacy**
 pro-user default settings<br><sup>uBO is not monetized, it's under no pressure to [compromise](https://adblockplus.org/forum/viewtopic.php?f=17&t=50215) on pro-user interests</sup> |     | yes
-disable pre-fetching |     | yes
-disable hyperlink auditing |     | yes
-disable local IP addresses leakage through WebRTC |     | yes
+disable pre-fetching |     | [yes](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#disable-pre-fetching)
+disable hyperlink auditing |     | [yes](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#disable-hyperlink-auditing)
+disable local IP addresses leakage through WebRTC |     | [yes](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#prevent-webrtc-from-leaking-local-ip-address)
 **other features**
-pre-compilation of filter lists for fast loading of filters |     | yes
+pre-compilation of filter lists for fast loading of filters |     | [yes](https://github.com/gorhill/uBlock/wiki/Launch-and-filter-lists-load-performance)
 "acceptable ads" | yes | [no](https://github.com/gorhill/uBlock/blob/master/MANIFESTO.md)
 disable everywhere | yes |
 count filter hits | yes | [no](https://github.com/gorhill/uBlock/issues/1353)
