@@ -27,7 +27,7 @@ can read hosts files |     | yes
 `important`<br><sup>to be able to override exception filters</sup> |     | yes
 `popunder` | [no](https://issues.adblockplus.org/ticket/2095) | yes
 `redirect`<br><sup>to redirect to local resources, key to privacy and to counter anti-blockers</sup> |     | yes
-`csp=`<br><sup>see [rationale](https://github.com/gorhill/uBlock/issues/1930#issuecomment-301055346)</sup> |     | yes<br>v1.12.5
+`csp=`<br><sup>see [rationale](https://github.com/gorhill/uBlock/issues/1930#issuecomment-301055346)</sup> |     | yes<br><sup>v1.12.5</sup>
 [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking) |     | yes
 rule-based filtering<br><sup>firewall-like or URL-based rules with corresponding point-and-click UI</sup> |     | yes
 behind-the-scene<br><sup>uBO's logger reports behind-the-scene request, filtering is opt-in</sup> |     | yes
