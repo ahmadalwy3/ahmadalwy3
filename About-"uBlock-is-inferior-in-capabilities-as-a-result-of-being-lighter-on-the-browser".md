@@ -23,16 +23,16 @@ Features |  ABP  |  uBO
 [multi-stage filtering engine](https://github.com/gorhill/uBlock/wiki/Overview-of-uBlock's-network-filtering-engine)<br><sup>ability for users to easily override filters in 3rd-party filter lists on a per-site basis</sup> |     | yes
 `@@...$document` | yes | [no](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#not-supported)
 can read hosts files |     | yes
-`inline-script`<br><sup>to prevent execution of inline javascript</sup> | [no](https://issues.adblockplus.org/ticket/748) | yes
-`important`<br><sup>to be able to override exception filters</sup> |     | yes
+`inline-script`<br><sup>to prevent execution of inline javascript</sup> | [no](https://issues.adblockplus.org/ticket/748) | [yes](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#inline-script)
+`important`<br><sup>to be able to override exception filters</sup> |     | [yes](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#important)
 `popunder` | [no](https://issues.adblockplus.org/ticket/2095) | yes
 `redirect`<br><sup>to redirect to local resources, key to privacy and to counter anti-blockers</sup> |     | yes
 `csp=`<br><sup>see [rationale](https://github.com/gorhill/uBlock/issues/1930#issuecomment-301055346)</sup> |     | yes<br><sup>v1.12.5</sup>
 [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking) |     | yes
 rule-based filtering<br><sup>firewall-like or URL-based rules with corresponding point-and-click UI</sup> |     | yes
-behind-the-scene<br><sup>uBO's logger reports behind-the-scene request, filtering is opt-in</sup> |     | yes
+behind-the-scene<br><sup>uBO's logger reports behind-the-scene request, filtering is opt-in</sup> |     | [yes](https://github.com/gorhill/uBlock/wiki/Behind-the-scene-network-requests)
 **cosmetic filtering**
-entity-based filters |     | yes
+entity-based filters |     | [yes](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#entity-based-cosmetic-filters)
 `-abp-properties` | yes | [no](https://github.com/gorhill/uBlock/issues/139)
 `:has` | [not yet](https://issues.adblockplus.org/ticket/2360) | yes
 `:has-text`<br>`:if` `:if-not`<br>`:matches-css` `:matches-css-before` `:matches-css-after`<br>`:xpath` |     | yes
@@ -53,9 +53,9 @@ ability to globally ignore generic cosmetic filters<br><sup>useful for low-perfo
 cloud storage |     | yes
 point-and-click firewall-like filtering<br><sup>allows for [relax](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode) or [strict](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode) default-deny approach</up> |     | yes
 logger | per-page | unified
-point-and-click per-site no-popups |     | yes
-point-and-click per site no-cosmetic-filtering |     | yes
-point-and-click per site no-large-media-elements |     | yes
-point-and-click per site no-remote-fonts |     | yes
-integrated element picker | Chromium-based browsers only | yes
+point-and-click per-site no-popups |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-popups)
+point-and-click per site no-cosmetic-filtering |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering)
+point-and-click per site no-large-media-elements |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-large-media-elements)
+point-and-click per site no-remote-fonts |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-remote-fonts)
+integrated element picker | Chromium-based browsers only | [yes](https://github.com/gorhill/uBlock/wiki/Element-picker)
 easy backup/restore of all settings | Firefox only | yes
