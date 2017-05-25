@@ -52,7 +52,7 @@ count filter hits | yes | [no](https://github.com/gorhill/uBlock/issues/1353)
 ability to globally ignore generic cosmetic filters<br><sup>useful for low-performance mobile devices</sup> |     | yes
 cloud storage |     | yes
 point-and-click firewall-like filtering<br><sup>allows for [relax](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode) or [strict](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode) default-deny approach</up> |     | yes
-logger | per-page | unified
+logger | per-page | [unified](https://github.com/gorhill/uBlock/wiki/The-logger)
 point-and-click per-site no-popups |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-popups)
 point-and-click per site no-cosmetic-filtering |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering)
 point-and-click per site no-large-media-elements |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-large-media-elements)
