@@ -37,6 +37,8 @@ The cells in the third column gives an overview of how many requests were blocke
 
 So there are **global** dynamic filtering rules, and **local** dynamic filtering rules.
 
+By default, there are no dynamic filtering rules at install time, so nothing is blocked by default by the dynamic filtering engine. You will have to create your own rules, according to your own prerogatives.
+
 Sensible security- and privacy-wise: blocking all 3rd-party frames by default everywhere: 
 
 ![figure 5](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-05.png)
@@ -62,6 +64,8 @@ Create a local  _noop_ rule for 3rd-party frames:
 ![figure 7](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-07.png)
 
 It works, the embedded YouTube video can now be played.
+
+Note that a cell with a _noop_ rule is dark gray, while a cell with no rule at all is light gray (the default color). Hence gray means that no dynamic filtering will be applied to a cell. If a cell inherit a _block_ or _allow_ rule from a higher precedence cell, a _noop_ rule can be used to override the inherited _block_ or _allow_ rule. Ceonceptually, a _noop_ rule is to punch a hole in your dynamic filtering ruleset.
 
 However the above rule would result in all 3rd-party frames on the site to be unblocked. Not so good.
 
