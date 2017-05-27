@@ -65,7 +65,7 @@ Create a local  _noop_ rule for 3rd-party frames:
 
 It works, the embedded YouTube video can now be played.
 
-Note that a cell with a _noop_ rule is dark gray, while a cell with no rule at all is light gray (the default color). Hence gray means that no dynamic filtering will be applied to a cell. If a cell inherit a _block_ or _allow_ rule from a higher precedence cell, a _noop_ rule can be used to override the inherited _block_ or _allow_ rule. Ceonceptually, a _noop_ rule is to punch a hole in your dynamic filtering ruleset.
+Note that a cell with a _noop_ rule is dark gray, while a cell with no rule at all is light gray (the default color). Hence gray means that no dynamic filtering will be applied to a cell. If a cell inherit a _block_ or _allow_ rule from a higher precedence cell, a _noop_ rule can be used to override the inherited _block_ or _allow_ rule. Conceptually, the purpose of _noop_ rules is to punch holes in your dynamic filtering ruleset so that network requests can pass through unimpeded.
 
 However the above rule would result in all 3rd-party frames on the site to be unblocked. Not so good.
 
