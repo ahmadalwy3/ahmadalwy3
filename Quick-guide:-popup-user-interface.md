@@ -2,11 +2,12 @@
 
 ***
 
-- [The title bar](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-title-bar)
-- [The large power button](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-large-power-button)
-- [The number of requests blocked](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-number-of-requests-blocked)
-- [The number of domains connected](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-number-of-domains-connected)
-- [The site-based switches](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-site-based-switches)
+- [The title bar](#the-title-bar)
+- [The large power button](#the-large-power-button)
+- [The number of requests blocked](#the-number-of-requests-blocked)
+- [The tools](#the-tools)
+- [The number of domains connected](#the-number-of-domains-connected)
+- [The site-based switches](#the-site-based-switches)
 
 ***
 
@@ -42,9 +43,23 @@ For more advanced whitelisting control, see ["How to whitelist a web site"](http
 
 This shows the number of network requests uBlock blocked on the current page. Also, less useful (but people like this kind of thing), the number of network requests uBlock blocked since you installed it. The percentage figure tells you how many requests were blocked out of all the requests made.
 
+***
+
+#### The tools
+
+#### Zap an element on the current page
+
+Click the _flash_ icon to enter [element zapper mode](https://github.com/gorhill/uBlock/wiki/Element-zapper), which allows you to interactively remove one or more elements on the current page. Removing an element is always temporary, i.e. the removed elements will be back when the page is reloaded.
+
+#### Create a filter for the current site
+
 Click the _eye-dropper_ icon to enter [element picker mode](https://github.com/gorhill/uBlock/wiki/Element-picker), which allows you to create a filter by interactively picking an element on a page, thus permanently removing it from the page.
 
-Click the _list_ icon to open the [network request logger](https://github.com/gorhill/uBlock/wiki/The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
+#### Open the logger
+
+Click the _list_ icon to open the [logger](https://github.com/gorhill/uBlock/wiki/The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
+
+Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between opening the logger in a separate window or separate tab. uBO will remember that setting when you open the logger without the <kbd>Shift</kbd> key.
 
 ***
 
