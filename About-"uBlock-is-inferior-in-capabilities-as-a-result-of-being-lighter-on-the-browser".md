@@ -58,4 +58,5 @@ point-and-click per site no-cosmetic-filtering |     | [yes](https://github.com/
 point-and-click per site no-large-media-elements |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-large-media-elements)
 point-and-click per site no-remote-fonts |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-remote-fonts)
 integrated element picker | Chromium-based browsers only | [yes](https://github.com/gorhill/uBlock/wiki/Element-picker)
+element zapper | | [yes](https://github.com/gorhill/uBlock/wiki/Element-zapper)
 easy backup/restore of all settings | Firefox only | yes
