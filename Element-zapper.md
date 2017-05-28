@@ -1,3 +1,7 @@
+[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+
+***
+
 The purpose of the element zapper is to quickly deal with the removal of nuisance elements on a page **without** having to create one or more filters.
 
 ![a](https://cloud.githubusercontent.com/assets/585534/26530837/b51a874a-43aa-11e7-8512-0927be4d8992.png)
