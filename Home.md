@@ -27,6 +27,7 @@
         - [Hard mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode)
         - [Nightmare mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-nightmare-mode)
     - [Element picker](https://github.com/gorhill/uBlock/wiki/Element-picker)
+    - [Element zapper](https://github.com/gorhill/uBlock/wiki/Element-zapper)
     - [Strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking)
         - [Badware risks](https://github.com/gorhill/uBlock/wiki/Badware-risks)
     - [The logger](https://github.com/gorhill/uBlock/wiki/The-logger)
