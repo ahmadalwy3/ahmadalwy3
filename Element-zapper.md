@@ -17,5 +17,6 @@ Once you enter the "element-zapper mode":
     - Press the <kbd>Shift</kdb> key while clicking if you do not want to exit element-zapper mode.
 - Highlighting a page element and then pressing the <kbd>Delete</kbd> key will remove the element from the document, without quitting the element-zapper mode;
 - Pressing the <kbd>Esc</kbd> key will exit element-zapper mode.
+- On touch screen devices, swipe to exit element-zapper (or element-picker) mode.
 
 Of course, since no filters are created, all the elements you removed will be back once you reload the page.
