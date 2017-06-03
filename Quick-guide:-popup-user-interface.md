@@ -7,7 +7,7 @@
 - [The number of requests blocked](#the-number-of-requests-blocked)
 - [The tools](#the-tools)
 - [The number of domains connected](#the-number-of-domains-connected)
-- [The site-based switches](#the-site-based-switches)
+- [The per-site switches](#the-per-site-switches)
 
 ***
 
@@ -93,7 +93,7 @@ And I had click-to-play enabled in all cases, so it could have been worse (excep
 
 ***
 
-#### The site-based switches
+#### The per-site switches
 
 ![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1g.png)
 
