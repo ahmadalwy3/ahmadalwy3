@@ -83,7 +83,7 @@ There is a good correlation between the _domains connected_ count and: unneeded 
 
 Example: the web page on <http://www.ibtimes.com/> (which can be read fine in all cases, by the way):
 
- uBlock's mode | turned off | default settings | [default-deny](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
+ uBlock's mode | turned off | default settings | [default-deny](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode)
 --- | --- | --- | ---
 domains connected | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1e.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1d.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1f.png)
 privacy exposure | very high | medium | very low
