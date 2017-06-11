@@ -12,7 +12,7 @@ Once in element-picker mode, you have to point and click on the element you wish
 
 Once you click on the element, you will be presented with a modal dialog box which allows you to select, and optionally edit and create a filter for the element(s) you wish to remove from the web page.
 
-If possible, one or more network filters will be suggested, as well as a list of cosmetic filters. The top most cosmetic filter is the most specific which could be derived from the element you clicked. The bottom-most is the broadest, the least specific. Pick the one which matches best what you wish to accomplish.
+If possible, one or more network filters will be suggested, as well as a list of cosmetic filters. The top most cosmetic filter is the most specific which could be derived from the element you clicked. The bottom-most is the broadest, the least specific. Pick the one which matches best what you wish to accomplish (see [demo of this](https://www.youtube.com/watch?v=8TvCGWwQr5o)).
 
 When you click on one of the suggested filters, you will be shown what effect it will have on the page. You may want to ensure the selected filter will not also get rid of useful items on the page.
 
