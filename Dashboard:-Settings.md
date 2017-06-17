@@ -3,7 +3,7 @@
 
 ***
 
-![Figure 1](https://cloud.githubusercontent.com/assets/585534/8024482/4c6f01b0-0d03-11e5-942c-64fe9e2a3686.png)
+![Figure 1](https://user-images.githubusercontent.com/585534/27254308-dfe1dce0-5353-11e7-9dd3-913601747be6.png)
 
 ### Below more details for the non-self-explanatory items
 
