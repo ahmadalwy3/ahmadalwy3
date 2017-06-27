@@ -17,14 +17,6 @@ This is uBlock's popup UI when you click on uBlock's icon in the toolbar:
 
 ***
 
-#### The title bar
-
-![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748961/439dd57e-47d1-11e7-8579-1e5c008ee938.png)
-
-Click the title bar of the popup to go to uBlock's dashboard.
-
-***
-
 #### The large power button
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748994/858a70aa-47d1-11e7-9e2c-409b83de99b9.png)
@@ -54,6 +46,10 @@ Click the _eye-dropper_ icon to enter [element picker mode](https://github.com/g
 Click the _list_ icon to open the [logger](https://github.com/gorhill/uBlock/wiki/The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
 
 Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between opening the logger in a separate window or separate tab. uBO will remember that setting when you open the logger without the <kbd>Shift</kbd> key.
+
+#### Open the dashboard
+
+Click the _cogs_ icon to open uBlock's dashboard.
 
 ***
 
