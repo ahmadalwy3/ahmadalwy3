@@ -8,6 +8,7 @@
 
 `iframe` tags are very often used by malware code on compromised web sites -- using 3rd-party-sourced `<iframe>` to inject exploit on a user's computer is quite a common technique: 
 
+- [_"Massive AdGholas Malvertising Campaigns Use Steganography and File Whitelisting to Hide in Plain Sight"_](https://www.proofpoint.com/us/threat-insight/post/massive-adgholas-malvertising-campaigns-use-steganography-and-file-whitelisting-to-hide-in-plain-sight)
 - [_"Prince of pop trash PerezHilton pwned, visitors hit with cryptxxx"_](http://www.theregister.co.uk/2016/05/10/pop_prince_perezhilton_pwned_pours_cryptxxx/)
 - [_"CBS-affiliated Television Stations Expose Visitors to Angler Exploit Kit"_](https://blog.malwarebytes.org/threat-analysis/2016/05/cbs-affiliated-television-stations-expose-visitors-to-angler-exploit-kit/)
 - [_"Big-name sites hit by rash of malicious ads spreading crypto ransomware"_](http://arstechnica.com/security/2016/03/big-name-sites-hit-by-rash-of-malicious-ads-spreading-crypto-ransomware/)
