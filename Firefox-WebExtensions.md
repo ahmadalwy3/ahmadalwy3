@@ -51,7 +51,9 @@ Consequently this is what should happen:
 
 However this is theoretical:
 - August 2nd is in less than two weeks
-- I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, neither stable 54 nor beta 55. This is a showstopper.
+- I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, This is a showstopper: 
+    - Firefox for Android 54: no way to access the popup panel or dashboard.
+    - Firefox for Android 55 (beta): "extension corrupted" message when trying to install uBO/webext.
 
 ### Future of uBO/legacy
 
