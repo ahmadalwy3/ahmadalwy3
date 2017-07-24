@@ -43,18 +43,18 @@ These are the dates of coming Firefox stable release versions, as per [RapidRele
 
 Ideally this is what should happen:
 
-- August 2
+- August 2 + 2 weeks
     - uBO/webext-hybrid published on AMO's stable channel
     - uBO/webext published on AMO's dev channel
-- September 26
+- September 26 + 2 weeks
     - uBO/webext published on AMO's stable channel
 
 However this is theoretical:
 - August 2nd is in less than two weeks
-- I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, _this is a showstopper_: 
+- uBO/webext-hybrid on Firefox for Android is not ready yet: 
     - Firefox for Android 54: no way to access the popup panel or dashboard.
     - Firefox for Android 55 (beta): "The add-on downloaded from addons.cdn.mozilla.net could not be installed because it appears to be corrupt".
-        - Root cause has been identified: <https://bugzilla.mozilla.org/show_bug.cgi?id=1367494>.
+    - Firefox for Android 56 (nightly): works.
 
 ### Future of uBO/legacy
 
