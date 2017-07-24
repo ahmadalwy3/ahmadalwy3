@@ -50,8 +50,8 @@ Consequently this is what should happen:
     - uBO/webext published on AMO's stable channel
 
 However this is theoretical:
-    - August 2nd is in less than two weeks
-    - I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, neither stable 54 nor beta 55. This is a showstopper.
+- August 2nd is in less than two weeks
+- I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, neither stable 54 nor beta 55. This is a showstopper.
 
 ### Future of uBO/legacy
 
