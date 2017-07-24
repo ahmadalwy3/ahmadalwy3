@@ -23,6 +23,36 @@ However it appears there is an issue with installing webext extensions on Firefo
 - ~~cosmetic filters will no longer use the browser's user styles~~ [Fixed with f32868766340e2fb8ec689f4b5683a413de847b6](https://github.com/gorhill/uBlock/commit/f32868766340e2fb8ec689f4b5683a413de847b6)
 - uBO/webext has limited access to behind-the-scene network requests, unlike uBO/legacy which had full access to all behind-the-scene network requests. For example, you won't be able to see (and block) network requests made by other extensions.
 
+### Tentative schedule
+
+As stated above, the current version of uBO/webext is _really_ a hybrid version. So in this section, let's distinguish the hybrid webext version from the pure webext version: uBO/webext-hybrid vs. uBO/webext.
+
+Stable release of uBO/webext must be available to all users when [Firefox 57 is released](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
+
+Of course for practical reasons, the stable release of uBO/webext should be available on AMO in advance of Firefox 57 release date.
+
+So I am just going to try this: publish stable release of uBO/webext one release cycle ahead of Firefox 57, i.e. publish stable uBO/webext when Firefox 56 is released.
+
+However, before releasing uBO/webext to stable channel on AMO, I must release uBO/webext-hybrid first, a necessary step for a seamless transition to uBO/webext. Again, it feels reasonable to publish uBO/webext-hybrid one release cycle ahead of Firefox 56, i.e. publish stable uBO/webext-hybrid when Firefox 55 is released.
+
+These are the dates of coming Firefox stable release versions, as per [RapidRelease/Calendar](https://wiki.mozilla.org/RapidRelease/Calendar):
+
+- Firefox 55: August 2
+- Firefox 56: September 26
+- Firefox 57: November 14
+
+Consequently this is what should happen:
+
+- August 2
+    - uBO/webext-hybrid published on AMO's stable channel
+    - uBO/webext published on AMO's dev channel
+- September 26
+    - uBO/webext published on AMO's stable channel
+
+However this is theoretical:
+    - August 2nd is in less than two weeks
+    - I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, neither stable 54 nor beta 55. This is a showstopper.
+
 ### Future of uBO/legacy
 
 For all those Firefox and Firefox-based browsers based on Firefox v53 and less, the dev channel of uBO will cease to work, and they will have to install manually the `xpi` version from the repo here if you want to keep using the dev version of uBO, or install the [stable version of uBO on AMO](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/).
