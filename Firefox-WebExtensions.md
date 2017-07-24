@@ -62,3 +62,5 @@ As of writing, there is no plan to cease development of uBO/legacy. Hypothetical
 ### Miscellaneous
 
 [Issue #2795](https://github.com/gorhill/uBlock/issues/2795) will be a collection of [bugzilla.mozilla.org](https://bugzilla.mozilla.org/) issues which currently affect the uBO/webext specifically.
+
+Be sure to create backups of your uBO settings, if the transation from uBO/legacy to uBO/webext fails, you can always just restore all your settings from the backup file (see [_Settings_ pane in the dashboard for the backup/restore features](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#backuprestore-section)).
