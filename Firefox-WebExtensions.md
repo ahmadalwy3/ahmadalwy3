@@ -41,7 +41,7 @@ These are the dates of coming Firefox stable release versions, as per [RapidRele
 - Firefox 56: September 26
 - Firefox 57: November 14
 
-Consequently this is what should happen:
+Ideally this is what should happen:
 
 - August 2
     - uBO/webext-hybrid published on AMO's stable channel
@@ -54,7 +54,7 @@ However this is theoretical:
 - I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, _this is a showstopper_: 
     - Firefox for Android 54: no way to access the popup panel or dashboard.
     - Firefox for Android 55 (beta): "The add-on downloaded from addons.cdn.mozilla.net could not be installed because it appears to be corrupt".
-        - Root cause has been identified, working to fix the issue.
+        - Root cause has been identified. I have a fix, however with this fix, it appears I would have to release a separate uBO/webext version for Firefox for Android. I need to investigate more.
 
 ### Future of uBO/legacy
 
