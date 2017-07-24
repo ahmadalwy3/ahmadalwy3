@@ -54,7 +54,7 @@ However this is theoretical:
 - I can't install a functional version of uBO/webext-hybrid on Firefox for Android yet, _this is a showstopper_: 
     - Firefox for Android 54: no way to access the popup panel or dashboard.
     - Firefox for Android 55 (beta): "The add-on downloaded from addons.cdn.mozilla.net could not be installed because it appears to be corrupt".
-        - Any help to identify the source of the problem is welcome.
+        - Root cause has been identified, working to fix the issue.
 
 ### Future of uBO/legacy
 
