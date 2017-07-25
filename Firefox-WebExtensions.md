@@ -39,13 +39,13 @@ However, before releasing uBO/webext to stable channel on AMO, I must release uB
 
 These are the dates of coming Firefox stable release versions, as per [RapidRelease/Calendar](https://wiki.mozilla.org/RapidRelease/Calendar):
 
-- Firefox 55: August 2
+- Firefox 55: August 8
 - Firefox 56: September 26
 - Firefox 57: November 14
 
 Ideally this is what should happen:
 
-- August 2 + 2 weeks
+- August 8 + 2 weeks
     - uBO/webext-hybrid published on AMO's stable channel
     - uBO/webext published on AMO's dev channel
 - September 26 + 2 weeks
