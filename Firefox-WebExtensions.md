@@ -1,6 +1,6 @@
 | Tentative schedule | July 19 | August 22 | October 3 | November 14 |
 | ----- |:-----:|:-----:|:-----:|:-----:|
-| Firefox stable is...  | Firefox 54 | Firefox 55 | Firefox 56 | Firefox 57 |
+| Firefox stable is...  | Firefox 54 | Firefox 55 | Firefox 56 | [Firefox 57](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/) |
 | AMO dev channel | [hybrid<br>uBO/webext](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta) | uBO/webext |       |       |
 | AMO stable channel |       | hybrid<br>uBO/webext | uBO/webext |       |
 | Blocking |       | [1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)<br>[1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401) |       |
