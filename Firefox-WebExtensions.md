@@ -21,7 +21,7 @@ However it appears there is an issue with installing webext extensions on Firefo
 - `script:contains` filters will stop working
     - uBO's own filter lists have long ceased to rely on this filter syntax to solve reported filtering issues.
 - ~~cosmetic filters will no longer use the browser's user styles~~ [Fixed with f32868766340e2fb8ec689f4b5683a413de847b6](https://github.com/gorhill/uBlock/commit/f32868766340e2fb8ec689f4b5683a413de847b6)
-- uBO/webext has limited access to behind-the-scene network requests, unlike uBO/legacy which had full access to all behind-the-scene network requests. For example, you won't be able to see (and block) network requests made by other extensions.
+- uBO/webext has limited access to behind-the-scene network requests, unlike uBO/legacy which had full access to all behind-the-scene network requests. For example, you won't be able to see (and block) network requests made by other extensions. Related: ["Support moz-extension: urls in MatchPattern"](https://bugzilla.mozilla.org/show_bug.cgi?id=1271354#c14).
 
 ### Tentative schedule
 
