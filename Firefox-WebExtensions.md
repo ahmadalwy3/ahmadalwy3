@@ -1,5 +1,7 @@
 The webext (-hybrid) version of uBO ("uBO/webext") has been released to the [dev channel on AMO](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta) starting with 1.13.9b0.
 
+This page may update often until there is a stable release of uBO/webext.
+
 ### First install
 
 The first time uBO/webext executes, there might be a noticeable delay (a few seconds): this is caused by the fact that uBO/webext will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext is executed, after this the import step will be skipped.
