@@ -1,9 +1,9 @@
-| Tentative schedule    | July 19           | August 22         | October 3         |
-| --------------------- | ----------------- | ----------------- | ----------------- |
-| Firefox stable is...  | Firefox 54        | Firefox 55        | Firefox 56        |
-| AMO dev channel       | [uBO/webext-hybrid](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta) :heavy_check_mark: | uBO/webext        |                   |
-| AMO stable channel    |                   | uBO/webext-hybrid | uBO/webext        |
-| Blocking              |                   | [1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)<br>[1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401)                  |                   |
+| Tentative schedule | July 19 | August 22 | October 3 | November 14 |
+| ----- |:-----:|:-----:|:-----:|:-----:|
+| Firefox stable is...  | Firefox 54 | Firefox 55 | Firefox 56 | Firefox 57 |
+| AMO dev channel | [hybrid<br>uBO/webext](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta) | uBO/webext |       |       |
+| AMO stable channel |       | hybrid<br>uBO/webext | uBO/webext |       |
+| Blocking |       | [1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)<br>[1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401) |       |
 
 This page may update often until there is a stable release of uBO/webext.
  
