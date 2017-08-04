@@ -4,7 +4,9 @@ More specifically, debunking [@christianbute](https://twitter.com/christianbute)
 
 > Yes, even uBlock Origin slowed down my browsing experience. On stock settings or custom lists, doesn't matter. Don't want to mention others
 
-My objective measurements, benchmarking on Chromium 59 on Linux 64-bit.
+I can't unfortunately investigate this claim on Microsoft Edge, as I do not have Windows. However, both extensions uses the same code on Microsoft Edge as they do on Chromium, thus I can at least benchmark with Chromium.
+
+My objective measurements, benchmarking on Chromium 59 on Linux 64-bit:
 
 uBO 1.13.8
 - default settings/lists
