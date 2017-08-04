@@ -21,7 +21,7 @@ The legacy storage is left untouched by uBO/webext-hybrid, so you can always go 
 
 As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Differences_between_desktop_and_Android), only with Firefox Mobile 55 (beta) you can access uBO's popup panel.
 
-However it appears there is an issue with installing webext extensions on Firefox for Android 55, the browser thinks the extensions are corrupted -- this does not appear specific to uBO/webext. Consequently, for now it seems it's best to stick to uBO/legacy on Firefox for Android. **Update:** this is fixed: <https://bugzilla.mozilla.org/show_bug.cgi?id=1367494>.
+~~However it appears there is an issue with installing webext extensions on Firefox for Android 55, the browser thinks the extensions are corrupted -- this does not appear specific to uBO/webext. Consequently, for now it seems it's best to stick to uBO/legacy on Firefox for Android.~~ **Update:** this is fixed: <https://bugzilla.mozilla.org/show_bug.cgi?id=1367494>.
 
 ### Differences with uBO/legacy
 
