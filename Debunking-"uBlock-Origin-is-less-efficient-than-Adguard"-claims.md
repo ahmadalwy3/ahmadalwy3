@@ -1,4 +1,4 @@
-More specifically, debunking [@christianbute](https://twitter.com/christianbute)'s claim in <https://twitter.com/christianbute/status/893462816270815232>. Two teets quoted verbatim:
+More specifically, debunking [@christianbute](https://twitter.com/christianbute)'s claim in <https://twitter.com/christianbute/status/893462816270815232>. Two tweets quoted verbatim:
 
 > According to my tests, the best ad and malwaretising blocker for @MicrosoftEdge is AdGuard. Anything else just made the performance worse.
 
