@@ -9,19 +9,19 @@ This page may update often until there is a stable release of uBO/webext.
  
 ### First install
 
-The first time uBO/webext executes, there might be a noticeable delay (a few seconds): this is caused by the fact that uBO/webext will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext is executed, after this the import step will be skipped.
+The first time uBO/webext-hybrid executes, there might be a noticeable delay (a few seconds): this is caused by the fact that uBO/webext-hybrid will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext-hybrid is executed, after this the import step will be skipped.
 
-If you subsequently remove uBO/webext, this will cause the webext storage to be removed by Firefox, and upon re-installing uBO/webext version, the import code will again kick in.
+If you subsequently remove uBO/webext-hybrid, this will cause the webext storage to be removed by Firefox, and upon re-installing the uBO/webext-hybrid version, the import code will again kick in.
 
-Note that uBO/webext will still be labelled as "Legacy" in `about:addons`, because uBO/webext is really a [webext-hybrid extension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Embedded_WebExtensions). Once the legacy storage has been imported at first install by the thin legacy wrapper, uBO/webext will fully function as a pure webext extension despite the "Legacy" label.
+Note that uBO/webext-hybrid will still be labelled as "Legacy" in `about:addons`, because uBO/webext-hybrid is really a [webext-hybrid extension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Embedded_WebExtensions). Once the legacy storage has been imported at first install by the thin legacy wrapper, uBO/webext-hybrid will fully function as a pure webext extension despite the "Legacy" label.
 
-The legacy storage is left untouched by uBO/webext, so you can always go back to uBO/legacy (stable release) if you do not want to use the webext version in the short term.
+The legacy storage is left untouched by uBO/webext-hybrid, so you can always go back to uBO/legacy (stable release) if you do not want to use the webext-hybrid version in the short term.
 
 ### Firefox for Android
 
 As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Differences_between_desktop_and_Android), only with Firefox Mobile 55 (beta) you can access uBO's popup panel.
 
-However it appears there is an issue with installing webext extensions on Firefox for Android 55, the browser thinks the extensions are corrupted -- this does not appear specific to uBO/webext. Consequently, for now it seems it's best to stick to uBO/legacy on Firefox for Android.
+However it appears there is an issue with installing webext extensions on Firefox for Android 55, the browser thinks the extensions are corrupted -- this does not appear specific to uBO/webext. Consequently, for now it seems it's best to stick to uBO/legacy on Firefox for Android. **Update:** this is fixed: <https://bugzilla.mozilla.org/show_bug.cgi?id=1367494>.
 
 ### Differences with uBO/legacy
 
@@ -32,7 +32,7 @@ However it appears there is an issue with installing webext extensions on Firefo
 
 ### Tentative schedule
 
-As stated above, the current version of uBO/webext is _really_ a hybrid version. So in this section, let's distinguish the hybrid webext version from the pure webext version: uBO/webext-hybrid vs. uBO/webext.
+As stated above, the current version of uBO/webext-hybrid is _really_ a hybrid version. The pure webext version of uBO, uBO/webext is now available in the [Releases section](https://github.com/gorhill/uBlock/releases).
 
 Stable release of uBO/webext must be available to all users when [Firefox 57 is released](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
 
