@@ -73,3 +73,7 @@ Memory usage after all tabs loaded (see pic, top is after browser launch + garba
 ### Conclusion:
 
 Both extensions use essentially the same code on Microsoft Edge as they do on Chromium, so it is expected they will have the same relative performance outcome. Given that uBlock Origin consumes 1/3 of CPU cycles to actually accomplish more than Adguard (uBO's defaults includes Peter Lowe's and malware lists), to claim that the results are completely reversed on Microsoft Edge is quite an extraordinary claim, and thus needs to be substantiated by more than just a completely subjective and data-less assessment such as "methodology is real life usage".
+
+***
+
+Apparently, publishing results backed by data + methodology to debunk an unsubstantiated claim is ["attacking"](https://twitter.com/christianbute/status/893523529437765632). [Subjectivity](https://en.wikipedia.org/wiki/Subjectivity), [bias](https://en.wikipedia.org/wiki/Bias), [placebo effect](https://en.wikipedia.org/wiki/Placebo) are a thing, and a way to counter these is to stick to objective data, which is what I did above.
