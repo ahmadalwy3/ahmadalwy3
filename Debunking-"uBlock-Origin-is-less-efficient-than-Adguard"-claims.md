@@ -21,7 +21,7 @@ Steps to reproduce:
 1. Launch Chromium with only one of the blocker enabled
     - with pinned Extensions tab + only one new tab
     - no other extension
-2. Open task manager, wait for garbage collection in extension
+2. Open Chromium's own Task manager, wait for garbage collection in extension
 3. Open background page of extension, select "Performance" pane
 4. Click "Record" button in performance pane
 5. Select the already opened "New tab" in browser
