@@ -13,7 +13,7 @@ The first time uBO/webext-hybrid executes, there might be a noticeable delay (a 
 
 If you subsequently remove uBO/webext-hybrid, this will cause the webext storage to be removed by Firefox, and upon re-installing the uBO/webext-hybrid version, the import code will again kick in.
 
-Note that uBO/webext-hybrid will still be labelled as "Legacy" in `about:addons`, because uBO/webext-hybrid is really a [webext-hybrid extension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Embedded_WebExtensions). Once the legacy storage has been imported at first install by the thin legacy wrapper, uBO/webext-hybrid will fully function as a pure webext extension despite the "Legacy" label.
+Note that uBO/webext-hybrid will still be labelled as "Legacy" in `about:addons`, because uBO/webext-hybrid is really an [embedded WebExtension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Embedded_WebExtensions). Once the legacy storage has been imported at first install by the thin legacy wrapper, uBO/webext-hybrid will fully function as a pure webext extension despite the "Legacy" label.
 
 The legacy storage is left untouched by uBO/webext-hybrid, so you can always go back to uBO/legacy (stable release) if you do not want to use the webext-hybrid version in the short term.
 
@@ -32,7 +32,7 @@ As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions
 
 ### Tentative schedule
 
-As stated above, the current version of uBO/webext-hybrid is _really_ a hybrid version. The pure webext version of uBO, uBO/webext is now available in the [Releases section](https://github.com/gorhill/uBlock/releases).
+As stated above, the current version of uBO/webext-hybrid is _really_ an embedded WebExtension. The pure webext version of uBO, uBO/webext is now available in the [Releases section](https://github.com/gorhill/uBlock/releases).
 
 Stable release of uBO/webext must be available to all users when [Firefox 57 is released](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
 
