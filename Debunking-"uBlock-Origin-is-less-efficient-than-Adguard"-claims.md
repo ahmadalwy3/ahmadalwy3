@@ -57,7 +57,7 @@ Steps to reproduce:
 Results:
 
 CPU usage (see pic):
-- uBlock Origin (top): 46,62.3 ms (3,403.6 ms + 1,258.7 ms)
+- uBlock Origin (top): 4,662.3 ms (3,403.6 ms + 1,258.7 ms)
 - Adguard (bottom): 14,424 ms (11,638.8 ms + 2,785.2 ms)
 
 ![c](https://user-images.githubusercontent.com/585534/28976229-1a45cc20-790b-11e7-83df-31372efd5e93.png)
