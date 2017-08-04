@@ -31,6 +31,8 @@ Steps to reproduce:
 9. Click "Stop" button in Performance pane
 10. Screenshot results in "Performance" pane
 
+For the "memory usage" benchmark: all the same steps except developer tools of extension is not opened, and only Task manager is taken into account. Wait at least 2 minutes after step 8. before taking a screenshot of Task manager.
+
 20-tabs bookmark folder in bookmarks bar (perused from top posts on Hacker News in the last year, hence "real life usage"):
 - http://www.hntoplinks.com/year/2
 - https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber
