@@ -1,10 +1,10 @@
-| Tentative schedule | July 19 | August 22 | October 3 | November 14 |
-| ----- |:-----:|:-----:|:-----:|:-----:|
-| Firefox stable is...  | Firefox 54 | Firefox 55 | Firefox 56 | [Firefox 57](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/) |
-| AMO dev channel | [uBO/webext<br>hybrid](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta) | uBO/webext |       |       |
-| AMO stable channel |       | uBO/webext<br>hybrid | uBO/webext |       |
-| Blocking issues |       | ~~[1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)~~ |       |
-| Non-blocking issues |       | [1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401) |       |
+| Tentative schedule | July 19 | August 10 | August 22 | October 3 | November 14 |
+| ----- |:-----:|:-----:|:-----:|:-----:|:-----:|
+| Firefox stable is...  | Firefox 54 | Firefox 55 |        | Firefox 56 | [Firefox 57](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/) |
+| AMO dev channel | uBO/webext<br>hybrid | uBO/webext |       |       |       |
+| AMO stable channel |       |       | uBO/webext<br>hybrid | uBO/webext |       |
+| Blocking |       | ~~[1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)~~ |       |
+| Non-blocking |       | [1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401) |       |
 
 This page may update often until there is a stable release of uBO/webext.
  
