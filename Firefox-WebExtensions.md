@@ -1,3 +1,5 @@
+This page may update often until there is a stable release of uBO/webext.
+
 | Tentative schedule | July 19 | August 10 | August 22 | October 3 | November 14 |
 | ----- |:-----:|:-----:|:-----:|:-----:|:-----:|
 | Firefox stable is...  | Firefox 54 | Firefox 55 |        | Firefox 56 | [Firefox 57](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/) |
@@ -6,8 +8,11 @@
 | Blocking |       | ~~[1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)~~ |       |
 | Non-blocking |       | [1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401)<br>[1303384](https://bugzilla.mozilla.org/show_bug.cgi?id=1303384) |       |
 
-This page may update often until there is a stable release of uBO/webext.
- 
+- **uBO/legacy**: compatible with Firefox 24 to Firefox 56
+- **uBO/webext-hybrid**: compatible with Firefox 54 to Firefox 56
+    - Use to migrate settings from uBO/legacy to uBO/webext
+- **uBO/webext**: compatible with Firefox 54 and above
+
 ### First install
 
 The first time uBO/webext-hybrid executes, there might be a noticeable delay (a few seconds): this is caused by the fact that uBO/webext-hybrid will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext-hybrid is executed, after this the import step will be skipped.
