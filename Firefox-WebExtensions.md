@@ -4,7 +4,7 @@
 | AMO dev channel | [uBO/webext<br>hybrid](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta?page=1#version-1.13.9b7) | [uBO/webext](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta) |       |       |       |
 | AMO stable channel |       |       | uBO/webext<br>hybrid | uBO/webext |       |
 | Blocking |       | ~~[1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)~~ |       |
-| Non-blocking |       | [1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401) |       |
+| Non-blocking |       | [1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401)<br>[1303384](https://bugzilla.mozilla.org/show_bug.cgi?id=1303384) |       |
 
 This page may update often until there is a stable release of uBO/webext.
  
