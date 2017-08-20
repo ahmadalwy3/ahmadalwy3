@@ -74,6 +74,8 @@ For all those Firefox and Firefox-based browsers based on Firefox v53 and less, 
 
 As of writing, there is no plan to cease development of uBO/legacy. Hypothetically, this may change in some future if ever it becomes really non-trivial to keep a working the legacy version.
 
+I do expect users of legacy versions of Firefox to test and report any issues with uBO -- I can't afford the time needed to test all those versions.
+
 ### Miscellaneous
 
 [Issue #2795](https://github.com/gorhill/uBlock/issues/2795) will be a collection of [bugzilla.mozilla.org](https://bugzilla.mozilla.org/) issues which currently affect the uBO/webext specifically.
