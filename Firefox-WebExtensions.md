@@ -23,7 +23,7 @@ Note that uBO/webext-hybrid will still be labelled as "Legacy" in `about:addons`
 
 The legacy storage is left untouched by uBO/webext-hybrid, so you can always go back to uBO/legacy (stable release) if you do not want to use the webext-hybrid version in the short term.
 
-[1] A few seconds on my older than mainstream CPU with default settings/lists. The more filter lists you have enabled, the longer it will take.
+<sub>[1] A few seconds on my older than mainstream CPU with default settings/lists. The more filter lists you have enabled, the longer it will take.</sub>
 
 ### Firefox for Android
 
