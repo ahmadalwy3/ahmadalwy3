@@ -15,13 +15,15 @@ This page may update often until there is a stable release of uBO/webext.
 
 ### First install
 
-The first time uBO/webext-hybrid executes, there might be a noticeable delay (a few seconds): this is caused by the fact that uBO/webext-hybrid will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext-hybrid is executed, after this the import step will be skipped.
+The first time uBO/webext-hybrid executes, there might be a noticeable delay<sup>[1]*</sup>: this is caused by the fact that uBO/webext-hybrid will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext-hybrid is executed, after this the import step will be skipped.
 
 If you subsequently remove uBO/webext-hybrid, this will cause the webext storage to be removed by Firefox, and upon re-installing the uBO/webext-hybrid version, the import code will again kick in.
 
 Note that uBO/webext-hybrid will still be labelled as "Legacy" in `about:addons`, because uBO/webext-hybrid is really an [embedded WebExtension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Embedded_WebExtensions). Once the legacy storage has been imported at first install by the thin legacy wrapper, uBO/webext-hybrid will fully function as a pure webext extension despite the "Legacy" label.
 
 The legacy storage is left untouched by uBO/webext-hybrid, so you can always go back to uBO/legacy (stable release) if you do not want to use the webext-hybrid version in the short term.
+
+[1] A few seconds on my older than mainstream CPU with default settings/lists. The more filter lists you have enabled, the longer it will take.
 
 ### Firefox for Android
 
