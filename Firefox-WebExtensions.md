@@ -15,7 +15,7 @@ This page may update often until there is a stable release of uBO/webext.
 
 ### First install
 
-The first time uBO/webext-hybrid executes, there might be a noticeable delay<sup>[1]*</sup>: this is caused by the fact that uBO/webext-hybrid will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext-hybrid is executed, after this the import step will be skipped.
+The first time uBO/webext-hybrid executes, there might be a noticeable delay<sup>[1]</sup>: this is caused by the fact that uBO/webext-hybrid will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext-hybrid is executed, after this the import step will be skipped.
 
 If you subsequently remove uBO/webext-hybrid, this will cause the webext storage to be removed by Firefox, and upon re-installing the uBO/webext-hybrid version, the import code will again kick in.
 
