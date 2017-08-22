@@ -57,7 +57,7 @@ This is what I plan:
 - August 8 + 2 weeks
     - uBO/webext-hybrid published on AMO's stable channel
     - uBO/webext published on AMO's dev channel
-- uBO/webext-hybrid publication + 4 weeks = September 26
+- uBO/webext-hybrid publication + 4 weeks = September 19
     - uBO/webext published on AMO's stable channel
     - Could be sooner if uBO/webext-hybrid is being used by most users sooner than expected.
 
