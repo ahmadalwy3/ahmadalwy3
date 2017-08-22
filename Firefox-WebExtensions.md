@@ -44,11 +44,7 @@ As stated above, the current version of uBO/webext-hybrid is _really_ an embedde
 
 Stable release of uBO/webext must be available to all users when [Firefox 57 is released](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
 
-Of course for practical reasons, the stable release of uBO/webext should be available on AMO in advance of Firefox 57 release date.
-
-So I am just going to try this: publish stable release of uBO/webext one release cycle ahead of Firefox 57, i.e. publish stable uBO/webext when Firefox 56 is released.
-
-However, before releasing uBO/webext to stable channel on AMO, I must release uBO/webext-hybrid first, a necessary step for a seamless transition to uBO/webext. Again, it feels reasonable to publish uBO/webext-hybrid one release cycle ahead of Firefox 56, i.e. publish stable uBO/webext-hybrid when Firefox 55 is released.
+However, before releasing uBO/webext to stable channel on AMO, I must release uBO/webext-hybrid first, a necessary step for a seamless transition to uBO/webext.
 
 These are the dates of coming Firefox stable release versions, as per [RapidRelease/Calendar](https://wiki.mozilla.org/RapidRelease/Calendar):
 
@@ -56,17 +52,14 @@ These are the dates of coming Firefox stable release versions, as per [RapidRele
 - Firefox 56: September 26
 - Firefox 57: November 14
 
-Ideally this is what should happen:
+This is what I plan:
 
 - August 8 + 2 weeks
     - uBO/webext-hybrid published on AMO's stable channel
     - uBO/webext published on AMO's dev channel
-- September 26 + 2 weeks
+- uBO/webext-hybrid publication + 4 weeks = September 26
     - uBO/webext published on AMO's stable channel
-
-However this is theoretical:
-- uBO/webext-hybrid on Firefox for Android is not ready yet: 
-    - Firefox for Android 54: no way to access the popup panel or dashboard.
+    - Could be sooner if uBO/webext-hybrid is being used by most users sooner than expected.
 
 ### Future of uBO/legacy
 
