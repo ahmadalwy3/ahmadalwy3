@@ -40,7 +40,7 @@ As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions
 
 ### Tentative schedule
 
-As stated above, the current version of uBO/webext-hybrid is _really_ an embedded WebExtension. The pure webext version of uBO, uBO/webext is now available in the [Releases section](https://github.com/gorhill/uBlock/releases).
+As stated above, the current version of uBO/webext-hybrid is _really_ an embedded WebExtension. The pure webext version of uBO, uBO/webext is now available in the [Releases section](https://github.com/gorhill/uBlock/releases), and in the [dev channel on AMO](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta).
 
 Stable release of uBO/webext must be available to all users when [Firefox 57 is released](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
 
