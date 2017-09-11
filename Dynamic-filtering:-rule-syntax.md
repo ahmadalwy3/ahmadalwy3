@@ -4,9 +4,12 @@
 
 ### Rule syntax
 
-A dynamic filtering rule is made of four components: a source hostname, a destination hostname, a request type, and then a keyword which tells what to do with a request which happens to match the three former components.
+A dynamic filtering rule is made of four components: a source, a destination, a request type, and then a keyword which tells what to do with a request which happens to match the three former components.
 
-    source-hostname destination-hostname request-type action
+| rule type | source | destination | request type | action |
+|---|---|---|---|---|
+| Type-based | `*`<br>_source hostname_ | `*`<br>&nbsp; | `*`<br>`image`<br>`inline-script`<br>`1p-script`<br>`3p-script`<br>`3p-frame` | `block`<br>`noop`<br>`allow` |
+| Hostname-based | `*`<br>_source hostname_ | <br>_destination hostname_ | <br>`*` | `block`<br>`noop`<br>`allow` |
 
 Source hostname always corresponds to the hostname extracted from the URL of the web page in the browser.
 
