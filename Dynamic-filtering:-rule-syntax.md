@@ -8,8 +8,8 @@ A dynamic filtering rule is made of four components: a source, a destination, a 
 
 | rule type | source | destination | request type | action |
 |---|---|---|---|---|
-| Type-based | `*`<br>_source hostname_ | `*`<br>&nbsp; | `*`<br>`image`<br>`inline-script`<br>`1p-script`<br>`3p-script`<br>`3p-frame` | `block`<br>`noop`<br>`allow` |
-| Hostname-based | `*`<br>_source hostname_ | <br>_destination hostname_ | <br>`*` | `block`<br>`noop`<br>`allow` |
+| **Type-based** | `*`<br>_hostname_ | `*`<br>&nbsp; | `*`<br>`image`<br>`inline-script`<br>`1p-script`<br>`3p-script`<br>`3p-frame` | `block`<br>`noop`<br>`allow` |
+| **Hostname-based** | `*`<br>_hostname_ | <br>_hostname_ | <br>`*` | `block`<br>`noop`<br>`allow` |
 
 Source hostname always corresponds to the hostname extracted from the URL of the web page in the browser.
 
@@ -19,7 +19,7 @@ The rule always automatically propagates to all subdomains of the source hostnam
 
 The type is the type of the fetched resource.
 
-A request can be blocked (`block`), allowed (`allow`), or ignored (`noop`). A `noop` rule will cause matching network requests to be ignored by the dynamic filtering engine, but those ignored network requests will still be subjected to static filtering.
+A request can be blocked (`block`), allowed (`allow`), or ignored (`noop`). A `noop` rule will cause matching network requests to be ignored by the dynamic filtering engine, but those ignored network requests will still be subjected to static filtering (filter lists).
 
 ***
 
