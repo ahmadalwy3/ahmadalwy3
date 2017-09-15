@@ -69,6 +69,8 @@ As of writing, there is no plan to cease development of uBO/legacy. Hypothetical
 
 I do expect users of legacy versions of Firefox to test and report any issues with uBO -- I can't afford the time needed to test all those versions.
 
+If you still want to use uBO/legacy, a volunteer created an extension to enable uBO/webext to update automatically: <https://github.com/JustOff/ublock0-updater>.
+
 ### Miscellaneous
 
 [Issue #2795](https://github.com/gorhill/uBlock/issues/2795) will be a collection of [bugzilla.mozilla.org](https://bugzilla.mozilla.org/) issues which currently affect the uBO/webext specifically.
