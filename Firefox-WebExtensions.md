@@ -1,3 +1,27 @@
+### Read carefully if using uBO/webext
+
+There are many [reports](http://forums.mozillazine.org/viewtopic.php?p=14764474#p14764474) of people experiencing issues with some web sites, or images not loading, etc. Turns out many of these are a result of using some legacy extensions along uBO/webext. For instance, Reek's AAK in [GreaseMonkey](https://www.reddit.com/r/uBlockOrigin/comments/6xl3em/image_links_suddenly_blocked_by_ublock_origin/) has been [causing](https://www.reddit.com/r/firefox/comments/6x8hbe/ublock_origin_is_a_webextension_in_amo_stable/dmf6j5k/) issues with images not loading.
+
+If you experience such issue, you will have to disable all your legacy extensions and see if this fixes your issue. If so, then you will have to re-enable your legacy extension one by one to find the one(s) causing the problem.
+
+Those legacy extensions can cause multi-process to be disabled in your browser, and apparently when multi-process is disabled, this can cause many cases of [page load failure](https://bugzilla.mozilla.org/show_bug.cgi?id=1348497#c27).
+
+Everything is moving to WebExtensions, so it might be just a good time to start giving up on legacy extensions, they are not going to be supported at all in a couple of weeks when Firefox 57 is released.
+
+There are also Firefox issues specific to webext extensions which can cause a web page to load improperly:
+
+- [Extension with listener at webRequest.onHeadersReceived breaks navigation (crash/blank page) when the previous page performs sync XHR upon unload](https://bugzilla.mozilla.org/show_bug.cgi?id=1401516)
+- [Empty page using uBo / ABP webext (even whitelisting the site)](https://bugzilla.mozilla.org/show_bug.cgi?id=1396226)
+- [Presence of an Webextension makes the head element missing on (iframe) load](https://bugzilla.mozilla.org/show_bug.cgi?id=1375875)
+
+Another option is to install [uBO 1.13.8](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/?page=1#version-1.13.8) and disable auto-update for it.
+
+***
+
+### Tentative schedule
+
+(This needs to be updated -- there might be obsolete information below)
+
 This page may update often until there is a stable release of uBO/webext.
 
 | Tentative schedule | July 19 | Aug. 10 | Aug. 22 | Sep. 19 | Nov. 14 |
