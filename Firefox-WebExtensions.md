@@ -4,7 +4,7 @@ There are many [reports](http://forums.mozillazine.org/viewtopic.php?p=14764474#
 
 If you experience such issue, you will have to disable all your legacy extensions and see if this fixes your issue. If so, then you will have to re-enable your legacy extension one by one to find the one(s) causing the problem.
 
-Those legacy extensions can cause multi-process to be disabled in your browser, and apparently when multi-process is disabled, this can cause many cases of [page load failure](https://bugzilla.mozilla.org/show_bug.cgi?id=1348497#c27).
+Those legacy extensions can cause multi-process to be disabled in your browser, and apparently **when multi-process is disabled**, this can cause many cases of [page load failure](https://bugzilla.mozilla.org/show_bug.cgi?id=1348497#c27).
 
 Everything is moving to WebExtensions, so it might be just a good time to start giving up on legacy extensions, they are not going to be supported at all in a couple of weeks when Firefox 57 is released.
 
