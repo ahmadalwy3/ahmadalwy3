@@ -71,7 +71,7 @@ The filter syntax for `redirect=` filter option is a subset of ABP-compatible fi
     ||example.com/path/to/image$image,redirect=2x2-transparent.png,domain=github.com
     */$script,redirect=noopjs,first-party
 
-Specifically, notice that the filter **must** start with `||` or `*`, otherwise no redirection directive will be created, though a blocking filter will be created. Essentially, a redirection filter must always have a destination hostname specified, or `*` if the filter is to apply to all destinations. A source hostname must always be specified, so the `domain=` option is mandatory. It is allowed to use `first-party` instead of `domain=`, in which case the source hostname will be that of the destination hostname.
+Specifically, notice that the filter **must** start with `||` or `*`, otherwise no redirection directive will be created, though a blocking filter will be created. Essentially, a redirection filter must always have a destination hostname specified, or `*` if the filter is to apply to all destinations. A source hostname should always be specified, so the `domain=` option is strongly recommended. It is allowed to use `first-party` instead of `domain=`, in which case the source hostname will be that of the destination hostname.
 
 ### Cosmetic filters
 
