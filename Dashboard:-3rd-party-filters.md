@@ -25,7 +25,7 @@ Related: [_"Launch and filter lists load performance"_](https://github.com/gorhi
 
 If you check this option, uBlock Origin will update automatically the currently selected filter lists at regular interval. This option is checked by default (recommended).
 
-Filter lists are automatically updated roughly every 5 days by default, or according to the _Expires_ directive present in some filter lists.
+Filter lists are automatically updated roughly every 5 days by default, or according to the _Expires_ directive present in some filter lists. An _Expires_ directive lower than two days will be ignored and the update period will be set to two days.
 
 ##### Update now
 
