@@ -1,3 +1,9 @@
+Stable release of uBO/webext has been available on AMO since early September 2017. uBO/webext is compatible with Firefox 52 and above. With Firefox 52, some features in uBO/webext may be disabled.
+
+- [Read carefully if using uBO/webext](#read-carefully-if-using-ubowebext)
+- [Firefox for Android](#firefox-for-android)
+- [Future of uBO/legacy](#future-of-ubolegacy)
+
 ### Read carefully if using uBO/webext
 
 There are many [reports](http://forums.mozillazine.org/viewtopic.php?p=14764474#p14764474) of people experiencing issues with some web sites, or images not loading, etc. Turns out many of these are a result of using some legacy extensions along uBO/webext. For instance, Reek's AAK in [GreaseMonkey](https://www.reddit.com/r/uBlockOrigin/comments/6xl3em/image_links_suddenly_blocked_by_ublock_origin/) has been [causing](https://www.reddit.com/r/firefox/comments/6x8hbe/ublock_origin_is_a_webextension_in_amo_stable/dmf6j5k/) issues with images not loading.
@@ -18,39 +24,6 @@ Another option is to install [uBO 1.13.8](https://addons.mozilla.org/en-US/firef
 
 Having issues with uBO's cache storage being wiped-out on every restart of the browser? See if <http://forums.mozillazine.org/viewtopic.php?f=9&t=3034189> helps.
 
-***
-
-### Tentative schedule
-
-(This needs to be updated -- there might be obsolete information below)
-
-This page may update often until there is a stable release of uBO/webext.
-
-| Tentative schedule | July 19 | Aug. 10 | Aug. 22 | Sep. 19 | Nov. 14 |
-| ----- |:-----:|:-----:|:-----:|:-----:|:-----:|
-| Firefox stable is...  | Firefox 54 | Firefox 55 |        |         | [Firefox 57](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/) |
-| AMO dev channel | [uBO/webext<br>hybrid](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta?page=1#version-1.13.9b7) | [uBO/webext](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta) |       |       |       |
-| AMO stable channel |       |       | uBO/webext<br>hybrid | uBO/webext |       |
-| Blocking |       | ~~[1367494](https://bugzilla.mozilla.org/show_bug.cgi?id=1367494)~~ |       |
-| Non-blocking |       | [1313401](https://bugzilla.mozilla.org/show_bug.cgi?id=1313401)<br>[1303384](https://bugzilla.mozilla.org/show_bug.cgi?id=1303384) |       |
-
-- **uBO/legacy**: compatible with Firefox 24 to Firefox 56
-- **uBO/webext-hybrid**: compatible with Firefox 54 to Firefox 56
-    - Use to migrate settings from uBO/legacy to uBO/webext
-- **uBO/webext**: compatible with Firefox 54 and above
-
-### First install
-
-The first time uBO/webext-hybrid executes, there might be a noticeable delay<sup>[1]</sup>: this is caused by the fact that uBO/webext-hybrid will import all the data from legacy storage, into webext storage. This is done only the first time the uBO/webext-hybrid is executed, after this the import step will be skipped.
-
-If you subsequently remove uBO/webext-hybrid, this will cause the webext storage to be removed by Firefox, and upon re-installing the uBO/webext-hybrid version, the import code will again kick in.
-
-Note that uBO/webext-hybrid will still be labelled as "Legacy" in `about:addons`, because uBO/webext-hybrid is really an [embedded WebExtension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Embedded_WebExtensions). Once the legacy storage has been imported at first install by the thin legacy wrapper, uBO/webext-hybrid will fully function as a pure webext extension despite the "Legacy" label.
-
-The legacy storage is left untouched by uBO/webext-hybrid, so you can always go back to uBO/legacy (stable release) if you do not want to use the webext-hybrid version in the short term.
-
-<sub>[1] A few seconds on my older than mainstream CPU with default settings/lists. The more filter lists you have enabled, the longer it will take.</sub>
-
 ### Firefox for Android
 
 As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Differences_between_desktop_and_Android), only with Firefox Mobile 55 (beta) you can access uBO's popup panel.
@@ -63,29 +36,6 @@ As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions
     - uBO's own filter lists have long ceased to rely on this filter syntax to solve reported filtering issues.
 - ~~cosmetic filters will no longer use the browser's user styles~~ [Fixed with f32868766340e2fb8ec689f4b5683a413de847b6](https://github.com/gorhill/uBlock/commit/f32868766340e2fb8ec689f4b5683a413de847b6)
 - uBO/webext has limited access to behind-the-scene network requests, unlike uBO/legacy which had full access to all behind-the-scene network requests. For example, you won't be able to see (and block) network requests made by other extensions. Related: ["Support moz-extension: urls in MatchPattern"](https://bugzilla.mozilla.org/show_bug.cgi?id=1271354#c14).
-
-### Tentative schedule
-
-As stated above, the current version of uBO/webext-hybrid is _really_ an embedded WebExtension. The pure webext version of uBO, uBO/webext is now available in the [Releases section](https://github.com/gorhill/uBlock/releases), and in the [dev channel on AMO](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/beta).
-
-Stable release of uBO/webext must be available to all users when [Firefox 57 is released](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
-
-However, before releasing uBO/webext to stable channel on AMO, I must release uBO/webext-hybrid first, a necessary step for a seamless transition to uBO/webext.
-
-These are the dates of coming Firefox stable release versions, as per [RapidRelease/Calendar](https://wiki.mozilla.org/RapidRelease/Calendar):
-
-- Firefox 55: August 8
-- Firefox 56: September 26
-- Firefox 57: November 14
-
-This is what I plan:
-
-- August 8 + 2 weeks
-    - uBO/webext-hybrid published on AMO's stable channel
-    - uBO/webext published on AMO's dev channel
-- uBO/webext-hybrid publication + 4 weeks = September 19
-    - uBO/webext published on AMO's stable channel
-    - Could be sooner if uBO/webext-hybrid is being used by most users sooner than expected.
 
 ### Future of uBO/legacy
 
