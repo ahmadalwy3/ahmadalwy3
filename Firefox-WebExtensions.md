@@ -28,9 +28,9 @@ Having issues with uBO's cache storage being wiped-out on every restart of the b
 
 ### Firefox for Android
 
-As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Differences_between_desktop_and_Android), only with Firefox Mobile 55 (beta) you can access uBO's popup panel.
+**Firefox for Android 56:** you can access the popup panel using the "uBlock Origin" menu entry. However, the dashboard can't be accessed through `about:addons`. This is fixed in Firefox for Android 57. The workaround is to open uBO's dashboard through uBO's popup panel. Once you access the dashboard, you could create a bookmark out of it to allow direct access in the future.
 
-~~However it appears there is an issue with installing webext extensions on Firefox for Android 55, the browser thinks the extensions are corrupted -- this does not appear specific to uBO/webext. Consequently, for now it seems it's best to stick to uBO/legacy on Firefox for Android.~~ **Update:** this is fixed: <https://bugzilla.mozilla.org/show_bug.cgi?id=1367494>.
+**Firefox for Android 55:** As per [documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Differences_between_desktop_and_Android), only with Firefox Mobile 55 (beta) you can access uBO's popup panel.
 
 ### Differences with uBO/legacy
 
