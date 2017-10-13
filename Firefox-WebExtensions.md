@@ -6,6 +6,8 @@ Stable release of uBO/webext has been available on AMO since early September 201
 
 ### Read carefully if using uBO/webext
 
+uBO/webext works best with Firefox 57 and above, and with multiprocess enabled.
+
 There are many [reports](http://forums.mozillazine.org/viewtopic.php?p=14764474#p14764474) of people experiencing issues with some web sites, or images not loading, etc. Turns out many of these are a result of using some legacy extensions along uBO/webext. For instance, Reek's AAK in [GreaseMonkey](https://www.reddit.com/r/uBlockOrigin/comments/6xl3em/image_links_suddenly_blocked_by_ublock_origin/) has been [causing](https://www.reddit.com/r/firefox/comments/6x8hbe/ublock_origin_is_a_webextension_in_amo_stable/dmf6j5k/) issues with images not loading.
 
 If you experience such issue, you will have to disable all your legacy extensions and see if this fixes your issue. If so, then you will have to re-enable your legacy extension one by one to find the one(s) causing the problem.
