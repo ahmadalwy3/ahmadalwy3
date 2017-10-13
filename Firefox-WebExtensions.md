@@ -1,4 +1,4 @@
-Stable release of uBO/webext has been available on AMO since early September 2017. uBO/webext is compatible with Firefox 52 and above. With Firefox 52, some features in uBO/webext may be disabled.
+Stable release of uBO/webext has been available on AMO since early September 2017. uBO/webext is compatible with Firefox 52 and above. With Firefox 52 specifically, some features in uBO/webext may be disabled.
 
 - [Read carefully if using uBO/webext](#read-carefully-if-using-ubowebext)
 - [Firefox for Android](#firefox-for-android)
