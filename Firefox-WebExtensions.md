@@ -16,6 +16,8 @@ There are also Firefox issues specific to webext extensions which can cause a we
 
 Another option is to install [uBO 1.13.8](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/?page=1#version-1.13.8) and disable auto-update for it.
 
+Having issue with uBO's cache storage being wiped-out on every restart of the browser? See if <http://forums.mozillazine.org/viewtopic.php?f=9&t=3034189> help.
+
 ***
 
 ### Tentative schedule
