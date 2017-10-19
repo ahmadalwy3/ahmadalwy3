@@ -5,23 +5,23 @@
 
 ![Figure 1](https://user-images.githubusercontent.com/585534/27254308-dfe1dce0-5353-11e7-9dd3-913601747be6.png)
 
-### Below more details for the non self-explanatory items
+## General
 
 ***
 
-#### Make use of context menu where appropriate
+### Make use of context menu where appropriate
 
 If checked, this gives permission for uBlock to add items in the context menu which are meant to improve convenience. Currently, only one item is added to the context menu, _"Block element"_, which purpose is to launch the element picker in order to filter out a specific element on a page.
 
 ***
 
-#### Color-blind friendly
+### Color-blind friendly
 
 Currently mostly useful for users who checked _"I am an advanced user"_ (see below).
 
 ***
 
-#### I am an advanced user
+### I am an advanced user
 
 If you check this, this will enable [uBlock's dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering), and the dynamic filtering pane will become available from uBlock's popup UI.
 
@@ -33,7 +33,9 @@ You should avoid playing with advanced features and settings unless [you underst
 
 ***
 
-#### Disable pre-fetching
+## Privacy
+
+### Disable pre-fetching
 
 Checking this will disable prefetching in your browser. When prefetching is enable, the browser _can_ still establish connections to remote servers even if the resource from these remote servers are meant to be blocked by uBlock.
 
@@ -49,13 +51,13 @@ Google's [_"Make webpages load faster"_](https://support.google.com/chrome/answe
 
 ***
 
-#### Disable hyperlink auditing
+### Disable hyperlink auditing
 
 Checking this will prevent hyperlink auditing<sup>[1]</sup>. _Hyperlink auditing_ is best summarized as "phone home" features (or more accurately "phone anywhere"). The details are well explained [here](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/).
 
 ***
 
-#### Prevent WebRTC from leaking local IP address
+### Prevent WebRTC from leaking local IP address
 
 ![c](https://cloud.githubusercontent.com/assets/585534/8344622/0ce20cc4-1ab2-11e5-8f46-a0a387c91d63.png)
 
@@ -72,7 +74,7 @@ Keep in mind that this feature is to prevent **leakage** of your non-internet-fa
 
 ***
 
-## No CSP reports
+### No CSP reports
 
 You can block network requests made as a result of your browser reporting Content Security Policy violations ("CSP reports") to a remote server (which can be 3rd-party to the site where the violation occurred).
 
@@ -92,7 +94,7 @@ Note that as opposed to all other network requests, behind-the-scene network req
 
 ***
 
-#### Backup/restore section
+## Backup/restore section
 
 The bottom-most section is for you to easily backup/restore/reset all settings in uBlock.
 
