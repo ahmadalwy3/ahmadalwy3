@@ -98,7 +98,7 @@ Note that the blocking of CSP reports is implemented as a per-site switch intern
 
 The above rule means CSP reports would not be blocked on `example.com` when CSP reports are blocked globally. The reverse will also work:
 
-   no-csp-reports: example.com true
+    no-csp-reports: example.com true
 
 The above rule means CSP reports would be blocked on `example.com` when CSP reports are not blocked globally.
 
