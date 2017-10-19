@@ -74,7 +74,7 @@ Keep in mind that this feature is to prevent **leakage** of your non-internet-fa
 
 ***
 
-### No CSP reports
+### Block CSP reports
 
 You can block network requests made as a result of your browser reporting Content Security Policy violations ("CSP reports") to a remote server (which can be 3rd-party to the site where the violation occurred).
 
