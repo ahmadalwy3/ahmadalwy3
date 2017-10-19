@@ -3,7 +3,7 @@
 ***
 
 You can access uBlock Origin's ("uBO") dashboard by ...
-- [Clicking the title bar](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-title-bar) of uBO's popup panel.
+- Clicking the _Open the dashboard_ icon in uBO's popup panel.
 - Chromium-based browsers:
     - Clicking uBO's _Options_ link in the _Extensions_ page (`chrome://extensions/`); OR
     - Right-clicking on uBO's icon in the toolbar and selecting _Options_ menu item; OR
