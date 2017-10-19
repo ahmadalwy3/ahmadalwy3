@@ -5,7 +5,7 @@
 
 ![Figure 1](https://user-images.githubusercontent.com/585534/27254308-dfe1dce0-5353-11e7-9dd3-913601747be6.png)
 
-### Below more details for the non-self-explanatory items
+### Below more details for the non self-explanatory items
 
 ***
 
