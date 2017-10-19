@@ -122,6 +122,6 @@ Note that this switch is not currently available in the popup panel. However it 
 
 More advanced users can use the usual per-site switch syntax to more narrowly control the enabling/disabling of CSP report-related network requests:
 
-    no-csp-reports: example.com true
+    no-csp-reports: example.com false
 
 Note that as opposed to all other network requests, behind-the-scene network requests which are actual CSP report will also be filtered out according to `no-csp-reports` switch. So if you globally disable CSP reporting in uBO, this will also apply to behind-the-scene network requests.
