@@ -10,7 +10,6 @@ The per-site switches allows you to control uBlock's behavior on a per-site basi
 - [No large media elements](#no-large-media-elements)
 - [No cosmetic filtering](#no-cosmetic-filtering)
 - [No remote fonts](#no-remote-fonts)
-- [No CSP reports](#no-csp-reports)
 
 ***
 
