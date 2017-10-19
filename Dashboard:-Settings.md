@@ -90,7 +90,7 @@ Consider this excerpt from [Reporting API / Privacy Considerations](http://wicg.
 
 There is currently no way to easily toggle CSP reporting in either Chromium of Firefox. This per-site switch is to address this shortcoming.
 
-Note that as opposed to all other network requests, behind-the-scene network requests which are actual CSP reports will also be filtered out according to `no-csp-reports` switch. So if you globally disable CSP reporting in uBO, this will also apply to behind-the-scene network requests.
+Note that as opposed to all other network requests, behind-the-scene network requests which are actual CSP reports will also be filtered out according to this setting. So if you globally disable CSP reporting in uBO, this will also apply to behind-the-scene network requests.
 
 Note that the blocking of CSP reports is implemented as a per-site switch internally in uBO, so this means that an advanced user could create rules in the _My rules_ pane in the dashboard to allow a more granular control of the blocking of CSP reports. For example:
 
