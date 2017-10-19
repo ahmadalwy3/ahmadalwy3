@@ -101,29 +101,3 @@ Because of security and privacy concerns, many prefer to block all web fonts by 
     no-remote-fonts: * true
 
 This will block all web fonts everywhere by default, and in this case you can toggle off the switch to allow web fonts on a per-site basis.
-
-***
-
-## No CSP reports
-
-You can block network requests made as a result of your browser reporting Content Security Policy violations ("CSP reports") to a remote server (which can be 3rd-party to the site where the violation occurred).
-
-Consider this excerpt from [Reporting API / Privacy Considerations](http://wicg.github.io/reporting/#privacy) (my emphasis):
-
-> 8.6. Disabling Reporting
-> 
-> [...]
-> 
-> That said, it can’t be the case that this general benefit be allowed to take priority over the ability of a user to individually opt-out of such a system. Sending reports costs bandwidth, and potentially could reveal some small amount of additional information above and beyond what a website can obtain in-band ([NETWORK-ERROR-LOGGING], for instance). **User agents MUST allow users to disable reporting with some reasonable amount of granularity in order to maintain the priority of constituencies espoused in [HTML-DESIGN-PRINCIPLES].**
-
-There is currently no way to easily toggle CSP reporting in either Chromium of Firefox. This per-site switch is to address this shortcoming.
-
-Note that this switch is not currently available in the popup panel. However it is available as a global setting in the _Settings_ pane in uBO's dashboard, so that you can easily disable/enable CSP reporting globally.
-
-**Important:** disabling CSP reporting is not something which will break web pages, the purpose of CSP reporting is strictly a development tool for a remote server.
-
-More advanced users can use the usual per-site switch syntax to more narrowly control the enabling/disabling of CSP report-related network requests:
-
-    no-csp-reports: example.com false
-
-Note that as opposed to all other network requests, behind-the-scene network requests which are actual CSP reports will also be filtered out according to `no-csp-reports` switch. So if you globally disable CSP reporting in uBO, this will also apply to behind-the-scene network requests.
