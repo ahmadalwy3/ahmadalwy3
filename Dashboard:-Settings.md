@@ -72,6 +72,26 @@ Keep in mind that this feature is to prevent **leakage** of your non-internet-fa
 
 ***
 
+## No CSP reports
+
+You can block network requests made as a result of your browser reporting Content Security Policy violations ("CSP reports") to a remote server (which can be 3rd-party to the site where the violation occurred).
+
+**Important:** disabling CSP reporting is not something which will break web pages, the purpose of CSP reporting is _strictly_ a development tool for web sites.
+
+Consider this excerpt from [Reporting API / Privacy Considerations](http://wicg.github.io/reporting/#privacy) (my emphasis):
+
+> 8.6. Disabling Reporting
+> 
+> [...]
+> 
+> That said, it can’t be the case that this general benefit be allowed to take priority over the ability of a user to individually opt-out of such a system. Sending reports costs bandwidth, and potentially could reveal some small amount of additional information above and beyond what a website can obtain in-band ([NETWORK-ERROR-LOGGING], for instance). **User agents MUST allow users to disable reporting with some reasonable amount of granularity in order to maintain the priority of constituencies espoused in [HTML-DESIGN-PRINCIPLES].**
+
+There is currently no way to easily toggle CSP reporting in either Chromium of Firefox. This per-site switch is to address this shortcoming.
+
+Note that as opposed to all other network requests, behind-the-scene network requests which are actual CSP reports will also be filtered out according to `no-csp-reports` switch. So if you globally disable CSP reporting in uBO, this will also apply to behind-the-scene network requests.
+
+***
+
 #### Backup/restore section
 
 The bottom-most section is for you to easily backup/restore/reset all settings in uBlock.
