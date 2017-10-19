@@ -92,6 +92,16 @@ There is currently no way to easily toggle CSP reporting in either Chromium of F
 
 Note that as opposed to all other network requests, behind-the-scene network requests which are actual CSP reports will also be filtered out according to `no-csp-reports` switch. So if you globally disable CSP reporting in uBO, this will also apply to behind-the-scene network requests.
 
+Note that the blocking of CSP reports is implemented as a per-site switch internally in uBO, so this means that an advanced user could create rules in the _My rules_ pane in the dashboard to allow a more granular control of the blocking of CSP reports. For example:
+
+    no-csp-reports: example.com false
+
+The above rule means CSP reports would not be blocked on `example.com` when CSP reports are blocked globally. The reverse will also work:
+
+   no-csp-reports: example.com true
+
+The above rule means CSP reports would be blocked on `example.com` when CSP reports are not blocked globally.
+
 ***
 
 ## Backup/restore section
