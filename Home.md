@@ -46,6 +46,7 @@
 - [Deploying uBlock Origin](https://github.com/gorhill/uBlock/wiki/Deploying-uBlock-Origin)
 - [Troubleshooting](https://github.com/gorhill/uBlock/wiki/Troubleshooting)
     - [Software known to have uninstalled uBlock Origin](https://github.com/gorhill/uBlock/wiki/Software-known-to-have-uninstalled-uBlock-Origin)
+    - [Read carefully if using uBO/webext on Firefox](https://github.com/gorhill/uBlock/wiki/Firefox-WebExtensions)
 - [FAQ](https://github.com/gorhill/uBlock/wiki/FAQ)
 - Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
     - [My answers to web store reviews where appropriate](https://github.com/gorhill/uBlock/wiki/My-answers-to-web-store-reviews-where-appropriate)
