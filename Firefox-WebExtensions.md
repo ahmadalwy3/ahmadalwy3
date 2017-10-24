@@ -43,7 +43,7 @@ Having issues with uBO's cache storage being wiped-out on every restart of the b
 
 For all those Firefox and Firefox-based browsers based on Firefox v52 and less, uBO from <https://addons.mozilla.org/> will cease to work, and they will have to [install manually the `xpi` version](https://github.com/gorhill/uBlock/tree/master/dist#firefox-legacy) from the repo here if you want to keep using the dev version of uBO.
 
-As of writing, there is no plan to cease development of uBO/legacy. Hypothetically, this may change in some future if ever it becomes really non-trivial to keep a working the legacy version.
+As of writing, there is no plan to cease development of uBO/legacy. Hypothetically, this may change in some future if ever it becomes really non-trivial to keep a working legacy version.
 
 I do expect users of legacy versions of Firefox to test and report any issues with uBO -- I can't afford the time needed to test all those versions.
 
