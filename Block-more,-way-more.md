@@ -1,4 +1,4 @@
-µBlock can parse and enforce hosts files. For instance, out-of-the-box, µBlock supports [Peter Lowe’s Ad server](http://pgl.yoyo.org/) list which contains the hostnames of over 2,400 ad servers.
+uBlock Origin can parse and enforce hosts files. For instance, out-of-the-box, uBlock supports [Peter Lowe’s Ad server](http://pgl.yoyo.org/) list which contains the hostnames of over 2,400 ad servers.
 
 But there is an interesting hosts file available which is not enabled by default out-of-the-box: [hpHosts ad/tracking servers](http://hosts-file.net/) list. This list contains over 20,000 hostnames linked to ad servers, trackers, and other such nuisances.
 
