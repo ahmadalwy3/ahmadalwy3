@@ -14,7 +14,7 @@ If you experience such issue, you will have to disable all your legacy extension
 
 Those legacy extensions can cause multi-process to be disabled in your browser, and apparently **when multi-process is disabled**, this can cause many cases of [page load failure](https://bugzilla.mozilla.org/show_bug.cgi?id=1348497#c27).
 
-Everything is moving to WebExtensions, so it might be just a good time to start giving up on legacy extensions, they are not going to be supported at all in a couple of weeks when Firefox 57 is released. See if your legacy extensions have a webext version in development. For example, the is a [webext version of Greasemonkey in its development channel on AMO](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/versions/beta).
+Everything is moving to WebExtensions, so it might be just a good time to start giving up on legacy extensions, they are not going to be supported at all in a couple of weeks when Firefox 57 is released. See if there is a beta webext version of any of your legacy extensions. For example, there is [beta webext version of Greasemonkey on AMO](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/versions/beta).
 
 There are also Firefox issues specific to webext extensions which can cause a web page to load improperly:
 
