@@ -88,7 +88,7 @@ Consider this excerpt from [Reporting API / Privacy Considerations](http://wicg.
 > 
 > That said, it can’t be the case that this general benefit be allowed to take priority over the ability of a user to individually opt-out of such a system. Sending reports costs bandwidth, and potentially could reveal some small amount of additional information above and beyond what a website can obtain in-band ([NETWORK-ERROR-LOGGING], for instance). **User agents MUST allow users to disable reporting with some reasonable amount of granularity in order to maintain the priority of constituencies espoused in [HTML-DESIGN-PRINCIPLES].**
 
-There is currently no way to easily toggle CSP reporting in either Chromium of Firefox. This per-site switch is to address this shortcoming.
+There is currently no way to easily toggle CSP reporting in either Chromium or Firefox. This per-site switch is to address this shortcoming.
 
 Note that as opposed to all other network requests, behind-the-scene network requests which are actual CSP reports will also be filtered out according to this setting. So if you globally disable CSP reporting in uBO, this will also apply to behind-the-scene network requests.
 
