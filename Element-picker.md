@@ -30,7 +30,7 @@ There may be many different reasons for this.
 
 - The URL or selector for the blocked element has variable part(s) in it, which changes each time a page is loaded.
     - If this is a network filter, you will have to manually edit the filter to make use of wildcards for the parts of the URL which are variable.
-    - If this is a cosmetic filter, you may have to manually craft a better CSS selector. Sometimes this requires observing the surrounding DOM data.
+    - If this is a cosmetic filter, you may have to manually craft a better [CSS selector](https://www.w3.org/TR/selectors/#overview). Sometimes this requires observing the surrounding DOM data.
 - Cosmetic filtering is disabled for the site, or globally. There are many ways to disable cosmetic filtering:
     - The [per-site cosmetic filtering switch](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering).
     - The option [_"Parse and enforce cosmetic filters"_](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters#parse-and-enforce-cosmetic-filters) is un-checked in the [_3rd-party filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters) pane in the dashboard.
