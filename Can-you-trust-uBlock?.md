@@ -25,9 +25,9 @@ For **every** web page you visit, you can see Web Protector sending behind-the-s
 This is just to demonstrate that the permissions _alone_ do not tell the whole story. What must be assessed are:
 
 - Is the code developed in **full** view?
-- Under which licensed the code fall?
+- Under which license does the code fall?
 - Is there a home server?
 - What network requests are made by an extension behind the scene?
     - uBlock Origin's logger allows you to see all behind-the-scene network requests, including its own (to GitHub, for updating filter lists).
 - How is an extension monetizing itself?
-    - To best understand how its interests are aligned or at odd with yours.
+    - Learning about this factor will help you best understand whether the extension's developer's interests are aligned or at odd with yours.
