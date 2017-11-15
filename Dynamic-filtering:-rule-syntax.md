@@ -8,7 +8,7 @@ A dynamic filtering rule is made of four components: a source, a destination, a 
 
 | rule type | source | destination | request type | action |
 |---|---|---|---|---|
-| **Type-based** | `*`<br>_hostname_ | `*`<br>&nbsp; | `*`<br>`image`<br>`inline-script`<br>`3p`<br>`1p-script`<br>`3p-script`<br>`3p-frame` | `block`<br>`noop`<br>`allow` |
+| **Type-based** | `*`<br>_hostname_ | `*`<br>&nbsp; | `*`<br>`image`<br>`inline-script`<br>`1p-script`<br>`3p`<br>`3p-script`<br>`3p-frame` | `block`<br>`noop`<br>`allow` |
 | **Hostname-based** | `*`<br>_hostname_ | <br>_hostname_ | <br>`*` | `block`<br>`noop`<br>`allow` |
 
 Source hostname always corresponds to the hostname extracted from the URL of the web page in the browser.
