@@ -49,6 +49,10 @@ Google's [_"Make webpages load faster"_](https://support.google.com/chrome/answe
 
 > If you turn this setting on in Chrome, websites (and any of their embedded resources) that are prerendered or prefetched may set and read their own cookies as if you had visited them before -- even if you don’t visit the prerendered or prefetched pages after all.
 
+**Important notes:** On Chromium 51 and browsers based on Chromium 51, this setting should be considered "placebo". For details, see:
+- <https://github.com/gorhill/uBlock/issues/3219>
+- <https://bugs.chromium.org/p/chromium/issues/detail?id=785125>
+
 ***
 
 ### Disable hyperlink auditing
