@@ -1,4 +1,4 @@
-[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+[Back to _Blocking mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode)
 
 ***
 
