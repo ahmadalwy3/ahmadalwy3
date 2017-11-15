@@ -65,5 +65,5 @@ A matching rule can do one of three things:
 - `allow`: matching network request will be allowed.
     - `allow` dynamic filters rules override any existing static and dynamic block filters.
     - Thus they are most useful to create finer-grained exceptions, and to un-break web sites broken by some static filters somewhere.
-- `noop`: prevent matching network requests from being subjected to dynamic filtering.
+- `noop`: exclude network requests from being subjected to dynamic filtering.
     - It cancels dynamic filtering, but it does not cancel static filtering.
