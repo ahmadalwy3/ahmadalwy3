@@ -2,7 +2,7 @@
 
 ***
 
-uBlock Origin is not an "ad blocker", it is a wide-spectrum blocker, which happens to be able to function as a mere "ad blocker". But it can also be used in a manner similar to [NoScript](https://noscript.net/) (to block scripts) and/or [RequestPolicy](https://requestpolicycontinued.github.io/) (to block all 3rd-party servers by default), using a click-and-point user interface.
+uBlock Origin is not an "ad blocker", it is a wide-spectrum blocker, which happens to be able to function as a mere "ad blocker". But it can also be used in a manner similar to [NoScript](https://noscript.net/) (to block scripts) and/or [RequestPolicy](https://requestpolicycontinued.github.io/) (to block all 3rd-party servers by default), using a point-and-click user interface.
 
 ![Number of 3rd-party servers to which the browser connected during benchmark](https://cloud.githubusercontent.com/assets/585534/8906091/b7334ddc-3439-11e5-848b-9e8a58eff876.png)<br><sup>Number of 3rd-party servers to which the browser connected during benchmark: 83 URLs of high-traffic sites were visited (on July 24, 2015). [TODO: include intermediate mode between _easy_ and _medium_ in next benchmark]</sup>
 
