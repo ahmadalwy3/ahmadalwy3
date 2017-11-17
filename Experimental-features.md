@@ -1,3 +1,3 @@
-Currently, there are no experimental features in uBlock Origin.
+At this point, uBlock Origin does not ship with any experimental features.
 
-There used to be **local mirroring** (see [older version of this page](https://github.com/gorhill/uBlock/wiki/Experimental-features/7148ff9bd4e6077aecf00077f7836028c82b5f35#privacy-exposure-reduction-local-mirroring)), but this has been removed for good. There is a new extension for Firefox which purpose is similar to what local mirroring meant to accomplish, see [**Decentraleyes**](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) (also on [GitHub](https://github.com/Synzvato/decentraleyes)).
+The experimental local mirroring feature ([page history](https://github.com/gorhill/uBlock/wiki/Experimental-features/7148ff9bd4e6077aecf00077f7836028c82b5f35#privacy-exposure-reduction-local-mirroring)) has been removed for good. There's a browser extension for Firefox, Chrome, and Opera, which purpose is similar to what local mirroring meant to accomplish. See [Decentraleyes](https://decentraleyes.org), or the corresponding code repository on [GitHub](https://github.com/Synzvato/decentraleyes).
