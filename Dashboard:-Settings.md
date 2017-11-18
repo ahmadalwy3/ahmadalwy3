@@ -39,7 +39,7 @@ You should avoid playing with advanced features and settings unless [you underst
 
 Checking this will disable prefetching in your browser. When prefetching is enable, the browser _can_ still establish connections to remote servers even if the resource from these remote servers are meant to be blocked by uBlock.
 
-This prevent the browser from bypassing uBlock's filtering engine before establishing connections to remote servers.
+This prevents the browser from bypassing uBlock's filtering engine before establishing connections to remote servers.
 
 Mozilla's [_"Link prefetching FAQ"_](https://developer.mozilla.org/docs/Web/HTTP/Link_prefetching_FAQ):
 
