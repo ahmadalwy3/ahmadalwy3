@@ -35,7 +35,7 @@ behind-the-scene<br><sup>uBO's logger reports behind-the-scene request, filterin
 entity-based filters |     | [yes](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#entity-based-cosmetic-filters)
 `-abp-properties` | yes | [no](https://github.com/gorhill/uBlock/issues/139)
 `:has` | ~~[not yet](https://issues.adblockplus.org/ticket/2360)~~ yes (`:-abp-has`) | yes
-`:has-text` | yes (`-abp-contains`) | yes
+`:has-text` | [yes](https://issues.adblockplus.org/ticket/5249) (`-abp-contains`) | yes
 `:if` `:if-not`<br>`:matches-css` `:matches-css-before` `:matches-css-after`<br>`:xpath` |     | yes
 `:style` | [no](https://issues.adblockplus.org/ticket/756) | yes
 `script:contains` |     | Firefox only
