@@ -50,7 +50,7 @@ block CSP reports |     | [yes](https://github.com/gorhill/uBlock/wiki/Dashboard
 pre-compilation of filter lists for fast loading of filters |     | [yes](https://github.com/gorhill/uBlock/wiki/Launch-and-filter-lists-load-performance)
 "acceptable ads" | yes | [no](https://github.com/gorhill/uBlock/blob/master/MANIFESTO.md)
 disable everywhere | yes |
-count filter hits | yes | [no](https://github.com/gorhill/uBlock/issues/1353)
+count filter hits | yes, [disabled by default](https://issues.adblockplus.org/ticket/5298) | [no](https://github.com/gorhill/uBlock/issues/1353)
 ability to globally ignore generic cosmetic filters<br><sup>useful for low-performance mobile devices</sup> |     | yes
 cloud storage | Firefox only | yes
 point-and-click firewall-like filtering<br><sup>allows for [relax](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode) or [strict](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode) default-deny approach</up> |     | yes
