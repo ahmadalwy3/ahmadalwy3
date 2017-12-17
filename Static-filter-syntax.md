@@ -37,6 +37,18 @@ The wildcard character `*` can be used to apply a filter to **all** URLs. This i
 
 Usually, it is far more convenient to use [dynamic filtering rules](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) in lieu of such generic static filters.
 
+#### `badfilter`
+
+To disable an existing filter. Sometimes, disabling an existing blocking filter is better than creating an exception filter. Just for example sake, let's say that a mind-absent filter list maintainer added the following filter in his list:
+
+    *$image
+
+Now all images from everywhere are blocked on your side. An exception filter (`@@*$image`) is not a good solution because it would also cause images which should be legitimately blocked from no longer being blocked. In such case, the `badfilter` option is best:
+
+    *$image,badfilter
+
+This will cause the `*$image` filter to be discarded. Just appending `,badfilter` to any instance of static network filter will prevent the loading of that filter.
+
 #### `document`
 
 For _block_ filters only. This will cause web pages which match the filter to be subjected to [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking).
