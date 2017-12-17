@@ -39,7 +39,7 @@ entity-based filters |     | [yes](https://github.com/gorhill/uBlock/wiki/Static
 `:has-text` | [yes](https://issues.adblockplus.org/ticket/5249) (`-abp-contains`) | yes
 `:if` `:if-not`<br>`:matches-css` `:matches-css-before` `:matches-css-after`<br>`:xpath` |     | yes
 `:style` | [no](https://issues.adblockplus.org/ticket/756) | yes
-`script:contains` |     | Firefox only
+`script:contains` |     | Legacy Firefox only
 `script:inject`<br><sup>key to counter anti-blockers</sup> |     | yes
 **privacy**
 pro-user default settings<br><sup>uBO is not monetized, it's under no pressure to [compromise](https://adblockplus.org/forum/viewtopic.php?f=17&t=50215) on pro-user interests</sup> |     | yes
