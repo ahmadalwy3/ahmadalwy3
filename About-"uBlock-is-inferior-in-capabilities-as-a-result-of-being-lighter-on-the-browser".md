@@ -27,7 +27,7 @@ can read hosts files |     | yes
 `important`<br><sup>to be able to override exception filters</sup> |     | [yes](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#important)
 `popunder` | [no](https://issues.adblockplus.org/ticket/2095) | yes
 `redirect`<br><sup>to redirect to local resources, key to privacy and to counter anti-blockers</sup> |     | yes
-`csp=`<br><sup>see [rationale](https://github.com/gorhill/uBlock/issues/1930#issuecomment-301055346)</sup> |     | yes<br><sup>v1.12.5</sup>
+`csp=`<br><sup>see [rationale](https://github.com/gorhill/uBlock/issues/1930#issuecomment-301055346)</sup> |     | yes
 `badfilter`<br><sup>to disable an existing filter</sup> |     | yes
 [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking) |     | yes
 rule-based filtering<br><sup>firewall-like or URL-based rules with corresponding point-and-click UI</sup> |     | yes
@@ -61,5 +61,5 @@ point-and-click per site no-cosmetic-filtering |     | [yes](https://github.com/
 point-and-click per site no-large-media-elements |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-large-media-elements)
 point-and-click per site no-remote-fonts |     | [yes](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-remote-fonts)
 integrated element picker | Chromium-based browsers only | [yes](https://github.com/gorhill/uBlock/wiki/Element-picker)
-element zapper | | [yes](https://github.com/gorhill/uBlock/wiki/Element-zapper)<br><sup>v1.12.5</sup>
+element zapper | | [yes](https://github.com/gorhill/uBlock/wiki/Element-zapper)
 easy backup/restore of all settings | Firefox only | yes
