@@ -2,7 +2,16 @@ uBlock Origin ("uBO") supports Adblock Plus ("ABP") filter syntax, so you can re
 
 However uBO does not support some very specific cases, and also adds its own extensions to ABP filter syntax (which at time of writing are not recognized by ABP).
 
-## Not supported		
+- [Not supported](#not-supported)
+- [Extended syntax](#extended-syntax)
+    - [Static network filtering](#static-network-filtering)
+    - [Static extended filtering](#static-extended-filtering)
+        - [Entity](#entity)
+        - [Cosmetic filters](#cosmetic-filters)
+        - [Sanitization filters](#sanitization-filters)
+        - [Scriptlet injection](#scriptlet-injection)
+
+## Not supported
 
 `document` for _exception_ filters (those prefixed with `@@`):
 
@@ -134,14 +143,6 @@ For example, [Adguard English filter](https://adguard.com/en/filters.html#englis
 
 ![a](https://cloud.githubusercontent.com/assets/585534/16540886/2905a580-4042-11e6-9c68-7e18a645dea1.png)
 
-### Scriptlet injection filters
-
-    script:inject(...)
-
-This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
-
-Generic `script:inject` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##script:inject(yavli-defuser.js)`.
-
 ### Sanitization filters
 
 The purpose of sanitization filters is to remove elements from a document _before_ it is parsed by the browser.
@@ -155,3 +156,11 @@ Currently only supported on Firefox 57+.
 #### `script:contains(...)`
 
 uBO supports a special cosmetic filter which purpose is to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
+
+### Scriptlet injection
+
+    script:inject(...)
+
+This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
+
+Generic `script:inject` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##script:inject(yavli-defuser.js)`.
