@@ -14,7 +14,7 @@ The reason it is not supported is to be sure that users explicitly disable uBO t
 
 uBO extends Adblock Plus filter syntax.
 
-### Network filters
+## Static network filtering
 
 #### HOSTS files
 
@@ -87,11 +87,18 @@ Specifically, notice that the filter **must** start with `||` or `*`, otherwise 
 
 A source hostname should always be specified, so the `domain=` option is strongly recommended. It is allowed to use `first-party` instead of `domain=[...]`, in which case the source hostname will be that of the destination hostname.
 
-### Cosmetic filters
+## Static extended filtering
 
-#### Entity-based cosmetic filters
+Static extended filters are all of the form:
 
-Filters which are to be applied to a specific _entity_. For example:
+    [hostname(s)]##[expression]
+    [hostname(s)]#@#[expression]
+
+The most common type of static extended filters are cosmetic filters, also known as "element hiding filters" in Adblock Plus.
+
+### Entity
+
+All static extended filters can be declared to apply to a specific _entity_. For example:
 
     google.*###tads.c
 
@@ -101,21 +108,13 @@ Examples: `google.*`  will apply to all similar Google domain names: `google.com
 
 Since the base domain name is used to derive the name of the "entity", `google.evil.biz` would **not** match `google.*`.
 
+### Cosmetic filters
+
 #### Procedural cosmetic filters
 
 `:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:xpath(...)`.
 
 See [detailed documentation](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters).
-
-#### `script:contains(...)`
-
-uBO supports a special cosmetic filter which purpose is to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
-
-#### `script:inject(...)`
-
-This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
-
-Generic `script:inject` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##script:inject(yavli-defuser.js)`.
 
 #### `:style()`
 
@@ -134,3 +133,25 @@ Adguard [already support such feature](https://adguard.com/en/filterrules.html#c
 For example, [Adguard English filter](https://adguard.com/en/filters.html#english) contains ~50 styling filters, [Adguard Russian filter list](https://adguard.com/en/filters.html#russian) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [Adguard's filter lists](https://adguard.com/en/filters.html):
 
 ![a](https://cloud.githubusercontent.com/assets/585534/16540886/2905a580-4042-11e6-9c68-7e18a645dea1.png)
+
+### Scriptlet injection filters
+
+    script:inject(...)
+
+This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
+
+Generic `script:inject` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##script:inject(yavli-defuser.js)`.
+
+### Sanitization filters
+
+The purpose of sanitization filters is to remove elements from a document _before_ it is parsed by the browser.
+
+Currently only supported on Firefox 57+.
+
+#### `:sanitize(...)`
+
+[to be done, above is operator currently used in prototype code]
+
+#### `script:contains(...)`
+
+uBO supports a special cosmetic filter which purpose is to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
