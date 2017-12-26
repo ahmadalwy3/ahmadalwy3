@@ -147,11 +147,12 @@ For example, [Adguard English filter](https://adguard.com/en/filters.html#englis
 
 The purpose of sanitization filters is to remove elements from a document _before_ it is parsed by the browser.
 
+    example.com##^.badstuff
+    example.com##^script:has-text(7c9e3a5d51cdacfc)
+
 Currently only supported on Firefox 57+.
 
-#### `:sanitize(...)`
-
-[to be done, above is operator currently used in prototype code]
+[to be done]
 
 #### `script:contains(...)`
 
