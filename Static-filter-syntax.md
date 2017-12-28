@@ -145,7 +145,7 @@ For example, [Adguard English filter](https://adguard.com/en/filters.html#englis
 
 ### HTML filters
 
-uBO 1.14.23b2+ only.
+uBO 1.14.23b3+ only.
 
 The purpose of HTML filters is to remove elements from a document _before_ it is parsed by the browser.
 
