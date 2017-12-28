@@ -154,8 +154,6 @@ The purpose of HTML filters is to remove elements from a document _before_ it is
 
 Currently only supported on Firefox 57+.
 
-[to be done]
-
 With the introduction of HTML filtering, the `script:contains(...)` is now deprecated and internally converted into an equivalent `##^script:has-text(...)` HTML filter. The result is essentially the same: to prevent the execution of specific inline script tags in a main HTML document.
 
 See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
