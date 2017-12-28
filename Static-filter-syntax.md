@@ -8,7 +8,7 @@ However uBO does not support some very specific cases, and also adds its own ext
     - [Static extended filtering](#static-extended-filtering)
         - [Entity](#entity)
         - [Cosmetic filters](#cosmetic-filters)
-        - [Sanitization filters](#sanitization-filters)
+        - [HTML filters](#html-filters)
         - [Scriptlet injection](#scriptlet-injection)
 
 ## Not supported
@@ -143,9 +143,11 @@ For example, [Adguard English filter](https://adguard.com/en/filters.html#englis
 
 ![a](https://cloud.githubusercontent.com/assets/585534/16540886/2905a580-4042-11e6-9c68-7e18a645dea1.png)
 
-### Sanitization filters
+### HTML filters
 
-The purpose of sanitization filters is to remove elements from a document _before_ it is parsed by the browser.
+uBO 1.14.23b2+ only.
+
+The purpose of HTML filters is to remove elements from a document _before_ it is parsed by the browser.
 
     example.com##^.badstuff
     example.com##^script:has-text(7c9e3a5d51cdacfc)
