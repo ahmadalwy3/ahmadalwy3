@@ -57,6 +57,8 @@ The `3rd-party domains` section is _[3rd-party] [1st-party]_, and ordered by 3rd
 
 Notice that in medium mode, most 3rd parties are actually auxiliary domains which are related to the 1st-party, which means that actual profiling by 3rd parties has been foiled to a great extent. At this point, it's a matter of selectively blocking the remaining 3rd parties which might be deemed undesirable by a user (for example, blocking `gravatar.com`, `fonts.googleapis.com`, etc.)
 
+**Addendum 2017-12-29:** Note that this benchmark is rather dated, and since then many enhancements have been brought to uBO. For example, `googletagservices.com` was not blocked by default in _Easy mode_ back then, while it is now blocked and replaced with a neutered local scriptlet, to minimize probability of page breakage.
+
 Hard mode will actually ensure that profiling by 3rd parties is completely foiled, though at the expense of having to fix most web sites. For privacy-minded users, _medium mode_ seems to be the optimal approach.
 
 Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed.
