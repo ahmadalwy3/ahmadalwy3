@@ -18,7 +18,9 @@ Script tag filters do not work in all browsers, due to browser API limitations:
 - Not supported in Chromium-based browser.
     - Starring the [related Chromium issue](https://code.google.com/p/chromium/issues/detail?id=168175) may help motivate Chromium devs to implement support.
     - Falling back on wholesale blocking of all inline script tags may work.<sup>[1]</sup>
-- Not supported in Firefox's WebExtensions version of uBO 1.14.23b2 and less.
+- Not supported in Firefox's WebExtensions version of uBO when...
+    - Firefox 56 and less is used;
+    - uBO version 1.14.23b2 and less used.
 
 <sub>[1] Through the use of the `inline-script` static filter option (`||example.com^$inline-script`), or through the use of a dynamic filtering block rule for _inline scripts_.</sub>
 
