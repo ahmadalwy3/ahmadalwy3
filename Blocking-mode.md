@@ -74,13 +74,13 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 #### No blocking
 
-    URLs visited:			83
-    Domains (3rd party / all):		2111 / 2194
-    Hosts (3rd party / all):		3233 / 3621
-    Scripts (3rd party / all):		3563 / 4800
-    Outbound cookies (3rd party / all):	6 / 319
-    Net requests (3rd party / all):	11,258 / 16,480
-    Bandwidth:				218,316,429 bytes
+    URLs visited                        83
+    Domains (3rd party / all):          2111 / 2194
+    Hosts (3rd party / all):            3233 / 3621
+    Scripts (3rd party / all):          3563 / 4800
+    Outbound cookies (3rd party / all): 6 / 319
+    Net requests (3rd party / all):     11,258 / 16,480
+    Bandwidth:                          218,316,429 bytes
 
 3rd-party domains:
 
@@ -2308,13 +2308,13 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 #### Very easy mode
 
-    URLs visited:			83
-    Domains (3rd party / all):		1152 / 1235
-    Hosts (3rd party / all):		1639 / 1980
-    Scripts (3rd party / all):		1721 / 2500
-    Outbound cookies (3rd party / all):	6 / 287
-    Net requests (3rd party / all):	5,576 / 9,701
-    Bandwidth:				188,573,422 bytes
+    URLs visited:                       83
+    Domains (3rd party / all):          1152 / 1235
+    Hosts (3rd party / all):            1639 / 1980
+    Scripts (3rd party / all):          1721 / 2500
+    Outbound cookies (3rd party / all): 6 / 287
+    Net requests (3rd party / all):     5,576 / 9,701
+    Bandwidth:                          188,573,422 bytes
 
 3rd-party domains:
 
@@ -3488,13 +3488,13 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 #### Easy mode
 
-    URLs visited:			83
-    Domains (3rd party / all):		512 / 595
-    Hosts (3rd party / all):		718 / 994
-    Scripts (3rd party / all):		890 / 1560
-    Outbound cookies (3rd party / all):	6 / 177
-    Net requests (3rd party / all):	3,588 / 7,322
-    Bandwidth:				175,776,032 bytes
+    URLs visited:                       83
+    Domains (3rd party / all):          512 / 595
+    Hosts (3rd party / all):            718 / 994
+    Scripts (3rd party / all):          890 / 1560
+    Outbound cookies (3rd party / all): 6 / 177
+    Net requests (3rd party / all):     3,588 / 7,322
+    Bandwidth:                          175,776,032 bytes
 
 3rd-party domains:
 
@@ -4009,13 +4009,13 @@ Failed URLS: none
 
 #### Medium mode
 
-    URLs visited:			83
-    Domains (3rd party / all):		130 / 213
-    Hosts (3rd party / all):		236 / 449
-    Scripts (3rd party / all):		337 / 715
-    Outbound cookies (3rd party / all):	6 / 123
-    Net requests (3rd party / all):	2,395 / 5,270
-    Bandwidth:				138,426,354 bytes
+    URLs visited:                       83
+    Domains (3rd party / all):          130 / 213
+    Hosts (3rd party / all):            236 / 449
+    Scripts (3rd party / all):          337 / 715
+    Outbound cookies (3rd party / all): 6 / 123
+    Net requests (3rd party / all):     2,395 / 5,270
+    Bandwidth:                          138,426,354 bytes
 
 3rd-party domains:
 
@@ -4151,13 +4151,13 @@ Failed URLS: none
 
 #### Hard mode
 
-    URLs visited:			83
-    Domains (3rd party / all):		84 / 167
-    Hosts (3rd party / all):		182 / 394
-    Scripts (3rd party / all):		369 / 746
-    Outbound cookies (3rd party / all):	6 / 126
-    Net requests (3rd party / all):	2,324 / 5,191
-    Bandwidth:				149,129,401 bytes
+    URLs visited:                       83
+    Domains (3rd party / all):          84 / 167
+    Hosts (3rd party / all):            182 / 394
+    Scripts (3rd party / all):          369 / 746
+    Outbound cookies (3rd party / all): 6 / 126
+    Net requests (3rd party / all):     2,324 / 5,191
+    Bandwidth:                          149,129,401 bytes
 
 3rd-party domains:
 
