@@ -51,7 +51,7 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - 3rd-party = globally blocked.
 - Minimal set of rules to ensure web pages render properly.
 
-#### Raw data
+### Raw data
 
 The `3rd-party domains` section is _[3rd-party] [1st-party]_, and ordered by 3rd parties. This allows you to assess how much some specific 3rd-parties are able to create a profile of your browsing history. 
 
@@ -72,16 +72,20 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 <sub>The _"diff with previous mode"_ link shows which 3rd-party domains have been blocked that were not blocked with the previous blocking mode. The newly blocked domains relative to previous blocking mode will appear in red in the left-hand column: each one of these red lines represents one foiled 3rd-party's opportunity to profile your browsing history.</sub>
 
-##### No blocking
+#### No blocking
 
-    URLs visited:	83
-    Domains (3rd party / all):	2111 / 2194
-    Hosts (3rd party / all):	3233 / 3621
-    Scripts (3rd party / all):	3563 / 4800
+    URLs visited:			83
+    Domains (3rd party / all):		2111 / 2194
+    Hosts (3rd party / all):		3233 / 3621
+    Scripts (3rd party / all):		3563 / 4800
     Outbound cookies (3rd party / all):	6 / 319
     Net requests (3rd party / all):	11,258 / 16,480
-    Bandwidth:	218,316,429 bytes
-    3rd-party domains:	 
+    Bandwidth:				218,316,429 bytes
+
+3rd-party domains:
+
+<details>
+
     247realmedia.com cnbc.com
     247realmedia.com nbcnews.com
     247realmedia.com wired.com
@@ -2300,16 +2304,22 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
     zqtk.net wired.com
     zqtk.net wsj.com
 
-##### Very easy mode
+</details>
 
-    URLs visited:	83
-    Domains (3rd party / all):	1152 / 1235
-    Hosts (3rd party / all):	1639 / 1980
-    Scripts (3rd party / all):	1721 / 2500
+#### Very easy mode
+
+    URLs visited:			83
+    Domains (3rd party / all):		1152 / 1235
+    Hosts (3rd party / all):		1639 / 1980
+    Scripts (3rd party / all):		1721 / 2500
     Outbound cookies (3rd party / all):	6 / 287
     Net requests (3rd party / all):	5,576 / 9,701
-    Bandwidth:	188,573,422 bytes
-    3rd-party domains:	 
+    Bandwidth:				188,573,422 bytes
+
+3rd-party domains:
+
+<details>
+
     2mdn.net digitaltrends.com
     2mdn.net seekingalpha.com
     2o7.net addictinggames.com
@@ -3474,16 +3484,22 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
     zqtk.net wired.com
     zqtk.net wsj.com
 
-##### Easy mode
+</details>
 
-    URLs visited:	83
-    Domains (3rd party / all):	512 / 595
-    Hosts (3rd party / all):	718 / 994
-    Scripts (3rd party / all):	890 / 1560
+#### Easy mode
+
+    URLs visited:			83
+    Domains (3rd party / all):		512 / 595
+    Hosts (3rd party / all):		718 / 994
+    Scripts (3rd party / all):		890 / 1560
     Outbound cookies (3rd party / all):	6 / 177
     Net requests (3rd party / all):	3,588 / 7,322
-    Bandwidth:	175,776,032 bytes
-    3rd-party domains:	 
+    Bandwidth:				175,776,032 bytes
+
+3rd-party domains:
+
+<details>
+ 
     2mdn.net digitaltrends.com
     2mdn.net seekingalpha.com
     5min.com engadget.com
@@ -3986,18 +4002,24 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
     ytimg.com google.com
     ziffprod.com geek.com
     zlive-s3-assets.s3.amazonaws.com zyngagames.com
-    Failed URLs:
 
-##### Medium mode
+</details>
 
-    URLs visited:	83
-    Domains (3rd party / all):	130 / 213
-    Hosts (3rd party / all):	236 / 449
-    Scripts (3rd party / all):	337 / 715
+Failed URLS: none
+
+#### Medium mode
+
+    URLs visited:			83
+    Domains (3rd party / all):		130 / 213
+    Hosts (3rd party / all):		236 / 449
+    Scripts (3rd party / all):		337 / 715
     Outbound cookies (3rd party / all):	6 / 123
     Net requests (3rd party / all):	2,395 / 5,270
-    Bandwidth:	138,426,354 bytes
-    3rd-party domains:	 
+    Bandwidth:				138,426,354 bytes
+
+3rd-party domains:
+
+<details>
     2mdn.net seekingalpha.com
     5min.com techcrunch.com
     9cache.com 9gag.com
@@ -4125,16 +4147,21 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
     ytimg.com google.com
     ytimg.com perezhilton.com
 
-##### Hard mode
+</details>
 
-    URLs visited:	83
-    Domains (3rd party / all):	84 / 167
-    Hosts (3rd party / all):	182 / 394
-    Scripts (3rd party / all):	369 / 746
+#### Hard mode
+
+    URLs visited:			83
+    Domains (3rd party / all):		84 / 167
+    Hosts (3rd party / all):		182 / 394
+    Scripts (3rd party / all):		369 / 746
     Outbound cookies (3rd party / all):	6 / 126
     Net requests (3rd party / all):	2,324 / 5,191
-    Bandwidth:	149,129,401 bytes
-    3rd-party domains:	 
+    Bandwidth:				149,129,401 bytes
+
+3rd-party domains:
+
+<details>
     9cache.com 9gag.com
     9gaging.com 9gag.com
     abcnews.com go.com
@@ -4217,7 +4244,9 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
     wsj.net wsj.com
     yimg.com yahoo.com
 
-##### Sessbench parameters
+</details>
+
+#### Sessbench parameters
 
 This was fed to [sessbench](https://github.com/gorhill/sessbench):
 
