@@ -4,7 +4,7 @@
 
 Roughly similar to using Adblock Plus with _EasyList_ only.
 
-This mode is more suitable for those who are little concerned about their privacy. Only advertisements are blocked, as per [_EasyList_ filters](https://easylist.adblockplus.org/en/). This mode is closer to what you get with default Adblock Plus settings (when you disable ABP's _acceptable ads_ filter list).
+This mode is more suitable for those who are little concerned about their privacy. Only advertisements are blocked, as per [_EasyList_ filters](https://easylist.github.io/). This mode is closer to what you get with default Adblock Plus settings (when you disable ABP's _acceptable ads_ filter list).
 
 ##### Characteristics
 
