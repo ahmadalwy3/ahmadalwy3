@@ -149,8 +149,12 @@ uBO 1.14.23b3+ only.
 
 The purpose of HTML filters is to remove elements from a document _before_ it is parsed by the browser.
 
+The syntax is similar to that of cosmetic filters, except that you must prefix your selector (CSS or procedural) with the character `^`:
+
     example.com##^.badstuff
     example.com##^script:has-text(7c9e3a5d51cdacfc)
+
+These HTML filters will cause the elements matching the selectors to be **removed from the streamed response data**, such that the browser will never know of their existence once it parses the modified response data. This makes it a powerful tool in uBO's arsenal.
 
 Currently only supported on Firefox 57+.
 
