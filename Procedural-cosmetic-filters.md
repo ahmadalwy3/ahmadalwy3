@@ -32,7 +32,7 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 - Description: Select element _subject_ if and only if the text _needle_ is found inside the element _subject_.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- _needle_: The literal text which must be found, or a literal regular expression. If using a literal regular expression, you can optionally use the `i` or  m` flags (version 1.15).
+- _needle_: The literal text which must be found, or a literal regular expression. If using a literal regular expression, you can optionally use the `i` and/or `m` flags (version 1.15).
 - Examples:
     - `example.com##body > div:last-of-type span:has-text(/^Promoted by/)`
     - `example.com##body > div:last-of-type span:has-text(/^Promoted by/i)`
@@ -57,7 +57,7 @@ Essentially the same as the `:if(...)` operator, except that the element _subjec
 - Description: Select element _subject_ if and only if the result of evaluating _arg_ is one or more elements.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- _arg_: A declaration in the form `name: value`, where `name` is a valid CSS style property, and `value` is the expected value for that style property. `value` can be a literal text or literal regular expression.
+- _arg_: A declaration in the form `name: value`, where `name` is a valid CSS style property, and `value` is the expected value for that style property. `value` can be a literal text or literal regular expression. If using a literal regular expression, you can optionally use the `i` and/or `m` flags (version 1.15).
 - Examples:
     - `extratorrent.*##body > div[class]:matches-css(position: absolute)`
     - `facet.wp.pl##div[class^="_"]:matches-css(background-image: /^url\("data:image/png;base64,/)`
