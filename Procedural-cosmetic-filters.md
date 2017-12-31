@@ -32,9 +32,10 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 - Description: Select element _subject_ if and only if the text _needle_ is found inside the element _subject_.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- _needle_: The literal text which must be found, or a literal regular expression.
+- _needle_: The literal text which must be found, or a literal regular expression. If using a literal regular expression, you can optionally use the `i` or  m` flags (version 1.15).
 - Examples:
     - `example.com##body > div:last-of-type span:has-text(/^Promoted by/)`
+    - `example.com##body > div:last-of-type span:has-text(/^Promoted by/i)`
 
 ### `subject:if(arg)`
 
