@@ -4020,6 +4020,7 @@ Failed URLS: none
 3rd-party domains:
 
 <details>
+
     2mdn.net seekingalpha.com
     5min.com techcrunch.com
     9cache.com 9gag.com
@@ -4162,6 +4163,7 @@ Failed URLS: none
 3rd-party domains:
 
 <details>
+
     9cache.com 9gag.com
     9gaging.com 9gag.com
     abcnews.com go.com
