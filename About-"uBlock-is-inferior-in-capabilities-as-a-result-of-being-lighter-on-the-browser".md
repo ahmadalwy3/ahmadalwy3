@@ -39,8 +39,10 @@ entity-based filters |     | [yes](https://github.com/gorhill/uBlock/wiki/Static
 `:has-text` | [yes](https://issues.adblockplus.org/ticket/5249) (`-abp-contains`) | yes
 `:if` `:if-not`<br>`:matches-css` `:matches-css-before` `:matches-css-after`<br>`:xpath` |     | yes
 `:style` | [no](https://issues.adblockplus.org/ticket/756) | yes
-`script:contains` |     | Legacy Firefox only
+`script:contains` |     | yes
 `script:inject`<br><sup>key to counter anti-blockers</sup> |     | yes
+**HTML filtering**
+Ability to modify response data on the fly<br>WebExtensions uBO 1.15+ |     | yes
 **privacy**
 pro-user default settings<br><sup>uBO is not monetized, it's under no pressure to [compromise](https://adblockplus.org/forum/viewtopic.php?f=17&t=50215) on pro-user interests</sup> |     | yes
 disable pre-fetching |     | [yes](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#disable-pre-fetching)
