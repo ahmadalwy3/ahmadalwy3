@@ -17,7 +17,7 @@ With a single click, it is possible to toggle the hard mode into the [medium mod
 
 - Web pages will load fast.
 - Your privacy exposure to 3rd parties is reduced to a minimum.
-- You no longer depends mostly on 3rd-party filter lists to dictate what is blocked or not.
+- You no longer depend mostly on 3rd-party filter lists to dictate what is blocked or not.
     - The static filter lists are still used to mop up whatever network requests is not blocked in this mode -- so double protection.
 - Very high likelihood of web pages being broken: you have to be ready and willing to fix them when this happen.
     - Keep in mind though that as you build your ruleset for the sites you usually visit, you will spend less and less time fixing web pages.
