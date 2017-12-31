@@ -4005,8 +4005,6 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 </details>
 
-Failed URLS: none
-
 #### Medium mode
 
     URLs visited:                       83
@@ -4252,6 +4250,8 @@ Failed URLS: none
 
 This was fed to [sessbench](https://github.com/gorhill/sessbench):
 
+<details>
+
     wait 15
     repeat 2
     clear cache
@@ -4339,3 +4339,5 @@ This was fed to [sessbench](https://github.com/gorhill/sessbench):
     http://www.xkcd.com/
     http://www.fark.com/
     http://www.theoatmeal.com/
+
+</details>
