@@ -7,6 +7,7 @@
 - [The number of requests blocked](#the-number-of-requests-blocked)
 - [The tools](#the-tools)
 - [The number of domains connected](#the-number-of-domains-connected)
+- [The overview panel](#the-overview-panel)
 - [The per-site switches](#the-per-site-switches)
 
 ***
@@ -17,7 +18,7 @@ This is uBlock's popup UI when you click on uBlock's icon in the toolbar:
 
 ***
 
-#### The large power button
+### The large power button
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748994/858a70aa-47d1-11e7-9e2c-409b83de99b9.png)
 
@@ -29,7 +30,7 @@ For more advanced whitelisting control, see ["How to whitelist a web site"](http
 
 ***
 
-#### The tools
+### The tools
 
 ![a](https://cloud.githubusercontent.com/assets/585534/26748901/97dc024c-47d0-11e7-89d0-63fd5a092b02.png)
 
@@ -53,7 +54,7 @@ Click the _cogs_ icon to open uBlock's dashboard.
 
 ***
 
-#### The number of requests blocked
+### The number of requests blocked
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26749010/ba071586-47d1-11e7-8bc6-74bce249d497.png)
 
@@ -61,7 +62,7 @@ This shows the number of network requests uBlock blocked on the current page. Al
 
 ***
 
-#### The number of domains connected
+### The number of domains connected
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26749020/da09c446-47d1-11e7-9d49-e46634058915.png)
 
@@ -89,7 +90,26 @@ And I had click-to-play enabled in all cases, so it could have been worse (excep
 
 ***
 
-#### The per-site switches
+### The overview panel
+
+When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand to show you more details about requests blocked and domains connected:
+
+![a](https://user-images.githubusercontent.com/585534/34523870-48cb57b2-f067-11e7-9069-5b83f9a8f9e3.png)
+
+The pluses and minuses denote network requests which were either allowed (not blocked) or blocked, respectively for the specific domain/hostname on which they appear. The number of pluses and minuses are proportional to the number of requests allowed or blocked:
+- `+`, `-`: under 10 network requests were allowed, blocked.
+- `++`, `--`: under 100 network requests were allowed, blocked.
+- `+++`, `---`: 100 or more network requests were allowed, blocked.
+
+To hide that panel, just click again on either the _"requests blocked"_ or _"domains connected"_ label.
+
+Unless you are in "advanced user", this panel is read-only and available only for informational purpose.
+
+In ["advanced user"](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
+
+***
+
+### The per-site switches
 
 ![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1g.png)
 
