@@ -96,14 +96,14 @@ When you click on either the _"requests blocked"_ or _"domains connected"_ label
 
 ![a](https://user-images.githubusercontent.com/585534/34523870-48cb57b2-f067-11e7-9069-5b83f9a8f9e3.png)
 
-The pluses and minuses denote network requests which were either allowed (not blocked) or blocked, respectively for the specific domain/hostname on which they appear. The number of pluses and minuses are proportional to the number of requests allowed or blocked:
+The pluses and minuses denote network requests which were either allowed (not blocked) or blocked, respectively for the specific domain/hostname aside which they appear. The number of pluses and minuses are proportional to the number of requests allowed or blocked:
 - `+`, `-`: under 10 network requests were allowed, blocked.
 - `++`, `--`: under 100 network requests were allowed, blocked.
 - `+++`, `---`: 100 or more network requests were allowed, blocked.
 
 To hide that panel, just click again on either the _"requests blocked"_ or _"domains connected"_ label.
 
-Unless you are in "advanced user", this panel is read-only and available only for informational purpose.
+Unless you are in "advanced user" mode, this panel is read-only and available only for informational purpose.
 
 In ["advanced user"](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
 
