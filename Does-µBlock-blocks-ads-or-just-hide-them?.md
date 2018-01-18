@@ -1,1 +1,0 @@
-Moved to: <https://github.com/gorhill/uBlock/wiki/Does-%C2%B5Block-block-ads-or-just-hide-them%3F>
