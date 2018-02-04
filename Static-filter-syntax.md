@@ -139,9 +139,7 @@ As with the other new cosmetic filtering selectors, the `:style` can be used onl
 
 Adguard [already support such feature](https://adguard.com/en/filterrules.html#cssInjection), although using a different syntax. However uBO is able to transparently convert and make use of the Adguard's "CSS injection rules" if ever you use an Adguard filter list in uBO (well, this essentially means you can use Adguard's syntax in uBO if you prefer).
 
-For example, [Adguard English filter](https://adguard.com/en/filters.html#english) contains ~50 styling filters, [Adguard Russian filter list](https://adguard.com/en/filters.html#russian) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [Adguard's filter lists](https://adguard.com/en/filters.html):
-
-![a](https://cloud.githubusercontent.com/assets/585534/16540886/2905a580-4042-11e6-9c68-7e18a645dea1.png)
+For example, [Adguard English filter](https://adguard.com/en/filters.html#english) contains ~50 styling filters, [Adguard Russian filter list](https://adguard.com/en/filters.html#russian) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [Adguard's filter lists](https://adguard.com/en/filters.html), which can be enabled from the [3rd-party filters pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters).
 
 ### HTML filters
 
