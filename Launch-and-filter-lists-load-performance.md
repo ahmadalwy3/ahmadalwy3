@@ -1,4 +1,4 @@
-Parsing raw filter lists is a CPU and memory intensive task. Adblock Plus-compatible filter syntax is complex, and thus parsing those filters requires a lot of CPU cycles. To add to the parsing complexity, µBlock also supports the parsing of hosts files. Though µBlock could parse filter lists at a satisfying speed, this doesn't mean trying to improve performance in that area should not be attempted.
+Parsing raw filter lists is a CPU and memory intensive task. Adblock Plus-compatible filter syntax is complex, and thus parsing those filters requires a lot of CPU cycles. To add to the parsing complexity, uBlock also supports the parsing of hosts files. Though uBlock could parse filter lists at a satisfying speed, this doesn't mean trying to improve performance in that area should not be attempted.
 
 So this is what has been done in 0.8.9.0. The idea is rather simple: create and cache a compiled version of a filter list, so that next time it needs to be loaded in memory, all the costly parts of the parsing operation have been done already:
 
@@ -16,7 +16,7 @@ A compiled filter lists is made of a sequence of _atomic_ filters, i.e. filters 
 
     /advertisers.$image,script,subdocument
 
-From µBlock's point of view, this is really three separate filters:
+From uBlock's point of view, this is really three separate filters:
 
     /advertisers.$image
     /advertisers.$script
@@ -41,13 +41,13 @@ Compiling filter lists involves more then just _atomizing_, it also involves pre
 
 So roughly this is it.
 
-There are nice virtuous side effects with using compiled filter lists. One of them is the very accurate counting of distinct filters, and the ability to _completely_ detect duplicates. Prior to 0.8.9.0, µBlock tried best to detect duplicate, but it wasn't perfect, as it was using the raw representation of a filter to decide whether the filter was already processed.
+There are nice virtuous side effects with using compiled filter lists. One of them is the very accurate counting of distinct filters, and the ability to _completely_ detect duplicates. Prior to 0.8.9.0, uBlock tried best to detect duplicate, but it wasn't perfect, as it was using the raw representation of a filter to decide whether the filter was already processed.
 
-So this meant that the following duplicated filters would not have been seen as duplicates by µBlock, even though they essentially accomplish the same thing:
+So this meant that the following duplicated filters would not have been seen as duplicates by uBlock, even though they essentially accomplish the same thing:
 
     /advertisers.$image,script
     /advertisers.$script,image
 
-In 0.8.9.0, since all filters are normalized into atomic filter representation, µBlock is now able to detect 100% of filters which are functional duplicates.
+In 0.8.9.0, since all filters are normalized into atomic filter representation, uBlock is now able to detect 100% of filters which are functional duplicates.
 
-And since µBlock's now report the number of atomic filters, expect the count to go up somewhat compared to previous versions. For instance, currently using default filter lists, 0.8.9.0 reports over 58,000 network filters, while previous versions reported around 55,000 network filters.
+And since uBlock's now report the number of atomic filters, expect the count to go up somewhat compared to previous versions. For instance, currently using default filter lists, 0.8.9.0 reports over 58,000 network filters, while previous versions reported around 55,000 network filters.
