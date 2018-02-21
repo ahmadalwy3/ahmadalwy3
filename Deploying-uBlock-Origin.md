@@ -29,3 +29,4 @@ Now, the value for `adminSettings` must itself be a plain string, and this means
 Here are issues related to the customization of settings for deployed uBO, there might be advises in there which you may find useful:
 - https://github.com/gorhill/uBlock/issues/832
 - https://github.com/gorhill/uBlock/issues/531
+- https://github.com/gorhill/uBlock/issues/2986#issuecomment-364035002
