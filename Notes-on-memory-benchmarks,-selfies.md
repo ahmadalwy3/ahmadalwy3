@@ -4,7 +4,7 @@ I already wrote about this [here](https://github.com/gorhill/uBlock/wiki/Myth:-u
 
 When I run my benchmarks, the methodology used is to reproduce what I believe is the most common scenario: a user launches his/her browser with uBO already fully configured to his/her liking, without further changes to the selection of filter lists. The launch-and-forget scenario. I also benchmark this way for all other blockers.
 
-However there are specific operations which will cause uBO to churn through lot of short-term memory (let's call this "memory-churning"), and although all that short-term memory is freed by µBlock once the specific operation is completed, not all that freed memory will be garbage-collected by the browser for whatever reasons. [Memory fragmentation](http://en.wikipedia.org/wiki/Fragmentation_(computing)#External_fragmentation) is possibly a factor.
+However there are specific operations which will cause uBO to churn through lot of short-term memory (let's call this "memory-churning"), and although all that short-term memory is freed by uBlock once the specific operation is completed, not all that freed memory will be garbage-collected by the browser for whatever reasons. [Memory fragmentation](http://en.wikipedia.org/wiki/Fragmentation_(computing)#External_fragmentation) is possibly a factor.
 
 Memory-churning operations lead to a permanently higher memory baseline for uBO, as can be seen in the browser's _Task Manager_.
 
@@ -21,7 +21,7 @@ Additionally, with version 0.6+, uBO is able to create a selfie to improve its l
 
 The time at which a selfie is created is at uBO's discretion. Currently, this will happen some minutes after the filter lists have been loaded, so as to avoid launching memory-churning selfie creation operations before there is a good likelihood the user is done tampering with his selection of filters.
 
-Take note that all the benchmarks appearing on the main page are quite dated at this point, a lot of code has been added or changed in µBlock, and the filter lists themselves may have grown since then (I have to check). So for version 0.6 I ran the reference benchmark to find out where µBlock stands memory efficiency-wise -- along with ABP 1.8.3 for comparison.
+Take note that all the benchmarks appearing on the main page are quite dated at this point, a lot of code has been added or changed in uBlock, and the filter lists themselves may have grown since then (I have to check). So for version 0.6 I ran the reference benchmark to find out where uBlock stands memory efficiency-wise -- along with ABP 1.8.3 for comparison.
 
 Without a selfie available (one was created during the benchmark):<br>
 ![Without selfie](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/ublock-vs-abp-memory-201409-a.png)
@@ -39,7 +39,7 @@ Benchmark details:
 
 ### Reminder
 
-Remember, what is covered above is what I call the extension's _own_ memory. The worst though is the contributed memory footprint by Adblock Plus for web pages. The sum of all [contributed memory footprint by ABP to all opened web pages](https://github.com/gorhill/uBlock/wiki/uBlock-vs.-ABP:-efficiency-compared#added-memory-footprint-to-web-pages) relative to µBlock's contributed memory footprint can easily **dwarf** the difference shown above, due to the fact that ABP will inject 14,000+ CSS rules in every web page, and every `iframe` of every web page, and this is when using _EasyList_ only.
+Remember, what is covered above is what I call the extension's _own_ memory. The worst though is the contributed memory footprint by Adblock Plus for web pages. The sum of all [contributed memory footprint by ABP to all opened web pages](https://github.com/gorhill/uBlock/wiki/uBlock-vs.-ABP:-efficiency-compared#added-memory-footprint-to-web-pages) relative to uBlock's contributed memory footprint can easily **dwarf** the difference shown above, due to the fact that ABP will inject 14,000+ CSS rules in every web page, and every `iframe` of every web page, and this is when using _EasyList_ only.
 
 ### Addendum
 
