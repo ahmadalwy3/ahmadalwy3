@@ -10,7 +10,7 @@ If the filter lists you enable include filters to block YouTube ads, then yes it
 
 #### Is [other blocker] still needed with uBlock?
 
-It all depends of the filter lists you use, and whether you use dynamic filtering in uBlock. I run benchmarks regarding blocking efficiency; these may help you decide whether you should keep another blocker to complement uBlock, or whether you should drop it and configure uBlock to block more: [uBlock and others: Blocking ads, trackers, malwares](https://github.com/gorhill/uBlock/wiki/%C2%B5Block-and-others:-Blocking-ads,-trackers,-malwares). The [resulting diffs](https://github.com/gorhill/uBlock/wiki/%C2%B5Block-and-others:-Blocking-ads,-trackers,-malwares#data-diffs) are particularly useful in making a decision.
+It all depends of the filter lists you use, and whether you use dynamic filtering in uBlock. I run benchmarks regarding blocking efficiency; these may help you decide whether you should keep another blocker to complement uBlock, or whether you should drop it and configure uBlock to block more: [uBlock and others: Blocking ads, trackers, malwares](https://github.com/gorhill/uBlock/wiki/uBlock-and-others:-Blocking-ads,-trackers,-malwares). The [resulting diffs](https://github.com/gorhill/uBlock/wiki/uBlock-and-others:-Blocking-ads,-trackers,-malwares#data-diffs) are particularly useful in making a decision.
 
 #### Is the Firefox version considered stable?
 
