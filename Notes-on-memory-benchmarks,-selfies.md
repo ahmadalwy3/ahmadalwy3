@@ -1,6 +1,6 @@
 uBlock Origin ("uBO") is quite memory efficient compared to most other blockers. However, users will often report that this is not the case, or not as impressive as "advertised" by the official documentation.
 
-I already wrote about this [here](https://github.com/gorhill/uBlock/wiki/Myth:-%C2%B5Block-consumes-over-80MB). I will add more details here, as there is more than just garbage collection to factor in. 
+I already wrote about this [here](https://github.com/gorhill/uBlock/wiki/Myth:-uBlock-consumes-over-80MB). I will add more details here, as there is more than just garbage collection to factor in. 
 
 When I run my benchmarks, the methodology used is to reproduce what I believe is the most common scenario: a user launches his/her browser with uBO already fully configured to his/her liking, without further changes to the selection of filter lists. The launch-and-forget scenario. I also benchmark this way for all other blockers.
 
@@ -39,7 +39,7 @@ Benchmark details:
 
 ### Reminder
 
-Remember, what is covered above is what I call the extension's _own_ memory. The worst though is the contributed memory footprint by Adblock Plus for web pages. The sum of all [contributed memory footprint by ABP to all opened web pages](https://github.com/gorhill/uBlock/wiki/%C2%B5Block-vs.-ABP:-efficiency-compared#added-memory-footprint-to-web-pages) relative to µBlock's contributed memory footprint can easily **dwarf** the difference shown above, due to the fact that ABP will inject 14,000+ CSS rules in every web page, and every `iframe` of every web page, and this is when using _EasyList_ only.
+Remember, what is covered above is what I call the extension's _own_ memory. The worst though is the contributed memory footprint by Adblock Plus for web pages. The sum of all [contributed memory footprint by ABP to all opened web pages](https://github.com/gorhill/uBlock/wiki/uBlock-vs.-ABP:-efficiency-compared#added-memory-footprint-to-web-pages) relative to µBlock's contributed memory footprint can easily **dwarf** the difference shown above, due to the fact that ABP will inject 14,000+ CSS rules in every web page, and every `iframe` of every web page, and this is when using _EasyList_ only.
 
 ### Addendum
 
