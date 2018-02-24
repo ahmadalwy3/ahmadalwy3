@@ -145,7 +145,7 @@ For example, [Adguard English filter](https://adguard.com/en/filters.html#englis
 
 uBO 1.14.23b3+ only.
 
-**READ VERY CAREFULLY:** HTML filtering acts on the **response data** (before browser parsing). Do not use the browser inspector from developer tools to create HTML filters. You **must** use `view-source:[URL of page]` instead to look at the **response data** and find out relevant HTML filter.
+**READ VERY CAREFULLY:** HTML filtering acts on the **response data** (before browser parsing). Do not use the browser inspector from developer tools to create HTML filters. You **must** use `view-source:[URL of page]` instead to look at the **response data** and find out relevant information to create relevant HTML filters.
 
 The purpose of HTML filters is to remove elements from a document _before_ it is parsed by the browser.
 
