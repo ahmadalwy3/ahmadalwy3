@@ -1,10 +1,10 @@
 ##### Intro
 
-If you really care very much about your privacy (not being tracked, data mined, etc.), uBlock is a crutch (a good one though), even with _EasyPrivacy_ enabled (this is true for any "ad blocker"). If you want more than a good crutch, [HTTP Switchboard](https://github.com/gorhill/httpswitchboard#http-switchboard-for-chromium) is the way to go: it gives you full disclosure and full control of what web pages do.
+If you really care very much about your privacy (not being tracked, data mined, etc.), uBlock is a crutch (a good one though), even with _EasyPrivacy_ enabled (this is true for any "ad blocker"). If you want more than a good crutch, [uMatrix](https://github.com/gorhill/uMatrix#umatrix) is the way to go: it gives you full disclosure and full control of what web pages do.
 
 ##### Settings
 
-Unlike HTTP Switchboard, uBlock can't foil cookie headers. For privacy-minded users it is strongly suggested to...
+Unlike uMatrix, uBlock can't foil cookie headers. For privacy-minded users it is strongly suggested to...
 
 - Enable _"Block third-party cookies and site data"_ in _"Content settings"_ / _"Cookies"_.
     - It works very well: see "Outbound cookies" in [this benchmark results](https://github.com/gorhill/uBlock/wiki/%C2%B5Block-and-others:-Blocking-ads,-trackers,-malwares).
@@ -29,7 +29,7 @@ Another powerful command line switch is:
 
 - `--host-rules="MAP *.google-analytics.com 0.0.0.0","MAP *.googleadservices.com 0.0.0.0","MAP *.doubleclick.net 0.0.0.0","MAP *.googletagservices.com 0.0.0.0"`
     - This switch maps those hostnames (or any other ones) to the IP address 0.0.0.0 ([ref](http://peter.sh/experiments/chromium-command-line-switches/#host-rules)) and hence blocks them effectively (even on the Chrome webstore where extensions like uBlock are disabled). 
-    - _However, note that blocking those hostnames with that switch might break some websites. That's why blocking them with HTTP Switchboard is preferable since you can whitelist them as exceptions for those websites which won't work without them. Alternatively, you could use the `important` filter option mentioned below._
+    - _However, note that blocking those hostnames with that switch might break some websites. That's why blocking them with uMatrix is preferable since you can whitelist them as exceptions for those websites which won't work without them. Alternatively, you could use the `important` filter option mentioned below._
 
 ##### Regarding EasyPrivacy
 
@@ -68,4 +68,4 @@ It's unclear if, and how much this breaks things. But will prevent your browsing
 
 But this applies to any domain which is ubiquitous enough, `gravatar.com` is just one example among so many. 
 
-To deal with this easily, [HTTP Switchboard](https://github.com/gorhill/httpswitchboard) is the best tool, as to blacklist a ubiquitous domain with 100% certainty is simply a matter of point and click.
+To deal with this easily, [uMatrix](https://github.com/gorhill/uMatrix) is the best tool, as to blacklist a ubiquitous domain with 100% certainty is simply a matter of point and click.
