@@ -68,9 +68,17 @@ When clicking the _"Update now"_ button in the _"3rd-party filters"_ pane in the
 
 #### `popupFontSize`
 
-Default: `14px`.
+Default: `unset`.
 
-A valid CSS font size value to use for the popup panel. Use if you are unhappy with the default size.
+A valid CSS font size value (`14px`) to use for the popup panel. Use if you are unhappy with the default size.
+
+***
+
+#### `streamScriptInjectFilters`
+
+Default: `false`.
+
+The purpose is to tell uBO to use stream filtering to inject scriptlets where possible. If set to `true`, it brings back scriptlet injection through stream filtering as was the default before `1.15.10`. A fix has also been added to resolve [uBlockOrigin/uAssets#1492](https://github.com/uBlockOrigin/uAssets/issues/1492), which was the main reason to disable stream filtering-based scriptlets injection in 1.15.10.
 
 ***
 
