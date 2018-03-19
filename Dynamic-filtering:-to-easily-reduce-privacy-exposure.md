@@ -4,7 +4,11 @@
 
 _Ubiquitous sites_ are those 3rd parties which resources are embedded in countless web pages. Your privacy exposure is sharply increased by such _ubiquitous sites_.
 
-An obvious example is Facebook: the Facebook widgets to _like_ something are embedded in countless web pages, and as such these widgets serve as excellent tracking devices for Facebook to build a profile of your browsing history. This is also true for other entity such as Twitter, Google, Disqus, etc.
+An obvious example is Facebook: the Facebook widgets to _like_ something are embedded in countless web pages, and as such these widgets serve as excellent tracking devices for Facebook to build a profile of your browsing history.
+
+![b](https://user-images.githubusercontent.com/585534/37596582-07533d5a-2b53-11e8-8690-0883e831349d.png)
+
+This is also true for other entity such as Twitter, Google, Disqus, etc.
 
 > ***
 > Recommended reading: [_Internet Companies: Confusing Consumers for Profit_](https://www.eff.org/deeplinks/2015/10/internet-companies-confusing-consumers-profit) (EFF)
