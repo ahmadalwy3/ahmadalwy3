@@ -20,7 +20,7 @@ Will use Facebook as an example. Facebook will still have the ability to track y
 
 First, we block Facebook-related hostnames globally, such that network requests to Facebook servers are blocked _by default, everywhere_:
 
-![Block `facebook.net` everywhere](https://cloud.githubusercontent.com/assets/585534/10513149/aa42ac9e-7313-11e5-8b71-42383b58fcd4.png)
+![Block `facebook.net` everywhere](https://user-images.githubusercontent.com/585534/37596805-b94d377c-2b53-11e8-8bd9-a846f7c399d1.png)
 
 All suggested global `block` rules for Facebook:<sup>[1]</sup>
 
