@@ -18,7 +18,7 @@ uBlock Origin's [_dynamic filtering_](https://github.com/gorhill/uBlock/wiki/Dyn
 
 Will use Facebook as an example. Facebook will still have the ability to track your browsing habits when using uBlock Origin with its default settings [see benchmark's raw data for [_Easy Mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode): notice in the [list of 3rd parties](https://github.com/gorhill/uBlock/wiki/Blocking-mode#easy-mode) how `facebook.net` is ubiquitous].
 
-First, we block Facebook-related hostnames globally, such that network requests to Facebook servers are blocked _by default, everywhere_:
+First, we block Facebook-related hostnames globally, such that network requests to Facebook servers are blocked _by default, everywhere_ (the first column is for global rules):
 
 ![Block `facebook.net` everywhere](https://user-images.githubusercontent.com/585534/37596805-b94d377c-2b53-11e8-8bd9-a846f7c399d1.png)
 
@@ -34,7 +34,7 @@ These rules will cause Facebook to be blocked everywhere by default:
 
 This will foil the ability of Facebook to gather data about your browsing habits through the embedding of Facebook's resources on countless web sites.
 
-Blocking Facebook when visiting Facebook is not ideal though, and there is no real benefit for doing so. Thus we will create an exception to the above global rules, but just for when we visit Facebook's own site:
+Blocking Facebook when visiting Facebook is not ideal though, and there is no real benefit for doing so. Thus we will create an exception to the above global rules, but just for when we visit Facebook's own site (the second column is for local rules):
 
 ![Do not block `facebook.com` while visiting Facebook](https://user-images.githubusercontent.com/585534/37597337-8e9015ac-2b55-11e8-94c6-28a142bd657e.png)
 
