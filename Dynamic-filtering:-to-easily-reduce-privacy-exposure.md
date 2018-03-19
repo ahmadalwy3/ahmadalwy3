@@ -28,11 +28,15 @@ All suggested global `block` rules for Facebook:<sup>[1]</sup>
     * facebook.com * block
     * fbcdn.net * block
 
-These rules will cause Facebook to be blocked everywhere by default, _even_ when visiting Facebook's own site. This is what foils the ability of Facebook to gather data about your browsing habits.
+These rules will cause Facebook to be blocked everywhere by default:
+
+![Denied](https://user-images.githubusercontent.com/585534/37597072-9f77f39a-2b54-11e8-94b6-66c2fdf6ba01.png)
+
+This will foil the ability of Facebook to gather data about your browsing habits through the embedding of Facebook's resources on countless web sites.
 
 Blocking Facebook when visiting Facebook is not ideal though, and there is no real benefit for doing so. Thus we will create an exception to the above global rules, but just for when we visit Facebook's own site:
 
-![Do not block `facebook.com` while visiting Facebook](https://cloud.githubusercontent.com/assets/585534/10513464/b3e0f09c-7315-11e5-8e0b-90d3cc8614f7.png)
+![Do not block `facebook.com` while visiting Facebook](https://user-images.githubusercontent.com/585534/37597337-8e9015ac-2b55-11e8-94c6-28a142bd657e.png)
 
 All suggested global `noop` rules for Facebook.<sup>[1]</sup>
 
