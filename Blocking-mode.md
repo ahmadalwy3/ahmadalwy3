@@ -42,6 +42,8 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - 3rd-party scripts = globally blocked.
 - 3rd-party frames = globally blocked.
 - Minimal set of rules to ensure web pages render properly.
+- Don't feel like fiddling too much?
+    - A local `noop` rule (gray) on the `3rd-party scripts` and `3rd-party frames` cells will downgrade you to easy, default blocking mode above.
 
 **Hard mode** ([details](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode)):
 - uBlock's out-of-the-box settings.
@@ -50,6 +52,8 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - 3rd-party frames = globally blocked.
 - 3rd-party = globally blocked.
 - Minimal set of rules to ensure web pages render properly.
+- Don't feel like fiddling too much?
+    - One local `noop` rule (gray) on the `3rd-party` cell will "downgrade" you to medium mode above.
 
 ### Raw data
 
