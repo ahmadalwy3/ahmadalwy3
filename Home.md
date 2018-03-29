@@ -4,7 +4,6 @@
     - [Can you trust uBlock?](https://github.com/gorhill/uBlock/wiki/Can-you-trust-uBlock%3F)
 - [Privacy policy](https://github.com/gorhill/uBlock/wiki/Privacy-policy)
 - Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
-- [How to ...](https://github.com/gorhill/uBlock/wiki/How-to-...)
 - Quick guides:
     - [The popup user interface](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface)
         - [The per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
@@ -48,11 +47,12 @@
 - [Troubleshooting](https://github.com/gorhill/uBlock/wiki/Troubleshooting)
     - [Software known to have uninstalled uBlock Origin](https://github.com/gorhill/uBlock/wiki/Software-known-to-have-uninstalled-uBlock-Origin)
     - [Read carefully if using uBO/webext on Firefox](https://github.com/gorhill/uBlock/wiki/Firefox-WebExtensions)
-- External guides:
+- Good external guides:
     - [Firefox: uBlock Origin – Firefox-Kompendium Teil2](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
 - Unsorted topics
     - [Privacy stuff](https://github.com/gorhill/uBlock/wiki/Privacy-stuff)
     - [Tricks and tips waterfall](https://github.com/gorhill/uBlock/wiki/Tips-and-tricks-waterfall)
+    - [How to ...](https://github.com/gorhill/uBlock/wiki/How-to-...)
     - [Memory footprint: what happens inside uBlock after installation](https://github.com/gorhill/uBlock/wiki/Memory-footprint:-what-happens-inside-uBlock-after-installation)
     - [uBlock vs. ABP: efficiency compared](https://github.com/gorhill/uBlock/wiki/uBlock-vs.-ABP:-efficiency-compared)
     - [Own memory usage: benchmarks over time](https://github.com/gorhill/uBlock/wiki/Own-memory-usage:-benchmarks-over-time)
