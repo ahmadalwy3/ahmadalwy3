@@ -3,6 +3,7 @@
 - [About the required permissions in Chromium](https://github.com/gorhill/uBlock/wiki/About-the-required-permissions)
     - [Can you trust uBlock?](https://github.com/gorhill/uBlock/wiki/Can-you-trust-uBlock%3F)
 - [Privacy policy](https://github.com/gorhill/uBlock/wiki/Privacy-policy)
+- Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
 - [How to ...](https://github.com/gorhill/uBlock/wiki/How-to-...)
 - Quick guides:
     - [The popup user interface](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface)
@@ -49,7 +50,6 @@
     - [Read carefully if using uBO/webext on Firefox](https://github.com/gorhill/uBlock/wiki/Firefox-WebExtensions)
 - External guides:
     - [Firefox: uBlock Origin – Firefox-Kompendium Teil2](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
-- Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
 - Unsorted topics
     - [Privacy stuff](https://github.com/gorhill/uBlock/wiki/Privacy-stuff)
     - [Tricks and tips waterfall](https://github.com/gorhill/uBlock/wiki/Tips-and-tricks-waterfall)
