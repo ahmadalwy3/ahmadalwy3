@@ -49,7 +49,7 @@
     - [Read carefully if using uBO/webext on Firefox](https://github.com/gorhill/uBlock/wiki/Firefox-WebExtensions)
 - Good external guides:
     - [Firefox: uBlock Origin – Firefox-Kompendium Teil2](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
-- Unsorted topics
+- Unsorted topics: <details><summary>expand</summary>
     - [Privacy stuff](https://github.com/gorhill/uBlock/wiki/Privacy-stuff)
     - [Tricks and tips waterfall](https://github.com/gorhill/uBlock/wiki/Tips-and-tricks-waterfall)
     - [How to ...](https://github.com/gorhill/uBlock/wiki/How-to-...)
@@ -64,4 +64,4 @@
     - [uBlock and others: Blocking ads, trackers, malwares](https://github.com/gorhill/uBlock/wiki/uBlock-and-others:-Blocking-ads,-trackers,-malwares)
     - [About "This other extension reports more stuff blocked!"](https://github.com/gorhill/uBlock/wiki/About-%22This-other-extension-reports-more-stuff-blocked!%22)
     - [Various videos showing side by side comparison of the load speed of complex sites](https://github.com/gorhill/uBlock/wiki/Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites)
-    - [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
+    - [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)</details>
