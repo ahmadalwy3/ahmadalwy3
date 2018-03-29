@@ -47,12 +47,12 @@
 - [Troubleshooting](https://github.com/gorhill/uBlock/wiki/Troubleshooting)
     - [Software known to have uninstalled uBlock Origin](https://github.com/gorhill/uBlock/wiki/Software-known-to-have-uninstalled-uBlock-Origin)
     - [Read carefully if using uBO/webext on Firefox](https://github.com/gorhill/uBlock/wiki/Firefox-WebExtensions)
-- [FAQ](https://github.com/gorhill/uBlock/wiki/FAQ)
+- External guides:
+    - [Firefox: uBlock Origin – Firefox-Kompendium Teil2](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
 - Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
-    - [My answers to web store reviews where appropriate](https://github.com/gorhill/uBlock/wiki/My-answers-to-web-store-reviews-where-appropriate)
-- [Privacy stuff](https://github.com/gorhill/uBlock/wiki/Privacy-stuff)
-- [Tricks and tips waterfall](https://github.com/gorhill/uBlock/wiki/Tips-and-tricks-waterfall)
-- Various performance/efficiency topics
+- Unsorted topics
+    - [Privacy stuff](https://github.com/gorhill/uBlock/wiki/Privacy-stuff)
+    - [Tricks and tips waterfall](https://github.com/gorhill/uBlock/wiki/Tips-and-tricks-waterfall)
     - [Memory footprint: what happens inside uBlock after installation](https://github.com/gorhill/uBlock/wiki/Memory-footprint:-what-happens-inside-uBlock-after-installation)
     - [uBlock vs. ABP: efficiency compared](https://github.com/gorhill/uBlock/wiki/uBlock-vs.-ABP:-efficiency-compared)
     - [Own memory usage: benchmarks over time](https://github.com/gorhill/uBlock/wiki/Own-memory-usage:-benchmarks-over-time)
@@ -64,4 +64,4 @@
     - [uBlock and others: Blocking ads, trackers, malwares](https://github.com/gorhill/uBlock/wiki/uBlock-and-others:-Blocking-ads,-trackers,-malwares)
     - [About "This other extension reports more stuff blocked!"](https://github.com/gorhill/uBlock/wiki/About-%22This-other-extension-reports-more-stuff-blocked!%22)
     - [Various videos showing side by side comparison of the load speed of complex sites](https://github.com/gorhill/uBlock/wiki/Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites)
-- [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
+    - [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
