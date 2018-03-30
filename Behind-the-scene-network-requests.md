@@ -1,5 +1,7 @@
 [Back to _Dynamic filtering: default-deny_](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-default-deny)
 
+[This wiki page out of date and in need of revision]
+
 ***
 
 The filtering of behind-the-scene network request is available to [advanced users](https://github.com/gorhill/uBlock/wiki/Behind-the-scene-network-requests).
