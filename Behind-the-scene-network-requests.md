@@ -1,6 +1,12 @@
 [Back to _Dynamic filtering: default-deny_](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-default-deny)
 
-**Note:** This wiki page is out of date and in need of revision. When this documentation was created, the behind-the-scene network requests uBlock Origin was able to see and filter originated from many places, such as those from other extensions or from various browser operations. Since then things have changed: uBO no longer can see network requests from other extensions, and behind-the-scene network requests are now less frequent. Because of this, starting with uBO 1.15.20, the `behind-the-scene` scope will no longer be whitelisted by default, meaning network requests from the behind-the-scene scope will be subject to filtering.
+**Important notes:**
+
+This wiki page is out of date and in need of revision. When this documentation was created, the behind-the-scene network requests uBlock Origin was able to see and filter originated from many places, such as those from other extensions or from various browser operations (ex.: real-time search suggestions).
+
+Since then things have changed: uBO no longer can see network requests from other extensions, and behind-the-scene network requests are now quite less frequent. Furthermore, the webRequest API now provides more context to event listeners, such that it is often possible to still filter properly even when it's not possible to know from which exact tab a network request originates.
+
+Because of this (and other reasons which will be eventually come to light), starting with uBO 1.15.20, the `behind-the-scene` scope will no longer be whitelisted by default, meaning network requests from the behind-the-scene scope will be subject to filtering by default.
 
 ***
 
