@@ -1,25 +1,3 @@
-I've seen an increase in misrepresentation and disinformation lately regarding uBlock -- and not surprisingly always from anonymous sources.
-
-I will set the official record here.
-
-There seems to be underhanded attempts to discredit uBlock lately in various venues. Here is a typical comment:
-
-> uBlock who is recently found to not actually "block" ads, but rather hide them after its been displayed. Adblock actually blocks them before they can even display them.
-
-The statement above is plain fear-using-disinformation. That kind of disinformation happens to be convenient to the incumbent blockers, **or** to those who have an interest in people using those incumbent blockers. 
-
-Also another myth: I've seen in [many](https://np.reddit.com/r/AskReddit/comments/35s2je/whats_a_product_that_everybody_uses_but_nobody/cr7h8l6) [places](https://twitter.com/1v1MeInBed/status/611658444244951040) [lately](https://np.reddit.com/r/explainlikeimfive/comments/363569/eli5_how_come_adblockublock_doesnt_let_the_ad/crafo5p?context=3) [the](https://www.reddit.com/r/softwaregore/comments/3g8gg3/youtube_has_found_a_new_way_to_prevent_you_from/ctvybvc) following assertion:
-
-> ublock blocks ads just like adblock plus, but triggers the ads API to think it got viewed
-
-Completely false. uBlock Origin does not "trigger" any "ads API" (whatever that is). It prevents network requests from being made according to filter lists (or [dynamic filtering rules](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)) so that your browser does not connect to remote servers, period.
-
-***
-
-Whoever claims that uBlock does not block network requests as expected should open [an issue with uBlock](https://github.com/gorhill/uBlock/issues) along with **all** the details supporting the claim. If the issue is not addressed satisfactorily, the claimant should report its finding + proof to the [PRISM Break project](https://github.com/nylira/prism-break/issues) in order to ensure [uBlock](https://prism-break.org/en/projects/ublock-origin/) is removed from that project.
-
-***
-
 There are two kinds of [ABP-compatible filters](https://adblockplus.org/en/filters): network filters and cosmetic filters. _Cosmetic filters_ are referred to as _element hiding_ filters by Adblock Plus ("ABP").
 
 #### Network filters
