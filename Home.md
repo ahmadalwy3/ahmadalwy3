@@ -48,6 +48,7 @@
     - [Software known to have uninstalled uBlock Origin](https://github.com/gorhill/uBlock/wiki/Software-known-to-have-uninstalled-uBlock-Origin)
     - [Read carefully if using uBO/webext on Firefox](https://github.com/gorhill/uBlock/wiki/Firefox-WebExtensions)
 - Good external guides:
+    - [How to use uBlock Origin advanced user mode tutorial](https://www.youtube.com/watch?v=2lisQQmWQkY)
     - [Firefox: uBlock Origin – Firefox-Kompendium Teil2](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
 - Unsorted topics: <details><summary>expand</summary>
     - [Privacy stuff](https://github.com/gorhill/uBlock/wiki/Privacy-stuff)
