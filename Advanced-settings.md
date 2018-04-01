@@ -90,7 +90,7 @@ If set to `true`, uBO will hard block all network requests when the browser laun
 
 Disclaimer: even with this setting enabled (set to `true`), it's impossible for uBO to guarantee with 100% certainty that everything will be properly blocked when the browser is launched. **This is a by-design browser issue** -- do _not_ open an issue on uBO issue tracker about this.
 
-Related issues:
+Related browser issues:
 - Chromium: <https://bugs.chromium.org/p/chromium/issues/detail?id=523634>
 - Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1378459>
 
