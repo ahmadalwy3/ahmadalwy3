@@ -1,6 +1,6 @@
 - [Chinese translation of this Wiki: 中文](https://github.com/fang5566/uBlock/wiki/Home)
 - [Change log](https://github.com/gorhill/uBlock/releases) / [Pre-fork: 0.9.3.0 - 0.2.0.0](https://github.com/chrisaljoudi/uBlock/releases) / [Pre-fork: 0.1.4.8 and less](https://github.com/gorhill/uBlock/wiki/Change-log)
-- [Permissions](https://github.com/gorhill/uBlock/wiki/About-the-required-permissions)
+- [Permissions](https://github.com/gorhill/uBlock/wiki/Permissions)
     - [Can you trust uBlock?](https://github.com/gorhill/uBlock/wiki/Can-you-trust-uBlock%3F)
 - [Privacy policy](https://github.com/gorhill/uBlock/wiki/Privacy-policy)
 - Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
