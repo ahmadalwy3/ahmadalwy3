@@ -4,6 +4,7 @@
 
 Dynamic filtering is available to [advanced users](https://github.com/gorhill/uBlock/wiki/Advanced-user-features). Dynamic filtering in current uBlock versions can act as a complete replacement of [RequestPolicy](https://addons.mozilla.org/firefox/addon/requestpolicy/), or similar add-ons.
 
+- **Excellent** guide: ["How to use uBlock Origin advanced user mode tutorial"](https://www.youtube.com/watch?v=2lisQQmWQkY) (Youtube video)
 - [Quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)
 - [Rule precedence](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-precedence)
 - [Default-deny](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-default-deny)
