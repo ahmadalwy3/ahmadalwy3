@@ -6,7 +6,7 @@ This wiki page is out of date and in need of revision. When this documentation w
 
 Since then things have changed: uBO no longer can see network requests from other extensions, and behind-the-scene network requests are now quite less frequent. Furthermore, the webRequest API now provides more context to event listeners, such that it is often possible to still filter properly even when it's not possible to know from which exact tab a network request originates.
 
-Because of this (and other reasons which will be eventually come to light), starting with uBO 1.15.20, the `behind-the-scene` scope will no longer be whitelisted by default, meaning network requests from the behind-the-scene scope will be subject to filtering by default.
+Because of this (and other reasons which will eventually come to light), starting with uBO 1.15.20, the `behind-the-scene` scope will no longer be whitelisted by default, meaning network requests from the behind-the-scene scope will be subject to filtering by default.
 
 ***
 
