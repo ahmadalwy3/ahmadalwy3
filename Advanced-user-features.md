@@ -25,7 +25,7 @@ You will be given the ability to access the [advanced settings](https://github.c
 
 ### Dynamic filtering
 
-Dynamic filtering ([quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)) will become available to advanced users.
+[Dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) will become available to advanced users.
 
 Novice users could easily mess up uBO's filtering through dynamic filtering, thus it is not available by default.
 
