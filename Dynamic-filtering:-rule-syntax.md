@@ -4,7 +4,11 @@
 
 ### Rule syntax
 
-A dynamic filtering rule is made of four components: a source, a destination, a request type, and then a keyword which tells what to do with a request which happens to match the three former components.
+A dynamic filtering rule is made of four components: a source, a destination, a request type, and then a keyword which tells what to do with a request which happens to match the three former components:
+
+    source destination type action
+
+Valid rules:
 
 | rule type | source | destination | request type | action |
 |---|---|---|---|---|
@@ -15,7 +19,9 @@ Source hostname always corresponds to the hostname extracted from the URL of the
 
 The destination hostname corresponds to the hostname extracted from the URL of a remote resource which the web page is fetching (or trying to).
 
-The rule always automatically propagates to all subdomains of the source hostname and all subdomains of the destination hostname -- unless the rule is overridden by a narrower rule in one of the subodmains.
+A rule always automatically propagates to all subdomains of the source hostname and all subdomains of the destination hostname -- unless the rule is overridden by a narrower rule in one of the subodmains.
+
+Given that rules always propagate to subdomains, there is no need to prefix the hostname part with a wildcard `*.`, doing so is invalid and will cause the the rule to be discarded.
 
 The type is the type of the fetched resource.
 
