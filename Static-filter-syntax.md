@@ -3,6 +3,7 @@ uBlock Origin ("uBO") supports Adblock Plus ("ABP") filter syntax, so you can re
 However uBO does not support some very specific cases, and also adds its own extensions to ABP filter syntax (which at time of writing are not recognized by ABP).
 
 - [Not supported](#not-supported)
+- [Pre-parsing directives](#pre-parsing-directives)
 - [Extended syntax](#extended-syntax)
     - [Static network filtering](#static-network-filtering)
     - [Static extended filtering](#static-extended-filtering)
@@ -18,6 +19,59 @@ However uBO does not support some very specific cases, and also adds its own ext
 Not supported. The purpose of the `document` option when used with an exception filter is to disable uBO completely. The purpose of the `document` option in static exception filters is mostly for the sake of "acceptable ads" support, which uBO does not support.
 
 The reason it is not supported is to be sure that users explicitly disable uBO themselves if they wish (through [whitelisting](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)), not having some external filter list decide for them.
+
+## Pre-parsing directives
+
+uBO v1.16.0 and above supports pre-parsing directives. Pre-parsing directives are prefixed with `!#`. These directives are executed before the list content is parsed, and influence the final content of a filter list.
+
+#### `!#include [file name]`
+
+The `!#include` directive allows to import another filter list in place where the directive appears. The purpose is to allow filter list maintainers to create filters which are specific to uBO, while keeping their list compatible with other blockers. Other blockers will ignore the `!#include` directive, because it will be seen as a comment and thus discarded. uBO will attempt to load the resource found at `[file name]` (the sub-list) and load its content into the current list.
+
+The sub-list **must** in the same directory as the main one, i.e. it is not allowed to load a sub-list which is located outside where the current one resides.
+
+Correct usage:
+- `!#include ublock-filters.txt`
+- `!#include ublock/filters.txt`
+
+Incorrect usage:
+- `!#include https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt`
+- `!#include ../filters.txt`
+
+#### `!#if [condition]`
+
+The `!#if` directive allows filter list maintainers to create areas in a filter list which will be parsed **only** if certain conditions are met (or not met). For example this can be used to create filters which are specific to a particular browser.
+
+Example, to compile a block of filters only if uBO is being run as a Firefox extension:
+
+    !#if env_firefox
+    ...
+    !#endif
+
+Another example, compile a block of filters only if uBO is _not_ being run as a Firefox extension:
+
+    !#if !env_firefox
+    ...
+    !#endif
+
+Support for pre-processor directives are the result of discussion with Adguard developers, see <https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917>.
+
+For the time being, only a single token is supported in a `!#if` directive (can be negated using `!`), and uBO supports only the following tokens, anything else will be ignored:
+
+    ext_ublock
+    env_chromium
+    env_edge
+    env_firefox
+    env_mobile
+    env_safari
+    cap_html_filtering
+    cap_user_stylesheet
+
+Tip: since `ext_ublock` is always true in uBO, you can use a `!#if` directive to disable a large block of your filters without having to remove them:
+
+    !#if !ext_ublock
+    ...
+    !#endif
 
 ## Extended syntax
 
