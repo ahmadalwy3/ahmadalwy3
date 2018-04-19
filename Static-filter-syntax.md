@@ -22,7 +22,9 @@ The reason it is not supported is to be sure that users explicitly disable uBO t
 
 ## Pre-parsing directives
 
-uBO v1.16.0 and above supports pre-parsing directives. Pre-parsing directives are prefixed with `!#`. These directives are executed before the list content is parsed, and influence the final content of a filter list.
+uBO v1.16.0 and above supports pre-parsing directives. Pre-parsing directives are prefixed with `!#`, so this means older versions of uBO or other blockers will see the pre-parsing directives as comment and discard them.
+
+The pre-parsing directives are executed before a list content is parsed, and influence the final content of a filter list.
 
 ### `!#include [file name]`
 
