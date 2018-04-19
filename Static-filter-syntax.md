@@ -24,7 +24,7 @@ The reason it is not supported is to be sure that users explicitly disable uBO t
 
 uBO v1.16.0 and above supports pre-parsing directives. Pre-parsing directives are prefixed with `!#`. These directives are executed before the list content is parsed, and influence the final content of a filter list.
 
-#### `!#include [file name]`
+### `!#include [file name]`
 
 The `!#include` directive allows to import another filter list in place where the directive appears. The purpose is to allow filter list maintainers to create filters which are specific to uBO, while keeping their list compatible with other blockers. Other blockers will ignore the `!#include` directive, because it will be seen as a comment and thus discarded. uBO will attempt to load the resource found at `[file name]` (the sub-list) and load its content into the current list.
 
@@ -38,7 +38,7 @@ Incorrect usage:
 - `!#include https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt`
 - `!#include ../filters.txt`
 
-#### `!#if [condition]`
+### `!#if [condition]`
 
 The `!#if` directive allows filter list maintainers to create areas in a filter list which will be parsed **only** if certain conditions are met (or not met). For example this can be used to create filters which are specific to a particular browser.
 
