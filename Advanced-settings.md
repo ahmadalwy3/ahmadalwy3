@@ -60,7 +60,7 @@ If set to `true`, uBO will no longer lookup and inject scriptlets into web pages
 
 #### `manualUpdateAssetFetchPeriod`
 
-Default: `2000` milliseconds.
+Default: `500` milliseconds.
 
 When clicking the _"Update now"_ button in the _"3rd-party filters"_ pane in the dashboard, this is the number of milliseconds to wait before fetching the next asset which needs to be updated. The delay helps spread the load incurred as a result of loading/processing new filter lists, and its purpose is also to be considerate to remote servers by not subjecting them to rapid-fire requests.
 
@@ -71,14 +71,6 @@ When clicking the _"Update now"_ button in the _"3rd-party filters"_ pane in the
 Default: `unset`.
 
 A valid CSS font size value (`14px`) to use for the popup panel. Use if you are unhappy with the default size.
-
-***
-
-#### `streamScriptInjectFilters`
-
-Default: `false`.
-
-The purpose is to tell uBO to use stream filtering to inject scriptlets where possible. If set to `true`, it brings back scriptlet injection through stream filtering as was the default before `1.15.10`. A fix has also been added to resolve [uBlockOrigin/uAssets#1492](https://github.com/uBlockOrigin/uAssets/issues/1492), which was the main reason to disable stream filtering-based scriptlets injection in 1.15.10.
 
 ***
 
