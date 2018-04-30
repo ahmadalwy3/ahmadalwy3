@@ -21,7 +21,7 @@ By default popups are allowed unless there is a filter to block them. When this 
 
 Blocking popups depends on whether the proper filters are present in the selected filter lists, so this feature is most useful when a site creates popups for which there are no filters to take care of them in 3rd-party filter lists.
 
-## **Caveat for Chromium-based browsers:** Due to Chromium API limitations, it's not _always_ possible for uBlock Origin to determine for sure whether a new tab being opened is that of a popup, or is the result of a legitimate click on a link by the user. So if the no-popups switch is in use, you _may_ not be able to open a link in a new tab through the context menu.
+**Caveat for Chromium-based browsers:** Due to Chromium API limitations, it's not _always_ possible for uBlock Origin to determine for sure whether a new tab being opened is that of a popup, or is the result of a legitimate click on a link by the user. So if the no-popups switch is in use, you _may_ not be able to open a link in a new tab through the context menu.
 
 ***
 
