@@ -18,16 +18,18 @@ The _Whitelist_ pane allows you to review or edit the exisiting whitelist direct
 There are predefined whitelist directives when you first install uBO:
 
     about-scheme
-    behind-the-scene
     chrome-extension-scheme
     chrome-scheme
     moz-extension-scheme
     opera-scheme
     vivaldi-scheme
+    wyciwyg-scheme
+
+For Firefox Legacy platform, `behind-the-scene` is also in this predefined whitelist.
 
 You should not remove these predefined whitelist directives, unless you know _exactly_ the consequences of doing so.
 
-Removing the predefined whitelist directives without understanding the consequences could cause your browser to malfunction. **This is especially true for the `behind-the-scene` whitelist directive.**
+Removing the predefined whitelist directives without understanding the consequences could cause your browser to malfunction. **This is especially true for the `behind-the-scene` whitelist directive on Firefox Legacy platform.**
 
 If despite this warning you still want to remove one or more of the predefined whitelist directives, I strongly suggest to comment out an entry rather than outright delete it. To comment out an entry, just prefix it with `# `. This way you do not have to remember which predefined whitelist directive you removed, it will be just a matter of removing the `# ` prefix if ever you want to restore an entry.
 
