@@ -14,7 +14,7 @@
 
 This is uBlock's popup UI when you click on uBlock's icon in the toolbar:
 
-![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748913/b0de57b8-47d0-11e7-8d8a-f862bf5aa84f.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/39653257-4825895c-4fbe-11e8-81ec-d3e17de031f7.png)
 
 ***
 
