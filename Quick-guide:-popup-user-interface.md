@@ -32,7 +32,7 @@ For more advanced whitelisting control, see ["How to whitelist a web site"](http
 
 ### The tools
 
-![a](https://cloud.githubusercontent.com/assets/585534/26748901/97dc024c-47d0-11e7-89d0-63fd5a092b02.png)
+![a](https://user-images.githubusercontent.com/585534/39652982-3fc1b8a4-4fbd-11e8-87f8-fb189f3a1071.png)
 
 #### Zap an element on the current page
 
@@ -50,7 +50,7 @@ Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between op
 
 #### Open the dashboard
 
-Click the _cogs_ icon to open uBlock's dashboard.
+Click the _sliders_ icon to open uBlock's dashboard.
 
 ***
 
