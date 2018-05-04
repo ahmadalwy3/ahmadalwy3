@@ -47,6 +47,7 @@
 - [Troubleshooting](https://github.com/gorhill/uBlock/wiki/Troubleshooting)
     - [Software known to have uninstalled uBlock Origin](https://github.com/gorhill/uBlock/wiki/Software-known-to-have-uninstalled-uBlock-Origin)
     - [Read carefully if using uBO/webext on Firefox](https://github.com/gorhill/uBlock/wiki/Firefox-WebExtensions)
+    - [The removed element reappears when you reload the page](https://github.com/gorhill/uBlock/wiki/Element-picker#the-removed-element-reappears-when-you-reload-the-page)
 - Good external guides:
     - [How to use uBlock Origin advanced user mode tutorial](https://www.youtube.com/watch?v=2lisQQmWQkY)
     - [Firefox: uBlock Origin – Firefox-Kompendium Teil2](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
