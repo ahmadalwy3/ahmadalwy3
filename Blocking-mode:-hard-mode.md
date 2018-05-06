@@ -3,8 +3,6 @@
 ***
 
 Roughly similar to using Adblock Plus with many filter lists + NoScript with 1st-party scripts/frames automatically whitelisted + RequestPolicy with 1st-party resources automatically whitelisted.
-N
-
 
 Blocking-wise, this is a small leap from [medium mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode). This mode will however lead to a higher likelihood of broken web sites, and thus will likely require intervention the first time you visit a site, since even passive 3rd-party resources (i.e. images, css) are blocked with this mode.
 
@@ -40,7 +38,7 @@ _3rd-party filters_ pane:
 
 _My rules_ pane:
 - Add `* * 3p block`
-- Add `* * 3p-scripts block`
+- Add `* * 3p-script block`
 - Add `* * 3p-frame block`
 
 ##### Tips
