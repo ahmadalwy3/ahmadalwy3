@@ -20,4 +20,4 @@ _Settings_ pane:
 _Filter lists_ pane:
 - _uBlock filters‎_: checked
 - _EasyList_: checked
-- All other filter lists: unchecked
+- All other filter lists: unchecked.
