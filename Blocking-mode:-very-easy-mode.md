@@ -17,7 +17,7 @@ This mode is more suitable for those who are little concerned about their privac
 _Settings_ pane:
 - _I am an advanced user_: unchecked.
 
-_3rd-party filters_ pane:
+_Filter lists_ pane:
 - _uBlock filters‎_: checked
 - _EasyList_: checked
 - All other filter lists: unchecked
