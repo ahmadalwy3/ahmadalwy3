@@ -6,4 +6,4 @@ For Chromium - `chrome.google.com/webstore/*`
 
 For Firefox - `addons.mozilla.org/*`
 
-- Just like Chrome, Firefox's WebExtensions will also cease to work.
+- Just like Chrome, Firefox's WebExtensions will also cease to work on that page/s.
