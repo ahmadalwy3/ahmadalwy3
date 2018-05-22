@@ -2,7 +2,7 @@ Privileged Pages are the webpages that browser-makers consider as an entitled we
 
 For Chromium - `chrome.google.com/webstore/*` 
 
-- On the aformentioned webpage, ALL Chromium/Chrome extensions will cease their functionality.
+- On the aformentioned webpage/s, ALL Chromium/Chrome extensions will cease their functionality.
 
 For Firefox - `addons.mozilla.org/*`
 
