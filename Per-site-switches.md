@@ -107,4 +107,4 @@ Keep in mind, though, that this rule blocks **all** first-party and third-party 
 
 to the _"My filters"_ pane. If you want to allow third-party fonts for some specific sites you can add them by modifying the above filter:
 
-`*$font,third-party,domain=~example1.com|~example2.net|~example3.org`
+`*$font,third-party,domain=~example.com|~other.example.net|~different.example.org`
