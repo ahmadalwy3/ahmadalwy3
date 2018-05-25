@@ -100,3 +100,11 @@ Because of security and privacy concerns, many prefer to block all web fonts by 
     no-remote-fonts: * true
 
 This will block all web fonts everywhere by default, and in this case you can toggle off the switch to allow web fonts on a per-site basis.
+
+Keep in mind, though, that this rule blocks **all** first-party and third-party fonts. As a lighter alternative you can also choose to allow first-party fonts and block _only_ third-party fonts by adding the filter 
+
+`*$font,third-party`
+
+to the _"My filters"_ pane. If you want to allow third-party fonts for some specific sites you can add them by modifying the above filter:
+
+`*$font,third-party,domain=~example1.com|~example2.net|~example3.org`
