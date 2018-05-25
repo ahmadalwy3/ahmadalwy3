@@ -25,7 +25,7 @@ The more specific the party, the higher the precedence.
 - `example.com` overrides `1rd-party scripts`
 - `www.example.com` overrides `example.com`
 
-Party-specific and type-specific cells override party-specific cells:
+Party-specific and type-specific cells override non specific party cells:
 - `3rd-party frames` overrides `3rd-party`
 
 All cells override the `all` cells. The local `all` cell overrides the global `all` cell.
