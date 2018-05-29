@@ -5,7 +5,7 @@
 
 Support for cloud storage started with uBlock Origin 1.1.0.0.
 
-_Cloud storage_ in uBlock Origin is supported through your browser's _sync_ feature, as in [_Firefox Sync_](https://support.mozilla.org/kb/how-do-i-set-sync-my-computer), or [Chrome browser's Google account](https://support.google.com/chrome/answer/165139), i.e. through your browser's ability to synchronize extensions settings across multiple devices.
+_Cloud storage_ in uBlock Origin is supported through your browser's _sync_ feature, as in [_Firefox Sync_](https://support.mozilla.org/en-US/kb/how-do-i-set-sync-my-computer), or [Chrome browser's Google account](https://support.google.com/chrome/answer/165139), i.e. through your browser's ability to synchronize extensions settings across multiple devices.
 
 If your browser/environment does not support cloud storage, the feature will be disabled.
 
@@ -53,12 +53,14 @@ Cloud storage services offered by specific browser vendors have their own limita
 
 ##### Firefox browsers
 
+- Note that Firefox Sync is not triggered when you export uBlock settings, it seems to be executed regularly however if you want to force the cloud export you've to launch Firefox Sync manually.  
+![sync button](https://i.imgur.com/SxVHORR.png)
 - I have observed that too large amount of per-pane data will cause a warning in the browser console (> 8K).
 - **A new installation of uBlock Origin will cause cloud storage data to be blanked.**
     - Update: [Reportedly fixed in BZ#753289](https://bugzilla.mozilla.org/show_bug.cgi?id=753289), included in [Firefox 43.0](https://bugzilla.mozilla.org/buglist.cgi?j_top=OR&f1=target_milestone&o3=equals&v3=Firefox%2043&o1=equals&resolution=FIXED&o2=anyexact&query_format=advanced&f3=target_milestone&f2=cf_status_firefox43&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&v1=mozilla43&v2=fixed%2Cverified&limit=0)
     - See: <https://discourse.mozilla-community.org/t/how-to-sync-preferences-of-a-bootstrapped-extension-via-sync/3024>.
     - But since uBlock Origin won't automatically import settings from the cloud storage, this will not cause any lost of local settings. However, you will have to push again your settings to the cloud storage.
-- There is not much doc about this for Firefox, so there might be undocumented limitations yet to be found.
+- There is [not much doc about this for Firefox](https://support.mozilla.org/en-US/products/firefox/sync-and-save), so there might be undocumented limitations yet to be found.
 - It appears Firefox for Android can't sync extensions settings (correct me if I am wrong).
 - Other Firefox-related platform:
     - I have no clue whether this new feature will work for other brands of Firefox-based browsers.
