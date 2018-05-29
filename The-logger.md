@@ -28,6 +28,8 @@ Take note that the network request logger in uBlock is a forward-looking logger:
 
 In the spirit of efficiency, uBlock will log entries **IF AND ONLY IF** the logger is opened. Otherwise, if the logger is not opened, no CPU/memory resources are consumed by uBlock for logging purpose.
 
+Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between opening the logger in a separate window or separate tab. uBO will remember that setting when you open the logger without the <kbd>Shift</kbd> key.
+
 ***
 
 - [Page selector](#page-selector)
