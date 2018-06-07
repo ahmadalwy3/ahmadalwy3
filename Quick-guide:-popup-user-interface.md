@@ -2,7 +2,6 @@
 
 ***
 
-- [The title bar](#the-title-bar)
 - [The large power button](#the-large-power-button)
 - [The number of requests blocked](#the-number-of-requests-blocked)
 - [The tools](#the-tools)
