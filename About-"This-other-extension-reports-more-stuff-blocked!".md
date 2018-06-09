@@ -14,7 +14,7 @@ If you don't want to run a benchmark, I have this [little online tool](http://ra
 
 Clear the browser cache by right-clicking somewhere in the _Network_ tab console. Force a reload of the web page, then right-click in the _Network_ tab console, and select _"Copy all as HAR"_. Then paste the result in the text area of [this online tool](http://raymondhill.net/httpsb/har-parser.html), and click _Parse_. You will be shown the hostnames which were hit by the browser for the particular page you loaded.
 
-For example, for the front page of <http://www.cnet.com/>, **uBlock shows 10 request blocked**, while **ABP shows 16 request blocked** (both with a lot of filter lists). However here is what really happened internally:
+For example, for the front page of <http://www.cnet.com/>, **uBlock shows 10 requests blocked**, while **ABP shows 16 requests blocked** (both with a lot of filter lists). However here is what really happened internally:
 
 Remote servers reached:
 
