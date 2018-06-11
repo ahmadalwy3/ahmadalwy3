@@ -1,8 +1,8 @@
 ### Import external filter lists
 
-You can import external filter lists by pasting the URL address of a filter list into the text area below the _Custom_ entry in _"Filter lists"_ pane in the dashboard:
+You can import external filter lists by clicking the _Import_ checkbox in the _Custom_ section in _"Filter lists"_ pane  in the dashboard and pasting the URL address of a filter list into the text area below:
 
-![Custom filter lists](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/3rd-party-filters-custom.png)
+![Custom filter lists](https://vgy.me/IokxIC.png)
 
 ### Resources
 
