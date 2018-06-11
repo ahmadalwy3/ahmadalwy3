@@ -1,1 +1,1 @@
-uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean.
+uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and clean.
