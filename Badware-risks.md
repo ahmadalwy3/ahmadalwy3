@@ -9,7 +9,7 @@ Users of uBlock are free to disable blocking by selecting either:
 - Temporarily - The site will be temporarily allowed for a limited time (currently set at 60 seconds).
 - Permanently - The site will be permanently allowed.
 
-Blocking may be re-enabled by removing specific `no-strict-blocking: ...` line from rules list in My rules pane in uBlock Origin dashboard.
+Blocking may be re-enabled by removing specific `no-strict-blocking: ...` line from rules list in _My rules_ pane in uBlock Origin dashboard.
 
 Below are sites currently part of the list, or sites being candidate for the list (will be added once there are enough sources to support the _badware risks_ qualifier), and links giving further information as to why. Feel free to add _good_ sources if you find more (please respect the chronological order, keep everything neat).
 
