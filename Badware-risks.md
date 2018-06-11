@@ -9,8 +9,6 @@ Users of uBlock are free to disable blocking by selecting either:
 - Temporarily - The site will be temporarily allowed for a limited time (currently set at 60 seconds).
 - Permanently - The site will be permanently allowed.
 
-Blocking may be re-enabled from the [popup menu](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#no-strict-blocking).
-
 Below are sites currently part of the list, or sites being candidate for the list (will be added once there are enough sources to support the _badware risks_ qualifier), and links giving further information as to why. Feel free to add _good_ sources if you find more (please respect the chronological order, keep everything neat).
 
 #### 01net.com (candidate)
