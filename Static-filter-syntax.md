@@ -200,7 +200,7 @@ For example, [Adguard English filter](https://adguard.com/en/filters.html#englis
 
 ### HTML filters
 
-uBO 1.14.23b3+ only.
+Supported by uBO 1.14.23b3+ in Firefox 57+.
 
 **READ VERY CAREFULLY:** HTML filtering acts on the **response data** (before browser parsing). Do not use the browser inspector from developer tools to create HTML filters. You **must** use `view-source:[URL of page]` instead to look at the **response data** and find out relevant information to create relevant HTML filters.
 
@@ -212,8 +212,6 @@ The syntax is similar to that of cosmetic filters, except that you must prefix y
     example.com##^script:has-text(7c9e3a5d51cdacfc)
 
 These HTML filters will cause the elements matching the selectors to be **removed from the streamed response data**, such that the browser will never know of their existence once it parses the modified response data. This makes it a powerful tool in uBO's arsenal.
-
-Currently only supported on Firefox 57+.
 
 With the introduction of HTML filtering, the `script:contains(...)` is now deprecated and internally converted into an equivalent `##^script:has-text(...)` HTML filter. The result is essentially the same: to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
 
