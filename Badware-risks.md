@@ -119,3 +119,13 @@ Below are sites currently part of the list, or sites being candidate for the lis
 
 - 2015-03-11: [Mind the PUP: Top download portals to avoid](http://blog.emsisoft.com/2015/03/11/mind-the-pup-top-download-portals-to-avoid/)
 - 2015-01-21: [Yes, _Every_ Freeware Download Site is Serving Crapware (Here’s the Proof)](http://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/)
+
+#### ublock.org
+
+- [uBlock Origin is completely unrelated to the web site ublock.org](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-is-completely-unrelated-to-the-web-site-ublock.org)
+- [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
+- ["ublock vs. ublock origin" Hacker News discussion](https://news.ycombinator.com/item?id=14335190)
+- ["ublock vs. ublock origin" Reddit discussion](https://reddit.com/r/ublock/comments/32mos6/ublock_vs_ublock_origin/)
+- ["Stop accepting donations, or explain where the money are going to!" issues in uBlock repository](https://github.com/uBlockAdmin/uBlock/issues/1706) (Archived copy: http://archive.is/hygmD)
+- [Privacy Tool uBlock (NOT uBlock Origin) Adds User Tracking Feature](https://soylentnews.org/article.pl?sid=18/05/17/028245)
+- ["Implement Stats data capture feature" - commit in uBlock repository](https://github.com/uBlockAdmin/uBlock/commit/76b89c0a22d20f3a66d7feab14e024f56ca65539) (Archived copy: http://archive.is/1F80E)
