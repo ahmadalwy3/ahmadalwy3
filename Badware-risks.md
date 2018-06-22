@@ -14,25 +14,25 @@ Blocking may be re-enabled by removing specific `no-strict-blocking: ...` line f
 Below are sites currently part of the list, or sites being candidate for the list (will be added once there are enough sources to support the _badware risks_ qualifier), and links giving further information as to why. Feel free to add _good_ sources if you find more (please respect the chronological order, keep everything neat).
 
 #### 01net.com (candidate)
-- 2014-10-22: [01net bad behaviour] (http://assiste.com/01Net.html)
-- 2013-03-25: [Tuto4PC adware partner of 01net] (http://www.malekal.com/2011/07/09/pctutotuto4pc-association-avec-01net/)
-- 2012-10-31: [Malwares on 01net] (http://www.journaldunet.com/solutions/dsi/des-malwares-sur-telecharger-com-01net-1012.shtml)
-- 2012-10-30: [Download from 01net deeply hurts your PC's health] (http://www.lesnumeriques.com/appli-logiciel/telecharger-depuis-01net-nuit-gravement-a-sante-pc-n26763.html)
-- 2012-06-17: [01net PC Optimizer scam] (http://www.malekal.com/2012/06/17/01net-pc-optimizer-pour-ne-pas-optimiser-son-pc/)
+- 2014-10-22: [01net bad behaviour](http://assiste.com/01Net.html)
+- 2013-03-25: [Tuto4PC adware partner of 01net](http://www.malekal.com/2011/07/09/pctutotuto4pc-association-avec-01net/)
+- 2012-10-31: [Malwares on 01net](http://www.journaldunet.com/solutions/dsi/des-malwares-sur-telecharger-com-01net-1012.shtml)
+- 2012-10-30: [Download from 01net deeply hurts your PC's health](http://www.lesnumeriques.com/appli-logiciel/telecharger-depuis-01net-nuit-gravement-a-sante-pc-n26763.html)
+- 2012-06-17: [01net PC Optimizer scam](http://www.malekal.com/2012/06/17/01net-pc-optimizer-pour-ne-pas-optimiser-son-pc/)
 - 2012-02-17: [01Net et Softonic ajoutent aussi un installeur publicitaire](http://neosting.net/logiciels/01net-et-softonic-ajoutent-aussi-un-installeur-publicitaire.html)
 
 #### baixaki.com.br (candidate)
-- 2015-02-02: [Baixaki Installer Brings Adware] (http://veiadigital.com.br/como-baixar-e-instalar-programas-do-baixaki-sem-o-baidu/)
-- 2013-10-22: [Take care when downloading on Baixaki] (http://mcaf.ee/w92g5)
-- 2013-03-25: [Careful Baixaki Installer] (http://www.linhadefensiva.org/2013/03/alerta-da-linha-instalador-baixaki-e-outros-sites-de-download/)
+- 2015-02-02: [Baixaki Installer Brings Adware](http://veiadigital.com.br/como-baixar-e-instalar-programas-do-baixaki-sem-o-baidu/)
+- 2013-10-22: [Take care when downloading on Baixaki](http://mcaf.ee/w92g5)
+- 2013-03-25: [Careful Baixaki Installer](http://www.linhadefensiva.org/2013/03/alerta-da-linha-instalador-baixaki-e-outros-sites-de-download/)
 
 #### fosshub.com (temporary)
 - 2016-08-03: ["the download link (FOSSHUB) on the main page is infected"](http://www.classicshell.net/forum/viewtopic.php?f=12&t=6434#p27960)
 
 #### chip.de
-- [CHIP-Installer - was ist das?] http://anleitung.trojaner-board.de/chip-installer [en](https://translate.google.de/translate?sl=de&tl=en&js=y&prev=_t&hl=de&ie=UTF-8&u=http%3A%2F%2Fanleitung.trojaner-board.de%2Fchip-installer&edit-text=&act=url)
-- 2015-05-04: [Downloads von Chip.de über den Chip-Installer vermeiden] (http://www.randombrick.de/downloads-von-chip-de-ueber-den-chip-installer-vermeiden/) [en](https://translate.google.de/translate?hl=de&sl=de&tl=en&u=http%3A%2F%2Fwww.randombrick.de%2Fdownloads-von-chip-de-ueber-den-chip-installer-vermeiden%2F)
-- 2014-12-14: [Chip.de packt unseriöse Werbung in ihren Chip-Installer](http://www.1337core.de/chip-packt-unserioese-werbung-in-ihren-chip-installer/) [en](https://translate.google.de/translate?hl=de&sl=de&tl=en&u=http%3A%2F%2Fwww.randombrick.de%2Fdownloads-von-chip-de-ueber-den-chip-installer-vermeiden%2F)
+- [CHIP-Installer - was ist das?](http://anleitung.trojaner-board.de/chip-installer) ([en](https://translate.google.de/translate?sl=de&tl=en&js=y&prev=_t&hl=de&ie=UTF-8&u=http%3A%2F%2Fanleitung.trojaner-board.de%2Fchip-installer&edit-text=&act=url))
+- 2015-05-04: [Downloads von Chip.de über den Chip-Installer vermeiden](http://www.randombrick.de/downloads-von-chip-de-ueber-den-chip-installer-vermeiden/) ([en](https://translate.google.de/translate?hl=de&sl=de&tl=en&u=http%3A%2F%2Fwww.randombrick.de%2Fdownloads-von-chip-de-ueber-den-chip-installer-vermeiden%2F))
+- 2014-12-14: [Chip.de packt unseriöse Werbung in ihren Chip-Installer](http://www.1337core.de/chip-packt-unserioese-werbung-in-ihren-chip-installer/) ([en](https://translate.google.de/translate?hl=de&sl=de&tl=en&u=http%3A%2F%2Fwww.randombrick.de%2Fdownloads-von-chip-de-ueber-den-chip-installer-vermeiden%2F))
 
 #### com.com
 - 2015-08-12: [.COM.COM Used For Malicious Typo Squatting](https://isc.sans.edu/diary/.COM.COM+Used+For+Malicious+Typo+Squatting/20019) (via [SwiftOnSecurity](https://twitter.com/SwiftOnSecurity/status/631972601460494336))
