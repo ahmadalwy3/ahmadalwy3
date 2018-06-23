@@ -142,7 +142,7 @@ Adjusts interval for specified _`setInterval()`_ callbacks.
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
  - optional - defaults to 1000, decimal integer, matching interval
- - optional - default to 0.05, float, capped at 50 times for up and down, interval multiplier
+ - optional - default to 0.05 (20x faster), float, capped at 50 times for up and down, interval multiplier
 
 
 ### nano-setTimeout-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2176)
@@ -151,7 +151,7 @@ Adjusts delay for specified _`setTimeout()`_ callbacks.
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
  - optional - defaults to 1000, decimal integer, matching delay
- - optional - default to 0.05, float, capped at 50 times for up and down, delay multiplier
+ - optional - default to 0.05 (20x faster), float, capped at 50 times for up and down, delay multiplier
 
 
 ### sharedWorker-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1822)
