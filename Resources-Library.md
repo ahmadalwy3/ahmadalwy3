@@ -55,7 +55,8 @@ Logs to the console event listeners created on page.
 
 
 ### csp.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1849)
-Deprecated by `$csp` network filter option.
+Deprecated by `$csp` network filter option.  
+TODO: csp filter is explained on adblockplus.org/en/filters but no direct link  
 Applies content security policy by inserting `<meta http-equiv=Content-Security-Policy content="*directive*">` tag to html `<head>` _element_.
 Read more at https://www.w3.org/TR/CSP2/#delivery-html-meta-element
 
@@ -155,7 +156,8 @@ Parameters:
 
 
 ### sharedWorker-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1822)
-Deprecated by `$csp` filter option TODO: csp filter is explained on https://adblockplus.org/en/filters but no direct link
+Deprecated by `$csp` filter option.  
+TODO: csp filter is explained on https://adblockplus.org/en/filters but no direct link.  
 Defuses sharedWorker by passing empty worker file (Blob URL) for specified worker URLs
 
 Parameters:
