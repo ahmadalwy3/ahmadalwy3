@@ -1,5 +1,5 @@
 
- - [Current RAW version of Resouces Library ↪](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt)
+ - [Current RAW version of Resources Library ↪](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt)
  - [General purpose scriptlets](#general-purpose-scriptlets)
  - [Defuser scriptlets](#defuser-scriptlets)
  - [Empty redirect resources](#empty-redirect-resources)
@@ -82,7 +82,7 @@ Prevent web pages from using _`eval()`_.
 Prevent web pages from using _`eval()`_ on specific matching payloads.
 
 Parameters:
- - opional, string/_regular expression_, matching in payload string.
+ - optional, string/_regular expression_, matching in payload string.
 
 ### nowebrtc.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1306)
 Disables WebRTC by preventing web pages from using [`RTCPeerConnection()`](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection). Report attempts in console.
@@ -178,7 +178,7 @@ Parameters:
 
 
 ### overlay-buster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1102)
-Experimental, gets rid of overlay dialogs, prefered way to handle them is to use stadard filters and optionally [style injecjection](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#style).
+Experimental, gets rid of overlay dialogs, preferred way to handle them is to use standard filters and optionally [style injection](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#style).
 
 
 ### alert-buster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1182)
@@ -200,7 +200,7 @@ Fix '/forbes/welcome/' page redirection. Redirects to URL from `toURL` cookie
 Defuses BlockAdblock. Prevents executing of _`eval()`_ on sets of predefined payloads.
 
 ### phenv-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L797)
-Defuseses "g0yav3-lab" Anti Adblock. TODO Deprecated, sets static properties (`PHENV`)
+Defuses "g0yav3-lab" Anti Adblock. TODO Deprecated, sets static properties (`PHENV`)
 
 ### sas-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1056)
 Deprecated, Convenience, sets static properties (`Ads.display`, `Ads.refresh`)
@@ -221,7 +221,7 @@ Convenience, abort-on-property-write.js (`PopAds`, `popns`), _throws_ "`magic`"
 
 ### rtlfr-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1091)
 Deprecated by `:style()` cosmetic filter.
-Aplies `overflow: auto` style to document body _element_ after window `load` event.
+Applies `overflow: auto` style to document body _element_ after window `load` event.
 
 ### sidereel.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1843)
 Sets specific localStorage item (`__trex`)
