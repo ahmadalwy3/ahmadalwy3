@@ -113,7 +113,7 @@ Parameters:
 
 
 ### setInterval-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1787)
-Defuses calls to window.[setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) function for specified matching callbacks and intervals by setting callback function to noop.
+Defuses calls to _`setInterval()`_ function for specified matching callbacks and intervals by setting callback function to noop.
 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
@@ -121,7 +121,7 @@ Parameters:
 
 
 ### setInterval-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1811)
-Logs to the console calls to `setInterval()` function.
+Logs to the console calls to _`setInterval()`_ function.
 
 
 ### setTimeout-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1754)
@@ -137,7 +137,7 @@ Logs to the console calls to setTimeout function.
 
 
 ### nano-setInterval-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2222)
-Adjusts interval for specified [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) callbacks.
+Adjusts interval for specified _`setInterval()`_ callbacks.
 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
@@ -436,6 +436,7 @@ Deprecated, sets static properties (`adisplaynormal`)
 
  - `throw`:            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
  - `eval()`:           https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
+ - `setInterval()`     https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
  - regular expression: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern
  - element:            https://developer.mozilla.org/en-US/docs/Web/HTML/Element
  - property:           https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript
