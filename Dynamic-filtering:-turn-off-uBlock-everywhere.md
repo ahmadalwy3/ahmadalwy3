@@ -6,7 +6,7 @@ The ability to turned off uBlock everywhere has been requested many times: [#40]
 
 I wasn't really planning to provide this functionality as I fail to see why it should be implemented in uBlock when the browsers themselves offer this ability through the disabling of extensions.
 
-In any case, the ability to "disable" uBlock everywhere is now available, as a side effect of the ability to create a global `allow` rule for all network requests:
+In any case, the ability to "disable" uBlock everywhere is now available [for Advanced users](https://github.com/gorhill/uBlock/wiki/Advanced-user-features), as a side effect of the ability to create a global `allow` rule for all network requests:
 
 ![Allow everything everywhere](https://vgy.me/5eUSeO.png)
 
