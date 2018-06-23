@@ -50,7 +50,7 @@ When you are facing a case where no other directive syntax work, you may use a r
 
 Given that whitelist directives dictate where uBO should be completely disabled, be very careful with regex-based directives, you could easily mistakenly cause uBO to be disabled on more sites than you intended. Typically, only advanced users will resort to regex-based directives, and only for cases where no other syntax can do the job.
 
-#### A Youtube channel
+### A Youtube channel
 
 There are user scripts on [Greasy Fork](https://greasyfork.org/), for example: [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/22308-youtube-whitelist-channels-in-ublock-origin). I can't vouch for the scripts, you will have to find out yourself whether they work.
 
