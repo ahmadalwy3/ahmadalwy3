@@ -97,7 +97,7 @@ Parameters:
 
 
 ### set-constant.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2103)
-Creates _property_ and initializes it to predefined value from set of available properties. TODO: "constant" is not constant
+Creates _property_ and initializes it to predefined value from set of available properties. TODO: "constant" is not constant - current implementation does not prevent to assign value of another type.
 
 Parameters:
  - required, _property_ (chain of properties joined by `.`) attached to window object
