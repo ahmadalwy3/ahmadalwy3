@@ -125,7 +125,7 @@ Logs to the console calls to _`setInterval()`_ function.
 
 
 ### setTimeout-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1754)
-Defuses calls to window.[setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) function for specified matching callbacks and delays by setting callback function to noop.
+Defuses calls to _`setTimeout()`_ function for specified matching callbacks and delays by setting callback function to noop.
 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
@@ -133,7 +133,7 @@ Parameters:
 
 
 ### setTimeout-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1776)
-Logs to the console calls to setTimeout function.
+Logs to the console calls to _`setTimeout()`_ function.
 
 
 ### nano-setInterval-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2222)
@@ -146,7 +146,7 @@ Parameters:
 
 
 ### nano-setTimeout-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2176)
-Adjusts delay for specified [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) callbacks.
+Adjusts delay for specified _`setTimeout()`_ callbacks.
 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
@@ -437,6 +437,7 @@ Deprecated, sets static properties (`adisplaynormal`)
  - `throw`:            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
  - `eval()`:           https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
  - `setInterval()`     https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
+ - `setTimeout()`      https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)
  - regular expression: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern
  - element:            https://developer.mozilla.org/en-US/docs/Web/HTML/Element
  - property:           https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript
