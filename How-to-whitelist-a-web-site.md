@@ -56,6 +56,21 @@ There are user scripts on [Greasy Fork](https://greasyfork.org/), for example: [
 
 Someone posted instructions on reddit: [Any way to whitelist certain youtube channels?](https://www.reddit.com/r/ublock/comments/4x4jol/any_way_to_whitelist_certain_youtube_channels/).
 
+### Disabling filtering temporarily 
+
+Can be achieved by dynamic filtering: ["turn off uBlock everywhere"](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
+
+### Turn off by default (blacklist mode)
+
+Recommended, official way is to use dynamic fltering ["turn off uBlock everywhere except"](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except).
+
+However, can be achieved by specifically crafted [Regular Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern) whitelist directive:
+
+    /^((?!example\.com|different\.example\.net|another\.example\.org).)*$/
+
+With this directive all domains put between `|` characters will be treated as _blacklisted_, and uBO will be enabled only on these pages.
+
+
 ### Other details
 
 If you re-enable uBlock by clicking the whitelist button in the popup while a whitelist directive you handcrafted is in effect, your handcrafted whitelist directive will simply be commented out. This way you can bring it back to life if ever you un-whitelist by mistake.
