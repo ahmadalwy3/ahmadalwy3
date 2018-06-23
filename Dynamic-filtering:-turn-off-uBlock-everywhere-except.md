@@ -2,7 +2,7 @@
 
 ***
 
-How to achieve "blacklist mode", these are the steps:
+"Blacklist mode" can be achieved in UBO [Advanced users](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) mode in following way:
 
 - global allow `all` cell
     - "global" = 1st column
