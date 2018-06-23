@@ -8,7 +8,7 @@ How to achieve "blacklist mode", these are the steps:
     - "global" = 1st column
     - "allow" = green
 
-![c](https://cloud.githubusercontent.com/assets/585534/6042159/8a1df142-ac50-11e4-8129-6edbb664d801.png)
+![allow all](https://vgy.me/WyvT5C.png)
 
 Nothing will be blocked, static filtering is completely bypassed: "green" means "allow unconditionally".
 
@@ -20,7 +20,7 @@ To "blacklist" a specific site:
 
 This will cause the current site to become subjected to static filtering (EasyList, EasyPrivacy etc, i.e. whatever filter lists is in effect).
 
-![a](https://cloud.githubusercontent.com/assets/585534/6042165/8f6bd6d2-ac50-11e4-8551-c2a17c05d917.png)
+![block here](https://vgy.me/SnYE6y.png)
 
 Dynamic filtering disengaged for current site: "gray" means disengage dynamic filtering, but apply static filtering.
 
