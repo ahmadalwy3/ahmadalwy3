@@ -54,7 +54,7 @@ Cloud storage services offered by specific browser vendors have their own limita
 ##### Firefox browsers
 
 - Note that Firefox Sync is not triggered when you export uBlock settings, it seems to be executed regularly however if you want to force the cloud export you've to launch Firefox Sync manually.  
-![sync button](https://i.imgur.com/SxVHORR.png)
+![Sync button](https://user-images.githubusercontent.com/886325/41821498-e081fe7e-77e1-11e8-81de-03a09d826cb9.png)
 - I have observed that too large amount of per-pane data will cause a warning in the browser console (> 8K).
 - **A new installation of uBlock Origin will cause cloud storage data to be blanked.**
     - Update: [Reportedly fixed in BZ#753289](https://bugzilla.mozilla.org/show_bug.cgi?id=753289), included in [Firefox 43.0](https://bugzilla.mozilla.org/buglist.cgi?j_top=OR&f1=target_milestone&o3=equals&v3=Firefox%2043&o1=equals&resolution=FIXED&o2=anyexact&query_format=advanced&f3=target_milestone&f2=cf_status_firefox43&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&v1=mozilla43&v2=fixed%2Cverified&limit=0)
