@@ -2,7 +2,7 @@
 
 You can import external filter lists by clicking the _Import_ checkbox in the _Custom_ section in _"Filter lists"_ pane  in the dashboard and pasting the URL address of a filter list into the text area below:
 
-![Custom filter lists](https://vgy.me/IokxIC.png)
+![custom-filter-lists](https://user-images.githubusercontent.com/886325/41821466-99d67040-77e1-11e8-9973-08f9fe4f4049.png)
 
 ### Resources
 
