@@ -34,6 +34,7 @@ Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between op
 
 - [Page selector](#page-selector)
 - [Reload](#reload)
+- [DOM inspector](#dom-inspector)
 - [Expand](#expand)
 - [Void log entries](#void-log-entries)
 - [Clear](#clear)
@@ -66,6 +67,16 @@ Note in the figure above the entry named _"Behind the scene"_: selecting this en
 ![Figure 4](https://cloud.githubusercontent.com/assets/585534/8035141/f5e4cc80-0dbb-11e5-9bb4-03a33c647c2f.png)
 
 The big reload button aside the page selector is to force a reload of the content of the selected page. This button is enabled only for when a specific page is selected.
+
+***
+
+#### Dom inspector
+
+![Figure 4.5](https://vgy.me/zFi9CP.png)
+
+Complementary tool to the element picker.
+
+Please read more on dedicated page: ["DOM inspector"](https://github.com/gorhill/uBlock/wiki/DOM-inspector)
 
 ***
 
