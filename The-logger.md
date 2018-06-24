@@ -72,7 +72,7 @@ The big reload button aside the page selector is to force a reload of the conten
 
 #### Dom inspector
 
-![Figure 4.5](https://vgy.me/zFi9CP.png)
+![Figure 4.5](https://user-images.githubusercontent.com/886325/41821530-6564034e-77e2-11e8-9fab-9db6e849e85c.png)
 
 Complementary tool to the element picker.
 
