@@ -56,15 +56,15 @@ There are user scripts on [Greasy Fork](https://greasyfork.org/), for example: [
 
 Someone posted instructions on reddit: [Any way to whitelist certain youtube channels?](https://www.reddit.com/r/ublock/comments/4x4jol/any_way_to_whitelist_certain_youtube_channels/).
 
-### Disabling filtering temporarily 
+### Disabling filtering temporarily or by default (blacklist mode)
 
-Can be achieved by dynamic filtering: ["turn off uBlock everywhere"](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
+**Be aware!** Following abilities are just side effects of uBO features and no additional work will be done to improve support for them<sup>[*](https://github.com/uBlockOrigin/uBlock-issues/issues/91#issuecomment-400282591)</sup>.
 
-### Turn off by default (blacklist mode)
+Following pages describe how to do this with help of [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering):
+ - [Turn off uBlock everywhere temporarily](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
+ - [Turn off uBlock everywhere except (blacklist mode)](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except).
 
-Recommended, official way is to use dynamic fltering ["turn off uBlock everywhere except"](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except).
-
-However, can be achieved by specifically crafted [Regular Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern) whitelist directive:
+Black list mode can also be achieved by specifically crafted Regular Expression whitelist directive:
 
     /^((?!example\.com|different\.example\.net|another\.example\.org).)*$/
 
