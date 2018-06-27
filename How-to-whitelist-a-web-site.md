@@ -1,3 +1,10 @@
+ - [Detailed syntax](#detailed-syntax)
+ - [Whitelisting Youtube channel](#whitelisting-youtube-channel)
+ - [Disabling filtering temporarily or by default (blacklist mode)](#disabling-filtering-temporarily-or-by-default-blacklist-mode)
+ - [Other details](#other-details)
+
+***
+
 I've read a couple of feedbacks of people who wish it was possible to whitelist a web site, i.e. to disable uBlock on a specific web site.
 
 The feature is already available: it is the big power button.  It serves to whitelist the current web site, and its state will be remembered next time you visit the web site.
@@ -50,7 +57,7 @@ When you are facing a case where no other directive syntax work, you may use a r
 
 Given that whitelist directives dictate where uBO should be completely disabled, be very careful with regex-based directives, you could easily mistakenly cause uBO to be disabled on more sites than you intended. Typically, only advanced users will resort to regex-based directives, and only for cases where no other syntax can do the job.
 
-### A Youtube channel
+### Whitelisting Youtube channel
 
 There are user scripts on [Greasy Fork](https://greasyfork.org/), for example: [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/22308-youtube-whitelist-channels-in-ublock-origin). I can't vouch for the scripts, you will have to find out yourself whether they work.
 
@@ -60,7 +67,7 @@ Someone posted instructions on reddit: [Any way to whitelist certain youtube cha
 
 **Be aware!** Following abilities are just side effects of uBO features and no additional work will be done to improve support for them<sup>[*](https://github.com/uBlockOrigin/uBlock-issues/issues/91#issuecomment-400282591)</sup>.
 
-Following pages describe how to do this with help of [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering):
+Following pages describe how to disable filtering with help of [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering):
  - [Turn off uBlock everywhere temporarily](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
  - [Turn off uBlock everywhere except (blacklist mode)](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except).
 
