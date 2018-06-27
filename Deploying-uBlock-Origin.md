@@ -6,7 +6,9 @@ I do not know much about that administrator stuff, so I will let a knowledgeable
 
 Administrators can force specific configurations to deployed uBlock Origin ("uBO"). At launch time, uBO will look for a setting named `adminSettings`, and if it exists, it will parse, extract and overwrite a user's settings with the administrator-assigned ones.
 
-For Firefox Legacy (for uBO WebExtension, Firefox 57+ read https://github.com/gorhill/uBlock/issues/2986#issuecomment-333198882 ), the `adminSettings` entry must be added to `about:config`, the key name is `extensions.ublock0.adminSettings`, and the value is a plain string -- which must be JSON-parseable.
+For Firefox, refer to this specific comment - https://github.com/gorhill/uBlock/issues/2986#issuecomment-333198882
+
+For Firefox-legacy, the `adminSettings` entry must be added to `about:config`, the key name is `extensions.ublock0.adminSettings`, and the value is a plain string -- which must be JSON-parseable.
 
 For Chrome, `adminSettings` must be an entry part of the policy for the extension. See <http://www.chromium.org/administrators/configuring-policy-for-extensions>.
 
