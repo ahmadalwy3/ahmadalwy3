@@ -6,7 +6,7 @@ I do not know much about that administrator stuff, so I will let a knowledgeable
 
 Administrators can force specific configurations to deployed uBlock Origin ("uBO"). At launch time, uBO will look for a setting named `adminSettings`, and if it exists, it will parse, extract and overwrite a user's settings with the administrator-assigned ones.
 
-For **Firefox**, refer to this specific comment - https://github.com/gorhill/uBlock/issues/2986#issuecomment-364035002
+For **Firefox**, refer to Mozilla documentation about ["Native manifests"](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Native_manifests) (sections about ["Managed storage manifests"](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Native_manifests#Managed_storage_manifests) and [its location](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Native_manifests#Manifest_location)). You can also consult [this specific comment](https://github.com/gorhill/uBlock/issues/2986#issuecomment-364035002) in uBO issue tracker.
 
 For **Firefox-legacy**, the `adminSettings` entry must be added to `about:config`, the key name is `extensions.ublock0.adminSettings`, and the value is a plain string -- which must be JSON-parseable.
 
