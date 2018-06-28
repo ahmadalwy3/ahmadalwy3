@@ -69,7 +69,7 @@ Someone posted instructions on reddit: [Any way to whitelist certain youtube cha
 
 Following pages describe how to disable filtering with help of [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering):
  - [Turn off uBlock everywhere temporarily](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
- - [Turn off uBlock everywhere except (blacklist mode)](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except).
+ - [Turn off uBlock everywhere _except_ (blacklist mode)](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except).
 
 Black list mode can also be achieved by specifically crafted Regular Expression whitelist directive:
 
