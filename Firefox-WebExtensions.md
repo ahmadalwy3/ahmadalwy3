@@ -60,3 +60,7 @@ If you still want to use uBO/legacy, a volunteer created an extension to enable 
 [Issue #2795](https://github.com/gorhill/uBlock/issues/2795) will be a collection of [bugzilla.mozilla.org](https://bugzilla.mozilla.org/) issues which currently affect the uBO/webext specifically.
 
 Be sure to create backups of your uBO settings, if the transition from uBO/legacy to uBO/webext fails, you can always just restore all your settings from the backup file (see [_Settings_ pane in the dashboard for the backup/restore features](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#backuprestore-section)).
+
+***
+
+[1]: 2018-06-30 updates and solution for "corrupted database" problem thanks to [grahamperrin message](https://discourse.mozilla.org/t/support-ublock-origin/6746/734)
