@@ -14,17 +14,23 @@ If you experience such issue, you will have to disable all your legacy extension
 
 Those legacy extensions can cause multi-process to be disabled in your browser, and apparently **when multi-process is disabled**, this can cause many cases of [page load failure](https://bugzilla.mozilla.org/show_bug.cgi?id=1348497#c27).
 
+**Update (2018-06-30)**: if you experience above problems in Waterfox then this problem will probably be fixed in next Waterfox release (56.2.2)
+
 Everything is moving to WebExtensions, so it might be just a good time to start giving up on legacy extensions, they are not going to be supported at all in a couple of weeks when Firefox 57 is released. See if there is a beta webext version of any of your legacy extensions. For example, there is [beta webext version of Greasemonkey on AMO](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/versions/beta).
 
 There are also Firefox issues specific to webext extensions which can cause a web page to load improperly:
 
 - [Extension with listener at webRequest.onHeadersReceived breaks navigation (crash/blank page) when the previous page performs sync XHR upon unload](https://bugzilla.mozilla.org/show_bug.cgi?id=1401516)
+  - duplicate of [1396395 - Firefox crashes when submitting form](https://bugzilla.mozilla.org/show_bug.cgi?id=1396395) - RESOLVED FIXED in Firefox 58
 - [Empty page using uBo / ABP webext (even whitelisting the site)](https://bugzilla.mozilla.org/show_bug.cgi?id=1396226)
+  - duplicate of [1379148 - document.write does not synchronously modify a document if an extension has content scripts at document_start](https://bugzilla.mozilla.org/show_bug.cgi?id=1379148) - VERIFIED FIXED in Firefox 57
 - [Presence of an Webextension makes the head element missing on (iframe) load](https://bugzilla.mozilla.org/show_bug.cgi?id=1375875)
 
 Another option is to install [uBO 1.13.8](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/?page=1#version-1.13.8) and disable auto-update for it.
 
 Having issues with uBO's cache storage being wiped-out on every restart of the browser? See if <http://forums.mozillazine.org/viewtopic.php?f=9&t=3034189> helps.
+
+**Update (2018-06-30)**: if you still have problems with filter list being out of date on every restart check this [Mozilla bug 944918 - indexedDB broken - UnknownError - Error opening Database](https://bugzilla.mozilla.org/show_bug.cgi?id=944918) In overall your IndexedDB database may be corrupted ([in various ways](https://bugzilla.mozilla.org/show_bug.cgi?id=944918#c30)) and only way to fix this is to find database folder and remove it. One special case of "corruption" may appear when you browse database folders and you file explorer drops hidden files in database directory (for example `.directory` dropped by [Dolphin in KDE](https://bugzilla.mozilla.org/show_bug.cgi?id=944918#c32)) - deleting these unwanted files will fix the problem.
 
 ### Firefox for Android
 
