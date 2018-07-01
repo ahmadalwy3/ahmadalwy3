@@ -34,9 +34,9 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
 - _needle_: The literal text which must be found, or a literal regular expression. If using a literal regular expression, you can optionally use the `i` and/or `m` flags (version 1.15).
 - Examples:
-    - `example.com##body > div:last-of-type span:has-text(/^Promoted by/)`
-    - `example.com##body > div:last-of-type span:has-text(/^Promoted by/i)`
-    - `example.com##body > div:last-of-type span:has-text(Promoted by)`
+    - `example.com##body > div:last-of-type span:has-text(/^Promoted by/)`: starts with "Promoted by"
+    - `example.com##body > div:last-of-type span:has-text(/^Promoted by/i)`: starts with "Promoted by", ignore case
+    - `example.com##body > div:last-of-type span:has-text(Promoted by)`: contains "Promoted by" at any position
 
 ### `subject:if(arg)`
 
