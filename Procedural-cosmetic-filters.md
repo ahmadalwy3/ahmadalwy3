@@ -59,7 +59,7 @@ Essentially the same as the `:if(...)` operator, except that the element _subjec
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
 - _arg_: A declaration in the form `name: value`, where `name` is a valid CSS style property, and `value` is the expected value for that style property. `value` can be a literal text or literal regular expression:
-    - Literal text: the value will be matches _exactly_ against property value as returned by browser through [getComputedStyle](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
+    - Literal text: the value will be matched _exactly_ against the property value as returned by the browser's [getComputedStyle](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
     - Literal regular expression: you can optionally use the `i` and/or `m` flags (version 1.15).
 - Examples:
     - `extratorrent.*##body > div[class]:matches-css(position: absolute)`
