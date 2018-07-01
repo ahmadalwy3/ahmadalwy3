@@ -57,7 +57,9 @@ Essentially the same as the `:if(...)` operator, except that the element _subjec
 - Description: Select element _subject_ if and only if the result of evaluating _arg_ is one or more elements.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- _arg_: A declaration in the form `name: value`, where `name` is a valid CSS style property, and `value` is the expected value for that style property. `value` can be a literal text or literal regular expression. If using a literal regular expression, you can optionally use the `i` and/or `m` flags (version 1.15).
+- _arg_: A declaration in the form `name: value`, where `name` is a valid CSS style property, and `value` is the expected value for that style property. `value` can be a literal text or literal regular expression:
+    - Literal text: the value will be matches _exactly_ against property value as returned by browser through [getComputedStyle](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
+    - Literal regular expression: you can optionally use the `i` and/or `m` flags (version 1.15).
 - Examples:
     - `extratorrent.*##body > div[class]:matches-css(position: absolute)`
     - `facet.wp.pl##div[class^="_"]:matches-css(background-image: /^url\("data:image/png;base64,/)`
