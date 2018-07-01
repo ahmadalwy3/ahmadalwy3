@@ -8,7 +8,7 @@ I wasn't really planning to provide this functionality as I fail to see why it s
 
 In any case, the ability to "disable" uBlock everywhere is now available [for Advanced users](https://github.com/gorhill/uBlock/wiki/Advanced-user-features), as a side effect of the ability to create a global `allow` rule for all network requests:
 
-![Allow everything everywhere](https://vgy.me/5eUSeO.png)
+![Allow everything everywhere](https://user-images.githubusercontent.com/886325/42134019-c298f4ba-7d33-11e8-8bba-f8f20aae8034.png)
 
 Though it's more _"allow everything from everywhere"_, it's as good as _"globally turn off uBlock"_. You can revert it by clicking on the eraser button.
 
