@@ -8,7 +8,7 @@
     - "global" = 1st column
     - "allow" = green
 
-![allow all](https://vgy.me/WyvT5C.png)
+![allow all](https://user-images.githubusercontent.com/886325/42134033-079a8150-7d34-11e8-8ac1-d4177ae82709.png)
 
 Nothing will be blocked, static filtering is completely bypassed: "green" means "allow unconditionally".
 
@@ -20,7 +20,7 @@ To "blacklist" a specific site:
 
 This will cause the current site to become subjected to static filtering (EasyList, EasyPrivacy etc, i.e. whatever filter lists is in effect).
 
-![block here](https://vgy.me/SnYE6y.png)
+![block here](https://user-images.githubusercontent.com/886325/42134034-09835262-7d34-11e8-8253-847717c5739b.png)
 
 Dynamic filtering disengaged for current site: "gray" means disengage dynamic filtering, but apply static filtering.
 
