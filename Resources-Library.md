@@ -16,6 +16,8 @@
 ## General purpose scriptlets
  - most script relies on `Object` _properties_ ([_methods_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)), altering them may not be the best idea (you should know what you are doing).
  - "optional" for "string/_regular expression_" parameter defaults to "catch all" (`/.?/`) if not specified.
+ - "string" parameter means plain character(s)/word(s), without quotes
+ - "regular expression" parameter means JavaScript [regular expression literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern)
  - mime type is `application/javascript` if not present TODO: move this information up?
  
  
