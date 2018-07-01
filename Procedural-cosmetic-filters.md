@@ -36,7 +36,7 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 - Examples:
     - `example.com##body > div:last-of-type span:has-text(/^Promoted by/)`
     - `example.com##body > div:last-of-type span:has-text(/^Promoted by/i)`
-    - `example.com##body > div:last-of-type span:has-text(Promoted)`
+    - `example.com##body > div:last-of-type span:has-text(Promoted by)`
 
 ### `subject:if(arg)`
 
