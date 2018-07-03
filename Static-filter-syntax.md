@@ -57,7 +57,7 @@ Another example, compile a block of filters only if uBO is _not_ being run as a 
     ...
     !#endif
 
-Support for pre-processor directives are the result of discussion with Adguard developers, see <https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917>.
+Support for pre-processor directives are the result of discussion with AdGuard developers, see <https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917>.
 
 For the time being, only a single token is supported in a `!#if` directive (can be negated using `!`), and uBO supports only the following tokens, anything else will be ignored:
 
@@ -194,9 +194,9 @@ So mainly it's exactly the same syntax of plain cosmetic filters (i.e. must be a
 
 As with the other new cosmetic filtering selectors, the `:style` can be used only for _specific_ cosmetic filters, i.e. there must be a hostname or entity specified for the filter.
 
-Adguard [already support such feature](https://adguard.com/en/filterrules.html#cssInjection), although using a different syntax. However uBO is able to transparently convert and make use of the Adguard's "CSS injection rules" if ever you use an Adguard filter list in uBO (well, this essentially means you can use Adguard's syntax in uBO if you prefer).
+AdGuard [already support such feature](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-css-rules-syntax), although using a different syntax. However uBO is able to transparently convert and make use of the AdGuard's "CSS injection rules" if ever you use an AdGuard filter list in uBO (well, this essentially means you can use AdGuard's syntax in uBO if you prefer).
 
-For example, [Adguard English filter](https://adguard.com/en/filters.html#english) contains ~50 styling filters, [Adguard Russian filter list](https://adguard.com/en/filters.html#russian) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [Adguard's filter lists](https://adguard.com/en/filters.html), which can be enabled from the [3rd-party filters pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters).
+For example, [AdGuard English filter](https://kb.adguard.com/en/general/adguard-ad-filters#english-filter) contains ~50 styling filters, [AdGuard Russian filter list](https://kb.adguard.com/en/general/adguard-ad-filters#russian-filter) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [AdGuard's filter lists](https://kb.adguard.com/en/general/adguard-ad-filters), which can be enabled from the [3rd-party filters pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters).
 
 ### HTML filters
 
