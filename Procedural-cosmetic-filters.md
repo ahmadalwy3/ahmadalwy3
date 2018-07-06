@@ -23,7 +23,8 @@ Efficient procedural cosmetic filters (or any cosmetic filters really) are the o
 - _arg_: **must** be a plain CSS selector.
 - Examples:
     - `strikeout.me##body > div:has(img[alt="AdBlock Alert"])`
-    - `yandex.ru##.serp-item:has(:scope > .organic > .organic__subtitle > .label_color_yellow)`
+    - `yandex.ru##.serp-item:has(:scope > .organic > .organic__subtitle > .label_color_yellow)` - `:scope` forces `.organic` to match inside `.serp-item`<sup>[1](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll#JavaScript),[2](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope)</sup>
+    - `strdef.world##div[style]:has(> a[href="http://www.streamdefence.com/index.php"])` - `>` forces `a` to be direct descendant of `div`
 
 The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of writing no browser supports it. Instead of waiting for browser vendors to provide support, uBO provides support for `:has(arg)` as a procedural operator. By restricting `subject` and `arg` to be valid CSS selectors, this means uBO will be able to support the `:has(...)` operator declaratively once a browser supports it.
 
