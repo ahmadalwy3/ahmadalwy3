@@ -15,7 +15,7 @@ In uBlock Origin, cloud storage support must be explicitly enabled by the user, 
 
 Once you enable cloud storage support, a new UI widget will be available in the dashboard for panes which support the export/import of settings to/from cloud storage:
 
-![screenshot](https://cloud.githubusercontent.com/assets/585534/9213128/5f29f5f2-405d-11e5-92a9-b2d9e8db3d42.png)
+![screenshot](https://user-images.githubusercontent.com/585534/42420095-9521526a-828e-11e8-8715-21678f1bd708.png)
 
 > ***
 > **Important:** Even if cloud storage support is enabled, it will work **if and only if** you actually enable sync support in your browser -- as uBlock itself does not connect to any remote server, your browser does this through its own sync feature, if you enabled such feature.
