@@ -231,7 +231,7 @@ Applies `overflow: auto` style to document body _element_ after window `load` ev
 Sets specific localStorage item (`__trex`)
 
 ### uabinject-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L640)
-Convenience, sets static properties (`trckd`, `uabpdl`, `uabInject`, `uabDetect`)
+Defuses Addefend, convenience, sets static properties (`trckd`, `uabpdl`, `uabInject`, `uabDetect`)
 
 ### impspcabe-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1172)
 Deprecated, Convenience, sets static properties (`_impspcabe`, `_impspcabe_alpha`, `_impspcabe_beta`, `_impspcabe_path`) TODO: not used, static properties, cannot be set to `about:blank` by sciptlets is this really needed, used on 4 domains
