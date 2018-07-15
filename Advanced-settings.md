@@ -42,6 +42,14 @@ The time to wait in hours between each update session<sup>[1]</sup>. uBO will al
 
 ***
 
+#### `debugScriptlets`
+
+Default: `false`.
+
+If set to `true`, [`debugger;` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) will be inserted just before [scriptlet](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection) code
+
+***
+
 #### `ignoreRedirectFilters`
 
 Default: `false`.
