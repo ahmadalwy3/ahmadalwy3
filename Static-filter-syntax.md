@@ -31,7 +31,7 @@ The pre-parsing directives are executed before a list content is parsed, and inf
 
 The `!#include` directive allows to import another filter list in place where the directive appears. The purpose is to allow filter list maintainers to create filters which are specific to uBO, while keeping their list compatible with other blockers. Other blockers will ignore the `!#include` directive, because it will be seen as a comment and thus discarded. uBO will attempt to load the resource found at `[file name]` (the sub-list) and load its content into the current list.
 
-The sub-list **must** in the same directory as the main one, i.e. it is not allowed to load a sub-list which is located outside where the current one resides.
+The sub-list **must** be in the same directory as the main one, i.e. it is not allowed to load a sub-list which is located outside where the current one resides.
 
 Correct usage:
 - `!#include ublock-filters.txt`
