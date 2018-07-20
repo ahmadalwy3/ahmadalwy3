@@ -194,6 +194,9 @@ Disables [`alert()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/ale
 
 
 
+### fingerprint2.js  [↪](https://github.com/uBlockOrigin/uAssets/blob/379a5a69059baa35627fe8205f44d97d129373af/filters/resources.txt#L2348)
+Defuses Fingerprintjs2. Sanitize `Fingerprint2` object.
+
 ### pornhub-popup-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L647)
 Sets specific localStorage items (`InfNumFastPops`, `InfNumFastPopsExpire`)
 
