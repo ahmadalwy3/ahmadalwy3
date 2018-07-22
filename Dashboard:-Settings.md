@@ -57,7 +57,7 @@ Google's [_"Make webpages load faster"_](https://support.google.com/chrome/answe
 
 ### Disable hyperlink auditing
 
-Checking this will prevent hyperlink auditing<sup>[1]</sup>. _Hyperlink auditing_ is best summarized as "phone home" features (or more accurately "phone anywhere"). The details are well explained [here](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/).
+Checking this will prevent hyperlink auditing. _Hyperlink auditing_ is best summarized as "phone home" feature (or more accurately "phone anywhere") meant to inform one or more servers of which links you click on (and when). The details are well explained [here](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/).
 
 ***
 
