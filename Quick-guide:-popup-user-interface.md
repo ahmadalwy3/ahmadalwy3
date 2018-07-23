@@ -91,7 +91,7 @@ And I had click-to-play enabled in all cases, so it could have been worse (excep
 
 ### The overview panel
 
-When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand to show you more details about requests blocked and domains connected:
+When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand<sup>__*__</sup> to show you more details about requests blocked and domains connected:
 
 ![a](https://user-images.githubusercontent.com/585534/39653559-76e67052-4fbf-11e8-88c3-bce8d61a26b7.png)<br><sup>Click the `all` cell at the top to toggle on/off subdomain-level details.</sup>
 
@@ -105,6 +105,8 @@ To hide that panel, just click again on either the _"requests blocked"_ or _"dom
 Unless you are in "advanced user" mode, this panel is read-only and available only for informational purpose.
 
 In ["advanced user"](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
+
+__*__ - Panel will also be expanded when you enable "advanced user" mode - this is only for convenience - it will not close automatically when "advanced user" will be disabled.
 
 ***
 
