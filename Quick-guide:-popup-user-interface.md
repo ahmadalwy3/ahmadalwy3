@@ -106,7 +106,7 @@ Unless you are in "advanced user" mode, this panel is read-only and available on
 
 In ["advanced user"](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
 
-__*__ - Panel will also be expanded when you enable "advanced user" mode - this is only for convenience - it will not close automatically when "advanced user" will be disabled.
+<sub>__*__ The panel will also be expanded when you enable "advanced user" mode -- this is only for convenience -- it will not close automatically when "advanced user" will be disabled.</sub>
 
 ***
 
