@@ -56,6 +56,13 @@ Parameters:
 Logs to the console event listeners created on page.
 
 
+### cookie-remover.js [↪](https://github.com/uBlockOrigin/uAssets/blob/1c40fc5c40f510734d454b52907728137c133dd1/filters/resources.txt#L2361)
+Removes current page cookies specified by name. For current domain, wildcard (dot) subdomain, root path, script accessible (HttpOnly=false), on load and before unload.
+
+Parameters:
+ - optional, string/_regular expression_, matching in the name of the cookie
+
+
 ### csp.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1849)
 Deprecated by `$csp` network filter option.  
 TODO: csp filter is explained on adblockplus.org/en/filters but no direct link  
