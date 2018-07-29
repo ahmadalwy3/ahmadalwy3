@@ -57,6 +57,6 @@ Cloud storage services offered by specific browser vendors have their own limita
     - See: <https://discourse.mozilla-community.org/t/how-to-sync-preferences-of-a-bootstrapped-extension-via-sync/3024>.
     - But since uBlock Origin won't automatically import settings from the cloud storage, this will not cause any lost of local settings. However, you will have to push again your settings to the cloud storage.
 - There is [not much doc about this for Firefox](https://support.mozilla.org/en-US/products/firefox/sync-and-save), so there might be undocumented limitations yet to be found.
-- It appears Firefox for Android can't sync extensions settings (correct me if I am wrong).
+- It appears Firefox for Android can't sync extensions settings. This is tracked in [Bugzilla #1316442](https://bugzilla.mozilla.org/show_bug.cgi?id=1316442).
 - Other Firefox-related platform:
     - I have no clue whether this new feature will work for other brands of Firefox-based browsers.
