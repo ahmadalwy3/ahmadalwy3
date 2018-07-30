@@ -22,6 +22,8 @@
  
  
 
+***
+
 ### abort-current-inline-script.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1942)
 Aborts execution of inline script (_throws_ `ReferenceError`) when attempts to access specified _property_ when content of `<script>` _element_ matches specified text or _regular expression_.
 
@@ -30,6 +32,8 @@ Parameters:
  - optional, string/_regular expression_ matching in `<script>` _element_ content
 
 
+***
+
 ### abort-on-property-read.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1701)
 Aborts execution of script (_throws_ `ReferenceError`) when attempts to read specified _property_. Writes are ignored.
 
@@ -37,12 +41,16 @@ Parameters:
  - required, _property_ (chain of properties joined by `.`) attached to window object
 
 
+***
+
 ### abort-on-property-write.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1668)
 Aborts execution of script (_throws_ `ReferenceError`) when attempts to write specified _property_.
 
 Parameters:
  - required, _property_ (chain of properties joined by `.`) attached to window object that will be overwritten
 
+
+***
 
 ### addEventListener-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1879)
 Prevents attaching event listeners.
@@ -52,16 +60,22 @@ Parameters:
  - optional, string/_regular expression_ matching in stringified handler function
 
 
+***
+
 ### addEventListener-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1867)
 Logs to the console event listeners created on page.
 
 
+***
+
 ### cookie-remover.js [↪](https://github.com/uBlockOrigin/uAssets/blob/1c40fc5c40f510734d454b52907728137c133dd1/filters/resources.txt#L2361)
-Removes current page cookies specified by name. For current domain, wildcard (dot) subdomain, current path, script accessible (HttpOnly=false), on load and before unload.
+Removes current page cookies specified by name. For current domain, wildcard (dot) subdomain, root path, script accessible (HttpOnly=false), on load and before unload.
 
 Parameters:
  - optional, string/_regular expression_, matching in the name of the cookie
 
+
+***
 
 ### csp.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1849)
 Deprecated by `$csp` network filter option.  
@@ -73,6 +87,8 @@ Parameters:
  - required, valid Content Security Policy directive
 
 
+***
+
 ### disable-newtab-links.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2086)
 Prevents creating new tabs/windows by deactivating links with `target` attribute.
 
@@ -80,13 +96,19 @@ Parameters:
  - none
 
 
+***
+
 ### noeval.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1272)
 Prevent web pages from using _`eval()`_, and report attempts to console.
 
 
+***
+
 ### silent-noeval.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1279)
 Prevent web pages from using _`eval()`_.
 
+
+***
 
 ### noeval-if.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1286)
 Prevent web pages from using _`eval()`_ on specific matching payloads.
@@ -94,9 +116,13 @@ Prevent web pages from using _`eval()`_ on specific matching payloads.
 Parameters:
  - optional, string/_regular expression_, matching in payload string.
 
+***
+
 ### nowebrtc.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1306)
 Disables WebRTC by preventing web pages from using [`RTCPeerConnection()`](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection). Report attempts in console.
 
+
+***
 
 ### remove-attr.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2263)
 Removes attribute(s) from DOM tree node(s).
@@ -105,6 +131,8 @@ Parameters:
  - required, attribute or list of attributes joined by `|`
  - optional, CSS selector, specifies nodes from which attributes will be removed
 
+
+***
 
 ### set-constant.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2103)
 Creates _property_ and initializes it to predefined value from set of available properties. TODO: "constant" is not constant - current implementation does not prevent to assign value of another type.
@@ -122,6 +150,8 @@ Parameters:
          - `falseFunc` - function returning false
 
 
+***
+
 ### setInterval-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1787)
 Defuses calls to _`setInterval()`_ function for specified matching callbacks and intervals by setting callback function to noop.
 
@@ -130,9 +160,13 @@ Parameters:
  - optional, decimal integer, matching interval
 
 
+***
+
 ### setInterval-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1811)
 Logs to the console calls to _`setInterval()`_ function.
 
+
+***
 
 ### setTimeout-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1754)
 Defuses calls to _`setTimeout()`_ function for specified matching callbacks and delays by setting callback function to noop.
@@ -142,9 +176,13 @@ Parameters:
  - optional, decimal integer, matching delay
 
 
+***
+
 ### setTimeout-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1776)
 Logs to the console calls to _`setTimeout()`_ function.
 
+
+***
 
 ### nano-setInterval-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2222)
 Adjusts interval for specified _`setInterval()`_ callbacks.
@@ -155,6 +193,8 @@ Parameters:
  - optional - default to 0.05 (20x faster), float, capped at 50 times for up and down, interval multiplier
 
 
+***
+
 ### nano-setTimeout-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2176)
 Adjusts delay for specified _`setTimeout()`_ callbacks.
 
@@ -163,6 +203,8 @@ Parameters:
  - optional - defaults to 1000, decimal integer, matching delay
  - optional - default to 0.05 (20x faster), float, capped at 50 times for up and down, delay multiplier
 
+
+***
 
 ### sharedWorker-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1822)
 Deprecated by `$csp` filter option.  
@@ -173,6 +215,8 @@ Parameters:
  - optional, string/_regular expression_, matching in worker URL
 
 
+***
+
 ### window.open-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1995)
 Prevent opening new windows by [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) when URL positively or negatively matches to specific string.
 
@@ -181,6 +225,8 @@ Parameters:
  - optional, string/_regular expression_, matching/not matching in URL parameter passed to `window.open()`
 
 
+***
+
 ### window.name-defuser [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L874)
 Clears `window.name` _property_ which can be misused for tracking purposes.
 
@@ -188,14 +234,19 @@ Parameters:
  - none
 
 
+***
+
 ### overlay-buster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1102)
 Experimental, gets rid of overlay dialogs, preferred way to handle them is to use standard cosmetic filters and optionally [style injection](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#style).
 
+
+***
 
 ### alert-buster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1182)
 Disables [`alert()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) dialog boxes by redirecting messages to console.
 
 
+***
 
 ## Defuser scriptlets
 
@@ -259,6 +310,7 @@ Defuses anti adblock on adfly shortened links.
 Fix for disappearing videos on chip.de
 
 
+***
 
 ## Empty redirect resources
 These are smallest/shortest/fastest to execute files. Can be used in network filters as a parameter to `$redirect` option along with specific matching `$type` option.
@@ -290,6 +342,7 @@ font, image, media, object, script, stylesheet, subdocument, xmlhttprequest
 TODO: object and font resources are missing? Find discussion about adding them on demand.
 
 
+***
 
 ## URL-specific sanitized redirect resources (surrogates)
 
@@ -318,6 +371,7 @@ Along with [Disqus click-to-load](https://gist.github.com/gorhill/ef1b62d606473c
 Twitch stream embedded ads bypasser
 
 
+***
 
 ## Other
 Deprecated by general purpose scriptlets / outdated
@@ -443,6 +497,7 @@ Deprecated, sets static properties (`_$14`)
 Deprecated, sets static properties (`adisplaynormal`)
 
 
+***
 
 ## Glossary
 
