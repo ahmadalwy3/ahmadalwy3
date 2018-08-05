@@ -125,7 +125,7 @@ Disables WebRTC by preventing web pages from using [`RTCPeerConnection()`](https
 ***
 
 ### remove-attr.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2263)
-Removes attribute(s) from DOM tree node(s).
+Removes attribute(s) from DOM tree node(s). Will run only once after page load.
 
 Parameters:
  - required, attribute or list of attributes joined by `|`
