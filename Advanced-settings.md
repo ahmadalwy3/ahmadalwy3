@@ -42,6 +42,16 @@ The time to wait in hours between each update session<sup>[1]</sup>. uBO will al
 
 ***
 
+#### `cacheStorageCompression`
+
+Default: `false`.
+
+If set to true, uBO will lz4-compress data before storing it in its cache storage. The cache storage is used for storing downloaded filter lists, compiled filter lists, selfies. This setting currently only work with Firefox. See https://github.com/uBlockOrigin/uBlock-issues/issues/141 for related discussion.
+
+
+
+***
+
 #### `debugScriptlets`
 
 Default: `false`.
