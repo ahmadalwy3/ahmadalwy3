@@ -237,7 +237,7 @@ Parameters:
 ***
 
 ### overlay-buster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1102)
-Experimental, gets rid of overlay dialogs, preferred way to handle them is to use standard cosmetic filters and optionally [style injection](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#style).
+Experimental, gets rid of overlay dialogs, works for ~30s after page load. Preferred way to handle overlays is to use standard cosmetic filters and optionally [style injection](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#style).
 
 
 ***
