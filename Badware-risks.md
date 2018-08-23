@@ -122,10 +122,11 @@ Below are sites currently part of the list, or sites being candidate for the lis
 
 #### ublock.org
 
-- [uBlock Origin is completely unrelated to the web site ublock.org](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-is-completely-unrelated-to-the-web-site-ublock.org)
-- [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
-- ["ublock vs. ublock origin" Hacker News discussion](https://news.ycombinator.com/item?id=14335190)
-- ["ublock vs. ublock origin" Reddit discussion](https://reddit.com/r/ublock/comments/32mos6/ublock_vs_ublock_origin/)
-- ["Stop accepting donations, or explain where the money are going to!" issues in uBlock repository](https://github.com/uBlockAdmin/uBlock/issues/1706) (Archived copy: http://archive.is/hygmD)
-- [Privacy Tool uBlock (NOT uBlock Origin) Adds User Tracking Feature](https://soylentnews.org/article.pl?sid=18/05/17/028245)
-- ["Implement Stats data capture feature" - commit in uBlock repository](https://github.com/uBlockAdmin/uBlock/commit/76b89c0a22d20f3a66d7feab14e024f56ca65539) (Archived copy: http://archive.is/1F80E)
+- 2018-07-19: ["'uBlock' is used in the name despite that the code base is COMPLETELY unrelated to uBlock Origin's code base"](https://twitter.com/gorhill/status/1019975271443771392)
+- 2018-05-17: [Privacy Tool uBlock (NOT uBlock Origin) Adds User Tracking Feature](https://soylentnews.org/article.pl?sid=18/05/17/028245)
+- 2018-04-11: ["Implement Stats data capture feature" - commit in uBlock repository](https://github.com/uBlockAdmin/uBlock/commit/76b89c0a22d20f3a66d7feab14e024f56ca65539) (Archived copy: http://archive.is/1F80E)
+- 2017-10-21: [uBlock Origin is completely unrelated to the web site ublock.org](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-is-completely-unrelated-to-the-web-site-ublock.org)
+- 2017-07-17: ["Stop accepting donations, or explain where the money are going to!" issues in uBlock repository](https://github.com/uBlockAdmin/uBlock/issues/1706) (Archived copy: http://archive.is/hygmD)
+- 2017-05-14: ["ublock vs. ublock origin" Hacker News discussion](https://news.ycombinator.com/item?id=14335190)
+- 2015-07-23: ["ublock vs. ublock origin" Reddit discussion](https://reddit.com/r/ublock/comments/32mos6/ublock_vs_ublock_origin/)
+- 2014-07-08: [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
