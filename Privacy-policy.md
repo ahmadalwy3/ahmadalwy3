@@ -6,6 +6,6 @@ uBlock Origin does not collect any data of any kind.
 
 The only time uBlock Origin connects to a remote server is to update the filter lists and other related assets. If you disable auto-update in the _"Filter lists"_ pane in the dashboard, uBlock Origin will not connect to any remote server, unless you click _"Update now"_ and only if there are assets deemed "out of date".
 
-The project is currently hosted on `github.com`, which is owned by GitHub Inc. (subsidiary of Microsoft Corporation), and thus is unrelated to uBlock Origin.
+The project is currently hosted on `github.com`, which is owned by GitHub Inc. (soon to be a subsidiary of Microsoft Corporation), and thus is unrelated to uBlock Origin.
 
 That is all.
