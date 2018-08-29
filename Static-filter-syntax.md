@@ -221,7 +221,7 @@ With the introduction of HTML filtering, the `script:contains(...)` is now depre
 
     script:inject(...)
 
-Starting from [1.15.12](https://github.com/gorhill/uBlock/commit/ec56165d0d36ab91fba7d5cf44a4552d19fefdd5) uBO supports new syntax:
+Starting from [1.15.12](https://github.com/gorhill/uBlock/commit/ec56165d0d36ab91fba7d5cf44a4552d19fefdd5) uBO supports new shorter syntax:
 
     +js(...)
 
