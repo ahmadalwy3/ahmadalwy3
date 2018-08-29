@@ -221,6 +221,10 @@ With the introduction of HTML filtering, the `script:contains(...)` is now depre
 
     script:inject(...)
 
+Starting from [1.15.12](https://github.com/gorhill/uBlock/commit/ec56165d0d36ab91fba7d5cf44a4552d19fefdd5) uBO supports new syntax:
+
+    +js(...)
+
 This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
 
 Generic `script:inject` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##script:inject(yavli-defuser.js)`.
