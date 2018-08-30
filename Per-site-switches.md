@@ -61,6 +61,10 @@ Examples of usefulness (let's say you just stumbled onto these pages not knowing
     - Not loading largish images by default can help Twitter page performance: click on a placeholder to load only the images which seems to be of interest to you.
     - This is true for any "infinite scrolling" web pages ([another example](http://www.bloomberg.com/news/articles/2016-01-19/being-illegal-won-t-keep-drones-from-taking-over-india)). Not loading the images by default help a lot in such cases.
 
+#### Caveat:
+
+If the media elements do not have `Content-Length` header present, then this switch will fail to block the said media elements by size.
+
 ***
 
 ## No cosmetic filtering
