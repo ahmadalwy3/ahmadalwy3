@@ -23,11 +23,19 @@ The reason it is not supported is to be sure that users explicitly disable uBO t
 
 `genericblock`:
 
-Not supported. This option is supposed to be used with exception filter to disable _generic_ network filters on the page. _Generic_ in this case means network filters without `$domain` option - filter like `||example.com^` is still considered generic. Not supported because using this filter would disable all filters in malware lists for the site where it's used.
+Not supported.
+
+This option is meant to be used with an exception filter to disable _generic_ network filters on target pages. _Generic_ in this case means network filters without a `domain=` filter option. Filters such as `||example.com^` are still considered generic.
+
+This option is not supported because using such filter option would cause large amount of filters to be silently disabled for a site where it's used.
+
+For instance, when used for a specific site, the `genericblock` option would cause all the filters in hosts files to be disabled, including those from the malware lists. EasyPrivacy and other anti-tracking lists also contain countless so-called "generic" filters, and as a consequence these would also end up being disabled.
 
 `elemhide`:
 
 Translated internally to `generichide`. `elemhide` is used with exception filters to disable all cosmetic filtering on page, this can be achieved by ["No cosmetic filtering"](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering) switch.
+
+Keep in mind `generichide` is a cosmetic filtering-related option, and as such using it has no negative consequence with regard to privacy since cosmetic filtering has no privacy value.
 
 ## Pre-parsing directives
 
