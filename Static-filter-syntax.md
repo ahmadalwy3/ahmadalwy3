@@ -21,6 +21,14 @@ Not supported. The purpose of the `document` option when used with an exception 
 
 The reason it is not supported is to be sure that users explicitly disable uBO themselves if they wish (through [whitelisting](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)), not having some external filter list decide for them.
 
+`genericblock`:
+
+Not supported. This option is supposed to be used with exception filter to disable _generic_ network filters on the page. _Generic_ in this case means network filters without `$domain` option - filter like `||example.com^` is still considered generic. Not supported because using this filter would disable all filters in malware lists for the site where it's used.
+
+`elemhide`:
+
+Translated internally to `generichide`. `elemhide` is used with exception filters to disable all cosmetic filtering on page, this can be achieved by ["No cosmetic filtering"](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering) switch.
+
 ## Pre-parsing directives
 
 uBO v1.16.0 and above supports pre-parsing directives. Pre-parsing directives are prefixed with `!#`, so this means older versions of uBO or other blockers will see the pre-parsing directives as comment and discard them.
