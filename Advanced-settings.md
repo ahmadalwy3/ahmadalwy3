@@ -96,7 +96,7 @@ A valid CSS font size value (`14px`) to use for the popup panel. Use if you are 
 
 #### `requestJournalProcessPeriod`
 
-Default: `1000`.
+Default: `1000` milliseconds.
 
 uBO 1.16.21b2 and above.
 
