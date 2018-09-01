@@ -46,7 +46,7 @@ The time to wait in hours between each update session<sup>[1]</sup>. uBO will al
 
 Default: `true`.
 
-uBO 1.16.17b+
+uBO 1.16.17b and above.
 
 If set to true, uBO will lz4-compress data before storing it in its cache storage. The cache storage is used for storing downloaded filter lists, compiled filter lists, selfies. This setting currently only work with Firefox/Firefox for Android. See https://github.com/uBlockOrigin/uBlock-issues/issues/141 for related discussion.
 
@@ -91,6 +91,16 @@ When clicking the _"Update now"_ button in the _"3rd-party filters"_ pane in the
 Default: `unset`.
 
 A valid CSS font size value (`14px`) to use for the popup panel. Use if you are unhappy with the default size.
+
+***
+
+#### `requestJournalProcessPeriod`
+
+Default: `1000`.
+
+uBO 1.16.21b2 and above.
+
+Controlls the delay before uBO internally process it's network request journal queue. Affects the delay in displaying the number of blocked requests on extension icon [#155](https://github.com/uBlockOrigin/uBlock-issues/issues/155).
 
 ***
 
