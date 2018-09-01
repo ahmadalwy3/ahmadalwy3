@@ -100,7 +100,11 @@ Default: `1000` milliseconds.
 
 uBO 1.16.21b2 and above.
 
-Controlls the delay before uBO internally process it's network request journal queue. Affects the delay in displaying the number of blocked requests on extension icon [#155](https://github.com/uBlockOrigin/uBlock-issues/issues/155).
+Controls the delay before uBO internally process it's network request journal queue. The network request journal queue exists for the purpose of fixing [issue 2053](https://github.com/gorhill/uBlock/issues/2053).
+
+As a benign side effect to the fix, there is a delay in displaying the number of blocked requests on extension icon [#155](https://github.com/uBlockOrigin/uBlock-issues/issues/155).
+
+A lower delay than the default one could bring back the issue it's meant to fix.
 
 ***
 
