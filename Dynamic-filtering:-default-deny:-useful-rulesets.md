@@ -47,6 +47,7 @@ Reminder: the `noop` rule action means that network requests will not be filtere
 
     # American Express
     www.americanexpress.com aexp-static.com * noop
+    global.americanexpress.com aexp-static.com * noop
 
     # arewee10syet.com
     arewee10syet.com cdnjs.cloudflare.com * noop
@@ -58,6 +59,9 @@ Reminder: the `noop` rule action means that network requests will not be filtere
 
     # askubuntu.com
     askubuntu.com sstatic.net * noop
+
+    # Bank of America
+    www.bankofamerica.com bac-assets.com * noop
 
     # battlecreekenquirer.com
     www.battlecreekenquirer.com gannett-cdn.com * noop
@@ -88,6 +92,9 @@ Reminder: the `noop` rule action means that network requests will not be filtere
 
     # change.org
     www.change.org d22r54gnmuhwmk.cloudfront.net * noop
+
+    # Charles Schwab
+    client.schwab.com schwabcdn.com * noop
 
     # chromium.org
     www.chromium.org gstatic.com * noop
