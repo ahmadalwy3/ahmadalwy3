@@ -37,4 +37,5 @@ On the other hand, if you are familiar with [RequestPolicy](https://www.requestp
 
 ### Ability to filter behind-the-scene network requests
 Starting from uBO 1.15.20 `behind-the-scene` is no longer whitelisted by default in WebExtension (main) version of uBO.
+
 See ["Behind-the-scene network requests"](https://github.com/gorhill/uBlock/wiki/Behind-the-scene-network-requests).
