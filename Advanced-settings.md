@@ -46,7 +46,7 @@ The time to wait in hours between each update session<sup>[1]</sup>. uBO will al
 
 Default: `true`.
 
-uBO 1.16.17b and above.
+uBO 1.16.21 and above.
 
 If set to true, uBO will lz4-compress data before storing it in its cache storage. The cache storage is used for storing downloaded filter lists, compiled filter lists, selfies. This setting currently only work with Firefox/Firefox for Android. See https://github.com/uBlockOrigin/uBlock-issues/issues/141 for related discussion.
 
