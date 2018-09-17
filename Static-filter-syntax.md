@@ -133,7 +133,7 @@ This will cause the `*$image` filter to be discarded. Just appending `,badfilter
 
 #### `document`
 
-For _block_ filters only. This will cause web pages which match the filter to be subjected to [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking).
+For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking).
 
 #### `first-party`
 
