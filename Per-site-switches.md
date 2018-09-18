@@ -6,12 +6,13 @@ The per-site switches allows you to control uBlock's behavior on a per-site basi
 
 New in beta 1.16.21: changes to the state of per-site switches will be deemed temporary **if and only if** the [overview panel](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-overview-panel) is visible.
 
-![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1g.png)
+![Popup UI](https://user-images.githubusercontent.com/886325/45713902-7d7f9c80-bb90-11e8-8720-3954b9b98fba.png)
 
 - [No popups](#no-popups)
 - [No large media elements](#no-large-media-elements)
 - [No cosmetic filtering](#no-cosmetic-filtering)
 - [No remote fonts](#no-remote-fonts)
+- [No scripting](#no-scripting)
 
 ***
 
@@ -114,3 +115,23 @@ Keep in mind, though, that this rule blocks **all** first-party and third-party 
 to the _"My filters"_ pane. If you want to allow third-party fonts for some specific sites you can add them by modifying the above filter:
 
 `*$font,third-party,domain=~example.com|~other.example.net|~different.example.org`
+
+***
+
+## No scripting
+
+New in beta 1.16.21
+
+Wholly disable/enable javascript for a given site.
+
+![Popup UI](https://user-images.githubusercontent.com/886325/45714036-d3544480-bb90-11e8-8118-b6af41602b7b.png)
+
+This master switch has precedence over dynamic filtering rules and static filters related to script resources.
+
+Furthermore, when JavaScript is disabled through this master switch, `noscript` tags will be honoured on a page (as opposed to when just using filters/rules to block script resources).
+
+As with some other per-site switches, the default state of per-site JavaScript master switch can be set in the _Settings_ pane, thus allowing to disable JavaScript everywhere by default, and enable on a per-site basis:
+
+![a](https://user-images.githubusercontent.com/585534/44945402-a34a2a80-adb6-11e8-88fa-ef26ba5967c2.png)
+
+JavaScript master switch rules appear as `no-scripting: [hostname] true` entries in the _My rules_ pane.
