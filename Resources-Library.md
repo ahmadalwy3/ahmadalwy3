@@ -252,6 +252,9 @@ Disables [`alert()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/ale
 
 
 
+### ampproject.org/v0.js [↪](https://github.com/uBlockOrigin/uAssets/blob/7a841333e440452ec2d9e0dbe5c81459a99b59b4/filters/resources.txt#L2397)
+Removes animation (artificial 8s delay) added to desktop pages supporting AMP, when ampproject.org scripts are blocked.
+
 ### fingerprint2.js  [↪](https://github.com/uBlockOrigin/uAssets/blob/379a5a69059baa35627fe8205f44d97d129373af/filters/resources.txt#L2348)
 Defuses Fingerprintjs2. Sanitize `Fingerprint2` object.
 
