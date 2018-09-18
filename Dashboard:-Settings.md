@@ -109,6 +109,12 @@ The above rule means CSP reports would be blocked on `example.com` when CSP repo
 
 ***
 
+## Default behavior
+
+Please see: ["Per site switches"](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
+
+***
+
 ## Backup/restore section
 
 The bottom-most section is for you to easily backup/restore/reset all settings in uBlock.
