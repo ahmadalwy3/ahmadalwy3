@@ -40,7 +40,7 @@ The second icon is to toggle on/off the blocking of large media elements for the
 
 ![Popup UI](https://user-images.githubusercontent.com/585534/46021215-2573f900-c0ae-11e8-93ea-762cccfaa968.png)<br><sup>The badge shows the number of large media elements that have been blocked on the page.</sup>
 
-By default, this setting is disabled. The global default can be enabled in the _Settings_ pane in the dashboard.
+By default, this setting is disabled. The global default can be enabled in the [_Settings_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings) in the [dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard).
 
 ![a](https://user-images.githubusercontent.com/585534/46021852-818b4d00-c0af-11e8-8fdb-e028bc20e8ae.png)
 
@@ -98,7 +98,7 @@ Cosmetic filtering is always enabled by default.
 > This switch can help uBO to further lower its CPU-cycle footprint, which might be beneficial on devices with limited CPU-cycle resources -- and thus helping extend battery life and speed up page load times. The idea is to disable cosmetic filtering everywhere by default, and to enable it only for those sites which really benefit from it.
 > ***
 
-To disable cosmetic filtering everywhere by default, go to the [_Settings_ pane in the dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings), and check the option _"Disable cosmetic filtering"_ under the _"Default behavior"_ header:
+To disable cosmetic filtering everywhere by default, go to the [_Settings_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings) in the [dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard), and check the option _"Disable cosmetic filtering"_ under the _"Default behavior"_ header:
 
 ![Disable cosmetic filtering everywhere by default](https://user-images.githubusercontent.com/585534/46022246-3887c880-c0b0-11e8-9edc-ded22a011996.png)
 
@@ -112,9 +112,9 @@ You can prevent web fonts from being downloaded for the current site:
 
 ![Popup UI](https://user-images.githubusercontent.com/585534/46021462-b9de5b80-c0ae-11e8-82d9-f763bcd841ca.png)<br><sup>The badge shows the number of font resources that have been blocked on the page.</sup>
 
-Because of security and privacy concerns, many prefer to block all web fonts by default. You can do this by adding the following rule directly in the _"My rules"_ pane in the dashboard:
+Because of security and privacy concerns, many prefer to block all web fonts by default -- toggle the appropriate default behavior in the [_Settings_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings) in the [dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard):
 
-    no-remote-fonts: * true
+![Block remote fonts everywhere by default](https://user-images.githubusercontent.com/585534/46022554-da0f1a00-c0b0-11e8-9689-542f26b7126e.png)
 
 This will block all web fonts everywhere by default, and in this case you can toggle off the switch to allow web fonts on a per-site basis.
 
@@ -140,7 +140,7 @@ This master switch has precedence over dynamic filtering rules and static filter
 
 Furthermore, when JavaScript is disabled through this master switch, `noscript` tags will be honoured on a page (as opposed to when just using filters/rules to block script resources).
 
-As with some other per-site switches, the default state of per-site JavaScript master switch can be set in the _Settings_ pane, thus allowing to disable JavaScript everywhere by default, and enable on a per-site basis:
+As with some other per-site switches, the default state of per-site JavaScript master switch can be set in the [_Settings_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings), thus allowing to disable JavaScript everywhere by default, and enable on a per-site basis:
 
 ![a](https://user-images.githubusercontent.com/585534/46022411-84d30880-c0b0-11e8-9055-7e37b113ec13.png)
 
