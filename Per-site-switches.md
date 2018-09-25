@@ -130,7 +130,7 @@ New in beta 1.16.21
 
 Wholly disable/enable javascript for a given site.
 
-![Popup UI](https://user-images.githubusercontent.com/886325/45714036-d3544480-bb90-11e8-8118-b6af41602b7b.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/46021563-fa3dd980-c0ae-11e8-984c-a811dc5b2f75.png)
 
 This master switch has precedence over dynamic filtering rules and static filters related to script resources.
 
