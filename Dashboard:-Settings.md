@@ -7,8 +7,6 @@
 
 ## General
 
-***
-
 ### Make use of context menu where appropriate
 
 If checked, this gives permission for uBlock to add items in the context menu which are meant to improve convenience. Currently, only one item is added to the context menu, _"Block element"_, which purpose is to launch the element picker in order to filter out a specific element on a page.
