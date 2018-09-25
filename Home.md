@@ -14,7 +14,7 @@
             - [Filter lists from around the web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
         - _My filters_ pane (TODO)
             - [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
-        - _My rules_ pane (TODO)
+        - [_My rules_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-rules) (TODO)
             - [Dynamic filtering rule syntax](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax)
         - [_Whitelist_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Whitelist)
             - [How to whitelist a web site](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)
