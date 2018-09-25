@@ -93,7 +93,7 @@ And I had click-to-play enabled in all cases, so it could have been worse (excep
 
 When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand<sup>__*__</sup> to show you more details about requests blocked and domains connected:
 
-![a](https://user-images.githubusercontent.com/585534/39653559-76e67052-4fbf-11e8-88c3-bce8d61a26b7.png)<br><sup>Click the `all` cell at the top to toggle on/off subdomain-level details.</sup>
+![Overview panel expanded](https://user-images.githubusercontent.com/585534/46020643-d7122a80-c0ac-11e8-9b04-5cb43a9c7123.png)<br><sup>Click the `all` cell at the top to toggle on/off subdomain-level details.</sup>
 
 The pluses and minuses denote network requests which were either allowed (not blocked) or blocked, respectively for the specific domain/hostname aside which they appear. The number of pluses and minuses are proportional to the number of requests allowed or blocked:
 - `+`, `-`: under 10 network requests were allowed, blocked.
