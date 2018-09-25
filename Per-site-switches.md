@@ -106,7 +106,7 @@ To disable cosmetic filtering everywhere by default, go to the [_Settings_ pane 
 
 You can prevent web fonts from being downloaded for the current site:
 
-![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1k.png)<br><sup>The badge shows the number of font resources that have been blocked on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/46021462-b9de5b80-c0ae-11e8-82d9-f763bcd841ca.png)<br><sup>The badge shows the number of font resources that have been blocked on the page.</sup>
 
 Because of security and privacy concerns, many prefer to block all web fonts by default. You can do this by adding the following rule directly in the _"My rules"_ pane in the dashboard:
 
