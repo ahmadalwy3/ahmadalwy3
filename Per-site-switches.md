@@ -38,7 +38,7 @@ Blocking popups depends on whether the proper filters are present in the selecte
 
 The second icon is to toggle on/off the blocking of large media elements for the current site. The primary purpose of this feature is to save bandwidth. Side effect is to possibly speed up page load.
 
-![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1h.png)<br><sup>The badge shows the number of large media elements that have been blocked on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/46021215-2573f900-c0ae-11e8-93ea-762cccfaa968.png)<br><sup>The badge shows the number of large media elements that have been blocked on the page.</sup>
 
 By default, this setting is disabled. The global default can be enabled in the _Settings_ pane in the dashboard.
 
