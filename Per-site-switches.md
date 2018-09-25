@@ -100,7 +100,7 @@ Cosmetic filtering is always enabled by default.
 
 To disable cosmetic filtering everywhere by default, go to the [_Settings_ pane in the dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings), and check the option _"Disable cosmetic filtering"_ under the _"Default behavior"_ header:
 
-![Disable cosmetic filtering everywhere by default](https://user-images.githubusercontent.com/585534/46021966-beefda80-c0af-11e8-8cf2-7f8b0209dad6.png)
+![Disable cosmetic filtering everywhere by default](https://user-images.githubusercontent.com/585534/46022246-3887c880-c0b0-11e8-9edc-ded22a011996.png)
 
 From then on, cosmetic filtering will be turned off everywhere by default, and to turn it on for a specific site where it is really needed, just enable it using the switch in uBO's popup panel.
 
