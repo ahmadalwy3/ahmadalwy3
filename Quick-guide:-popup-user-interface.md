@@ -112,6 +112,6 @@ In ["advanced user"](https://github.com/gorhill/uBlock/wiki/Advanced-user-featur
 
 ### The per-site switches
 
-![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1g.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/46020955-8bac4c00-c0ad-11e8-8c33-33fc921cfcc6.png)
 
 The per-site switches allow you to control some settings on a per-site basis. See [detailed documentation about per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches).
