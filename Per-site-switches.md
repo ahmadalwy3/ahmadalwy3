@@ -42,7 +42,7 @@ The second icon is to toggle on/off the blocking of large media elements for the
 
 By default, this setting is disabled. The global default can be enabled in the _Settings_ pane in the dashboard.
 
-![a](https://cloud.githubusercontent.com/assets/585534/12380164/2575ee24-bd3a-11e5-8743-24da038463f8.png)
+![a](https://user-images.githubusercontent.com/585534/46021852-818b4d00-c0af-11e8-8fdb-e028bc20e8ae.png)
 
 The threshold size -- a global setting -- to decide when to block or not is also configurable. The threshold size can be set to zero: this will cause all media elements to be blocked. For the sake of documentation, let's refer to media elements (images, videos, audios) which are larger than the set size as _"large media elements"_.
 
