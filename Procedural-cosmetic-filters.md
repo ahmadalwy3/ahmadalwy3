@@ -18,15 +18,19 @@ Efficient procedural cosmetic filters (or any cosmetic filters really) are the o
 
 ### `subject:has(arg)`
 
+<sub>Semantic changed in uBO 1.15.0 to resemble `:if(...)`</sub>
+
 - Description: Select element _subject_ if and only if evaluating _arg_ in the context of _subject_ returns one or more elements.
-- _subject_: **must** be a plain CSS selector.
-- _arg_: **must** be a plain CSS selector.
+- Chainable: Yes.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- _arg_: A valid plain CSS selector or procedural cosmetic filter, which is evaluated in the context of the _subject_ element.
 - Examples:
+    - `mobile.twitter.com##main [role="region"] > [role="grid"] > [role="rowgroup"] [role="row"]:if(div:last-of-type span:has-text(/^Promoted by/))`
     - `strikeout.me##body > div:has(img[alt="AdBlock Alert"])`
     - `yandex.ru##.serp-item:has(:scope > .organic > .organic__subtitle > .label_color_yellow)` - `:scope` forces `.organic` to match inside `.serp-item`<sup>[1](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll#JavaScript),[2](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope)</sup>
     - `strdef.world##div[style]:has(> a[href="http://www.streamdefence.com/index.php"])` - `>` forces `a` to be direct descendant of `div`
 
-The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of writing no browser supports it. Instead of waiting for browser vendors to provide support, uBO provides support for `:has(arg)` as a procedural operator. By restricting `subject` and `arg` to be valid CSS selectors, this means uBO will be able to support the `:has(...)` operator declaratively once a browser supports it.
+The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of writing no browser supports it. Instead of waiting for browser vendors to provide support, uBO provides support for `:has(arg)` as a procedural operator. 
 
 ### `subject:has-text(needle)`
 
@@ -41,14 +45,7 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
 
 ### `subject:if(arg)`
 
-- Description: Select element _subject_ if and only if the result of evaluating _arg_ is one or more elements.
-- Chainable: Yes.
-- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- _arg_: A valid plain CSS selector or procedural cosmetic filter, which is evaluated in the context of the _subject_ element.
-- Examples:
-    - `mobile.twitter.com##main [role="region"] > [role="grid"] > [role="rowgroup"] [role="row"]:if(div:last-of-type span:has-text(/^Promoted by/))`
-
-The purpose of `:if(...)` resembles the purpose of the `:has(...)` operator, however the difference is that the argument for the `:has(...)` operator **can not** be anything else than a plain CSS selector. This limitation to the `:has(...)` operator is to ensure that they can be implemented declaratively once a browser supports `:has(...)` as a valid CSS4 selector.
+Deprecated in favor of [`:has(...)`](#subjecthasarg) in uBO 1.15.0
 
 ### `subject:if-not(arg)`
 
