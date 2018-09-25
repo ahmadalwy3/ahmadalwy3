@@ -42,6 +42,27 @@ The time to wait in hours between each update session<sup>[1]</sup>. uBO will al
 
 ***
 
+#### `cacheControlForFirefox1376932`
+
+Default: `no-cache, no-store, must-revalidate`.
+
+uBO 1.17.0 and above.
+
+Configure how uBO should affect caching for the purpose of dealing with browser bug (see [#229](https://github.com/uBlockOrigin/uBlock-issues/issues/229)).
+
+Possible values:
+
+`no-cache, no-store, must-revalidate`:
+- Undesirable side effect: documents themselves for which uBO has to inject CSP directives as a result of filters/ruleset won't be available offline.
+
+`no-cache`:
+- Undesirable side effect: One will need to explicitly cache-bypass reload a page each time uBO has to inject CSP directives as a result of filters/ruleset. Note that such cache-bypass reload does not affect only the document itself, but also all secondary resources inside that document.
+
+Related browser issues:
+- Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1376932>
+
+***
+
 #### `cacheStorageCompression`
 
 Default: `true`.
