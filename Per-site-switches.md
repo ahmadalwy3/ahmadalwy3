@@ -82,7 +82,7 @@ If the media elements do not have `Content-Length` header present, then this swi
 
 You can easily toggle on/off cosmetic filtering for a given site:
 
-![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1j.png)<br><sup>The badge shows the number of DOM elements that have been hidden on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/46021299-62d88680-c0ae-11e8-8280-5dcbf7019c85.png)<br><sup>The badge shows the number of DOM elements that have been hidden on the page.</sup>
 
 When present, the badge number indicates the number of elements hidden on the page by uBO as a result of cosmetic filtering. If you disable cosmetic filtering while there are hidden elements on the page, these elements will become visible/hidden as you toggle off/on cosmetic filtering.
 
