@@ -12,7 +12,7 @@ When the overview panel is not visible, toggling a per-site switch will cause th
 
 However, when the overview panel is visible, toggling a per-site switch will cause the change to be temporary. In such case, there will be an eraser and a padlock icon in the overview pane, which can be used to revert or persist the current state of all the per-site switches.
 
-![Popup UI](https://user-images.githubusercontent.com/886325/45713902-7d7f9c80-bb90-11e8-8720-3954b9b98fba.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/46020955-8bac4c00-c0ad-11e8-8c33-33fc921cfcc6.png)
 
 - [No popups](#no-popups)
 - [No large media elements](#no-large-media-elements)
