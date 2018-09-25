@@ -142,6 +142,6 @@ Furthermore, when JavaScript is disabled through this master switch, `noscript` 
 
 As with some other per-site switches, the default state of per-site JavaScript master switch can be set in the _Settings_ pane, thus allowing to disable JavaScript everywhere by default, and enable on a per-site basis:
 
-![a](https://user-images.githubusercontent.com/585534/44945402-a34a2a80-adb6-11e8-88fa-ef26ba5967c2.png)
+![a](https://user-images.githubusercontent.com/585534/46022411-84d30880-c0b0-11e8-9055-7e37b113ec13.png)
 
 JavaScript master switch rules appear as `no-scripting: [hostname] true` entries in the _My rules_ pane.
