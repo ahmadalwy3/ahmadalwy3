@@ -66,6 +66,8 @@ uBlock Origin 1.2.0 introduces a new way to block **specific** inline script tag
 
     example.com##script:contains(...)
 
+Please note that with the introduction of [HTML filtering](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters), the `script:contains(...)` syntax is now deprecated and internally converted into an equivalent `##^script:has-text(...)` HTML filter.
+
 Where the value inside the parenthesis in `contains(...)` can be a plain string or a literal javascript regular expression (`/.../`). A script tag cosmetic filter will prevent the execution of whatever javascript inside a **specific** script tag when there is a match, i.e. when the plain text or the regular expression is found inside the script tag.
 
 So we can use script tag filtering for our above example to specifically disable one of the script tag (assuming the page's URL is `https://foo.example/bar.html`):
