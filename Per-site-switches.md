@@ -136,7 +136,7 @@ Wholly disable/enable javascript for a given site.
 
 ![Popup UI](https://user-images.githubusercontent.com/585534/46021563-fa3dd980-c0ae-11e8-984c-a811dc5b2f75.png)
 
-This master switch has precedence over dynamic filtering rules and static filters related to script resources.
+This master switch has blocking precedence over dynamic filtering rules and static filters related to script resources.
 
 Furthermore, when JavaScript is disabled through this master switch, `noscript` tags will be honoured on a page (as opposed to when just using filters/rules to block script resources).
 
