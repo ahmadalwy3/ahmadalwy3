@@ -138,7 +138,7 @@ Wholly disable/enable javascript for a given site.
 
 This master switch has blocking precedence over dynamic filtering rules and static filters related to script resources.
 
-Furthermore, when JavaScript is disabled through this master switch, `noscript` tags will be honoured on a page (as opposed to when just using filters/rules to block script resources).
+Furthermore, when JavaScript is disabled through this master switch, [`noscript`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript#Example) tags will be honoured on a page (as opposed to when just using filters/rules to block script resources).
 
 As with some other per-site switches, the default state of per-site JavaScript master switch can be set in the [_Settings_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings), thus allowing to disable JavaScript everywhere by default, and enable on a per-site basis:
 
