@@ -149,4 +149,4 @@ Default: `unset`.
 
 uBO 1.11.5 and above.
 
-If set to a valid URL, uBO will load the content of the URL and parse it as token-identified resources to be used for `redirect` or `script:inject` purpose. For example, I use this setting with a `file:///`-based URL to test resources before publishing them for [uAssets](https://github.com/uBlockOrigin/uAssets). uBO expects valid content such as can be seen in [resources.txt](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt), anything else will lead to undefined results.
+If set to a valid URL, uBO will load the content of the URL and parse it as token-identified resources to be used for `redirect` or `script:inject` purpose. For example, I use this setting to test resources before publishing them for [uAssets](https://github.com/uBlockOrigin/uAssets). uBO expects valid content such as can be seen in [resources.txt](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt), anything else will lead to undefined results.
