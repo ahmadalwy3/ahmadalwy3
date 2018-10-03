@@ -129,7 +129,7 @@ Now all images from everywhere are blocked on your side. An exception filter (`@
 
     *$image,badfilter
 
-This will cause the `*$image` filter to be discarded. Just appending `,badfilter` to any instance of static network filter will prevent the loading of that filter.
+This will cause the `*$image` filter to be discarded. Just appending `badfilter` option to any instance of static network filter will prevent the loading of that filter.
 
 #### `document`
 
