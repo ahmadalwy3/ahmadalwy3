@@ -46,8 +46,7 @@ Reminder: the `noop` rule action means that network requests will not be filtere
     www.amazon.ca ssl-images-amazon.com * noop
 
     # American Express
-    www.americanexpress.com aexp-static.com * noop
-    global.americanexpress.com aexp-static.com * noop
+    americanexpress.com aexp-static.com * noop
 
     # arewee10syet.com
     arewee10syet.com cdnjs.cloudflare.com * noop
