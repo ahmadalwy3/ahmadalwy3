@@ -9,10 +9,10 @@
     - [_Settings_](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings) pane
     - [_Filter lists_](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists) pane
         - [Filter lists from around the web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
-
-    - [_My filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-filters) pane
+    - [_My filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-filters) pane (TODO)
         - [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
-    - [Dynamic filtering rule syntax](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax)
+    - [_My rules_](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-rules) pane (TODO)
+        - [Dynamic filtering rule syntax](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax)
     - [_Whitelist_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Whitelist)
         - [How to whitelist a web site](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)
     - [Settings: importing from/exporting to cloud storage](https://github.com/gorhill/uBlock/wiki/Cloud-storage)
