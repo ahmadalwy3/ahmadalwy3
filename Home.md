@@ -10,11 +10,11 @@
         - [The per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
     - [Dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard)
         - [_Settings_](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings) pane
-        - [_3rd-party filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters) pane
+        - [_Filter lists_](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists) pane
             - [Filter lists from around the web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
-        - _My filters_ pane (TODO)
+        - [_My filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-filters) pane (TODO)
             - [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
-        - [_My rules_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-rules) (TODO)
+        - [_My rules_](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-rules) pane (TODO)
             - [Dynamic filtering rule syntax](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax)
         - [_Whitelist_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Whitelist)
             - [How to whitelist a web site](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)
