@@ -10,7 +10,7 @@
     - [_Filter lists_](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists) pane
         - [Filter lists from around the web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 
-    - [_My filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists) pane
+    - [_My filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-filters) pane
         - [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
     - [Dynamic filtering rule syntax](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax)
     - [_Whitelist_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Whitelist)
