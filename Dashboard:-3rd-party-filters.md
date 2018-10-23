@@ -1,0 +1,1 @@
+Moved to: https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists
