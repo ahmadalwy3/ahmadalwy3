@@ -3,7 +3,7 @@
 
 ***
 
-The _3rd-party filters_ pane is where you subscribe to filter lists. The filter lists to which you subscribe will feed uBlock Origin's [static filtering engine](https://github.com/gorhill/uBlock/wiki/Overview-of-uBlock's-network-filtering-engine:-details#static-filtering).
+The _Filter lists_ pane is where you subscribe to filter lists. The filter lists to which you subscribe will feed uBlock Origin's [static filtering engine](https://github.com/gorhill/uBlock/wiki/Overview-of-uBlock's-network-filtering-engine:-details#static-filtering).
 
 The picture below shows uBlock Origin's default selection of filter lists. You can add more, or remove some of the filter lists already selected by default (for reference, most other blockers have only EasyList selected).
 
@@ -11,7 +11,7 @@ If you remove filter lists, it is still strongly advised to at least keep _uBloc
 
 The more filter lists one add, the higher the likelihood some web pages may not render properly, due to higher probability of false positives. When this occurs, you should report the issue to the maintainers of the filter list causing the issue, or create your own exception filters to fix the issue.
 
-![3rd-party filter pane](https://cloud.githubusercontent.com/assets/585534/24972255/cbf77306-1f88-11e7-808e-1e1ac934120f.png)
+![Filter lists pane](https://cloud.githubusercontent.com/assets/585534/24972255/cbf77306-1f88-11e7-808e-1e1ac934120f.png)
 
 uBlock Origin discards duplicate filters, so the number of filters used within a filter list depends on how many duplicate filters were detected within that filter list. The order in which the filter lists are loaded into memory is undefined.
 
