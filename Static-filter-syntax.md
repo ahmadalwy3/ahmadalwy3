@@ -153,7 +153,7 @@ To specifically disable inline script tags in a main page via CSP: `||example.co
 
 #### `inline-font`
 
-To specifically disable inline fonts tags in a main page via CSP: `||example.com^$inline-font`.
+To specifically disable inline font tags in a main page via CSP: `||example.com^$inline-font`.
 
 #### `popunder`
 
