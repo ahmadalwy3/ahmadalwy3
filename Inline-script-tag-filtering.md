@@ -16,7 +16,7 @@ Back to [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-fil
 Script tag filters do not work in all browsers, due to browser API limitations:
 
 - Not supported in Chromium-based browser.
-    - Starring the [related Chromium issue](https://code.google.com/p/chromium/issues/detail?id=168175) may help motivate Chromium devs to implement support.
+    - Starring the [related Chromium issue](https://bugs.chromium.org/p/chromium/issues/detail?id=168175) may help motivate Chromium devs to implement support.
     - Falling back on wholesale blocking of all inline script tags may work.<sup>[1]</sup>
 - Not supported in Firefox's WebExtensions version of uBO when...
     - Firefox 56 and less is used;
