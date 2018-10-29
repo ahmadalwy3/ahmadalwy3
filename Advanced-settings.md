@@ -129,6 +129,16 @@ A lower delay than the default one could bring back the issue it's meant to fix.
 
 ***
 
+#### `strictBlockingBypassDuration`
+
+Default: `120` seconds.
+
+uBO 1.17.3b4 and above.
+
+Controls duration of the [Strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking) "Temporarily" bypass.
+
+***
+
 #### `suspendTabsUntilReady` (experimental)
 
 Default: `false`.
