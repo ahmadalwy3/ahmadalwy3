@@ -55,6 +55,6 @@ This is a collection of various filter lists, grouped by purpose. To use a speci
 
 ##### Custom filter lists
 
-You can import custom 3rd-party filter lists: just paste in the text area the URL of where a filter lists can be fetched. These custom filter lists will be also automatically updated on a regular basis.
+You can import custom 3rd-party filter lists: place check mark next to "Import..." in the "Custom" section and paste the URL of where a filter lists can be fetched from in the text area that appears. These custom filter lists will be also automatically updated on a regular basis.
 
 On some specific web pages, it is possible to subscribe to a 3rd-party filter list by simply clicking on a link to the filter list. There is such a page for uBlock Origin: [Filter lists from around the web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
