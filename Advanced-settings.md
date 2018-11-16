@@ -42,6 +42,16 @@ The time to wait in hours between each update session<sup>[1]</sup>. uBO will al
 
 ***
 
+#### `benchmarkingPane`
+
+Default: `false`
+
+uBO 1.17.3b7 and above.
+
+For development purposes only.
+
+***
+
 #### `cacheControlForFirefox1376932`
 
 Default: `no-cache, no-store, must-revalidate`.
@@ -80,6 +90,16 @@ If set to true, uBO will lz4-compress data before storing it in its cache storag
 Default: `false`.
 
 If set to `true`, [`debugger;` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) will be inserted just before [scriptlet](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection) code
+
+***
+
+#### `disableWebAssembly`
+
+Default: `false`.
+
+uBO git master branch.
+
+For development purposes only.
 
 ***
 
