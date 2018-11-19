@@ -83,7 +83,8 @@ Parameters:
 Deprecated by `$csp` network filter option.  
 TODO: csp filter is explained on adblockplus.org/en/filters but no direct link  
 Applies content security policy by inserting `<meta http-equiv=Content-Security-Policy content="*directive*">` tag to html `<head>` _element_.
-Read more at https://www.w3.org/TR/CSP2/#delivery-html-meta-element
+Read more at https://www.w3.org/TR/CSP2/#delivery-html-meta-element  
+[Content Security Policy Quick Reference Guide](https://content-security-policy.com/)
 
 Parameters:
  - required, valid Content Security Policy directive
