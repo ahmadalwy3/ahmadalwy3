@@ -379,7 +379,7 @@ Twitch stream embedded ads bypasser
 ***
 
 ## Other
-Deprecated by general purpose scriptlets / outdated
+Deprecated by general purpose scriptlets / outdated (please move to proper section if still used).
 
 
 
