@@ -1,1 +1,0 @@
-UBlock Origin - An efficient blocker for Chromium. Fast and lean.
