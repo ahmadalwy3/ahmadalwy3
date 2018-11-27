@@ -22,8 +22,6 @@ With Firefox 41 and lower **OR** uBlock Origin 1.3.3 and lower, **it is NOT poss
 
 With Firefox 42 and higher **AND** uBlock Origin 1.3.4 and higher, **it is possible** to prevent local IP addresses leakage without completely disabling WebRTC.
 
-WebRTC is required for Firefox Hello to work properly. Thus Firefox Hello won't work if WebRTC is completely disabled.
-
 #### See also
 
 - [WebRTC WG / Privacy/IPAddresses](https://www.w3.org/wiki/Privacy/IPAddresses)
