@@ -148,6 +148,7 @@ Parameters:
          - `undefined`
          - `false`
          - `true`
+         - `null`<sup>[2018-11-24](https://github.com/uBlockOrigin/uAssets/commit/8fd3f7e3a344e5fc29344f1ba914e82457eb1d13#diff-8809d5783978a0b5b88f93d7dab99de0)</sup>
          - `noopFunc` - function with empty body
          - `trueFunc` - function returning true
          - `falseFunc` - function returning false
