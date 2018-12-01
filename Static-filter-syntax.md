@@ -161,7 +161,7 @@ To block "popunders" windows/tabs. To be used in the same manner as the `popup` 
 
 #### `redirect`
 
-To cause a blocked network request to be redirected to a local "neutered" version of the resource. The "neutered" resource must be referenced using a resource token. The resources are defined in [uAssets/filters/resources.txt](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Special, reserved token "`none`" may be used to disable redirection.
+To cause a blocked network request to be redirected to a local "neutered" version of the resource. The "neutered" resource must be referenced using a resource token. The resources are defined in [uAssets/filters/resources.txt](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt). Special, reserved token `none` can be used to disable specific redirect filters.
 
 The filter syntax for `redirect=` filter option is a subset of ABP-compatible filtering syntax, and is as follow:
 
