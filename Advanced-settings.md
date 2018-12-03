@@ -97,7 +97,7 @@ If set to `true`, [`debugger;` statement](https://developer.mozilla.org/en-US/do
 
 Default: `false`.
 
-uBO git master branch.
+uBO 1.17.3rc4 and above.
 
 For development purposes only.
 
