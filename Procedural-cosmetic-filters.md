@@ -49,7 +49,11 @@ Deprecated in favor of [`:has(...)`](#subjecthasarg) in uBO 1.15.0
 
 ### `subject:if-not(arg)`
 
-Essentially the same as the `:if(...)` operator, except that the element _subject_ is selected if and only if the result of evaluating _arg_ is exactly zero elements.
+Deprecated in favor of [`:not(...)`](#subjectnotarg) in uBO 1.17.5b7
+
+### `subject:not(arg)`
+
+Essentially the same as the [`:has(...)`](#subjecthasarg) operator, except that the element _subject_ is selected if and only if the result of evaluating _arg_ is exactly zero elements.
 
 ### `subject:matches-css(arg)`
 
