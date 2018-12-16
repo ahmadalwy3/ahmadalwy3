@@ -82,7 +82,7 @@ Introduced in uBO 1.17.5b9 to increase compatibility with AdGuard filter syntax.
 
 Use to negate other procedural selectors. For example `:not(:has(.foo))` will match if there are no descendant matching `.foo`.
 
-Note that if _arg_ valid CSS selector, uBO will not consider the `:not` operator to be a procedural one, it will rather consider the operator as being part of a CSS selector. Thus this ensure compatibility with the existing
+Note that if _arg_ is valid CSS selector, uBO will not consider the `:not` operator to be a procedural one, it will rather consider the operator as being part of a CSS selector. Thus this ensure compatibility with the existing
 [CSS `:not(...)` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
 ### `subject:xpath(arg)`
