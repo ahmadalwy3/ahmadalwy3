@@ -49,13 +49,7 @@ Deprecated in favor of [`:has(...)`](#subjecthasarg) in uBO 1.15.0
 
 ### `subject:if-not(arg)`
 
-Essentially the same as the [`:has(...)`](#subjecthasarg) operator, except that the element _subject_ is selected if and only if the result of evaluating _arg_ is exactly zero elements.
-
-### `subject:not(arg)`
-
-Introduced in uBO 1.17.5b9
-
-Increases compatibility. Can be used to negate procedural selectors (for example `:not(:has(...))` is equivalent of `:if-not(...)`
+Deprecated in favor of [`:not(:has(arg))`](#subjectnotarg) operator.
 
 ### `subject:matches-css(arg)`
 
@@ -76,6 +70,20 @@ Same as `:matches-css(...)`, except that the style will be looked-up for the `:b
 ### `subject:matches-css-after(arg)`
 
 Same as `:matches-css(...)` except that the style will be looked-up for `:after` pseudo-class of the _subject_ element.
+
+### `subject:not(arg)`
+
+- Description: Select element _subject_ if and only if the result of evaluating _arg_ is exactly zero elements.
+- Chainable: Yes.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- _arg_: A procedural cosmetic filter, which is evaluated in the context of the _subject_ element.
+
+Introduced in uBO 1.17.5b9 to increase compatibility with AdGuard filter syntax.
+
+Use to negate other procedural selectors. For example `:not(:has(.foo))` will match if there are no descendant matching `.foo`.
+
+Note that if _arg_ valid CSS selector, uBO will not consider the `:not` operator to be a procedural one, it will rather consider the operator as being part of a CSS selector. Thus this ensure compatibility with the existing
+[CSS `:not(...)` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
 ### `subject:xpath(arg)`
 
