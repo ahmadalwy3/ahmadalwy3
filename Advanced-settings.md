@@ -42,16 +42,6 @@ The time to wait in hours between each update session<sup>[1]</sup>. uBO will al
 
 ***
 
-#### `benchmarkingPane`
-
-Default: `false`
-
-uBO 1.17.3b7 and above.
-
-For development purposes only.
-
-***
-
 #### `cacheControlForFirefox1376932`
 
 Default: `no-cache, no-store, must-revalidate`.
