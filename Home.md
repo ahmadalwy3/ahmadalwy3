@@ -1,3 +1,4 @@
+- [Advanced-user-features](https://github.com/gorhill/uBlock/wiki/Advanced-user-features)
 - [Chinese translation of this Wiki: 中文](https://github.com/fang5566/uBlock/wiki/Home)
 - [Change log](https://github.com/gorhill/uBlock/releases) / [Pre-fork: 0.9.3.0 - 0.2.0.0](https://github.com/chrisaljoudi/uBlock/releases) / [Pre-fork: 0.1.4.8 and less](https://github.com/gorhill/uBlock/wiki/Change-log)
 - [Permissions](https://github.com/gorhill/uBlock/wiki/Permissions)
