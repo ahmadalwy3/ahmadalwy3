@@ -4,7 +4,7 @@ Back to [Wiki home](https://github.com/gorhill/uBlock/wiki)
 
 The per-site switches allows you to control uBlock's behavior on a per-site basis.
 
-New in beta 1.16.21: 
+New in [1.17.0](https://github.com/gorhill/uBlock/commit/6d34a52179aaa8fdf701b3bc7ab80f02ed5f0f23): 
 
 Changes to the state of per-site switches will be deemed temporary **if and only if** the [overview panel](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-overview-panel) is visible.
  
@@ -110,7 +110,7 @@ From then on, cosmetic filtering will be turned off everywhere by default, and t
 
 You can prevent web fonts from being downloaded for the current site:
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021462-b9de5b80-c0ae-11e8-82d9-f763bcd841ca.png)<br><sup>The badge shows the number of font resources that have been blocked on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/46021462-b9de5b80-c0ae-11e8-82d9-f763bcd841ca.png)<br><sup>The badge shows the number of font resources that have been seen on the page.</sup>
 
 Because of security and privacy concerns, many prefer to block all web fonts by default -- toggle the appropriate default behavior in the [_Settings_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings) in the [dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard):
 
@@ -130,11 +130,12 @@ to the _"My filters"_ pane. If you want to allow third-party fonts for some spec
 
 ## No scripting
 
-New in beta 1.16.21
+New in beta [1.17.0](https://github.com/gorhill/uBlock/commit/3c85c0319462ca331d53c350fba4bc6c1b2ef96f)
 
 Wholly disable/enable javascript for a given site.
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021563-fa3dd980-c0ae-11e8-984c-a811dc5b2f75.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/46021563-fa3dd980-c0ae-11e8-984c-a811dc5b2f75.png)<br><sup>The badge shows approximate number of script resources which have
+been seen on the page (number is limited to 99 because of layout constrains)</sup>
 
 This master switch has blocking precedence over dynamic filtering rules and static filters related to script resources.
 
