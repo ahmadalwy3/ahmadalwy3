@@ -130,7 +130,7 @@ to the _"My filters"_ pane. If you want to allow third-party fonts for some spec
 
 ## No scripting
 
-New in beta [1.17.0](https://github.com/gorhill/uBlock/commit/3c85c0319462ca331d53c350fba4bc6c1b2ef96f)
+New in [1.17.0](https://github.com/gorhill/uBlock/commit/3c85c0319462ca331d53c350fba4bc6c1b2ef96f)
 
 Wholly disable/enable javascript for a given site.
 
