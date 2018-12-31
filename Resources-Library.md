@@ -16,9 +16,9 @@
 ## General purpose scriptlets
  - most script relies on `Object` _properties_ ([_methods_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)), altering them may not be the best idea (you should know what you are doing).
  - "optional" for "string/_regular expression_" parameter defaults to "catch all" (`/.?/`) if not specified.
- - "string" parameter means plain character(s)/word(s), without quotes
+ - "string" parameter means plain character(s)/word(s), quotes will be taken literally, commas [must be escaped](https://github.com/uBlockOrigin/uAssets/commit/2bec415a9bc4f81b29be3bf083ef1a20552f39db#commitcomment-29327114) in regex literals: `/foo\x2cbar\u002cbaz/`
  - "regular expression" parameter means JavaScript [regular expression literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern)
- - mime type is `application/javascript` if not present TODO: move this information up?
+ - mime type is `application/javascript` if not present
  
  
 
