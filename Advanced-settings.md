@@ -153,7 +153,7 @@ Controls duration of the [Strict blocking](https://github.com/gorhill/uBlock/wik
 
 Default: `false`.
 
-After uBO 1.17.5rc0 - Chromium only. Firefox now uses ["persistent startup listeners"](https://bugzilla.mozilla.org/show_bug.cgi?id=1503721) by default.
+After uBO [1.17.5rc0](https://github.com/gorhill/uBlock/commit/41548be6be35fe17dbb996e605c4befb09e16911) - Chromium only. Firefox now uses ["persistent startup listeners"](https://bugzilla.mozilla.org/show_bug.cgi?id=1503721) by default.
 
 If set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
 
