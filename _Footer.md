@@ -1,1 +1,1 @@
-©2018 Creator of uBlocok
+©2018 Creator of uBlock
