@@ -1,1 +1,0 @@
-©2018 Creator of uBlocok
