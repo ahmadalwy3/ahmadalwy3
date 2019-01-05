@@ -19,7 +19,7 @@ Source hostname always corresponds to the hostname extracted from the URL of the
 
 The destination hostname corresponds to the hostname extracted from the URL of a remote resource which the web page is fetching (or trying to).
 
-A rule always automatically propagates to all subdomains of the source hostname and all subdomains of the destination hostname -- unless the rule is overridden by a narrower rule in one of the subodmains.
+A rule always automatically propagates to all subdomains of the source hostname and all subdomains of the destination hostname -- unless the rule is overridden by a narrower rule in one of the subdomains.
 
 Given that rules always propagate to subdomains, there is no need to prefix the hostname part with a wildcard `*.`, doing so is invalid and will cause the the rule to be discarded.
 
