@@ -152,6 +152,7 @@ Parameters:
          - `noopFunc` - function with empty body
          - `trueFunc` - function returning true
          - `falseFunc` - function returning false
+         - ` ` (empty parameter) - empty string<sup>[2019-01-05](https://github.com/uBlockOrigin/uAssets/commit/5051610f0e2374955a03c54be42bbbe9115f05c7#diff-8809d5783978a0b5b88f93d7dab99de0R2132)</sup>
 
 
 ***
