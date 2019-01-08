@@ -24,6 +24,30 @@ The number of seconds after which uBO throws an error when a remote server fails
 
 ***
 
+#### `autoCommentFilterTemplate`
+
+uBO 1.17.7b2 and above.
+
+Default value is `{{date}} {{origin}}`.
+
+Placeholders are identified by `{{...}}`. There are currently
+only three placeholders supported:
+
+- `{{date}}`: will be replaced with current date
+- `{{time}}`: will be replaced with current time
+- `{{origin}}`: will be replaced with site information on which
+  the filter(s) was created
+
+If no placeholder is found in `autoCommentFilterTemplate`, this
+will disable auto-commenting. So one can use `-` to disable
+auto-commenting.
+
+Additionally, if auto-commenting is enabled, uBO will not emit a
+comment if an emitted comment would be a duplicate of the last
+one found in the user filter list.
+
+***
+
 #### `autoUpdateAssetFetchPeriod`
 
 Default: `120` seconds.
