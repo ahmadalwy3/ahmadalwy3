@@ -42,10 +42,6 @@ If no placeholder is found in `autoCommentFilterTemplate`, this
 will disable auto-commenting. So one can use `-` to disable
 auto-commenting.
 
-Additionally, if auto-commenting is enabled, uBO will not emit a
-comment if an emitted comment would be a duplicate of the last
-one found in the user filter list.
-
 ***
 
 #### `autoUpdateAssetFetchPeriod`
