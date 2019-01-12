@@ -35,7 +35,7 @@ You should avoid playing with advanced features and settings unless [you underst
 
 ### Disable pre-fetching
 
-Checking this will disable prefetching in your browser. When prefetching is enable, the browser _can_ still establish connections to remote servers even if the resource from these remote servers are meant to be blocked by uBlock.
+Checking this will disable prefetching in your browser. When prefetching is enabled, the browser _can_ still establish connections to remote servers even if the resource from these remote servers are meant to be blocked by uBlock.
 
 This prevents the browser from bypassing uBlock's filtering engine before establishing connections to remote servers.
 
