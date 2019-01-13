@@ -200,7 +200,7 @@ Since the base domain name is used to derive the name of the "entity", `google.e
 
 #### Procedural cosmetic filters
 
-`:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:xpath(...)`.
+`:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:not(...)`, `:xpath(...)`.
 
 See [detailed documentation](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters).
 
