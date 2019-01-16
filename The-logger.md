@@ -103,7 +103,7 @@ The `X` button in the toolbar allows you to remove those void entries from the l
 
 ![Figure 7](https://cloud.githubusercontent.com/assets/585534/8035480/1735ce04-0dbf-11e5-91f4-d20be43af4a9.png)
 
-This is to clear the logger, to remove all entries from the selected context (Ars Technica tab in this example).
+This is to clear the logger, to remove all entries from the selected/filtered context (Ars Technica tab in this example).
 
 ***
 
