@@ -32,7 +32,7 @@
 - [Dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
     - [Quick guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)
     - [Default-deny](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-default-deny)
-    - [Turn off uBlock everywhere](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
+    - [Turn on uBlock everywhere](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
     - [Turn off uBlock everywhere _except_... (blacklist mode)](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except)
 - [URL filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-URL-filtering)
 - [DOM inspector](https://github.com/gorhill/uBlock/wiki/DOM-inspector)
