@@ -31,13 +31,17 @@ Filter lists are automatically updated according to the _Expires_ directive (min
 
 This button is available for use if and only if there is at least one filter list which is deemed outdated. If this condition is fulfilled, you can force an update of all filter lists which are deemed out of date.
 
-When a filter list has been updated using a newer version from its remote location, a clock icon will be present aside the filter list. You can force an update of a single filter list by clicking the clock icon of that filter list only. This will cause the _"Update now"_ button to become available for use:
+When a filter list has been updated using a newer version from its remote location, a clock icon will be present aside the filter list. You can force an update of a single filter list by clicking the clock icon of that filter list only, which will reset "last update" timestamp for this list, remove its content from storage, and cause the _"Update now"_ button to become available for use:
 
 ![](https://cloud.githubusercontent.com/assets/585534/25020937/4a6a55b6-205e-11e7-94ac-9c51697f9f90.gif)
 
+Note: "uBlock filters" entry is special - forcing update of this filter list, will also update additional resources when possible (library of resources used by [Scriptlet injection](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection), allowed to be updated on Chromium browser and develpment buils).
+
 ##### Purge all caches
 
-This will remove all locally cached copies of filter lists. Essentially, this will cause all filter lists to become out of date. This can be used to force an update of all filter lists.
+This will reset "last update" timestamp for all of the subscribed filter lists. Essentially, this will cause all filter lists to become out of date. This can be used to force an update of all filter lists.
+
+Clicking this button with <kbd>Ctrl</kbd> and <kbd>Shift</kbd> pressed will remove all locally cached content of filter lists, which will force uBO to rebuild all of its databases from the beginning.
 
 ##### Parse and enforce cosmetic filters
 
