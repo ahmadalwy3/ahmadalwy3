@@ -26,6 +26,15 @@ An example, I created a backup file after having customized uBO, and removed eve
 
 Now, the value for `adminSettings` must itself be a plain string, and this means we need to encode the above text into a string, using `JSON.stringify`. Here is a small utility to help you deal with this step: <http://raymondhill.net/ublock/adminSetting.html>.
 
+
+### Modifying the list of stock assets
+
+Content of the "Filter lists" tab can be configured by providing custom version of the [`assets.json`](https://github.com/gorhill/uBlock/blob/16a0ebbfb05c4582ecc68454ba3b45b403164dde/assets/assets.json) file.
+
+URL of the modified `assets.json` file must be added in `assetsBootstrapLocation` key.
+
+Implementation, see: [#2314](https://github.com/gorhill/uBlock/pull/2314)
+
 ### Further readings
 
 Here are issues related to the customization of settings for deployed uBO, there might be advises in there which you may find useful:
