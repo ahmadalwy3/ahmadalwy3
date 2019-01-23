@@ -13,7 +13,7 @@ In the above chart, the difference between two modes translate into differences 
 - Privacy exposure
 - Security
 
-uBlock origin + default settings corresponds to _Easy mode_ in the graph above.
+uBlock Origin + default settings corresponds to _Easy mode_ in the graph above.
 
 For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabled) will position you somewhere between _No blocking_ and _Very easy mode_ in the graph above.
 
