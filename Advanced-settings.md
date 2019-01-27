@@ -83,15 +83,25 @@ Related browser issues:
 
 ***
 
+#### `cacheStorageAPI`
+
+Default: `unset`.
+
+uBO 1.18.2 and above, Chromium only.
+
+If set to `IndexedDB`, uBO will use [IndexedDB](https://developer.mozilla.org/en-US/docs/Glossary/IndexedDB) as a backend to the cache storage, potentially increasing performance and reducing memory usage. See [#328](https://github.com/uBlockOrigin/uBlock-issues/issues/328) for details. 
+
+Bad side effects - filter lists will be out of date in incognito mode - [#399](https://github.com/uBlockOrigin/uBlock-issues/issues/399).
+
+***
+
 #### `cacheStorageCompression`
 
 Default: `true`.
 
 uBO 1.16.21 and above.
 
-If set to true, uBO will lz4-compress data before storing it in its cache storage. The cache storage is used for storing downloaded filter lists, compiled filter lists, selfies. This setting currently only work with Firefox/Firefox for Android. See https://github.com/uBlockOrigin/uBlock-issues/issues/141 for related discussion.
-
-
+If set to true, uBO will lz4-compress data before storing it in its cache storage. The cache storage is used for storing downloaded filter lists, compiled filter lists, selfies. This setting work when IndexedDB is used as the cache storage backend (by default with Firefox/Firefox for Android). See [#141](https://github.com/uBlockOrigin/uBlock-issues/issues/141) for related discussion.
 
 ***
 
