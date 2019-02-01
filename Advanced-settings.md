@@ -89,7 +89,7 @@ Default: `unset`.
 
 uBO 1.18.2 and above, Chromium only.
 
-If set to `IndexedDB`, uBO will use [IndexedDB](https://developer.mozilla.org/en-US/docs/Glossary/IndexedDB) as a backend to the cache storage, potentially increasing performance and reducing memory usage. See [#328](https://github.com/uBlockOrigin/uBlock-issues/issues/328) for details. 
+If set to `indexedDB`, uBO will use [IndexedDB](https://developer.mozilla.org/en-US/docs/Glossary/IndexedDB) as a backend to the cache storage, potentially increasing performance and reducing memory usage. See [#328](https://github.com/uBlockOrigin/uBlock-issues/issues/328) for details. 
 
 Bad side effects - filter lists will be out of date in incognito mode - [#399](https://github.com/uBlockOrigin/uBlock-issues/issues/399).
 
