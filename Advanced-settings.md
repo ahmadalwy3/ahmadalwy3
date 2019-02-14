@@ -105,6 +105,18 @@ If set to true, uBO will lz4-compress data before storing it in its cache storag
 
 ***
 
+#### `consoleLogLevel`
+
+Default: `unset`.
+
+uBO 1.18.5b1 and above
+
+For development purposes only. 
+
+If set to `info`, prints debug messages to the browser console.
+
+***
+
 #### `debugScriptlets`
 
 Default: `false`.
@@ -120,6 +132,8 @@ Default: `false`.
 uBO 1.17.3rc4 and above.
 
 For development purposes only.
+
+If set to `true`, turns off WebAssembly optimizations in uBO code.
 
 ***
 
@@ -166,6 +180,16 @@ Controls the delay before uBO internally process it's network request journal qu
 As a benign side effect to the fix, there is a delay in displaying the number of blocked requests on extension icon (see [#155](https://github.com/uBlockOrigin/uBlock-issues/issues/155)).
 
 A lower delay than the default one could bring back the issue it's meant to fix.
+
+***
+
+#### `selfieAfter`
+
+Default: `11` minutes.
+
+uBO 1.18.5b1 and above.
+
+Number of minutes after which _selfie_ (optimized, internal representation of filters) is created.
 
 ***
 
