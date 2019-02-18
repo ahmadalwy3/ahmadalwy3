@@ -89,7 +89,11 @@ Default: `unset`.
 
 uBO 1.18.2 and above, Chromium only.
 
-If set to `indexedDB`, uBO will use [IndexedDB](https://developer.mozilla.org/en-US/docs/Glossary/IndexedDB) as a backend to the cache storage, potentially increasing performance and reducing memory usage. See [#328](https://github.com/uBlockOrigin/uBlock-issues/issues/328) for details. 
+If set to `indexedDB`, uBO will use [IndexedDB](https://developer.mozilla.org/en-US/docs/Glossary/IndexedDB) as a backend to the cache storage, potentially increasing performance and reducing memory usage. See [#328](https://github.com/uBlockOrigin/uBlock-issues/issues/328) for details.  If IndexedDB is not available for whatever reasons, uBO will fall back using `browser.local.storage` -- which is expected to always work.
+
+If set to `browser.storage.local` (1.18.5b4+), uBO will use WebExtensions storage as a backend to cache storage.
+
+If `unset`, uBO will use whatever backend storage which is optimal for the current platform.
 
 Bad side effects - filter lists will be out of date in incognito mode - [#399](https://github.com/uBlockOrigin/uBlock-issues/issues/399).
 
