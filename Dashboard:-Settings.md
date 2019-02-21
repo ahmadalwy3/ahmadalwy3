@@ -51,6 +51,7 @@ Google's [_"Make webpages load faster"_](https://support.google.com/chrome/answe
 On Chromium 51 and above (including browsers based on Chromium 51 and above), this setting is completely unreliable, as it does not cause DNS lookups, preconnections and prefetches to be reliably blocked, because Chromium allows web pages to override that user setting. For details, see:
 - <https://github.com/gorhill/uBlock/issues/3219>
 - <https://bugs.chromium.org/p/chromium/issues/detail?id=785125>
+- Example of different behavior with Firefox: <https://github.com/uBlockOrigin/uBlock-issues/issues/435>
 
 ***
 
