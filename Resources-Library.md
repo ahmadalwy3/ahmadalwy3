@@ -399,10 +399,10 @@ Removed. Calls `pf_notify` with `false` parameter. Attempt to fix gamespot video
 Removed. Sets specific localStorage item (`__trex`)
 
 ### ~videowood.tv.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1350)
-Removed. Sanitize `adb_remind` after _`eval()`_ TODO: what to do with this?
+Removed. Sanitize `adb_remind` after _`eval()`_
 
 ### ~adf.ly.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1394)
-Removed. Sanitize `abgo` after _`eval()`_ TODO: what to do with this? No longer used.
+Removed. Sanitize `abgo` after _`eval()`_
 
 ***
 
