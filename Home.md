@@ -5,6 +5,7 @@
     - [Can you trust uBlock Origin?](https://github.com/gorhill/uBlock/wiki/Can-you-trust-uBlock-Origin%3F)
 - [Privacy policy](https://github.com/gorhill/uBlock/wiki/Privacy-policy)
 - [Privileged Pages](https://github.com/gorhill/uBlock/wiki/Privileged-Pages)
+- [Resources Library](https://github.com/gorhill/uBlock/wiki/Resources-Library)
 - Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
 - Quick guides:
     - [The popup user interface](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface)
