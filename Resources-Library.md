@@ -296,9 +296,6 @@ Convenience, abort-on-property-write.js (`PopAds`, `popns`), _throws_ "`magic`"
 Deprecated by `:style()` cosmetic filter.
 Applies `overflow: auto` style to document body _element_ after window `load` event.
 
-### sidereel.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1843)
-Sets specific localStorage item (`__trex`)
-
 ### uabinject-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L640)
 Defuses Addefend, convenience, sets static properties (`trckd`, `uabpdl`, `uabInject`, `uabDetect`)
 
@@ -395,25 +392,22 @@ Removes ad frames on Pornhub (`block_logic`)
 ### nr-unwrapper.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1191)
 Fix memory leaks on spotify, newrelic. https://github.com/uBlockOrigin/uAssets/issues/36
 
-### gamespot.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1934)
-Deprecated, Calls `pf_notify` with `false` parameter. Attempt to fix gamespot video player and image viewer.
+### ~gamespot.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1934)
+Removed. Calls `pf_notify` with `false` parameter. Attempt to fix gamespot video player and image viewer.
 
-### videowood.tv.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1350)
-Sanitize `adb_remind` after _`eval()`_ TODO: what to do with this? In use.
+### ~sidereel.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1843)
+Removed. Sets specific localStorage item (`__trex`)
 
-### adf.ly.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1394)
-Sanitize `abgo` after _`eval()`_ TODO: what to do with this? No longer used.
+### ~videowood.tv.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1350)
+Removed. Sanitize `adb_remind` after _`eval()`_ TODO: what to do with this?
+
+### ~adf.ly.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1394)
+Removed. Sanitize `abgo` after _`eval()`_ TODO: what to do with this? No longer used.
 
 ***
 
-### indiatimes.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1377)
-Deprecated, addEventListener-defuser
-
 ### golem.de.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1430)
 Deprecated, addEventListener-defuser
-
-### trafictube.ro.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1550)
-Deprecated, setInterval-defuser
 
 ### uAssets-17 [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L168)
 Deprecated, setTimeout-defuser
@@ -423,6 +417,12 @@ Deprecated, setTimeout-defuser
 
 ### ytad-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L985)
 Deprecated, setTimeout-defuser, fix for YouTube "An error occured"
+
+### ~indiatimes.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1377)
+Removed. addEventListener-defuser
+
+### ~trafictube.ro.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1550)
+Removed. setInterval-defuser
 
 ***
 
@@ -447,12 +447,6 @@ Deprecated, sets static properties (`_r3z.jq`, `_r3z.pub`)
 ### folha-de-sp.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1254)
 Deprecated, sets static properties (`folha_ads`)
 
-### hindustantimes.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1411)
-Deprecated, sets static properties (`canRun`)
-
-### bhaskar.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1416)
-Deprecated, sets static properties (`canABP`)
-
 ### static.chartbeat.com/chartbeat.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1653)
 Deprecated, sets static properties (`pSUPERFLY.activity`, `pSUPERFLY.virtualPage`)
 
@@ -468,18 +462,6 @@ Deprecated, sets static properties (`adblock2`, `OlPopup`, `preserve`, `turnoff`
 ### imore-sanitizer.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1158)
 Deprecated, sets static properties (`mbn_zones`)
 
-### indiatoday.intoday.in.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1340)
-Deprecated, sets static properties (`adBlock`, `checkAds`)
-
-### thesimsresource.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1421)
-Deprecated, sets static properties (`gadsize`, `iHaveLoadedAds`, `OX`)
-
-### ndtv.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1513)
-Deprecated, sets static properties (`___p_p`)
-
-### wetteronline.de.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1535)
-Deprecated, sets static properties (`xq5UgyIZx`, `doAbCheck`), _throws_ `TypeError`
-
 ### smartadserver.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1564)
 Deprecated, sets static properties (`SmartAdObject`, `SmartAdServerAjax`, `smartAd.LoadAds`, `smartAd.Register`)
 
@@ -489,20 +471,38 @@ Deprecated, sets static properties (`checkAdBlock`)
 ### criteo.net.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1580)
 Deprecated, sets static properties (`Criteo.criteo`)
 
-### ideal.es.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1605)
-Deprecated, sets static properties (`is_block_adb_enabled`)
-
-### livescience.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1648)
-Deprecated, sets static properties (`tmnramp`)
-
-### lachainemeteo.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1664)
-Deprecated, sets static properties (`pliga.push`)
-
 ### goyavelab-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L684)
 Deprecated, sets static properties (`_$14`)
 
 ### figaro-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1074)
 Deprecated, sets static properties (`adisplaynormal`)
+
+### ~hindustantimes.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1411)
+Removed. Sets static properties (`canRun`)
+
+### ~bhaskar.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1416)
+Removed. Sets static properties (`canABP`)
+
+### ~indiatoday.intoday.in.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1340)
+Removed. Sets static properties (`adBlock`, `checkAds`)
+
+### ~thesimsresource.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1421)
+Removed. Sets static properties (`gadsize`, `iHaveLoadedAds`, `OX`)
+
+### ~ndtv.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1513)
+Removed. Sets static properties (`___p_p`)
+
+### ~wetteronline.de.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1535)
+Removed. Sets static properties (`xq5UgyIZx`, `doAbCheck`), _throws_ `TypeError`
+
+### ~ideal.es.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1605)
+Removed. Sets static properties (`is_block_adb_enabled`)
+
+### ~livescience.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1648)
+Removed. Sets static properties (`tmnramp`)
+
+### ~lachainemeteo.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1664)
+Removed. Sets static properties (`pliga.push`)
 
 
 ***
