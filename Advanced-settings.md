@@ -210,7 +210,7 @@ Controls duration of the [Strict blocking](https://github.com/gorhill/uBlock/wik
 
 Default: `false`, after [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3): `unset`.
 
-Possible values after [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3):
+After [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3) works again in Firefox. Possible values:
 
 - `unset`: leave it to the platform to pick the optimal
   behavior (default)
