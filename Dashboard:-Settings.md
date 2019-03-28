@@ -72,9 +72,10 @@ Test case: <https://github.com/gorhill/uBlock/wiki/Prevent-WebRTC-from-leaking-l
 Keep in mind that this feature is to prevent **leakage** of your non-internet-facing IP adresses. The purpose of this feature is not to hide your current internet-facing IP address -- so be cautious to not misinterpret the results of the tests above. For example, if you use a VPN, your internet-facing IP address is that of the VPN, so your ISP-provided IP address should not be visible to outside world with this setting checked. However, if you are not behind any VPN or proxy, your ISP-provided IP address will be visible regardless of this setting.
 
 **Caveats:**
-- Chromium-based browsers: the feature works only on version 42 and above.
-- Firefox: the only way to prevent local IP address leakage is to disable completely WebRTC.
-    - WebRTC is required for Firefox Hello to work properly.
+- Chromium-based browsers: 
+   - the feature works only on version 42 and above.
+- Firefox: 
+   - because of differences in handling of the network connections, before version [1.18.12](https://github.com/gorhill/uBlock/commit/977178bef23c7711a050181be979a4668bfebcfb) WebRTC was completely disabled. Related issue: [#3009](https://github.com/gorhill/uBlock/issues/3009)
 
 ***
 
