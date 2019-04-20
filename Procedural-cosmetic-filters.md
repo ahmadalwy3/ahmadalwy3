@@ -4,8 +4,7 @@
 
 The concept of procedural cosmetic filtering was introduced with uBlock Origin ("uBO") [version 1.8.0](https://github.com/gorhill/uBlock/releases/tag/1.8.0).
 
-The initial implementation was revised to allow chained/recursive use of the procedural operators with version [1.11.0](https://github.com/gorhill/uBlock/releases/tag/1.11.0)+. There is no limit on the number of operators chained, or the number of recursion level, aside common sense. Though, chaining to native CSS selector after procedural one was not supported before [1.17.5rc1](https://github.com/gorhill/uBlock/commit/8a88e9d93174badd6855c0e782737158c9ccd6f8).  
-Also note that concatenating multiple procedural selectors in one filter is not supported. `example.com##p:has(img),div:has-text(advert)` will not work as expected.
+The initial implementation was revised to allow chained/recursive use of the procedural operators with version [1.11.0](https://github.com/gorhill/uBlock/releases/tag/1.11.0)+. There is no limit on the number of operators chained, or the number of recursion level, aside common sense. Though, chaining to native CSS selector after procedural one was not supported before [1.17.5rc1](https://github.com/gorhill/uBlock/commit/8a88e9d93174badd6855c0e782737158c9ccd6f8).
 
 As a reminder, use procedural cosmetic filters only for when plain CSS selectors won't solve a case.
 
@@ -14,6 +13,8 @@ Normal, standard cosmetic filters are _declarative_, i.e. they are used as selec
 _Procedural_ means javascript code is used to find DOM elements which must be hidden. A procedural cosmetic filter makes use of cosmetic filter _operator_, which will tell uBO how to find/filter DOM elements in order to find which DOM elements to target.
 
 **Important:** Procedural filters must always be specific, i.e. prefixed with the hostname of the site(s) on which they are meant to apply. If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO. Examples: Good, because specific: `example.com##body > div:has-text(Sponsored)`. Bad, because generic: `##body > div:has-text(Sponsored)`. The element picker always prefix automatically with the hostname to ensure created cosmetic filters are specific.
+
+Also note that concatenating multiple procedural selectors in one filter is not supported. `example.com##p:has(img),div:has-text(advert)` will not work as expected.
 
 Efficient procedural cosmetic filters (or any cosmetic filters really) are the ones which result in the smallest set of nodes to visit. The element picker input field will display the number of elements matching the current filter. The element picker will only consider the entered text up to the first line break, while leaving the rest as is. You can use this feature to break up your filter to find out the size of the resultset of the first part(s) of your filter: the smallest resultset the most efficient is your cosmetic filter.
 
