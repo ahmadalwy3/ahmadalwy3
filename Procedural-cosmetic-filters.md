@@ -105,7 +105,7 @@ By default hiding by procedural filters is reevaluated only when nodes in sub-tr
 
 Example:
 
-- `vivrehome.pl##.js-popup-register:has(.js-title-default.is-hidden:watch-attributes(class))` blocks the "Register" overlay when first visiting the site, but yet allow the "Register" overlay when clicking "rejestracja".
+- `www.vivrehome.pl##.js-popup-register:not([style]):watch-attrs(style):has(.js-title-default.is-hidden:watch-attrs(class))` blocks the "Register" overlay when first visiting the site, but yet allow the "Register" overlay when clicking "rejestracja".
 - `ameshkov.github.io###testdiv:watch-attrs(id):has(p)` demo, detects `id` changes.
 
 
