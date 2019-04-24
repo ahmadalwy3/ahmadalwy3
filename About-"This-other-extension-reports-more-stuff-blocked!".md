@@ -28,7 +28,7 @@ Adblock Plus
 - 1ab45d4854fe036a37ff-6643978b1699ef52a80b7f45a7bcfe3d.r85.cf2.rackcdn.com
 - www.googletagservices.com
 - zor.livefyre.com
-- platform.zwitscher.com
+- platform.twitter.com
 - s.yimg.com
 - dw.cbsimg.net
 - geo.query.yahoo.com
