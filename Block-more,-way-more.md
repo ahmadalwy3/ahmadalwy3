@@ -6,7 +6,7 @@ But there is an interesting hosts file available which is not enabled by default
 
 I have been using this list for days now, and I really do not see many issues, i.e. numerous unexpected web site "breakage".
 
-I cannot select this list by default for new installs, since I have no idea yet of its likelihood of "breaking" web pages. But you may want to give it a try, adding an extra 20,000 ad servers to the filtering engine surely is of help. See results of [this benchmark](/gorhill/uBlock/wiki/Reference-benchmark) below to compare using **hpHosts ad/tracking servers** vs out-of-the-box default lists (remember, figures are what was **not** blocked, thus the lower the numbers the better).
+I cannot select this list by default for new installs, since I have no idea yet of its likelihood of "breaking" web pages. But you may want to give it a try, adding an extra 20,000 ad servers to the filtering engine surely is of help. See results of [this benchmark](Reference-benchmark) below to compare using **hpHosts ad/tracking servers** vs out-of-the-box default lists (remember, figures are what was **not** blocked, thus the lower the numbers the better).
 
 **With** hpHosts ad/tracking servers:
 
