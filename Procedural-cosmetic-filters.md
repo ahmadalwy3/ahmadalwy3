@@ -89,6 +89,19 @@ Use to negate other procedural selectors. For example `:not(:has(.foo))` will ma
 Note that if _arg_ is valid CSS selector, uBO will not consider the `:not` operator to be a procedural one, it will rather consider the operator as being part of a CSS selector. Thus this ensure compatibility with the existing
 [CSS `:not(...)` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
+### `subject:nth-ancestor(n)`
+
+- Description: lookup the nth ancestor relative to the currently selected
+node.
+- Chainable: Yes.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- _n_: number, distance from the currently selected node.
+- Examples:
+    - Existing filter: `fastbay.org##.detLink:has-text(VPN):xpath(../../..)` can be rewritten as `fastbay.org##.detLink:has-text(VPN):nth-ancestor(3)`
+
+Introduced in uBO [1.18.17rc1](https://github.com/gorhill/uBlock/commit/73e2f25e95b90332a3e53646d83525d14e816d25) to have a low overhead way to accomplish ancestor selection. It is effectively a low-overhead equivalent to `:xpath(..[/..]*)`, as it avoids the need to create and execute [XPath expressions](https://developer.mozilla.org/docs/Web/XPath).
+
+
 ### `subject:watch-attrs(arg)`
 
 Experimental.
