@@ -131,7 +131,7 @@ Now all images from everywhere are blocked on your side. An exception filter (`@
 
 This will cause the `*$image` filter to be discarded. Just appending `badfilter` option to any instance of static network filter will prevent the loading of that filter.
 
-After [1.18.17rc1](https://github.com/gorhill/uBlock/commit/3f3a1543ea7fa51d700157a7f6bf0da08dd7a32b). Any filter which fulfill ALL the following conditions:
+After [1.18.17rc1](https://github.com/gorhill/uBlock/commit/3f3a1543ea7fa51d700157a7f6bf0da08dd7a32b) any filter which fulfill ALL the following conditions:
 
 - Is of the form `|https://` or `|http://` or `*`; and
 - Does have a `domain=` option; and
