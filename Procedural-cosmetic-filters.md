@@ -110,17 +110,15 @@ Experimental.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
 - _arg_: comma-separate list of attribute names. No argument means watch changes of any one attribute.
+- Examples:
+    - `www.vivrehome.pl##.js-popup-register:not([style]):watch-attrs(style):has(.js-title-default.is-hidden:watch-attrs(class))` blocks the "Register" overlay when first visiting the site, but yet allow the "Register" overlay when clicking "rejestracja".
+    - `ameshkov.github.io###testdiv:watch-attrs(id):has(p)` demo, detects `id` changes.
 
 Introduced in uBO [1.17.5rc3](https://github.com/gorhill/uBlock/commit/8a88e9d93174badd6855c0e782737158c9ccd6f8) 
 
 Solves [uBlockOrigin/uBlock-issues#341 (comment)](https://github.com/uBlockOrigin/uBlock-issues/issues/341#issuecomment-449764612) (overlay dialog used for two purposes, differ only by class name in child node).
 
 By default hiding by procedural filters is reevaluated only when nodes in sub-tree are added or removed - uBO does not watch for attribute changes for performance reasons. This filter instructs uBO procedural filtering engine to watch for changes in specific attributes.
-
-Example:
-
-- `www.vivrehome.pl##.js-popup-register:not([style]):watch-attrs(style):has(.js-title-default.is-hidden:watch-attrs(class))` blocks the "Register" overlay when first visiting the site, but yet allow the "Register" overlay when clicking "rejestracja".
-- `ameshkov.github.io###testdiv:watch-attrs(id):has(p)` demo, detects `id` changes.
 
 
 ### `subject:xpath(arg)`
