@@ -131,6 +131,24 @@ Now all images from everywhere are blocked on your side. An exception filter (`@
 
 This will cause the `*$image` filter to be discarded. Just appending `badfilter` option to any instance of static network filter will prevent the loading of that filter.
 
+After [1.18.17rc1](https://github.com/gorhill/uBlock/commit/3f3a1543ea7fa51d700157a7f6bf0da08dd7a32b). Any filter which fulfill ALL the following conditions:
+
+- Is of the form `|https://` or `|http://` or `*`; and
+- Does have a `domain=` option; and
+- Does not have a negated domain in its `domain=` option; and
+- Does not have `csp=` option; and
+- Does not have a `redirect=` option
+
+Will be processed in a special manner:
+
+- The `domain=` option will be decomposed so as to create as many
+  distinct filter as there is distinct value in the `domain=` option
+- It now become possible to `badfilter` only one of the
+  distinct filter without having to `badfilter` all of them.
+- The logger will always report these special filters with only a
+  single hostname in the `domain=` option.
+
+
 #### `document`
 
 For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking).
