@@ -22,6 +22,8 @@ With Firefox 41 and lower **OR** uBlock Origin 1.3.3 and lower, **it is NOT poss
 
 With Firefox 42 and higher **AND** uBlock Origin 1.3.4 and higher, **it is possible** to prevent local IP addresses leakage without completely disabling WebRTC.
 
+Due to differences in handling of network connections by different browsers, before version [1.18.12](https://github.com/gorhill/uBlock/commit/977178bef23c7711a050181be979a4668bfebcfb) WebRTC was completely disabled if Firefox was not configured to use proxy. Related issue: [#3009](https://github.com/gorhill/uBlock/issues/3009#issuecomment-329798696)
+
 #### See also
 
 - [WebRTC WG / Privacy/IPAddresses](https://www.w3.org/wiki/Privacy/IPAddresses)
