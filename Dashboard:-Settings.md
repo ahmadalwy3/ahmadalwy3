@@ -75,7 +75,7 @@ Keep in mind that this feature is to prevent **leakage** of your non-internet-fa
 - Chromium-based browsers: 
    - the feature works only on version 42 and above.
 - Firefox: 
-   - due to differences in handling of network connections by different browsers, before version [1.18.12](https://github.com/gorhill/uBlock/commit/977178bef23c7711a050181be979a4668bfebcfb) WebRTC was completely disabled. Related issue: [#3009](https://github.com/gorhill/uBlock/issues/3009)
+   - due to differences in handling of network connections by different browsers, before version [1.18.12](https://github.com/gorhill/uBlock/commit/977178bef23c7711a050181be979a4668bfebcfb) WebRTC was completely disabled if Firefox was not configured to use proxy. Related issue: [#3009](https://github.com/gorhill/uBlock/issues/3009#issuecomment-329798696)
 
 ***
 
