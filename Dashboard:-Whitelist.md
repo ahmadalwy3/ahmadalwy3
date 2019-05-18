@@ -31,7 +31,7 @@ You should not remove these predefined whitelist directives, unless you know _ex
 
 Removing the predefined whitelist directives without understanding the consequences could cause your browser to malfunction. **This is especially true for the `behind-the-scene` whitelist directive on Firefox Legacy platform.**
 
-If despite this warning you still want to remove one or more of the predefined whitelist directives, I strongly suggest to comment out an entry rather than outright delete it. To comment out an entry, just prefix it with `# `. This way you do not have to remember which predefined whitelist directive you removed, it will be just a matter of removing the `# ` prefix if ever you want to restore an entry.
+If despite this warning you still want to remove one or more of the predefined whitelist directives, I strongly suggest to comment out an entry rather than outright delete it. To comment out an entry, just prefix it with `# `. This way you do not have to remember which predefined whitelist directive you removed, it will be just a matter of removing the `# ` prefix if ever you want to restore an entry. After [1.19.3b7 ](https://github.com/gorhill/uBlock/commit/f7bbc807176fa93680fdaf8b713593a43a3df2a5) removed _predefined whitelist directives_ are commented out automatically.
 
 ### Whitelist directive syntax
 
