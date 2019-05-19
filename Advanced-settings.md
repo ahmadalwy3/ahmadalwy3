@@ -16,6 +16,16 @@ If you want to reset all settings to their default values, delete everything the
 
 ***
 
+#### `allowGenericProceduralFilters`
+
+uBO [1.19.3b8](https://github.com/gorhill/uBlock/commit/1caff7429eceabc712b98b25b5c3929f430d6654) and above.
+
+Default: `false`.
+
+If set to `true` [Procedural cosmetic filters](./Procedural-cosmetic-filters) will be allowed in _generic_ filter (not prefixed with the hostname of the site(s) on which it are meant to apply).
+
+***
+
 #### `assetFetchTimeout`
 
 Default: `30` seconds.
