@@ -24,6 +24,8 @@ Default: `false`.
 
 If set to `true` [Procedural cosmetic filters](./Procedural-cosmetic-filters) will be allowed in _generic_ filter (not prefixed with the hostname of the site(s) on which it are meant to apply).
 
+Whenever this setting is toggled, the user is responsible of forcing a reload of all filter lists so as to allow uBO to process differently any existing generic procedural cosmetic filters.
+
 ***
 
 #### `assetFetchTimeout`
