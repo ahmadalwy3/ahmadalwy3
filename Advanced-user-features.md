@@ -1,4 +1,4 @@
-Advanced user mode can be [enabled from the _Settings_ tab](https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#i-am-an-advanced-user) in uBlock Origin's ("uBO") dashboard. **Enable at your own risk.**
+Advanced user mode can be [enabled from the _Settings_ tab](./Dashboard:-Settings#i-am-an-advanced-user) in uBlock Origin's ("uBO") dashboard. **Enable at your own risk.**
 
 ## Read the docs
 <table><tr><td width="130" align="center">
@@ -19,13 +19,13 @@ Advanced user mode can be [enabled from the _Settings_ tab](https://github.com/g
 
 ### Advanced settings
 
-You will be given the ability to access the [advanced settings](https://github.com/gorhill/uBlock/wiki/Advanced-settings). Some of these settings are experimental, they may become standard settings or disappear in the future.
+You will be given the ability to access the [advanced settings](./Advanced-settings). Some of these settings are experimental, they may become standard settings or disappear in the future.
 
 ***
 
 ### Dynamic filtering
 
-[Dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) will become available to advanced users.
+[Dynamic filtering](./Dynamic-filtering) will become available to advanced users.
 
 Novice users could easily mess up uBO's filtering through dynamic filtering, thus it is not available by default.
 
@@ -38,4 +38,4 @@ On the other hand, if you are familiar with [RequestPolicy](https://www.requestp
 ### Ability to filter behind-the-scene network requests
 Starting from uBO 1.15.20 `behind-the-scene` is no longer whitelisted by default in WebExtension (main) version of uBO.
 
-See ["Behind-the-scene network requests"](https://github.com/gorhill/uBlock/wiki/Behind-the-scene-network-requests).
+See ["Behind-the-scene network requests"](./Behind-the-scene-network-requests).
