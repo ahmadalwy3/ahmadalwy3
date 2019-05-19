@@ -68,7 +68,7 @@ When the auto-updater kicks in and an asset in need of update is fetched, this i
 
 uBO [1.19.3b9](https://github.com/gorhill/uBlock/commit/72d9758faa40a49f00d2a4671c9db2f519471f0d) and above.
 
-Default: `180` secs
+Default: `180` secs.
 
 A new advanced setting to control how long after launch an auto-update session should be
 started, in seconds.
