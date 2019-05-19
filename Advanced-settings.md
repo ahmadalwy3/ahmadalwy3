@@ -216,7 +216,7 @@ A lower delay than the default one could bring back the issue it's meant to fix.
 
 #### `selfieAfter`
 
-Default: `11` minutes.
+Default: `3` minutes.
 
 uBO 1.18.5b1 and above.
 
