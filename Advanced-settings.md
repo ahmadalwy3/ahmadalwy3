@@ -70,7 +70,7 @@ uBO [1.19.3b9](https://github.com/gorhill/uBlock/commit/72d9758faa40a49f00d2a467
 
 Default: `180` secs.
 
-The number of seconds to wait after launch before an auto-update session is started.
+The number of seconds to wait after launch before an auto-update session<sup>[1]</sup> is started.
 
 <sub>[1] "Update session" means that uBO will lookup and update assets deemed out of date, if any.</sub>
 
@@ -80,7 +80,7 @@ The number of seconds to wait after launch before an auto-update session is star
 
 Default: `7` hours.
 
-The time to wait in hours between each update session<sup>[1]</sup>. uBO will always start an update session a few minutes after launch when auto-update is enabled. Once that first update session is completed, uBO will wait `autoUpdatePeriod` hours before starting a new update session.
+The time to wait in hours between each update session. uBO will always start an update session a few minutes after launch when auto-update is enabled. Once that first update session is completed, uBO will wait `autoUpdatePeriod` hours before starting a new update session.
 
 ***
 
