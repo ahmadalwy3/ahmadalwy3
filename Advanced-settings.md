@@ -268,4 +268,4 @@ Any duplicate as per token will result in the previous resource being replaced b
 
 Additional resources will be updated at the same time the built-in resource file is updated. Purging the cache of 'uBlock filters' will also purge the cache of the built-in resource file -- and hence force a reload of user-specified resources if any.
 
-The setting was introduced in [uBO 1.12.0](https://github.com/gorhill/uBlock/releases/tag/1.12.0). Support for multiple URLs was introduced in [1.19.0](https://github.com/gorhill/uBlock/releases/tag/1.19.0).
+The setting was introduced in [1.12.0](https://github.com/gorhill/uBlock/releases/tag/1.12.0). Support for multiple URLs was introduced in [1.19.0](https://github.com/gorhill/uBlock/releases/tag/1.19.0).
