@@ -15,11 +15,13 @@ However uBO does not support some very specific cases, and also adds its own ext
 
 ## Not supported
 
-`document` for _exception_ filters (those prefixed with `@@`):
+`document` for [_entire page exception_](https://adblockplus.org/filters#whitelist):
 
 Not supported. The purpose of the `document` option when used with an exception filter is to disable uBO completely. The purpose of the `document` option in static exception filters is mostly for the sake of "acceptable ads" support, which uBO does not support.
 
 The reason it is not supported is to be sure that users explicitly disable uBO themselves if they wish (through [whitelisting](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)), not having some external filter list decide for them.
+
+<sub>Note: it [still works](https://github.com/gorhill/uBlock/issues/1754) to negate [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking) when explicitly enabled by blocking filter `document` option.</sub>
 
 `genericblock`:
 
