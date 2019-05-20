@@ -70,8 +70,7 @@ uBO [1.19.3b9](https://github.com/gorhill/uBlock/commit/72d9758faa40a49f00d2a467
 
 Default: `180` secs.
 
-A new advanced setting to control how long after launch an auto-update session should be
-started, in seconds.
+Controls how long after launch an auto-update session should be started, in seconds.
 
 ***
 
