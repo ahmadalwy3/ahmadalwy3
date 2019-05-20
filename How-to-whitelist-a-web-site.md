@@ -70,7 +70,7 @@ Someone posted instructions on reddit: [Any way to whitelist certain youtube cha
 
 ### Disabling filtering temporarily or by default (blacklist mode)
 
-**Be aware!** Following abilities are just side effects of uBO features and no additional work will be done to improve support for them<sup>[*](https://github.com/uBlockOrigin/uBlock-issues/issues/91#issuecomment-400282591)</sup>.
+**Be aware!** Following abilities are just side effects of uBO features and no additional work will be done to improve support for them<sup>[1](https://github.com/uBlockOrigin/uBlock-issues/issues/91#issuecomment-400282591),[2](https://github.com/uBlockOrigin/uBlock-issues/issues/586#issuecomment-494021002)</sup>.
 
 Following pages describe how to disable filtering with help of [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering):
  - [Turn off uBlock everywhere temporarily](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
