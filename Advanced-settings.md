@@ -260,12 +260,12 @@ Related browser issues:
 
 Default: `unset`.
 
-After [1.18.17b6](https://github.com/gorhill/uBlock/commit/a52b07ff6ef6e6b16785e237178e1cd6f38a1833) added support for multiple URLs separated by space character. Any duplicate will result in the previous resource being replaced by the latter one. The resource files are loading in order of URL appearance, and uBO stock resource file is always loaded first.
+One or more space-separated URLs which content will be parsed as token-identified resources to be used for [`redirect`](./Static-filter-syntax#redirect) or [scriptlet-injection](./Static-filter-syntax#scriptlet-injection) (`+js(...)`) purpose.
 
-uBO 1.11.5 and above.
+uBO expects valid content such as can be seen in [resources.txt](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt), anything else will lead to undefined results.
 
-If set to a valid URL, uBO will load the content of the URL and parse it as token-identified resources to be used for `redirect` or `script:inject` purpose. For example, I use this setting to test resources before publishing them for [uAssets](https://github.com/uBlockOrigin/uAssets). uBO expects valid content such as can be seen in [resources.txt](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt), anything else will lead to undefined results.
+Any duplicate as per token will result in the previous resource being replaced by the latter one. The resource files are loaded in order of URL appearance, and uBO stock resource file is always loaded first.
 
-Resource will be updated at the same time the built-in resource file is updated.
+Additional resources will be updated at the same time the built-in resource file is updated. Purging the cache of 'uBlock filters' will also purge the cache of the built-in resource file -- and hence force a reload of user-specified resources if any.
 
-Purging the cache of 'uBlock filters' will also purge the cache of the built-in resource file -- and hence force a reload of the user's custom resources if any.
+The setting was introduced in [uBO 1.12.0](https://github.com/gorhill/uBlock/releases/tag/1.12.0). Support for multiple URLs was introduced in [1.19.0](https://github.com/gorhill/uBlock/releases/tag/1.19.0).
