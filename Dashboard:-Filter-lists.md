@@ -25,7 +25,10 @@ Related: [_"Launch and filter lists load performance"_](https://github.com/gorhi
 
 If you check this option, uBlock Origin will update automatically the currently selected filter lists at regular interval. This option is checked by default (recommended).
 
-Filter lists are automatically updated according to the [_Expires_ directive](https://adblockplus.org/filters#special-comments), or every 5 days by default.
+Filter lists are automatically updated according to:
+- the [_Expires_ directive](https://adblockplus.org/filters#special-comments) if present in filter list header
+- or `updateAfter` attribute if found in list entry in [`assets.json`](https://github.com/gorhill/uBlock/blob/master/assets/assets.json)
+- or every 5 days by default.
 
 ##### Update now
 
