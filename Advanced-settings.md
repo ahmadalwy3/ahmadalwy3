@@ -51,7 +51,7 @@ only three placeholders supported:
   the filter(s) was created
 
 If no placeholder is found in `autoCommentFilterTemplate`, this
-will disable auto-commenting. So one can use `-` to disable
+will disable auto-commenting. So one can use `-` or `none` to disable
 auto-commenting.
 
 ***
