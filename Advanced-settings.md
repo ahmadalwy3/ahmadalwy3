@@ -217,7 +217,7 @@ A lower delay than the default one could bring back the issue it's meant to fix.
 
 Default: `3` minutes.
 
-uBO 1.18.5b1 and above.
+uBO 1.18.5b1 and above. Used to be `11` minutes until [1.19.7rc1](https://github.com/gorhill/uBlock/commit/3cf71835c4fc9c262d93a645a3af70946539bd19)
 
 Number of minutes after which _selfie_ (optimized, internal representation of filters) is created.
 
