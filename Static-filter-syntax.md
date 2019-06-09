@@ -121,10 +121,17 @@ The wildcard character `*` can be used to apply a filter to **all** URLs. This i
 
 Usually, it is far more convenient to use [dynamic filtering rules](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) in lieu of such generic static filters.
 
+#### `1p`
+
+Equivalent to [`first-party`](#first-party) uBO option, which in turn is negated `third-party` [option](https://adblockplus.org/filters#options) (`~third-party`). For convenience.
+
+#### `3p`
+
+Equivalent to `third-party` [option](https://adblockplus.org/filters#options). For convenience.
+
 #### `all`
 
 New in uBO [1.19.7b](https://github.com/gorhill/uBlock/commit/1888033070003cd5e6a3687a4029448bf41fccea)
-
 
 The `all` option is equivalent to specifying all
 network-based types + `popup`, `document`,
@@ -170,6 +177,9 @@ Will be processed in a special manner:
 - The logger will always report these special filters with only a
   single hostname in the `domain=` option.
 
+#### `css`
+
+Equivalent to `stylesheet` [option](https://adblockplus.org/filters#options). For convenience.
 
 #### `document`
 
@@ -177,7 +187,11 @@ For _block_ filters only. This is _type_ option (like `image` or `script`) which
 
 #### `first-party`
 
-This is equivalent to `~third-party`. Provided strictly for convenience (0.9.9.0).
+Equivalent to `~third-party` [option](https://adblockplus.org/filters#options). Provided strictly for convenience (0.9.9.0).
+
+#### `frame`
+
+Equivalent to `subdocument` [option](https://adblockplus.org/filters#options). For convenience.
 
 #### `important`
 
@@ -214,6 +228,10 @@ Specifically, notice that the filter **must** start with `||` or `*`, otherwise 
 A source hostname should always be specified, so the `domain=` option is strongly recommended. It is allowed to use `first-party` instead of `domain=[...]`, in which case the source hostname will be that of the destination hostname.
 
 <sub>__*__ redirections applied to all destinations (starting with `*`) cannot be narrowed by `first-party` or `~third-party` option [#3590](https://github.com/gorhill/uBlock/issues/3590)</sub>
+
+#### `xhr`
+
+Equivalent to `xmlhttprequest` [option](https://adblockplus.org/filters#options). For convenience.
 
 ## Static extended filtering
 
