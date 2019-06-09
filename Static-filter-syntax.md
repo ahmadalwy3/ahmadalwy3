@@ -139,6 +139,8 @@ prevent inline fonts/scripts from `bet365.com`. EasyList-
 compatible syntax does not allow to accomplish that
 semantic when using only `||bet365.com^`.
 
+See also [#2385](https://github.com/gorhill/uBlock/issues/2385)
+
 #### `badfilter`
 
 To disable an existing filter. Sometimes, disabling an existing blocking filter is better than creating an exception filter. Just for example sake, let's say that a mind-absent filter list maintainer added the following filter in his list:
