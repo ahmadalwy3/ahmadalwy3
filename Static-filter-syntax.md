@@ -121,6 +121,24 @@ The wildcard character `*` can be used to apply a filter to **all** URLs. This i
 
 Usually, it is far more convenient to use [dynamic filtering rules](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) in lieu of such generic static filters.
 
+#### `all`
+
+New in uBO [1.19.7b](https://github.com/gorhill/uBlock/commit/1888033070003cd5e6a3687a4029448bf41fccea)
+
+
+The `all` option is equivalent to specifying all
+network-based types + `popup`, `document`,
+`inline-font`, `inline-script`.
+
+Example:
+
+    ||bet365.com^$all
+
+Above will block all network requests, block all popups,
+prevent inline fonts/scripts from `bet365.com`. EasyList-
+compatible syntax does not allow to accomplish that
+semantic when using only `||bet365.com^`.
+
 #### `badfilter`
 
 To disable an existing filter. Sometimes, disabling an existing blocking filter is better than creating an exception filter. Just for example sake, let's say that a mind-absent filter list maintainer added the following filter in his list:
