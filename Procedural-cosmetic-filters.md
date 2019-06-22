@@ -75,6 +75,19 @@ Same as `:matches-css(...)`, except that the style will be looked-up for the `:b
 
 Same as `:matches-css(...)` except that the style will be looked-up for `:after` pseudo-class of the _subject_ element.
 
+### `subject:min-text-length(n)`
+
+- Description: DOM elements whose text length is greater than or equal to `n` will be selected.
+- Chainable: Yes.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- _n_: positive number, minimal text length of the subject DOM element.
+- Examples:
+    - Regular expression based filter: `quoka.de##^script:has-text(/[\w\W]{35000}/)` can be rewritten as: `quoka.de##^script:min-text-length(35000)`.
+
+Introduced in uBO [1.20.1b2](https://github.com/gorhill/uBlock/commit/b428a25c3faf22630d3e9c542919c2d7ae10584f) As a result of internal discussion<sup>[1]</sup> with filter list maintainers. The original rationale for such procedural cosmetic operator is to be able to remove inline script elements according to a minimum text length using HTML filtering.
+
+<sub>[1] https://github.com/orgs/uBlockOrigin/teams/ublock-filters-volunteers/discussions/194?from_comment=65</sub>
+
 ### `subject:not(arg)`
 
 - Description: Select element _subject_ if and only if the result of evaluating _arg_ is exactly zero elements.
@@ -95,7 +108,7 @@ Note that if _arg_ is valid CSS selector, uBO will not consider the `:not` opera
 node.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- _n_: number, distance from the currently selected node.
+- _n_: positive number >= 1 and < 256, distance from the currently selected node.
 - Examples:
     - Existing filter: `fastbay.org##.detLink:has-text(VPN):xpath(../../..)` can be rewritten as `fastbay.org##.detLink:has-text(VPN):nth-ancestor(3)`
 
