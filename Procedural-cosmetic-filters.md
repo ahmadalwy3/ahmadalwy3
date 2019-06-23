@@ -116,7 +116,7 @@ Introduced in uBO [1.18.17rc1](https://github.com/gorhill/uBlock/commit/73e2f25e
 
 ### `subject:watch-attrs(arg)`
 
-Deprecated in favor of [`subject:watch-attr(arg)`](#subjectwatch-attrsarg) in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958)
+Deprecated in favor of [`subject:watch-attr(arg)`](#subjectwatch-attrarg) in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958)
 
 ### `subject:watch-attr(arg)`
 
@@ -127,8 +127,8 @@ Experimental.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
 - _arg_: comma-separate list of attribute names. No argument means watch changes of any one attribute.
 - Examples:
-    - `www.vivrehome.pl##.js-popup-register:not([style]):watch-attrs(style):has(.js-title-default.is-hidden:watch-attrs(class))` blocks the "Register" overlay when first visiting the site, but yet allow the "Register" overlay when clicking "rejestracja".
-    - `ameshkov.github.io###testdiv:watch-attrs(id):has(p)` demo, detects `id` changes.
+    - `www.vivrehome.pl##.js-popup-register:not([style]):watch-attr(style):has(.js-title-default.is-hidden:watch-attr(class))` blocks the "Register" overlay when first visiting the site, but yet allow the "Register" overlay when clicking "rejestracja".
+    - `ameshkov.github.io###testdiv:watch-attr(id):has(p)` demo, detects `id` changes.
 
 Introduced in uBO [1.17.5rc3](https://github.com/gorhill/uBlock/commit/8a88e9d93174badd6855c0e782737158c9ccd6f8) 
 
