@@ -280,9 +280,7 @@ For example, [AdGuard English filter](https://kb.adguard.com/en/general/adguard-
 
 ### HTML filters
 
-Supported by uBO 1.14.23b3+ in Firefox 57+.  
-Supported features may not be fully in pair with procedural cosmetic filters.  
-Support for chainging back from procedural to native CSS selectors was added in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958) (`:spath`).  
+Supported by [uBO 1.15.0](https://github.com/gorhill/uBlock/releases/tag/1.15.0)+ in Firefox 57+.
 
 **READ VERY CAREFULLY:** HTML filtering acts on the **response data** (before browser parsing). Do not use the browser inspector from developer tools to create HTML filters. You **must** use `view-source:[URL of page]` instead to look at the **response data** and find out relevant information to create relevant HTML filters. Only UTF-8 encoding is supported natively by browsers. For other (most used) encodings, custom encoders are implemented in JavaScript. Because of this, HTML filtering will work only on pages with character encoding compatible with: UTF-8, ISO-8859-1, Windows-1250, Windows-1251 and Windows-1252 ([detailed maping](https://github.com/gorhill/uBlock/blob/2a91a685ce3d2dae5d3c285cff1bc74a1982be74/src/js/text-encode.js#L32))
 
@@ -296,6 +294,8 @@ The syntax is similar to that of cosmetic filters, except that you must prefix y
 These HTML filters will cause the elements matching the selectors to be **removed from the streamed response data**, such that the browser will never know of their existence once it parses the modified response data. This makes it a powerful tool in uBO's arsenal.
 
 With the introduction of HTML filtering, the `script:contains(...)` is now deprecated and internally converted into an equivalent `##^script:has-text(...)` HTML filter. The result is essentially the same: to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
+
+Support for chaining procedural operators with native CSS selector syntax (i.e. `a:has(b) + c`) was added in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958)(`:spath`). Only procedural operators which make sense in the context of HTML filtering are supported.
 
 ### Scriptlet injection
 
