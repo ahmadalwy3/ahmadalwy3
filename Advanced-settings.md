@@ -256,6 +256,16 @@ Related browser issues:
 
 ***
 
+#### `updateAssetBypassBrowserCache`
+
+Default: `false` 
+
+With [v1.21.7b1](https://github.com/gorhill/uBlock/commit/048bfd251c9b8eeafce020b4f894d736044d6a6f) and above.
+
+If set to `true`, uBO will ensure the browser cache is bypassed when fetching a remote resource.
+
+***
+
 #### `userResourcesLocation` 
 
 Default: `unset`.
