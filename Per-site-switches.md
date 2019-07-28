@@ -146,3 +146,5 @@ As with some other per-site switches, the default state of per-site JavaScript m
 ![a](https://user-images.githubusercontent.com/585534/46022411-84d30880-c0b0-11e8-9055-7e37b113ec13.png)
 
 JavaScript master switch rules appear as `no-scripting: [hostname] true` entries in the [_My rules_ pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-rules).
+
+The JavaScript master switch can be disabled through the "Relax blocking mode" keyboard shortcut.
