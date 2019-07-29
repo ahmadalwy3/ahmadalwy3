@@ -19,11 +19,16 @@
  - "string" parameter means plain character(s)/word(s), quotes will be taken literally, commas [must be escaped](https://github.com/uBlockOrigin/uAssets/commit/2bec415a9bc4f81b29be3bf083ef1a20552f39db#commitcomment-29327114) in regex literals: `/foo\x2cbar\u002cbaz/`
  - "regular expression" parameter means JavaScript [regular expression literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern)
  - mime type is `application/javascript` if not present
+ - You can use the short alias form when available for scriptlet name
+ - You can omit the `.js` from the scriptlet name (eventually in some future this will be the official way to do this)
+     - Do **not** skip `.js` when the scriptlet is used with `redirect=`, only when used in `+js(...)`.
+ - crossed out resources are deprecated/removed.
  
  
 
 ***
 
+### acis.js
 ### abort-current-inline-script.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1942)
 Aborts execution of inline script (_throws_ `ReferenceError`) when attempts to access specified _property_ when content of `<script>` _element_ matches specified text or _regular expression_.
 
@@ -34,6 +39,7 @@ Parameters:
 
 ***
 
+### aopr.js
 ### abort-on-property-read.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1701)
 Aborts execution of script (_throws_ `ReferenceError`) when attempts to read specified _property_. Writes are ignored.
 
@@ -43,6 +49,7 @@ Parameters:
 
 ***
 
+### aopw.js
 ### abort-on-property-write.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1668)
 Aborts execution of script (_throws_ `ReferenceError`) when attempts to write specified _property_.
 
@@ -52,6 +59,7 @@ Parameters:
 
 ***
 
+### aeld.js
 ### addEventListener-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1879)
 Prevents attaching event listeners.
 
@@ -62,6 +70,7 @@ Parameters:
 
 ***
 
+### aell.js
 ### addEventListener-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1867)
 Logs to the console event listeners created on page.
 
@@ -107,7 +116,8 @@ Prevent web pages from using _`eval()`_, and report attempts to console.
 
 ***
 
-### silent-noeval.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1279)
+### noeval-silent.js
+### ~silent-noeval.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1279)
 Prevent web pages from using _`eval()`_.
 
 
@@ -127,6 +137,7 @@ Disables WebRTC by preventing web pages from using [`RTCPeerConnection()`](https
 
 ***
 
+### ra.js
 ### remove-attr.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2263)
 Removes attribute(s) from DOM tree node(s). Will run only once after page load.
 
@@ -157,6 +168,7 @@ Parameters:
 
 ***
 
+### sid.js
 ### setInterval-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1787)
 Defuses calls to _`setInterval()`_ function for specified matching callbacks and intervals by setting callback function to noop.
 
@@ -167,12 +179,14 @@ Parameters:
 
 ***
 
+### sil.js
 ### setInterval-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1811)
 Logs to the console calls to _`setInterval()`_ function.
 
 
 ***
 
+### std.js
 ### setTimeout-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1754)
 Defuses calls to _`setTimeout()`_ function for specified matching callbacks and delays by setting callback function to noop.
 
@@ -183,12 +197,14 @@ Parameters:
 
 ***
 
+### stl.js
 ### setTimeout-logger.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1776)
 Logs to the console calls to _`setTimeout()`_ function.
 
 
 ***
 
+### nano-sib.js
 ### nano-setInterval-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2222)
 Adjusts interval for specified _`setInterval()`_ callbacks.
 
@@ -200,6 +216,7 @@ Parameters:
 
 ***
 
+### nano-stb.js
 ### nano-setTimeout-booster.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2176)
 Adjusts delay for specified _`setTimeout()`_ callbacks.
 
@@ -257,7 +274,8 @@ Disables [`alert()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/ale
 
 
 
-### ampproject.org/v0.js [↪](https://github.com/uBlockOrigin/uAssets/blob/7a841333e440452ec2d9e0dbe5c81459a99b59b4/filters/resources.txt#L2397)
+### ampproject_v0.js
+### ~ampproject.org/v0.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/7a841333e440452ec2d9e0dbe5c81459a99b59b4/filters/resources.txt#L2397)
 Removes animation (artificial 8s delay) added to desktop pages supporting AMP, when ampproject.org scripts are blocked.
 
 ### fingerprint2.js  [↪](https://github.com/uBlockOrigin/uAssets/blob/379a5a69059baa35627fe8205f44d97d129373af/filters/resources.txt#L2348)
@@ -269,7 +287,8 @@ Sets specific localStorage items (`InfNumFastPops`, `InfNumFastPopsExpire`)
 ### forbes-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L697)
 Fix '/forbes/welcome/' page redirection. Redirects to URL from `toURL` cookie
 
-### bab-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L738)
+### nobab.js
+### ~bab-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L738)
 Defuses BlockAdblock. Prevents executing of _`eval()`_ on sets of predefined payloads.
 
 ### phenv-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L797)
@@ -279,7 +298,8 @@ Defuses "g0yav3-lab" Anti Adblock. TODO Deprecated, sets static properties (`PHE
 Deprecated, Convenience, sets static properties (`Ads.display`, `Ads.refresh`)
 TODO: Convenience means "patches more than one property", I keep this here, not in "Other", just in case.
 
-### fuckadblock.js-3.2.0 [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L186)
+### nofab.js
+### ~fuckadblock.js-3.2.0~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L186)
 Convenience, Sanitize `FuckAdBlock`, `BlockAdBlock`, `SniffAdBlock`, `fuckAdBlock`, `blockAdBlock`, `sniffAdBlock` properties.
 Often used as redirect in network filters. TODO: copy to redirect?
 
@@ -289,7 +309,8 @@ Sets specific localStorage item (`lmd_me_displayed`)
 ### popads-dummy.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1465)
 Convenience, sets static properties (`PopAds`, `popns`)
 
-### popads.net.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1443)
+### popads.js
+### ~popads.net.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1443)
 Convenience, abort-on-property-write.js (`PopAds`, `popns`), _throws_ "`magic`"
 
 ### rtlfr-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1091)
@@ -331,18 +352,18 @@ font, image, media, object, script, stylesheet, subdocument, xmlhttprequest
 
 ### Available resources
  - Images
-	- 1x1-transparent.gif `image/gif;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L13)
-	- 2x2-transparent.png `image/png;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L17)
-	- 3x2-transparent.png `image/png;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L22)
-	- 32x32-transparent.png `image/png;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L27)
+	- ~1x1-transparent.gif~ 1x1.gif `image/gif;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L13)
+	- ~2x2-transparent.png~ 2x2.png `image/png;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L17)
+	- ~3x2-transparent.png~ 3x2.png `image/png;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L22)
+	- ~32x32-transparent.png~ 32x32.png `image/png;base64` `$image` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L27)
  - Source code
 	- noopcss `text/css` `$stylesheet` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L35)
-	- noopframe `text/html` `$subdocument` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L44)
-	- noopjs `application/javascript` `$script` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L38)
-	- nooptext `text/plain` `$xmlhttprequest` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L32)
+	- ~noopframe~ noop.html `text/html` `$subdocument` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L44)
+	- ~noopjs~ noop.js `application/javascript` `$script` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L38)
+	- ~nooptext~ noop.txt `text/plain` `$xmlhttprequest` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L32)
  - Media files
-	- noopmp3-0.1s `audio/mp3;base64` `$media` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L56)
-	- noopmp4-1s `video/mp4;base64` `$media` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L74)
+	- ~noopmp3-0.1s~ noop-0.1s.mp3 `audio/mp3;base64` `$media` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L56)
+	- ~noopmp4-1s~ noop-1s.mp4 `video/mp4;base64` `$media` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L74)
 
 TODO: object and font resources are missing? Find discussion about adding them on demand.
 
@@ -353,23 +374,37 @@ TODO: object and font resources are missing? Find discussion about adding them o
 
 
 
-### addthis.com/addthis_widget.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L887)
-### amazon-adsystem.com/aax2/amzn_ads.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1004)
-### d3pkae9owd2lcf.cloudfront.net/mb105.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1610)
-### doubleclick.net/instream/ad_status.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L882)
-### google-analytics.com/ga.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L252)
-### google-analytics.com/analytics.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L353)
-### google-analytics.com/inpage_linkid.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L405)
-### google-analytics.com/cx/api.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L416)
-### googletagservices.com/gpt.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L435)
-### googletagmanager.com/gtm.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L575)
-### googlesyndication.com/adsbygoogle.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L601)
-### scorecardresearch.com/beacon.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L831)
-### widgets.outbrain.com/outbrain.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L845)
+### addthis_widget.js
+### ~addthis.com/addthis_widget.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L887)
+### amazon_ads.js
+### ~amazon-adsystem.com/aax2/amzn_ads.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1004)
+### monkeybroker.js
+### ~d3pkae9owd2lcf.cloudfront.net/mb105.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1610)
+### doubleclick_instream_ad_status.js
+### ~doubleclick.net/instream/ad_status.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L882)
+### google-analytics_ga.js
+### ~google-analytics.com/ga.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L252)
+### google-analytics_analytics.js
+### ~google-analytics.com/analytics.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L353)
+### google-analytics_inpage_linkid.js
+### ~google-analytics.com/inpage_linkid.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L405)
+### google-analytics_cx_api.js
+### ~google-analytics.com/cx/api.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L416)
+### googletagservices_gpt.js
+### ~googletagservices.com/gpt.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L435)
+### googletagmanager_gtm.js
+### ~googletagmanager.com/gtm.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L575)
+### googlesyndication_adsbygoogle.js
+### ~googlesyndication.com/adsbygoogle.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L601)
+### scorecardresearch_beacon.js
+### ~scorecardresearch.com/beacon.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L831)
+### outbrain-widget.js
+### ~widgets.outbrain.com/outbrain.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L845)
 ### hd-main.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L140)
 ### xvideos.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1477)
 
-### disqus.com/forums/*/embed.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L939) AND disqus.com/embed.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L959)
+### disqus_forums_embed.js AND disqus_embed.js
+### ~disqus.com/forums/*/embed.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L939) AND ~disqus.com/embed.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L959)
 Along with [Disqus click-to-load](https://gist.github.com/gorhill/ef1b62d606473c68d524) filter list, allows to have Click-to-ublock experience for Discus comments widgets.
 
 ### twitch-videoad.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L2318)
@@ -447,13 +482,15 @@ Deprecated, sets static properties (`_r3z.jq`, `_r3z.pub`)
 ### folha-de-sp.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1254)
 Deprecated, sets static properties (`folha_ads`)
 
-### static.chartbeat.com/chartbeat.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1653)
+### chartbeat.js
+### ~static.chartbeat.com/chartbeat.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1653)
 Deprecated, sets static properties (`pSUPERFLY.activity`, `pSUPERFLY.virtualPage`)
 
 ### entrepreneur.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1863)
 Deprecated, sets static properties (`analyticsEvent`)
 
-### ligatus.com/*/angular-tag.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L629)
+### ligatus_angular-tag.js
+### ~ligatus.com/*/angular-tag.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L629)
 Deprecated, sets static properties (`adProtect`, `uabpdl`, `uabDetect`)
 
 ### openload.co.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L724)
