@@ -238,6 +238,14 @@ Parameters:
 
 ***
 
+### webrtc-if.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L556)
+Allows opening RTC connections to matching [RTCIceServer](https://developer.mozilla.org/en-US/docs/Web/API/RTCIceServer) only.
+
+Parameters:
+ - required, string/_regular expression_, matching in `RTCIceServer` `urls`, `username` or `credential`.
+
+***
+
 ### window.open-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/window.open-defuser.js)
 Prevent opening new windows by [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) when URL positively or negatively matches to specific string.
 
