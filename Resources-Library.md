@@ -1,5 +1,6 @@
 
- - [Current RAW version of Resources Library ↪](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt)
+ - Current RAW version of Resources can be found in [scriptlets.js file ↪](https://github.com/gorhill/uBlock/blob/master/assets/resources/scriptlets.js) and [web_accessible_resources directory ↪](https://github.com/gorhill/uBlock/tree/master/src/web_accessible_resources)
+ - [Legacy RAW version of Resources Library ↪](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt)
  - [General purpose scriptlets](#general-purpose-scriptlets)
  - [Defuser scriptlets](#defuser-scriptlets)
  - [Empty redirect resources](#empty-redirect-resources)
@@ -281,21 +282,21 @@ Removes animation (artificial 8s delay) added to desktop pages supporting AMP, w
 ### fingerprint2.js  [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L929)
 Defuses Fingerprintjs2. Sanitize `Fingerprint2` object.
 
-### pornhub-popup-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L647)
-Sets specific localStorage items (`InfNumFastPops`, `InfNumFastPopsExpire`)
+### ~pornhub-popup-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L647)
+Removed. Sets specific localStorage items (`InfNumFastPops`, `InfNumFastPopsExpire`)
 
-### forbes-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L697)
-Fix '/forbes/welcome/' page redirection. Redirects to URL from `toURL` cookie
+### ~forbes-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L697)
+Removed. Fix '/forbes/welcome/' page redirection. Redirects to URL from `toURL` cookie
 
 ### nobab.js
 ### ~bab-defuser.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/nobab.js)
 Defuses BlockAdblock. Prevents executing of _`eval()`_ on sets of predefined payloads.
 
-### phenv-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L797)
-Defuses "g0yav3-lab" Anti Adblock. TODO Deprecated, sets static properties (`PHENV`)
+### ~phenv-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L797)
+Removed. Defuses "g0yav3-lab" Anti Adblock. TODO Deprecated, sets static properties (`PHENV`)
 
-### sas-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1056)
-Deprecated, Convenience, sets static properties (`Ads.display`, `Ads.refresh`)
+### ~sas-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1056)
+Removed. Deprecated, Convenience, sets static properties (`Ads.display`, `Ads.refresh`)
 TODO: Convenience means "patches more than one property", I keep this here, not in "Other", just in case.
 
 ### nofab.js
@@ -303,8 +304,8 @@ TODO: Convenience means "patches more than one property", I keep this here, not 
 Convenience, Sanitize `FuckAdBlock`, `BlockAdBlock`, `SniffAdBlock`, `fuckAdBlock`, `blockAdBlock`, `sniffAdBlock` properties.
 Often used as redirect in network filters. TODO: copy to redirect?
 
-### lemonde-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1085)
-Sets specific localStorage item (`lmd_me_displayed`)
+### ~lemonde-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1085)
+Removed. Sets specific localStorage item (`lmd_me_displayed`)
 
 ### popads-dummy.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/popads-dummy.js)
 Convenience, sets static properties (`PopAds`, `popns`)
@@ -313,21 +314,21 @@ Convenience, sets static properties (`PopAds`, `popns`)
 ### ~popads.net.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/popads.js)
 Convenience, abort-on-property-write.js (`PopAds`, `popns`), _throws_ "`magic`"
 
-### rtlfr-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1091)
-Deprecated by `:style()` cosmetic filter.
+### ~rtlfr-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1091)
+Removed. Deprecated by `:style()` cosmetic filter.
 Applies `overflow: auto` style to document body _element_ after window `load` event.
 
-### uabinject-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L640)
-Defuses Addefend, convenience, sets static properties (`trckd`, `uabpdl`, `uabInject`, `uabDetect`)
+### ~uabinject-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L640)
+Removed. Defuses Addefend, convenience, sets static properties (`trckd`, `uabpdl`, `uabInject`, `uabDetect`)
 
-### impspcabe-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1172)
-Deprecated, Convenience, sets static properties (`_impspcabe`, `_impspcabe_alpha`, `_impspcabe_beta`, `_impspcabe_path`) TODO: not used, static properties, cannot be set to `about:blank` by sciptlets is this really needed, used on 4 domains
+### ~impspcabe-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1172)
+Removed. Deprecated, Convenience, sets static properties (`_impspcabe`, `_impspcabe_alpha`, `_impspcabe_beta`, `_impspcabe_path`) TODO: not used, static properties, cannot be set to `about:blank` by sciptlets is this really needed, used on 4 domains
 
 ### gpt-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L700)
 Deprecated, Convenience, sets static properties (`_resetGPT`, `resetGPT`, `resetAndLoadGPTRecovery`, `_resetAndLoadGPTRecovery`, `setupGPT`, `setupGPTuo`)
 
-### palacesquare.rambler.ru-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1913)
-Aborts creation of Promise when executor content matches 'getRandomSelector' (_throws_ `Error`) TODO: Freezes `Promise` properties?
+### ~palacesquare.rambler.ru-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1913)
+Removed. Aborts creation of Promise when executor content matches 'getRandomSelector' (_throws_ `Error`) TODO: Freezes `Promise` properties?
 
 ### adfly-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L805)
 Defuses anti adblock on adfly shortened links.
@@ -357,7 +358,7 @@ font, image, media, object, script, stylesheet, subdocument, xmlhttprequest
 	- ~3x2-transparent.png~ 3x2.png `image/png;base64` `$image` [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/3x2.png)
 	- ~32x32-transparent.png~ 32x32.png `image/png;base64` `$image` [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/32x32.png)
  - Source code
-	- noopcss `text/css` `$stylesheet` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L35)
+	- ~noopcss~ Removed. `text/css` `$stylesheet` [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L35)
 	- ~noopframe~ noop.html `text/html` `$subdocument` [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/noop.html)
 	- ~noopjs~ noop.js `application/javascript` `$script` [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/noop.js)
 	- ~nooptext~ noop.txt `text/plain` `$xmlhttprequest` [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/noop.txt)
@@ -401,7 +402,7 @@ TODO: object and font resources are missing? Find discussion about adding them o
 ### outbrain-widget.js
 ### ~widgets.outbrain.com/outbrain.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/outbrain-widget.js)
 ### hd-main.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/hd-main.js)
-### xvideos.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1477)
+### ~xvideos.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1477)
 
 ### disqus_forums_embed.js AND disqus_embed.js
 ### ~disqus.com/forums/*/embed.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/disqus_forums_embed.js) AND ~disqus.com/embed.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/disqus_embed.js)
@@ -418,83 +419,83 @@ Deprecated by general purpose scriptlets / outdated (please move to proper secti
 
 
 
-### antiAdBlock.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L232)
-Sanitize `antiAdBlock.onDetected`, `antiAdBlock.onNotDetected`
+### ~antiAdBlock.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L232)
+Removed. Sanitize `antiAdBlock.onDetected`, `antiAdBlock.onNotDetected`
 
-### pornhub-sanitizer.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L666)
-Removes ad frames on Pornhub (`block_logic`)
+### ~pornhub-sanitizer.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L666)
+Removed. Removes ad frames on Pornhub (`block_logic`)
 
-### nr-unwrapper.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1191)
-Fix memory leaks on spotify, newrelic. https://github.com/uBlockOrigin/uAssets/issues/36
+### ~nr-unwrapper.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1191)
+Removed. Fix memory leaks on spotify, newrelic. https://github.com/uBlockOrigin/uAssets/issues/36
 
 ***
 
 ### golem.de.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L756)
 Deprecated, addEventListener-defuser
 
-### uAssets-17 [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L168)
-Deprecated, setTimeout-defuser
+### ~uAssets-17~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L168)
+Removed. Deprecated, setTimeout-defuser
 
-### last.fm.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1634)
-Deprecated, setTimeout-defuser
+### ~last.fm.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1634)
+Removed. Deprecated, setTimeout-defuser
 
-### ytad-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L985)
-Deprecated, setTimeout-defuser, fix for YouTube "An error occured"
+### ~ytad-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L985)
+Removed. Deprecated, setTimeout-defuser, fix for YouTube "An error occured"
 
 ***
 
-### bcplayer-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L909)
-Deprecated, sets static properties (`bcPlayer.ads`)
+### ~bcplayer-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L909)
+Removed. Deprecated, sets static properties (`bcPlayer.ads`)
 
-### wpredirect-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L714)
-Deprecated, sets static properties (`TWP.Identity.initComplete`)
+### ~wpredirect-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L714)
+Removed. Deprecated, sets static properties (`TWP.Identity.initComplete`)
 
-### kissanime-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L784)
-Deprecated, sets static properties (`DoDetect1`, `DoDetect2`, `isBlockAds2`)
+### ~kissanime-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L784)
+Removed. Deprecated, sets static properties (`DoDetect1`, `DoDetect2`, `isBlockAds2`)
 
-### __$dc-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1364)
-Deprecated, sets static properties (`Math.mt_random`), _throws_ `TypeError`
+### ~__$dc-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1364)
+Removed. Deprecated, sets static properties (`Math.mt_random`), _throws_ `TypeError`
 
 ### upmanager-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L777)
 Deprecated, sets static properties (`upManager`)
 
-### r3z-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1596)
-Deprecated, sets static properties (`_r3z.jq`, `_r3z.pub`)
+### ~r3z-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1596)
+Removed. Deprecated, sets static properties (`_r3z.jq`, `_r3z.pub`)
 
-### folha-de-sp.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1254)
-Deprecated, sets static properties (`folha_ads`)
+### ~folha-de-sp.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1254)
+Removed. Deprecated, sets static properties (`folha_ads`)
 
 ### chartbeat.js
 ### ~static.chartbeat.com/chartbeat.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/chartbeat.js)
 Deprecated, sets static properties (`pSUPERFLY.activity`, `pSUPERFLY.virtualPage`)
 
-### entrepreneur.com.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1863)
-Deprecated, sets static properties (`analyticsEvent`)
+### ~entrepreneur.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1863)
+Removed. Deprecated, sets static properties (`analyticsEvent`)
 
 ### ligatus_angular-tag.js
 ### ~ligatus.com/*/angular-tag.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/ligatus_angular-tag.js)
 Deprecated, sets static properties (`adProtect`, `uabpdl`, `uabDetect`)
 
-### openload.co.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L724)
-Deprecated, sets static properties (`adblock2`, `OlPopup`, `preserve`, `turnoff`)
+### ~openload.co.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L724)
+Removed. Deprecated, sets static properties (`adblock2`, `OlPopup`, `preserve`, `turnoff`)
 
-### imore-sanitizer.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1158)
-Deprecated, sets static properties (`mbn_zones`)
+### ~imore-sanitizer.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1158)
+Removed. Deprecated, sets static properties (`mbn_zones`)
 
-### smartadserver.com.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L794)
-Deprecated, sets static properties (`SmartAdObject`, `SmartAdServerAjax`, `smartAd.LoadAds`, `smartAd.Register`)
+### ~smartadserver.com.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L794)
+Removed. Deprecated, sets static properties (`SmartAdObject`, `SmartAdServerAjax`, `smartAd.LoadAds`, `smartAd.Register`)
 
-### lesechos.fr.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1573)
-Deprecated, sets static properties (`checkAdBlock`)
+### ~lesechos.fr.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1573)
+Removed. Deprecated, sets static properties (`checkAdBlock`)
 
-### criteo.net.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1580)
-Deprecated, sets static properties (`Criteo.criteo`)
+### ~criteo.net.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1580)
+Removed. Deprecated, sets static properties (`Criteo.criteo`)
 
-### goyavelab-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L684)
-Deprecated, sets static properties (`_$14`)
+### ~goyavelab-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L684)
+Removed. Deprecated, sets static properties (`_$14`)
 
-### figaro-defuser.js [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1074)
-Deprecated, sets static properties (`adisplaynormal`)
+### ~figaro-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1074)
+Removed. Deprecated, sets static properties (`adisplaynormal`)
 
 
 
