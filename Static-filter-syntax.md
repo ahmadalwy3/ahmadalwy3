@@ -9,7 +9,7 @@ However uBO does not support some very specific cases, and also adds its own ext
     - [Static extended filtering](#static-extended-filtering)
         - [Entity](#entity)
         - [Cosmetic filters](#cosmetic-filters)
-            - [Procedural cosmetic filters](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters)
+            - [Procedural cosmetic filters](./Procedural-cosmetic-filters)
         - [HTML filters](#html-filters)
         - [Scriptlet injection](#scriptlet-injection)
 
@@ -19,9 +19,9 @@ However uBO does not support some very specific cases, and also adds its own ext
 
 Not supported. The purpose of the `document` option when used with an exception filter is to disable uBO completely. The purpose of the `document` option in static exception filters is mostly for the sake of "acceptable ads" support, which uBO does not support.
 
-The reason it is not supported is to be sure that users explicitly disable uBO themselves if they wish (through [whitelisting](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site)), not having some external filter list decide for them.
+The reason it is not supported is to be sure that users explicitly disable uBO themselves if they wish (through [whitelisting](./How-to-whitelist-a-web-site)), not having some external filter list decide for them.
 
-<sub>Note: it [still works](https://github.com/gorhill/uBlock/issues/1754) to negate [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking) when explicitly enabled by blocking filter `document` option.</sub>
+<sub>Note: it [still works](https://github.com/gorhill/uBlock/issues/1754) to negate [strict blocking](./Strict-blocking) when explicitly enabled by blocking filter `document` option.</sub>
 
 `genericblock`:
 
@@ -35,7 +35,7 @@ For instance, when used for a specific site, the `genericblock` option would cau
 
 `elemhide`:
 
-Translated internally to `generichide`. `elemhide` is used with exception filters to disable all cosmetic filtering on page, this can be achieved by ["No cosmetic filtering"](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering) switch.
+Translated internally to `generichide`. `elemhide` is used with exception filters to disable all cosmetic filtering on page, this can be achieved by ["No cosmetic filtering"](./Per-site-switches#no-cosmetic-filtering) switch.
 
 Keep in mind `generichide` is a cosmetic filtering-related option, and as such using it has no negative consequence with regard to privacy since cosmetic filtering has no privacy value.
 
@@ -119,7 +119,7 @@ The wildcard character `*` can be used to apply a filter to **all** URLs. This i
 - `*$third-party`: block all 3rd-party network requests.
 - `*$script,domain=example.com`: block all network requests to fetch script resources from `example.com`.
 
-Usually, it is far more convenient to use [dynamic filtering rules](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) in lieu of such generic static filters.
+Usually, it is far more convenient to use [dynamic filtering rules](./Dynamic-filtering) in lieu of such generic static filters.
 
 #### `1p`
 
@@ -183,7 +183,7 @@ Equivalent to `stylesheet` [option](https://adblockplus.org/filters#options). Fo
 
 #### `document`
 
-For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking).
+For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](./Strict-blocking).
 
 #### `first-party`
 
@@ -260,7 +260,7 @@ Since the base domain name is used to derive the name of the "entity", `google.e
 
 `:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:not(...)`, `:xpath(...)`.
 
-See [detailed documentation](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters).
+See [detailed documentation](./Procedural-cosmetic-filters).
 
 #### `:style()`
 
@@ -276,7 +276,7 @@ As with the other new cosmetic filtering selectors, the `:style` can be used onl
 
 AdGuard [already support such feature](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-css-rules-syntax), although using a different syntax. However uBO is able to transparently convert and make use of the AdGuard's "CSS injection rules" if ever you use an AdGuard filter list in uBO (well, this essentially means you can use AdGuard's syntax in uBO if you prefer).
 
-For example, [AdGuard English filter](https://kb.adguard.com/en/general/adguard-ad-filters#english-filter) contains ~50 styling filters, [AdGuard Russian filter list](https://kb.adguard.com/en/general/adguard-ad-filters#russian-filter) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [AdGuard's filter lists](https://kb.adguard.com/en/general/adguard-ad-filters), which can be enabled from the [3rd-party filters pane](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters).
+For example, [AdGuard English filter](https://kb.adguard.com/en/general/adguard-ad-filters#english-filter) contains ~50 styling filters, [AdGuard Russian filter list](https://kb.adguard.com/en/general/adguard-ad-filters#russian-filter) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [AdGuard's filter lists](https://kb.adguard.com/en/general/adguard-ad-filters), which can be enabled from the [3rd-party filters pane](./Dashboard:-3rd-party-filters).
 
 ### HTML filters
 
@@ -293,7 +293,7 @@ The syntax is similar to that of cosmetic filters, except that you must prefix y
 
 These HTML filters will cause the elements matching the selectors to be **removed from the streamed response data**, such that the browser will never know of their existence once it parses the modified response data. This makes it a powerful tool in uBO's arsenal.
 
-With the introduction of HTML filtering, the `script:contains(...)` is now deprecated and internally converted into an equivalent `##^script:has-text(...)` HTML filter. The result is essentially the same: to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](https://github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering) for further documentation.
+With the introduction of HTML filtering, the `script:contains(...)` is now deprecated and internally converted into an equivalent `##^script:has-text(...)` HTML filter. The result is essentially the same: to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](./Inline-script-tag-filtering) for further documentation.
 
 Support for chaining procedural operators with native CSS selector syntax (i.e. `a:has(b) + c`) was added in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958). Only procedural operators which make sense in the context of HTML filtering are supported.
 
@@ -305,6 +305,6 @@ Starting from [1.15.12](https://github.com/gorhill/uBlock/commit/ec56165d0d36ab9
 
     +js(...)
 
-This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](https://github.com/gorhill/uBlock/wiki/Resources-Library). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
+This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](./Resources-Library). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
 
 Generic `+js` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##script:inject(yavli-defuser.js)`.
