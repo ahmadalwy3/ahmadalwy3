@@ -29,7 +29,7 @@
 
 ***
 
-### acis.js
+### acis.js /
 ### abort-current-inline-script.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L35)
 Aborts execution of inline script (_throws_ `ReferenceError`) when attempts to access specified _property_ when content of `<script>` _element_ matches specified text or _regular expression_.
 
@@ -40,7 +40,7 @@ Parameters:
 
 ***
 
-### aopr.js
+### aopr.js /
 ### abort-on-property-read.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L96)
 Aborts execution of script (_throws_ `ReferenceError`) when attempts to read specified _property_. Writes are ignored.
 
@@ -50,7 +50,7 @@ Parameters:
 
 ***
 
-### aopw.js
+### aopw.js /
 ### abort-on-property-write.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L150)
 Aborts execution of script (_throws_ `ReferenceError`) when attempts to write specified _property_.
 
@@ -60,7 +60,7 @@ Parameters:
 
 ***
 
-### aeld.js
+### aeld.js /
 ### addEventListener-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L182)
 Prevents attaching event listeners.
 
@@ -71,7 +71,7 @@ Parameters:
 
 ***
 
-### aell.js
+### aell.js /
 ### addEventListener-logger.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L221)
 Logs to the console event listeners created on page.
 
@@ -116,7 +116,7 @@ Prevent web pages from using _`eval()`_, and report attempts to console.
 
 ***
 
-### noeval-silent.js
+### noeval-silent.js /
 ### ~silent-noeval.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/noeval-silent.js)
 Prevent web pages from using _`eval()`_.
 
@@ -137,7 +137,7 @@ Disables WebRTC by preventing web pages from using [`RTCPeerConnection()`](https
 
 ***
 
-### ra.js
+### ra.js /
 ### remove-attr.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L362)
 Removes attribute(s) from DOM tree node(s). Will run only once after page load.
 
@@ -148,7 +148,7 @@ Parameters:
 
 ***
 
-### set.js
+### set.js /
 ### set-constant.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L394)
 Creates _property_ and initializes it to predefined value from set of available properties. TODO: "constant" is not constant - current implementation does not prevent to assign value of another type.
 
@@ -169,7 +169,7 @@ Parameters:
 
 ***
 
-### sid.js
+### sid.js /
 ### setInterval-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L474)
 Defuses calls to _`setInterval()`_ function for specified matching callbacks and intervals by setting callback function to noop.
 
@@ -180,14 +180,14 @@ Parameters:
 
 ***
 
-### sil.js
+### sil.js /
 ### setInterval-logger.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L500)
 Logs to the console calls to _`setInterval()`_ function.
 
 
 ***
 
-### std.js
+### std.js /
 ### setTimeout-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L515)
 Defuses calls to _`setTimeout()`_ function for specified matching callbacks and delays by setting callback function to noop.
 
@@ -198,14 +198,14 @@ Parameters:
 
 ***
 
-### stl.js
+### stl.js /
 ### setTimeout-logger.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L541)
 Logs to the console calls to _`setTimeout()`_ function.
 
 
 ***
 
-### nano-sib.js
+### nano-sib.js /
 ### nano-setInterval-booster.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L239)
 Adjusts interval for specified _`setInterval()`_ callbacks.
 
@@ -217,7 +217,7 @@ Parameters:
 
 ***
 
-### nano-stb.js
+### nano-stb.js /
 ### nano-setTimeout-booster.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L289)
 Adjusts delay for specified _`setTimeout()`_ callbacks.
 
@@ -282,7 +282,7 @@ Disables [`alert()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/ale
 
 
 
-### ampproject_v0.js
+### ampproject_v0.js /
 ### ~ampproject.org/v0.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/ampproject_v0.js)
 Removes animation (artificial 8s delay) added to desktop pages supporting AMP, when ampproject.org scripts are blocked.
 
@@ -295,7 +295,7 @@ Removed. Sets specific localStorage items (`InfNumFastPops`, `InfNumFastPopsExpi
 ### ~forbes-defuser.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L697)
 Removed. Fix '/forbes/welcome/' page redirection. Redirects to URL from `toURL` cookie
 
-### nobab.js
+### nobab.js /
 ### ~bab-defuser.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/nobab.js)
 Defuses BlockAdblock. Prevents executing of _`eval()`_ on sets of predefined payloads.
 
@@ -306,7 +306,7 @@ Removed. Defuses "g0yav3-lab" Anti Adblock. TODO Deprecated, sets static propert
 Removed. Deprecated, Convenience, sets static properties (`Ads.display`, `Ads.refresh`)
 TODO: Convenience means "patches more than one property", I keep this here, not in "Other", just in case.
 
-### nofab.js
+### nofab.js /
 ### ~fuckadblock.js-3.2.0~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/nofab.js)
 Convenience, Sanitize `FuckAdBlock`, `BlockAdBlock`, `SniffAdBlock`, `fuckAdBlock`, `blockAdBlock`, `sniffAdBlock` properties.
 Often used as redirect in network filters. TODO: copy to redirect?
@@ -317,7 +317,7 @@ Removed. Sets specific localStorage item (`lmd_me_displayed`)
 ### popads-dummy.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/popads-dummy.js)
 Convenience, sets static properties (`PopAds`, `popns`)
 
-### popads.js
+### popads.js /
 ### ~popads.net.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/popads.js)
 Convenience, abort-on-property-write.js (`PopAds`, `popns`), _throws_ "`magic`"
 
@@ -382,36 +382,36 @@ TODO: object and font resources are missing? Find discussion about adding them o
 
 
 
-### addthis_widget.js
+### addthis_widget.js /
 ### ~addthis.com/addthis_widget.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/addthis_widget.js)
-### amazon_ads.js
+### amazon_ads.js /
 ### ~amazon-adsystem.com/aax2/amzn_ads.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/amazon_ads.js)
-### monkeybroker.js
+### monkeybroker.js /
 ### ~d3pkae9owd2lcf.cloudfront.net/mb105.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/monkeybroker.js)
-### doubleclick_instream_ad_status.js
+### doubleclick_instream_ad_status.js /
 ### ~doubleclick.net/instream/ad_status.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/doubleclick_instream_ad_status.js)
-### google-analytics_ga.js
+### google-analytics_ga.js /
 ### ~google-analytics.com/ga.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/google-analytics_ga.js)
-### google-analytics_analytics.js
+### google-analytics_analytics.js /
 ### ~google-analytics.com/analytics.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/google-analytics_analytics.js)
-### google-analytics_inpage_linkid.js
+### google-analytics_inpage_linkid.js /
 ### ~google-analytics.com/inpage_linkid.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/google-analytics_inpage_linkid.js)
-### google-analytics_cx_api.js
+### google-analytics_cx_api.js /
 ### ~google-analytics.com/cx/api.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/google-analytics_cx_api.js)
-### googletagservices_gpt.js
+### googletagservices_gpt.js /
 ### ~googletagservices.com/gpt.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/googletagservices_gpt.js)
-### googletagmanager_gtm.js
+### googletagmanager_gtm.js /
 ### ~googletagmanager.com/gtm.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/googletagmanager_gtm.js)
-### googlesyndication_adsbygoogle.js
+### googlesyndication_adsbygoogle.js /
 ### ~googlesyndication.com/adsbygoogle.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/googlesyndication_adsbygoogle.js)
-### scorecardresearch_beacon.js
+### scorecardresearch_beacon.js /
 ### ~scorecardresearch.com/beacon.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/scorecardresearch_beacon.js)
-### outbrain-widget.js
+### outbrain-widget.js /
 ### ~widgets.outbrain.com/outbrain.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/outbrain-widget.js)
 ### hd-main.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/hd-main.js)
 ### ~xvideos.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1477)
 
-### disqus_forums_embed.js AND disqus_embed.js
+### disqus_forums_embed.js AND disqus_embed.js /
 ### ~disqus.com/forums/*/embed.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/disqus_forums_embed.js) AND ~disqus.com/embed.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/disqus_embed.js)
 Along with [Disqus click-to-load](https://gist.github.com/gorhill/ef1b62d606473c68d524) filter list, allows to have Click-to-ublock experience for Discus comments widgets.
 
@@ -472,14 +472,14 @@ Removed. Deprecated, sets static properties (`_r3z.jq`, `_r3z.pub`)
 ### ~folha-de-sp.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1254)
 Removed. Deprecated, sets static properties (`folha_ads`)
 
-### chartbeat.js
+### chartbeat.js /
 ### ~static.chartbeat.com/chartbeat.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/chartbeat.js)
 Deprecated, sets static properties (`pSUPERFLY.activity`, `pSUPERFLY.virtualPage`)
 
 ### ~entrepreneur.com.js~ [↪](https://github.com/uBlockOrigin/uAssets/blob/2c68a4f5456e4677cec76f2784d2c1d7abc36efb/filters/resources.txt#L1863)
 Removed. Deprecated, sets static properties (`analyticsEvent`)
 
-### ligatus_angular-tag.js
+### ligatus_angular-tag.js /
 ### ~ligatus.com/*/angular-tag.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/ligatus_angular-tag.js)
 Deprecated, sets static properties (`adProtect`, `uabpdl`, `uabDetect`)
 
