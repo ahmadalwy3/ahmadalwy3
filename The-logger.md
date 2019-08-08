@@ -12,7 +12,7 @@ To access the logger, click on the _list_ icon of uBlock Origin's popup UI:
 
 The request logger will open in a new tab (which was moved to its own window below):
 
-![Figure 2](https://cloud.githubusercontent.com/assets/585534/8034785/0cb141bc-0db9-11e5-9365-1e45ccc50263.png)
+![Figure 2](https://user-images.githubusercontent.com/886325/62732907-c00acb80-ba25-11e9-8206-76d7f071657e.png)
 
 The color of a row hints at how the resource was filtered:
 - No color: The request for the resource was allowed to go through because it matched no filter/rule.
@@ -21,8 +21,9 @@ The color of a row hints at how the resource was filtered:
 - Yellow:
     - A DOM element which was blocked by a cosmetic filter; OR
     - A blocked request for a resource was redirected (`<<`) to a local, "neutered" replacement resource.
+    - A defuser scriptlet was injected into the page (`+js(...)`)
 
-When a resource is blocked/allowed/hidden/redirected, the 3rd column in the row will provide further information. For blocked/allowed/hidden resources, the column will contains the responsible filter. For redirection, the column will contains the local resource used as replacement to the blocked network request.
+When a resource is blocked/allowed/hidden/redirected, the second column in the row will provide further information. For blocked/allowed/hidden resources, the column will contains the responsible filter. For redirection, the column will contains the local resource used as replacement to the blocked network request.
 
 Take note that the network request logger in uBlock is a forward-looking logger: this means only future requests can be logged.
 
@@ -36,12 +37,12 @@ Hold the <kbd>Shift</kbd> key while clicking the "Open the logger" icon to toggl
 - [Page selector](#page-selector)
 - [Reload](#reload)
 - [DOM inspector](#dom-inspector)
+- [Accessing popup UI of a specific page](#accessing-popup-ui-of-a-specific-page)
 - [Expand](#expand)
 - [Void log entries](#void-log-entries)
 - [Clear](#clear)
+- [Pause the logger](#pause-the-logger)
 - [Filtering the logger output](#filtering-the-logger-output)
-- [Maximum number of entries](#maximum-number-of-entries)
-- [Accessing popup UI of a specific page](#accessing-popup-ui-of-a-specific-page)
 - [Finding from which list(s) a static filter originates](#finding-from-which-lists-a-static-filter-originates)
 - [Creating filters](#creating-filters)
     - [Dynamic URL filtering rules](#dynamic-url-filtering-rules)
@@ -55,11 +56,11 @@ Hold the <kbd>Shift</kbd> key while clicking the "Open the logger" icon to toggl
 
 #### Page selector
 
-![Figure 3](https://cloud.githubusercontent.com/assets/585534/8034873/fc489536-0db9-11e5-86ab-fb013ed91181.png)
+![Figure 3](https://user-images.githubusercontent.com/886325/62733926-f77a7780-ba27-11e9-996e-55b73459250b.png)
 
 The drop-down selector is to display log entries which are related to a specific page. This will hide from view all log entries which are not related to the selected page. By selecting _All_ again, all log entries will be displayed again.
 
-Note in the figure above the entry named _"Behind the scene"_: selecting this entry allows to show only behind-the-scene network requests. Behind-the-scene network requests are requests which do not originate from any specific tab, and are denoted by the _eye-slash_ icon in the second column. More about [behind-the-scene network requests](https://github.com/gorhill/uBlock/wiki/Behind-the-scene-network-requests) here.
+Note in the figure above the entry named _"Tabless"_: selecting this entry allows to show network requests not associated with any tab. _Tabless_ request are denoted in the log by font shadow effect and `0` in "Context" column (fifth).
 
 ***
 
@@ -81,6 +82,14 @@ Please read more on dedicated page: ["DOM inspector"](https://github.com/gorhill
 
 ***
 
+#### Accessing popup UI of a specific page
+
+![Figure 10](https://user-images.githubusercontent.com/886325/62734523-863bc400-ba29-11e9-82ce-0bf4211ea7d3.png)
+
+By clicking this button you can access the popup UI of a specific tab.
+
+***
+
 #### Expand
 
 ![Figure 5](https://cloud.githubusercontent.com/assets/585534/8035192/663e6932-0dbc-11e5-9df6-dd3143495bf8.png)
@@ -93,7 +102,7 @@ By default log entries in the logger are collapsed so as to take no more than on
 
 ![Figure 6](https://cloud.githubusercontent.com/assets/585534/8035264/fc8f467c-0dbc-11e5-8832-a2baf889af23.png)
 
-The logger is _unified_, i.e. it display all network requests from all tabs at once. If you close a tab for which there are entries in the logger, these entries will be marked as _void_, i.e. a bold `X` will appear in the second column of these entries, to indicate the tab for these entries does not exist anymore.
+With "All" selected in "Page selector" if you close a tab for which there are entries in the logger, these entries will be marked as _void_, i.e. they will be faded out, to indicate the tab for these entries does not exist anymore.
 
 The `X` button in the toolbar allows you to remove those void entries from the logger.
 
@@ -104,6 +113,14 @@ The `X` button in the toolbar allows you to remove those void entries from the l
 ![Figure 7](https://cloud.githubusercontent.com/assets/585534/8035480/1735ce04-0dbf-11e5-91f4-d20be43af4a9.png)
 
 This is to clear the logger, to remove all entries from the selected/filtered context (Ars Technica tab in this example).
+
+***
+
+#### Pause the logger
+
+![Figure 7]()
+
+TODO
 
 ***
 
@@ -139,21 +156,11 @@ Examples:
 
 #### Maximum number of entries
 
-![Figure 9](https://cloud.githubusercontent.com/assets/585534/8035568/aecf93d0-0dbf-11e5-8435-75960644c0c9.png)
+![Figure 9]()
 
 This is the maximum number of entries allowed in the logger. When the maximum is reached, the oldest entries at the bottom will be removed to make place to newest entries at the top.
 
 This is useful to be sure the logger does not unduly consume a huge amount of memory if left open for long period of time. Usually, the most recent entries are the ones of interest. When this value is not set, there is a built-in limit of 5,000 entries.
-
-***
-
-#### Accessing popup UI of a specific page
-
-![Figure 10](https://cloud.githubusercontent.com/assets/585534/8037059/aa2717f4-0dc9-11e5-991e-e6381ef3400c.png)
-
-You can access the popup UI of a specific tab by clicking the second cell in a log entry.
-
-This will cause all entries in the logger which are unrelated to the currently opened popup to be dimmed.
 
 ***
 
