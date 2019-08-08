@@ -8,7 +8,7 @@ The logger is the tool of choice to see, understand, diagnose and fix the functi
 
 To access the logger, click on the _list_ icon of uBlock Origin's popup UI:
 
-![Figure 1](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1c-1.png)
+![Figure 1](https://user-images.githubusercontent.com/886325/62736450-a8cfdc00-ba2d-11e9-8f24-9d6004371f8c.png)
 
 The request logger will open in a new tab (which was moved to its own window below):
 
