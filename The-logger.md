@@ -56,7 +56,7 @@ Hold the <kbd>Shift</kbd> key while clicking the "Open the logger" icon to toggl
 
 #### Page selector
 
-![Figure 3](https://user-images.githubusercontent.com/886325/62733926-f77a7780-ba27-11e9-996e-55b73459250b.png)
+![Figure 3](https://user-images.githubusercontent.com/886325/62740200-6ca17900-ba37-11e9-9a76-d64ef10b761d.png)
 
 The drop-down selector is to display log entries which are related to a specific page. This will hide from view all log entries which are not related to the selected page. By selecting _All_ again, all log entries will be displayed again.
 
@@ -66,7 +66,7 @@ Note in the figure above the entry named _"Tabless"_: selecting this entry allow
 
 #### Reload
 
-![Figure 4](https://cloud.githubusercontent.com/assets/585534/8035141/f5e4cc80-0dbb-11e5-9bb4-03a33c647c2f.png)
+![Figure 4](https://user-images.githubusercontent.com/886325/62740268-affbe780-ba37-11e9-9144-cdc4c52370aa.png)
 
 The big reload button aside the page selector is to force a reload of the content of the selected page. This button is enabled only for when a specific page is selected.
 
@@ -74,7 +74,7 @@ The big reload button aside the page selector is to force a reload of the conten
 
 #### Dom inspector
 
-![Figure 4.5](https://user-images.githubusercontent.com/886325/41821530-6564034e-77e2-11e8-9fab-9db6e849e85c.png)
+![Figure 4.5](https://user-images.githubusercontent.com/886325/62740302-c4d87b00-ba37-11e9-8d11-2fe9e1fc4d5d.png)
 
 Complementary tool to the element picker.
 
@@ -92,7 +92,7 @@ By clicking this button you can access the popup UI of a specific tab.
 
 #### Expand
 
-![Figure 5](https://cloud.githubusercontent.com/assets/585534/8035192/663e6932-0dbc-11e5-9df6-dd3143495bf8.png)
+![Figure 5](https://user-images.githubusercontent.com/886325/62740377-f7827380-ba37-11e9-8be0-fef923ada0d3.png)
 
 By default log entries in the logger are collapsed so as to take no more than one line. Some log entries however might be truncated as a result. This button is to force all those entries with truncated extraneous information to be fully visible.
 
@@ -100,7 +100,7 @@ By default log entries in the logger are collapsed so as to take no more than on
 
 #### Void log entries
 
-![Figure 6](https://cloud.githubusercontent.com/assets/585534/8035264/fc8f467c-0dbc-11e5-8832-a2baf889af23.png)
+![Figure 6](https://user-images.githubusercontent.com/886325/62740422-13861500-ba38-11e9-911b-6d377afe71f8.png)
 
 With "All" selected in "Page selector" if you close a tab for which there are entries in the logger, these entries will be marked as _void_, i.e. they will be faded out, to indicate the tab for these entries does not exist anymore.
 
@@ -110,7 +110,7 @@ The `X` button in the toolbar allows you to remove those void entries from the l
 
 #### Clear
 
-![Figure 7](https://cloud.githubusercontent.com/assets/585534/8035480/1735ce04-0dbf-11e5-91f4-d20be43af4a9.png)
+![Figure 7](https://user-images.githubusercontent.com/886325/62740450-2c8ec600-ba38-11e9-9f6b-e6b113cd8ebe.png)
 
 This is to clear the logger, to remove all entries from the selected/filtered context (Ars Technica tab in this example).
 
@@ -118,7 +118,7 @@ This is to clear the logger, to remove all entries from the selected/filtered co
 
 #### Pause the logger
 
-![Figure 7]()
+![Figure 7](https://user-images.githubusercontent.com/886325/62740475-46c8a400-ba38-11e9-9930-25af7d205abe.png)
 
 TODO
 
@@ -126,7 +126,7 @@ TODO
 
 #### Filtering the logger output
 
-![Figure 8](https://cloud.githubusercontent.com/assets/585534/8035538/66077c8a-0dbf-11e5-9a1a-f2c6204ebbf7.png)
+![Figure 8](https://user-images.githubusercontent.com/886325/62740615-97d89800-ba38-11e9-9b4c-869fac0d0129.png)
 
 You can visually filter entries in the logger using filter expressions. Log entries which do not match _all_ filter expressions will be hidden from view. Syntax for a filter expression:
 
