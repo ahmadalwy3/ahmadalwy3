@@ -1,6 +1,6 @@
-uBlock Origin comes with a logger, which gives the ability to inspect what uBlock is doing with network requests and DOM elements, whether something is blocked or allowed, and which filter, if any, matched a network request or DOM element. This logger is _unified_, meaning it will display _everything_ uBlock does as it occurs.
+uBlock Origin comes with a logger, which gives the ability to inspect what uBlock<sub>₀</sub> is doing with network requests and DOM elements, whether something is blocked or allowed, and which filter, if any, matched a network request or DOM element. This logger is _unified_, meaning it will display _everything_ uBlock<sub>₀</sub> does as it occurs.
 
-The logger is the tool of choice to see, understand, diagnose and fix the functioning of uBlock.
+The logger is the tool of choice to see, understand, diagnose and fix the functioning of uBlock<sub>₀</sub>.
 
 To access the logger, click on the _list_ icon of uBlock Origin's popup UI:
 
@@ -35,10 +35,12 @@ Particular columns indicate:
 1. Type of request
 1. Address of the resource on which filter was applied
 
+Time, Filter/Rule, Context and Partyness columns can be disabled in [Settings dialog](#settings-dialog)
 
-Take note that the network request logger in uBlock is a forward-looking logger: this means only future requests can be logged.
 
-In the spirit of efficiency, uBlock will log entries **IF AND ONLY IF** the logger is opened. Otherwise, if the logger is not opened, no CPU/memory resources are consumed by uBlock for logging purpose.
+Take note that the network request logger in uBlock<sub>₀</sub> is a forward-looking logger: this means only future requests can be logged.
+
+In the spirit of efficiency, uBlock<sub>₀</sub> will log entries **IF AND ONLY IF** the logger is opened. Otherwise, if the logger is not opened, no CPU/memory resources are consumed by uBlock<sub>₀</sub> for logging purpose.
 
 #### Tip
 Hold the <kbd>Shift</kbd> key while clicking the "Open the logger" icon to toggle between opening the logger in a separate window or in a separate tab. uBO will remember that setting when you open the logger next time, without having to hold the <kbd>Shift</kbd> key.
@@ -108,7 +110,7 @@ By clicking this button you can access the popup UI of a specific tab.
 
 ![arrow down icon](https://user-images.githubusercontent.com/886325/62740377-f7827380-ba37-11e9-8be0-fef923ada0d3.png)
 
-By default log entries in the logger are collapsed so as to take no more than one line. Some log entries however might be truncated as a result. This button is to force all those entries with truncated extraneous information to be fully visible.
+By default log entries in the logger are collapsed so as to take no more than one line. Some log entries however might be truncated as a result. This button can be used to expand all entries vertically to larger number of lines (configurable in [Settings dialog](#settings-dialog), default 4) making them more visible.
 
 ***
 
@@ -191,6 +193,8 @@ Pausing the logger will not pause the collation of filter hit statistics, thus i
 ![clipboard icon](https://user-images.githubusercontent.com/886325/62764465-3fcc8080-ba8e-11e9-9388-46a73baf7332.png)
 
 ![export dialog](https://user-images.githubusercontent.com/886325/62765195-e1a09d00-ba8f-11e9-83c4-f2197ed811a3.png)
+
+Allows to easily export log to the system clipboard in format compatible with various discussion boards.
 
 ***
 
