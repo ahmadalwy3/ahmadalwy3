@@ -221,15 +221,15 @@ You can find out from which filter list(s) a static filter originates, by simply
 
 #### Creating filters
 
-![mouse over log in active column](https://cloud.githubusercontent.com/assets/585534/8037213/8bac33f8-0dca-11e5-8610-010d0f9ed030.png)
+![mouse over log in active column](https://user-images.githubusercontent.com/886325/62770372-309fff80-ba9b-11e9-8847-89c858e3db63.png)
 
-Clicking on the 4th cell of a log entry will give you access to the filtering tools dialog (modal), from where you can easily create dynamic URL filtering rules or just standard static filters, and launch the element picker.
+Clicking on the highlighted cell of the log entry will give you access to the filtering tools dialog (modal), from where you can easily create dynamic URL filtering rules or just standard static filters.
 
 ***
 
 ##### Dynamic URL filtering rules
 
-![URL rule tab in details dialog](https://cloud.githubusercontent.com/assets/585534/8037337/31bf8a2e-0dcb-11e5-8a23-aef78f943727.png)
+![URL rule tab in details dialog](https://user-images.githubusercontent.com/886325/62770688-cdfb3380-ba9b-11e9-916c-03dc1bf9643a.png)
 
 Point-and-click to create dynamic URL filtering rules. These rules are temporary by default, you need to click the padlock if you want them to be permanent. Useful to find out which network requests need to be blocked or allowed on a page in order, to fix a broken page, or to further block more useless resources from a page.
 
@@ -239,7 +239,7 @@ See [_"Overview of uBlock's network filtering engine: details"_](./Overview-of-u
 
 ##### Static network filters
 
-![Static filter tab in details dialog](https://cloud.githubusercontent.com/assets/585534/8037377/6ed2d4d4-0dcb-11e5-826c-e5109f72b86b.png)
+![Static filter tab in details dialog](https://user-images.githubusercontent.com/886325/62770779-0733a380-ba9c-11e9-99e2-77eeb7ac6290.png)
 
 This dialog will assist you in creating static filters compatible with [ABP filter syntax](https://adblockplus.org/filter-cheatsheet). Note that creating static filters incur a significant overhead relative to dynamic URL filtering rules. Typically, you will first use dynamic URL filtering rules to quickly diagnose which network requests need to be allowed/blocked.
 
