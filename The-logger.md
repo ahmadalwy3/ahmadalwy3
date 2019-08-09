@@ -1,6 +1,6 @@
-uBlock Origin comes with a logger, which gives the ability to inspect what uBlock<sub>₀</sub> is doing with network requests and DOM elements, whether something is blocked or allowed, and which filter, if any, matched a network request or DOM element. This logger is _unified_, meaning it will display _everything_ uBlock<sub>₀</sub> does as it occurs.
+uBlock Origin comes with a logger, which gives the ability to inspect what uBlock₀ is doing with network requests and DOM elements, whether something is blocked or allowed, and which filter, if any, matched a network request or DOM element. This logger is _unified_, meaning it will display _everything_ uBlock₀ does as it occurs.
 
-The logger is the tool of choice to see, understand, diagnose and fix the functioning of uBlock<sub>₀</sub>.
+The logger is the tool of choice to see, understand, diagnose and fix the functioning of uBlock₀.
 
 To access the logger, click on the _list_ icon of uBlock Origin's popup UI:
 
@@ -38,9 +38,9 @@ Particular columns indicate:
 Time, Filter/Rule, Context and Partyness columns can be disabled in [Settings dialog](#settings-dialog)
 
 
-Take note that the network request logger in uBlock<sub>₀</sub> is a forward-looking logger: this means only future requests can be logged.
+Take note that the network request logger in uBlock₀ is a forward-looking logger: this means only future requests can be logged.
 
-In the spirit of efficiency, uBlock<sub>₀</sub> will log entries **IF AND ONLY IF** the logger is opened. Otherwise, if the logger is not opened, no CPU/memory resources are consumed by uBlock<sub>₀</sub> for logging purpose.
+In the spirit of efficiency, uBlock₀ will log entries **IF AND ONLY IF** the logger is opened. Otherwise, if the logger is not opened, no CPU/memory resources are consumed by uBlock₀ for logging purpose.
 
 #### Tip
 Hold the <kbd>Shift</kbd> key while clicking the "Open the logger" icon to toggle between opening the logger in a separate window or in a separate tab. uBO will remember that setting when you open the logger next time, without having to hold the <kbd>Shift</kbd> key.
