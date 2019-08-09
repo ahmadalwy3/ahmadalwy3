@@ -130,6 +130,8 @@ The `X` button in the toolbar allows you to remove those void entries from the l
 
 This is to clear the logger, to remove all entries from the selected/filtered context (Ars Technica tab in this example).
 
+_Tabless_ request (faded out) may also appear in current page log. To clear them out, click Clear icon second time.
+
 ***
 
 #### Pause the logger
