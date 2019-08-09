@@ -19,7 +19,22 @@ The color of a row hints at how the resource was filtered:
     - A blocked request for a resource was redirected (`<<`) to a local, "neutered" replacement resource.
     - A defuser scriptlet was injected into the page (`+js(...)`)
 
-When a resource is blocked/allowed/hidden/redirected, the second column in the row will provide further information. For blocked/allowed/hidden resources, the column will contains the responsible filter. For redirection, the column will contains the local resource used as replacement to the blocked network request.
+
+Particular columns indicate:
+1. Timestamp of the event
+1. For blocked/allowed/hidden resources, the column will contains the responsible filter. For redirection, local resource used as replacement to the blocked network request.
+1. Action taken by uBlock Origin:
+    - `--` blocked request
+    - `++` allowed by exception filter/rule
+    - `<<` redirection to neutered resource
+1. Context identifier (domain) in which the filter is evaluated
+1. _Partyness_ of the network request related to main document, and optionally after comma, _partyness_ of the request in relation to embedded subdocument
+    - `1` for the first-party requests
+    - `3` for third-party requests
+    - `0` for _tabless_ requests (behind the scene)
+1. Type of request
+1. Address of the resource on which filter was applied
+
 
 Take note that the network request logger in uBlock is a forward-looking logger: this means only future requests can be logged.
 
@@ -39,6 +54,9 @@ Hold the <kbd>Shift</kbd> key while clicking the "Open the logger" icon to toggl
 - [Clear](#clear)
 - [Pause the logger](#pause-the-logger)
 - [Filtering the logger output](#filtering-the-logger-output)
+- [Filter statistics](#filter-statistics)
+- [Export dialog](#export-dialog)
+- [Settings dialog](#settings-dialog)
 - [Finding from which list(s) a static filter originates](#finding-from-which-lists-a-static-filter-originates)
 - [Creating filters](#creating-filters)
     - [Dynamic URL filtering rules](#dynamic-url-filtering-rules)
@@ -158,25 +176,42 @@ Examples:
 
 ***
 
-#### Maximum number of entries
+#### Filter statistics
 
-![Figure 9]()
+![chart icon](https://user-images.githubusercontent.com/886325/62764319-e19f9d80-ba8d-11e9-8ada-7725e1ac9dae.png)
 
-This is the maximum number of entries allowed in the logger. When the maximum is reached, the oldest entries at the bottom will be removed to make place to newest entries at the top.
+The current implementation reports statistics for all static filters, and the presentation/feature set is intentionally minimal: *Do not open issues about this.* It's still a work in progress and it will be worked on slowly and thoughtfully over time and as time allows.
 
-This is useful to be sure the logger does not unduly consume a huge amount of memory if left open for long period of time. Usually, the most recent entries are the ones of interest. When this value is not set, there is a built-in limit of 5,000 entries.
+Pausing the logger will not pause the collation of filter hit statistics, thus it is possible to lower the logger overhead by pausing logger output without losing filter hit collation.
+
+***
+
+#### Export dialog
+
+![clipboard icon](https://user-images.githubusercontent.com/886325/62764465-3fcc8080-ba8e-11e9-9388-46a73baf7332.png)
+
+![export dialog](https://user-images.githubusercontent.com/886325/62765195-e1a09d00-ba8f-11e9-83c4-f2197ed811a3.png)
+
+***
+
+#### Settings dialog
+
+![gear icon](https://user-images.githubusercontent.com/886325/62764519-625e9980-ba8e-11e9-839c-cf10fe0a29b8.png)
+
+![settings dialog](https://user-images.githubusercontent.com/886325/62765348-3fcd8000-ba90-11e9-82d3-32745a41edf4.png)
 
 ***
 
 #### Finding from which list(s) a static filter originates
 
-You can find out from which filter list(s) a static filter originates, by simply clicking on it:
+You can find out from which filter list(s) a static filter originates, by simply clicking on it (or in any other highlighted column):
 
-![mouse over log in active column](https://cloud.githubusercontent.com/assets/585534/8145767/e2d4eafe-11e3-11e5-9af3-6692531403fa.png)
+![mouse over log in active column](https://user-images.githubusercontent.com/886325/62765676-e6198580-ba90-11e9-89b7-1a2d02dc98b4.png)
 
-![filter details dialog](https://cloud.githubusercontent.com/assets/585534/8145768/e431716a-11e3-11e5-859c-794d37c7c41e.png)
+![filter details dialog](https://user-images.githubusercontent.com/886325/62765805-32fd5c00-ba91-11e9-8fd6-709279411319.png)
 
-When the filter list is rendered as a link, clicking on it will bring you to the support site for that list.
+- Clicking on filter list name will open assets viewer with content of that list.
+- Home icon next to the filter name will bring you to the support site for that list.
 
 ***
 
