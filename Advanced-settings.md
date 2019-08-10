@@ -237,22 +237,23 @@ Controls duration of the [Strict blocking](https://github.com/gorhill/uBlock/wik
 
 Default: `unset`, before [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3): `false`.
 
-After [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3) works again in Firefox. Possible values:
+Possible values:
 
 - `unset`: leave it to the platform to pick the optimal
   behavior (default)
 - `no`: do no suspend tab loading at launch time
 - `yes`: suspend tab loading at launch time
 
+After [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3) configurable again in Firefox. 
 After uBO [1.17.5rc0](https://github.com/gorhill/uBlock/commit/41548be6be35fe17dbb996e605c4befb09e16911) - Chromium only. Firefox now uses ["persistent startup listeners"](https://bugzilla.mozilla.org/show_bug.cgi?id=1503721) by default.
 
-If set to `true`, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
+If enabled, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
 
-Disclaimer: even with this setting enabled (set to `true`), it's impossible for uBO to guarantee with 100% certainty that everything will be properly blocked when the browser is launched. **This is a by-design browser issue** -- do _not_ open an issue on uBO issue tracker about this.
+Disclaimer: especially in Chromium based browsers, even with this setting enabled, it's impossible for uBO to guarantee with 100% certainty that everything will be properly blocked when the browser is launched. **This is a by-design browser issue** -- do _not_ open an issue on uBO issue tracker about this.
 
 Related browser issues:
 - Chromium: <https://bugs.chromium.org/p/chromium/issues/detail?id=523634>
-- Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1378459>
+- Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1378459>, fixed by <https://bugzilla.mozilla.org/show_bug.cgi?id=1447551>.
 
 ***
 
