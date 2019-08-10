@@ -9,9 +9,9 @@
     - [_Settings_](./Dashboard:-Settings) pane
     - [_Filter lists_](./Dashboard:-Filter-lists) pane
         - [Filter lists from around the web](./Filter-lists-from-around-the-web)
-    - [_My filters_](./Dashboard:-My-filters) pane (TODO)
+    - [_My filters_](./Dashboard:-My-filters) pane
         - [Static filter syntax](./Static-filter-syntax)
-    - [_My rules_](./Dashboard:-My-rules) pane (TODO)
+    - [_My rules_](./Dashboard:-My-rules) pane
         - [Dynamic filtering rule syntax](./Dynamic-filtering:-rule-syntax)
     - [_Whitelist_ pane](./Dashboard:-Whitelist)
         - [How to whitelist a web site](./How-to-whitelist-a-web-site)
