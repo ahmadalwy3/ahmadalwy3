@@ -93,7 +93,7 @@ Introduced in [1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007b
 The badge color will hint at the current blocking mode.
 There are four colors for the four following blocking
 modes:
-1. Default
+1. Default blocking mode
 1. 3rd-party scripts and frames blocked
 1. All 3rd parties blocked
 1. JavaScript wholly disabled
