@@ -1,7 +1,7 @@
 - [Advanced-user-features](./Advanced-user-features)
 - [Advanced-settings](./Advanced-settings)
 - [Chinese translation of this Wiki: 中文](https://github.com/fang5566/uBlock/wiki/Home)
-- [Change log](https://github.com/gorhill/uBlock/releases) / [Pre-fork: 0.9.3.0 - 0.2.0.0](https://github.com/chrisaljoudi/uBlock/releases) / [Pre-fork: 0.1.4.8 and less](./Change-log)
+- [Change log](https://github.com/gorhill/uBlock/releases) / [Pre-fork: 0.9.3.0 - 0.2.0.0](https://github.com/uBlock-LLC/uBlock/releases?after=0.9.3.0) / [Pre-fork: 0.1.4.8 and less](./Change-log)
 - [Permissions](./Permissions)
     - [Can you trust uBlock Origin?](./Can-you-trust-uBlock-Origin%3F)
 - [Privacy policy](./Privacy-policy)
