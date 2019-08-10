@@ -185,6 +185,8 @@ Equivalent to `stylesheet` [option](https://adblockplus.org/filters#options). Fo
 
 For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](./Strict-blocking).
 
+See also: [`all`](#all)
+
 #### `first-party`
 
 Equivalent to `~third-party` [option](https://adblockplus.org/filters#options). Provided strictly for convenience (0.9.9.0).
