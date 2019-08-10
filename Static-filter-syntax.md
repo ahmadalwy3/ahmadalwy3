@@ -229,6 +229,11 @@ A source hostname should always be specified, so the `domain=` option is strongl
 
 <sub>__*__ redirections applied to all destinations (starting with `*`) cannot be narrowed by `first-party` or `~third-party` option [#3590](https://github.com/gorhill/uBlock/issues/3590)</sub>
 
+
+#### `redirect-rule`
+
+The purpose of this option is to add the ability to create standalone [`redirect`](#redirect) rule without being forced to create a block filter (a corresponding block filter is always created when using the `redirect=`).
+
 #### `xhr`
 
 Equivalent to `xmlhttprequest` [option](https://adblockplus.org/filters#options). For convenience.
