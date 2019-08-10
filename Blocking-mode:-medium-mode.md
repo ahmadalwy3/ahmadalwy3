@@ -8,8 +8,11 @@ Blocking-wise, this is one significant leap from [easy mode](https://github.com/
 
 This is where you start to use [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering), a feature available only when you tell uBlock Origin that you are an [advanced user](https://github.com/gorhill/uBlock/wiki/Advanced-user-features). Be sure to read [the guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) before, it is assumed that you understand well how dynamic filtering works in order to use medium mode effectively.
 
-![3rd-party scripts are blocked by default](https://cloud.githubusercontent.com/assets/585534/9021740/41eac000-3821-11e5-9842-c4c6fea573c3.png)<br>
-<sup>3rd-party scripts and frames are blocked by default.</sup>
+![3rd-party scripts are blocked by default](https://cloud.githubusercontent.com/assets/585534/9021740/41eac000-3821-11e5-9842-c4c6fea573c3.png)
+<br>3rd-party scripts and frames are blocked by default.
+
+![toolbar button badge](https://user-images.githubusercontent.com/886325/62827018-f29ffa00-bbc6-11e9-97db-06ecfe7ef89b.png)
+<br>Starting with [v1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945), dark orange badge on uBlock₀ toolbar button indicates activation of the medium mode.
 
 Using medium mode will significantly improve your browser performance, and similarly significantly reduce your privacy exposure compared to easy mode.
 
