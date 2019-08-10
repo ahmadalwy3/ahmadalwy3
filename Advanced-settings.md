@@ -84,6 +84,26 @@ The time to wait in hours between each update session. uBO will always start an 
 
 ***
 
+#### blockingProfileColors
+
+Default: `#666666 #E7552C #F69454 #008DCB`
+
+Introduced in [1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945)
+
+
+
+***
+
+#### blockingProfiles
+
+Default: `11101 11001 00001`
+
+Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a4645f0c9c1e6dbedb56b5fb5d7)
+
+
+
+***
+
 #### `cacheControlForFirefox1376932`
 
 Default: `no-cache, no-store, must-revalidate`.
