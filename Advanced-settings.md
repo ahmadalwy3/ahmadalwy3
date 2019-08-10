@@ -84,17 +84,30 @@ The time to wait in hours between each update session. uBO will always start an 
 
 ***
 
-#### blockingProfileColors
+#### `blockingProfileColors`
 
 Default: `#666666 #E7552C #F69454 #008DCB`
 
 Introduced in [1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945)
 
+The badge color will hint at the current blocking mode.
+There are four colors for the four following blocking
+modes:
+- JavaScript wholly disabled
+- All 3rd parties blocked
+- 3rd-party scripts and frames blocked
+- None of the above
 
+The default badge color will be used when JavaScript is not
+wholly disabled and when there are no rules for `3p`,
+`3p-script` or `3p-frame`. 
+
+The value *must* be a sequence of 4 valid CSS color values that match 6 hexadecimal digits
+prefixed with`#` -- anything else will be ignored.
 
 ***
 
-#### blockingProfiles
+#### `blockingProfiles`
 
 Default: `11101 11001 00001`
 
