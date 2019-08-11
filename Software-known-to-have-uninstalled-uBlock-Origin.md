@@ -8,13 +8,13 @@ Here is a list of those software which are known to have uninstalled uBlock Orig
 
     Report form: https://analysis.avira.com/en/submit
 
-- ClamAV + Malware Block List (Malware Patrol):
+- ClamAV:
     - https://github.com/gorhill/uBlock/issues/2315
     - https://github.com/uBlockOrigin/uBlock-issues/issues/599
     - https://github.com/uBlockOrigin/uBlock-issues/issues/698
     - https://github.com/uBlockOrigin/uBlock-issues/issues/700
 
-    Report forms: 
+    Report forms:
     - ClamAV: https://www.clamav.net/reports/fp
     - Immunet: https://www.immunet.com/false_positive
     - Malware Patrol: fp (@) malwarepatrol.net
