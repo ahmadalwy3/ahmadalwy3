@@ -3,12 +3,15 @@ Some software may end up removing uBlock Origin ("uBO"). The reason why they rem
 Here is a list of those software which are known to have uninstalled uBlock Origin:
 
 - Avira AntiVirus
-    - <https://github.com/gorhill/uBlock/issues/882>.
-    - <https://github.com/gorhill/uBlock/issues/1074>.
+    - https://github.com/gorhill/uBlock/issues/882
+    - https://github.com/gorhill/uBlock/issues/1074
 - ClamAV + Malware Block List (Malware Patrol)
-    - <https://github.com/gorhill/uBlock/issues/2315>.
+    - https://github.com/gorhill/uBlock/issues/2315
+    - https://github.com/uBlockOrigin/uBlock-issues/issues/599
+    - https://github.com/uBlockOrigin/uBlock-issues/issues/698
+    - https://github.com/uBlockOrigin/uBlock-issues/issues/700
 - Junkware Removal Tool
-    - <https://github.com/gorhill/uBlock/issues/882#issuecomment-154879542>.
+    - https://github.com/gorhill/uBlock/issues/882#issuecomment-154879542
 - SpyHunter 4
-    - <https://github.com/gorhill/uBlock/issues/1009>.
+    - https://github.com/gorhill/uBlock/issues/1009
     - [Of interest](http://www.bleepingcomputer.com/forums/t/550005/spyhunter-vs-malwarebytes-vs-iobit/#entry3491488): "In _my opinion_ SpyHunter is a **dubious program** with a high rate of [false positives](https://www.mywot.com/en/scorecard/enigmasoftware.com)".
