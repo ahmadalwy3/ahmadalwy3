@@ -8,7 +8,7 @@ Blocking-wise, this is a small leap from [medium mode](https://github.com/gorhil
 
 This mode will block all 3rd parties by default, so it keeps privacy exposure to 3rd parties to a minimum.
 
-![3rd-party network requests are blocked by default](https://cloud.githubusercontent.com/assets/585534/9021738/3d1e42cc-3821-11e5-82be-f236e5fb8ca3.png)<br>
+![3rd-party network requests are blocked by default](https://user-images.githubusercontent.com/585534/62878365-f2068100-bcf6-11e9-9085-aea67cef7e4e.png)<br>
 <sup>3rd-party network requests are blocked by default.</sup>
 
 ![toolbar button badge](https://user-images.githubusercontent.com/585534/62878220-abb12200-bcf6-11e9-8c0b-79f5f2ed96c5.png)
