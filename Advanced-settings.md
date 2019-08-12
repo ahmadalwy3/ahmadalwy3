@@ -105,7 +105,7 @@ Each code consist of bit field indicating status of the feature ( 1 for blocked/
 | 3p-frame | 3p-script | 3p     | no-scripting | reload action | separator | CSS color value |
 | ---      | ---       | ---    | ---          | ---           | ---       | ---             |
 
-Pressing "Relax blocking mode" will compare current uBO status with `blockingProfiles` codes from left to right and apply if it's different.
+Pressing "Relax blocking mode" will compare current uBO status with `blockingProfiles` codes from left to right and apply if it's different, then reload page if "reload action" is enabled, then apply color to the uBO icon badge.
 
 ***
 
