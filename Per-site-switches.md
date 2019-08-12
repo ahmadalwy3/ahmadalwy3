@@ -134,8 +134,8 @@ Wholly disable JavaScript for a given site.
 <br>The badge shows approximate number of script resources which have
 been seen on the page (number is limited to 99 because of layout constraints)
 
-![button badge](https://user-images.githubusercontent.com/886325/62826738-24ae5d80-bbc1-11e9-8376-19f6a9b79915.png)
-<br>Starting with [v1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945), blue badge on uBlock₀ toolbar button indicates activation of the "No scripting" switch.
+![button badge](https://user-images.githubusercontent.com/585534/62879616-82de5c00-bcf9-11e9-92cd-9f8233eeb8a1.png)
+<br>Starting with [v1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945), a purple badge on uBlock₀ toolbar button indicates activation of the "No scripting" switch.
 
 This master switch has blocking precedence over dynamic filtering rules and static filters related to script resources.
 
