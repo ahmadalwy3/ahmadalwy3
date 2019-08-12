@@ -88,7 +88,24 @@ The time to wait in hours between each update session. uBO will always start an 
 
 Default: `11101 11001 00001`
 
-Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a4645f0c9c1e6dbedb56b5fb5d7)
+After [1.21.7b6](https://github.com/gorhill/uBlock/commit/07c950f1e5794a7cfc6d091c2f29a76557adc717): `11111/#F00 11011/#C0F 11001/#00F 00001`
+
+Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a4645f0c9c1e6dbedb56b5fb5d7), improved after 1.21.7b6 to reflect blocking mode in the color of uBlock₀ icon badge.
+
+Preference allows to configure cascade of the "Relax blocking mode" shortcut, along with corresponding badge color.
+
+Default value contains four codes separated by space representing four blocking modes:
+
+| Hard mode + No scripting | Medium mode + No scripting | Medium mode | Default |
+| ---                      | ---                        | ---         | ---     |
+| 11111/#F00               | 11011/#C0F                 | 11001/#00F  | 00001   |
+
+Each code consist of bit field indicating status of the feature ( 1 for blocked/enabled, 0 for not blocked/disabled ), separator `/` and CSS color.
+
+| 3p-frame | 3p-script | 3p     | no-scripting | reload action | separator | CSS color value |
+| ---      | ---       | ---    | ---          | ---           | ---       | ---             |
+
+Pressing "Relax blocking mode" will compare current uBO status with `blockingProfiles` codes from left to right and apply if it's different.
 
 ***
 
