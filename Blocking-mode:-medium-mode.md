@@ -11,8 +11,8 @@ This is where you start to use [dynamic filtering](https://github.com/gorhill/uB
 ![3rd-party scripts are blocked by default](https://cloud.githubusercontent.com/assets/585534/9021740/41eac000-3821-11e5-9842-c4c6fea573c3.png)
 <br>3rd-party scripts and frames are blocked by default.
 
-![toolbar button badge](https://user-images.githubusercontent.com/886325/62827018-f29ffa00-bbc6-11e9-97db-06ecfe7ef89b.png)
-<br>Starting with [v1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945), dark orange badge on uBlock₀ toolbar button indicates activation of the medium mode.
+![toolbar button badge](https://user-images.githubusercontent.com/585534/62877716-a901fd00-bcf5-11e9-95fa-cd021865d2c8.png)
+<br>Starting with [v1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945), a blue badge on uBlock₀ toolbar button indicates activation of the medium mode.
 
 Using medium mode will significantly improve your browser performance, and similarly significantly reduce your privacy exposure compared to easy mode.
 
