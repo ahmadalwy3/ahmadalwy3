@@ -8,7 +8,7 @@ Blocking-wise, this is one significant leap from [easy mode](https://github.com/
 
 This is where you start to use [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering), a feature available only when you tell uBlock Origin that you are an [advanced user](https://github.com/gorhill/uBlock/wiki/Advanced-user-features). Be sure to read [the guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) before, it is assumed that you understand well how dynamic filtering works in order to use medium mode effectively.
 
-![3rd-party scripts are blocked by default](https://cloud.githubusercontent.com/assets/585534/9021740/41eac000-3821-11e5-9842-c4c6fea573c3.png)
+![3rd-party scripts are blocked by default](https://user-images.githubusercontent.com/585534/62878866-f41d0f80-bcf7-11e9-890e-c90438d7f982.png)
 <br>3rd-party scripts and frames are blocked by default.
 
 ![toolbar button badge](https://user-images.githubusercontent.com/585534/62877716-a901fd00-bcf5-11e9-95fa-cd021865d2c8.png)
