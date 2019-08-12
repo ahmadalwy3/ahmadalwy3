@@ -1,3 +1,7 @@
+[Back to "Quick guide: popup user interface"](./Quick-guide:-popup-user-interface)
+
+***
+
 The per-site switches allows you to control uBlock's behavior on a per-site basis.
 
 New in [1.17.0](https://github.com/gorhill/uBlock/commit/6d34a52179aaa8fdf701b3bc7ab80f02ed5f0f23): 
