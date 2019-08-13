@@ -125,6 +125,9 @@ Possible values:
 `no-cache`:
 - Undesirable side effect: One will need to explicitly cache-bypass reload a page each time uBO has to inject CSP directives as a result of filters/ruleset. Note that such cache-bypass reload does not affect only the document itself, but also all secondary resources inside that document.
 
+`unset`:
+- Available after [1.21.7b7](https://github.com/gorhill/uBlock/commit/52925ba2f9ed4351c0f5c7420773d2f59557fc7d), turns off this path.
+
 Related browser issues:
 - Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1376932>
 
