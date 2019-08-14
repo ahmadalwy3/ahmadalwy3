@@ -187,6 +187,14 @@ For _block_ filters only. This is _type_ option (like `image` or `script`) which
 
 See also: [`all`](#all)
 
+#### `empty`
+
+New in [1.21.7b7](https://github.com/gorhill/uBlock/commit/3e5c9e00ab3603ae0c02e08b007b084404bbb71d)
+
+The filter option `empty` is converted to `redirect=empty` by uBO internally; however unlike when the [`redirect`](#redirect) option is used expressly, the `empty` option does not require a resource type.
+
+When `empty` is used, only network requests which are meant to return a text response will be redirected to an empty response body by uBO - so `empty` will not work for resources such as images, media, or other binary resources.
+
 #### `first-party`
 
 Equivalent to `~third-party` [option](https://adblockplus.org/filters#options). Provided strictly for convenience (0.9.9.0).
