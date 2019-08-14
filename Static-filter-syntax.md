@@ -314,4 +314,6 @@ Starting from [1.15.12](https://github.com/gorhill/uBlock/commit/ec56165d0d36ab9
 
 This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](./Resources-Library). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
 
+Some scriptlets support additional parameters, which can be specified after scriptlet name, separated by comma. Commas in parameters must be escaped. Before [1.21.7b8](https://github.com/gorhill/uBlock/commit/d67340f14db6ce5b446ef0ff4586b5e4d31f1086#diff-b03ba512faa0934947e57d28dc99b43bL242) this was possible only in regex literals (`/foo\x2Cbar\u002Cbaz/`), now backslash character is sufficient (`foo\,bar`).
+
 Generic `+js` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##+js(nobab)` will inject [`bab-defuser`](./Resources-Library#bab-defuserjs-) into pages on `example.com` domain.
