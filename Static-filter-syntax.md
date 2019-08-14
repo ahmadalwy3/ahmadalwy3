@@ -195,6 +195,8 @@ The filter option `empty` is converted to `redirect=empty` by uBO internally; ho
 
 When `empty` is used, only network requests which are meant to return a text response will be redirected to an empty response body by uBO - so `empty` will not work for resources such as images, media, or other binary resources.
 
+See also: [`mp4`](#mp4), [`redirect`](#redirect)
+
 #### `first-party`
 
 Equivalent to `~third-party` [option](https://adblockplus.org/filters#options). Provided strictly for convenience (0.9.9.0).
@@ -218,6 +220,14 @@ To specifically disable inline script tags in a main page via CSP: `||example.co
 #### `inline-font`
 
 To specifically disable inline font tags in a main page via CSP: `||example.com^$inline-font`.
+
+#### `mp4`
+
+New in [1.21.7b8](https://github.com/gorhill/uBlock/commit/68ae847ba385c09c5efa511d18a18a4753af47be).
+
+The `mp4` filter option will be converted to `redirect=noopmp4-1s` internally, and `media` type will be assumed.
+
+See also: [`empty`](#empty), [`redirect`](#redirect)
 
 #### `popunder`
 
