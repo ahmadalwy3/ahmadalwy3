@@ -14,7 +14,7 @@ Whereas the element picker is useful to interactively create cosmetic filters th
 
 #### Creating cosmetic filter exception:
 
-- Locate the filter (red text) by moving mouser around in DOM inspector tree (elements on page should highlight, on Firefox you will clearly see elements previously hidden now highlighted in red)
+- Locate the filter (red text) by moving mouse around in DOM inspector tree (elements on page should highlight, on Firefox you will clearly see elements previously hidden now highlighted in red)
 - Click on it (hidden element highlighting should change to green)
 - Click on save icon in DOM inspector toolbar (floppy disk)
 - Reload page
