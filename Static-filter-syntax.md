@@ -256,11 +256,11 @@ Allows to create standalone [`redirect`](#redirect) rule without being forced to
 
 For example, consider the following filter:
 
-`||example.com/ads.js$script,redirect=noop.js`
+    ||example.com/ads.js$script,redirect=noop.js
 
-The above filter will result in a block filter ||example.com/ads.js$script **and** a matching redirect directive. Now consider this following filter:
+The above filter will result in a block filter `||example.com/ads.js$script` **and** a matching redirect directive. Now consider this following filter:
 
-`||example.com/ads.js$script,redirect-rule=noop.js`
+    ||example.com/ads.js$script,redirect-rule=noop.js
 
 The above filter will not cause a block filter to be created, only a redirect directive will be created. Standalone redirect directives are useful when the blocking of a resource is optional but we still want the resource to be redirected should it ever be blocked by whatever mean - whether through a separate block filter, a dynamic filtering rule, etc.
 
