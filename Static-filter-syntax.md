@@ -345,3 +345,17 @@ This allows the injection of specific javascript code into pages. The `...` part
 Some scriptlets support additional parameters, which can be specified after scriptlet name, separated by comma. Commas in parameters must be escaped. Before [1.21.7b8](https://github.com/gorhill/uBlock/commit/d67340f14db6ce5b446ef0ff4586b5e4d31f1086#diff-b03ba512faa0934947e57d28dc99b43bL242) this was possible only in regex literals (`/foo\x2Cbar\u002Cbaz/`), now backslash character is sufficient (`foo\,bar`).
 
 Generic `+js` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##+js(nobab)` will inject [`bab-defuser`](./Resources-Library#bab-defuserjs-) into pages on `example.com` domain.
+
+Starting with [1.21.9b1](https://github.com/gorhill/uBlock/commit/bf3c92574e5f2386fe2abb4de779e782b0b5a1d2) new exception syntax has been added, allowing to wholly disable scriptlet injection for a given site without having to create exceptions for all matching scriptlet injection filters.
+
+The following exception filter will cause scriptlet injection to be wholly disable for `example.com`:
+
+    example.com#@#+js()
+
+Or to disable scriptlet injection everywhere:
+
+    #@#+js()
+
+The following form is meaningless and will be ignored:
+
+    example.com##+js()
