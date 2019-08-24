@@ -4,6 +4,8 @@
 
 The per-site switches allows you to control uBlock's behavior on a per-site basis.
 
+![Popup UI](https://user-images.githubusercontent.com/585534/46020955-8bac4c00-c0ad-11e8-8c33-33fc921cfcc6.png)
+
 New in [1.17.0](https://github.com/gorhill/uBlock/commit/6d34a52179aaa8fdf701b3bc7ab80f02ed5f0f23): 
 
 Changes to the state of per-site switches will be deemed temporary **if and only if** the [overview panel](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-overview-panel) is visible.
@@ -12,7 +14,10 @@ When the overview panel is not visible, toggling a per-site switch will cause th
 
 However, when the overview panel is visible, toggling a per-site switch will cause the change to be temporary. In such case, there will be an eraser and a padlock icon in the overview pane, which can be used to revert or persist the current state of all the per-site switches.
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46020955-8bac4c00-c0ad-11e8-8c33-33fc921cfcc6.png)
+![eraser and padlock](https://user-images.githubusercontent.com/886325/63635690-89f45b00-c665-11e9-9d35-2911b15a9c52.png)
+<br><sup>Eraser and padlock icons</sup>
+
+***
 
 - [No popups](#no-popups)
 - [No large media elements](#no-large-media-elements)
