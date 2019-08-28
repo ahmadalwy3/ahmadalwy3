@@ -85,14 +85,18 @@ For the time being, only a single token is supported in a `!#if` directive (can 
     env_firefox
     env_mobile
     env_safari
+    false (1.21.9b7)
     cap_html_filtering
     cap_user_stylesheet
 
-Tip: since `ext_ublock` is always true in uBO, you can use a `!#if` directive to disable a large block of your filters without having to remove them:
+Starting from [1.21.9b7](https://github.com/gorhill/uBlock/commit/1d805fb9da1aad918d02cc74796d5aa5e974b184) you can use `!#if false` directive to disable a large block of your filters without having to remove them. 
 
-    !#if !ext_ublock
+    !#if false
     ...
     !#endif
+
+Before this version, you could use negated `ext_ublock`, since this token is always true in uBO.
+
 
 ## Extended syntax
 
