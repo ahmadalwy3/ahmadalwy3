@@ -1,5 +1,5 @@
-- Back to [Wiki home](https://github.com/gorhill/uBlock/wiki)
-- Back to [Dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard)
+- Back to [Wiki home](./)
+- Back to [Dashboard](./Dashboard)
 
 ***
 
@@ -35,4 +35,4 @@ If despite this warning you still want to remove one or more of the predefined w
 
 ### Whitelist directive syntax
 
-Further details about the supported syntax for whitelist directives can be found at ["How to whitelist a web site"](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site).
+Further details about the supported syntax for whitelist directives can be found at ["How to whitelist a web site"](./How-to-whitelist-a-web-site).
