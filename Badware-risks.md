@@ -1,5 +1,5 @@
-- Back to [Wiki home](https://github.com/gorhill/uBlock/wiki)
-- Back to [Strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking)
+- Back to [Wiki home](./)
+- Back to [Strict blocking](./Strict-blocking)
 
 ***
 
