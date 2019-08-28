@@ -9,9 +9,10 @@ However uBO does not support some very specific cases, and also adds its own ext
     - [Static extended filtering](#static-extended-filtering)
         - [Entity](#entity)
         - [Cosmetic filters](#cosmetic-filters)
-            - [Procedural cosmetic filters](./Procedural-cosmetic-filters)
+            - [Procedural cosmetic filters ↪](./Procedural-cosmetic-filters)
         - [HTML filters](#html-filters)
         - [Scriptlet injection](#scriptlet-injection)
+			- [Resources library ↪](./Resources-Library)
 
 ## Not supported
 
