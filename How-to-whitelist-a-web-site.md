@@ -1,3 +1,9 @@
+- Back to [Wiki home](./)
+- Back to [Dashboard](./Dashboard)
+- Back to [Whitelist pane](./Dashboard:-Whitelist)
+
+***
+
  - [Detailed syntax](#detailed-syntax)
     - [Plain hostname](#plain-hostname)
     - [Single web page](#single-web-page)
@@ -72,9 +78,9 @@ Someone posted instructions on reddit: [Any way to whitelist certain youtube cha
 
 **Be aware!** Following abilities are just side effects of uBO features and no additional work will be done to improve support for them<sup>[1](https://github.com/uBlockOrigin/uBlock-issues/issues/91#issuecomment-400282591),[2](https://github.com/uBlockOrigin/uBlock-issues/issues/586#issuecomment-494021002)</sup>.
 
-Following pages describe how to disable filtering with help of [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering):
- - [Turn off uBlock everywhere temporarily](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere)
- - [Turn off uBlock everywhere _except_ (blacklist mode)](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except).
+Following pages describe how to disable filtering with help of [dynamic filtering](./Dynamic-filtering):
+ - [Turn off uBlock everywhere temporarily](./Dynamic-filtering:-turn-off-uBlock-everywhere)
+ - [Turn off uBlock everywhere _except_ (blacklist mode)](./Dynamic-filtering:-turn-off-uBlock-everywhere-except).
 
 Black list mode can also be achieved by specifically crafted Regular Expression whitelist directive:
 
