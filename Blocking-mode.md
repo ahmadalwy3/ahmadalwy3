@@ -19,11 +19,11 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 
 ***
 
-**Very easy mode** ([details](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-very-easy-mode)):
+**Very easy mode** ([details ↪](./Blocking-mode:-very-easy-mode)):
 - _uBlock filters_.
 - _EasyList_.
 
-**Easy mode** ([details](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode)):
+**Easy mode** ([details ↪](./Blocking-mode:-easy-mode)):
 - This is uBlock's default, out-of-the-box mode.
 - All of uBlock's own filter lists.
 - _EasyList_.
@@ -33,10 +33,10 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - _Malware domains_.
 
 > ***
->  <sub>Of interest: "enhanced" _Easy mode_, which will set you somewhere between _Easy mode_  and _Medium mode_: [Benefits of blocking 3rd-party `iframe` tags](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags)</sub>
+>  <sub>Of interest: "enhanced" _Easy mode_, which will set you somewhere between _Easy mode_  and _Medium mode_: [Benefits of blocking 3rd-party `iframe` tags](./Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags)</sub>
 > ***
 
-**Medium mode** ([details](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode)):
+**Medium mode** ([details ↪](./Blocking-mode:-medium-mode)):
 - uBlock's out-of-the-box settings.
 - _I am an advanced user_ = checked.
 - 3rd-party scripts = globally blocked.
@@ -45,7 +45,7 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - Don't feel like fiddling too much to unbreak a site?
     - A local `noop` rule (gray) on the `3rd-party scripts` and `3rd-party frames` cells will downgrade you to easy, default blocking mode above.
 
-**Hard mode** ([details](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode)):
+**Hard mode** ([details ↪](./Blocking-mode:-hard-mode)):
 - uBlock's out-of-the-box settings.
 - _I am an advanced user_ = checked.
 - 3rd-party scripts = globally blocked.
