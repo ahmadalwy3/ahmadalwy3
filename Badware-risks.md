@@ -6,7 +6,7 @@
 The sites below are included in the _"uBlock filters – Badware risks"_ -- or are candidates for inclusion. The sites are documented to contain [badware](https://en.wikipedia.org/wiki/StopBadware#Defining_.22badware.22) and other programs that have unwanted hidden functionality. Not all downloads on a site may be affected. The block page is there to _remind_ users to be cautious, particularly non-technical users.
 
 Users of uBlock are free to disable blocking by selecting either:
-- Temporarily - The site will be temporarily allowed for a limited time (60 seconds, after [1.17.4](https://github.com/gorhill/uBlock/releases/tag/1.17.4) 120 seconds - [configurable](https://github.com/gorhill/uBlock/wiki/Advanced-settings#strictblockingbypassduration)).
+- Temporarily - The site will be temporarily allowed for a limited time (60 seconds, after [1.17.4](https://github.com/gorhill/uBlock/releases/tag/1.17.4) 120 seconds - [configurable](./Advanced-settings#strictblockingbypassduration)).
 - Permanently - The site will be permanently allowed.
 
 Blocking may be re-enabled by removing specific `no-strict-blocking: ...` line from rules list in _My rules_ pane in uBlock Origin dashboard.
@@ -125,8 +125,8 @@ Below are sites currently part of the list, or sites being candidate for the lis
 - 2018-07-19: ["'uBlock' is used in the name despite that the code base is COMPLETELY unrelated to uBlock Origin's code base"](https://twitter.com/gorhill/status/1019975271443771392)
 - 2018-05-17: [Privacy Tool uBlock (NOT uBlock Origin) Adds User Tracking Feature](https://soylentnews.org/article.pl?sid=18/05/17/028245)
 - 2018-04-11: ["Implement Stats data capture feature" - commit in uBlock repository](https://github.com/uBlockAdmin/uBlock/commit/76b89c0a22d20f3a66d7feab14e024f56ca65539) (Archived copy: http://archive.is/1F80E)
-- 2017-10-21: [uBlock Origin is completely unrelated to the web site ublock.org](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-is-completely-unrelated-to-the-web-site-ublock.org)
+- 2017-10-21: [uBlock Origin is completely unrelated to the web site ublock.org](./uBlock-Origin-is-completely-unrelated-to-the-web-site-ublock.org)
 - 2017-07-17: ["Stop accepting donations, or explain where the money are going to!" issues in uBlock repository](https://github.com/uBlockAdmin/uBlock/issues/1706) (Archived copy: http://archive.is/hygmD)
 - 2017-05-14: ["ublock vs. ublock origin" Hacker News discussion](https://news.ycombinator.com/item?id=14335190)
 - 2015-07-23: ["ublock vs. ublock origin" Reddit discussion](https://reddit.com/r/ublock/comments/32mos6/ublock_vs_ublock_origin/)
-- 2014-07-08: [Why don't you accept donations?](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F)
+- 2014-07-08: [Why don't you accept donations?](./Why-don't-you-accept-donations%3F)
