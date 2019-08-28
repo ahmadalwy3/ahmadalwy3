@@ -1,4 +1,4 @@
-[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+[Back to Wiki home](./)
 
 ***
 In uBlock Origin ("uBO"), _strict blocking_ is the blocking of a whole page, i.e. the _root_ document is blocked, so that not a single connection is made to the remote server hosting the web page.
@@ -21,7 +21,7 @@ In the end, the chosen solution is to now have web page themselves subject to fi
 
 In the figure above, the user will be given the choice to go back by closing the window or proceed to the web page by disabling strict blocking by selecting either:
 
-- Temporarily - The site will be temporarily allowed for a limited time (60 seconds, after [1.17.4](https://github.com/gorhill/uBlock/releases/tag/1.17.4) 120 seconds - [configurable](https://github.com/gorhill/uBlock/wiki/Advanced-settings#strictblockingbypassduration)).
+- Temporarily - The site will be temporarily allowed for a limited time (60 seconds, after [1.17.4](https://github.com/gorhill/uBlock/releases/tag/1.17.4) 120 seconds - [configurable](./Advanced-settings#strictblockingbypassduration)).
 - Permanently - The site will be permanently allowed.
 
 This will prevent the web page _proper_ for the site from being blocked by uBO in the future: the filtering of the site will be done exactly as per ABP-filtering semantic, and just like with uBO pre-0.9.3.0.
