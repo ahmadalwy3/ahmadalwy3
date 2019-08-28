@@ -43,7 +43,7 @@
     - [Overview of uBlock's network filtering engine: details](./Overview-of-uBlock's-network-filtering-engine:-details)
     - [Does uBlock block ads or just hide them?](./Does-uBlock-block-ads-or-just-hide-them%3F)
     - [Doesn't uBlock Origin add overhead to page load?](./Doesn't-uBlock-Origin-add-overhead-to-page-load%3F)
-- [Tools](./Tools)
+- [Tools, tests](./Tools)
 - [Deploying uBlock Origin](./Deploying-uBlock-Origin)
 - [Troubleshooting](./Troubleshooting)
     - [Privileged Pages](./Privileged-Pages)
