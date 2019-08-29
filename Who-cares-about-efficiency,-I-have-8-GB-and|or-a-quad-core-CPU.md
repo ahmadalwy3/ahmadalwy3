@@ -2,7 +2,7 @@ Doing more with less is a virtue in software. For users of uBlock, this means:
 
 - Less CPU churn when loading a web page, which may translate into noticeable faster page load.
 - Higher memory consumption correlates with higher CPU-cycle consumption: whatever extra memory is used is memory which has to be allocated/written to/read from (at least once)/garbage collected.
-- Free to use [more filter lists](https://github.com/gorhill/uBlock/wiki/Filter-lists:-gorhill):
+- Free to use more filter lists:
     - For instance, [ABP warns against using too many filter lists](https://adblockplus.org/en/getting_started#subscription): _"It is important to note that you should not add too many filterlists to Adblock Plus"_
 - Longer battery life: each time unit, however small, in which the CPU is idle rather than churning translates into extended battery life.
 - Free to use a blocker on less powerful devices
