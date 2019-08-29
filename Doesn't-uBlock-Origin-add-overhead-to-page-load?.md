@@ -1,4 +1,4 @@
-**TL;DR:** if you worry about uBO's added overhead for non-bloated sites, just [disable cosmetic filtering](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering) on a per-site basis, it is the optimal approach: this will keep you protected security- and privacy-wise (as far as your filters/rules allow) while minimizing the added overhead.
+**TL;DR:** if you worry about uBO's added overhead for non-bloated sites, just [disable cosmetic filtering](./Per-site-switches#no-cosmetic-filtering) on a per-site basis, it is the optimal approach: this will keep you protected security- and privacy-wise (as far as your filters/rules allow) while minimizing the added overhead.
 
 ***
 
@@ -14,9 +14,9 @@ That said, for web pages where uBO finds nothing or very little to block (let's 
 
 Disabling uBO for a site to avoid added the overhead is a judgment call to be made by the user, considering many factors:
 - There is more than just the CPU cycles and memory return to consider with regard to invested overhead: there is also the peace-of-mind return of knowing your blocker is protecting you. There is no guarantee that a nice site will not stop being nice at any given moment, or that a nice site won't ever be hijacked and start to serve bad stuff.
-- If you use [_medium mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode), it does not make much sense to disable uBO since typically this mode is used to also protect against [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery).
+- If you use [_medium mode_](./Blocking-mode:-medium-mode), it does not make much sense to disable uBO since typically this mode is used to also protect against [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery).
 
-There is also another way to reduce the overhead without sacrificing the security/privacy benefits as a result of disabling uBO: just [disable cosmetic filtering](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering) for nice sites -- this will remove good chunk of overhead while keeping you well protected since network filtering is still fully enabled -- whereas, as hinted by its name, cosmetic filtering offers no protection value.
+There is also another way to reduce the overhead without sacrificing the security/privacy benefits as a result of disabling uBO: just [disable cosmetic filtering](./Per-site-switches#no-cosmetic-filtering) for nice sites -- this will remove good chunk of overhead while keeping you well protected since network filtering is still fully enabled -- whereas, as hinted by its name, cosmetic filtering offers no protection value.
 
 If you are curious about the overhead added by uBO for any given web page, you can use this [page load speed tool](http://www.raymondhill.net/ublock/pageloadspeed.html) (won't work for pages which are not allowed to be embedded into frames), with which you can compare how fast a page load with and without uBO, and with different settings in uBO.
 

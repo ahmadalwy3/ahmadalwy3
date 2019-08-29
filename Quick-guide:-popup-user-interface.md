@@ -1,4 +1,4 @@
-[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+[Back to Wiki home](./)
 
 ***
 
@@ -25,7 +25,7 @@ Click the large power button to turn off uBlock **for the current site** (a.k.a.
 
 Alternatively, you can also <kbd>Ctrl</kbd>-click to turn off uBlock only for the current page (<kbd>command ⌘</kbd>-click on Mac).
 
-For more advanced whitelisting control, see ["How to whitelist a web site"](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site).
+For more advanced whitelisting control, see ["How to whitelist a web site"](./How-to-whitelist-a-web-site).
 
 ***
 
@@ -35,15 +35,15 @@ For more advanced whitelisting control, see ["How to whitelist a web site"](http
 
 #### Zap an element on the current page
 
-Click the _flash_ icon to enter [element zapper mode](https://github.com/gorhill/uBlock/wiki/Element-zapper), which allows you to interactively remove one or more elements on the current page. Removing an element is always temporary, i.e. the removed elements will be back when the page is reloaded.
+Click the _flash_ icon to enter [element zapper mode](./Element-zapper), which allows you to interactively remove one or more elements on the current page. Removing an element is always temporary, i.e. the removed elements will be back when the page is reloaded.
 
 #### Create a filter for the current site
 
-Click the _eye-dropper_ icon to enter [element picker mode](https://github.com/gorhill/uBlock/wiki/Element-picker), which allows you to create a filter by interactively picking an element on a page, thus permanently removing it from the page.
+Click the _eye-dropper_ icon to enter [element picker mode](./Element-picker), which allows you to create a filter by interactively picking an element on a page, thus permanently removing it from the page.
 
 #### Open the logger
 
-Click the _list_ icon to open the [logger](https://github.com/gorhill/uBlock/wiki/The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
+Click the _list_ icon to open the [logger](./The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
 
 Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between opening the logger in a separate window or separate tab. uBO will remember that setting when you open the logger without the <kbd>Shift</kbd> key.
 
@@ -79,7 +79,7 @@ There is a good correlation between the _domains connected_ count and: unneeded 
 
 Example: the web page on <http://www.ibtimes.com/> (which can be read fine in all cases, by the way):
 
- uBlock's mode | turned off | default settings | [default-deny](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode)
+ uBlock's mode | turned off | default settings | [default-deny](./Blocking-mode:-medium-mode)
 --- | --- | --- | ---
 domains connected | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1e.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1d.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1f.png)
 privacy exposure | very high | medium | very low
@@ -104,7 +104,7 @@ To hide that panel, just click again on either the _"requests blocked"_ or _"dom
 
 Unless you are in "advanced user" mode, this panel is read-only and available only for informational purpose.
 
-In ["advanced user"](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
+In ["advanced user"](./Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
 
 <sub>__*__ The panel will also be expanded when you enable "advanced user" mode -- this is only for convenience -- it will not close automatically when "advanced user" will be disabled.</sub>
 
@@ -114,4 +114,4 @@ In ["advanced user"](https://github.com/gorhill/uBlock/wiki/Advanced-user-featur
 
 ![Popup UI](https://user-images.githubusercontent.com/585534/46020955-8bac4c00-c0ad-11e8-8c33-33fc921cfcc6.png)
 
-The per-site switches allow you to control some settings on a per-site basis. See [detailed documentation about per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches).
+The per-site switches allow you to control some settings on a per-site basis. See [detailed documentation about per-site switches](./Per-site-switches).

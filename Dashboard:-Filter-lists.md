@@ -1,9 +1,9 @@
-- Back to [Wiki home](https://github.com/gorhill/uBlock/wiki)
-- Back to [Dashboard](https://github.com/gorhill/uBlock/wiki/Dashboard)
+- Back to [Wiki home](./)
+- Back to [Dashboard](./Dashboard)
 
 ***
 
-The _Filter lists_ pane is where you subscribe to filter lists. The filter lists to which you subscribe will feed uBlock Origin's [static filtering engine](https://github.com/gorhill/uBlock/wiki/Overview-of-uBlock's-network-filtering-engine:-details#static-filtering).
+The _Filter lists_ pane is where you subscribe to filter lists. The filter lists to which you subscribe will feed uBlock Origin's [static filtering engine](./Overview-of-uBlock's-network-filtering-engine:-details#static-filtering).
 
 The picture below shows uBlock Origin's default selection of filter lists. You can add more, or remove some of the filter lists already selected by default (for reference, most other blockers have only EasyList selected).
 
@@ -17,7 +17,7 @@ uBlock Origin discards duplicate filters, so the number of filters used within a
 
 When you hover the cursor over the clock icon of a filter list, a tooltip will tell you when the list was last updated. If you click the clock icon, uBO will mark the list as out-of-date. Lists which are out of date will be automatically updated in the background eventually when you check the option _"Auto update filter lists"_. You can force out-of-date lists to be immediately updated by clicking _"Update now"_.
 
-Related: [_"Launch and filter lists load performance"_](https://github.com/gorhill/uBlock/wiki/Launch-and-filter-lists-load-performance).
+Related: [_"Launch and filter lists load performance"_](./Launch-and-filter-lists-load-performance).
 
 ***
 
@@ -38,7 +38,7 @@ When a filter list has been updated using a newer version from its remote locati
 
 ![](https://cloud.githubusercontent.com/assets/585534/25020937/4a6a55b6-205e-11e7-94ac-9c51697f9f90.gif)
 
-Note: "uBlock filters" entry is special - forcing update of this filter list, will also update additional resources when possible (library of resources used by [Scriptlet injection](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection), allowed to be updated on Chromium browser and develpment buils).
+Note: "uBlock filters" entry is special - forcing update of this filter list, will also update additional resources when possible (library of resources used by [Scriptlet injection](./Static-filter-syntax#scriptlet-injection), allowed to be updated on Chromium browser and develpment buils).
 
 ##### Purge all caches
 
@@ -64,4 +64,4 @@ This is a collection of various filter lists, grouped by purpose. To use a speci
 
 You can import custom 3rd-party filter lists: place check mark next to "Import..." in the "Custom" section and paste the URL of where a filter lists can be fetched from in the text area that appears. These custom filter lists will be also automatically updated on a regular basis.
 
-On some specific web pages, it is possible to subscribe to a 3rd-party filter list by simply clicking on a link to the filter list. There is such a page for uBlock Origin: [Filter lists from around the web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
+On some specific web pages, it is possible to subscribe to a 3rd-party filter list by simply clicking on a link to the filter list. There is such a page for uBlock Origin: [Filter lists from around the web](./Filter-lists-from-around-the-web).

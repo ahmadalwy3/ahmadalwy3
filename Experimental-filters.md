@@ -8,8 +8,8 @@ In the unlikelihood you find web pages broken by the _Experimental_ filter list,
 
 There are currently two experimental filters, which are block-then-redirect filters, to block the following resources:
 
-- `googletagservices.com/tag/js/gpt.js`: Normally [not blocked by EasyPrivacy](https://github.com/gorhill/uBlock/wiki/Blocking-mode#easy-mode).
-    - The effect of blocking `googletagservices.com` by default can be appreciated by looking at how often it occurred as a 3rd-party in [_Easy_ blocking mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode) (which is default uBO settings).
+- `googletagservices.com/tag/js/gpt.js`: Normally [not blocked by EasyPrivacy](./Blocking-mode#easy-mode).
+    - The effect of blocking `googletagservices.com` by default can be appreciated by looking at how often it occurred as a 3rd-party in [_Easy_ blocking mode](./Blocking-mode) (which is default uBO settings).
     - Specifically, this would bring the number of 3rd parties hit during the benchmark for the _Easy_ blocking mode from 512 to 466.
     - The neutered script should also further speed up page load speed.
 - `www.google-analytics.com/ga.js`: Normally blocked by uBO, but blocking this resource has sometimes led to page breakage, so exception filters have been required. By forcing a redirect to a neutered version, the goal is to reduce page breakage while avoiding the need to create an exception filter for some sites ([example](https://github.com/gorhill/uBlock/issues/1081#issuecomment-165501960)).

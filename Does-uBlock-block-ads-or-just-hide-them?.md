@@ -18,7 +18,7 @@ uBlock also support the parsing and enforcing of hosts files -- something which 
 
 **Short answer:** resources hidden -- in various ways depending on the class of cosmetic filters.
 
-These filters serve to remove DOM elements from a web page. They have no value privacy-wise, it is essentially to make web page look better by removing unwanted content, which usually cannot be blocked using network filters. Just like ABP, uBlock will hide DOM elements on a web page which match cosmetic filters. uBlock uses a [different method](https://github.com/gorhill/uBlock/wiki/Cosmetic-filtering-in-%C2%B5Block:-version-0.4.0.0-update) than other big-name blockers to hide the DOM elements though.
+These filters serve to remove DOM elements from a web page. They have no value privacy-wise, it is essentially to make web page look better by removing unwanted content, which usually cannot be blocked using network filters. Just like ABP, uBlock will hide DOM elements on a web page which match cosmetic filters. uBlock uses a [different method](./Cosmetic-filtering-in-%C2%B5Block:-version-0.4.0.0-update) than other big-name blockers to hide the DOM elements though.
 
 Different classes of cosmetic filters are applied differently:
 

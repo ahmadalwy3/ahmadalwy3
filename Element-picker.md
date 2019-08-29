@@ -1,4 +1,4 @@
-[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+[Back to Wiki home](./)
 
 ***
 
@@ -33,8 +33,8 @@ There may be many different reasons for this.
     - If this is a network filter you may need to manually edit the filter to make use of wildcards for the parts of the URL which are variable.
     - If this is a cosmetic filter, you may have to manually craft a better [CSS selector](https://www.w3.org/TR/selectors/#overview). Sometimes this requires observing the surrounding DOM data.
 - Cosmetic filtering is disabled for the site, or globally. There are many ways to disable cosmetic filtering:
-    - The [per-site cosmetic filtering switch](https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering).
-    - The option [_"Parse and enforce cosmetic filters"_](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters#parse-and-enforce-cosmetic-filters) is un-checked in the [_3rd-party filters_](https://github.com/gorhill/uBlock/wiki/Dashboard:-3rd-party-filters) pane in the dashboard.
+    - The [per-site cosmetic filtering switch](./Per-site-switches#no-cosmetic-filtering).
+    - The option [_"Parse and enforce cosmetic filters"_](./Dashboard:-3rd-party-filters#parse-and-enforce-cosmetic-filters) is un-checked in the [_3rd-party filters_](./Dashboard:-3rd-party-filters) pane in the dashboard.
 - You un-checked _My filters_ in the _3rd-party filters_ pane in the dashboard.
 - There is a static filter in one of the 3rd-party filter lists in use which counters your filter.
     - Exception cosmetic filters (`#@#`) cancel cosmetic filters (`##`).

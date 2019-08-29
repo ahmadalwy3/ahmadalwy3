@@ -18,7 +18,7 @@ This is the "novice user" interface, which is the default when installing for th
 - The network request logger (the _eye_ icon) is now always available
     - There is no more setting to enable/disable the network request logger, it will be turned on/off automatically when opening/closing the logger page
 
-To access dynamic filtering, you need to indicate to µBlock that you are an advanced user (mind the ["Required reading"](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) link):
+To access dynamic filtering, you need to indicate to µBlock that you are an advanced user (mind the ["Required reading"](./Advanced-user-features) link):
 
 ![figure 2](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-tut-02.png)
 
@@ -69,4 +69,4 @@ An example (below): globally block network requests to ubiquitous `googletagserv
 
 So the dynamic filtering rule above says: block network requests to `googletagservices.com` from anywhere.
 
-Side note: `googletagservices.com` is not blocked by _EasyPrivacy_, but it is blocked by Ghostery, this is one of the reason it fared better in [privacy exposure benchmarks](https://github.com/gorhill/uBlock/wiki/%C2%B5Block-and-others:-Blocking-ads,-trackers,-malwares).
+Side note: `googletagservices.com` is not blocked by _EasyPrivacy_, but it is blocked by Ghostery, this is one of the reason it fared better in [privacy exposure benchmarks](./%C2%B5Block-and-others:-Blocking-ads,-trackers,-malwares).

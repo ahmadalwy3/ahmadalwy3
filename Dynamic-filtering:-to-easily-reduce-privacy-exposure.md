@@ -1,4 +1,4 @@
-[Back to _Blocking mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode)
+[Back to _Blocking mode_](./Blocking-mode)
 
 ***
 
@@ -14,9 +14,9 @@ This is also true for other entity such as Twitter, Google, Disqus, etc.
 > Recommended reading: [_Internet Companies: Confusing Consumers for Profit_](https://www.eff.org/deeplinks/2015/10/internet-companies-confusing-consumers-profit) (EFF)
 > ***
 
-uBlock Origin's [_dynamic filtering_](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) can help you foil the ability of ubiquitous servers from building a profile of your browsing habits.
+uBlock Origin's [_dynamic filtering_](./Dynamic-filtering) can help you foil the ability of ubiquitous servers from building a profile of your browsing habits.
 
-Will use Facebook as an example. Facebook will still have the ability to track your browsing habits when using uBlock Origin with its default settings [see benchmark's raw data for [_Easy Mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode): notice in the [list of 3rd parties](https://github.com/gorhill/uBlock/wiki/Blocking-mode#easy-mode) how `facebook.net` is ubiquitous].
+Will use Facebook as an example. Facebook will still have the ability to track your browsing habits when using uBlock Origin with its default settings [see benchmark's raw data for [_Easy Mode_](./Blocking-mode:-easy-mode): notice in the [list of 3rd parties](./Blocking-mode#easy-mode) how `facebook.net` is ubiquitous].
 
 First, we block Facebook-related hostnames globally, such that network requests to Facebook servers are blocked _by default, everywhere_ (the first column is for global rules):
 
@@ -54,7 +54,7 @@ This is just an example, the same can be applied to any of the ubiquitous server
 
 `block` rules to ubiquitous web sites will easily reduce _significantly_ your privacy exposure.
 
-Using the above example of blocking Facebook everywhere with the [benchmark result for _Easy mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode#easy-mode) (uBlock Origin's default mode), the count of 3rd parties would have been decreased from 512 to 
+Using the above example of blocking Facebook everywhere with the [benchmark result for _Easy mode_](./Blocking-mode#easy-mode) (uBlock Origin's default mode), the count of 3rd parties would have been decreased from 512 to 
 437, an easy way to significantly reduce your privacy exposure with just a few clicks.
 
 ***

@@ -4,7 +4,7 @@
 
 Roughly similar to using Adblock Plus with many filter lists + NoScript with 1st-party scripts/frames automatically whitelisted + RequestPolicy with 1st-party resources automatically whitelisted.
 
-Blocking-wise, this is a small leap from [medium mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode). This mode will however lead to a higher likelihood of broken web sites, and thus will likely require intervention the first time you visit a site, since even passive 3rd-party resources (i.e. images, css) are blocked with this mode.
+Blocking-wise, this is a small leap from [medium mode](./Blocking-mode:-medium-mode). This mode will however lead to a higher likelihood of broken web sites, and thus will likely require intervention the first time you visit a site, since even passive 3rd-party resources (i.e. images, css) are blocked with this mode.
 
 This mode will block all 3rd parties by default, so it keeps privacy exposure to 3rd parties to a minimum.
 
@@ -14,7 +14,7 @@ This mode will block all 3rd parties by default, so it keeps privacy exposure to
 ![toolbar button badge](https://user-images.githubusercontent.com/585534/62878220-abb12200-bcf6-11e9-8c0b-79f5f2ed96c5.png)
 <br>Starting with [v1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945), a red badge on uBlock₀ toolbar button indicates activation of the hard mode.
 
-With a single click, it is possible to toggle the hard mode into the [medium mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode): it's just a matter of assigning a local noop rule to the _3rd-party_ cell.
+With a single click, it is possible to toggle the hard mode into the [medium mode](./Blocking-mode:-medium-mode): it's just a matter of assigning a local noop rule to the _3rd-party_ cell.
 
 ##### Characteristics
 
@@ -48,10 +48,10 @@ _My rules_ pane:
 
 With few clicks, you can easily fall back into lesser blocking modes, if ever you do not have the willingness to figure the necessary rules for a given site.
 
-Fall back into [medium mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode) for the current site:
+Fall back into [medium mode](./Blocking-mode:-medium-mode) for the current site:
 - set a local noop rule for the _3rd-party_ cell.
 
-Fall back into [easy mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode) for the current site:
+Fall back into [easy mode](./Blocking-mode:-easy-mode) for the current site:
 - set a local noop rule for the _3rd-party_ cell.
 - set a local noop rule for the _3rd-party script_ cell.
 - Optionally, set a local noop rule for the _3rd-party frames_ cell.

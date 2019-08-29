@@ -1,8 +1,8 @@
-[Back to _Dynamic-filtering_](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
+[Back to _Dynamic-filtering_](./Dynamic-filtering)
 
 ***
 
-Dynamic filtering pane ([available only to advanced users](https://github.com/gorhill/uBlock/wiki/Advanced-user-features)) can be toggled by clicking on `requests blocked` or `domains connected`:
+Dynamic filtering pane ([available only to advanced users](./Advanced-user-features)) can be toggled by clicking on `requests blocked` or `domains connected`:
 
 ![figure 1](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-01.png)
 
@@ -48,7 +48,7 @@ Sensible security- and privacy-wise: blocking all 3rd-party frames by default ev
 > 
 > This means a _block_ dynamic rule will override any existing _allow_ static filters. This means you can block with 100% certainty using dynamic filtering rules. Similarly, an _allow_ dynamic filtering rule will override any existing _block_ static filters, i.e. you can allow with 100% certainty with dynamic filtering (useful to un-break sites broken by some static filters).
 > 
-> This may help understand how static and dynamic filtering interact: [Overview of uBlock's network filtering engine](https://github.com/gorhill/uBlock/wiki/Overview-of-uBlock's-network-filtering-engine).
+> This may help understand how static and dynamic filtering interact: [Overview of uBlock's network filtering engine](./Overview-of-uBlock's-network-filtering-engine).
 > ***
 
 All embedded 3rd-party frames were blocked on the page. Good. However it appears there was an embedded YouTube video in the article:

@@ -4,9 +4,9 @@
 
 Roughly similar to using Adblock Plus with many filter lists + NoScript with 1st-party scripts/frames automatically whitelisted. Unlike NoScript however, you can easily point-and-click to block/allow scripts _on a per-site basis_.
 
-Blocking-wise, this is one significant leap from [easy mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode). However, be ready to accept that you will have to un-break websites, though at a lesser rate than [hard mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode), since passive 3rd-party resources (i.e. images, css) are not blocked in medium mode.
+Blocking-wise, this is one significant leap from [easy mode](./Blocking-mode:-easy-mode). However, be ready to accept that you will have to un-break websites, though at a lesser rate than [hard mode](./Blocking-mode:-hard-mode), since passive 3rd-party resources (i.e. images, css) are not blocked in medium mode.
 
-This is where you start to use [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering), a feature available only when you tell uBlock Origin that you are an [advanced user](https://github.com/gorhill/uBlock/wiki/Advanced-user-features). Be sure to read [the guide](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) before, it is assumed that you understand well how dynamic filtering works in order to use medium mode effectively.
+This is where you start to use [dynamic filtering](./Dynamic-filtering), a feature available only when you tell uBlock Origin that you are an [advanced user](./Advanced-user-features). Be sure to read [the guide](./Dynamic-filtering) before, it is assumed that you understand well how dynamic filtering works in order to use medium mode effectively.
 
 ![3rd-party scripts are blocked by default](https://user-images.githubusercontent.com/585534/62878866-f41d0f80-bcf7-11e9-890e-c90438d7f982.png)
 <br>3rd-party scripts and frames are blocked by default.
@@ -18,7 +18,7 @@ Using medium mode will significantly improve your browser performance, and simil
 
 ##### Characteristics
 
-- Web pages will load significantly faster compared to the [_easy mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode).
+- Web pages will load significantly faster compared to the [_easy mode_](./Blocking-mode:-easy-mode).
 - Your privacy exposure will be significantly reduced compared to easy mode.
 - You no longer depend mostly on 3rd-party filter lists to dictate what is blocked or not.
     - The static filter lists are still used to mop up whatever network requests are not blocked in this mode -- so double protection.
@@ -47,7 +47,7 @@ _My rules_ pane:
 
 With one click or two, you can easily fall back into lesser blocking mode, if ever you do not have the willingness to figure the necessary rules for a given site.
 
-To fall back into [easy mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-easy-mode):
+To fall back into [easy mode](./Blocking-mode:-easy-mode):
 - Set a local noop rule for the _3rd-party script_ cell:<br>
   ![3rd-party scripts allowed](https://user-images.githubusercontent.com/585534/62879000-33e3f700-bcf8-11e9-8929-c49541df8e7c.png)
 - Set a local noop rule for the _3rd-party frames_ cell (optional, as blocking 3rd-party frames is less likely to break websites):<br>

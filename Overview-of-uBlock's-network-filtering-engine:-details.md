@@ -1,6 +1,6 @@
 #### Overview
 
-[Overview of uBlock's network filtering engine](https://github.com/gorhill/uBlock/wiki/Overview-of-uBlock's-network-filtering-engine)
+[Overview of uBlock's network filtering engine](./Overview-of-uBlock's-network-filtering-engine)
 
 #### Dynamic URL filtering rules
 
@@ -33,7 +33,7 @@ Advantages:
 - Support cosmetic filtering (removal of DOM elements).
 - Can be loaded from a filter list: facilitate community-supported filter lists.
 - Compatibility: can be used in other blockers supporting ABP-compatible filter syntax.
-    - Except for [a few filter syntax extensions specific to uBlock](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#extended-syntax) not adopted by other blockers.
+    - Except for [a few filter syntax extensions specific to uBlock](./Static-filter-syntax#extended-syntax) not adopted by other blockers.
 
 Disadvantages:
 - High overhead creating/deleting network/cosmetic filters (high memory churn).

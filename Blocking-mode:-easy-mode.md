@@ -1,4 +1,4 @@
-[Back to _Blocking mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode)
+[Back to _Blocking mode_](./Blocking-mode)
 
 ***
 
@@ -13,7 +13,7 @@ This mode is suitable for those who are concerned about reducing their privacy e
 ##### Characteristics
 
 - Low likelihood of web pages being broken.
-- Web pages should load somewhat faster compared to the [_very easy mode_](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-very-easy-mode).
+- Web pages should load somewhat faster compared to the [_very easy mode_](./Blocking-mode:-very-easy-mode).
 
 ##### How to enable this mode
 
@@ -38,4 +38,4 @@ You can significantly augment the blocking power in easy mode by merely enabling
     - some may cause too much web page breakage.
     - some may result in some network requests to unexpectedly become unblocked ([example](https://github.com/gorhill/uBlock/issues/357)).
 
-Another even better way to augment blocking power in _easy_ mode is to enable _"I am an advanced user"_ from the _Settings_ pane in the dashboard, and block specific 3rd parties using [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering) -- i.e. essentially using dynamic filtering in default-allow mode. For example, one could choose to globally block `facebook.com` and `facebook.net` in order to prevent Facebook from being able to track you wherever you go, except on Facebook. Globally blocking ubiquitous hostnames except on their respective web sites is a very easy way to reduce significantly privacy exposure.
+Another even better way to augment blocking power in _easy_ mode is to enable _"I am an advanced user"_ from the _Settings_ pane in the dashboard, and block specific 3rd parties using [dynamic filtering](./Dynamic-filtering) -- i.e. essentially using dynamic filtering in default-allow mode. For example, one could choose to globally block `facebook.com` and `facebook.net` in order to prevent Facebook from being able to track you wherever you go, except on Facebook. Globally blocking ubiquitous hostnames except on their respective web sites is a very easy way to reduce significantly privacy exposure.

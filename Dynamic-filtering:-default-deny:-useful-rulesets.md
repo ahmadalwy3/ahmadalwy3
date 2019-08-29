@@ -1,4 +1,4 @@
-[Back to _Dynamic filtering: default-deny_](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-default-deny)
+[Back to _Dynamic filtering: default-deny_](./Dynamic-filtering:-default-deny)
 
 ***
 

@@ -1,10 +1,10 @@
-[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+[Back to Wiki home](./)
 
 ***
 
 The _"Advanced settings"_ page contains settings which are experimental, or which are of interest to advanced users who want more control over how uBO behaves internally.
 
-These advanced settings can be easily accessed only when the setting [_"I am an advanced user"_](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) in the _Settings_ pane in the dashboard is checked, but will persist and work even when the setting [_"I am an advanced user"_](https://github.com/gorhill/uBlock/wiki/Advanced-user-features) is not checked:
+These advanced settings can be easily accessed only when the setting [_"I am an advanced user"_](./Advanced-user-features) in the _Settings_ pane in the dashboard is checked, but will persist and work even when the setting [_"I am an advanced user"_](./Advanced-user-features) is not checked:
 
 ![Click on the _cogs_ icon](https://cloud.githubusercontent.com/assets/585534/20042797/2800dcd4-a44e-11e6-9bc8-a5e0c960262c.png)
 
@@ -179,7 +179,7 @@ If set to `info`, prints debug messages to the browser console.
 
 Default: `false`.
 
-If set to `true`, [`debugger;` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) will be inserted just before [scriptlet](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection) code
+If set to `true`, [`debugger;` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) will be inserted just before [scriptlet](./Static-filter-syntax#scriptlet-injection) code
 
 ***
 
@@ -257,7 +257,7 @@ Default: `120` seconds.
 
 uBO 1.17.3b4 and above.
 
-Controls duration of the [Strict blocking](https://github.com/gorhill/uBlock/wiki/Strict-blocking) "Temporarily" bypass.
+Controls duration of the [Strict blocking](./Strict-blocking) "Temporarily" bypass.
 
 ***
 

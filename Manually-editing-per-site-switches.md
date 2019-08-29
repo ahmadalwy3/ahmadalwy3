@@ -1,6 +1,6 @@
 You can manually edit rules for per-site switches in the _"My rules"_ pane in the dashboard.
 
-There are no temporary vs. permanent settings for the [per-site switches](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-site-based-switches), any change to one or more switches will be immediately reflected in the permanent settings.
+There are no temporary vs. permanent settings for the [per-site switches](./Quick-guide:-popup-user-interface#the-site-based-switches), any change to one or more switches will be immediately reflected in the permanent settings.
 
 There are currently three per-site switches supported:
 

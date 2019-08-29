@@ -1,6 +1,6 @@
 **Note:** Results have been updated with latest Firefox 52 and Chrome 59. Previous benchmarks:
-- Firefox 41/Chromium 45: [see revision](https://github.com/gorhill/uBlock/wiki/Firefox-version:-benchmarking-memory-footprint/0e022fdbeff93ee22890533ad33f8dd07c4c1efa)
-- Firefox 35/Chromium 39: [see revision](https://github.com/gorhill/uBlock/wiki/Firefox-version:-benchmarking-memory-footprint/4dddff63af59f69b6301a82a790619099e2ac2ef)
+- Firefox 41/Chromium 45: [see revision](./Firefox-version:-benchmarking-memory-footprint/0e022fdbeff93ee22890533ad33f8dd07c4c1efa)
+- Firefox 35/Chromium 39: [see revision](./Firefox-version:-benchmarking-memory-footprint/4dddff63af59f69b6301a82a790619099e2ac2ef)
 
 #### Setup
 

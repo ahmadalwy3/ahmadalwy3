@@ -60,4 +60,4 @@ Adblock Plus:<br>
 
 Observations:
 
-Last time I ran this benchmark [was on Chromium 34 64-bit](https://github.com/gorhill/uBlock/wiki/%C2%B5Block-vs.-ABP:-efficiency-compared#added-memory-footprint-to-web-pages), and it does appear that Chromium 37 is causing web pages to consume more memory -- reference result went from ~17 MB to ~22 MB.
+Last time I ran this benchmark [was on Chromium 34 64-bit](./%C2%B5Block-vs.-ABP:-efficiency-compared#added-memory-footprint-to-web-pages), and it does appear that Chromium 37 is causing web pages to consume more memory -- reference result went from ~17 MB to ~22 MB.

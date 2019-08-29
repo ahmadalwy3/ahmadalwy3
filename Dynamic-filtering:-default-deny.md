@@ -1,4 +1,4 @@
-[Back to _Dynamic filtering_](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
+[Back to _Dynamic filtering_](./Dynamic-filtering)
 
 ***
 
@@ -44,7 +44,7 @@ You can disengage default-deny for the current site with one click: set the "3rd
 ![Default-deny](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-dd-02.png)<br>
 <sup>Default-deny cancelled locally. Notice that the blocking of 3rd-party frames is still in effect: cells with higher precedence won't have their rules overriden by cells with lower precedence.</sup>
 
-This results in default-deny being disengaged for the current site ([The Guardian](http://www.theguardian.com/) in our example), **while** keeping engaged static filtering (_EasyList_, _EasyPrivacy_, etc.). In this particular example, as can be seen in the picture, 3rd-party frames will still be blocked (usually a [good thing privacy- and security-wise](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags)).
+This results in default-deny being disengaged for the current site ([The Guardian](http://www.theguardian.com/) in our example), **while** keeping engaged static filtering (_EasyList_, _EasyPrivacy_, etc.). In this particular example, as can be seen in the picture, 3rd-party frames will still be blocked (usually a [good thing privacy- and security-wise](./Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags)).
 
 ***
 

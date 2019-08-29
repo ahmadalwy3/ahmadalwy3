@@ -1,6 +1,6 @@
 I am going to collect here common usage issues users may face.
 
-The best way to troubleshoot uBlock is with uBlock: the [logger](https://github.com/gorhill/uBlock/wiki/The-logger) will tell you what uBlock is doing when you try to load a web page. Using the logger is the first thing you should try when you are trying to find out why a page does not load/display as expected.
+The best way to troubleshoot uBlock is with uBlock: the [logger](./The-logger) will tell you what uBlock is doing when you try to load a web page. Using the logger is the first thing you should try when you are trying to find out why a page does not load/display as expected.
 
 ***
 
@@ -69,7 +69,7 @@ Specifically, it has been confirmed [Avira Anti-virus has been uninstalling uBlo
 
 #### Unable to open links in new tab
 
-- Are you using the [no-popups switch](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#no-popups)?
+- Are you using the [no-popups switch](./Quick-guide:-popup-user-interface#no-popups)?
 - Are you using a Chromium-based browser?
 
 If you answer "yes" to both questions above, this is your problem (from link above):

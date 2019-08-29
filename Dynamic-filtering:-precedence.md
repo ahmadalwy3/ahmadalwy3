@@ -1,8 +1,8 @@
-[Back to "Dynamic-filtering"](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering)
+[Back to "Dynamic-filtering"](./Dynamic-filtering)
 
 ***
 
-First: Whitelist directives override both dynamic filtering _and_ static filtering. Whitelist directives appear in the [_Whitelist_ pane in the dashboard](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site), and they are used to completely disable filtering. The [big blue button in the popup UI](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-large-power-button) is used to easily whitelist the current site/page.
+First: Whitelist directives override both dynamic filtering _and_ static filtering. Whitelist directives appear in the [_Whitelist_ pane in the dashboard](./How-to-whitelist-a-web-site), and they are used to completely disable filtering. The [big blue button in the popup UI](./Quick-guide:-popup-user-interface#the-large-power-button) is used to easily whitelist the current site/page.
 
 ***
 

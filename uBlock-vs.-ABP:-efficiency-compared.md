@@ -11,7 +11,7 @@ Here is a quick illustrated comparison of efficiency using various angles. Each 
 
 ### Own memory footprint
 
-These screenshots show the memory footprint of ABP and uBlock _after_ they have gone through this rather [demanding benchmark](https://github.com/gorhill/uBlock/wiki/Reference-benchmark). Once the benchmark was completed, I forced the browser to garbage collect the memory in each extension by clicking the trash icon (in dev console) a couple of times -- this is an _important step_, or else the shown memory footprint is not too reliable.
+These screenshots show the memory footprint of ABP and uBlock _after_ they have gone through this rather [demanding benchmark](./Reference-benchmark). Once the benchmark was completed, I forced the browser to garbage collect the memory in each extension by clicking the trash icon (in dev console) a couple of times -- this is an _important step_, or else the shown memory footprint is not too reliable.
 
 ##### Adblock Plus
 ![ABP](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/abp-own-mem.png)
@@ -27,7 +27,7 @@ Both extensions had _EasyList_, _EasyPrivacy_, _Peter Lowe's Ad Server_ list, an
 
 ABP and uBlock need to evaluate the URL of each net request against their dictionary of filters, and eventually tell the waiting browser whether the request should be cancelled or not. Since the browser is waiting for an answer, this is a time critical part and determining whether the request should be allowed or not must be done as fast as possible.
 
-Below are the average time it takes for each extension to handle a net request in their respective `chrome.webRequest.onBeforeRequest` handler, using the same [benchmark](https://github.com/gorhill/uBlock/wiki/Reference-benchmark).
+Below are the average time it takes for each extension to handle a net request in their respective `chrome.webRequest.onBeforeRequest` handler, using the same [benchmark](./Reference-benchmark).
 
 ##### Adblock Plus 1.8.10
 
@@ -57,7 +57,7 @@ Below are the average time it takes for each extension to handle a net request i
 
 ##### Methodology
 
-Note that the results above are the tail end of running the [reference benchmark](https://github.com/gorhill/uBlock/wiki/Reference-benchmark), except `wait` set to 15, and `repeat` set to 1. Both ABP and uBlock set to use _EasyList_, _EasyPrivacy_, _"Peter Lowe’s Ad server list"_, _"Malware domains"_. ABP-specific: _"Acceptable ads"_ disabled. µBlock-specific: default settings.
+Note that the results above are the tail end of running the [reference benchmark](./Reference-benchmark), except `wait` set to 15, and `repeat` set to 1. Both ABP and uBlock set to use _EasyList_, _EasyPrivacy_, _"Peter Lowe’s Ad server list"_, _"Malware domains"_. ABP-specific: _"Acceptable ads"_ disabled. µBlock-specific: default settings.
 
 The results depend heavily on the processor: I benchmarked on an i5-3xxxK CPU @ 3.4 GHz x 4.
 
@@ -105,6 +105,6 @@ Also, the amount of work µBlock does in its content scripts is proportional to 
 
 ### Related wiki pages
 
-- [Counterarguments: Who cares about efficiency, I have 8 GB](https://github.com/gorhill/uBlock/wiki/Counterarguments#who-care-about-efficiency-i-have-8-gb)
+- [Counterarguments: Who cares about efficiency, I have 8 GB](./Counterarguments#who-care-about-efficiency-i-have-8-gb)
 - [Net request filtering efficiency: HTTP Switchboard vs. Adblock Plus](https://github.com/gorhill/httpswitchboard/wiki/Net-request-filtering-efficiency:-HTTP-Switchboard-vs.-Adblock-Plus)
 - [Adblock Plus memory consumption](https://github.com/gorhill/httpswitchboard/wiki/Adblock-Plus-memory-consumption)

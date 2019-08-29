@@ -1,4 +1,4 @@
-[Back to _"Static filter syntax"_](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
+[Back to _"Static filter syntax"_](./Static-filter-syntax)
 
 ***
 

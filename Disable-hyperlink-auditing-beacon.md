@@ -4,7 +4,7 @@ See [_"Hyperlink-Auditing aka `<a ping>` and Beacon aka `navigator.sendBeacon()`
 
 ### Chromium-based browsers
 
-For those browsers, the network requests fired as a result of calling `navigator.sendBeacon()` are sent as [behind-the-scene](https://github.com/gorhill/uBlock/wiki/Behind-the-scene-network-requests) network requests.
+For those browsers, the network requests fired as a result of calling `navigator.sendBeacon()` are sent as [behind-the-scene](./Behind-the-scene-network-requests) network requests.
 
 #### Caveats for browsers based on Chromium version 48 or less
 

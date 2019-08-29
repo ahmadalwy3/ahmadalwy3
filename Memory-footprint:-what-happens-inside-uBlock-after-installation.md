@@ -37,5 +37,5 @@ Also, if you want to look at memory figures, in addition to the above notes rega
 ***
 
 - Notes: the above is especially true for Chromium-based browser. However with the [early preview of the Firefox version](https://github.com/gorhill/uBlock/issues/27#issuecomment-67308172), the memory churning referred to above seems to result in much smaller memory peak usage.
-- Related: ["Notes on memory benchmarks, selfies"](https://github.com/gorhill/uBlock/wiki/Notes-on-memory-benchmarks,-selfies)
+- Related: ["Notes on memory benchmarks, selfies"](./Notes-on-memory-benchmarks,-selfies)
 - Beware: ["Popup UI of extensions causes systematic memory leaks"](https://code.google.com/p/chromium/issues/detail?id=441500)
