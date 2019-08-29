@@ -1,1 +1,1 @@
-Moved to: https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-turn-off-uBlock-everywhere-except
+Moved to: [Dynamic filtering: turn off uBlock everywhere except](./Dynamic-filtering:-turn-off-uBlock-everywhere-except)

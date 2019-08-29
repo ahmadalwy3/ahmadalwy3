@@ -1,1 +1,1 @@
-Moved to <https://github.com/gorhill/uBlock/wiki/Memory-footprint:-what-happens-inside-uBlock-after-installation>.
+Moved to: [Memory footprint: what happens inside uBlock after installation](./Memory-footprint:-what-happens-inside-uBlock-after-installation)

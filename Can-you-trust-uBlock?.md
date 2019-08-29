@@ -1,1 +1,1 @@
-Moved to: [Can you trust uBlock Origin?](https://github.com/gorhill/uBlock/wiki/Can-you-trust-uBlock-Origin%3F)
+Moved to: [Can you trust uBlock Origin?](./Can-you-trust-uBlock-Origin%3F)

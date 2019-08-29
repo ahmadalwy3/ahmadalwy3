@@ -1,1 +1,1 @@
-Page moved to URL: <https://github.com/gorhill/uBlock/wiki/Dynamic-filtering%3A-Benefits-of-blocking-3rd-party-iframe-tags>
+Moved to: [Dynamic filtering: Benefits of blocking 3rd party iframe tags](./Dynamic-filtering%3A-Benefits-of-blocking-3rd-party-iframe-tags)

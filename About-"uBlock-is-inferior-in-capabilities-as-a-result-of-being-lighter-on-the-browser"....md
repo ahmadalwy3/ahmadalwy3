@@ -1,1 +1,1 @@
-Moved to [About "uBlock is inferior in capabilities as a result of being lighter on the browser"](https://github.com/gorhill/uBlock/wiki/About-%22uBlock-is-inferior-in-capabilities-as-a-result-of-being-lighter-on-the-browser%22) (the trailing dots were not link sharing-friendly).
+Moved to: [About "uBlock is inferior in capabilities as a result of being lighter on the browser"](./About-%22uBlock-is-inferior-in-capabilities-as-a-result-of-being-lighter-on-the-browser%22) (the trailing dots were not link sharing-friendly).

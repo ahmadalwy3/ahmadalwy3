@@ -1,1 +1,1 @@
-Moved to <https://github.com/gorhill/uBlock/wiki/The-logger>.
+Moved to: [The logger](./The-logger)

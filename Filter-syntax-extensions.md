@@ -1,1 +1,1 @@
-Moved to <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#extended-syntax>.
+Moved to: [Static filter syntax](./Static-filter-syntax#extended-syntax)
