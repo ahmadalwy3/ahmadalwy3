@@ -19,6 +19,8 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 
 ***
 
+![black badge](https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png)
+
 **Very easy mode** ([details ↪](./Blocking-mode:-very-easy-mode)):
 - _uBlock filters_.
 - _EasyList_.
@@ -36,6 +38,10 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 >  <sub>Of interest: "enhanced" _Easy mode_, which will set you somewhere between _Easy mode_  and _Medium mode_: [Benefits of blocking 3rd-party `iframe` tags](./Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags)</sub>
 > ***
 
+***
+
+![blue badge](https://user-images.githubusercontent.com/886325/64036718-229e4580-cb54-11e9-91d3-10b6d95b6068.png)
+
 **Medium mode** ([details ↪](./Blocking-mode:-medium-mode)):
 - uBlock's out-of-the-box settings.
 - _I am an advanced user_ = checked.
@@ -44,6 +50,10 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - Minimal set of rules to ensure web pages render properly.
 - Don't feel like fiddling too much to unbreak a site?
     - A local `noop` rule (gray) on the `3rd-party scripts` and `3rd-party frames` cells will downgrade you to easy, default blocking mode above.
+
+***
+
+![red badge](https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png)
 
 **Hard mode** ([details ↪](./Blocking-mode:-hard-mode)):
 - uBlock's out-of-the-box settings.
@@ -54,6 +64,8 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - Minimal set of rules to ensure web pages render properly.
 - Don't feel like fiddling too much to unbreak a site?
     - One local `noop` rule (gray) on the `3rd-party` cell will "downgrade" you to medium mode above.
+
+***
 
 ### Raw data
 
