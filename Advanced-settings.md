@@ -99,8 +99,7 @@ Default value contains four codes separated by space representing four blocking 
 | Hard mode + No scripting | Medium mode + No scripting | Medium mode | Default |
 | ---                      | ---                        | ---         | ---     |
 | 11111/#F00               | 11011/#C0F                 | 11001/#00F  | 00001   |
-|![purple badge](https://user-images.githubusercontent.com/585534/62879616-82de5c00-bcf9-11e9-92cd-9f8233eeb8a1.png)|![red badge](https://user-images.githubusercontent.com/585534/62878220-abb12200-bcf6-11e9-8c0b-79f5f2ed96c5.png)|![blue badge](https://user-images.githubusercontent.com/585534/62877716-a901fd00-bcf5-11e9-95fa-cd021865d2c8.png)|![black badge](https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png)
-|
+|![red badge](https://user-images.githubusercontent.com/585534/62878220-abb12200-bcf6-11e9-8c0b-79f5f2ed96c5.png)|![purple badge](https://user-images.githubusercontent.com/585534/62879616-82de5c00-bcf9-11e9-92cd-9f8233eeb8a1.png)|![blue badge](https://user-images.githubusercontent.com/585534/62877716-a901fd00-bcf5-11e9-95fa-cd021865d2c8.png)|![black badge](https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png)|
 
 Each code consist of bit field indicating status of the feature ( 1 for blocked/enabled, 0 for not blocked/disabled ), separator `/` and CSS color.
 
