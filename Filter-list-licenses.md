@@ -11,24 +11,18 @@ uBlock filters - Badware risks |X| [GPL3](https://github.com/gorhill/uBlock/blob
 uBlock filters - Privacy |X| [GPL3](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt) ||||
 uBlock filters - Unbreak |X| [GPL3](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt) ||||
 Adblock Warning Removal List‎ ||||||X
-Anti-Adblock Killer (Reek‎) |||[CC BY-NC-SA 4.0](https://github.com/reek/anti-adblock-killer/blob/master/LICENSE)|||
 EasyList‎ |X|[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
-EasyList without element hiding rules‎ ||[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
 Peter Lowe's Ad server list‎ |X||||[McRae GPL](http://pgl.yoyo.org/license/), non-commercial|
-Basic tracking list by Disconnect‎ ||[GPL3](https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt)||||
 EasyPrivacy‎ |X|[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
 Fanboy's Enhanced Tracking List‎ |||[CC BY 3.0](https://fanboy.co.nz/enhancedstats.txt)|||
 Malvertising filter list by Disconnect‎ ||[GPL3](https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt)||||
 Malware Domain List‎ |X||||Informal license, [free for all](http://www.malwaredomainlist.com/)|
 Malware domains‎ |X||||Informal license, [non-commercial](http://www.malwaredomains.com/?page_id=1508)|
-Malware domains (long-lived) |||||Informal license, [non-commercial](http://www.malwaredomains.com/?page_id=1508)|
-Malware filter list by Disconnect‎ ||[GPL3](https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt)||||
 Spam404‎ |||||[Informal license](https://spam404bl.com/spam404scamlist.txt)|
-Anti-ThirdpartySocial ||||||X
+Anti-Facebook List ||||||X
 Fanboy's Annoyance List‎ |||[CC BY 3.0](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt)|||
 Fanboy's Social Blocking List‎ |||[CC BY 3.0](https://easylist-downloads.adblockplus.org/fanboy-social.txt)|||
 Dan Pollock’s hosts file‎ |||||Informal license, [attribution, non-commercial](http://someonewhocares.org/hosts/hosts)|
-Fanboy+Easylist-Merged Ultimate List‎ ||[GPL3](https://fanboy.co.nz/r/fanboy-ultimate.txt)|[CC BY-SA 3.0](https://fanboy.co.nz/r/fanboy-ultimate.txt)|||
 hpHosts' Ad and tracking servers‎||||||X
 MVPS HOSTS‎ |||[CC BY-NC-SA 4.0](http://winhelp2002.mvps.org/hosts.txt)|||
 ARA: Liste AR‎ |||[CC BY-NC-SA 3.0](https://liste-ar-adblock.googlecode.com/hg/Liste_AR.txt)|||
@@ -37,9 +31,7 @@ CHN: China: cjxlist ||[GPL3](https://raw.githubusercontent.com/cjx82630/cjxlist/
 CHN: EasyList China ||[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
 CZE, SVK: EasyList Czech and Slovak‎ |||[CC BY-SA 4.0](https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt)|||
 DEU: EasyList Germany‎ ||[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
-DNK: Schacks Adblock Plus liste‎ ||||||X
 EST: Eesti saitidele kohandatud filter‎ ||||[CC0 1.0](http://adblock.ee/list.php)||
-EU: Prebake - Filter Obtrusive Cookie Notices‎ |||||[MIT](https://github.com/liamja/Prebake/blob/master/README.md)|
 FIN: Finnish Addition to Easylist‎ ||||[Unlicense](https://iadb.azurewebsites.net/Finland_adb.txt)||
 FRA: EasyList Liste FR‎ |||[CC BY-NC-SA 3.0](http://www.adblock-listefr.com/A_propos)|||
 GRC: Greek AdBlock Filter‎ |||[CC BY-SA 3.0](https://www.void.gr/kargig/void-gr-filters.txt)|||
