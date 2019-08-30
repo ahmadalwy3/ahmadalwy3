@@ -11,7 +11,7 @@ This mode will block all 3rd parties by default, so it keeps privacy exposure to
 ![3rd-party network requests are blocked by default](https://user-images.githubusercontent.com/585534/62878365-f2068100-bcf6-11e9-9085-aea67cef7e4e.png)<br>
 <sup>3rd-party network requests are blocked by default.</sup>
 
-![toolbar button badge](https://user-images.githubusercontent.com/585534/62878220-abb12200-bcf6-11e9-8c0b-79f5f2ed96c5.png)
+![red badge](https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png)
 <br>Starting with [v1.21.7b5](https://github.com/gorhill/uBlock/commit/7ff750eaf6007bdea4e843d3314fc7275b1ce945), a red badge on uBlock₀ toolbar button indicates activation of the hard mode.
 
 With a single click, it is possible to toggle the hard mode into the [medium mode](./Blocking-mode:-medium-mode): it's just a matter of assigning a local noop rule to the _3rd-party_ cell.
