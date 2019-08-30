@@ -3,6 +3,11 @@
 
 ***
 
+- [Filter lists from around the web ↪](./Filter-lists-from-around-the-web)
+- [Filter list licenses ↪](./Filter-list-licenses)
+
+***
+
 The _Filter lists_ pane is where you subscribe to filter lists. The filter lists to which you subscribe will feed uBlock Origin's [static filtering engine](./Overview-of-uBlock's-network-filtering-engine:-details#static-filtering).
 
 The picture below shows uBlock Origin's default selection of filter lists. You can add more, or remove some of the filter lists already selected by default (for reference, most other blockers have only EasyList selected).
