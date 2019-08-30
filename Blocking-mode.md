@@ -21,11 +21,11 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 
 ![black badge](https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png)
 
-**Very easy mode** ([details ↪](./Blocking-mode:-very-easy-mode)):
+#### Very easy mode ([details ↪](./Blocking-mode:-very-easy-mode)):
 - _uBlock filters_.
 - _EasyList_.
 
-**Easy mode** ([details ↪](./Blocking-mode:-easy-mode)):
+#### Easy mode ([details ↪](./Blocking-mode:-easy-mode)):
 - This is uBlock's default, out-of-the-box mode.
 - All of uBlock's own filter lists.
 - _EasyList_.
@@ -34,15 +34,19 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - _Malware Domain List‎_.
 - _Malware domains_.
 
-> ***
->  <sub>Of interest: "enhanced" _Easy mode_, which will set you somewhere between _Easy mode_  and _Medium mode_: [Benefits of blocking 3rd-party `iframe` tags](./Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags)</sub>
-> ***
+
+#### Enhanced _Easy mode_:
+
+These will set you somewhere between _Easy mode_  and _Medium mode_:
+
+- [Easily reducing privacy exposure](./Dynamic-filtering:-to-easily-reduce-privacy-exposure)
+- [Benefits of blocking 3rd-party `iframe` tags](./Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags)
 
 ***
 
 ![blue badge](https://user-images.githubusercontent.com/886325/64036718-229e4580-cb54-11e9-91d3-10b6d95b6068.png)
 
-**Medium mode** ([details ↪](./Blocking-mode:-medium-mode)):
+#### Medium mode ([details ↪](./Blocking-mode:-medium-mode)):
 - uBlock's out-of-the-box settings.
 - _I am an advanced user_ = checked.
 - 3rd-party scripts = globally blocked.
@@ -55,7 +59,7 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 
 ![red badge](https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png)
 
-**Hard mode** ([details ↪](./Blocking-mode:-hard-mode)):
+#### Hard mode ([details ↪](./Blocking-mode:-hard-mode)):
 - uBlock's out-of-the-box settings.
 - _I am an advanced user_ = checked.
 - 3rd-party scripts = globally blocked.
@@ -79,16 +83,9 @@ Hard mode will actually ensure that profiling by 3rd parties is completely foile
 
 Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed.
 
-- [No blocking](#no-blocking)
-- [Very easy mode](#very-easy-mode) ([diff with previous mode](https://www.diffchecker.com/ktgyoc5r))
-- [Easy mode](#easy-mode) ([diff with previous mode](https://www.diffchecker.com/gtid3dj9))
-- [Medium-mode](#medium-mode) ([diff with previous mode](https://www.diffchecker.com/h3jjgxgd))
-- [Hard mode](#hard-mode) ([diff with previous mode](https://www.diffchecker.com/9kq1nlh9))
-- [Sessbench parameters](#sessbench-parameters)
-
 <sub>The _"diff with previous mode"_ link shows which 3rd-party domains have been blocked that were not blocked with the previous blocking mode. The newly blocked domains relative to previous blocking mode will appear in red in the left-hand column: each one of these red lines represents one foiled 3rd-party's opportunity to profile your browsing history.</sub>
 
-#### No blocking
+**No blocking**
 
     URLs visited                        83
     Domains (3rd party / all):          2111 / 2194
@@ -2322,7 +2319,7 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 </details>
 
-#### Very easy mode
+**Very easy mode** ([diff with previous mode](https://www.diffchecker.com/ktgyoc5r))
 
     URLs visited:                       83
     Domains (3rd party / all):          1152 / 1235
@@ -3502,7 +3499,7 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 </details>
 
-#### Easy mode
+**Easy mode** ([diff with previous mode](https://www.diffchecker.com/gtid3dj9))
 
     URLs visited:                       83
     Domains (3rd party / all):          512 / 595
@@ -4021,7 +4018,7 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 </details>
 
-#### Medium mode
+**Medium mode** ([diff with previous mode](https://www.diffchecker.com/h3jjgxgd))
 
     URLs visited:                       83
     Domains (3rd party / all):          130 / 213
@@ -4164,7 +4161,7 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 </details>
 
-#### Hard mode
+**Hard mode** ([diff with previous mode](https://www.diffchecker.com/9kq1nlh9))
 
     URLs visited:                       83
     Domains (3rd party / all):          84 / 167
@@ -4262,7 +4259,7 @@ Browser was Chromium 64-bit, click-to-play enabled, 3rd-party cookies disallowed
 
 </details>
 
-#### Sessbench parameters
+**Sessbench parameters**
 
 This was fed to [sessbench](https://github.com/gorhill/sessbench):
 
