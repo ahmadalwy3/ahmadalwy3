@@ -25,6 +25,7 @@
         - [URL filtering](./Dynamic-URL-filtering)
     - [_Whitelist_ pane](./Dashboard:-Whitelist)
         - [How to whitelist a web site](./How-to-whitelist-a-web-site)
+    - [Keyboard shortcuts](./Keyboard-shortcuts)
 - [The logger](./The-logger)
     - [DOM inspector](./DOM-inspector)
 - [Element picker](./Element-picker)
