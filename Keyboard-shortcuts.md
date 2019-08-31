@@ -9,3 +9,5 @@ or
 Chrome:
 
 ![image](https://user-images.githubusercontent.com/886325/64021283-dba05800-cb33-11e9-84f6-c9fb2bbcdc67.png)
+
+https://streamable.com/3ctyn
