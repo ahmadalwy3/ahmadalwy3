@@ -3,7 +3,7 @@
 - [Permissions](./Permissions)
     - [Can you trust uBlock Origin?](./Can-you-trust-uBlock-Origin%3F)
 - [Privacy policy](./Privacy-policy)
-- Install from [Mozilla Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
+- Install from [Mozilla Add-ons for Firefox ↪](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Chrome store ↪](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Opera store ↪](https://addons.opera.com/en-gb/extensions/details/ublock/), or [manually](https://github.com/gorhill/uBlock/tree/master/dist#install).
 - [The popup user interface](./Quick-guide:-popup-user-interface)
     - [The per-site switches](./Per-site-switches)
 - [Dashboard](./Dashboard)
@@ -52,9 +52,9 @@
     - [The removed element reappears when you reload the page](./Element-picker#the-removed-element-reappears-when-you-reload-the-page)
     - [Read carefully if using uBO/webext on legacy Firefox](./Firefox-WebExtensions)
 - Good external guides:
-    - [How to use uBlock Origin advanced user mode tutorial](https://www.youtube.com/watch?v=2lisQQmWQkY)
-    - [Firefox: uBlock Origin – Firefox-Kompendium Teil2](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
-    - [Beginners Cheat Sheet - "Syntax Meanings That Are Actually Human Readable"](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
+    - [How to use uBlock Origin advanced user mode tutorial ↪](https://www.youtube.com/watch?v=2lisQQmWQkY)
+    - [Firefox: uBlock Origin – Firefox-Kompendium Teil2 ↪](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
+    - [Beginners Cheat Sheet - "Syntax Meanings That Are Actually Human Readable" ↪](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
 - Unsorted topics: <details><summary>expand</summary>
     - [Privacy stuff](./Privacy-stuff)
     - [Tricks and tips waterfall](./Tips-and-tricks-waterfall)
