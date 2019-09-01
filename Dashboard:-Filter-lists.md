@@ -62,7 +62,9 @@ Note that if you disable this option, your own custom cosmetic filters (if any) 
 This is a collection of various filter lists, grouped by purpose. To use a specific filter list, just select it through its checkbox. Any change in the selection of filter lists must be committed by using the _Apply change_ button, which will appear if and only if the current selection of filter lists differs from the previous selection of filter lists.
 
 > ***
-> **Important:** The more filter lists are selected, the higher the likelihood of web site breakage. The quality of the selected filter lists also affects the likelihood of web site breakage. The _EasyList_-related filter lists are high quality filter lists, as they are actively maintained.
+> **Important:**
+>
+> The more filter lists are selected, the higher the likelihood of web site breakage. The quality of the selected filter lists also affects the likelihood of web site breakage. The _EasyList_-related filter lists are high quality filter lists, as they are actively maintained.
 > ***
 
 ##### Custom filter lists
