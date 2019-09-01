@@ -49,7 +49,3 @@
     - [Software known to have uninstalled uBlock Origin](./Software-known-to-have-uninstalled-uBlock-Origin)
     - [The removed element reappears when you reload the page](./Element-picker#the-removed-element-reappears-when-you-reload-the-page)
     - [Read carefully if using uBO/webext on legacy Firefox](./Firefox-WebExtensions)
-- Good external guides:
-    - [How to use uBlock Origin advanced user mode tutorial ↪](https://www.youtube.com/watch?v=2lisQQmWQkY)
-    - [Firefox: uBlock Origin – Firefox-Kompendium Teil2 ↪](https://www.kuketz-blog.de/firefox-ublock-origin-firefox-kompendium-teil2/)
-    - [Beginners Cheat Sheet - "Syntax Meanings That Are Actually Human Readable" ↪](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
