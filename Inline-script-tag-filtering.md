@@ -137,6 +137,8 @@ Also, when script tag filters are present, it's entirely reasonable to imagine t
 Inline script tag filters are something to use as last resort when all else fail. Without inline script tag filters, when all else fail, the remedy is to disable the blocker -- which is the absolute worst option, which has a much worst effect on performance than the code used to enforce inline script tag filters. Currently this is what users of Adblock Plus have to do: disable the extension on _Bild_.
 
 > ***
+> **Note:**
+>
 > Keep in mind that currently a common way for Adblock Plus to deal with anti-blockers is to create exception filters, i.e. to no longer block specific 3rd-party network requests which would have otherwise been blocked ([example](https://adblockplus.org/forum/viewtopic.php?p=140159#p140159), [example](https://forums.lanik.us/viewtopic.php?f=91&t=26996#p81898) => [opening the door to `pagead2.googlesyndication.com`!](https://hg.adblockplus.org/listefr/rev/413aa948bd6d)), so essentially to allow more unwanted 3rd parties into your browser. This can often be avoided with inline script tag filters (respectively, [example](https://github.com/gorhill/uBlock/commit/52b1b2c2947698eaa86284bcf28d8848adb1d2d3), [example](https://github.com/gorhill/uBlock/commit/19576b37e9c41604bac043e8b834be81497786d5)).
 > ***
 
