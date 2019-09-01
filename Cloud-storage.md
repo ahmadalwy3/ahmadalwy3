@@ -18,7 +18,9 @@ Once you enable cloud storage support, a new UI widget will be available in the 
 ![screenshot](https://user-images.githubusercontent.com/585534/42420095-9521526a-828e-11e8-8715-21678f1bd708.png)
 
 > ***
-> **Important:** Even if cloud storage support is enabled, it will work **if and only if** you actually enable sync support in your browser -- as uBlock itself does not connect to any remote server, your browser does this through its own sync feature, if you enabled such feature.
+> **Important:**
+>
+> Even if cloud storage support is enabled, it will work **if and only if** you actually enable sync support in your browser -- as uBlock itself does not connect to any remote server, your browser does this through its own sync feature, if you enabled such feature.
 > ***
 
 Your uBlock Origin settings are precious, and in order to prevent any automated browser's syncing task to cause precious local data (or cloud data) to be mistakenly overwritten, the chosen solution in uBlock Origin is to _never_ ever export to/import from cloud storage without **the user expressly asking uBlock Origin to do so**.
@@ -34,7 +36,9 @@ If ever an export operation causes the cloud storage capacity limit to be reache
 If you do not have a syncing account with your browser vendor, I have observed that the cloud storage feature can still be used as a local clipboard to save a pane settings. Might be convenient sometimes, but please do not use cloud storage as a replacement for [uBlock Origin's backup feature](./Dashboard:-Settings#backuprestore-section). It is recommended you back up your settings regularly, this is especially true for those who have extensive custom static filters, custom rules, whitelist directives.
 
 > ***
-> **Important:** Some browsers offer the ability to use a passphrase for their sync feature, in order to enable end-to-end encryption of the data stored for sync purpose ([example](https://support.google.com/chrome/answer/1181035)). It is strongly suggested to make use of such passphrase.
+> **Important:**
+>
+> Some browsers offer the ability to use a passphrase for their sync feature, in order to enable end-to-end encryption of the data stored for sync purpose ([example](https://support.google.com/chrome/answer/1181035)). It is strongly suggested to make use of such passphrase.
 > ***
 
 #### Caveats
