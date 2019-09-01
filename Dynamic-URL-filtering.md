@@ -1,4 +1,6 @@
-[under construction]
+[Back to Wiki home](./)
+
+***
 
 Dynamic URL filtering became available in uBlock Origin version 0.9.8.0.
 
@@ -8,7 +10,7 @@ URL filtering has precedence over dynamic filtering and static filtering. See ["
 
 URL filtering is accessible from the logger, i.e. you will create and manage dynamic URL rules through the logger UI, by clicking on the 4th cell in the row specific to the resource for which a rule needs to be created:
 
-![a](https://cloud.githubusercontent.com/assets/585534/7814025/5bf1df88-038d-11e5-9956-ecd3f56efeb0.png)
+![URL filtering dialog in the logger](https://cloud.githubusercontent.com/assets/585534/7814025/5bf1df88-038d-11e5-9956-ecd3f56efeb0.png)
 
 URL filtering uses _rules_, which resemble dynamic filtering rules, except that the destination hostname is replaced by a URL:
 
