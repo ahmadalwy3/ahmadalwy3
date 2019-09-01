@@ -11,7 +11,9 @@ An obvious example is Facebook: the Facebook widgets to _like_ something are emb
 This is also true for other entity such as Twitter, Google, Disqus, etc.
 
 > ***
-> Recommended reading: [_Internet Companies: Confusing Consumers for Profit_](https://www.eff.org/deeplinks/2015/10/internet-companies-confusing-consumers-profit) (EFF)
+> **Recommended reading:**
+>
+> [_Internet Companies: Confusing Consumers for Profit_](https://www.eff.org/deeplinks/2015/10/internet-companies-confusing-consumers-profit) (EFF)
 > ***
 
 uBlock Origin's [_dynamic filtering_](./Dynamic-filtering) can help you foil the ability of ubiquitous servers from building a profile of your browsing habits.
