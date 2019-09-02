@@ -10,6 +10,7 @@ Dynamic filtering is available to [advanced users](./Advanced-user-features). Dy
 - [Rule precedence](./Dynamic-filtering:-precedence)
 - [Turn off uBlock everywhere](./Dynamic-filtering:-turn-off-uBlock-everywhere)
 - [Turn off uBlock everywhere _except_... (blacklist mode)](./Dynamic-filtering:-turn-off-uBlock-everywhere-except)
+- [Dynamic filtering examples](./Dynamic-filtering---examples) (dated)
 - [Default-deny](./Dynamic-filtering:-default-deny) (dated)
     - [Default-deny: useful rulesets](./Dynamic-filtering:-default-deny:-useful-rulesets)
     - [Default-deny users: mind behind-the-scene network requests](./Behind-the-scene-network-requests)
