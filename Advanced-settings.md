@@ -101,12 +101,14 @@ Default value contains four codes separated by space representing four blocking 
 | 11111/#F00               | 11011/#C0F                 | 11001/#00F  | 00001   |
 |![red badge](https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png)|![purple badge](https://user-images.githubusercontent.com/886325/64036667-039fb380-cb54-11e9-8199-cf042837d481.png)|![blue badge](https://user-images.githubusercontent.com/886325/64036718-229e4580-cb54-11e9-91d3-10b6d95b6068.png)|![black badge](https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png)|
 
-Each code consist of bit field indicating status of the feature ( 1 for blocked/enabled, 0 for not blocked/disabled ), separator `/` and CSS color.
+Each code consist of bit field indicating status of the feature ( 1 for blocked/enabled, 0 for not blocked/disabled ) and optional separator `/` followed by CSS color value<sup>**\[1]**<sup>.
 
-| 3p-frame | 3p-script | 3p     | no-scripting | reload action | separator | CSS color value |
+| 3p-frame | 3p-script | 3p     | no-scripting | reload action | separator | CSS color value<sup>**\[1]**</sup> |
 | ---      | ---       | ---    | ---          | ---           | ---       | ---             |
 
 Pressing "Relax blocking mode" will compare current uBO status with `blockingProfiles` codes from left to right and apply if it's different, then reload page if "reload action" is enabled, then apply color to the uBO icon badge.
+
+**\[1]:** [The _color_ CSS data type](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 
 ***
 
