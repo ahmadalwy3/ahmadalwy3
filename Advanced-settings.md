@@ -92,7 +92,7 @@ After [1.21.7b6](https://github.com/gorhill/uBlock/compare/5e1f4d7...07c950f): `
 
 Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a4645f0c9c1e6dbedb56b5fb5d7), improved after 1.21.7b6 to reflect blocking mode in the color of uBlock₀ icon badge.
 
-Preference allows to configure cascade of the "Relax blocking mode" shortcut, along with corresponding badge color.
+Preference allows to configure cascade of the "Relax blocking mode" [keyboard shortcut](./Keyboard-shortcuts), along with corresponding badge color.
 
 Default value contains four codes separated by space representing four blocking modes:
 
