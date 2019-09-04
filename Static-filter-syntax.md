@@ -136,7 +136,7 @@ Equivalent to `third-party` [option](https://adblockplus.org/filters#options). F
 
 #### `all`
 
-New in uBO [1.19.7b](https://github.com/gorhill/uBlock/commit/1888033070003cd5e6a3687a4029448bf41fccea)
+New in [1.19.7b](https://github.com/gorhill/uBlock/commit/1888033070003cd5e6a3687a4029448bf41fccea).
 
 The `all` option is equivalent to specifying all
 network-based types + `popup`, `document`,
@@ -194,7 +194,7 @@ See also: [`all`](#all)
 
 #### `empty`
 
-New in [1.21.7b7](https://github.com/gorhill/uBlock/commit/3e5c9e00ab3603ae0c02e08b007b084404bbb71d)
+New in [1.21.7b7](https://github.com/gorhill/uBlock/commit/3e5c9e00ab3603ae0c02e08b007b084404bbb71d).
 
 The filter option `empty` is converted to `redirect=empty` by uBO internally; however unlike when the [`redirect`](#redirect) option is used expressly, the `empty` option does not require a resource type.
 
@@ -256,6 +256,8 @@ A source hostname should always be specified, so the `domain=` option is strongl
 
 
 #### `redirect-rule`
+
+New in [1.21.7b3](https://github.com/gorhill/uBlock/commit/aa73f292eced0d34a2a2989b1b27ace1214a2809).
 
 Allows to create standalone [`redirect`](#redirect) rule without being forced to create blocking filter.
 
