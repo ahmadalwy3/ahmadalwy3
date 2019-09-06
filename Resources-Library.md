@@ -132,7 +132,7 @@ Parameters:
 ***
 
 ### nowebrtc.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L721)
-Disables WebRTC by preventing web pages from using [`RTCPeerConnection()`](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection). Report attempts in console.
+Disables WebRTC by preventing web pages from using [_`RTCPeerConnection()`_](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection). Report attempts in console.
 
 
 ***
@@ -153,15 +153,17 @@ Parameters:
 
 New in [1.22.0](https://github.com/gorhill/uBlock/commit/6831967f5f9d64412a9c063f3b64104d9dce7b07)
 
-Defuses calls to _`requestAnimationFrame()`_ function when:
-- The needle **is not prefixed** with `!` and the needle **does not match** the stringified argument; OR
-- The needle **is prefixed** with `!` and the needle **matches** the stringified argument.
-
-When used without parameters, will log calls to `requestAnimationFrame()` to the console.
+**Defuses** calls to _`requestAnimationFrame()`_ function when parameter:
+- **is not prefixed** with `!` and **does not match** the stringified _callback_ argument to _`requestAnimationFrame()`_; OR
+- **is prefixed** with `!` and **matches** the stringified _callback_ argument to _`requestAnimationFrame()`_.
 
 Parameters:
- - optional, string/_regular expression_, "The needle", matching in the stringified argument passed to
+ - optional, string/_regular expression_, matching in the stringified _callback_ argument passed to
 requestAnimationFrame.
+
+Use with `!` argument to defuse all calls unconditionally.
+
+When used without parameters, will log calls to _`requestAnimationFrame()`_ to the console.
 
 
 ***
@@ -187,8 +189,11 @@ Parameters:
 
 ***
 
-### sid.js /
-### setInterval-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L474)
+### ~sid.js~ /
+### ~setInterval-defuser.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L474)
+
+Deprecated by [`setInterval-if.js`](#setinterval-ifjs-)
+
 Defuses calls to _`setInterval()`_ function for specified matching callbacks and intervals by setting callback function to noop.
 
 Parameters:
@@ -198,8 +203,30 @@ Parameters:
 
 ***
 
+### siif.js /
+### setInterval-if.js [↪](https://github.com/gorhill/uBlock/blob/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4/assets/resources/scriptlets.js#L529)
+
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6)
+
+**Defuses** calls to _`setInterval()`_ function when parameters:
+- **are not prefixed** with `!` and **do not match** the _`setInterval()`_ argument; OR
+- **are prefixed** with `!` and **matches** the _`setInterval()`_ argument.
+
+Parameters:
+ - optional, string/_regular expression_, matching in stringified callback function
+ - optional, decimal integer, matching _interval_
+
+Use with `!` argument to defuse all calls unconditionally.
+
+When used without parameters, will log calls to _`setInterval()`_ to the console.
+
+
+***
+
 ### ~sil.js~ /
 ### ~setInterval-logger.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L500)
+
+Deprecated by [`setInterval-if.js`](#setinterval-ifjs-)
 
 Removed in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6).
 
@@ -208,19 +235,44 @@ Logs to the console calls to _`setInterval()`_ function.
 
 ***
 
-### std.js /
-### setTimeout-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L515)
+### ~std.js~ /
+### ~setTimeout-defuser.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L515)
+
+Deprecated by [`setTimeout-if.js`](#settimeout-ifjs-)
+
 Defuses calls to _`setTimeout()`_ function for specified matching callbacks and delays by setting callback function to noop.
 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
- - optional, decimal integer, matching delay
+ - optional, decimal integer, matching _delay_
+
+
+***
+
+### stif.js /
+### setTimeout-if.js [↪](https://github.com/gorhill/uBlock/blob/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4/assets/resources/scriptlets.js#L602)
+
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6)
+
+**Defuses** calls to _`setTimeout()`_ function when parameters:
+- **are not prefixed** with `!` and **do not match** the _`setTimeout()`_ argument; OR
+- **are prefixed** with `!` and **matches** the _`setTimeout()`_ argument.
+
+Parameters:
+ - optional, string/_regular expression_, matching in stringified callback function
+ - optional, decimal integer, matching _delay_
+
+Use with `!` argument to defuse all calls unconditionally.
+
+When used without parameters, will log calls to _`setTimeout()`_ to the console.
 
 
 ***
 
 ### ~stl.js~ /
 ### ~setTimeout-logger.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L541)
+
+Deprecated by [`setTimeout-if.js`](#settimeout-ifjs-)
 
 Removed in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6).
 
@@ -272,11 +324,11 @@ Parameters:
 ***
 
 ### window.open-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/window.open-defuser.js)
-Prevent opening new windows by [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) when URL positively or negatively matches to specific string.
+Prevent opening new windows by [_`window.open()`_](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) when URL positively or negatively matches to specific string.
 
 Parameters:
  - optional - defaults to "matching", any positive number for "matching", `0` or any string for "not matching",
- - optional, string/_regular expression_, matching/not matching in URL parameter passed to `window.open()`
+ - optional, string/_regular expression_, matching/not matching in URL parameter passed to _`window.open()`_
 
 
 ***
@@ -297,7 +349,7 @@ Experimental, gets rid of overlay dialogs, works for ~30s after page load. Prefe
 ***
 
 ### alert-buster.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L691)
-Disables [`alert()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) dialog boxes by redirecting messages to console.
+Disables [_`alert()`_](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) dialog boxes by redirecting messages to console.
 
 
 ***
