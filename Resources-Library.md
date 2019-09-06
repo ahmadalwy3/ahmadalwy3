@@ -148,6 +148,24 @@ Parameters:
 
 ***
 
+### raf-if.js /
+### ~requestAnimationFrame-if.js~ [↪](https://github.com/gorhill/uBlock/blob/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4/assets/resources/scriptlets.js#L394)
+
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/6831967f5f9d64412a9c063f3b64104d9dce7b07)
+
+Defuses calls to _`requestAnimationFrame()`_ function when:
+- The needle **is not prefixed** with `!` and the needle **does not match** the stringified argument; OR
+- The needle **is prefixed** with `!` and the needle **matches** the stringified argument.
+
+When used without parameters, will log calls to `requestAnimationFrame()` to the console.
+
+Parameters:
+ - optional, string/_regular expression_, "The needle", matching in the stringified argument passed to
+requestAnimationFrame.
+
+
+***
+
 ### set.js /
 ### set-constant.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L394)
 Creates _property_ and initializes it to predefined value from set of available properties. TODO: "constant" is not constant - current implementation does not prevent to assign value of another type.
