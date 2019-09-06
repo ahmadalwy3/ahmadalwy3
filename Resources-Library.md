@@ -151,7 +151,7 @@ Parameters:
 ### raf-if.js /
 ### ~requestAnimationFrame-if.js~ [↪](https://github.com/gorhill/uBlock/blob/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4/assets/resources/scriptlets.js#L394)
 
-New in [1.22.0](https://github.com/gorhill/uBlock/commit/6831967f5f9d64412a9c063f3b64104d9dce7b07)
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/6831967f5f9d64412a9c063f3b64104d9dce7b07), `requestAnimationFrame-if.js` alias available in [1.22.1b2](https://github.com/gorhill/uBlock/commit/35854e4baf8b3b3aeb3f0f63ae9e7d3e46a4ba64)
 
 **Defuses** calls to _`requestAnimationFrame()`_ function when parameter:
 - **is not prefixed** with `!` and **does not match** the stringified _callback_ argument to _`requestAnimationFrame()`_; OR
