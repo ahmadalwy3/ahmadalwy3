@@ -161,7 +161,7 @@ Parameters:
  - optional, string/_regular expression_, matching in the stringified _callback_ argument passed to
 requestAnimationFrame.
 
-Use with `!` argument to defuse all calls unconditionally.
+Use with `!` parameter to defuse all calls unconditionally.
 
 When used without parameters, will log calls to _`requestAnimationFrame()`_ to the console.
 
@@ -216,7 +216,7 @@ Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
  - optional, decimal integer, matching _interval_
 
-Use with `!` argument to defuse all calls unconditionally.
+Use with `!` parameter to defuse all calls unconditionally.
 
 When used without parameters, will log calls to _`setInterval()`_ to the console.
 
@@ -262,7 +262,7 @@ Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
  - optional, decimal integer, matching _delay_
 
-Use with `!` argument to defuse all calls unconditionally.
+Use with `!` parameter to defuse all calls unconditionally.
 
 When used without parameters, will log calls to _`setTimeout()`_ to the console.
 
