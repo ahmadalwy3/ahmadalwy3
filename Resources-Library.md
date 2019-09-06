@@ -198,8 +198,11 @@ Parameters:
 
 ***
 
-### sil.js /
-### setInterval-logger.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L500)
+### ~sil.js~ /
+### ~setInterval-logger.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L500)
+
+Removed in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6).
+
 Logs to the console calls to _`setInterval()`_ function.
 
 
@@ -216,8 +219,11 @@ Parameters:
 
 ***
 
-### stl.js /
-### setTimeout-logger.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L541)
+### ~stl.js~ /
+### ~setTimeout-logger.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L541)
+
+Removed in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6).
+
 Logs to the console calls to _`setTimeout()`_ function.
 
 
