@@ -266,6 +266,8 @@ Use with `!` parameter to defuse all calls unconditionally.
 
 When used without parameters, will log calls to _`setTimeout()`_ to the console.
 
+<sub>Test page: https://gorhill.github.io/uBlock/tests/scriptlet-injection-filters-1.html</sub>
+
 
 ***
 
