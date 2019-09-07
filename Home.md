@@ -72,4 +72,5 @@
     - [Various videos showing side by side comparison of the load speed of complex sites](./Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites)
     - [Why don't you accept donations?](./Why-don't-you-accept-donations%3F)
     - [Reference description of uBO in various extensions stores](./Reference-description-of-uBO-in-various-extensions-stores)
+    - [Draft version of this wiki](https://github.com/uBlockorigin/ublock-issues/wiki)
 </details>
