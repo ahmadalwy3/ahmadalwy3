@@ -12,11 +12,9 @@ Normal, standard cosmetic filters are _declarative_, i.e. they are used as selec
 
 _Procedural_ means javascript code is used to find DOM elements which must be hidden. A procedural cosmetic filter makes use of cosmetic filter _operator_, which will tell uBO how to find/filter DOM elements in order to find which DOM elements to target.
 
-> ***
-> **Important:**
->
-> Procedural filters must always be specific, i.e. prefixed with the hostname of the site(s) on which they are meant to apply<sup>[[exception](https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters)]</sup>. If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO. Examples: Good, because specific: `example.com##body > div:has-text(Sponsored)`. Bad, because generic: `##body > div:has-text(Sponsored)`. The element picker always prefix automatically with the hostname to ensure created cosmetic filters are specific.
-> ***
+**Important:**
+
+Procedural filters must always be specific, i.e. prefixed with the hostname of the site(s) on which they are meant to apply<sup>[[exception](https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters)]</sup>. If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO. Examples: Good, because specific: `example.com##body > div:has-text(Sponsored)`. Bad, because generic: `##body > div:has-text(Sponsored)`. The element picker always prefix automatically with the hostname to ensure created cosmetic filters are specific.
 
 Also note that concatenating multiple procedural selectors in one filter is not supported. `example.com##p:has(img),div:has-text(advert)` will not work as expected ([#453](https://github.com/uBlockOrigin/uBlock-issues/issues/453)).
 
