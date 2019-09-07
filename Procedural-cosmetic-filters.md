@@ -15,10 +15,10 @@ _Procedural_ means javascript code is used to find DOM elements which must be hi
 > ***
 > **Important:**
 >
->Procedural filters must always be specific, i.e. prefixed with the hostname of the site(s) on which they are meant to apply<sup>[[exception](https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters)]</sup>. If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO. Examples: Good, because specific: `example.com##body > div:has-text(Sponsored)`. Bad, because generic: `##body > div:has-text(Sponsored)`. The element picker always prefix automatically with the hostname to ensure created cosmetic filters are specific.
->***
+> Procedural filters must always be specific, i.e. prefixed with the hostname of the site(s) on which they are meant to apply<sup>[[exception](https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters)]</sup>. If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO. Examples: Good, because specific: `example.com##body > div:has-text(Sponsored)`. Bad, because generic: `##body > div:has-text(Sponsored)`. The element picker always prefix automatically with the hostname to ensure created cosmetic filters are specific.
+> ***
 
-Also note that concatenating multiple procedural selectors in one filter is not supported. `example.com##p:has(img),div:has-text(advert)` will not work as expected.
+Also note that concatenating multiple procedural selectors in one filter is not supported. `example.com##p:has(img),div:has-text(advert)` will not work as expected ([#453](https://github.com/uBlockOrigin/uBlock-issues/issues/453)).
 
 Efficient procedural cosmetic filters (or any cosmetic filters really) are the ones which result in the smallest set of nodes to visit. The element picker input field will display the number of elements matching the current filter. The element picker will only consider the entered text up to the first line break, while leaving the rest as is. You can use this feature to break up your filter to find out the size of the resultset of the first part(s) of your filter: the smallest resultset the most efficient is your cosmetic filter.
 
