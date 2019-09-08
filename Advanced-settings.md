@@ -122,14 +122,14 @@ Configure how uBO should affect caching for the purpose of dealing with browser 
 
 Possible values:
 
-`no-cache, no-store, must-revalidate`:
-- Undesirable side effect: documents themselves for which uBO has to inject CSP directives as a result of filters/ruleset won't be available offline.
+- `no-cache, no-store, must-revalidate`:
+    - Undesirable side effect: documents themselves for which uBO has to inject CSP directives as a result of filters/ruleset won't be available offline.
 
-`no-cache`:
-- Undesirable side effect: One will need to explicitly cache-bypass reload a page each time uBO has to inject CSP directives as a result of filters/ruleset. Note that such cache-bypass reload does not affect only the document itself, but also all secondary resources inside that document.
+- `no-cache`:
+    - Undesirable side effect: One will need to explicitly cache-bypass reload a page each time uBO has to inject CSP directives as a result of filters/ruleset. Note that such cache-bypass reload does not affect only the document itself, but also all secondary resources inside that document.
 
-`unset`:
-- Available after [1.21.7b7](https://github.com/gorhill/uBlock/commit/52925ba2f9ed4351c0f5c7420773d2f59557fc7d), turns off this path.
+- `unset`:
+     - Available after [1.21.7b7](https://github.com/gorhill/uBlock/commit/52925ba2f9ed4351c0f5c7420773d2f59557fc7d), turns off this path.
 
 Related browser issues:
 - Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1376932>
@@ -214,6 +214,22 @@ If set to `true`, uBO will no longer lookup and inject scriptlets into web pages
 
 ***
 
+#### `loggerPopupType`
+
+uBO [1.22.1b3](https://github.com/gorhill/uBlock/commit/bcf5ac1feec0019663a3ad564caeb1c67679791e) and above.
+
+Default: `popup`.
+
+Control the type of window to be used when the logger is launched as a separate window. Introduced to solve issues with missing/disabled titlebar buttons, resizing, incorrect drawing ([#663](https://github.com/uBlockOrigin/uBlock-issues/issues/663)).
+
+Possible values:
+
+- `popup` - browser window without toolbars (default)
+- `normal` - normal browser window with all toolbars and buttons
+- any other value defined in [Chromium](https://developer.chrome.com/extensions/windows#type-CreateType) or [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/CreateType#Type) documentation.
+
+***
+
 #### `manualUpdateAssetFetchPeriod`
 
 Default: `500` milliseconds.
@@ -270,10 +286,10 @@ Default: `unset`, before [1.18.5b8](https://github.com/gorhill/uBlock/commit/87f
 
 Possible values:
 
-- `unset`: leave it to the platform to pick the optimal
+- `unset` - leave it to the platform to pick the optimal
   behavior (default)
-- `no`: do no suspend tab loading at launch time
-- `yes`: suspend tab loading at launch time
+- `no` - do no suspend tab loading at launch time
+- `yes` - suspend tab loading at launch time
 
 After [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3) configurable again in Firefox. 
 After uBO [1.17.5rc0](https://github.com/gorhill/uBlock/commit/41548be6be35fe17dbb996e605c4befb09e16911) - Chromium only. Firefox now uses ["persistent startup listeners"](https://bugzilla.mozilla.org/show_bug.cgi?id=1503721) by default.
