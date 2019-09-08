@@ -22,6 +22,7 @@
             - [Quick guide](./Dynamic-filtering:-quick-guide)
             - [Rule syntax](./Dynamic-filtering:-rule-syntax)
             - [Rule precedence](./Dynamic-filtering:-precedence)
+            - [Blocking mode](./Blocking-mode)
         - [URL filtering](./Dynamic-URL-filtering)
     - [_Whitelist_ pane](./Dashboard:-Whitelist)
         - [How to whitelist a web site](./How-to-whitelist-a-web-site)
