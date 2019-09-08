@@ -19,7 +19,7 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 
 ***
 
-![black badge](https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png)
+<img align=right alt="black badge" src="https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png">
 
 #### Very easy mode ([details ↪](./Blocking-mode:-very-easy-mode)):
 - _uBlock filters_.
@@ -44,7 +44,7 @@ These will set you somewhere between _Easy mode_  and _Medium mode_:
 
 ***
 
-![blue badge](https://user-images.githubusercontent.com/886325/64036718-229e4580-cb54-11e9-91d3-10b6d95b6068.png)
+<img align=right alt="blue badge" src="https://user-images.githubusercontent.com/886325/64036718-229e4580-cb54-11e9-91d3-10b6d95b6068.png">
 
 #### Medium mode ([details ↪](./Blocking-mode:-medium-mode)):
 - uBlock's out-of-the-box settings.
@@ -57,7 +57,7 @@ These will set you somewhere between _Easy mode_  and _Medium mode_:
 
 ***
 
-![red badge](https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png)
+<img align=right alt="red badge" src="https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png">
 
 #### Hard mode ([details ↪](./Blocking-mode:-hard-mode)):
 - uBlock's out-of-the-box settings.
