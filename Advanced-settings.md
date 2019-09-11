@@ -202,7 +202,7 @@ If set to `true`, turns off WebAssembly optimizations in uBO code.
 
 Default: `false`.
 
-uBO 1.23.3b3 and above.
+uBO [1.23.3b3](https://github.com/gorhill/uBlock/commit/93f438f55ebd8d1f558f2e73b64b3f87e928bf02) and above.
 
 If set to `true`, restores update behavior from before [1.22.3b ("Prevent uBO from being reloaded mid-session ")](https://github.com/gorhill/uBlock/commit/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4), extension will unconditionally reload when an update is available; otherwise the extension will reload only when being explicitly disabled then enabled, or when the browser is restarted.
 
