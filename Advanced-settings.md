@@ -179,10 +179,11 @@ If set to `info`, prints debug messages to the browser console.
 ***
 
 #### `debugScriptlets`
+#### `debugScriptletInjector`
 
 Default: `false`.
 
-If set to `true`, [`debugger;` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) will be inserted just before [scriptlet](./Static-filter-syntax#scriptlet-injection) code
+If set to `true`, [`debugger;` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) will be inserted just before [scriptlet](./Static-filter-syntax#scriptlet-injection) or scriptlet injector code.
 
 ***
 
