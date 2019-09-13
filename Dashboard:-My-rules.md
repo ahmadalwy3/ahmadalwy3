@@ -1,4 +1,4 @@
-- [Back to Wiki Home](./) pane
+- [Back to Wiki Home](./)
     - [Dynamic filtering](./Dynamic-filtering)
         - [Quick guide](./Dynamic-filtering:-quick-guide)
         - [Rule syntax](./Dynamic-filtering:-rule-syntax)
