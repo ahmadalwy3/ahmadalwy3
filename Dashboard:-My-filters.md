@@ -1,4 +1,4 @@
-- [Back to Wiki Home](./) pane
+- [Back to Wiki Home](./)
     - [Static filter syntax](./Static-filter-syntax)
         - [Procedural cosmetic filters](./Procedural-cosmetic-filters)
         - [Resources Library](./Resources-Library)
