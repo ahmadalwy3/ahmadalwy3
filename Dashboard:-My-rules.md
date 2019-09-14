@@ -8,4 +8,4 @@
 
 ***
 
-![My rule pane](https://user-images.githubusercontent.com/585534/46023462-b2b94c80-c0b2-11e8-87c0-9fa821563364.png)
+![My rules pane](https://user-images.githubusercontent.com/886325/64913787-ea4b5980-d746-11e9-9428-5910c77c8b0a.png)
