@@ -7,5 +7,12 @@
     - [Style overriding](http://raymondhill.net/ublock/adbox.html)
     - [Popups](http://raymondhill.net/ublock/popup.html)
     - [ABP Test Pages](https://testpages.adblockplus.org/)
+- [uBlock Origin tests](https://gorhill.github.io/uBlock/tests/)
+    - HNTrie: tests
+    - HNTrie, small (2) to medium (~1000) set: benchmarks
+    - HNTrie, small (2) to large (40,000+) set: benchmarks
+    - Procedural cosmetic filters
+    - Procedural HTML filters
+    - Scriptlet injection filters / setTimeout-if 
 - [Page load speed](http://www.raymondhill.net/ublock/pageloadspeed.html)
 - [HAR parser: find out what is NOT blocked](http://raymondhill.net/httpsb/har-parser.html)
