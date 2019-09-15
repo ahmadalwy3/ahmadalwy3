@@ -13,7 +13,7 @@
     - HNTrie, small (2) to large (40,000+) set: benchmarks
     - Procedural cosmetic filters
     - Procedural HTML filters
-    - Scriptlet injection filters / setTimeout-if
+    - Scriptlet injection filters / no-setTimeout-if
 - Useful information about internal benchmarks used for development purposes
     - [Leverage whotracks.me's huge dataset of URLs for benchmark purpose](https://github.com/gorhill/uBlock/commit/5733439f629da948cfc3cae74afa519f6cff7b7f)
     - [Add support to benchmark the dynamic filtering pane](https://github.com/gorhill/uBlock/commit/928ab91ab8b72be1c962370b49a36fbe1e1ded94)
