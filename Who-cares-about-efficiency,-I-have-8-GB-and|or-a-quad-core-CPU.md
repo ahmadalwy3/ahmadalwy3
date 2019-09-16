@@ -20,7 +20,7 @@ _Wasting_ is not _using_.
 
 ***
 
-Not convinced yet? Try [this online tool](http://www.numion.com/StopWatch/index.html) to compare how fast web pages load when using one blocker compared to another.
+Not convinced yet? Try using stopwatch to compare how fast web pages load when using one blocker compared to another.
 
 If you have a multi-core CPU, and hence plenty of spare CPU cycles, granted, there may not be such a noticeable difference in page load, but other popular blockers will definitely make use of plenty of whatever spare CPU cycles available (see below) to perform the same job as uBlock.
 
