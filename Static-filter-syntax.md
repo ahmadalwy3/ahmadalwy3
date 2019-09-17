@@ -16,7 +16,7 @@ However uBO does not support some very specific cases, and also adds its own ext
 
 ## Not supported
 
-`document` for [_entire page exception_](https://adblockplus.org/filters#whitelist):
+#### `document` for [_entire page exception_](https://adblockplus.org/filters#whitelist)
 
 Not supported. The purpose of the `document` option when used with an exception filter is to disable uBO completely. The purpose of the `document` option in static exception filters is mostly for the sake of "acceptable ads" support, which uBO does not support.
 
@@ -24,7 +24,7 @@ The reason it is not supported is to be sure that users explicitly disable uBO t
 
 <sub>Note: it [still works](https://github.com/gorhill/uBlock/issues/1754) to negate [strict blocking](./Strict-blocking) when explicitly enabled by blocking filter `document` option.</sub>
 
-`genericblock`:
+#### `genericblock`
 
 Not supported.
 
@@ -34,7 +34,7 @@ This option is not supported because using such filter option would cause large 
 
 For instance, when used for a specific site, the `genericblock` option would cause all the filters in hosts files to be disabled, including those from the malware lists. EasyPrivacy and other anti-tracking lists also contain countless so-called "generic" filters, and as a consequence these would also end up being disabled.
 
-`elemhide`:
+#### `elemhide`
 
 Translated internally to `generichide`. `elemhide` is used with exception filters to disable all cosmetic filtering on page, this can be achieved by ["No cosmetic filtering"](./Per-site-switches#no-cosmetic-filtering) switch.
 
