@@ -1,0 +1,1 @@
+Moved to https://github.com/uBlockOrigin/uBlock-issues/wiki/Who-cares-about-efficiency,-I-have-8-GB-RAM-and%7Cor-a-quad-core-CPU
