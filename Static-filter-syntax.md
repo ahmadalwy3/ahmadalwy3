@@ -22,7 +22,7 @@ Not supported. The purpose of the `document` option when used with an exception 
 
 The reason it is not supported is to be sure that users explicitly disable uBO themselves if they wish (through [whitelisting](./How-to-whitelist-a-web-site)), not having some external filter list decide for them.
 
-<sub>Note: it [still works](https://github.com/gorhill/uBlock/issues/1754) to negate [strict blocking](./Strict-blocking) when explicitly enabled by blocking filter `document` option.</sub>
+Note: it [still works](https://github.com/gorhill/uBlock/issues/1754) to negate [strict blocking](./Strict-blocking) when explicitly enabled by blocking filter `document` option.
 
 #### `genericblock`
 
