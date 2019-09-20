@@ -21,8 +21,8 @@ You can fix this by following the following steps:
 1.  If you use a Linux system go to Edit - Settings - Content and choose a default font other than "serif". "Liberation" and "Clear" are known to work.
 2.  If the icons are still not showing enter `about:config` in the navigation bar and promise to be careful
 3.  Search for `fonts`
-4.  Check that gfx.downloadable_fonts.enabled is set to 'true' and see whether the icons appear now. 
-5.  If it still does not work you might have to set browser.display.use_document_fonts to '1' but that should not be necessary if you followed step 1.
+4.  Check that `gfx.downloadable_fonts.enabled` is set to `true` and see whether the icons appear now. 
+5.  If it still does not work you might have to set `browser.display.use_document_fonts` to `1` but that should not be necessary if you followed step 1.
 
 ***
 
