@@ -3,7 +3,7 @@
 - Back to [Whitelist pane](./Dashboard:-Whitelist)
 
 ***
-
+ - [Big power button](#click-the-big-power-button)
  - [Detailed syntax](#detailed-syntax)
     - [Plain hostname](#plain-hostname)
     - [Single web page](#single-web-page)
@@ -16,9 +16,8 @@
 
 ***
 
-I've read a couple of feedbacks of people who wish it was possible to whitelist a web site, i.e. to disable uBlock on a specific web site.
-
-The feature is already available: it is the big power button.  It serves to whitelist the current web site, and its state will be remembered next time you visit the web site.
+### Click the big power button
+It serves to whitelist the current web site, and its state will be remembered next time you visit the web site.
 
 ![uBlock's popup](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1.png)
 
