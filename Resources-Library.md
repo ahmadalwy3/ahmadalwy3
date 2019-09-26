@@ -129,6 +129,49 @@ Prevent web pages from using _`eval()`_ on specific matching payloads.
 Parameters:
  - optional, string/_regular expression_, matching in payload string.
 
+
+***
+
+### nosiif.js /
+### no-setInterval-if.js [↪](https://github.com/gorhill/uBlock/blob/9367a6015b8cbb6b49347b00a105aab8f24df861/assets/resources/scriptlets.js#L585)
+
+New in [1.22.3b](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
+
+**Defuses** calls to _`setInterval()`_ function when parameters:
+- **are not prefixed** with `!` and **match** the _`setInterval()`_ argument; OR
+- **are prefixed** with `!` and **do not match** the _`setInterval()`_ argument.
+
+Parameters:
+ - optional, string/_regular expression_, matching in stringified callback function
+ - optional, decimal integer, matching _interval_
+
+Use with `/^/` parameter to defuse all calls unconditionally.
+
+When used without parameters, will log calls to _`setInterval()`_ to the console.
+
+
+***
+
+### nostif.js /
+### no-setTimeout-if.js [↪](https://github.com/gorhill/uBlock/blob/9367a6015b8cbb6b49347b00a105aab8f24df861/assets/resources/scriptlets.js#L656)
+
+New in [1.22.3b](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
+
+**Defuses** calls to _`setTimeout()`_ function when parameters:
+- **are not prefixed** with `!` and **match** the _`setTimeout()`_ argument; OR
+- **are prefixed** with `!` and **do not match** the _`setTimeout()`_ argument.
+
+Parameters:
+ - optional, string/_regular expression_, matching in stringified callback function
+ - optional, decimal integer, matching _delay_
+
+Use with `/^/` parameter to defuse all calls unconditionally.
+
+When used without parameters, will log calls to _`setTimeout()`_ to the console.
+
+<sub>Test page: https://gorhill.github.io/uBlock/tests/scriptlet-injection-filters-1.html</sub>
+
+
 ***
 
 ### nowebrtc.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L721)
@@ -203,26 +246,6 @@ Parameters:
 
 ***
 
-### siif.js /
-### setInterval-if.js [↪](https://github.com/gorhill/uBlock/blob/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4/assets/resources/scriptlets.js#L529)
-
-New in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6)
-
-**Defuses** calls to _`setInterval()`_ function when parameters:
-- **are not prefixed** with `!` and **do not match** the _`setInterval()`_ argument; OR
-- **are prefixed** with `!` and **matches** the _`setInterval()`_ argument.
-
-Parameters:
- - optional, string/_regular expression_, matching in stringified callback function
- - optional, decimal integer, matching _interval_
-
-Use with `!` parameter to defuse all calls unconditionally.
-
-When used without parameters, will log calls to _`setInterval()`_ to the console.
-
-
-***
-
 ### ~sil.js~ /
 ### ~setInterval-logger.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L500)
 
@@ -245,28 +268,6 @@ Defuses calls to _`setTimeout()`_ function for specified matching callbacks and 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
  - optional, decimal integer, matching _delay_
-
-
-***
-
-### stif.js /
-### setTimeout-if.js [↪](https://github.com/gorhill/uBlock/blob/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4/assets/resources/scriptlets.js#L602)
-
-New in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6)
-
-**Defuses** calls to _`setTimeout()`_ function when parameters:
-- **are not prefixed** with `!` and **do not match** the _`setTimeout()`_ argument; OR
-- **are prefixed** with `!` and **matches** the _`setTimeout()`_ argument.
-
-Parameters:
- - optional, string/_regular expression_, matching in stringified callback function
- - optional, decimal integer, matching _delay_
-
-Use with `!` parameter to defuse all calls unconditionally.
-
-When used without parameters, will log calls to _`setTimeout()`_ to the console.
-
-<sub>Test page: https://gorhill.github.io/uBlock/tests/scriptlet-injection-filters-1.html</sub>
 
 
 ***
