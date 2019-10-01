@@ -8,6 +8,7 @@
 
 `iframe` tags are very often used by malware code on compromised web sites -- using 3rd-party-sourced `<iframe>` to inject exploit on a user's computer is quite a common technique: 
 
+- [Webkit zero-day exploit besieges Mac and iOS users with malvertising redirects](https://arstechnica.com/information-technology/2019/09/webkit-zeroday-exploit-besieges-mac-and-ios-users-with-malvertising-redirects/)
 - [_"Kovter Group malvertising campaign exposes millions to potential ad fraud malware infections"_](https://www.proofpoint.com/us/threat-insight/post/kovter-group-malvertising-campaign-exposes-millions-potential-ad-fraud-malware)
 - [_"Massive AdGholas Malvertising Campaigns Use Steganography and File Whitelisting to Hide in Plain Sight"_](https://www.proofpoint.com/us/threat-insight/post/massive-adgholas-malvertising-campaigns-use-steganography-and-file-whitelisting-to-hide-in-plain-sight)
 - [_"Prince of pop trash PerezHilton pwned, visitors hit with cryptxxx"_](http://www.theregister.co.uk/2016/05/10/pop_prince_perezhilton_pwned_pours_cryptxxx/)
