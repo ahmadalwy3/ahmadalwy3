@@ -15,7 +15,7 @@ uBlock's required permissions are the same as those of [Privacy Badger](https://
         "https://*/*"
     ],
 
-[`"privacy"`](https://developer.chrome.com/extensions/privacy) is the only permission added in [version 0.9.8.2](https://github.com/gorhill/uBlock/releases/tag/0.9.8.2). All the others were there since when uBlock was first published (except for `"contextMenus"` which was added at some point, to support blocking element from within the context menu).
+[`"privacy"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/privacy) is the only permission added in [version 0.9.8.2](https://github.com/gorhill/uBlock/releases/tag/0.9.8.2). All the others were there since when uBlock was first published (except for `"contextMenus"` which was added at some point, to support blocking element from within the context menu).
 
 The `privacy` permission is needed for uBlock to be able to disable the setting "Prefetch resources to load pages more quickly". This will ensure no connection is opened at all for blocked requests: It's for your own protection privacy-wise.
 
@@ -44,7 +44,7 @@ Since [first version](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8
 
 See code:
 
-- [chrome.webRequest](https://github.com/gorhill/uBlock/search?q=%22chrome.webRequest%22&type=Code)
+- [browser.webRequest](https://github.com/gorhill/uBlock/search?q=%22browser.webRequest%22&type=Code)
 
 ### "Access your tabs and browsing activity"
 
@@ -62,8 +62,14 @@ This is necessary to be able to:
 
 See code:
 
-- [chrome.tabs](https://github.com/gorhill/uBlock/search?q=%22chrome.tabs%22&type=Code)
-- [chrome.webNavigation](https://github.com/gorhill/uBlock/search?q=%22chrome.webNavigation%22&type=Code)
+- [browser.tabs](https://github.com/gorhill/uBlock/search?q=%22browser.tabs%22&type=Code)
+- [browser.webNavigation](https://github.com/gorhill/uBlock/search?q=%22browser.webNavigation%22&type=Code)
+
+### "Store unlimited amount of client-side data"
+
+Related permission: `unlimitedStorage`.
+
+This permission is necessary to allow uBO to use more than 5 MB of storage. uBO uses client-side storage to save the updated assets downloaded from remote servers (filter lists and other assets), the compiled version of those assets and the selfie representation of various assets (for efficient launch time). The storage used by uBO is shown at the bottom of the _Settings_ pane in the dashboard. Without this permission uBO would not be able to use more than 5 MB, which is not enough for uBO to function properly.
 
 ### "Change your privacy-related settings"
 
@@ -93,7 +99,7 @@ Also, the benefits of _prefetching_ are probably marginal, and in the context of
 
 See code:
 
-- [chrome.privacy.network](https://github.com/gorhill/uBlock/commit/e65c2939757f09db646d277b82da8690aaf3adbc)
+- [browser.privacy.network](https://github.com/gorhill/uBlock/commit/e65c2939757f09db646d277b82da8690aaf3adbc)
 
 <sub>[1] Merely opening a TCP connection leaks your IP address to the remote server -- this is incompatible with an extension which primary purpose is to **completely** prevent connections to remove server, not just merely prevent the transfer of data. For instance, [see what can be found](https://www.browserleaks.com/whois) with a just that connection being established (IP, OS Fingerprinting, IP Address Location).</sub>
 
