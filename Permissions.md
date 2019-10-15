@@ -69,6 +69,8 @@ See code:
 
 Related permission: `unlimitedStorage`.
 
+Since [first version](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
+
 This permission is necessary to allow uBO to use more than 5 MB of storage. uBO uses client-side storage to save the updated assets downloaded from remote servers (filter lists and other assets), the compiled version of those assets and the selfie representation of various assets (for efficient launch time). The storage used by uBO is shown at the bottom of the _Settings_ pane in the dashboard. Without this permission uBO would not be able to use more than 5 MB, which is not enough for uBO to function properly.
 
 ### "Change your privacy-related settings"
