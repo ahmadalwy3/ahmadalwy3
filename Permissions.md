@@ -67,7 +67,7 @@ See code:
 
 ### "Store unlimited amount of client-side data"
 
-Related permission: `unlimitedStorage`.
+Related permission: [`unlimitedStorage`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#Unlimited_storage).
 
 Since [first version](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
 
