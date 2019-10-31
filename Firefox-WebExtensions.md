@@ -23,7 +23,7 @@ There are also Firefox issues specific to webext extensions which can cause a we
 - [Extension with listener at webRequest.onHeadersReceived breaks navigation (crash/blank page) when the previous page performs sync XHR upon unload](https://bugzilla.mozilla.org/show_bug.cgi?id=1401516)
   - duplicate of [1396395 - Firefox crashes when submitting form](https://bugzilla.mozilla.org/show_bug.cgi?id=1396395) - RESOLVED FIXED in Firefox 58
 - [Empty page using uBo / ABP webext (even whitelisting the site)](https://bugzilla.mozilla.org/show_bug.cgi?id=1396226)
-  - duplicate of [1379148 - document.write does not synchronously modify a document if an extension has content scripts at document_start](https://bugzilla.mozilla.org/show_bug.cgi?id=1379148) - VERIFIED FIXED in Firefox 57
+  - duplicate of [1379148 - document.write does not synchronously modify a document if an extension has content scripts at document_start](https://bugzilla.mozilla.org/show_bug.cgi?id=1379148) - VERIFIED FIXED in Firefox 57, supposedly fixed in Waterfox 2019.10 ([rel1](https://github.com/MrAlex94/Waterfox/issues/856#issuecomment-548203367), [rel2](https://github.com/MrAlex94/Waterfox/issues/1065), [rel3](https://github.com/MrAlex94/Waterfox/pull/1164), [merge](https://github.com/hawkeye116477/Waterfox/commit/e24033d5980d3dff8f474393f256a553353903ca))
 - [Presence of an Webextension makes the head element missing on (iframe) load](https://bugzilla.mozilla.org/show_bug.cgi?id=1375875)
 
 Another option is to install [uBO 1.13.8](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/versions/?page=1#version-1.13.8) and disable auto-update for it.
