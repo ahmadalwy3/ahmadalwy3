@@ -110,6 +110,22 @@ Parameters:
 
 ***
 
+### json-prune.js [↪](https://github.com/gorhill/uBlock/blob/b97fea09d20d014923b2741a01fa3f3f5555e230/assets/resources/scriptlets.js#L239)
+
+New in [1.23.0](https://github.com/gorhill/uBlock/commit/2fd86a66fcc2665e5672cc5862e24b3782ee7504)
+
+Intercepts calls to `JSON.parse`, and if the result of the parsing is an Object, it will remove specified properties from the result before returning to the caller.
+
+Parameters:
+ - optional, string, a list of space-separated properties to remove 
+ - optional, string, a list of space-separated properties which must be all present for the pruning to occur
+
+A property in a list of properties can be a chain of properties, example: `adpath.url.first`.
+
+When used without parameters, will log current hostname + json payload to the console.
+
+***
+
 ### noeval.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/noeval.js)
 Prevent web pages from using _`eval()`_, and report attempts to console.
 
