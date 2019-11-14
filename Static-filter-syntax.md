@@ -194,6 +194,14 @@ For _block_ filters only. This is _type_ option (like `image` or `script`) which
 
 See also: [`all`](#all)
 
+#### `elemhide`
+
+Alias: `ehide`.
+
+Before uBO [1.23.0](https://github.com/gorhill/uBlock/commit/23c4c80136ba4974a6444488ef8162ba75b0cb84) option was translated internally to `generichide`.
+
+Option for exception filters only. Turns off all cosmetic filtering on matching pages.
+
 #### `empty`
 
 New in [1.21.7b7](https://github.com/gorhill/uBlock/commit/3e5c9e00ab3603ae0c02e08b007b084404bbb71d).
@@ -211,6 +219,14 @@ Equivalent to `~third-party` [option](https://adblockplus.org/filters#options). 
 #### `frame`
 
 Equivalent to `subdocument` [option](https://adblockplus.org/filters#options). For convenience.
+
+#### `generichide`
+
+Alias: `ghide`.
+
+Option for exception filters only. Turns off _generic_ cosmetic filtering on matching pages.
+
+Generic cosmetic filters, are hiding filters which apply to all pages - `##.ad-class`.
 
 #### `important`
 
@@ -272,6 +288,16 @@ The above filter will result in a block filter `||example.com/ads.js$script` **a
     ||example.com/ads.js$script,redirect-rule=noop.js
 
 The above filter will not cause a block filter to be created, only a redirect directive will be created. Standalone redirect directives are useful when the blocking of a resource is optional but we still want the resource to be redirected should it ever be blocked by whatever mean - whether through a separate block filter, a dynamic filtering rule, etc.
+
+#### `specifichide`
+
+Alias: `shide`.
+
+New in uBO [1.23.0](https://github.com/gorhill/uBlock/commit/23c4c80136ba4974a6444488ef8162ba75b0cb84)
+
+Option for exception filters only. Turns off _specific_ cosmetic filtering on matching pages.
+
+Specific cosmetic filters, are filters which apply only to pages in domains specified in filter - `example.com##.ad-class`.
 
 #### `xhr`
 
