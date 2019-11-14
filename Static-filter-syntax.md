@@ -34,9 +34,11 @@ This option is not supported because using such filter option would cause large 
 
 For instance, when used for a specific site, the `genericblock` option would cause all the filters in hosts files to be disabled, including those from the malware lists. EasyPrivacy and other anti-tracking lists also contain countless so-called "generic" filters, and as a consequence these would also end up being disabled.
 
-#### `elemhide`
+#### ~`elemhide`~
 
-Translated internally to `generichide`. `elemhide` is used with exception filters to disable all cosmetic filtering on page, this can be achieved by ["No cosmetic filtering"](./Per-site-switches#no-cosmetic-filtering) switch.
+**Supported** starting with uBO [1.23.0](https://github.com/gorhill/uBlock/commit/23c4c80136ba4974a6444488ef8162ba75b0cb84), also aliased as `ehide`.
+
+Before 1.23.0 it was translated internally to `generichide`. `elemhide` was only available as ["No cosmetic filtering"](./Per-site-switches#no-cosmetic-filtering) switch.
 
 Keep in mind `generichide` is a cosmetic filtering-related option, and as such using it has no negative consequence with regard to privacy since cosmetic filtering has no privacy value.
 
