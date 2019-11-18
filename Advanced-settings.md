@@ -18,9 +18,9 @@ If you want to reset all settings to their default values, delete everything the
 
 #### `allowGenericProceduralFilters`
 
-uBO [1.19.3b8](https://github.com/gorhill/uBlock/commit/1caff7429eceabc712b98b25b5c3929f430d6654) and above.
-
 Default: `false`.
+
+uBO [1.19.3b8](https://github.com/gorhill/uBlock/commit/1caff7429eceabc712b98b25b5c3929f430d6654) and above.
 
 If set to `true`, generic [procedural cosmetic filters](./Procedural-cosmetic-filters) will no longer be discarded as invalid.
 
@@ -38,9 +38,9 @@ The number of seconds after which uBO throws an error when a remote server fails
 
 #### `autoCommentFilterTemplate`
 
-uBO 1.17.7b2 and above.
-
 Default value is `{{date}} {{origin}}`.
+
+uBO 1.17.7b2 and above.
 
 Placeholders are identified by `{{...}}`. There are currently
 only three placeholders supported:
@@ -66,9 +66,9 @@ When the auto-updater kicks in and an asset in need of update is fetched, this i
 
 #### `autoUpdateDelayAfterLaunch`
 
-uBO [1.19.3b9](https://github.com/gorhill/uBlock/commit/72d9758faa40a49f00d2a4671c9db2f519471f0d) and above.
-
 Default: `180` secs.
+
+uBO [1.19.3b9](https://github.com/gorhill/uBlock/commit/72d9758faa40a49f00d2a4671c9db2f519471f0d) and above.
 
 The number of seconds to wait after launch before an auto-update session<sup>[1]</sup> is started.
 
@@ -209,6 +209,22 @@ If set to `true`, restores update behavior from before [1.22.3b ("Prevent uBO fr
 
 ***
 
+#### `filterAuthorMode`
+
+**Under development!!** Do not create related issues!
+
+Default: `false`.
+
+uBO [1.23.0](https://github.com/gorhill/uBlock/commit/59c9a34d34a737f6bb48c4130c65f4fe0fa73806) and above.
+
+Enabled point-and-click feature, to create temporary exception filters for static extended filters (i.e. cosmetic, scriptlet & html filters) from within the summary pane in the logger. The button to toggle on/off temporary exception filter is labeled `#@#`:
+
+![filtering tools dialog](https://user-images.githubusercontent.com/886325/69076705-4fb41300-0a34-11ea-8e9a-463b9a1d29d8.png)
+
+The created exceptions are temporary and will be lost when restarting uBO, or manually toggling off the exception filters.
+
+***
+
 #### `ignoreRedirectFilters`
 
 Default: `false`.
@@ -227,9 +243,9 @@ If set to `true`, uBO will no longer lookup and inject scriptlets into web pages
 
 #### `loggerPopupType`
 
-uBO [1.22.1b3](https://github.com/gorhill/uBlock/commit/bcf5ac1feec0019663a3ad564caeb1c67679791e) and above.
-
 Default: `popup`.
+
+uBO [1.22.1b3](https://github.com/gorhill/uBlock/commit/bcf5ac1feec0019663a3ad564caeb1c67679791e) and above.
 
 Control the type of window to be used when the logger is launched as a separate window. Introduced to solve issues with missing/disabled titlebar buttons, resizing, incorrect drawing ([#663](https://github.com/uBlockOrigin/uBlock-issues/issues/663)).
 
