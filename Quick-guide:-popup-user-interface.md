@@ -91,9 +91,21 @@ And I had click-to-play enabled in all cases, so it could have been worse (excep
 
 ### The overview panel
 
-When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand<sup>__*__</sup> to show you more details about requests blocked and domains connected:
+When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand to show you more details about requests blocked and domains connected:
 
-![Overview panel expanded](https://user-images.githubusercontent.com/585534/46020816-353f0d80-c0ad-11e8-9ef2-227625bf12ef.png)<br>Tip: Click the `all` cell at the top to toggle on/off subdomain-level details.
+![Overview panel expanded](https://user-images.githubusercontent.com/585534/46020816-353f0d80-c0ad-11e8-9ef2-227625bf12ef.png)
+
+> ***
+> **Note:**
+>
+> The panel will also be expanded when you enable "advanced user" mode -- this is only for convenience -- it will not close automatically when "advanced user" will be disabled.
+> ***
+
+> ***
+> **Tip:**
+>
+> Click the `all` cell at the top to toggle on/off subdomain-level details.
+> ***
 
 The pluses and minuses denote network requests which were either allowed (not blocked) or blocked, respectively for the specific domain/hostname aside which they appear. The number of pluses and minuses are proportional to the number of requests allowed or blocked:
 - `+`, `-`: under 10 network requests were allowed, blocked.
@@ -105,8 +117,6 @@ To hide that panel, just click again on either the _"requests blocked"_ or _"dom
 Unless you are in "advanced user" mode, this panel is read-only and available only for informational purpose.
 
 In ["advanced user"](./Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
-
-<sub>__*__ The panel will also be expanded when you enable "advanced user" mode -- this is only for convenience -- it will not close automatically when "advanced user" will be disabled.</sub>
 
 ***
 
