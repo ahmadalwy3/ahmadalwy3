@@ -229,7 +229,19 @@ When used without parameters, will log calls to _`requestAnimationFrame()`_ to t
 
 ### set.js /
 ### set-constant.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L394)
-Creates _property_ and initializes it to predefined value from set of available properties. TODO: "constant" is not constant - current implementation does not prevent to assign value of another type.
+Creates _property_ and initializes it to predefined value from set of available properties.
+
+Scriptlet will succeed only when:
+ - original _property_ is `undefined` (scriptlet is called early enough) **OR**
+ - new _property_ written by `set.js` is `undefined` **OR**
+ - type of original _property_ is equal to type of new _property_
+
+Additionally, original _property_ (if exist) must not have getter.
+
+Value set by scriptlet can be overwritten by page script when:
+ - current _property_ was not set to `undefined` **AND**
+ - new _property_ is not `undefined` **AND**
+ - type of original _property_ is different than type of new _property_ 
 
 Parameters:
  - required, _property_ (chain of properties joined by `.`) attached to window object
