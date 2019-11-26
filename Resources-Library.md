@@ -263,7 +263,7 @@ Parameters:
 ### ~sid.js~ /
 ### ~setInterval-defuser.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L474)
 
-Deprecated by [`setInterval-if.js`](#setinterval-ifjs-)
+Deprecated by [`no-setInterval-if.js`](#no-setinterval-ifjs-)
 
 Defuses calls to _`setInterval()`_ function for specified matching callbacks and intervals by setting callback function to noop.
 
@@ -277,7 +277,7 @@ Parameters:
 ### ~sil.js~ /
 ### ~setInterval-logger.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L500)
 
-Deprecated by [`setInterval-if.js`](#setinterval-ifjs-)
+Deprecated by [`no-setInterval-if.js`](#no-setinterval-ifjs-)
 
 Removed in [1.22.0](https://github.com/gorhill/uBlock/commit/c5536577b29cd0bcd401f7ecd143a921acdb4eb6).
 
