@@ -105,6 +105,9 @@ When you click on either the _"requests blocked"_ or _"domains connected"_ label
 > **Tip:**
 >
 > Click the `all` cell at the top to toggle on/off subdomain-level details.
+>
+>Click it with <kbd>Ctrl</kbd> and <kbd>Shift</kbd> pressed to open panel as new browser tab.
+>
 > ***
 
 The pluses and minuses denote network requests which were either allowed (not blocked) or blocked, respectively for the specific domain/hostname aside which they appear. The number of pluses and minuses are proportional to the number of requests allowed or blocked:
