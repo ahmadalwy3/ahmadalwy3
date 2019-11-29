@@ -93,33 +93,31 @@ And I had click-to-play enabled in all cases, so it could have been worse (excep
 
 When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand to show you more details about requests blocked and domains connected:
 
-![Overview panel expanded](https://user-images.githubusercontent.com/585534/46020816-353f0d80-c0ad-11e8-9ef2-227625bf12ef.png)
+![Overview panel expanded](https://user-images.githubusercontent.com/886325/69881956-eb643f80-12ce-11ea-80aa-90f3ed42b8f9.gif)<br>Clicking the `all` cell at the top will toggle on/off subdomain-level details.
 
-> ***
-> **Note:**
->
-> The panel will also be expanded when you enable "advanced user" mode -- this is only for convenience -- it will not close automatically when "advanced user" will be disabled.
-> ***
-
-> ***
-> **Tip:**
->
-> Click the `all` cell at the top to toggle on/off subdomain-level details.
->
->Click it with <kbd>Ctrl</kbd> and <kbd>Shift</kbd> pressed to open panel as new browser tab.
->
-> ***
+The panel will also be expanded when you enable ["advanced user"](./Advanced-user-features) mode -- this is only for convenience -- it will not close automatically when "advanced user" will be disabled. To hide that panel, just click again on either the _"requests blocked"_ or _"domains connected"_ label.
 
 The pluses and minuses denote network requests which were either allowed (not blocked) or blocked, respectively for the specific domain/hostname aside which they appear. The number of pluses and minuses are proportional to the number of requests allowed or blocked:
 - `+`, `-`: under 10 network requests were allowed, blocked.
 - `++`, `--`: under 100 network requests were allowed, blocked.
 - `+++`, `---`: 100 or more network requests were allowed, blocked.
 
-To hide that panel, just click again on either the _"requests blocked"_ or _"domains connected"_ label.
+<details>
+<summary>Unless you are in "advanced user" mode, this panel is read-only and available only for informational purpose.</summary>
 
-Unless you are in "advanced user" mode, this panel is read-only and available only for informational purpose.
 
-In ["advanced user"](./Advanced-user-features) mode, the panel is fully interactive and can be used for advanced filtering control.
+In "advanced user" mode, the panel is fully interactive and can be used for advanced filtering control:
+
+![Overview panel advanced mode](https://user-images.githubusercontent.com/886325/69882333-2450e400-12d0-11ea-8764-464b83e99612.gif)
+
+> ***
+> **Tip:**
+>
+> Click the `all` cell at the top with <kbd>Ctrl</kbd> and <kbd>Shift</kbd> pressed to open panel as new browser tab.
+>
+> ***
+
+</details>
 
 ***
 
