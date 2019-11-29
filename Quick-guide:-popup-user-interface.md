@@ -116,6 +116,16 @@ In "advanced user" mode, the panel is fully interactive and can be used for adva
 
 ![Overview panel advanced mode](https://user-images.githubusercontent.com/886325/69882333-2450e400-12d0-11ea-8764-464b83e99612.gif)
 
+This is UI for [Dynamic filtering](./Dynamic-filtering). Column on the left represents global rules, on the right - local.
+
+![dynamic filtering cells](https://user-images.githubusercontent.com/886325/69888549-c2eb3e00-12ec-11ea-8341-9b0de36e7659.gif)
+
+Each cell has three fields representing [Dynamic filtering actions](./Dynamic-filtering:-rule-syntax#actions):
+
+ - Green - `allow`: matching network request will be allowed.
+ - Grey - `noop`: exclude network requests from being subjected to dynamic filtering. 
+ - Red -  `block`: matching network request will be blocked.
+
 > ***
 > **Tip:**
 >
