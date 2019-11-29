@@ -102,12 +102,9 @@ The pluses and minuses denote network requests which were either allowed (not bl
 - `++`, `--`: under 100 network requests were allowed, blocked.
 - `+++`, `---`: 100 or more network requests were allowed, blocked.
 
-Unless you are in ["advanced user"](./Advanced-user-features) mode, this panel is read-only and available only for informational purpose.
-
 <details>
-<summary>I am an advanced user!</summary>
+<summary>Unless you are in "advanced user" mode, this panel is read-only and available only for informational purpose.</summary>
 
-***
 
 In "advanced user" mode, the panel is fully interactive and can be used for advanced filtering control:
 
