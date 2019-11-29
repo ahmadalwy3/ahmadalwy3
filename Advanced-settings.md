@@ -86,9 +86,9 @@ The time to wait in hours between each update session. uBO will always start an 
 
 #### `blockingProfiles`
 
-Default: `11101 11001 00001`
+Default: `11111/#F00 11011/#C0F 11001/#00F 00001`
 
-After [1.21.7b6](https://github.com/gorhill/uBlock/compare/5e1f4d7...07c950f): `11111/#F00 11011/#C0F 11001/#00F 00001`
+Before [1.21.7b6](https://github.com/gorhill/uBlock/compare/5e1f4d7...07c950f): `11101 11001 00001`
 
 Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a4645f0c9c1e6dbedb56b5fb5d7), improved after 1.21.7b6 to reflect blocking mode in the color of uBlock₀ icon badge.
 
