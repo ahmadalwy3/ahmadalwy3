@@ -166,6 +166,47 @@ If set to true, uBO will lz4-compress data before storing it in its cache storag
 
 ***
 
+#### `cnameIgnore1stParty`
+
+Default: `true`.
+
+***
+
+#### `cnameIgnoreExceptions`
+
+Default: `true`.
+
+***
+
+#### `cnameIgnoreList`
+
+Default: `unset`.
+
+
+#### `cnameIgnoreRootDocument`
+
+Default: `true`.
+
+***
+
+#### `cnameMaxTTL`
+
+Default: `60` minutes.
+
+***
+
+#### `cnameReplayFullURL`
+
+Default: `false`.
+
+***
+
+#### `cnameUncloak`
+
+Default: `true`.
+
+***
+
 #### `consoleLogLevel`
 
 Default: `unset`.
