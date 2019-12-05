@@ -170,11 +170,15 @@ If set to true, uBO will lz4-compress data before storing it in its cache storag
 
 Default: `true`.
 
+Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865) development versions.
+
 ***
 
 #### `cnameIgnoreExceptions`
 
 Default: `true`.
+
+Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9) development versions.
 
 ***
 
@@ -182,10 +186,14 @@ Default: `true`.
 
 Default: `unset`.
 
+Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865) development versions.
+
 
 #### `cnameIgnoreRootDocument`
 
 Default: `true`.
+
+Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a) development versions.
 
 ***
 
@@ -193,17 +201,23 @@ Default: `true`.
 
 Default: `60` minutes.
 
+Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865) development versions.
+
 ***
 
 #### `cnameReplayFullURL`
 
 Default: `false`.
 
+Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a) development versions.
+
 ***
 
 #### `cnameUncloak`
 
 Default: `true`.
+
+Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9) development versions.
 
 ***
 
