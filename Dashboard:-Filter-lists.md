@@ -53,9 +53,9 @@ Clicking this button with <kbd>Ctrl</kbd> and <kbd>Shift</kbd> pressed will remo
 
 ##### Parse and enforce cosmetic filters
 
-Un-check this option if you do not want cosmetic filters to be parsed and enforced. This option is mostly of interest for those who want to further reduce uBlock Origin's memory and CPU footprint. Cosmetic filtering has no value privacy-wise, its only purpose is to [hide elements](https://adblockplus.org/filters#elemhide) on a web page which can't be blocked otherwise. An example of this are the ads served with some Google Search results.
+Un-check this option if you do not want cosmetic filters from various filterlists to be parsed and enforced. This option is mostly of interest for those who want to further reduce uBlock Origin's memory and CPU footprint. Cosmetic filtering has no value privacy-wise, its only purpose is to [hide elements](https://adblockplus.org/filters#elemhide) on a web page which can't be blocked otherwise. An example of this are the ads served with some Google Search results.
 
-Note that if you disable this option, your own custom cosmetic filters (if any) will still be enforced.
+Note that if you disable this option, your own custom cosmetic filters in `My Filters` (if any) will still be enforced.
 
 ##### Stock filter lists
 
