@@ -119,4 +119,6 @@ Please see: ["Per site switches"](./Per-site-switches)
 
 The bottom-most section is for you to easily backup/restore/reset all settings in uBlock.
 
+It's done by saving text file to location specified by your browser.
+
 It is suggested you backup all your settings regularly.
