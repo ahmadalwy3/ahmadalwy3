@@ -254,7 +254,7 @@ See also: [`empty`](#empty), [`redirect`](#redirect)
 
 #### `popunder`
 
-To block "popunders" windows/tabs. To be used in the same manner as the `popup` filter option, except that it will block popunders.
+To block "popunders" windows/tabs, where original page is redirected to advertisement and desired content is loaded in newly created one. To be used in the same manner as the `popup` filter option, except that it will block popunders.
 
 #### `redirect`
 
