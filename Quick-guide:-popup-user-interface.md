@@ -105,6 +105,8 @@ The pluses and minuses denote network requests which were either allowed (not bl
 - `++`, `--`: under 100 network requests were allowed, blocked.
 - `+++`, `---`: 100 or more network requests were allowed, blocked.
 
+Starting with [1.24.3b7](https://github.com/gorhill/uBlock/commit/d0738c0835338a15683b9dfffd12b670f513c3f1) canonical name aliases (CNAME) are rendered in blue font.
+
 Unless you are in ["advanced user"](./Advanced-user-features) mode, this panel is read-only and available only for informational purpose.
 
 <details>
