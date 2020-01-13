@@ -482,7 +482,7 @@ font, image, media, object, script, stylesheet, subdocument, xmlhttprequest
 
 Example rule:
 
-`||ad.server.com/$xmlhttprequest,redirect=noop.txt,domain=www.google.com`
+`||ad.server.com/$script,redirect=noop.js,domain=www.google.com`
 
 TODO: object and font resources are missing? Find discussion about adding them on demand.
 
