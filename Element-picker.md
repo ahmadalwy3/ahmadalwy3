@@ -45,3 +45,4 @@ There may be many different reasons for this.
 - You un-checked _My filters_ in the _3rd-party filters_ pane in the dashboard.
 - There is a static filter in one of the 3rd-party filter lists in use which counters your filter.
     - Exception cosmetic filters (`#@#`) cancel cosmetic filters (`##`).
+    - Exception filter with [`elemhide`](./Static-filter-syntax#elemhide-1) or [`specifichide`](./Static-filter-syntax#specifichide) option.
