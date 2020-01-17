@@ -29,9 +29,9 @@ Particular columns indicate:
     - `<<` redirection to neutered resource
 1. Context identifier (domain) in which the filter is evaluated
 1. _Partyness_ of the network request related to main document, and optionally after comma, _partyness_ of the request in relation to embedded subdocument
-    - `1` for the first-party requests
-    - `3` for third-party requests
-    - `0` for _tabless_ requests (behind the scene)
+    - `1` for the first-party requests, from current page domain (the one you see in address bar)
+    - `3` for third-party requests, from other domains
+    - `0` for _tabless_ requests (behind the scene, requests not assigned to any opened page)
 1. Type of request
 1. Address of the resource on which filter was applied
 
