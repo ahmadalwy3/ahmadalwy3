@@ -228,19 +228,19 @@ When used without parameters, will log calls to _`requestAnimationFrame()`_ to t
 ***
 
 ### set.js /
-### set-constant.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L394)
+### set-constant.js [↪](https://github.com/gorhill/uBlock/blob/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce/assets/resources/scriptlets.js#L478)
 Creates _property_ and initializes it to predefined value from set of available properties.
 
 Scriptlet will succeed only when:
- - original _property_ is `undefined` (scriptlet is called early enough) **OR**
- - new _property_ written by `set.js` is `undefined` **OR**
+ - original _property_ is `undefined` (scriptlet is called early enough) or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **OR**
+ - new _property_ written by `set.js` is `undefined` or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **OR**
  - type of original _property_ is equal to type of new _property_
 
 Additionally, original _property_ (if exist) must not have getter.
 
 Value set by scriptlet can be overwritten by page script when:
- - current _property_ was not set to `undefined` **AND**
- - new _property_ is not `undefined` **AND**
+ - current _property_ was not set to `undefined` or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **AND**
+ - new _property_ is not `undefined` or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **AND**
  - type of original _property_ is different than type of new _property_ 
 
 Parameters:
