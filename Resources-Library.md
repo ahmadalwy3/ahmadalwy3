@@ -30,7 +30,7 @@
 ***
 
 ### acis.js /
-### abort-current-inline-script.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L35)
+### abort-current-inline-script.js [↪](https://github.com/gorhill/uBlock/blob/1a133d0a1fc44f4bce357ebbea65d645f3eb4e8e/assets/resources/scriptlets.js#L35)
 Aborts execution of inline script (_throws_ `ReferenceError`) when attempts to access specified _property_ when content of `<script>` _element_ matches specified text or _regular expression_.
 
 Parameters:
