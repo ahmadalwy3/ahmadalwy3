@@ -188,6 +188,7 @@ Default: `unset`.
 
 Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865) development versions.
 
+***
 
 #### `cnameIgnoreRootDocument`
 
