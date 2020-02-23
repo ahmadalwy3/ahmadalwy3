@@ -84,6 +84,25 @@ The time to wait in hours between each update session. uBO will always start an 
 
 ***
 
+#### `benchmarkDatasetURL`
+
+Default: `unset`.
+
+uBO [1.25.1b1](https://github.com/gorhill/uBlock/commit/b784b7d5693751844bdb6e7ec7bd30368b2598a8) and above.
+
+URL from where the _benchmark_ _dataset_ will be fetched. This allows to launch benchmark operations from within published versions of uBO, rather than from just a locally built version.
+
+_Dataset_ is the `requests_top500.json.gz` dataset of URLs released by "whotracks.me" with their [Adblockers Performance Study](https://whotracks.me/blog/adblockers_performance_study.html).
+
+_Benchmark_ is one of the internal uBO benchmarks:
+- [`µBlock.staticNetFilteringEngine.benchmark();`](https://github.com/gorhill/uBlock/commit/5733439f629da948cfc3cae74afa519f6cff7b7f) (initial implementation, recording of the matches was added [later](https://github.com/gorhill/uBlock/commit/92c5f17b78e5056340f462b049c1871ae0467220) for comparison/debugging purposes)
+- [`µBlock.sessionFirewall.benchmark();`](https://github.com/gorhill/uBlock/commit/928ab91ab8b72be1c962370b49a36fbe1e1ded94)
+- [`µBlock.cosmeticFilteringEngine.benchmark();`](https://github.com/gorhill/uBlock/commit/1e40f50eb3c1347afea251dce603f432e2199606)
+
+Benchmarks can be executed from Browser Console in extension background context.
+
+***
+
 #### `blockingProfiles`
 
 Default: `11111/#F00 11011/#C0F 11001/#00F 00001`
