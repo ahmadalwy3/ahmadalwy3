@@ -4,6 +4,7 @@ uBlock's required permissions are the same as those of [Privacy Badger](https://
 
     "permissions": [
         "contextMenus",
+        "dns",
         "privacy",
         "storage",
         "tabs",
@@ -64,6 +65,16 @@ See code:
 
 - [browser.tabs](https://github.com/gorhill/uBlock/search?q=%22browser.tabs%22&type=Code)
 - [browser.webNavigation](https://github.com/gorhill/uBlock/search?q=%22browser.webNavigation%22&type=Code)
+
+### "Access IP address and hostname information"
+
+Related permission: `dns`.
+
+Since [version 1.25.0](https://github.com/gorhill/uBlock/releases/tag/1.25.0) (Firefox 60+ only).
+
+This warning is triggered by the `dns` permission, which allows to use the [`browser.dns` API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/dns). The purpose is for uBO to gain the [ability to reveal the canonical name of aliased hostnames](https://github.com/uBlockOrigin/uBlock-issues/issues/780).
+
+Note that even without this permission, uBO has the ability to see IP address and hostname information, through the [`browser.webRequest API`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest) which uBO already requires.
 
 ### "Store unlimited amount of client-side data"
 
