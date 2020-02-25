@@ -80,7 +80,9 @@ This warning is triggered by the `dns` permission, which allows to use the [`bro
 
 Note that even without this permission, uBO has the ability to see IP address and hostname information, through the [`browser.webRequest API`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest) which uBO already requires.
 
-**Important:** the statement "IP address" refers to the IP address of the servers to which your browser connects, **NOT** your specific IP address. uBO has **no access to** (and no need to know) **your specific IP address**. There is an [open Firefox issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1617861) regarding the confusing wording of the permission.
+**Important:** the statement "IP address" refers to the IP address of the servers to which your browser connects, **NOT** your specific IP address. uBO has **no access to** (and no need to know) **your specific IP address**. 
+
+<sub>There is an [open Firefox issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1617861) regarding the confusing wording of the permission.</sub>
 
 ---
 
