@@ -76,6 +76,8 @@ This warning is triggered by the `dns` permission, which allows to use the [`bro
 
 Note that even without this permission, uBO has the ability to see IP address and hostname information, through the [`browser.webRequest API`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest) which uBO already requires.
 
+**Important:** the statement "IP address" refers to the IP address of the servers to which your browser connects, **NOT** your specific IP address. uBO has **no access to** (and no need to know) **your specific IP address**.
+
 ### "Store unlimited amount of client-side data"
 
 Related permission: [`unlimitedStorage`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#Unlimited_storage).
