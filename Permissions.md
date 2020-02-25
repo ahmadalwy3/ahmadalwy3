@@ -47,6 +47,8 @@ See code:
 
 - [browser.webRequest](https://github.com/gorhill/uBlock/search?q=%22browser.webRequest%22&type=Code)
 
+---
+
 ### "Access your tabs and browsing activity"
 
 Since [first version](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
@@ -66,6 +68,8 @@ See code:
 - [browser.tabs](https://github.com/gorhill/uBlock/search?q=%22browser.tabs%22&type=Code)
 - [browser.webNavigation](https://github.com/gorhill/uBlock/search?q=%22browser.webNavigation%22&type=Code)
 
+---
+
 ### "Access IP address and hostname information"
 
 Related permission: `dns`.
@@ -78,6 +82,8 @@ Note that even without this permission, uBO has the ability to see IP address an
 
 **Important:** the statement "IP address" refers to the IP address of the servers to which your browser connects, **NOT** your specific IP address. uBO has **no access to** (and no need to know) **your specific IP address**.
 
+---
+
 ### "Store unlimited amount of client-side data"
 
 Related permission: [`unlimitedStorage`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#Unlimited_storage).
@@ -85,6 +91,8 @@ Related permission: [`unlimitedStorage`](https://developer.mozilla.org/en-US/doc
 Since [first version](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
 
 This permission is necessary to allow uBO to use more than 5 MB of storage. uBO uses client-side storage to save the assets downloaded from remote servers (filter lists and other assets), the compiled version of those assets and the selfie representation of various assets (for efficient launch time). The storage used by uBO is shown at the bottom of the _Settings_ pane in the dashboard. Without this permission uBO would not be able to use more than 5 MB, which is not enough for uBO to function properly.
+
+---
 
 ### "Change your privacy-related settings"
 
