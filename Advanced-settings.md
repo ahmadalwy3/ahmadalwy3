@@ -189,7 +189,9 @@ If set to true, uBO will lz4-compress data before storing it in its cache storag
 
 Default: `true`.
 
-Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865) development versions.
+Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+
+Whether uBO should ignore to re-run a network request through the filtering engine when the CNAME hostname is 1st-party to the alias hostname.
 
 ***
 
@@ -197,7 +199,13 @@ Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a8
 
 Default: `true`.
 
-Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9) development versions.
+Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
+
+Whether to bypass the uncloaking of network requests which were excepted by filters/rules.
+
+This is necessary so as to avoid undue breakage by having exception filters being rendered useless as a result of CNAME-uncloaking.
+
+For example, `google-analytics.com` uncloaks to `www-google-analytics.l.google.com` and both hostnames appear in Peter Lowe's list, which means exception filters for `google-analytics.com` (to fix site breakage) would be rendered useless as the uncloaking would cause the network request to be ultimately blocked.
 
 ***
 
@@ -205,7 +213,16 @@ Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe521
 
 Default: `unset`.
 
-Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865) development versions.
+Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+
+Possible values:
+
+- Space-separated list of hostnames.
+- `*` - all hostnames.
+
+This tells uBO to NOT re-run the network request through uBO's filtering engine with the CNAME hostname.
+
+This is useful to exclude commonly used actual hostnames from being re-run through uBO's filtering engine, so as to avoid pointless overhead.
 
 ***
 
@@ -213,15 +230,21 @@ Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a8
 
 Default: `true`.
 
-Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a) development versions.
+Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
+
+Tells uBO to skip CNAME-lookup for root document.
 
 ***
 
 #### `cnameMaxTTL`
 
-Default: `60` minutes.
+Default: `120` minutes.
 
-Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865) development versions.
+Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+
+This tells uBO to clear its CNAME cache after the specified time.
+
+For efficiency purpose, uBO will cache alias=>CNAME associations for reuse so as to reduce calls to `browser.dns.resolve`. All the associations will be cleared after the specified time to ensure the map does not grow too large and too ensure uBO uses up to date CNAME information.
 
 ***
 
@@ -229,7 +252,11 @@ Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a8
 
 Default: `false`.
 
-Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a) development versions.
+Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
+
+Tells uBO whether to replay the whole URL or just the origin part of it.
+
+Replaying only the origin part is meant to lower undue breakage and improve performance by avoiding repeating the pattern-matching of the whole URL -- which pattern-matching was most likely already accomplished with the original request.
 
 ***
 
@@ -237,7 +264,9 @@ Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33
 
 Default: `true`.
 
-Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9) development versions.
+Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
+
+Whether to CNAME-uncloak hostnames.
 
 ***
 
