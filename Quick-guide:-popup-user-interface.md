@@ -105,7 +105,9 @@ The pluses and minuses denote network requests which were either allowed (not bl
 - `++`, `--`: under 100 network requests were allowed, blocked.
 - `+++`, `---`: 100 or more network requests were allowed, blocked.
 
-Starting with [1.24.3b7](https://github.com/gorhill/uBlock/commit/d0738c0835338a15683b9dfffd12b670f513c3f1) [canonical name (CNAME) hostnames](https://wikipedia.org/wiki/CNAME_record) are rendered in blue font.
+Starting with [1.24.3b7](https://github.com/gorhill/uBlock/commit/d0738c0835338a15683b9dfffd12b670f513c3f1) [canonical name (CNAME) hostnames](https://wikipedia.org/wiki/CNAME_record) are rendered in blue font. The uncloaked entries in the popup panel will also show the related aliases (in smaller characters underneath the canonical names):
+
+![Closeup on domains in overview panel](https://user-images.githubusercontent.com/886325/75247348-0103db00-57d2-11ea-9a12-c5e922fbd76e.png)
 
 Unless you are in ["advanced user"](./Advanced-user-features) mode, this panel is read-only and available only for informational purpose.
 
