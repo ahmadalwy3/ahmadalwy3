@@ -433,6 +433,23 @@ Related browser issues:
 - Chromium: <https://bugs.chromium.org/p/chromium/issues/detail?id=523634>
 - Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1378459>, fixed by <https://bugzilla.mozilla.org/show_bug.cgi?id=1447551>.
 
+
+***
+
+#### `uiFlavor`
+
+Default: `unset`.
+
+uBO [1.24.3b10](https://github.com/gorhill/uBlock/commit/2b0316440e86d1d8f4ae21f8d9ff4c19ac17216f#diff-0d94ddccc559e1231fe0cfa793814429) and above.
+
+Possible values:
+
+- `fenix` - to forcefully enable new, mobile-friendly, Popup UI layout.
+- `-` - to revert back to old Popup UI.
+- `unset` - uBO will use whatever UI flavor which is optimal for the current platform.
+
+![Mobile Popup UI layout](https://user-images.githubusercontent.com/585534/74933925-1c767c80-53b3-11ea-96fd-79cedd5533cb.png)
+
 ***
 
 #### `updateAssetBypassBrowserCache`
