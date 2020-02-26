@@ -266,7 +266,7 @@ Default: `true`.
 
 Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
 
-Whether to CNAME-uncloak hostnames.
+Whether to enable CNAME-uncloaking feature.
 
 ***
 
