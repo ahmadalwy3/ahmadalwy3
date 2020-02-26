@@ -99,7 +99,9 @@ _Benchmark_ is one of the internal uBO benchmarks:
 - [`µBlock.sessionFirewall.benchmark();`](https://github.com/gorhill/uBlock/commit/928ab91ab8b72be1c962370b49a36fbe1e1ded94)
 - [`µBlock.cosmeticFilteringEngine.benchmark();`](https://github.com/gorhill/uBlock/commit/1e40f50eb3c1347afea251dce603f432e2199606)
 
-Benchmarks can be executed from Browser Console in extension background context. [`consoleLogLevel`](./Advanced-settings#consoleloglevel) must be set to `info` to actually print the results.
+Benchmarks can be executed from Browser Console in extension background context. 
+
+~[`consoleLogLevel`](./Advanced-settings#consoleloglevel) must be set to `info` to actually print the results.~ Fixed in [1.25.1b7](https://github.com/gorhill/uBlock/commit/da71c3a499fc26acc34bb58b67b0de4494ddffcd)
 
 ***
 
