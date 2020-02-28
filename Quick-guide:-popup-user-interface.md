@@ -130,6 +130,8 @@ Each cell has three fields representing [Dynamic filtering actions](./Dynamic-fi
  - Grey - `noop`: exclude network requests from being subjected to dynamic filtering. 
  - Red -  `block`: matching network request will be blocked.
 
+Rules set by clicking the cells are temporary by default - click the padlock button if you want to make them permanent or eraser to clear them. Pressing <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) when setting rules will make them permanent immediately.
+
 > ***
 > **Tip:**
 >
