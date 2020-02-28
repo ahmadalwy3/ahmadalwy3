@@ -26,7 +26,7 @@ This is uBlock's popup UI when you click on uBlock's icon in the toolbar:
 
 Click the large power button to turn off uBlock **for the current site** (a.k.a. _whitelist_ the current site). This will be remembered the next time you visit the site.
 
-Alternatively, you can also <kbd>Ctrl</kbd>-click to turn off uBlock only for the current page (<kbd>command ⌘</kbd>-click on Mac).
+Alternatively, you can also <kbd>Ctrl</kbd>-click to turn off uBlock only for the current page (<kbd>Cmd</kbd>-click on Mac).
 
 For more advanced whitelisting control, see ["How to whitelist a web site"](./How-to-whitelist-a-web-site).
 
