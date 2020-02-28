@@ -86,6 +86,8 @@ Note in the figure above the entry named _"Tabless"_: selecting this entry allow
 
 The big reload button aside the page selector is to force a reload of the content of the selected page. This button is enabled only for when a specific page is selected.
 
+Click it with <kbd>Ctrl</kbd>, <kbd>Shift</kbd> or <kbd>Command</kbd> to bypass cache.
+
 ***
 
 #### Dom inspector
