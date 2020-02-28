@@ -67,7 +67,7 @@ Checking this will prevent hyperlink auditing. _Hyperlink auditing_ is best summ
 
 Background info: [STUN IP Address requests for WebRTC](https://github.com/diafygi/webrtc-ips)
 
-Test case: <https://github.com/gorhill/uBlock/wiki/Prevent-WebRTC-from-leaking-local-IP-address>.
+Test case: [Prevent WebRTC from leaking local IP address](./Prevent-WebRTC-from-leaking-local-IP-address)
 
 Keep in mind that this feature is to prevent **leakage** of your non-internet-facing IP adresses. The purpose of this feature is not to hide your current internet-facing IP address -- so be cautious to not misinterpret the results of the tests above. For example, if you use a VPN, your internet-facing IP address is that of the VPN, so your ISP-provided IP address should not be visible to outside world with this setting checked. However, if you are not behind any VPN or proxy, your ISP-provided IP address will be visible regardless of this setting.
 
