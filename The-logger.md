@@ -235,7 +235,7 @@ Clicking on the highlighted cell of the log entry will give you access to the fi
 
 ![URL rule tab in details dialog](https://user-images.githubusercontent.com/886325/62770688-cdfb3380-ba9b-11e9-916c-03dc1bf9643a.png)
 
-Point-and-click to create dynamic URL filtering rules. These rules are temporary by default, you need to click the padlock if you want them to be permanent. Useful to find out which network requests need to be blocked or allowed on a page in order, to fix a broken page, or to further block more useless resources from a page.
+Point-and-click to create dynamic URL filtering rules. These rules are temporary by default - click the padlock button if you want to make them permanent. Pressing <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) when setting rules will make them permanent immediately. Useful to find out which network requests need to be blocked or allowed on a page in order, to fix a broken page, or to further block more useless resources from a page.
 
 See [_"Overview of uBlock's network filtering engine: details"_](./Overview-of-uBlock's-network-filtering-engine:-details) for more details about where dynamic URL filtering fits in the overall filtering engine.
 
