@@ -12,7 +12,7 @@ Changes to the state of per-site switches will be deemed temporary **if and only
  
 When the overview panel is not visible, toggling a per-site switch will cause the change to be permanent (i.e. same behavior as before).
 
-However, when the overview panel is visible, toggling a per-site switch will cause the change to be temporary. In such case, there will be an eraser and a padlock icon in the overview pane, which can be used to revert or persist the current state of all the per-site switches. Pressing Ctrl (Cmd on Mac) when toggling switches will make them permanent immediately.
+However, when the overview panel is visible, toggling a per-site switch will cause the change to be temporary. In such case, there will be an eraser and a padlock icon in the overview pane, which can be used to revert or persist the current state of all the per-site switches. Pressing <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) when toggling switches will make them permanent immediately.
 
 ![eraser and padlock](https://user-images.githubusercontent.com/886325/63635690-89f45b00-c665-11e9-9d35-2911b15a9c52.png)
 <br><sup>Eraser and padlock icons</sup>
