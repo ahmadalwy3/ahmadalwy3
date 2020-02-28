@@ -8,7 +8,7 @@ If there is an element on a web page you wish to remove forever, open the extens
 
 ![Element picker](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/ss-element-picker.png)
 
-Once in element-picker mode, you have to point and click on the element you wish to remove. Holding <kbd>Ctrl</kbd> while selecting an element will cause similar elements on the page to be also selected <sup>[1.17.5rc0+](https://github.com/gorhill/uBlock/commit/91144c4edcda0207aaf23d61ae47011515d7b8cb#diff-a65f6e6abc235a14e93548d8bf53b81eL1220)</sup>.
+Once in element-picker mode, you have to point and click on the element you wish to remove. Holding <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) while selecting an element will cause similar elements on the page to be also selected <sup>[1.17.5rc0+](https://github.com/gorhill/uBlock/commit/91144c4edcda0207aaf23d61ae47011515d7b8cb#diff-a65f6e6abc235a14e93548d8bf53b81eL1220)</sup>.
 
 Once you click on the element, you will be presented with a modal dialog box which allows you to select, and optionally edit and create a filter for the element(s) you wish to remove from the web page.
 
