@@ -132,6 +132,8 @@ Each cell has three fields representing [Dynamic filtering actions](./Dynamic-fi
 
 Rules set by clicking the cells are temporary by default - click the padlock button if you want to make them permanent or eraser to clear them. Pressing <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) when setting rules will make them permanent immediately.
 
+Quickly reload the page without leaving the popup by clicking reload button appearing on the right. Click it with <kbd>Ctrl</kbd>, <kbd>Shift</kbd> or <kbd>Cmd</kbd> (Mac) pressed to bypass cache.
+
 > ***
 > **Tip:**
 >
