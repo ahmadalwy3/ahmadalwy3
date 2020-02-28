@@ -2,7 +2,11 @@ Keep in mind that this feature is to prevent leakage of your non-internet-facing
 
 For example, if you use a VPN, your internet-facing IP address is that of the VPN, so your ISP-provided IP address should not be visible to outside world with this setting checked. However, if you are not behind any VPN or proxy, your ISP-provided IP address will be visible regardless of this setting.
 
-Test: [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/) (click the <kbd>Gather candidates</kbd> button at the bottom).
+Tests:
+- [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
+    - Click the <kbd>Gather candidates</kbd> button at the bottom; there should be no local IP addresses reported
+- [WebRTC Leak Test](https://browserleaks.com/webrtc)
+    - The entry "Local IP Address" should be "n/a"
 
 #### Caveats
 
