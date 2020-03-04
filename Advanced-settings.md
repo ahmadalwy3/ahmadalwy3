@@ -301,7 +301,7 @@ uBO 1.17.3rc4 and above.
 
 For development purposes only.
 
-If set to `true`, turns off WebAssembly optimizations in uBO code.
+If set to `true`, turns off [_WebAssembly_](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts) optimizations in uBO code.
 
 ***
 
