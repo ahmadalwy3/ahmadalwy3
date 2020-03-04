@@ -82,7 +82,7 @@ Note that even without this permission, uBO has the ability to see IP address an
 
 **Important:** the statement "IP address" refers to the IP address of the servers to which your browser connects, **NOT** your specific IP address. uBO has **no access to** (and no need to know) **your specific IP address**. 
 
-<sub>There is an [open Firefox issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1617861) regarding the confusing wording of the permission.</sub>
+<sub>There is an [Firefox issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1617861) regarding the confusing wording of the permission. Firefox 74 Beta 9 no longer asks for this permission.</sub>
 
 ---
 
