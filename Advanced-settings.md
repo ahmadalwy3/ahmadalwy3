@@ -256,7 +256,7 @@ Default: `false`.
 
 Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
 
-Tells uBO whether to replay the whole URL or just the origin part of it.
+Tells uBO whether after CNAME-uncloaking replay through the filtering engine the whole URL or just the origin part of it.
 
 Replaying only the origin part is meant to lower undue breakage and improve performance by avoiding repeating the pattern-matching of the whole URL -- which pattern-matching was most likely already accomplished with the original request.
 
