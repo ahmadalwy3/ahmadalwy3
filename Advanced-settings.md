@@ -420,7 +420,7 @@ Default: `unset`, before [1.18.5b8](https://github.com/gorhill/uBlock/commit/87f
 Possible values:
 
 - `unset` - leave it to the platform to pick the optimal
-  behavior (default)
+  behavior (default, Firefox - enabled, Chromium - disabled)
 - `no` - do no suspend tab loading at launch time
 - `yes` - suspend tab loading at launch time
 
