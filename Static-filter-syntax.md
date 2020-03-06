@@ -24,6 +24,8 @@ The reason it is not supported is to be sure that users explicitly disable uBO t
 
 Note: it [still works](https://github.com/gorhill/uBlock/issues/1754) to negate [strict blocking](./Strict-blocking) when explicitly enabled by blocking filter `document` option.
 
+***
+
 #### `genericblock`
 
 Not supported.
@@ -33,6 +35,8 @@ This option is meant to be used with an exception filter to disable _generic_ ne
 This option is not supported because using such filter option would cause large amount of filters to be silently disabled for a site where it's used.
 
 For instance, when used for a specific site, the `genericblock` option would cause all the filters in hosts files to be disabled, including those from the malware lists. EasyPrivacy and other anti-tracking lists also contain countless so-called "generic" filters, and as a consequence these would also end up being disabled.
+
+***
 
 #### ~`elemhide`~
 
@@ -48,6 +52,8 @@ uBO v1.16.0 and above supports pre-parsing directives. Pre-parsing directives ar
 
 The pre-parsing directives are executed before a list content is parsed, and influence the final content of a filter list.
 
+***
+
 #### `!#include [file name]`
 
 The `!#include` directive allows to import another filter list in place where the directive appears. The purpose is to allow filter list maintainers to create filters which are specific to uBO, while keeping their list compatible with other blockers. Other blockers will ignore the `!#include` directive, because it will be seen as a comment and thus discarded. uBO will attempt to load the resource found at `[file name]` (the sub-list) and load its content into the current list.
@@ -61,6 +67,8 @@ Correct usage:
 Incorrect usage:
 - `!#include https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt`
 - `!#include ../filters.txt`
+
+***
 
 #### `!#if [condition]`
 
@@ -119,6 +127,8 @@ So in uBO, any entry which can be read as a valid hostname, will be assumed to b
 
     example.com/*
 
+***
+
 #### `*` aka "all URLs"
 
 The wildcard character `*` can be used to apply a filter to **all** URLs. This is not recommended though, unless you further narrow the filter using filter options. Examples:
@@ -128,13 +138,19 @@ The wildcard character `*` can be used to apply a filter to **all** URLs. This i
 
 Usually, it is far more convenient to use [dynamic filtering rules](./Dynamic-filtering) in lieu of such generic static filters.
 
+***
+
 #### `1p`
 
 Equivalent to [`first-party`](#first-party) uBO option, which in turn is negated `third-party` [option](https://adblockplus.org/filters#options) (`~third-party`). For convenience.
 
+***
+
 #### `3p`
 
 Equivalent to `third-party` [option](https://adblockplus.org/filters#options). For convenience.
+
+***
 
 #### `all`
 
@@ -154,6 +170,8 @@ compatible syntax does not allow to accomplish that
 semantic when using only `||bet365.com^`.
 
 See also [#2385](https://github.com/gorhill/uBlock/issues/2385)
+
+***
 
 #### `badfilter`
 
@@ -184,15 +202,21 @@ Will be processed in a special manner:
 - The logger will always report these special filters with only a
   single hostname in the `domain=` option.
 
+***
+
 #### `css`
 
 Equivalent to `stylesheet` [option](https://adblockplus.org/filters#options). For convenience.
+
+***
 
 #### `document`
 
 For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](./Strict-blocking).
 
 See also: [`all`](#all)
+
+***
 
 #### `elemhide`
 
@@ -201,6 +225,8 @@ Alias: `ehide`.
 Before uBO [1.23.0](https://github.com/gorhill/uBlock/commit/23c4c80136ba4974a6444488ef8162ba75b0cb84) option was translated internally to `generichide`.
 
 Option for exception filters only. Turns off all cosmetic filtering on matching pages.
+
+***
 
 #### `empty`
 
@@ -212,13 +238,19 @@ When `empty` is used, only network requests which are meant to return a text res
 
 See also: [`mp4`](#mp4), [`redirect`](#redirect)
 
+***
+
 #### `first-party`
 
 Equivalent to `~third-party` [option](https://adblockplus.org/filters#options). Provided strictly for convenience (0.9.9.0).
 
+***
+
 #### `frame`
 
 Equivalent to `subdocument` [option](https://adblockplus.org/filters#options). For convenience.
+
+***
 
 #### `generichide`
 
@@ -228,6 +260,8 @@ Option for exception filters only. Turns off _generic_ cosmetic filtering on mat
 
 Generic cosmetic filters, are hiding filters which apply to all pages - `##.ad-class`.
 
+***
+
 #### `important`
 
 The filter option `important` means to ignore all _exception_ filters (those prefixed with `@@`).
@@ -236,13 +270,19 @@ It applies only to network _block_ filters. The `important` option will allow yo
 
 Example: `||google-analytics.com^$important,third-party` will block all network requests to `google-analytics.com`, disregarding any existing network _exception_ filters. Another example: `||twitter.com^$important,third-party`. Etc.
 
+***
+
 #### `inline-script`
 
 To specifically disable inline script tags in a main page via CSP: `||example.com^$inline-script`.
 
+***
+
 #### `inline-font`
 
 To specifically disable inline font tags in a main page via CSP: `||example.com^$inline-font`.
+
+***
 
 #### `mp4`
 
@@ -252,9 +292,13 @@ The `mp4` filter option will be converted to `redirect=noopmp4-1s` internally, a
 
 See also: [`empty`](#empty), [`redirect`](#redirect)
 
+***
+
 #### `popunder`
 
 To block "popunders" windows/tabs, where original page is redirected to advertisement and desired content is loaded in newly created one. To be used in the same manner as the `popup` filter option, except that it will block popunders.
+
+***
 
 #### `redirect`
 
@@ -273,6 +317,8 @@ A source hostname should always be specified, so the `domain=` option is strongl
 <sub>__*__ redirections applied to all destinations (starting with `*`) cannot be narrowed by `first-party` or `~third-party` option [#3590](https://github.com/gorhill/uBlock/issues/3590)</sub>
 
 
+***
+
 #### `redirect-rule`
 
 New in [1.21.7b3](https://github.com/gorhill/uBlock/commit/aa73f292eced0d34a2a2989b1b27ace1214a2809).
@@ -289,6 +335,8 @@ The above filter will result in a block filter `||example.com/ads.js$script` **a
 
 The above filter will not cause a block filter to be created, only a redirect directive will be created. Standalone redirect directives are useful when the blocking of a resource is optional but we still want the resource to be redirected should it ever be blocked by whatever mean - whether through a separate block filter, a dynamic filtering rule, etc.
 
+***
+
 #### `specifichide`
 
 Alias: `shide`.
@@ -298,6 +346,8 @@ New in uBO [1.23.0](https://github.com/gorhill/uBlock/commit/23c4c80136ba4974a64
 Option for exception filters only. Turns off _specific_ cosmetic filtering on matching pages.
 
 Specific cosmetic filters, are filters which apply only to pages in domains specified in filter - `example.com##.ad-class`.
+
+***
 
 #### `xhr`
 
@@ -312,6 +362,8 @@ Static extended filters are all of the form:
 
 The most common type of static extended filters are cosmetic filters, also known as "element hiding filters" in Adblock Plus.
 
+***
+
 #### Entity
 
 All static extended filters can be declared to apply to a specific _entity_. For example:
@@ -323,6 +375,8 @@ An _entity_ is defined as follow: a formal domain name with the [Public Suffix](
 Examples: `google.*`  will apply to all similar Google domain names: `google.com`, `google.com.br`, `google.ca`, `google.co.uk`, etc. Another example: `facebook.*` will apply to all similar Facebook domain names: `facebook.com`, `facebook.net`.
 
 Since the base domain name is used to derive the name of the "entity", `google.evil.biz` would **not** match `google.*`.
+
+***
 
 #### Specific-generic
 
@@ -355,6 +409,8 @@ Related issue: [#803](https://github.com/uBlockOrigin/uBlock-issues/issues/803).
 `:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:min-text-length(n)`, `:not(...)`, `:nth-ancestor(n)`, `:watch-attr(...)`, `:xpath(...)`.
 
 See [detailed documentation](./Procedural-cosmetic-filters).
+
+***
 
 #### `:style()`
 
