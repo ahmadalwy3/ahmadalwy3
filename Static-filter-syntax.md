@@ -312,7 +312,7 @@ Static extended filters are all of the form:
 
 The most common type of static extended filters are cosmetic filters, also known as "element hiding filters" in Adblock Plus.
 
-### Entity
+#### Entity
 
 All static extended filters can be declared to apply to a specific _entity_. For example:
 
@@ -323,6 +323,30 @@ An _entity_ is defined as follow: a formal domain name with the [Public Suffix](
 Examples: `google.*`  will apply to all similar Google domain names: `google.com`, `google.com.br`, `google.ca`, `google.co.uk`, etc. Another example: `facebook.*` will apply to all similar Facebook domain names: `facebook.com`, `facebook.net`.
 
 Since the base domain name is used to derive the name of the "entity", `google.evil.biz` would **not** match `google.*`.
+
+#### Specific-generic
+
+New in [1.24.5rc0](https://github.com/gorhill/uBlock/commit/3fab7bfdb4f892f3d33159fd53ccf1d5342a090a).
+
+A specific cosmetic filter of the following form...
+
+    *##.selector
+
+... will be unconditionally injected into all web pages, whereas a cosmetic filter of the form...
+
+    ##.selector
+
+... would be injected only when uBO's DOM surveyor finds at least one matching element in a web page.
+
+The new specific-generic form will also be disabled when a web page is subject to a `generichide` exception filter, since the filter is essentially a generic one -- the only difference from the usual generic form is that the filter is injected unconditionally instead of through the DOM surveyor.
+
+Specific-generic cosmetic filters will NOT be discarded when checking the "Ignore generic cosmetic filters" option in the "Filter lists" pane -- since the purpose of this option is primarily to disable the DOM surveyor.
+
+Specific-generic cosmetic filters should be used parcimoniously and only when using a normal specific filter is really impractical.
+
+Related issue: [#803](https://github.com/uBlockOrigin/uBlock-issues/issues/803).
+
+
 
 ### Cosmetic filters
 
