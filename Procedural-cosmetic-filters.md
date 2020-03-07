@@ -38,6 +38,8 @@ _Procedural_ means javascript code is used to find DOM elements which must be hi
 
 The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of writing no browser supports it. Instead of waiting for browser vendors to provide support, uBO provides support for `:has(arg)` as a procedural operator. 
 
+***
+
 ### `subject:has-text(needle)`
 
 - Description: Select element _subject_ if the text _needle_ is found inside the element _subject_ or its children.
@@ -49,13 +51,19 @@ The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of w
     - `example.com##body > div:last-of-type span:has-text(/^Promoted by/i)`: starts with "Promoted by", ignore case
     - `example.com##body > div:last-of-type span:has-text(Promoted by)`: contains "Promoted by" at any position
 
+***
+
 ### `subject:if(arg)`
 
 Deprecated in favor of [`:has(...)`](#subjecthasarg) in uBO 1.15.0
 
+***
+
 ### `subject:if-not(arg)`
 
 Deprecated in favor of [`:not(:has(arg))`](#subjectnotarg) operator.
+
+***
 
 ### `subject:matches-css(arg)`
 
@@ -69,13 +77,19 @@ Deprecated in favor of [`:not(:has(arg))`](#subjectnotarg) operator.
     - `extratorrent.*##body > div[class]:matches-css(position: absolute)`
     - `facet.wp.pl##div[class^="_"]:matches-css(background-image: /^url\("data:image/png;base64,/)`
 
+***
+
 ### `subject:matches-css-before(arg)`
 
 Same as `:matches-css(...)`, except that the style will be looked-up for the `:before` pseudo-class of the _subject_ element.
 
+***
+
 ### `subject:matches-css-after(arg)`
 
 Same as `:matches-css(...)` except that the style will be looked-up for `:after` pseudo-class of the _subject_ element.
+
+***
 
 ### `subject:min-text-length(n)`
 
@@ -89,6 +103,8 @@ Same as `:matches-css(...)` except that the style will be looked-up for `:after`
 Introduced in uBO [1.20.1b2](https://github.com/gorhill/uBlock/commit/b428a25c3faf22630d3e9c542919c2d7ae10584f) As a result of internal discussion<sup>[1]</sup> with filter list maintainers. The original rationale for such procedural cosmetic operator is to be able to remove inline script elements according to a minimum text length using HTML filtering.
 
 <sub>[1] https://github.com/orgs/uBlockOrigin/teams/ublock-filters-volunteers/discussions/194?from_comment=65</sub>
+
+***
 
 ### `subject:not(arg)`
 
@@ -104,6 +120,8 @@ Use to negate other procedural selectors. For example `:not(:has(.foo))` will ma
 Note that if _arg_ is valid CSS selector, uBO will not consider the `:not` operator to be a procedural one, it will rather consider the operator as being part of a CSS selector. Thus this ensure compatibility with the existing
 [CSS `:not(...)` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
+***
+
 ### `subject:nth-ancestor(n)`
 
 - Description: lookup the nth ancestor relative to the currently selected
@@ -116,9 +134,13 @@ node.
 
 Introduced in uBO [1.18.17rc1](https://github.com/gorhill/uBlock/commit/73e2f25e95b90332a3e53646d83525d14e816d25) to have a low overhead way to accomplish ancestor selection. It is effectively a low-overhead equivalent to `:xpath(..[/..]*)`, as it avoids the need to create and execute [XPath expressions](https://developer.mozilla.org/docs/Web/XPath).
 
+***
+
 ### `subject:watch-attrs(arg)`
 
 Deprecated in favor of [`subject:watch-attr(arg)`](#subjectwatch-attrarg) in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958)
+
+***
 
 ### `subject:watch-attr(arg)`
 
@@ -138,6 +160,7 @@ Solves [uBlockOrigin/uBlock-issues#341 (comment)](https://github.com/uBlockOrigi
 
 By default hiding by procedural filters is reevaluated only when nodes in sub-tree are added or removed - uBO does not watch for attribute changes for performance reasons. This filter instructs uBO procedural filtering engine to watch for changes in specific attributes.
 
+***
 
 ### `subject:xpath(arg)`
 
