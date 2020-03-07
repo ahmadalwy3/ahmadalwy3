@@ -124,8 +124,9 @@ Note that if _arg_ is valid CSS selector, uBO will not consider the `:not` opera
 
 ### `subject:nth-ancestor(n)`
 
-- Description: lookup the nth ancestor relative to the currently selected
-node.
+Deprecated in favor of [`subject:upward(arg)`](#subjectupwardarg) in [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2)
+
+- Description: lookup the nth ancestor relative to the currently selected node.
 - Chainable: Yes.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
 - _n_: positive number >= 1 and < 256, distance from the currently selected node.
@@ -133,6 +134,23 @@ node.
     - Existing filter: `fastbay.org##.detLink:has-text(VPN):xpath(../../..)` can be rewritten as `fastbay.org##.detLink:has-text(VPN):nth-ancestor(3)`
 
 Introduced in uBO [1.18.17rc1](https://github.com/gorhill/uBlock/commit/73e2f25e95b90332a3e53646d83525d14e816d25) to have a low overhead way to accomplish ancestor selection. It is effectively a low-overhead equivalent to `:xpath(..[/..]*)`, as it avoids the need to create and execute [XPath expressions](https://developer.mozilla.org/docs/Web/XPath).
+
+***
+
+### `subject:upward(arg)`
+
+- Description: lookup the ancestor relative to the currently selected node.
+- Chainable: Yes.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- _arg_:
+    - Positive number >= 1 and < 256, distance from the currently selected node.
+    - A valid plain CSS selector.
+- Examples:
+    - Existing filter: `fastbay.org##.detLink:has-text(VPN):xpath(../../..)` can be rewritten as `fastbay.org##.detLink:has-text(VPN):upward(3)`
+
+Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Evolution of [`:nth-ancestor(n)`](#subjectnth-ancestorn) selector.
+
+See also [`Element.closest()` ↪](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest)
 
 ***
 
