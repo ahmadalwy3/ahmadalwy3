@@ -147,10 +147,10 @@ Introduced in uBO [1.18.17rc1](https://github.com/gorhill/uBlock/commit/73e2f25e
     - A valid plain CSS selector.
 - Examples:
     - Existing filter: `fastbay.org##.detLink:has-text(VPN):xpath(../../..)` can be rewritten as `fastbay.org##.detLink:has-text(VPN):upward(3)`
+    - `gorhill.github.io###pcf #a19 b:upward(2)`
+    - `gorhill.github.io###pcf #a20 b:upward(.fail)`
 
 Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Evolution of [`:nth-ancestor(n)`](#subjectnth-ancestorn) selector.
-
-See also [`Element.closest()` ↪](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest)
 
 ***
 
@@ -159,6 +159,8 @@ See also [`Element.closest()` ↪](https://developer.mozilla.org/en-US/docs/Web/
 - Description: remove elements from the DOM tree.
 - Chainable: No.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- Examples:
+    - `gorhill.github.io###pcf #a18 .fail:remove()`
 
 Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Fixes [#2252](https://github.com/gorhill/uBlock/issues/2252)
 
