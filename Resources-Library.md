@@ -354,13 +354,20 @@ Parameters:
 
 ***
 
-### window.open-defuser.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/window.open-defuser.js)
+### window.open-defuser.js [↪](https://github.com/gorhill/uBlock/blob/b27848a060eee961e2403192097448467b3bc7b5/src/web_accessible_resources/window.open-defuser.js)
 Prevent opening new windows by [_`window.open()`_](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) when URL positively or negatively matches to specific string.
 
-Parameters:
- - optional - defaults to "matching", any positive number for "matching", `0` or any string for "not matching",
- - optional, string/_regular expression_, matching/not matching in URL parameter passed to _`window.open()`_
+Improved in [1.25.3b1](https://github.com/gorhill/uBlock/commit/b27848a060eee961e2403192097448467b3bc7b5):
 
+If second argument is present and a valid integer value, the defuser will return a valid window object even though no popup window is opened. The returned window object will cease to be valid after the specified number of seconds. If not present, no window will be opened and the scriptlet will return `null`.
+
+Parameters:
+ - optional, string/_regular expression_, prefixed by `!` for negation, matching in URL parameter passed to _`window.open()`_,
+ - optional, positive decimal integer, number of seconds after returned `window` object will be invalidated.
+
+Parameters syntax deprecated after 1.25.3b1:
+ - optional - defaults to "matching", nothing or `1` for "matching", `0` for "not matching",
+ - optional, string/_regular expression_, matching/not matching in URL parameter passed to _`window.open()`_
 
 ***
 
