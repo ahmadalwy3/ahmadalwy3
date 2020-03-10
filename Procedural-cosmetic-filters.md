@@ -156,8 +156,8 @@ Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb700568
 
 ### `subject:remove()`
 
-- Description: remove elements from the DOM tree.
-- Chainable: No.
+- Description: _action operator_, instruct to remove elements from the DOM tree.
+- Chainable: No, _action operator_ can only be used at the end of the root chain.
 - _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
 - Examples:
     - `gorhill.github.io###pcf #a18 .fail:remove()`
