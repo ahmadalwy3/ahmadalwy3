@@ -37,7 +37,7 @@ A request can be blocked (`block`), allowed (`allow`), or ignored (`noop`). A `n
 
 ### Type-based rules
 
-Type-based rules are used to filter specific types of request on a web page. There currently exists seven types of request which can be dynamically filtered:
+Type-based rules are used to filter specific types of request on a web page. Currently, seven types of network request exist which can be dynamically filtered:
 
 - `*`: any type of request
 - `image`: images
