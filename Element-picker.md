@@ -6,7 +6,8 @@ The element picker's purpose is to assist the user in the creation of network or
 
 If there is an element on a web page you wish to remove forever, open the extension's popup menu, and click the small ["eye-dropper" icon](http://fontawesome.io/icon/eyedropper/). You will enter the interactive element picker mode.
 
-![Element picker](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/ss-element-picker.png)
+![Element picker](https://user-images.githubusercontent.com/585534/76684433-69c8c100-65e2-11ea-9588-60417dc00781.png)
+<!-- ![Element picker](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/ss-element-picker.png) -->
 
 Once in element-picker mode, you have to point and click on the element you wish to remove. Holding <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) while selecting an element will cause similar elements on the page to be also selected <sup>[1.17.5rc0+](https://github.com/gorhill/uBlock/commit/91144c4edcda0207aaf23d61ae47011515d7b8cb#diff-a65f6e6abc235a14e93548d8bf53b81eL1220)</sup>.
 
