@@ -233,6 +233,27 @@ Filter list authors are discouraged from using exception filters of `cname` type
 
 ***
 
+#### `denyallow`
+
+New in [1.25.3b4](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359).
+
+The purpose of `denyallow` is bring default-deny/allow-exceptionally ability into static network filtering arsenal. 
+
+Example:
+
+    *$3p,script,denyallow=x.com|y.com,domain=a.com|b.com
+
+The above filter tells the network filtering engine that when the context is `a.com` or `b.com`, block all
+3rd-party scripts except those from `x.com` and `y.com`.
+
+Essentially, the new `denyallow` option makes it easier to implement default-deny/allow-exceptionally in static filter lists, whereas before this had to be done with unwieldy regular expressions[1], or through the mix of broadly blocking filters along with exception filters[2].
+
+[1] hg.adblockplus.org/ruadlist/rev/f362910bc9a0
+
+[2] Typically filters which pattern are of the form `|http*://`
+
+***
+
 #### `document`
 
 For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](./Strict-blocking).
