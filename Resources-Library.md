@@ -207,6 +207,20 @@ Parameters:
 
 ***
 
+### rc.js /
+### remove-class.js [↪](https://github.com/gorhill/uBlock/blob/c2f0cae2cca2de785f326ae1c28dc1d61599bd7b/assets/resources/scriptlets.js#L461)
+
+New in [1.25.3b5](https://github.com/gorhill/uBlock/commit/49d9929191461cc8534ebf5707d94a5970945bde).
+
+Removes classes from DOM tree node(s). Will run only once after page load.
+
+Parameters:
+ - required, class name or list of class names joined by `|`
+ - optional, CSS selector, specifies nodes from which classes will be removed
+
+
+***
+
 ### raf-if.js /
 ### ~requestAnimationFrame-if.js~ [↪](https://github.com/gorhill/uBlock/blob/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4/assets/resources/scriptlets.js#L394)
 
