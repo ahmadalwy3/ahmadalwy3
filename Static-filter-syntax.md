@@ -2,6 +2,8 @@ uBlock Origin ("uBO") supports Adblock Plus ("ABP") filter syntax, so you can re
 
 However uBO does not support some very specific cases, and also adds its own extensions to ABP filter syntax (which at time of writing are not recognized by ABP).
 
+Starting with v1.25.3b4 (commit [one](https://github.com/gorhill/uBlock/commit/703c525b01aa), [two](https://github.com/gorhill/uBlock/commit/ca80d2826bfd92a3081f20da8ba60138509a183b)), very long filters can be split into multiple lines: append space and backslash character to first line and indent continuation lines by four spaces.
+
 - [Not supported](#not-supported)
 - [Pre-parsing directives](#pre-parsing-directives)
 - [Extended syntax](#extended-syntax)
