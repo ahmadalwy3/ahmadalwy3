@@ -212,6 +212,27 @@ Equivalent to `stylesheet` [option](https://adblockplus.org/filters#options). Fo
 
 ***
 
+#### `cname`
+
+New in [1.25.3b4](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359).
+
+Option for exception filters only.
+
+By default, network requests which are result of resolving a [canonical name](https://en.wikipedia.org/wiki/CNAME_record) are subject to filtering. This filtering can be bypassed by creating exception filters using the `cname` option. 
+
+Example:
+
+    @@*$cname
+
+The filter above tells the network filtering engine to except network requests which fulfill all the following conditions:
+
+- network request is blocked
+- network request is that of an unaliased hostname
+
+Filter list authors are discouraged from using exception filters of `cname` type, unless there no other practical solution such that maintenance burden become the greater issue. Of course, such exception filters should be as narrow as possible, i.e. apply to specific domain, etc.
+
+***
+
 #### `document`
 
 For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](./Strict-blocking).
