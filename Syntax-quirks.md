@@ -2,6 +2,6 @@
 - Looking-like-domain filters match only in domain part of URL - [HOST optimiztion](./Static-filter-syntax#hosts-files)
 - Negated domains in cosmetic filters work like exception (TODO: compare with ABP).
 - One filter can be counted as many, [exmple](./Static-filter-syntax#badfilter)
-- `$document` work only as [blocking filter](./Static-filter-syntax#document-for-entire-page-exception)
-- generic cosmetic filters don't work in Shadow Dom - https://github.com/uBlockOrigin/uBlock-issues/issues/803
+- `$document` works only as [blocking filter](./Static-filter-syntax#document-for-entire-page-exception)
+- generic cosmetic filters don't work in ShadowDOM - https://github.com/uBlockOrigin/uBlock-issues/issues/803
 - popup filters will not close pages opened by direct user action - https://github.com/uBlockOrigin/uBlock-issues/issues/774
