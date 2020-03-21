@@ -440,11 +440,7 @@ The new specific-generic form will also be disabled when a web page is subject t
 
 Specific-generic cosmetic filters will NOT be discarded when checking the "Ignore generic cosmetic filters" option in the "Filter lists" pane -- since the purpose of this option is primarily to disable the DOM surveyor.
 
-Specific-generic cosmetic filters should be used parcimoniously and only when using a normal specific filter is really impractical.
-
 Related issue: [#803](https://github.com/uBlockOrigin/uBlock-issues/issues/803).
-
-
 
 ### Cosmetic filters
 
