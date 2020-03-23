@@ -155,7 +155,7 @@ Examples:
 Prevent web pages from using _`eval()`_, and report attempts to console.
 
 Examples:
- - solowarez.org##+js(noeval)
+ - `solowarez.org##+js(noeval)`
 
 
 ***
@@ -233,6 +233,9 @@ Examples:
 ### nowebrtc.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L721)
 Disables WebRTC by preventing web pages from using [_`RTCPeerConnection()`_](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection). Report attempts in console.
 
+Examples:
+ - `x1337x.*##+js(nowebrtc)`
+
 
 ***
 
@@ -245,7 +248,8 @@ Parameters:
  - optional, _CSS selector_, specifies nodes from which attributes will be removed
 
 Examples:
- - `x1337x.*##+js(nowebrtc)`
+- `userscloud.com##+js(ra, onclick, .btn-icon-stacked)`
+- `magesy.*,majesy.*##+js(ra, oncontextmenu)`
 
 
 ***
@@ -255,7 +259,7 @@ Examples:
 
 New in [1.25.3b5](https://github.com/gorhill/uBlock/commit/49d9929191461cc8534ebf5707d94a5970945bde).
 
-Removes classes from DOM tree node(s). Will run only once after page load.
+Removes classes from DOM tree node(s). Will run only once after page load. Syntax based on [`remove-attr.js`](./Resources-Library#remove-attrjs-)
 
 Parameters:
  - required, class name or list of class names joined by `|`
