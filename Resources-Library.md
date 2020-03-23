@@ -202,7 +202,7 @@ Removes attribute(s) from DOM tree node(s). Will run only once after page load.
 
 Parameters:
  - required, attribute or list of attributes joined by `|`
- - optional, CSS selector, specifies nodes from which attributes will be removed
+ - optional, _CSS selector_, specifies nodes from which attributes will be removed
 
 
 ***
@@ -216,7 +216,7 @@ Removes classes from DOM tree node(s). Will run only once after page load.
 
 Parameters:
  - required, class name or list of class names joined by `|`
- - optional, CSS selector, specifies nodes from which classes will be removed
+ - optional, _CSS selector_, specifies nodes from which classes will be removed
 
 
 ***
@@ -652,3 +652,4 @@ Removed. Deprecated, sets static properties (`adisplaynormal`)
  - element:            https://developer.mozilla.org/en-US/docs/Web/HTML/Element
  - property:           https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript
  - method:             https://developer.mozilla.org/en-US/docs/Glossary/Method
+ - CSS selector:       https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
