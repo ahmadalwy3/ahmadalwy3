@@ -37,6 +37,10 @@ Parameters:
  - required, _property_ (chain of properties joined by `.`) attached to window object accessed inside `<script>` tag we want to break
  - optional, string/_regular expression_ matching in `<script>` _element_ content
 
+Examples:
+ - `weristdeinfreund.de##+js(acis, Number.isNaN)`
+ - `tichyseinblick.de##+js(acis, Math, /\}\s*\(.*?\b(self|this|window)\b.*?\)/)`
+
 
 ***
 
@@ -46,6 +50,9 @@ Aborts execution of script (_throws_ `ReferenceError`) when attempts to read spe
 
 Parameters:
  - required, _property_ (chain of properties joined by `.`) attached to window object
+
+Examples:
+ - `tagesspiegel.de##+js(aopr, Notification)`
 
 
 ***
@@ -57,6 +64,8 @@ Aborts execution of script (_throws_ `ReferenceError`) when attempts to write sp
 Parameters:
  - required, _property_ (chain of properties joined by `.`) attached to window object that will be overwritten
 
+Examples:
+ - `yggtorrent.*##+js(aopw, Fingerprint2)`
 
 ***
 
@@ -68,6 +77,11 @@ Parameters:
  - optional, string/_regular expression_, name of event listener
  - optional, string/_regular expression_ matching in stringified handler function
 
+Examples:
+ - `vev.io##+js(aeld, adb.updated)`
+ - `newser.com##+js(aeld, load, Object)`
+ - `vivo.sx##+js(aeld, , preventDefault)`
+ - `vidto.me##+js(aeld, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)`
 
 ***
 
@@ -85,6 +99,9 @@ Caveats: cookies set for higher level domain will not be removed. For example, i
 
 Parameters:
  - optional, string/_regular expression_, matching in the name of the cookie
+
+Examples:
+ - `subdivx.com##+js(cookie-remover, ref_cookie)`
 
 
 ***
@@ -107,6 +124,9 @@ Prevents creating new tabs/windows by deactivating links with `target` attribute
 Parameters:
  - none
 
+Examples:
+ - `there.to##+js(disable-newtab-links.js)`
+
 
 ***
 
@@ -124,10 +144,18 @@ A property in a list of properties can be a chain of properties, example: `adpat
 
 When used without parameters, will log current hostname + json payload to the console.
 
+Examples:
+ - `youthhealthmag.com##+js(json-prune, unit_list)`
+ - `winfuture.de##+js(json-prune, adtagparameter, enabled)`
+
+
 ***
 
 ### noeval.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/noeval.js)
 Prevent web pages from using _`eval()`_, and report attempts to console.
+
+Examples:
+ - solowarez.org##+js(noeval)
 
 
 ***
@@ -144,6 +172,9 @@ Prevent web pages from using _`eval()`_ on specific matching payloads.
 
 Parameters:
  - optional, string/_regular expression_, matching in payload string.
+
+Examples:
+ - `orgyxxxhub.com##+js(noeval-if, replace)`
 
 
 ***
@@ -164,6 +195,11 @@ Parameters:
 Use with `/^/` parameter to defuse all calls unconditionally.
 
 When used without parameters, will log calls to _`setInterval()`_ to the console.
+
+Examples:
+ - `jpidols.tv##+js(nosiif)`
+ - `finanzen.*##+js(nosiif, nrWrapper)`
+ - `yachtrevue.at##+js(nosiif, text/css, 10)`
 
 
 ***
@@ -187,6 +223,10 @@ When used without parameters, will log calls to _`setTimeout()`_ to the console.
 
 <sub>Test page: https://gorhill.github.io/uBlock/tests/scriptlet-injection-filters-1.html</sub>
 
+Examples:
+ - `computerbild.de##+js(nostif, ())return)`
+ - `lablue.*##+js(nostif, push, 500)`
+
 
 ***
 
@@ -203,6 +243,9 @@ Removes attribute(s) from DOM tree node(s). Will run only once after page load.
 Parameters:
  - required, attribute or list of attributes joined by `|`
  - optional, _CSS selector_, specifies nodes from which attributes will be removed
+
+Examples:
+ - `x1337x.*##+js(nowebrtc)`
 
 
 ***
@@ -238,6 +281,9 @@ Use with `!` parameter to defuse all calls unconditionally.
 
 When used without parameters, will log calls to _`requestAnimationFrame()`_ to the console.
 
+Examples:
+ - `bloomberg.com##+js(raf-if, !paywall-inline-tout)`
+
 
 ***
 
@@ -270,6 +316,11 @@ Parameters:
          - `trueFunc` - function returning true
          - `falseFunc` - function returning false
          - `''` - empty string<sup>[2019-01-06](https://github.com/uBlockOrigin/uAssets/commit/5051610f0e2374955a03c54be42bbbe9115f05c7#diff-8809d5783978a0b5b88f93d7dab99de0R2132)</sup>
+
+Examples:
+ - `kompetent.de##+js(set, Object.keys, trueFunc)`
+ - `t-online.de##+js(set, abp, false)`
+ - `identi.li##+js(set, t_spoiler, 0)`
 
 
 ***
@@ -335,6 +386,11 @@ Parameters:
  - optional - defaults to 1000, decimal integer, matching interval
  - optional - default to 0.05 (20x faster), float, capped at 50 times for up and down, interval multiplier
 
+Examples:
+ - `identi.li##+js(nano-sib, , ,0.02)`
+ - `platinmods.*##+js(nano-sib)`
+ - `1ink.cc##+js(nano-sib, mSec, 1050)`
+
 
 ***
 
@@ -346,6 +402,10 @@ Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
  - optional - defaults to 1000, decimal integer, matching delay
  - optional - default to 0.05 (20x faster), float, capped at 50 times for up and down, delay multiplier
+
+Examples:
+ - `bdupload.*##+js(nano-stb)`
+ - `imgrock.*##+js(nano-stb, /.?/, 4000)`
 
 
 ***
@@ -382,6 +442,10 @@ Parameters:
 Parameters syntax deprecated after 1.25.3b1:
  - optional - defaults to "matching", nothing or `1` for "matching", `0` for "not matching",
  - optional, string/_regular expression_, matching/not matching in URL parameter passed to _`window.open()`_
+
+Examples:
+ - `file-up.org##+js(window.open-defuser)`
+
 
 ***
 
