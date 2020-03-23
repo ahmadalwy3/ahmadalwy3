@@ -248,8 +248,9 @@ Parameters:
  - optional, _CSS selector_, specifies nodes from which attributes will be removed
 
 Examples:
-- `userscloud.com##+js(ra, onclick, .btn-icon-stacked)`
-- `magesy.*,majesy.*##+js(ra, oncontextmenu)`
+ - `userscloud.com##+js(ra, onclick, .btn-icon-stacked)`
+ - `magesy.*,majesy.*##+js(ra, oncontextmenu)`
+ - `zerodot1.gitlab.io##+js(ra, oncontextmenu|onselectstart|ondragstart)`
 
 
 ***
