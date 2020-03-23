@@ -259,7 +259,7 @@ Examples:
 
 New in [1.25.3b5](https://github.com/gorhill/uBlock/commit/49d9929191461cc8534ebf5707d94a5970945bde).
 
-Removes classes from DOM tree node(s). Will run only once after page load. Syntax based on [`remove-attr.js`](./Resources-Library#remove-attrjs-)
+Removes classes from DOM tree node(s). Will run only once after page load. Syntax based on [`remove-attr.js`](#remove-attrjs-)
 
 Parameters:
  - required, class name or list of class names joined by `|`
