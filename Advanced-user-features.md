@@ -14,7 +14,7 @@ If you use advanced features without fully understanding them, uBlock Origin:
 <li><i>probably <b>will</b></i>
 </ul>
 
-... behave in ways unexpected to you, and quite possibly you may end up being **LESS** protected than you otherwise would be with just default settings.
+... behave in ways unexpected to you, and most likely you will end up being **LESS** protected than you would otherwise be with just default settings.
 
 #### DO NOT UNDERESTIMATE THIS WARNING.
 </td></tr></table>
