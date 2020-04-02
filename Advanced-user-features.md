@@ -4,15 +4,19 @@ Advanced user mode can be [enabled from the _Settings_ tab](./Dashboard:-Setting
 <table><tr><td width="130" align="center">
 <img src="http://i.imgur.com/3kJFgHX.jpg" float="right" width="96" height="96">
 </td><td>
-<p><b>Advanced users are expected to read the documentation. This is very important.</b></p>
 
-<p>If you use advanced features without fully understanding them, uBlock Origin:</p>
+#### Advanced users are expected to read the documentation. This is very important.
+
+If you use advanced features without fully understanding them, uBlock Origin:
 
 <ul>
 <li>might</li>
 <li><i>probably <b>will</b></i>
 </ul>
-.. behave in ways unexpected to you.
+
+... behave in ways unexpected to you, and quite possibly you may end up being **LESS** protected than you otherwise would be with just default settings.
+
+#### DO NOT UNDERESTIMATE THIS WARNING.
 </td></tr></table>
 
 ## Differences
