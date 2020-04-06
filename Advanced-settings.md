@@ -194,6 +194,8 @@ Default: `true`.
 
 Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
 
+Firefox only.
+
 Whether uBO should ignore to re-run a network request through the filtering engine when the CNAME hostname is 1st-party to the alias hostname.
 
 ***
@@ -203,6 +205,8 @@ Whether uBO should ignore to re-run a network request through the filtering engi
 Default: `true`.
 
 Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
+
+Firefox only.
 
 Whether to bypass the uncloaking of network requests which were excepted by filters/rules.
 
@@ -217,6 +221,8 @@ For example, `google-analytics.com` uncloaks to `www-google-analytics.l.google.c
 Default: `unset`.
 
 Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+
+Firefox only.
 
 Possible values:
 
@@ -235,6 +241,8 @@ Default: `true`.
 
 Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
 
+Firefox only.
+
 Tells uBO to skip CNAME-lookup for root document.
 
 ***
@@ -244,6 +252,8 @@ Tells uBO to skip CNAME-lookup for root document.
 Default: `120` minutes.
 
 Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+
+Firefox only.
 
 This tells uBO to clear its CNAME cache after the specified time.
 
@@ -257,6 +267,8 @@ Default: `false`.
 
 Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
 
+Firefox only.
+
 Tells uBO whether after CNAME-uncloaking replay through the filtering engine the whole URL or just the origin part of it.
 
 Replaying only the origin part is meant to lower undue breakage and improve performance by avoiding repeating the pattern-matching of the whole URL -- which pattern-matching was most likely already accomplished with the original request.
@@ -269,6 +281,8 @@ Default: `true`.
 
 Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
 
+Firefox only.
+
 Whether to enable CNAME-uncloaking feature.
 
 ***
@@ -278,6 +292,8 @@ Whether to enable CNAME-uncloaking feature.
 Default: `false`.
 
 Introduced in [1.25.3b7](https://github.com/gorhill/uBlock/commit/3f7ece94691f048377512990a38c0317820bf77f).
+
+Firefox only.
 
 By default (set to `false`) uBO will no longer cname-uncloak when it detects that network requests are being proxied.
 
