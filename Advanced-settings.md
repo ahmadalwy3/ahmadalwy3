@@ -273,6 +273,20 @@ Whether to enable CNAME-uncloaking feature.
 
 ***
 
+#### `cnameUncloakProxied`
+
+Default: `false`.
+
+Introduced in [1.25.3b7](https://github.com/gorhill/uBlock/commit/3f7ece94691f048377512990a38c0317820bf77f).
+
+By default (set to `false`) uBO will no longer cname-uncloak when it detects that network requests are being proxied.
+
+This default behavior can be overridden by setting this option to `true`.
+
+This new advanced setting may disappear once the following Firefox issue is fixed: https://bugzilla.mozilla.org/show_bug.cgi?id=1618271
+
+***
+
 #### `consoleLogLevel`
 
 Default: `unset`.
