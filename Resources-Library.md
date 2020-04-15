@@ -179,6 +179,28 @@ Examples:
 
 ***
 
+### norafif.js /
+### no-requestAnimationFrame-if.js [↪](https://github.com/gorhill/uBlock/blob/1de0e820b87fdd3717b9f2653baaa7a934075055/assets/resources/scriptlets.js#L522)
+
+New in [1.26.1b12](https://github.com/gorhill/uBlock/commit/1de0e820b87fdd3717b9f2653baaa7a934075055).
+
+**Defuses** calls to _`requestAnimationFrame()`_ function when parameter:
+- **is not prefixed** with `!` and **matches** the stringified _callback_ argument to _`requestAnimationFrame()`_; OR
+- **is prefixed** with `!` and  **does not match** the stringified _callback_ argument to _`requestAnimationFrame()`_.
+
+Parameters:
+ - optional, string/_regular expression_, matching in the stringified _callback_ argument passed to
+requestAnimationFrame.
+
+Use with `/^/` parameter to defuse all calls unconditionally.
+
+When used without parameters, will log calls to _`requestAnimationFrame()`_ to the console.
+
+Examples:
+ - `bloomberg.com##+js(norafif, paywall-inline-tout)`
+
+***
+
 ### nosiif.js /
 ### no-setInterval-if.js [↪](https://github.com/gorhill/uBlock/blob/9367a6015b8cbb6b49347b00a105aab8f24df861/assets/resources/scriptlets.js#L585)
 
@@ -269,8 +291,10 @@ Parameters:
 
 ***
 
-### raf-if.js /
-### requestAnimationFrame-if.js [↪](https://github.com/gorhill/uBlock/blob/c2f0cae2cca2de785f326ae1c28dc1d61599bd7b/assets/resources/scriptlets.js#L492)
+### ~raf-if.js~ /
+### ~requestAnimationFrame-if.js~ [↪](https://github.com/gorhill/uBlock/blob/c2f0cae2cca2de785f326ae1c28dc1d61599bd7b/assets/resources/scriptlets.js#L492)
+
+Deprecated by [`no-requestAnimationFrame-if.js`](#no-requestanimationframe-ifjs-)
 
 New in [1.22.0](https://github.com/gorhill/uBlock/commit/6831967f5f9d64412a9c063f3b64104d9dce7b07), `requestAnimationFrame-if.js` alias available in [1.22.1b2](https://github.com/gorhill/uBlock/commit/35854e4baf8b3b3aeb3f0f63ae9e7d3e46a4ba64)
 
