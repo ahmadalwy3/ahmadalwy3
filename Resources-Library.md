@@ -507,7 +507,7 @@ Disables [_`alert()`_](https://developer.mozilla.org/en-US/docs/Web/API/Window/a
 ### ~ampproject.org/v0.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/ampproject_v0.js)
 Removes animation (artificial 8s delay) added to desktop pages supporting AMP, when ampproject.org scripts are blocked.
 
-### fingerprint2.js  [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L929)
+### fingerprint2.js  [↪](https://github.com/gorhill/uBlock/blob/d95b27915fa86e8d3f0ed21bce006b79d18d69c5/assets/resources/scriptlets.js#L1156)
 Defuses Fingerprintjs2. Sanitize `Fingerprint2` object.
 
 ### nobab.js /
