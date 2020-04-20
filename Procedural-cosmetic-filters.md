@@ -33,7 +33,7 @@ _Procedural_ means javascript code is used to find DOM elements which must be hi
 - Examples:
     - `mobile.twitter.com##main [role="region"] > [role="grid"] > [role="rowgroup"] [role="row"]:has(div:last-of-type span:has-text(/^Promoted by/))`
     - `strikeout.me##body > div:has(img[alt="AdBlock Alert"])`
-    - `yandex.ru##.serp-item:has(:scope .organic > .organic__subtitle > .label_color_yellow)` - `:scope` forces `.organic` to match inside `.serp-item`<sup>[1](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll#JavaScript),[2](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope)</sup>
+    - `yandex.ru##.serp-item:has(:scope .organic > .organic__subtitle > .label_color_yellow)` - `:scope` forces `.organic` to match inside `.serp-item` ([why `:scope` is needed](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll#JavaScript), [general `:scope` doc](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope))
     - `strdef.world##div[style]:has(> a[href="http://www.streamdefence.com/index.php"])` - `>` forces `a` to be direct descendant of `div[style]`
 
 The `:has(arg)` operator is actually a planned pseudo-class in CSS4, but as of writing no browser supports it. Instead of waiting for browser vendors to provide support, uBO provides support for `:has(arg)` as a procedural operator. 
