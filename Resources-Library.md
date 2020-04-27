@@ -457,12 +457,16 @@ Parameters:
 
 ***
 
+### nowoif.js /
 ### window.open-defuser.js [↪](https://github.com/gorhill/uBlock/blob/b27848a060eee961e2403192097448467b3bc7b5/src/web_accessible_resources/window.open-defuser.js)
 Prevent opening new windows by [_`window.open()`_](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) when URL positively or negatively matches to specific string.
+
+`nowoif.js` alias available in [1.26.3b12?](https://github.com/gorhill/uBlock/commit/6259f88598b2d3e044679d6fe0fdb6eb16f6c479).
 
 Improved in [1.25.3b1](https://github.com/gorhill/uBlock/commit/b27848a060eee961e2403192097448467b3bc7b5):
 
 If second argument is present and a valid integer value, the defuser will return a valid window object even though no popup window is opened. The returned window object will cease to be valid after the specified number of seconds. If not present, no window will be opened and the scriptlet will return `null`.
+
 
 Parameters:
  - optional, string/_regular expression_, prefixed by `!` for negation, matching in URL parameter passed to _`window.open()`_,
