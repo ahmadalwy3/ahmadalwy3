@@ -119,13 +119,17 @@ uBO extends Adblock Plus filter syntax.
 
 #### HOSTS files
 
-uBO can also parse HOSTS file-like resources. However, this creates an ambiguity with ABP filter syntax, which is pattern-based. For exemple, consider the following filter entry:
+uBO can also parse HOSTS file-like resources. All hostname entries from a HOSTS file resource from uBO's point of view will be syntactically equivalent to a filter of the form `||hostname^`.
+
+However, this creates an ambiguity with ABP filter syntax, which is pattern-based. For example, consider the following filter entry:
 
     example.com
 
-ABP filter syntax dictates that this is interpreted as "block network requests which URL contains `example.com` at any position". However if the entry comes from a HOSTS file, the interpretation must be "block network requests to the site `example.com`".
+ABP filter syntax dictates that this is interpreted as "block network requests which URL contains `example.com` at any position".
 
-So in uBO, any entry which can be read as a valid hostname, will be assumed to be a HOSTS file entry. If ever you want such filter to be parsed as an ABP filter, just add a wildcard at the end:
+However in uBO the interpretation will be "block network requests to the site `example.com` and all of its subdomains" -- i.e. equivalent to `||example.com^`.
+
+So in uBO, any pattern which can be wholly read as a valid hostname, will be assumed to be equivalent to a filter of the form `||example.com^`. If ever you want such filter to be syntactically parsed according to ABP's interpretation, just add a wildcard at the end:
 
     example.com/*
 
