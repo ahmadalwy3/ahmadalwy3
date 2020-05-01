@@ -1,6 +1,6 @@
 I do not know much about that administrator stuff, so I will let a knowledgeable person guide you:
 - [Managing Google Chrome with adblocking and security](https://decentsecurity.com/enterprise/#/ublock-for-google-chrome-deployment/) by [SwiftOnSecurity](https://twitter.com/SwiftOnSecurity/status/783348579943317504)
-- [Deploy Firefox in the Enterprise with uBlock Origin, HTTPS Everywhere and Privacy Badger using Group Policy](https://decentsecurity.com/enterprise/#/ublock-for-firefox-deployment/) by [John](https://www.winsysadminblog.com/about-me/)
+- [Deploy Firefox in the Enterprise with uBlock Origin, HTTPS Everywhere and Privacy Badger using Group Policy](https://www.winsysadminblog.com/2019/03/deploy-firefox-in-the-enterprise-with-ublock-origin-https-everywhere-and-privacy-badger-using-group-policy/) by [John](https://www.winsysadminblog.com/about-me/)
 
 ### Customizing the settings
 
