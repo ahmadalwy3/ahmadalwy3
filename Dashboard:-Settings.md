@@ -117,6 +117,8 @@ Please see: ["Per site switches"](./Per-site-switches)
 
 ## Backup/restore section
 
+![buttons](https://user-images.githubusercontent.com/585534/80806433-af3c5000-8b88-11ea-9f8c-bbd9fb3df9d7.png)
+
 The bottom-most section is for you to easily backup/restore/reset all settings in uBlock.
 
 It's done by saving text file to location specified by your browser.
