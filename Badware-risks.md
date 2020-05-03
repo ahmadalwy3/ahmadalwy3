@@ -11,7 +11,7 @@ Users of uBlock are free to disable blocking by selecting either:
 
 Blocking may be re-enabled by removing specific `no-strict-blocking: ...` line from rules list in _My rules_ pane in uBlock Origin dashboard.
 
-Below are sites currently part of the list, or sites being candidate for the list (will be added once there are enough sources to support the _badware risks_ qualifier), and links giving further information as to why. Feel free to add _good_ sources if you find more (please respect the chronological order, keep everything neat).
+Below are sites currently part of the list, or sites being candidate for the list (will be added once there are enough sources to support the _badware risks_ qualifier), and links giving further information as to why. Feel free to add _good_ sources if you find more (please respect the chronological order, keep everything neat). You can find more information about recently added sites in comments [directly in the list source ↪](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt). There is a comment above each entry with links to the relevant issue that caused it to be added.
 
 #### 01net.com (candidate)
 - 2014-10-22: [01net bad behaviour](http://assiste.com/01Net.html)
