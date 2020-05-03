@@ -239,7 +239,7 @@ Filter list authors are discouraged from using exception filters of `cname` type
 
 #### `denyallow`
 
-New in [1.25.3b4](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359).
+New in [1.25.3b4](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359). **Warning:** broken in stable 1.26.* versions for `*$domain=` filters (fix [one](https://github.com/gorhill/uBlock/commit/94935a4b9e5ff9d70eb6876c0214a570bab76371) and [two](https://github.com/gorhill/uBlock/commit/36711a7c0761c6eecb8c7f7f9724cba6d1cc2994)).
 
 The purpose of `denyallow` is bring default-deny/allow-exceptionally ability into static network filtering arsenal. 
 
