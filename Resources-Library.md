@@ -138,11 +138,14 @@ Intercepts calls to `JSON.parse`, and if the result of the parsing is an Object,
 
 Parameters:
  - optional, string, a list of space-separated properties to remove 
- - optional, string, a list of space-separated properties which must be all present for the pruning to occur
+ - optional,
+     - string, a list of space-separated properties which must be all present for the pruning to occur; OR
+     - string/_regular expression_, for logging purposes, matching in stringified JSON payloads (new in [1.26.3b13](https://github.com/gorhill/uBlock/commit/578594bbd7c545b62f18267d640a605f8e07a53a))
 
 A property in a list of properties can be a chain of properties, example: `adpath.url.first`.
 
-When used without parameters, will log current hostname + json payload to the console.
+When used without parameters, will log current hostname + json payload to the console.  
+New in [1.26.3b13](https://github.com/gorhill/uBlock/commit/578594bbd7c545b62f18267d640a605f8e07a53a) - second parameter can be used to limit logging to JSON payloads which stringified content match specified string or _regular expression_.
 
 Examples:
  - `youthhealthmag.com##+js(json-prune, unit_list)`
