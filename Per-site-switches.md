@@ -31,7 +31,7 @@ However, when the overview panel is visible, toggling a per-site switch will cau
 
 By default popups are allowed unless there is a filter to block them. When this setting is enabled, **all** popups will be unconditionally blocked for the current site, regardless of filters:
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021121-e0e85d80-c0ad-11e8-96e7-874234cc3618.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/46021121-e0e85d80-c0ad-11e8-96e7-874234cc3618.png)<br><sup>The badge shows the number of popups that have been closed on the page.</sup>
 
 No popups rules appear as `no-popups: [hostname] true` entries in the [_My rules_ pane](./Dashboard:-My-rules).
 
