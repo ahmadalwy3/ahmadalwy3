@@ -94,11 +94,12 @@ URL from where the _benchmark_ _dataset_ will be fetched. This allows to launch 
 
 _Dataset_ is the `requests_top500.json.gz` dataset of URLs released by "whotracks.me" with their [Adblockers Performance Study](https://whotracks.me/blog/adblockers_performance_study.html).
 
+It is recommended to download the dataset, decompress it, and use a local URL to refer to the resource so as to not abuse the bandwidth of the remote server. In Chromium-based browser, you can use a `file:///`-based URL to the local copy. On Firefox you will have to [create a simple HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server) and create a URL such as `http://localhost:8000/[...]` to the local copy.
+
 _Benchmark_ is one of the internal uBO benchmarks:
 - [`µBlock.staticNetFilteringEngine.benchmark();`](https://github.com/gorhill/uBlock/commit/5733439f629da948cfc3cae74afa519f6cff7b7f) (initial implementation, recording of the matches was added [later](https://github.com/gorhill/uBlock/commit/92c5f17b78e5056340f462b049c1871ae0467220) for comparison/debugging purposes)
 - [`µBlock.sessionFirewall.benchmark();`](https://github.com/gorhill/uBlock/commit/928ab91ab8b72be1c962370b49a36fbe1e1ded94)
 - [`µBlock.cosmeticFilteringEngine.benchmark();`](https://github.com/gorhill/uBlock/commit/1e40f50eb3c1347afea251dce603f432e2199606)
-- [`vAPI.net.benchmark()`](https://github.com/gorhill/uBlock/commit/563aed0d9374f07fcb46436f437813d860ba39c9)
 
 Benchmarks can be executed from Browser Console in extension background context. 
 
