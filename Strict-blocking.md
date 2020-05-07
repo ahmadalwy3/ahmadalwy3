@@ -31,3 +31,15 @@ There are many benefits to strict blocking. For example, there is no good reason
 **Important note:** Keep in mind that when the above warning occurs, it doesn't necessarily mean the site is harmful, it just means that there is a matching filter in the selected filter lists. You decide whether the site is safe, and whether disabling strict blocking permanently for the site is appropriate.
 
 **Tip:** If you wish, you may entirely disable strict blocking everywhere by adding the rule `no-strict-blocking: * true` to the _My rules_ pane in the dashboard (don't forget to click _Commit_ to make the rule stick).
+
+### Ability to parse the strict-blocked URL
+
+Sometimes, the strict-blocked URL contains a [query string component](https://en.wikipedia.org/wiki/Query_string) which uBO can parse and decompose into detailed query parameters. Oftentimes, once decomposed, the query parameters will show you information which can be useful.
+
+A top example of this is when a redirection URL is strict blocked, you will often find in the query parameters the destination URL which you intended to visit when you clicked a link, which makes it possible to bypass the redirection URL -- typically used for tracking purpose -- and navigate directly to the intended destination URL by just licking on it.
+
+Example:
+
+![a](https://user-images.githubusercontent.com/585534/81292329-6594af00-9039-11ea-99e5-271ae753fe0b.png)
+
+In the example above, a link to _Green Man Gaming_ site was clicked (from [here](https://www.pcgamingwiki.com/wiki/Dead_Rising_2)), but doing so caused the browser to navigate to a strict-blocked redirection link instead of navigating directly to the _Green Man Gaming_ site. By expanding the query strings into components, we can see our actual destination URL -- just click on it and you will finally reach your intended destination whithout having to go through the `dpbolvw.net` server which was strict-blocked by an entry in Peter Lowe's list.
