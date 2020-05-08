@@ -1,4 +1,4 @@
-uBlock Origin comes with its own custom DOM inspector, to assist in the creation of cosmetic filters, as a complementary tool to the [element picker](./Element-picker) and the [logger](.The-logger). It can be accessed by clicking the `</>` icon in the logger:
+uBlock Origin comes with its own custom DOM inspector, to assist in the creation of cosmetic filters, as a complementary tool to the [element picker](./Element-picker) and the [logger](./The-logger). It can be accessed by clicking the `</>` icon in the logger:
 
 ![DOM inspector in action](https://user-images.githubusercontent.com/585534/33130150-5d6201da-cf60-11e7-9637-831792c96e7e.png)
 
