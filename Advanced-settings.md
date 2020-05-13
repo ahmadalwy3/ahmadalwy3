@@ -14,6 +14,8 @@ If you want to reset a specific setting to its default value, just delete the va
 
 If you want to reset all settings to their default values, delete everything then press _"Apply changes"_.
 
+**Important:** Some advanced settings are purposefully left undocumented, they are for internal use during development, or their long term availability has not yet been decided. Do not open an issue about these purposefully undocumented settings -- the issue will be closed without further comment.
+
 ***
 
 #### `allowGenericProceduralFilters`
