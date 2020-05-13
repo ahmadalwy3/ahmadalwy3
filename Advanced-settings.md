@@ -117,9 +117,9 @@ Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a46
 
 Preference allows to configure cascade of the "Relax blocking mode" [keyboard shortcut](./Keyboard-shortcuts), along with corresponding badge color.
 
-Default value contains four codes separated by space representing four blocking modes:
+Default value contains four codes separated by space representing four [blocking modes](https://github.com/uBlockOrigin/uBlock-issues/wiki/Blocking-mode):
 
-| Hard mode +<br>No scripting | Medium mode +<br>No scripting | Medium mode | Default |
+| [Hard mode](https://github.com/uBlockOrigin/uBlock-issues/wiki/Blocking-mode:-hard-mode) +<br>[No scripting](https://github.com/uBlockOrigin/uBlock-issues/wiki/Per-site-switches#no-scripting) | [Medium mode](https://github.com/uBlockOrigin/uBlock-issues/wiki/Blocking-mode:-medium-mode) +<br>[No scripting](https://github.com/uBlockOrigin/uBlock-issues/wiki/Per-site-switches#no-scripting) | [Medium mode](https://github.com/uBlockOrigin/uBlock-issues/wiki/Blocking-mode:-medium-mode) | [Default](https://github.com/uBlockOrigin/uBlock-issues/wiki/Blocking-mode:-easy-mode) |
 | ---                      | ---                        | ---         | ---     |
 | 11111/#F00               | 11011/#C0F                 | 11001/#00F  | 00001   |
 |![red badge](https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png)|![purple badge](https://user-images.githubusercontent.com/886325/64036667-039fb380-cb54-11e9-8199-cf042837d481.png)|![blue badge](https://user-images.githubusercontent.com/886325/64036718-229e4580-cb54-11e9-91d3-10b6d95b6068.png)|![black badge](https://user-images.githubusercontent.com/886325/64035689-b7ec0a80-cb51-11e9-82d2-851edceae27e.png)|
