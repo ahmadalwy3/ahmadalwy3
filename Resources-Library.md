@@ -592,6 +592,9 @@ TODO: object and font resources are missing? Find discussion about adding them o
 ### amazon_ads.js /
 ### ~amazon-adsystem.com/aax2/amzn_ads.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/amazon_ads.js)
 
+### amazon_apstag.js [↪](https://github.com/gorhill/uBlock/blob/f842ab6d3c1cf0394f95d27092bf59627262da40/src/web_accessible_resources/amazon_apstag.js)
+New in [1.26.3cr8](https://github.com/gorhill/uBlock/commit/f842ab6d3c1cf0394f95d27092bf59627262da40).
+
 ### monkeybroker.js /
 ### ~d3pkae9owd2lcf.cloudfront.net/mb105.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/monkeybroker.js)
 
