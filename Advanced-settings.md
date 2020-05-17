@@ -481,7 +481,7 @@ uBO [1.24.3b10](https://github.com/gorhill/uBlock/commit/2b0316440e86d1d8f4ae21f
 Possible values:
 
 - `fenix` - to forcefully enable new, mobile-friendly, Popup UI layout.
-- `-` - to revert back to old Popup UI.
+- `classic` - to revert back to old Popup UI (it was `-` up to [1.26.3b15](https://github.com/gorhill/uBlock/commit/b295d4a0d0d25848211c43cc2e7068859c2cb9ea#diff-0d94ddccc559e1231fe0cfa793814429L359-R377)).
 - `unset` - uBO will use whatever UI flavor which is optimal for the current platform.
 
 ![Mobile Popup UI layout](https://user-images.githubusercontent.com/585534/74933925-1c767c80-53b3-11ea-96fd-79cedd5533cb.png)
