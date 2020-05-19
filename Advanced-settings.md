@@ -488,6 +488,18 @@ Possible values:
 
 ***
 
+#### `uiStyles`
+
+Default: `unset`.
+
+uBO [1.27.5b1](https://github.com/gorhill/uBlock/commit/9f7e5b621dc5e7a3e0fed0daa57d922f1ec56d80) and above.
+
+Allow to bypass uBO's default CSS styles in case they are causing issues to specific users. It is the responsibility of the user to ensure the value of `uiStyles` contains valid CSS property declarations. uBO will assign the value to `document.body.style.cssText`.
+
+For example, in the case of the [issue #1044](https://github.com/uBlockOrigin/uBlock-issues/issues/1044), one could set `uiStyles` to `font-family: sans-serif` to force uBO to the system font for its user interface.
+
+***
+
 #### `updateAssetBypassBrowserCache`
 
 Default: `false` 
