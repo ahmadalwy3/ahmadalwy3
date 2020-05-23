@@ -357,11 +357,13 @@ Default: `false`.
 
 uBO [1.23.0](https://github.com/gorhill/uBlock/commit/59c9a34d34a737f6bb48c4130c65f4fe0fa73806) and above.
 
-Enabled point-and-click feature, to create temporary exception filters for static extended filters (i.e. cosmetic, scriptlet & html filters) from within the summary pane in the logger. The button to toggle on/off temporary exception filter is labeled `#@#`:
+Enable point-and-click feature, to create temporary exception filters for static extended filters (i.e. cosmetic, scriptlet & html filters) from within the summary pane in the logger. The button to toggle on/off temporary exception filter is labeled `#@#`:
 
 ![filtering tools dialog](https://user-images.githubusercontent.com/886325/69076705-4fb41300-0a34-11ea-8e9a-463b9a1d29d8.png)
 
 The created exceptions are temporary and will be lost when restarting uBO, or manually toggling off the exception filters.
+
+Also affects [`popupPanelGodMode`](#popuppanelgodmode).
 
 ***
 
@@ -410,6 +412,20 @@ When clicking the _"Update now"_ button in the _"3rd-party filters"_ pane in the
 Default: `unset`.
 
 A valid CSS font size value (`14px`) to use for the popup panel. Use if you are unhappy with the default size.
+
+***
+
+#### `popupPanelGodMode`
+
+Default: `false`.
+
+uBO [1.27.5b3](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) and above.
+
+Set to `true` to restore ability to set _allow_ rules from popup panel.
+
+_Allow_ rules will also be available when the advanced setting [`filterAuthorMode`](#filterauthormode) is set to `true`.
+
+The ability to point-and-click to create _allow_ rules from the popup panel is no longer allowed by default. See [commit message](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) for reasoning.
 
 ***
 
