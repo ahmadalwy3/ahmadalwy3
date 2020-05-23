@@ -413,6 +413,16 @@ A valid CSS font size value (`14px`) to use for the popup panel. Use if you are 
 
 ***
 
+#### `popupPanelHeightMode`
+
+Default: `0`.
+
+Set to `1` to force the height of the firewall pane to be no more than the height of the basic pane.
+
+Solves clipping of the Overview Panel - [#785 (comment)](https://github.com/uBlockOrigin/uBlock-issues/issues/785#issuecomment-622327450).
+
+***
+
 #### `requestJournalProcessPeriod`
 
 Default: `1000` milliseconds.
