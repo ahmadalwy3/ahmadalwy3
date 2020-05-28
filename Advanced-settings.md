@@ -363,7 +363,7 @@ Enable point-and-click feature, to create temporary exception filters for static
 
 The created exceptions are temporary and will be lost when restarting uBO, or manually toggling off the exception filters.
 
-After [v1.27.5b3](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) restores ability to set _allow_ rules from popup panel. The ability to point-and-click to create _allow_ rules from the popup panel is no longer allowed by default. See [commit message](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) for reasoning. Tap twice on <key>Ctrl</key> if you want to access allow rules only temporarily.
+After [v1.27.5b3](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) restores ability to set _allow_ rules from popup panel. The ability to point-and-click to create _allow_ rules from the popup panel is no longer allowed by default. See [commit message](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) for reasoning. Tap twice on <kbd>Ctrl</kbd> if you want to access allow rules only temporarily.
 
 ***
 
