@@ -12,9 +12,12 @@ Starting with v1.25.3b4 (commit [one](https://github.com/gorhill/uBlock/commit/7
         - [Entity](#entity)
         - [Cosmetic filters](#cosmetic-filters)
             - [Procedural cosmetic filters ↪](./Procedural-cosmetic-filters)
+            - [Action operators](#action-operators)
         - [HTML filters](#html-filters)
         - [Scriptlet injection](#scriptlet-injection)
 			- [Resources library ↪](./Resources-Library)
+
+***
 
 ## Not supported
 
@@ -47,6 +50,8 @@ For instance, when used for a specific site, the `genericblock` option would cau
 Before 1.23.0 it was translated internally to `generichide`. `elemhide` was only available as ["No cosmetic filtering"](./Per-site-switches#no-cosmetic-filtering) switch.
 
 Keep in mind `generichide` is a cosmetic filtering-related option, and as such using it has no negative consequence with regard to privacy since cosmetic filtering has no privacy value.
+
+***
 
 ## Pre-parsing directives
 
@@ -110,6 +115,7 @@ Starting from [1.21.9b7](https://github.com/gorhill/uBlock/commit/1d805fb9da1aad
 
 Before this version, you could use negated `ext_ublock`, since this token is always true in uBO.
 
+***
 
 ## Extended syntax
 
@@ -401,6 +407,8 @@ Specific cosmetic filters, are filters which apply only to pages in domains spec
 
 Equivalent to `xmlhttprequest` [option](https://adblockplus.org/filters#options). For convenience.
 
+***
+
 ## Static extended filtering
 
 Static extended filters are all of the form:
@@ -446,31 +454,61 @@ Specific-generic cosmetic filters will NOT be discarded when checking the "Ignor
 
 Related issue: [#803](https://github.com/uBlockOrigin/uBlock-issues/issues/803).
 
+***
+
 ### Cosmetic filters
 
 #### Procedural cosmetic filters
 
-`:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:min-text-length(n)`, `:not(...)`, `:nth-ancestor(n)`, `:remove()`, `:upward(arg)`, `:watch-attr(...)`, `:xpath(...)`.
+`:has(...)`, `:has-text(...)`, `:if(...)`, `:if-not(...)`, `:matches-css(...)`, `:matches-css-before(...)`, `:matches-css-after(...)`, `:min-text-length(n)`, `:not(...)`, `:nth-ancestor(n)`, `:upward(arg)`, `:watch-attr(...)`, `:xpath(...)`.
 
 See [detailed documentation](./Procedural-cosmetic-filters).
 
 ***
 
-#### `:style()`
+#### Action operators
 
-Related issue: [Support cosmetic filters with explicit style properties](https://github.com/gorhill/uBlock/issues/781).
+By default, the implicit purpose of cosmetic filters is to hide unwanted DOM elements. However sometimes it may be useful to re-style a specific element or remove it completely from DOM tree.
 
-By default, the implicit purpose of cosmetic filters is to hide unwanted DOM elements. However sometimes it may be useful to re-style a specific DOM element on a page rather than hide it. Here is an [recent example](https://github.com/uBlockOrigin/uAssets/issues/71#issuecomment-229503444) of such cases. This is the purpose of the new `:style`-based selector. The syntax is as follow:
+***
 
-    example.com##h1:style(background-color: blue !important)
+#### `subject:remove()`
 
-So mainly it's exactly the same syntax of plain cosmetic filters (i.e. must be a valid CSS selector), except that the `:style(...)` suffix is appended at the end. The content in the parentheses must be one or more [CSS property declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) (separated by the standard `;`). It is not allowed to use property values with `url(...)`, such `style:`-based cosmetic filters will be discarded.
+- Description: _action operator_, instruct to remove elements from the DOM tree.
+- Chainable: No, _action operator_ can only be used at the end of the root chain.
+- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
+- Examples:
+    - `gorhill.github.io###pcf #a18 .fail:remove()`
+
+Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Fixes [#2252](https://github.com/gorhill/uBlock/issues/2252)
+
+Since `:remove()` is an "action" operator, it must only be used as a trailing operator (just like the [`:style()` operator](#subjectstylearg)).
+
+AdGuard's cosmetic filter syntax `{ remove: true; }` will be converted to uBO's `:remove()` operator internally.
+
+***
+
+#### `subject:style(arg)`
+
+- Description: _action operator_, applies specified style to selected elements in DOM tree.
+- Chainable: No, _action operator_ can only be used at the end of the root chain.
+- _subject_: only native, plain CSS selectors are supported.
+- _arg_: one or more [CSS property declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax), separated by the standard `;`. Property values with `url(...)` are forbidden.
+- Examples:
+    - `example.com##h1:style(background-color: blue !important)`
+    - `motobanda.pl###mvideo:style(z-index: 1!important)`
+
+Related issue [Support cosmetic filters with explicit style properties](https://github.com/gorhill/uBlock/issues/781) and [example](https://github.com/uBlockOrigin/uAssets/issues/71#issuecomment-229503444) where it's useful.
+
+It's exactly the same syntax of plain cosmetic filters (i.e. must be a valid CSS selector), except that the `:style(...)` suffix is appended at the end. The content in the parentheses must be one or more [CSS property declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) (separated by the standard `;`). It is not allowed to use property values with `url(...)`, such `style`-based cosmetic filters will be discarded.
 
 As with the other new cosmetic filtering selectors, the `:style` can be used only for _specific_ cosmetic filters, i.e. there must be a hostname or entity specified for the filter.
 
-AdGuard [already support such feature](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-css-rules-syntax), although using a different syntax. However uBO is able to transparently convert and make use of the AdGuard's "CSS injection rules" if ever you use an AdGuard filter list in uBO (well, this essentially means you can use AdGuard's syntax in uBO if you prefer).
+uBO is able to transparently convert and make use of the AdGuard [CSS injection rules](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#cosmetic-css-rules-syntax). This essentially means you can use AdGuard's syntax in uBO if you prefer.
 
-For example, [AdGuard English filter](https://kb.adguard.com/en/general/adguard-ad-filters#english-filter) contains ~50 styling filters, [AdGuard Russian filter list](https://kb.adguard.com/en/general/adguard-ad-filters#russian-filter) contains ~250 styling filters, etc. Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [AdGuard's filter lists](https://kb.adguard.com/en/general/adguard-ad-filters), which can be enabled from the [3rd-party filters pane](./Dashboard:-3rd-party-filters).
+Note that often styling filters are used to foil anti-blocker mechanism on web pages. Given this, you may want to benefit from [AdGuard's filter lists](https://kb.adguard.com/en/general/adguard-ad-filters), which can be enabled from the [3rd-party filters pane](./Dashboard:-3rd-party-filters).
+
+***
 
 ### HTML filters
 
@@ -490,6 +528,8 @@ These HTML filters will cause the elements matching the selectors to be **remove
 With the introduction of HTML filtering, the `script:contains(...)` is now deprecated and internally converted into an equivalent `##^script:has-text(...)` HTML filter. The result is essentially the same: to prevent the execution of specific inline script tags in a main HTML document. See [_"Inline script tag filtering"_](./Inline-script-tag-filtering) for further documentation.
 
 Support for chaining procedural operators with native CSS selector syntax (i.e. `a:has(b) + c`) was added in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958). Only procedural operators which make sense in the context of HTML filtering are supported.
+
+***
 
 ### Scriptlet injection
 
