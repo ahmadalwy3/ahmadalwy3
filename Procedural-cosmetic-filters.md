@@ -154,22 +154,6 @@ Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb700568
 
 ***
 
-### `subject:remove()`
-
-- Description: _action operator_, instruct to remove elements from the DOM tree.
-- Chainable: No, _action operator_ can only be used at the end of the root chain.
-- _subject_: Can be a plain CSS selector, or a procedural cosmetic filter.
-- Examples:
-    - `gorhill.github.io###pcf #a18 .fail:remove()`
-
-Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Fixes [#2252](https://github.com/gorhill/uBlock/issues/2252)
-
-Since `:remove()` is an "action" operator, it must only be used as a trailing operator (just like the `:style()` operator).
-
-AdGuard's cosmetic filter syntax `{ remove: true; }` will be converted to uBO's `:remove()` operator internally.
-
-***
-
 ### `subject:watch-attrs(arg)`
 
 Deprecated in favor of [`subject:watch-attr(arg)`](#subjectwatch-attrarg) in [1.20.1b3](https://github.com/gorhill/uBlock/commit/41685f4cce084f3f89e9cdd8fc1cde5b57862958)
