@@ -36,10 +36,3 @@ Novice users could easily mess up uBO's filtering through dynamic filtering, thu
 On the other hand, if you are familiar with [RequestPolicy](https://www.requestpolicy.com/), then you should have no problem dealing with dynamic filtering.
 
 **Important note:** Dynamic filtering engine is completely turned off when you un-check the setting _"I am an advanced user"_. Your dynamic filtering rules are kept intact though, in case you re-enable _advanced user_ mode again.
-
-***
-
-### Ability to filter behind-the-scene network requests
-Starting from uBO 1.15.20 `behind-the-scene` is no longer whitelisted by default in WebExtension (main) version of uBO.
-
-See ["Behind-the-scene network requests"](./Behind-the-scene-network-requests).
