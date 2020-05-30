@@ -69,9 +69,16 @@ Given that whitelist directives dictate where uBO should be completely disabled,
 
 ### Whitelisting Youtube channel
 
-There are [user scripts on Greasy Fork](https://greasyfork.org/en/scripts?q=YouTube+whitelist+channels+in+uBlock+Origin&sort=updated), based on [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/13226-youtube-whitelist-channels-in-ublock-origin) and also [browser extension](https://github.com/x0a/YouTube-Channel-Whitelist-for-uBlock-Origin#youtube-channel-whitelist-for-ublock-origin). I can't vouch for them, you will have to find out yourself whether they work.
+There are two ways to do this:
 
-Someone posted instructions on reddit: [Any way to whitelist certain youtube channels?](https://www.reddit.com/r/ublock/comments/4x4jol/any_way_to_whitelist_certain_youtube_channels/).
+1. By [browser extension](https://github.com/x0a/YouTube-Channel-Whitelist-for-uBlock-Origin#youtube-channel-whitelist-for-ublock-origin).
+
+	Kept updated, should be easy to use, point and click, with good description of usage.
+2. Using one of the [user scripts from Greasy Fork](https://greasyfork.org/en/scripts?q=YouTube+whitelist+channels+in+uBlock+Origin&sort=updated) based on [YouTube - whitelist channels in uBlock Origin](https://greasyfork.org/en/scripts/13226-youtube-whitelist-channels-in-ublock-origin).
+
+	Simple, with clearly visible code, but can be outdated. Someone posted instructions on Reddit, it was years ago, but explains few things: ["Any way to whitelist certain youtube channels?"](https://www.reddit.com/r/ublock/comments/4x4jol/any_way_to_whitelist_certain_youtube_channels/).
+
+**Warning!** These are third party tools, I can't vouch for them, you will have to find out for yourself whether they work.
 
 ### Disabling filtering temporarily or by default (blacklist mode)
 
@@ -86,7 +93,6 @@ Black list mode can also be achieved by specifically crafted Regular Expression 
     /^((?!example\.com|different\.example\.net|another\.example\.org).)*$/
 
 With this directive all domains put between `|` characters will be treated as _blacklisted_, and uBO will be enabled only on these pages.
-
 
 ### Other details
 
