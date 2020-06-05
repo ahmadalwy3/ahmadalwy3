@@ -2,9 +2,9 @@
 
 ***
 
-Dynamic filtering pane ([available only to advanced users](./Advanced-user-features)) can be toggled by clicking on `requests blocked` or `domains connected`:
+Dynamic filtering pane ([available only to advanced users](./Advanced-user-features)) can be toggled by repeatedly clicking on `More`:
 
-![figure 1](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-01.png)
+![figure 1](https://i.imgur.com/vcvtIEF.png)
 
 > ***
 > **Important:**
