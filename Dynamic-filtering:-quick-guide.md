@@ -4,7 +4,7 @@
 
 Dynamic filtering pane ([available only to advanced users](./Advanced-user-features)) can be toggled off/on by clicking on the _Less_/_More_ buttons:
 
-![a](https://user-images.githubusercontent.com/585534/83874954-48203700-a704-11ea-8447-a841101c0c83.png)
+![figure 1](https://user-images.githubusercontent.com/585534/83874954-48203700-a704-11ea-8447-a841101c0c83.png)
 
 > ***
 > **Important:**
@@ -14,7 +14,7 @@ Dynamic filtering pane ([available only to advanced users](./Advanced-user-featu
 
 **First column**: what is to be dynamically filtered:
 
-![figure 2](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-02.png)
+![figure 2](https://user-images.githubusercontent.com/585534/83875271-cbda2380-a704-11ea-94ce-108fa711469c.png)
 
 As you can see, you can create dynamic filtering rules for resource types, or hostnames according to their origin.
 
@@ -24,7 +24,7 @@ In bold, domain names. Domain names are hostnames, but hostnames are not necessa
 
 **Second column**: **_global_** dynamic filtering rules, i.e. whatever rule appears in this column applies everywhere, on _all_ sites:
 
-![figure 3](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-03.png)
+![figure 3](https://user-images.githubusercontent.com/585534/83875414-0ba10b00-a705-11ea-8703-d8e86166516b.png)
 
 **Third column**: **_local_** dynamic filtering rules, i.e. whatever rule appears in this column applies to the _current_ site only:
 
