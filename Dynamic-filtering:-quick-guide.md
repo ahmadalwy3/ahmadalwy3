@@ -2,9 +2,9 @@
 
 ***
 
-Dynamic filtering pane ([available only to advanced users](./Advanced-user-features)) can be toggled by repeatedly clicking on `More`:
+Dynamic filtering pane ([available only to advanced users](./Advanced-user-features)) can be toggled off/on by clicking on the _Less_/_More_ buttons:
 
-![figure 1](https://i.imgur.com/vcvtIEF.png)
+![a](https://user-images.githubusercontent.com/585534/83874954-48203700-a704-11ea-8447-a841101c0c83.png)
 
 > ***
 > **Important:**
