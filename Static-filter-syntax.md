@@ -133,7 +133,7 @@ However, this creates an ambiguity with ABP filter syntax, which is pattern-base
 
 ABP filter syntax dictates that this is interpreted as "block network requests which URL contains `example.com` at any position".
 
-However in uBO the interpretation will be "block network requests to the site `example.com` and all of its subdomains" -- i.e. equivalent to `||example.com^`.
+However in uBO the interpretation will be "block network requests to the site `example.com` and all of its subdomains" -- i.e. equivalent to `||example.com^`. Note that this includes blocking main document itself, see ["Strict blocking"](./Strict-blocking) and [`document` option](#document).
 
 So in uBO, any pattern which can be wholly read as a valid hostname, will be assumed to be equivalent to a filter of the form `||example.com^`. If ever you want such filter to be syntactically parsed according to ABP's interpretation, just add a wildcard at the end:
 
@@ -266,7 +266,7 @@ Essentially, the new `denyallow` option makes it easier to implement default-den
 
 #### `document`
 
-For _block_ filters only. This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. Usually not necessary, because uBO implies it for filters specifying only host part of the URL. This will cause web pages which match the filter to be subjected to [strict blocking](./Strict-blocking).
+This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. This option is automatically enabled in filters specifying only host part of the URL, see ["HOSTS files" section](#hosts-files). This will cause web pages which match the filter to be subjected to ["Strict blocking"](./Strict-blocking).
 
 See also: [`all`](#all)
 
