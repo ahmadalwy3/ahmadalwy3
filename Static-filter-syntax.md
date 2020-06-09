@@ -266,7 +266,7 @@ Essentially, the new `denyallow` option makes it easier to implement default-den
 
 #### `document`
 
-This is _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. This option is automatically enabled in filters specifying only host part of the URL, see ["HOSTS files" section](#hosts-files). This will cause web pages which match the filter to be subjected to ["Strict blocking"](./Strict-blocking).
+This is a _type_ option (like `image` or `script`) which specifies _main frame_ (a.k.a. the root document) of a web page. This option is automatically enabled in filters specifying only host part of the URL, see ["HOSTS files" section](#hosts-files). This will cause web pages which match the filter to be subjected to ["Strict blocking"](./Strict-blocking).
 
 See also: [`all`](#all)
 
