@@ -146,7 +146,7 @@ So in uBO, any pattern which can be wholly read as a valid hostname, will be ass
 The wildcard character `*` can be used to apply a filter to **all** URLs. This is not recommended though, unless you further narrow the filter using filter options. Examples:
 
 - `*$third-party`: block all 3rd-party network requests.
-- `*$script,domain=example.com`: block all network requests to fetch script resources from `example.com`.
+- `*$script,domain=example.com`: block all network requests to fetch script resources at `example.com`.
 
 Usually, it is far more convenient to use [dynamic filtering rules](./Dynamic-filtering) in lieu of such generic static filters.
 
