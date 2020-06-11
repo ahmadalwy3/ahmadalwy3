@@ -247,7 +247,7 @@ Filter list authors are discouraged from using exception filters of `cname` type
 
 This option will inject [`Content-Security-Policy`](https://developer.mozilla.org/en-US/docs/Glossary/CSP) header to the HTTP network response of the requested web page. It can be applied to main document and documents in frames.
 
-This is special filter - it will not block matching resource, but only apply HTTP header to pages matching it. Because of this it cannot be mixed with other options speciyfing resource type, like for example `image`, `script` or [`frame`](#frame) (`subdocument`). It can still be used with [`1p`](#1p) (`first-party`) or [`3p`](#3p) (`third-party`) options.
+This is special filter - it will not block matching resource, but only apply HTTP header to pages matching it. Because of this it cannot be mixed with other options speciyfing resource type, like for example `image`, `script` or [`frame`](#frame) (`subdocument`). It can still be used with [`1p`](#1p) (`first-party`), [`3p`](#3p) (`third-party`) or `domain` options.
 
 Because of how `csp` filters are implemented, they allow for some interesting applications. For example you can block scripts only in some specific path in page:
 
