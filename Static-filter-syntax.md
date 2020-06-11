@@ -202,7 +202,7 @@ After [1.18.17rc1](https://github.com/gorhill/uBlock/commit/3f3a1543ea7fa51d7001
 - Is of the form `|https://` or `|http://` or `*`; and
 - Does have a `domain=` option; and
 - Does not have a negated domain in its `domain=` option; and
-- Does not have `csp=` option; and
+- Does not have `csp` option; and
 - Does not have a `redirect=` option
 
 Will be processed in a special manner:
@@ -258,7 +258,7 @@ And even block them everywhere except main page (note end anchor):
     ||example.com/*$csp=script-src 'none'
     @@||example.com^|$csp=script-src 'none'
 
-Exception filter for specific `csp` blocking filter must have exactly the same content as blocking filter `csp` option. However, exception filter with empty `csp` option will disable all `csp` injections for matching page:
+Exception filter for specific `csp` blocking filter must have exactly the same content of `csp` option as blocking filter. However, exception filter with empty `csp` option will disable all `csp` injections for matching page:
 
     @@||example.com^$csp
 
