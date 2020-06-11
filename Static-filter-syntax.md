@@ -243,6 +243,32 @@ Filter list authors are discouraged from using exception filters of `cname` type
 
 ***
 
+#### `csp`
+
+This option will inject [`Content-Security-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) header to the HTTP network response of the requested web page. It can be applied to main document and documents in frames.
+
+This is special filter - it will not block matching resource, but only apply HTTP header to pages matching it. Because of this it cannot be mixed with other options speciyfing resource type, like for example `image`, `script` or [`frame`](#frame) (`subdocument`). It can still be used with [`1p`](#1p) (`first-party`) or [`3p`](#3p) (`third-party`) options.
+
+Because of how `csp` filters are implemented, they allow for some interesting applications. For example you can block scripts only in some specific path in page:
+
+    ||example.com/subpage/*$csp=script-src 'none'
+
+And even block them everywhere except main page (note end anchor):
+
+    ||example.com/*$csp=script-src 'none'
+    @@||example.com^|$csp=script-src 'none'
+
+Exception filter for specific `csp` blocking filter must have exactly the same content as blocking filter `csp` option. However, exception filter with empty `csp` option will disable all `csp` injections for matching page:
+
+    @@||example.com^$csp
+
+CSP option syntax may look unusual compared to other filters. It works mostly in "whitelist" mode - data can be downloaded only from addresses explicitly specified in this option. Refer to ["Content Security Policy (CSP)
+Quick Reference Guide"](https://content-security-policy.com/) or [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) for further syntax help.
+
+See also [`denyallow`](#denyallow).
+
+***
+
 #### `denyallow`
 
 New in [1.25.3b4](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359). **Warning:** broken in stable 1.26.* versions for `*$domain=` filters (fix [one](https://github.com/gorhill/uBlock/commit/94935a4b9e5ff9d70eb6876c0214a570bab76371) and [two](https://github.com/gorhill/uBlock/commit/36711a7c0761c6eecb8c7f7f9724cba6d1cc2994)).
