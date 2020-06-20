@@ -13,16 +13,18 @@
 
 This is uBlock's popup UI when you click on uBlock's icon in the toolbar:
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46020533-9b776080-c0ac-11e8-86db-cf3d35f03625.png)
+![Popup UI](https://user-images.githubusercontent.com/886325/85211176-df150200-b346-11ea-9b9e-e503de699aa0.png)
 
-![Toggling overview panel](https://user-images.githubusercontent.com/886325/69888399-dea21480-12eb-11ea-94ee-e6e7f0aa8455.gif)
+Amount of visible information can be adjusted by clicking on "More" and "Less" buttons:
+
+![Toggling popup panels](https://user-images.githubusercontent.com/886325/85211186-fd7afd80-b346-11ea-99b6-ca304b867c09.gif)
 
 
 ***
 
 ### The large power button
 
-![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748994/858a70aa-47d1-11e7-9e2c-409b83de99b9.png)
+![large blue power button](https://user-images.githubusercontent.com/886325/85211203-1d122600-b347-11ea-8271-a60449a57c8b.png)
 
 Click the large power button to turn off uBlock **for the current site** (a.k.a. _whitelist_ the current site). This will be remembered the next time you visit the site.
 
@@ -34,7 +36,7 @@ For more advanced whitelisting control, see ["How to whitelist a web site"](./Ho
 
 ### The tools
 
-![a](https://user-images.githubusercontent.com/585534/39652982-3fc1b8a4-4fbd-11e8-87f8-fb189f3a1071.png)
+![row of tools buttons](https://user-images.githubusercontent.com/886325/85211214-331fe680-b347-11ea-960e-5fa943313e67.png)
 
 #### Zap an element on the current page
 
@@ -58,7 +60,7 @@ Click the _sliders_ icon to open uBlock's dashboard.
 
 ### The number of requests blocked
 
-![Popup UI](https://cloud.githubusercontent.com/assets/585534/26749010/ba071586-47d1-11e7-8bc6-74bce249d497.png)
+![statistics section](https://user-images.githubusercontent.com/886325/85211231-564a9600-b347-11ea-9f5b-ab926c202cb0.png)
 
 This shows the number of network requests uBlock blocked on the current page. Also, less useful (but people like this kind of thing), the number of network requests uBlock blocked since you installed it. The percentage figure tells you how many requests were blocked out of all the requests made.
 
@@ -66,7 +68,7 @@ This shows the number of network requests uBlock blocked on the current page. Al
 
 ### The number of domains connected
 
-![Popup UI](https://cloud.githubusercontent.com/assets/585534/26749020/da09c446-47d1-11e7-9d49-e46634058915.png)
+![cropped part of statistics secion](https://user-images.githubusercontent.com/886325/85211255-87c36180-b347-11ea-9d79-81e91b0429db.png)
 
 The number of **distinct** domains with which a network connection was established, out of all connections (established + blocked). The domains are derived using the official [Public Suffix List](https://publicsuffix.org/).
 
