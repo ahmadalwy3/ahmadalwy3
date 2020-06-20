@@ -11,7 +11,7 @@ uBO uses [CodeMirror's widget](https://codemirror.net/index.html) to freely edit
 
 The following keyboard shortcuts are available during editing -- most of them are handled by CodeMirror by default (I mostly lazily transcribed [CodeMirror's own documentation](https://codemirror.net/doc/manual.html#commands)):
 
-|`____PC____`|`___Mac___`| Function |
+|`______PC______`|`_____Mac_____`| Function |
 |----|-----|:---------|
 | <kbd>Ctrl</kbd>-<kbd>A</kbd> | <kbd>Cmd</kbd>-<kbd>A</kbd> | Select the whole content of the editor.
 | <kbd>Ctrl</kbd>-<kbd>D</kbd> | <kbd>Cmd</kbd>-<kbd>D</kbd> | Deletes the whole line under the cursor, including newline at the end.
@@ -23,22 +23,22 @@ The following keyboard shortcuts are available during editing -- most of them ar
 | <kbd>Ctrl</kbd>-<kbd>End</kbd> | <kbd>Cmd</kbd>-<kbd>End</kbd> | Move the cursor to the end of the document.
 | <kbd>Home</kbd> | <kbd>Home</kbd> | Move to the start of the text on the line, or if we are already there, to the actual start of the line (including whitespace).
 | <kbd>End</kbd> | <kbd>End</kbd> | Move to the end of the line.
-- <kbd>Up</kbd>, Mac: <kbd>Ctrl</kbd>-<kbd>P</kbd>: Move the cursor up one line.
-- <kbd>Down</kbd>, Mac: <kbd>Ctrl</kbd>-<kbd>N</kbd>: Move down one line.
-- <kbd>Page Up</kbd>, Mac: <kbd>Shift</kbd>-<kbd>Ctrl</kbd>-<kbd>V</kbd>: Move the cursor up one screen, and scroll up by the same distance.
-- <kbd>Page Down</kbd>, Mac: <kbd>Ctrl</kbd>-<kbd>V</kbd>: Move the cursor down one screen, and scroll down by the same distance.
-- <kbd>Left</kbd>, Mac: <kbd>Ctrl</kbd>-<kbd>B</kbd>: Move the cursor one character left, going to the previous line when hitting the start of line.
-- <kbd>Right</kbd>, Mac: <kbd>Ctrl</kbd>-<kbd>F</kbd>: Move the cursor one character right, going to the next line when hitting the end of line.
-- <kbd>Ctrl</kbd>-<kbd>Left</kbd>, Mac: <kbd>Alt</kbd>-<kbd>Left</kbd>:  Move to the left of the group before the cursor. A group is a stretch of word characters, a stretch of punctuation characters, a newline, or a stretch of more than one whitespace character.
-- <kbd>Ctrl</kbd>-<kbd>Right</kbd>, Mac: <kbd>Alt</kbd>-<kbd>Right</kbd>: Move to the right of the group after the cursor (see above).
-- <kbd>Backspace</kbd>, Mac: <kbd>Ctrl</kbd>-<kbd>H</kbd>: Delete the character before the cursor.
-- <kbd>Delete</kbd>, Mac: <kbd>Ctrl</kbd>-<kbd>D</kbd>: Delete the character after the cursor.
-- <kbd>Ctrl</kbd>-<kbd>Backspace</kbd>, Mac: <kbd>Alt</kbd>-<kbd>Backspace</kbd>: Delete to the left of the group before the cursor.
-- <kbd>Ctrl</kbd>-<kbd>Delete</kbd>, Mac: <kbd>Alt</kbd>-<kbd>Delete</kbd>: Delete to the start of the group after the cursor.
-- <kbd>Ctrl</kbd>-<kbd>]</kbd>, Mac: <kbd>Cmd</kbd>-<kbd>]</kbd>: Indent the current line or selection by one indent unit.
-- <kbd>Ctrl</kbd>-<kbd>[</kbd>, Mac: <kbd>Alt</kbd>-<kbd>[</kbd>: Dedent the current line or selection by one indent unit.
-- uBO-specific: <kbd>Tab</kbd>: Toggle prepending the current line or the lines in the current selection with `! ` (to quickly toggle the commenting out of filters).
-- <kbd>Ctrl</kbd>-<kbd>S</kbd>, Mac: <kbd>Cmd</kbd>-<kbd>S</kbd>: Save and apply the changes, if any.
-- <kbd>Ctrl</kbd>-<kbd>F</kbd>, Mac: <kbd>Cmd</kbd>-<kbd>F</kbd>: Find a string. Wrap around `/` to search against a regular expression.
-- <kbd>Ctrl</kbd>-<kbd>G</kbd>, Mac: <kbd>Cmd</kbd>-<kbd>G</kbd>: Find next occurrence after the current cursor position.
-- <kbd>Shift</kbd>-<kbd>Ctrl</kbd>-<kbd>G</kbd>, Mac: <kbd>Shift</kbd>-<kbd>Cmd</kbd>-<kbd>G</kbd>: Find previous occurrence before the current cursor position.
+| <kbd>Up</kbd> | <kbd>Ctrl</kbd>-<kbd>P</kbd> | Move the cursor up one line.
+| <kbd>Down</kbd> | <kbd>Ctrl</kbd>-<kbd>N</kbd> | Move down one line.
+| <kbd>Page Up</kbd> | <kbd>Shift</kbd>-<kbd>Ctrl</kbd>-<kbd>V</kbd> | Move the cursor up one screen, and scroll up by the same distance.
+| <kbd>Page Down</kbd> | <kbd>Ctrl</kbd>-<kbd>V</kbd> | Move the cursor down one screen, and scroll down by the same distance.
+| <kbd>Left</kbd> | <kbd>Ctrl</kbd>-<kbd>B</kbd> | Move the cursor one character left, going to the previous line when hitting the start of line.
+| <kbd>Right</kbd> | <kbd>Ctrl</kbd>-<kbd>F</kbd> | Move the cursor one character right, going to the next line when hitting the end of line.
+| <kbd>Ctrl</kbd>-<kbd>Left</kbd> | <kbd>Alt</kbd>-<kbd>Left</kbd> | Move to the left of the group before the cursor. A group is a stretch of word characters, a stretch of punctuation characters, a newline, or a stretch of more than one whitespace character.
+| <kbd>Ctrl</kbd>-<kbd>Right</kbd> | <kbd>Alt</kbd>-<kbd>Right</kbd> | Move to the right of the group after the cursor (see above).
+| <kbd>Backspace</kbd> | <kbd>Ctrl</kbd>-<kbd>H</kbd> | Delete the character before the cursor.
+| <kbd>Delete</kbd> | <kbd>Ctrl</kbd>-<kbd>D</kbd> | Delete the character after the cursor.
+| <kbd>Ctrl</kbd>-<kbd>Backspace</kbd> | <kbd>Alt</kbd>-<kbd>Backspace</kbd> | Delete to the left of the group before the cursor.
+| <kbd>Ctrl</kbd>-<kbd>Delete</kbd> | <kbd>Alt</kbd>-<kbd>Delete</kbd> | Delete to the start of the group after the cursor.
+| <kbd>Ctrl</kbd>-<kbd>]</kbd> | <kbd>Cmd</kbd>-<kbd>]</kbd> | Indent the current line or selection by one indent unit.
+| <kbd>Ctrl</kbd>-<kbd>[</kbd> | <kbd>Alt</kbd>-<kbd>[</kbd> | Dedent the current line or selection by one indent unit.
+| <kbd>Tab</kbd> | <kbd>Tab</kbd> | uBO-specific: Toggle prepending the current line or the lines in the current selection with `! ` (to quickly toggle the commenting out of filters).
+| <kbd>Ctrl</kbd>-<kbd>S</kbd> | <kbd>Cmd</kbd>-<kbd>S</kbd> | Save and apply the changes, if any.
+| <kbd>Ctrl</kbd>-<kbd>F</kbd> | <kbd>Cmd</kbd>-<kbd>F</kbd> | Find a string. Wrap around `/` to search against a regular expression.
+| <kbd>Ctrl</kbd>-<kbd>G</kbd> | <kbd>Cmd</kbd>-<kbd>G</kbd> | Find next occurrence after the current cursor position.
+| <kbd>Shift</kbd>-<kbd>Ctrl</kbd>-<kbd>G</kbd> | <kbd>Shift</kbd>-<kbd>Cmd</kbd>-<kbd>G</kbd> | Find previous occurrence before the current cursor position.
