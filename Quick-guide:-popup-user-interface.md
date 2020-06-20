@@ -149,6 +149,6 @@ Quickly reload the page without leaving the popup by clicking reload button appe
 
 ### The per-site switches
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46020955-8bac4c00-c0ad-11e8-8c33-33fc921cfcc6.png)
+![row of switch buttons](https://user-images.githubusercontent.com/886325/85211618-18e80780-b34b-11ea-8ce1-393c4930bdb5.png)
 
 The per-site switches allow you to control some settings on a per-site basis. See [detailed documentation about per-site switches](./Per-site-switches).
