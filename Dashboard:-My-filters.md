@@ -11,7 +11,7 @@ uBO uses [CodeMirror's widget](https://codemirror.net/index.html) to freely edit
 
 The following keyboard shortcuts are available during editing -- most of them are handled by CodeMirror by default (I mostly lazily transcribed [CodeMirror's own documentation](https://codemirror.net/doc/manual.html#commands)):
 
-|`______PC______`|`_____Mac_____`| Function |
+|PC<br>`_______________`|Mac<br>`_______________`| Function<br>`_______________`|
 |----|-----|:---------|
 | <kbd>Ctrl</kbd>-<kbd>A</kbd> | <kbd>Cmd</kbd>-<kbd>A</kbd> | Select the whole content of the editor.
 | <kbd>Ctrl</kbd>-<kbd>D</kbd> | <kbd>Cmd</kbd>-<kbd>D</kbd> | Deletes the whole line under the cursor, including newline at the end.
