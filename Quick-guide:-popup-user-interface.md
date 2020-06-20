@@ -98,7 +98,7 @@ And I had click-to-play enabled in all cases, so it could have been worse (excep
 
 When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand to show you more details about requests blocked and domains connected:
 
-![Overview panel expanded](https://user-images.githubusercontent.com/886325/69881956-eb643f80-12ce-11ea-80aa-90f3ed42b8f9.gif)<br>Clicking the `all` cell at the top will toggle on/off subdomain-level details.
+![Overview panel expanded](https://user-images.githubusercontent.com/886325/85211429-6794a200-b349-11ea-94cb-998ee36e6d59.gif)<br>Clicking empty space before particular domain name or the `all` cell in the first row, will toggle on/off subdomain-level details.
 
 The panel will also be expanded when you enable ["advanced user"](./Advanced-user-features) mode -- this is only for convenience -- it will not close automatically when "advanced user" will be disabled. To hide that panel, just click again on either the _"requests blocked"_ or _"domains connected"_ label.
 
