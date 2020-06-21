@@ -3,8 +3,8 @@
 ***
 
 - [The large power button](#the-large-power-button)
-- [The number of requests blocked](#the-number-of-requests-blocked)
 - [The per-site switches](#the-per-site-switches)
+- [The number of requests blocked](#the-number-of-requests-blocked)
 - [The tools](#the-tools)
 - [The number of domains connected](#the-number-of-domains-connected)
 - [The overview panel](#the-overview-panel)
