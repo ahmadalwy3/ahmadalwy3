@@ -4,10 +4,10 @@
 
 - [The large power button](#the-large-power-button)
 - [The number of requests blocked](#the-number-of-requests-blocked)
+- [The per-site switches](#the-per-site-switches)
 - [The tools](#the-tools)
 - [The number of domains connected](#the-number-of-domains-connected)
 - [The overview panel](#the-overview-panel)
-- [The per-site switches](#the-per-site-switches)
 
 ***
 
@@ -34,27 +34,11 @@ For more advanced whitelisting control, see ["How to whitelist a web site"](./Ho
 
 ***
 
-### The tools
+### The per-site switches
 
-![row of tools buttons](https://user-images.githubusercontent.com/886325/85211214-331fe680-b347-11ea-960e-5fa943313e67.png)
+![Row of per-site switch buttons](https://user-images.githubusercontent.com/585534/85226654-a73da700-b3a6-11ea-9c1b-a579981ffdfe.png)
 
-#### Zap an element on the current page
-
-Click the _flash_ icon to enter [element zapper mode](./Element-zapper), which allows you to interactively remove one or more elements on the current page. Removing an element is always temporary, i.e. the removed elements will be back when the page is reloaded.
-
-#### Create a filter for the current site
-
-Click the _eye-dropper_ icon to enter [element picker mode](./Element-picker), which allows you to create a filter by interactively picking an element on a page, thus permanently removing it from the page.
-
-#### Open the logger
-
-Click the _list_ icon to open the [logger](./The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
-
-Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between opening the logger in a separate window or separate tab. uBO will remember that setting when you open the logger without the <kbd>Shift</kbd> key.
-
-#### Open the dashboard
-
-Click the _sliders_ icon to open uBlock's dashboard.
+The per-site switches allow you to control some settings on a per-site basis. See [detailed documentation about per-site switches](./Per-site-switches).
 
 ***
 
@@ -91,6 +75,30 @@ privacy exposure | very high | medium | very low
 bloat | ridiculously high | medium | very low
 
 And I had click-to-play enabled in all cases, so it could have been worse (except for default-deny)...
+
+***
+
+### The tools
+
+![row of tools buttons](https://user-images.githubusercontent.com/886325/85211214-331fe680-b347-11ea-960e-5fa943313e67.png)
+
+#### Zap an element on the current page
+
+Click the _flash_ icon to enter [element zapper mode](./Element-zapper), which allows you to interactively remove one or more elements on the current page. Removing an element is always temporary, i.e. the removed elements will be back when the page is reloaded.
+
+#### Create a filter for the current site
+
+Click the _eye-dropper_ icon to enter [element picker mode](./Element-picker), which allows you to create a filter by interactively picking an element on a page, thus permanently removing it from the page.
+
+#### Open the logger
+
+Click the _list_ icon to open the [logger](./The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
+
+Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between opening the logger in a separate window or separate tab. uBO will remember that setting when you open the logger without the <kbd>Shift</kbd> key.
+
+#### Open the dashboard
+
+Click the _sliders_ icon to open uBlock's dashboard.
 
 ***
 
@@ -144,11 +152,3 @@ Quickly reload the page without leaving the popup by clicking reload button appe
 > ***
 
 </details>
-
-***
-
-### The per-site switches
-
-![row of switch buttons](https://user-images.githubusercontent.com/886325/85211618-18e80780-b34b-11ea-8ce1-393c4930bdb5.png)
-
-The per-site switches allow you to control some settings on a per-site basis. See [detailed documentation about per-site switches](./Per-site-switches).
