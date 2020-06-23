@@ -122,13 +122,13 @@ Starting with [1.24.3b7](https://github.com/gorhill/uBlock/commit/d0738c0835338a
 Unless you are in ["advanced user"](./Advanced-user-features) mode, this panel is read-only and available only for informational purpose.
 
 <details>
-<summary>I am an advanced user!</summary>
+<summary><strong>I am an advanced user!</strong></summary>
 
 ***
 
 In "advanced user" mode, the panel is fully interactive and can be used for advanced filtering control:
 
-![Overview panel advanced mode](https://user-images.githubusercontent.com/886325/69882333-2450e400-12d0-11ea-8764-464b83e99612.gif)
+![Overview panel advanced mode](https://user-images.githubusercontent.com/886325/85384714-b3aa3700-b541-11ea-91cd-6e0e2c1aad4c.gif)
 
 This is UI for [Dynamic filtering](./Dynamic-filtering). Column on the left represents global rules, on the right - local.
 
