@@ -298,6 +298,24 @@ See also: [`all`](#all)
 
 ***
 
+#### `domain`
+
+Restrict the filter to be applied only on specified domain(s).
+
+Multiple domains can be specified by joining them using `|` symbol.
+
+Preceding domain name by `~` will prevent filter to be applied on this domain.
+
+Starting with [1.27.7b2](https://github.com/gorhill/uBlock/commit/3c67d2b89f8ac6d680e74af3e11b916889f7feed) support for [_"entity"_](#entity) matching has been added. You can now use `filter$domain=google.*` to apply filter to pages on all top level domains of specified domain.
+
+Example:
+
+    ||doubleclick.net^$script,domain=auto-motor-und-sport.de
+    ||adnxs.com^$domain=bz-berlin.de|metal-hammer.de|musikexpress.de|rollingstone.de|stylebook.de
+    /adsign.$domain=~adsign.no
+
+***
+
 #### `elemhide`
 
 Alias: `ehide`.
@@ -506,7 +524,7 @@ By default, the implicit purpose of cosmetic filters is to hide unwanted DOM ele
 - Examples:
     - `gorhill.github.io###pcf #a18 .fail:remove()`
 
-Introduced in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Fixes [#2252](https://github.com/gorhill/uBlock/issues/2252)
+New in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Fixes [#2252](https://github.com/gorhill/uBlock/issues/2252)
 
 Since `:remove()` is an "action" operator, it must only be used as a trailing operator (just like the [`:style()` operator](#subjectstylearg)).
 
