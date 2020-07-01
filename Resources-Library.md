@@ -144,6 +144,27 @@ Parameters:
 
 A property in a list of properties can be a chain of properties, example: `adpath.url.first`.
 
+After [v1.27.11rc7](https://github.com/gorhill/uBlock/commit/f433932d8602230539d3408e9946d4d70b40306c), two special _"wildcard tokens"_ have been added:
+
+- `[]` - will iterate in all elements in an array. To deal with cases where the
+property to remove is an element in an array.
+    To remove `adserver` object properties from array in following JSON payload:
+
+        {"playlist": [{"adserver": "first"},{"adserver": "second"}]}
+
+    Use:
+
+        +js(json-prune, playlist.[].adserver)
+
+- `*` - will iterate through all own properties of an object. For example, to deal with hard to predict random-named properties.
+    To remove `adserver` object properties from inside _randomly named_ objects in following JSON payload:
+
+        {"playlist": {"random1": {"adserver": "first"}, "randomB": {"adserver": "second"}}}
+
+    Use:
+
+       +js(json-prune, playlist.*.adserver)
+
 When used without parameters, will log current hostname + json payload to the console.  
 New in [1.26.3b13](https://github.com/gorhill/uBlock/commit/578594bbd7c545b62f18267d640a605f8e07a53a) - second parameter can be used to limit logging to JSON payloads which stringified content match specified string or _regular expression_.
 
