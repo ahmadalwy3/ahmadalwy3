@@ -93,9 +93,9 @@ Logs to the console event listeners created on page.
 ***
 
 ### cookie-remover.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L942)
-Removes current page cookies specified by name. For current domain, wildcard (dot) subdomain(s), current and `/` path, script accessible (HttpOnly=false), on load and before unload.
+Removes current page cookies specified by name. For current domain, wildcard (dot) subdomain(s), after [v1.27.11rc6](https://github.com/gorhill/uBlock/commit/c4d39d37632fbee4d513116641a282ed2a48c89d) also for domain one level above `www`, current and `/` path, script accessible (HttpOnly=false), on load and before unload.
 
-Caveats: cookies set for higher level domain will not be removed. For example, if current page domain is `www.example.com`, cookies set for `example.com` will not be removed.
+Caveats: cookies set for higher level domain will not be removed. For example, if current page domain is `page.example.com`, cookies set for `example.com` will not be removed. One exception is `www` subdomain, which will work after [v1.27.11rc6](https://github.com/gorhill/uBlock/commit/c4d39d37632fbee4d513116641a282ed2a48c89d).
 
 Parameters:
  - optional, string/_regular expression_, matching in the name of the cookie
