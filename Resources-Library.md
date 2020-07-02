@@ -130,7 +130,7 @@ Examples:
 
 ***
 
-### json-prune.js [↪](https://github.com/gorhill/uBlock/blob/b97fea09d20d014923b2741a01fa3f3f5555e230/assets/resources/scriptlets.js#L239)
+### json-prune.js [↪](https://github.com/gorhill/uBlock/blob/f433932d8602230539d3408e9946d4d70b40306c/assets/resources/scriptlets.js#L251)
 
 New in [1.23.0](https://github.com/gorhill/uBlock/commit/2fd86a66fcc2665e5672cc5862e24b3782ee7504)
 
