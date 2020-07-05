@@ -8,7 +8,7 @@ Blocking-wise, this is a small leap from [medium mode](./Blocking-mode:-medium-m
 
 This mode will block all 3rd parties by default, so it keeps privacy exposure to 3rd parties to a minimum.
 
-![3rd-party network requests are blocked by default](https://user-images.githubusercontent.com/585534/62878365-f2068100-bcf6-11e9-9085-aea67cef7e4e.png)<br>
+![3rd-party network requests are blocked by default](https://user-images.githubusercontent.com/585534/86542007-c298ce00-bedf-11ea-9d63-e2b424c6dc71.png)<br>
 <sup>3rd-party network requests are blocked by default.</sup>
 
 ![red badge](https://user-images.githubusercontent.com/886325/64036700-1c0fce00-cb54-11e9-9fad-49f72c4fa086.png)
