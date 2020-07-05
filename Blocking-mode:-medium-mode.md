@@ -8,7 +8,7 @@ Blocking-wise, this is one significant leap from [easy mode](./Blocking-mode:-ea
 
 This is where you start to use [dynamic filtering](./Dynamic-filtering), a feature available only when you tell uBlock Origin that you are an [advanced user](./Advanced-user-features). Be sure to read [the guide](./Dynamic-filtering) before, it is assumed that you understand well how dynamic filtering works in order to use medium mode effectively.
 
-![3rd-party scripts are blocked by default](https://user-images.githubusercontent.com/585534/62878866-f41d0f80-bcf7-11e9-890e-c90438d7f982.png)
+![3rd-party scripts are blocked by default](https://user-images.githubusercontent.com/585534/86541955-5c13b000-bedf-11ea-9e9c-30a1aff691a0.png)
 <br>3rd-party scripts and frames are blocked by default.
 
 ![blue badge](https://user-images.githubusercontent.com/886325/64036718-229e4580-cb54-11e9-91d3-10b6d95b6068.png)
@@ -49,9 +49,9 @@ With one click or two, you can easily fall back into lesser blocking mode, if ev
 
 To fall back into [easy mode](./Blocking-mode:-easy-mode):
 - Set a local noop rule for the _3rd-party script_ cell:<br>
-  ![3rd-party scripts allowed](https://user-images.githubusercontent.com/585534/62879000-33e3f700-bcf8-11e9-8929-c49541df8e7c.png)
+  ![3rd-party scripts allowed](https://user-images.githubusercontent.com/585534/86541958-5ddd7380-bedf-11ea-97bd-99f4e6a79196.png)
 - Set a local noop rule for the _3rd-party frames_ cell (optional, as blocking 3rd-party frames is less likely to break websites):<br>
-  ![3rd-party frames allowed](https://user-images.githubusercontent.com/585534/62879118-6beb3a00-bcf8-11e9-95a4-a4480b879898.png)
+  ![3rd-party frames allowed](https://user-images.githubusercontent.com/585534/86541962-603fcd80-bedf-11ea-9f80-94f9a7c243b6.png)
 - If you want the rules to stick, click the padlock to make them permanent.
 
 Using local noop rules ensure that the resulting lesser blocking mode applies _only_ to the current site so that medium mode is still enforced everywhere else.
