@@ -22,7 +22,7 @@ If you want to reset all settings to their default values, delete everything the
 
 Default: `false`.
 
-uBO [1.19.3b8](https://github.com/gorhill/uBlock/commit/1caff7429eceabc712b98b25b5c3929f430d6654) and above.
+uBO [1.20.0](https://github.com/gorhill/uBlock/commit/1caff7429eceabc712b98b25b5c3929f430d6654) and above.
 
 If set to `true`, generic [procedural cosmetic filters](./Procedural-cosmetic-filters) will no longer be discarded as invalid.
 
@@ -70,7 +70,7 @@ When the auto-updater kicks in and an asset in need of update is fetched, this i
 
 Default: `180` secs.
 
-uBO [1.19.3b9](https://github.com/gorhill/uBlock/commit/72d9758faa40a49f00d2a4671c9db2f519471f0d) and above.
+uBO [1.20.0](https://github.com/gorhill/uBlock/commit/72d9758faa40a49f00d2a4671c9db2f519471f0d) and above.
 
 The number of seconds to wait after launch before an auto-update session<sup>[1]</sup> is started.
 
@@ -90,7 +90,7 @@ The time to wait in hours between each update session. uBO will always start an 
 
 Default: `unset`.
 
-uBO [1.25.1b1](https://github.com/gorhill/uBlock/commit/b784b7d5693751844bdb6e7ec7bd30368b2598a8) and above.
+uBO [1.25.2](https://github.com/gorhill/uBlock/commit/b784b7d5693751844bdb6e7ec7bd30368b2598a8) and above.
 
 URL from where the _benchmark_ _dataset_ will be fetched. This allows to launch benchmark operations from within published versions of uBO, rather than from just a locally built version.
 
@@ -113,9 +113,9 @@ Benchmarks can be executed from Browser Console in extension background context.
 
 Default: `11111/#F00 11011/#C0F 11001/#00F 00001`
 
-Before [1.21.7b6](https://github.com/gorhill/uBlock/compare/5e1f4d7...07c950f): `11101 11001 00001`
+Before [1.22.0](https://github.com/gorhill/uBlock/compare/5e1f4d7...07c950f): `11101 11001 00001`
 
-Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a4645f0c9c1e6dbedb56b5fb5d7), improved after 1.21.7b6 to reflect blocking mode in the color of uBlock₀ icon badge.
+Introduced in [1.21.0](https://github.com/gorhill/uBlock/commit/693687fd74fe9a4645f0c9c1e6dbedb56b5fb5d7), improved after 1.22.0 to reflect blocking mode in the color of uBlock₀ icon badge.
 
 Preference allows to configure cascade of the "Relax blocking mode" [keyboard shortcut](./Keyboard-shortcuts), along with corresponding badge color.
 
@@ -154,7 +154,7 @@ Possible values:
     - Undesirable side effect: One will need to explicitly cache-bypass reload a page each time uBO has to inject CSP directives as a result of filters/ruleset. Note that such cache-bypass reload does not affect only the document itself, but also all secondary resources inside that document.
 
 - `unset`:
-     - Available after [1.21.7b7](https://github.com/gorhill/uBlock/commit/52925ba2f9ed4351c0f5c7420773d2f59557fc7d), turns off this path.
+     - Available after [1.22.0](https://github.com/gorhill/uBlock/commit/52925ba2f9ed4351c0f5c7420773d2f59557fc7d), turns off this path.
 
 Related browser issues:
 - Firefox: <https://bugzilla.mozilla.org/show_bug.cgi?id=1376932>
@@ -165,7 +165,7 @@ Related browser issues:
 
 Default: `unset`.
 
-After [1.18.5b4](https://github.com/gorhill/uBlock/commit/0d369cda21bbce23a7376e0f7b2847a3c7a6d3d8) works in Firefox.
+After [1.18.6](https://github.com/gorhill/uBlock/commit/0d369cda21bbce23a7376e0f7b2847a3c7a6d3d8) works in Firefox.
 
 If set to `browser.storage.local`, uBO will use WebExtensions storage as a backend to cache storage.
 
@@ -195,7 +195,7 @@ If set to true, uBO will lz4-compress data before storing it in its cache storag
 
 Default: `true`.
 
-Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+Introduced in [1.25.0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
 
 Firefox only.
 
@@ -207,7 +207,7 @@ Whether uBO should ignore to re-run a network request through the filtering engi
 
 Default: `true`.
 
-Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
+Introduced in [1.25.0](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
 
 Firefox only.
 
@@ -223,7 +223,7 @@ For example, `google-analytics.com` uncloaks to `www-google-analytics.l.google.c
 
 Default: `unset`.
 
-Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+Introduced in [1.25.0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
 
 Firefox only.
 
@@ -242,7 +242,7 @@ This is useful to exclude commonly used actual hostnames from being re-run throu
 
 Default: `true`.
 
-Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
+Introduced in [1.25.0](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
 
 Firefox only.
 
@@ -254,7 +254,7 @@ Tells uBO to skip CNAME-lookup for root document.
 
 Default: `120` minutes.
 
-Introduced in [1.24.1b0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
+Introduced in [1.25.0](https://github.com/gorhill/uBlock/commit/3a564c199260a857f3d78d5f12b8c3f1aa85b865).
 
 Firefox only.
 
@@ -268,7 +268,7 @@ For efficiency purpose, uBO will cache alias=>CNAME associations for reuse so as
 
 Default: `false`.
 
-Introduced in [1.24.3b1](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
+Introduced in [1.25.0](https://github.com/gorhill/uBlock/commit/a16e4161de5b33856312226e71b05c6eef8bf83a).
 
 Firefox only.
 
@@ -282,7 +282,7 @@ Replaying only the origin part is meant to lower undue breakage and improve perf
 
 Default: `true`.
 
-Introduced in [1.24.3b2](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
+Introduced in [1.25.0](https://github.com/gorhill/uBlock/commit/91e702cebbe52137f59a94f55e46d31f95eb98b9).
 
 Firefox only.
 
@@ -294,7 +294,7 @@ Whether to enable CNAME-uncloaking feature.
 
 Default: `false`.
 
-Introduced in [1.25.3b7](https://github.com/gorhill/uBlock/commit/3f7ece94691f048377512990a38c0317820bf77f).
+Introduced in [1.26.0](https://github.com/gorhill/uBlock/commit/3f7ece94691f048377512990a38c0317820bf77f).
 
 Firefox only.
 
@@ -343,7 +343,7 @@ If set to `true`, turns off [_WebAssembly_](https://developer.mozilla.org/en-US/
 
 Default: `false`.
 
-uBO [1.23.3b3](https://github.com/gorhill/uBlock/commit/93f438f55ebd8d1f558f2e73b64b3f87e928bf02) and above.
+uBO [1.23.0](https://github.com/gorhill/uBlock/commit/93f438f55ebd8d1f558f2e73b64b3f87e928bf02) and above.
 
 If set to `true`, restores update behavior from before [1.22.3b ("Prevent uBO from being reloaded mid-session ")](https://github.com/gorhill/uBlock/commit/59bdf2b4ccd1151a296af36e5536ed00eeb07fb4), extension will unconditionally reload when an update is available; otherwise the extension will reload only when being explicitly disabled then enabled, or when the browser is restarted.
 
@@ -363,7 +363,7 @@ Enable point-and-click feature, to create temporary exception filters for static
 
 The created exceptions are temporary and will be lost when restarting uBO, or manually toggling off the exception filters.
 
-After [v1.27.5b3](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) restores ability to set _allow_ rules from popup panel. The ability to point-and-click to create _allow_ rules from the popup panel is no longer allowed by default. See [commit message](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) for reasoning. Tap twice on <kbd>Ctrl</kbd> if you want to access allow rules only temporarily.
+After [1.28.0](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) restores ability to set _allow_ rules from popup panel. The ability to point-and-click to create _allow_ rules from the popup panel is no longer allowed by default. See [commit message](https://github.com/gorhill/uBlock/commit/162e53727099ccb0a088cc1399915fb23d9b4fec) for reasoning. Tap twice on <kbd>Ctrl</kbd> if you want to access allow rules only temporarily.
 
 ***
 
@@ -387,7 +387,7 @@ If set to `true`, uBO will no longer lookup and inject scriptlets into web pages
 
 Default: `popup`.
 
-uBO [1.22.1b3](https://github.com/gorhill/uBlock/commit/bcf5ac1feec0019663a3ad564caeb1c67679791e) and above.
+uBO [1.23.0](https://github.com/gorhill/uBlock/commit/bcf5ac1feec0019663a3ad564caeb1c67679791e) and above.
 
 Control the type of window to be used when the logger is launched as a separate window. Introduced to solve issues with missing/disabled titlebar buttons, resizing, incorrect drawing ([#663](https://github.com/uBlockOrigin/uBlock-issues/issues/663)).
 
@@ -419,7 +419,7 @@ A valid CSS font size value (`14px`) to use for the popup panel. Use if you are 
 
 Default: `0`.
 
-uBO [1.27.5b3](https://github.com/gorhill/uBlock/commit/5f4e6d80e0a36e180db3b4e906412bf9a730fdbf) and above.
+uBO [1.28.0](https://github.com/gorhill/uBlock/commit/5f4e6d80e0a36e180db3b4e906412bf9a730fdbf) and above.
 
 Set to `1` to force the height of the firewall pane to be no more than the height of the basic pane.
 
@@ -445,7 +445,7 @@ A lower delay than the default one could bring back the issue it's meant to fix.
 
 Default: `3` minutes.
 
-uBO 1.18.5b1 and above. Used to be `11` minutes until [1.19.7rc1](https://github.com/gorhill/uBlock/commit/3cf71835c4fc9c262d93a645a3af70946539bd19).
+uBO [1.18.6](https://github.com/gorhill/uBlock/commit/ed7e34fb07f956229b2290608e4500b35f431afe) and above. Used to be `11` minutes until [1.20.0](https://github.com/gorhill/uBlock/commit/3cf71835c4fc9c262d93a645a3af70946539bd19).
 
 Number of minutes after which _selfie_ (optimized, internal representation of filters) is created.
 
@@ -463,7 +463,7 @@ Controls duration of the [Strict blocking](./Strict-blocking) "Temporarily" bypa
 
 #### `suspendTabsUntilReady` (experimental)
 
-Default: `unset`, before [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3): `false`.
+Default: `unset`, before [1.18.6](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3): `false`.
 
 Possible values:
 
@@ -472,8 +472,8 @@ Possible values:
 - `no` - do no suspend tab loading at launch time
 - `yes` - suspend tab loading at launch time
 
-After [1.18.5b8](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3) configurable again in Firefox (can be disabled). 
-After uBO [1.17.5rc0](https://github.com/gorhill/uBlock/commit/41548be6be35fe17dbb996e605c4befb09e16911) - Chromium only. In Firefox this feature is always active thanks to ["persistent startup listeners"](https://bugzilla.mozilla.org/show_bug.cgi?id=1503721).
+After [1.18.6](https://github.com/gorhill/uBlock/commit/87feb47b51202cb8464eab91597b706965a224f3) configurable again in Firefox (can be disabled). 
+After uBO [1.18.0](https://github.com/gorhill/uBlock/commit/41548be6be35fe17dbb996e605c4befb09e16911) - Chromium only. In Firefox this feature is always active thanks to ["persistent startup listeners"](https://bugzilla.mozilla.org/show_bug.cgi?id=1503721).
 
 If enabled, uBO will hard block all network requests when the browser launches until _all_ the filter lists and rules are loaded and ready, at which time uBO will force a reload of the tabs for which there were network requests blocked during the setup phase.
 
@@ -490,12 +490,12 @@ Related browser issues:
 
 Default: `unset`.
 
-uBO [1.24.3b10](https://github.com/gorhill/uBlock/commit/2b0316440e86d1d8f4ae21f8d9ff4c19ac17216f#diff-0d94ddccc559e1231fe0cfa793814429) and above.
+uBO [1.25.0](https://github.com/gorhill/uBlock/commit/2b0316440e86d1d8f4ae21f8d9ff4c19ac17216f) and above.
 
 Possible values:
 
 - `fenix` - to forcefully enable new, mobile-friendly, Popup UI layout.
-- `classic` - to revert back to old Popup UI (it was `-` up to [1.26.3b15](https://github.com/gorhill/uBlock/commit/b295d4a0d0d25848211c43cc2e7068859c2cb9ea#diff-0d94ddccc559e1231fe0cfa793814429L359-R377)).
+- `classic` - to revert back to old Popup UI (it was `-` up to [1.27.0](https://github.com/gorhill/uBlock/commit/b295d4a0d0d25848211c43cc2e7068859c2cb9ea#diff-0d94ddccc559e1231fe0cfa793814429L359-R377)).
 - `unset` - uBO will use whatever UI flavor which is optimal for the current platform.
 
 ![Mobile Popup UI layout](https://user-images.githubusercontent.com/585534/74933925-1c767c80-53b3-11ea-96fd-79cedd5533cb.png)
@@ -506,7 +506,7 @@ Possible values:
 
 Default: `unset`.
 
-uBO [1.27.5b1](https://github.com/gorhill/uBlock/commit/9f7e5b621dc5e7a3e0fed0daa57d922f1ec56d80) and above.
+uBO [1.28.0](https://github.com/gorhill/uBlock/commit/9f7e5b621dc5e7a3e0fed0daa57d922f1ec56d80) and above.
 
 Allow to bypass uBO's default CSS styles in case they are causing issues to specific users. It is the responsibility of the user to ensure the value of `uiStyles` contains valid CSS property declarations. uBO will assign the value to `document.body.style.cssText`.
 
@@ -518,7 +518,7 @@ For example, in the case of the [issue #1044](https://github.com/uBlockOrigin/uB
 
 Default: `false` 
 
-With [v1.21.7b1](https://github.com/gorhill/uBlock/commit/048bfd251c9b8eeafce020b4f894d736044d6a6f) and above.
+With [1.22.0](https://github.com/gorhill/uBlock/commit/048bfd251c9b8eeafce020b4f894d736044d6a6f) and above.
 
 If set to `true`, uBO will ensure the browser cache is bypassed when fetching a remote resource.
 
