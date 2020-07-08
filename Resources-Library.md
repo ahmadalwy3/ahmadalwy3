@@ -226,7 +226,7 @@ Examples:
 ***
 
 ### nosiif.js /
-### no-setInterval-if.js [↪](https://github.com/gorhill/uBlock/blob/9367a6015b8cbb6b49347b00a105aab8f24df861/assets/resources/scriptlets.js#L585)
+### no-setInterval-if.js [↪](https://github.com/gorhill/uBlock/blob/8f3d8cde7a9de45695d2706087701df59553c01b/assets/resources/scriptlets.js#L701)
 
 New in [1.23.0](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
 
@@ -236,7 +236,7 @@ New in [1.23.0](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b0
 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
- - optional, decimal integer, matching _interval_
+ - optional, decimal integer or literal `NaN` ("not a number", new in [1.28.2](https://github.com/gorhill/uBlock/commit/8f3d8cde7a9de45695d2706087701df59553c01b)), matching _interval_
 
 Use with `/^/` parameter to defuse all calls unconditionally.
 
@@ -251,7 +251,7 @@ Examples:
 ***
 
 ### nostif.js /
-### no-setTimeout-if.js [↪](https://github.com/gorhill/uBlock/blob/9367a6015b8cbb6b49347b00a105aab8f24df861/assets/resources/scriptlets.js#L656)
+### no-setTimeout-if.js [↪](https://github.com/gorhill/uBlock/blob/8f3d8cde7a9de45695d2706087701df59553c01b/assets/resources/scriptlets.js#L776)
 
 New in [1.23.0](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
 
@@ -261,7 +261,7 @@ New in [1.23.0](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b0
 
 Parameters:
  - optional, string/_regular expression_, matching in stringified callback function
- - optional, decimal integer, matching _delay_
+ - optional, decimal integer or literal `NaN` ("not a number", new in [1.28.2](https://github.com/gorhill/uBlock/commit/8f3d8cde7a9de45695d2706087701df59553c01b)), matching _delay_
 
 Use with `/^/` parameter to defuse all calls unconditionally.
 
