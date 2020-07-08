@@ -2,7 +2,7 @@ uBlock Origin ("uBO") supports Adblock Plus ("ABP") filter syntax, so you can re
 
 However uBO does not support some very specific cases, and also adds its own extensions to ABP filter syntax (which at time of writing are not recognized by ABP). Few most surprising cases are documented [here](./Syntax-quirks).
 
-Starting with v1.25.3b4 (commit [one](https://github.com/gorhill/uBlock/commit/703c525b01aa3fb9dab94d6a9918a0a69c6d18da), [two](https://github.com/gorhill/uBlock/commit/ca80d2826bfd92a3081f20da8ba60138509a183b)), very long filters can be split into multiple lines: append space and backslash character to first line and indent continuation line by four spaces.
+Starting with 1.26.0 (commit [one](https://github.com/gorhill/uBlock/commit/703c525b01aa3fb9dab94d6a9918a0a69c6d18da), [two](https://github.com/gorhill/uBlock/commit/ca80d2826bfd92a3081f20da8ba60138509a183b)), very long filters can be split into multiple lines: append space and backslash character to first line and indent continuation line by four spaces.
 
 - [Not supported](#not-supported)
 - [Pre-parsing directives](#pre-parsing-directives)
@@ -55,7 +55,7 @@ Keep in mind `generichide` is a cosmetic filtering-related option, and as such u
 
 ## Pre-parsing directives
 
-uBO v1.16.0 and above supports pre-parsing directives. Pre-parsing directives are prefixed with `!#`, so this means older versions of uBO or other blockers will see the pre-parsing directives as comment and discard them.
+uBO 1.16.0 and above supports pre-parsing directives. Pre-parsing directives are prefixed with `!#`, so this means older versions of uBO or other blockers will see the pre-parsing directives as comment and discard them.
 
 The pre-parsing directives are executed before a list content is parsed, and influence the final content of a filter list.
 
@@ -107,7 +107,7 @@ For the time being, only a single token is supported in a `!#if` directive (can 
     cap_html_filtering
     cap_user_stylesheet
 
-Starting from [1.21.9b7](https://github.com/gorhill/uBlock/commit/1d805fb9da1aad918d02cc74796d5aa5e974b184) you can use `!#if false` directive to disable a large block of your filters without having to remove them. 
+Starting from [1.22.0](https://github.com/gorhill/uBlock/commit/1d805fb9da1aad918d02cc74796d5aa5e974b184) you can use `!#if false` directive to disable a large block of your filters without having to remove them. 
 
     !#if false
     ...
@@ -166,7 +166,7 @@ Equivalent to `third-party` [option](https://adblockplus.org/filters#options). F
 
 #### `all`
 
-New in [1.19.7b](https://github.com/gorhill/uBlock/commit/1888033070003cd5e6a3687a4029448bf41fccea).
+New in [1.20.0](https://github.com/gorhill/uBlock/commit/1888033070003cd5e6a3687a4029448bf41fccea).
 
 The `all` option is equivalent to specifying all
 network-based types + `popup`, `document`,
@@ -197,7 +197,7 @@ Now all images from everywhere are blocked on your side. An exception filter (`@
 
 This will cause the `*$image` filter to be discarded. Just appending `badfilter` option to any instance of static network filter will prevent the loading of that filter.
 
-After [1.18.17rc1](https://github.com/gorhill/uBlock/commit/3f3a1543ea7fa51d700157a7f6bf0da08dd7a32b) any filter which fulfill ALL the following conditions:
+After [1.19.0](https://github.com/gorhill/uBlock/commit/3f3a1543ea7fa51d700157a7f6bf0da08dd7a32b) any filter which fulfill ALL the following conditions:
 
 - Is of the form `|https://` or `|http://` or `*`; and
 - Does have a `domain=` option; and
@@ -224,7 +224,7 @@ Equivalent to `stylesheet` [option](https://adblockplus.org/filters#options). Fo
 
 #### `cname`
 
-New in [1.25.3b4](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359).
+New in [1.26.0](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359).
 
 Option for exception filters only.
 
@@ -271,7 +271,7 @@ See also [`denyallow`](#denyallow).
 
 #### `denyallow`
 
-New in [1.25.3b4](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359).
+New in [1.26.0](https://github.com/gorhill/uBlock/commit/c3bc2c741d61db3e99b313835c2ae34a4a008359).
 
 The purpose of `denyallow` is bring default-deny/allow-exceptionally ability into static network filtering arsenal. 
 
@@ -308,7 +308,7 @@ Multiple domains can be specified by joining them using `|` symbol.
 
 Preceding domain name by `~` will prevent filter to be applied on this domain.
 
-Starting with [1.27.7b2](https://github.com/gorhill/uBlock/commit/3c67d2b89f8ac6d680e74af3e11b916889f7feed) support for [_"entity"_](#entity) matching has been added. You can now use `filter$domain=google.*` to apply filter to pages on all top level domains of specified domain.
+Starting with [1.28.0](https://github.com/gorhill/uBlock/commit/3c67d2b89f8ac6d680e74af3e11b916889f7feed) support for [_"entity"_](#entity) matching has been added. You can now use `filter$domain=google.*` to apply filter to pages on all top level domains of specified domain.
 
 Example:
 
@@ -330,7 +330,7 @@ Option for exception filters only. Turns off all cosmetic filtering on matching 
 
 #### `empty`
 
-New in [1.21.7b7](https://github.com/gorhill/uBlock/commit/3e5c9e00ab3603ae0c02e08b007b084404bbb71d).
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/3e5c9e00ab3603ae0c02e08b007b084404bbb71d).
 
 The filter option `empty` is converted to `redirect=empty` by uBO internally; however unlike when the [`redirect`](#redirect) option is used expressly, the `empty` option does not require a resource type.
 
@@ -386,7 +386,7 @@ To specifically disable inline font tags in a main page via CSP: `||example.com^
 
 #### `mp4`
 
-New in [1.21.7b8](https://github.com/gorhill/uBlock/commit/68ae847ba385c09c5efa511d18a18a4753af47be).
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/68ae847ba385c09c5efa511d18a18a4753af47be).
 
 The `mp4` filter option will be converted to `redirect=noopmp4-1s` internally, and `media` type will be assumed.
 
@@ -421,7 +421,7 @@ A source hostname should always be specified, so the `domain=` option is strongl
 
 #### `redirect-rule`
 
-New in [1.21.7b3](https://github.com/gorhill/uBlock/commit/aa73f292eced0d34a2a2989b1b27ace1214a2809).
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/aa73f292eced0d34a2a2989b1b27ace1214a2809).
 
 Allows to create standalone [`redirect`](#redirect) rule without being forced to create blocking filter.
 
@@ -482,7 +482,7 @@ Since the base domain name is used to derive the name of the "entity", `google.e
 
 #### Specific-generic
 
-New in [1.24.5rc0](https://github.com/gorhill/uBlock/commit/3fab7bfdb4f892f3d33159fd53ccf1d5342a090a).
+New in [1.25.0](https://github.com/gorhill/uBlock/commit/3fab7bfdb4f892f3d33159fd53ccf1d5342a090a).
 
 A specific cosmetic filter of the following form...
 
@@ -526,7 +526,7 @@ By default, the implicit purpose of cosmetic filters is to hide unwanted DOM ele
 - Examples:
     - `gorhill.github.io###pcf #a18 .fail:remove()`
 
-New in uBO [1.25.3b0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Fixes [#2252](https://github.com/gorhill/uBlock/issues/2252)
+New in uBO [1.26.0](https://github.com/gorhill/uBlock/commit/72bb70056843024b1a31fe1ab9c90bd4e8260ba2). Fixes [#2252](https://github.com/gorhill/uBlock/issues/2252)
 
 Since `:remove()` is an "action" operator, it must only be used as a trailing operator (just like the [`:style()` operator](#subjectstylearg)).
 
@@ -585,11 +585,11 @@ Support for chaining procedural operators with native CSS selector syntax (i.e. 
 
 This allows the injection of specific javascript code into pages. The `...` part is a token identifying a javascript resource from the [resource library](./Resources-Library). Keep in mind the resource library is completely under control of the uBO project, hence only javascript code vouched by uBO can be inserted into web pages, through the use of a valid resource token.
 
-Some scriptlets support additional parameters, which can be specified after scriptlet name, separated by comma. Commas in parameters must be escaped. Before [1.21.7b8](https://github.com/gorhill/uBlock/commit/d67340f14db6ce5b446ef0ff4586b5e4d31f1086#diff-b03ba512faa0934947e57d28dc99b43bL242) this was possible only in regex literals (`/foo\x2Cbar\u002Cbaz/`), now backslash character is sufficient (`foo\,bar`).
+Some scriptlets support additional parameters, which can be specified after scriptlet name, separated by comma. Commas in parameters must be escaped. Before [1.22.0](https://github.com/gorhill/uBlock/commit/d67340f14db6ce5b446ef0ff4586b5e4d31f1086#diff-b03ba512faa0934947e57d28dc99b43bL242) this was possible only in regex literals (`/foo\x2Cbar\u002Cbaz/`), now backslash character is sufficient (`foo\,bar`).
 
 Generic `+js` filters are ignored: those filters **must** be specific, i.e. they must apply to specific hostnames, e.g. `example.com##+js(nobab)` will inject [`bab-defuser`](./Resources-Library#bab-defuserjs-) into pages on `example.com` domain.
 
-Starting with [1.21.9b1](https://github.com/gorhill/uBlock/commit/bf3c92574e5f2386fe2abb4de779e782b0b5a1d2) new exception syntax has been added, allowing to wholly disable scriptlet injection for a given site without having to create exceptions for all matching scriptlet injection filters.
+Starting with [1.22.0](https://github.com/gorhill/uBlock/commit/bf3c92574e5f2386fe2abb4de779e782b0b5a1d2) new exception syntax has been added, allowing to wholly disable scriptlet injection for a given site without having to create exceptions for all matching scriptlet injection filters.
 
 The following exception filter will cause scriptlet injection to be wholly disable for `example.com`:
 
