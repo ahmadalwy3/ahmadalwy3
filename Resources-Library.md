@@ -17,7 +17,7 @@
 ## General purpose scriptlets
  - most script relies on `Object` _properties_ ([_methods_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)), altering them may not be the best idea (you should know what you are doing).
  - "optional" for "string/_regular expression_" parameter defaults to "catch all" (`/.?/`) if not specified.
- - "string" parameter means plain character(s)/word(s), quotes will be taken literally, commas [must be escaped](https://github.com/uBlockOrigin/uAssets/commit/2bec415a9bc4f81b29be3bf083ef1a20552f39db#commitcomment-29327114) in regex literals: `/foo\x2cbar\u002cbaz/`, after [1.21.7b8](https://github.com/gorhill/uBlock/commit/d67340f14db6ce5b446ef0ff4586b5e4d31f1086#diff-b03ba512faa0934947e57d28dc99b43bL242) commas can be escaped by backslash character (`foo\,bar`)
+ - "string" parameter means plain character(s)/word(s), quotes will be taken literally, commas [must be escaped](https://github.com/uBlockOrigin/uAssets/commit/2bec415a9bc4f81b29be3bf083ef1a20552f39db#commitcomment-29327114) in regex literals: `/foo\x2cbar\u002cbaz/`, after [1.22.0](https://github.com/gorhill/uBlock/commit/d67340f14db6ce5b446ef0ff4586b5e4d31f1086#diff-b03ba512faa0934947e57d28dc99b43bL242) commas can be escaped by backslash character (`foo\,bar`)
  - "regular expression" parameter means JavaScript [regular expression literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Writing_a_regular_expression_pattern)
  - mime type is `application/javascript` if not present
  - You can use the short alias form when available for scriptlet name
@@ -93,9 +93,9 @@ Logs to the console event listeners created on page.
 ***
 
 ### cookie-remover.js [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/assets/resources/scriptlets.js#L942)
-Removes current page cookies specified by name. For current domain, wildcard (dot) subdomain(s), after [v1.27.11rc6](https://github.com/gorhill/uBlock/commit/c4d39d37632fbee4d513116641a282ed2a48c89d) also for domain one level above `www`, current and `/` path, script accessible (HttpOnly=false), on load and before unload.
+Removes current page cookies specified by name. For current domain, wildcard (dot) subdomain(s), after [1.28.0](https://github.com/gorhill/uBlock/commit/c4d39d37632fbee4d513116641a282ed2a48c89d) also for domain one level above `www`, current and `/` path, script accessible (HttpOnly=false), on load and before unload.
 
-Caveats: cookies set for higher level domain will not be removed. For example, if current page domain is `page.example.com`, cookies set for `example.com` will not be removed. One exception is `www` subdomain, which will work after [v1.27.11rc6](https://github.com/gorhill/uBlock/commit/c4d39d37632fbee4d513116641a282ed2a48c89d).
+Caveats: cookies set for higher level domain will not be removed. For example, if current page domain is `page.example.com`, cookies set for `example.com` will not be removed. One exception is `www` subdomain, which will work after [1.28.0](https://github.com/gorhill/uBlock/commit/c4d39d37632fbee4d513116641a282ed2a48c89d).
 
 Parameters:
  - optional, string/_regular expression_, matching in the name of the cookie
@@ -140,11 +140,11 @@ Parameters:
  - optional, string, a list of space-separated properties to remove 
  - optional,
      - string, a list of space-separated properties which must be all present for the pruning to occur; OR
-     - string/_regular expression_, for logging purposes, matching in stringified JSON payloads (new in [1.26.3b13](https://github.com/gorhill/uBlock/commit/578594bbd7c545b62f18267d640a605f8e07a53a))
+     - string/_regular expression_, for logging purposes, matching in stringified JSON payloads (new in [1.27.0](https://github.com/gorhill/uBlock/commit/578594bbd7c545b62f18267d640a605f8e07a53a))
 
 A property in a list of properties can be a chain of properties, example: `adpath.url.first`.
 
-After [v1.27.11rc7](https://github.com/gorhill/uBlock/commit/f433932d8602230539d3408e9946d4d70b40306c), two special _"wildcard tokens"_ have been added:
+After [1.28.0](https://github.com/gorhill/uBlock/commit/f433932d8602230539d3408e9946d4d70b40306c), two special _"wildcard tokens"_ have been added:
 
 - `[]` - will iterate in all elements in an array. To deal with cases where the
 property to remove is an element in an array.
@@ -166,7 +166,7 @@ property to remove is an element in an array.
        +js(json-prune, playlist.*.adserver)
 
 When used without parameters, will log current hostname + json payload to the console.  
-New in [1.26.3b13](https://github.com/gorhill/uBlock/commit/578594bbd7c545b62f18267d640a605f8e07a53a) - second parameter can be used to limit logging to JSON payloads which stringified content match specified string or _regular expression_.
+New in [1.27.0](https://github.com/gorhill/uBlock/commit/578594bbd7c545b62f18267d640a605f8e07a53a) - second parameter can be used to limit logging to JSON payloads which stringified content match specified string or _regular expression_.
 
 Examples:
  - `youthhealthmag.com##+js(json-prune, unit_list)`
@@ -206,7 +206,7 @@ Examples:
 ### norafif.js /
 ### no-requestAnimationFrame-if.js [↪](https://github.com/gorhill/uBlock/blob/1de0e820b87fdd3717b9f2653baaa7a934075055/assets/resources/scriptlets.js#L522)
 
-New in [1.26.1b12](https://github.com/gorhill/uBlock/commit/1de0e820b87fdd3717b9f2653baaa7a934075055).
+New in [1.27.0](https://github.com/gorhill/uBlock/commit/1de0e820b87fdd3717b9f2653baaa7a934075055).
 
 **Defuses** calls to _`requestAnimationFrame()`_ function when parameter:
 - **is not prefixed** with `!` and **matches** the stringified _callback_ argument to _`requestAnimationFrame()`_; OR
@@ -228,7 +228,7 @@ Examples:
 ### nosiif.js /
 ### no-setInterval-if.js [↪](https://github.com/gorhill/uBlock/blob/9367a6015b8cbb6b49347b00a105aab8f24df861/assets/resources/scriptlets.js#L585)
 
-New in [1.22.3b](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
+New in [1.23.0](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
 
 **Defuses** calls to _`setInterval()`_ function when parameters:
 - **are not prefixed** with `!` and **match** the _`setInterval()`_ argument; OR
@@ -253,7 +253,7 @@ Examples:
 ### nostif.js /
 ### no-setTimeout-if.js [↪](https://github.com/gorhill/uBlock/blob/9367a6015b8cbb6b49347b00a105aab8f24df861/assets/resources/scriptlets.js#L656)
 
-New in [1.22.3b](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
+New in [1.23.0](https://github.com/gorhill/uBlock/commit/9367a6015b8cbb6b49347b00a105aab8f24df861)
 
 **Defuses** calls to _`setTimeout()`_ function when parameters:
 - **are not prefixed** with `!` and **match** the _`setTimeout()`_ argument; OR
@@ -304,7 +304,7 @@ Examples:
 ### rc.js /
 ### remove-class.js [↪](https://github.com/gorhill/uBlock/blob/c2f0cae2cca2de785f326ae1c28dc1d61599bd7b/assets/resources/scriptlets.js#L461)
 
-New in [1.25.3b5](https://github.com/gorhill/uBlock/commit/49d9929191461cc8534ebf5707d94a5970945bde).
+New in [1.26.0](https://github.com/gorhill/uBlock/commit/49d9929191461cc8534ebf5707d94a5970945bde).
 
 Removes classes from DOM tree node(s). Will run only once after page load. Syntax based on [`remove-attr.js`](#remove-attrjs-)
 
@@ -320,7 +320,7 @@ Parameters:
 
 Deprecated by [`no-requestAnimationFrame-if.js`](#no-requestanimationframe-ifjs-)
 
-New in [1.22.0](https://github.com/gorhill/uBlock/commit/6831967f5f9d64412a9c063f3b64104d9dce7b07), `requestAnimationFrame-if.js` alias available in [1.22.1b2](https://github.com/gorhill/uBlock/commit/35854e4baf8b3b3aeb3f0f63ae9e7d3e46a4ba64)
+New in [1.22.0](https://github.com/gorhill/uBlock/commit/6831967f5f9d64412a9c063f3b64104d9dce7b07), `requestAnimationFrame-if.js` alias available in [1.23.0](https://github.com/gorhill/uBlock/commit/35854e4baf8b3b3aeb3f0f63ae9e7d3e46a4ba64)
 
 **Defuses** calls to _`requestAnimationFrame()`_ function when parameter:
 - **is not prefixed** with `!` and **does not match** the stringified _callback_ argument to _`requestAnimationFrame()`_; OR
@@ -345,15 +345,15 @@ Examples:
 Creates _property_ and initializes it to predefined value from set of available properties.
 
 Scriptlet will succeed only when:
- - original _property_ is `undefined` (scriptlet is called early enough) or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **OR**
- - new _property_ written by `set.js` is `undefined` or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **OR**
+ - original _property_ is `undefined` (scriptlet is called early enough) or `null`<sup>[1.25.0](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **OR**
+ - new _property_ written by `set.js` is `undefined` or `null`<sup>[1.25.0](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **OR**
  - type of original _property_ is equal to type of new _property_
 
 Additionally, original _property_ (if exist) must not have getter.
 
 Value set by scriptlet can be overwritten by page script when:
- - current _property_ was not set to `undefined` or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **AND**
- - new _property_ is not `undefined` or `null`<sup>[1.24.3b9](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **AND**
+ - current _property_ was not set to `undefined` or `null`<sup>[1.25.0](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **AND**
+ - new _property_ is not `undefined` or `null`<sup>[1.25.0](https://github.com/gorhill/uBlock/commit/c7dc65fe33ed58ff2bad10ce4a8848b97c8591ce)</sup> **AND**
  - type of original _property_ is different than type of new _property_ 
 
 Parameters:
@@ -485,9 +485,9 @@ Parameters:
 ### window.open-defuser.js [↪](https://github.com/gorhill/uBlock/blob/b27848a060eee961e2403192097448467b3bc7b5/src/web_accessible_resources/window.open-defuser.js)
 Prevent opening new windows by [_`window.open()`_](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) when URL positively or negatively matches to specific string.
 
-`nowoif.js` alias available in [1.26.3b12](https://github.com/gorhill/uBlock/commit/6259f88598b2d3e044679d6fe0fdb6eb16f6c479).
+`nowoif.js` alias available in [1.27.0](https://github.com/gorhill/uBlock/commit/6259f88598b2d3e044679d6fe0fdb6eb16f6c479).
 
-Improved in [1.25.3b1](https://github.com/gorhill/uBlock/commit/b27848a060eee961e2403192097448467b3bc7b5), [b2](https://github.com/gorhill/uBlock/commit/0f33f2386d147e4930b402a07418da670524e43f):
+Improved in 1.26.0 [one](https://github.com/gorhill/uBlock/commit/b27848a060eee961e2403192097448467b3bc7b5), [two](https://github.com/gorhill/uBlock/commit/0f33f2386d147e4930b402a07418da670524e43f):
 
 If second argument is present and a valid integer value, the defuser will return a valid window object even though no popup window is opened. The returned window object will cease to be valid after the specified number of seconds. If not present, no window will be opened and the scriptlet will return `null`.
 
@@ -614,7 +614,7 @@ TODO: object and font resources are missing? Find discussion about adding them o
 ### ~amazon-adsystem.com/aax2/amzn_ads.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/amazon_ads.js)
 
 ### amazon_apstag.js [↪](https://github.com/gorhill/uBlock/blob/f842ab6d3c1cf0394f95d27092bf59627262da40/src/web_accessible_resources/amazon_apstag.js)
-New in [1.26.3cr8](https://github.com/gorhill/uBlock/commit/f842ab6d3c1cf0394f95d27092bf59627262da40).
+New in [1.27.0](https://github.com/gorhill/uBlock/commit/f842ab6d3c1cf0394f95d27092bf59627262da40).
 
 ### monkeybroker.js /
 ### ~d3pkae9owd2lcf.cloudfront.net/mb105.js~ [↪](https://github.com/gorhill/uBlock/blob/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/monkeybroker.js)
