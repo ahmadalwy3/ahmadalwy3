@@ -498,7 +498,7 @@ Parameters:
  - optional, positive decimal integer, number of seconds after returned `window` object will be invalidated.
  - optional, unspecified, set it to something, for ex. `-` to enable logging
 
-Parameters syntax deprecated after 1.25.3b1:
+Parameters syntax deprecated after 1.26.0:
  - optional - defaults to "matching", nothing or `1` for "matching", `0` for "not matching",
  - optional, string/_regular expression_, matching/not matching in URL parameter passed to _`window.open()`_
 
