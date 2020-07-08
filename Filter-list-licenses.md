@@ -6,25 +6,29 @@ Only lists that are enabled by default in uBlock Origin are bundled with it, all
 
 Filter List | Default | GPL | Creative Commons | Public Domain | Other | Undetermined
 ----------- | ------- | --- | ---------------- | ------------- | ----- | ------------
-uBlock filters |X| [GPL3](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt) ||||
-uBlock filters - Badware risks |X| [GPL3](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt) ||||
-uBlock filters - Privacy |X| [GPL3](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt) ||||
-uBlock filters - Unbreak |X| [GPL3](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt) ||||
-Adblock Warning Removal List‎ ||||||X
-EasyList‎ |X|[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
-Peter Lowe's Ad server list‎ |X||||[McRae GPL](http://pgl.yoyo.org/license/), non-commercial|
-EasyPrivacy‎ |X|[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
-Fanboy's Enhanced Tracking List‎ |||[CC BY 3.0](https://fanboy.co.nz/enhancedstats.txt)|||
-Malvertising filter list by Disconnect‎ ||[GPL3](https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt)||||
-Malware Domain List‎ |X||||Informal license, [free for all](http://www.malwaredomainlist.com/)|
-Malware domains‎ |X||||Informal license, [non-commercial](http://www.malwaredomains.com/?page_id=1508)|
-Spam404‎ |||||[Informal license](https://spam404bl.com/spam404scamlist.txt)|
-Anti-Facebook List ||||||X
-Fanboy's Annoyance List‎ |||[CC BY 3.0](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt)|||
-Fanboy's Social Blocking List‎ |||[CC BY 3.0](https://easylist-downloads.adblockplus.org/fanboy-social.txt)|||
+uBlock filters |X| [GPL3](https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE) ||||
+uBlock filters - Badware risks |X| [GPL3](https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE) ||||
+uBlock filters - Privacy |X| [GPL3](https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE) ||||
+uBlock filters – Resource abuse |X| [GPL3](https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE) ||||
+uBlock filters - Unbreak |X| [GPL3](https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE) ||||
+AdGuard Base ||| [CC BY-SA 3.0](https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt) |||
+AdGuard Mobile Ads | mobile || [CC BY-SA 3.0](https://filters.adtidy.org/extension/ublock/filters/11.txt) |||
+EasyList‎ |X| [GPL3](https://easylist-downloads.adblockplus.org/COPYING) | [CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING) |||
+AdGuard Tracking Protection ||| [CC BY-SA 3.0](https://filters.adtidy.org/extension/ublock/filters/3.txt) |||
+EasyPrivacy‎ |X| [GPL3](https://easylist-downloads.adblockplus.org/COPYING) | [CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING) |||
+Fanboy's Enhanced Tracking List‎ ||| [CC BY 3.0](https://fanboy.co.nz/enhancedstats.txt) |||
+Online Malicious URL Blocklist |X||| [CC0 1.0](https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt) ||
+Spam404‎ ||| [CC BY-SA 4.0](https://github.com/Spam404/lists/blob/master/LICENSE.md/LICENSE.md) |||
+AdGuard Annoyances ||| [CC BY-SA 3.0](https://filters.adtidy.org/extension/ublock/filters/14.txt) |||
+AdGuard Social Media ||| [CC BY-SA 3.0](https://filters.adtidy.org/extension/ublock/filters/4.txt) |||
+Anti-Facebook ||| [CC BY 3.0](https://fanboy.co.nz/fanboy-antifacebook.txt) |||
+EasyList Cookie ||| [CC BY 3.0](https://easylist-downloads.adblockplus.org/easylist-cookie.txt) |||
+Fanboy's Annoyance ||| [CC BY 3.0](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt) |||
+Fanboy's Social |||[CC BY 3.0](https://easylist-downloads.adblockplus.org/fanboy-social.txt)|||
+uBlock filters – Annoyances || [GPL3](https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE) ||||
 Dan Pollock’s hosts file‎ |||||Informal license, [attribution, non-commercial](http://someonewhocares.org/hosts/hosts)|
-hpHosts' Ad and tracking servers‎||||||X
 MVPS HOSTS‎ |||[CC BY-NC-SA 4.0](http://winhelp2002.mvps.org/hosts.txt)|||
+Peter Lowe's Ad server list‎ |X||||[McRae GPL](http://pgl.yoyo.org/license/), non-commercial|
 ARA: Liste AR‎ |||[CC BY-NC-SA 3.0](https://liste-ar-adblock.googlecode.com/hg/Liste_AR.txt)|||
 BGR: Bulgarian Adblock list‎ ||||||X
 CHN: China: cjxlist ||[GPL3](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt)|[CC BY-SA 3.0](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt)|||
@@ -41,7 +45,6 @@ ISL: Icelandic ABP List‎ ||||||X
 ISR: EasyList Hebrew‎ ||[GPL3](https://raw.github.com/AdBlockPlusIsrael/EasyListHebrew/master/EasyListHebrew.txt)|[CC BY-SA 3.0](https://raw.github.com/AdBlockPlusIsrael/EasyListHebrew/master/EasyListHebrew.txt)|||
 ITA: ABP X Files‎ |||[CC BY-NC-SA 2.5](http://noads.it/#contact)|||
 ITA: EasyList Italy‎ ||[GPL3](https://easylist-downloads.adblockplus.org/COPYING)|[CC BY-SA 3.0](https://easylist-downloads.adblockplus.org/COPYING)|||
-JPN: ABP Japanese filters ||[GPL3](https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt)|[CC BY-NC-SA 4.0](https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt)|||
 KOR: Fanboy's Korean‎ |||[CC BY 3.0](https://www.fanboy.co.nz/fanboy-korean.txt)|||
 KOR: Korean Adblock List‎ ||||||X
 LTU: Adblock Plus Lithuania‎ ||[GPL3](http://margevicius.lt/easylistlithuania.txt)||||
