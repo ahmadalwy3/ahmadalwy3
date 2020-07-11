@@ -25,8 +25,7 @@ _3rd-party filters_ pane:
 - _EasyList_: checked
 - _Peter Lowe’s Ad server list_: checked
 - _EasyPrivacy_: checked
-- _Malware Domain List‎_: checked
-- _Malware domains_: checked
+- _Online Malicious URL Blocklist‎_: checked
 - All other filter lists: unchecked
 
 ##### Tips
