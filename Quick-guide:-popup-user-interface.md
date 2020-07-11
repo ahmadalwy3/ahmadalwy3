@@ -104,7 +104,7 @@ Click the _sliders_ icon to open uBlock's dashboard.
 
 ### The overview panel
 
-When you click on either the _"requests blocked"_ or _"domains connected"_ label, uBO's popup UI will expand to show you more details about requests blocked and domains connected:
+Clicking on "More" button, will expand uBO popup UI to the point where it will show you table with details about requests blocked and domains connected on the page:
 
 ![Overview panel expanded](https://user-images.githubusercontent.com/886325/85211429-6794a200-b349-11ea-94cb-998ee36e6d59.gif)<br>Clicking empty space before particular domain name or the `all` cell in the first row, will toggle on/off subdomain-level details.
 
