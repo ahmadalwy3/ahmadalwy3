@@ -11,7 +11,7 @@ Out of the box, these lists of filters are loaded and enforced:
 - uBlock Origin's own filter lists
 - EasyList, EasyPrivacy
 - Peter Lowe’s Ad and tracking server list
-- Malware domains
+- Online Malicious URL Blocklist
 
 More filter lists are available for you to select if you wish, though be aware that selecting extra filter lists on top of the default ones may lead to higher likelihood of web site breakage -- especially those lists which are normally used as hosts file.
 
