@@ -31,8 +31,7 @@ For reference, Adblock Plus + default settings (i.e. with _Acceptable ads_ enabl
 - _EasyList_.
 - _EasyPrivacy_.
 - _Peter Lowe’s Ad server list‎_.
-- _Malware Domain List‎_.
-- _Malware domains_.
+- _Online Malicious URL Blocklist_.
 
 
 #### Enhanced _Easy mode_:
