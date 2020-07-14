@@ -43,7 +43,7 @@ By default, there are no dynamic filtering rules at install time, so nothing is 
 
 Sensible security- and privacy-wise: blocking all 3rd-party frames by default everywhere: 
 
-![figure 5](https://user-images.githubusercontent.com/585534/83875837-d2b56600-a705-11ea-8b01-f6efa1c942ad.png)
+![figure 5](https://user-images.githubusercontent.com/585534/87428834-ebd8ee80-c5b0-11ea-9670-85a349a3b347.png)
 
 > ***
 > **Important:**
