@@ -149,4 +149,4 @@ From there you can freely add/modify/delete your rules manually through plain te
 
 ***
 
-Now that you a basic understand of dynamic filtering, you can head to [medium blocking mode](./Blocking-mode:-medium-mode) or [hard blocking mode](./Blocking-mode:-hard-mode) in order to learn more about using uBO in default-deny mode.
+Now that you have a basic understand of dynamic filtering, you can head to [medium blocking mode](./Blocking-mode:-medium-mode) or [hard blocking mode](./Blocking-mode:-hard-mode) in order to learn more about using uBO in default-deny mode.
