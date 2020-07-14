@@ -116,21 +116,22 @@ All dynamic rules are temporary by default: Click the padlock if you want to per
 
 We covered the _block_ and _noop_ dynamic filtering rules. What about the _allow_ rule?
 
-The dynamic filtering _allow_ rule is most useful to un-break sites broken by some static filters.
+The dynamic filtering _allow_ (green) rule is most useful to un-break sites broken by some static filters: **_allow_ rules will override all block filters from static filter lists**, and because of this, _allow_ rules are to be used only for exceptional cases and are rarely needed in the real world.
 
-[Someone found out](https://twitter.com/r3volution11/status/549584186320117760) Boldchat site was broken when using uBlock:
+The only way to enable the ability to point-and-click to create _allow_ rules is to either:
 
-![figure 10](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-10.png)
+- Tap twice on the <kbd>Ctrl</kbd> key while in the popup panel
+- Set `filterAuthorMode` to `true` in [advanced settings](./Advanced-settings)
 
-The content of the dynamic filtering pane makes it clear that there is a static filter somewhere blocking network requests to `boldchat.com`. Turned out there was static filter `boldchat.com` in _"Peter Lowe's Ad Server"_ list.
+Doing so will enable the _allow_ rule creation widget in the popup panel:
 
-Using a local  _allow_ dynamic filtering rule fixes the breakage:
+![figure 10](https://user-images.githubusercontent.com/585534/87429361-a963e180-c5b1-11ea-9a21-1fdff36fb4ba.png)
 
-![figure 11](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-11.png)
+This small obstacle to easily create _allow_ rule through point-and-click is [by design](https://github.com/gorhill/uBlock/releases/tag/1.28.0), as it has been found over the years that too many users are misusing dynamic filtering by creating _allow_ rules where _noop_ rules should have been used.
 
-It is easier for a user to point-and-click for a quick fix than to actually craft an exception static filter like `@@||boldchat.com$~third-party` and force a reload of all static filters (big memory churning).
+To reiterate, creating _allow_ rules will completely override related block filters from static filter lists, which may easily cause you to be less protected than if not using dynamic filtering at all -- _allow_ rules are to be used exceptionally, and most of the time, temporarily -- they are typically most useful to filter list maintainers in order to quickly narrow down filter issues.
 
-<sup>[Another example](https://www.youtube.com/watch?v=8bzB6tESynM) of un-breaking a site.</sup>
+Furthermore, when an _allow_ rule is set for the 1st-party domain, this will completely disable scriptlet injection and HTML filtering, again a behavior which is most useful to filter list maintainers. Scriptlet injection and HTML filtering are often used to deal with anti-blocker mechanisms.
 
 > ***
 > **Important:**
