@@ -4,7 +4,7 @@
 
 Dynamic filtering pane ([available only to advanced users](./Advanced-user-features)) can be toggled off/on by clicking on the _Less_/_More_ buttons:
 
-![figure 1](https://user-images.githubusercontent.com/585534/83874954-48203700-a704-11ea-8447-a841101c0c83.png)
+![figure 1](https://user-images.githubusercontent.com/585534/87428135-e16a2500-c5af-11ea-90a5-683ab79bffe5.png)
 
 > ***
 > **Important:**
@@ -14,7 +14,7 @@ Dynamic filtering pane ([available only to advanced users](./Advanced-user-featu
 
 **First column**: what is to be dynamically filtered:
 
-![figure 2](https://user-images.githubusercontent.com/585534/83875271-cbda2380-a704-11ea-94ce-108fa711469c.png)
+![figure 2](https://user-images.githubusercontent.com/585534/87428140-e4651580-c5af-11ea-9159-d4e82e4f68a7.png)
 
 As you can see, you can create dynamic filtering rules for resource types, or hostnames according to their origin.
 
