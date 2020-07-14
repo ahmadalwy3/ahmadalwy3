@@ -57,7 +57,7 @@ Sensible security- and privacy-wise: blocking all 3rd-party frames by default ev
 
 All embedded 3rd-party frames were blocked on the page. Good. However it appears there was an embedded YouTube video in the article:
 
-![figure 6](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-06.png)
+![figure 6](https://user-images.githubusercontent.com/585534/87426719-a23ad480-c5ad-11ea-90ca-17b0e99bc09c.png)
 
 If you want to block all 3rd-party frames by default, except for embedded YouTube videos on that particular site, two solutions.
 
@@ -65,7 +65,7 @@ If you want to block all 3rd-party frames by default, except for embedded YouTub
 
 Create a local  _noop_ rule for 3rd-party frames:
 
-![figure 7](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-07.png)
+![figure 7](https://user-images.githubusercontent.com/585534/87426722-a4049800-c5ad-11ea-95f7-72b16d615051.png)
 
 It works, the embedded YouTube video can now be played.
 
