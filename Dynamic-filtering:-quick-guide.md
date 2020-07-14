@@ -91,7 +91,7 @@ What if you want to block 3rd-party frames everywhere by default, but want whate
 
 It is just a matter of creating a global _noop_ rule for `youtube.com`:
 
-![figure 9](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-09.png)
+![figure 9](https://user-images.githubusercontent.com/585534/87427638-19249d00-c5af-11ea-9251-8a301d639958.png)
 
 Which means: do not apply any dynamically filtering rule to `youtube.com` by default (i.e. everywhere).
 
