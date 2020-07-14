@@ -28,7 +28,7 @@ In bold, domain names. Domain names are hostnames, but hostnames are not necessa
 
 **Third column**: **_local_** dynamic filtering rules, i.e. whatever rule appears in this column applies to the _current_ site only:
 
-![figure 4](https://user-images.githubusercontent.com/585534/83875527-3be8a980-a705-11ea-8bc9-9a319f7039e8.png)
+![figure 4](https://user-images.githubusercontent.com/585534/87428455-5a697c80-c5b0-11ea-9b5c-6c0517c4001a.png)
 
 The cells in the third column gives an overview of how many requests were blocked/allowed:
 
