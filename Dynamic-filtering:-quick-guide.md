@@ -139,4 +139,14 @@ Furthermore, when an _allow_ rule is set for the 1st-party domain, this will com
 > Typically, use only narrow _allow_ dynamic filtering rules to un-break sites. As these _allow_ rules override any static filtering, this means if you use a too broad _allow_ dynamic filtering rule you could start to allow in ads/trackers/annoyances.
 > ***
 
-More: [Take control of your privacy in your own hands](https://github.com/chrisaljoudi/uBlock/issues/433#issuecomment-68488686) (will move this here eventually, I need a break)
+***
+
+All the rules you create through the dynamic filtering panel will appear in the _"My rules"_ pane in the dashboard:
+
+![figure 11](https://user-images.githubusercontent.com/585534/87432792-72dc9580-c5b6-11ea-9898-039d9bfcaa5e.png)
+
+From there you can freely add/modify/delete your rules manually through plain text editing.
+
+***
+
+Now that you a basic understand of dynamic filtering, you can head to [medium blocking mode](./Blocking-mode:-medium-mode) or [hard blocking mode](./Blocking-mode:-hard-mode) in order to learn more about using uBO in default-deny mode.
