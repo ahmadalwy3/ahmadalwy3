@@ -24,7 +24,7 @@ In bold, domain names. Domain names are hostnames, but hostnames are not necessa
 
 **Second column**: **_global_** dynamic filtering rules, i.e. whatever rule appears in this column applies everywhere, on _all_ sites:
 
-![figure 3](https://user-images.githubusercontent.com/585534/83875414-0ba10b00-a705-11ea-8703-d8e86166516b.png)
+![figure 3](https://user-images.githubusercontent.com/585534/87428314-2a21de00-c5b0-11ea-89a3-f3da2026c58a.png)
 
 **Third column**: **_local_** dynamic filtering rules, i.e. whatever rule appears in this column applies to the _current_ site only:
 
