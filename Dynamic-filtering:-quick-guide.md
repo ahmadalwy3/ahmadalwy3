@@ -105,7 +105,7 @@ Which means: do not apply any dynamically filtering rule to `youtube.com` by def
 
 All dynamic rules are temporary by default: Click the padlock if you want to persist the ruleset for a specific web site.
 
-![figure 12](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-12.png)
+![figure 12](https://user-images.githubusercontent.com/585534/87427871-702a7200-c5af-11ea-8483-2275412a891b.png)
 
 - The padlock will be visible **if and only if** there is at least one temporary rule in the pane
 - This is really the optimal way to use dynamic filtering, as using this feature is often a matter of trial and error
