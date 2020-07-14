@@ -75,11 +75,11 @@ However the above rule would result in all 3rd-party frames on the site to be un
 
 ##### Second solution
 
-Create a local _noop_ rule for `youtube.com`:
+Create a local _noop_ rule for `youtube.com` (and for the specific page used as example, a _noop_ rule for `google.com` also had to be created to un-break the embedded Youtube video):
 
-![figure 8](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/df-qg-08.png)
+![figure 8](https://user-images.githubusercontent.com/585534/87427192-68b69900-c5ae-11ea-9ffb-7ed5ff7bbc5b.png)
 
-This will prevent dynamic filtering rules to apply to anything from `youtube.com`, but only on that site.
+This will prevent dynamic filtering rules to apply to network requests to `youtube.com`, but only for the current site.
 
 > ***
 > **Important:**
