@@ -71,7 +71,7 @@ If you want to block all 3rd-party frames by default, except for embedded YouTub
 
 ##### First solution
 
-Create a local  _noop_ rule for 3rd-party frames:
+Create a local  [_noop_](https://en.wikipedia.org/wiki/NOP_(code)) rule for 3rd-party frames:
 
 ![figure 7](https://user-images.githubusercontent.com/585534/87426722-a4049800-c5ad-11ea-95f7-72b16d615051.png)
 
