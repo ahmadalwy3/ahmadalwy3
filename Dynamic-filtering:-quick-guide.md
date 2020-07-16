@@ -6,11 +6,21 @@ Dynamic filtering pane ([available only to advanced users](./Advanced-user-featu
 
 ![figure 1](https://user-images.githubusercontent.com/585534/87428135-e16a2500-c5af-11ea-90a5-683ab79bffe5.png)
 
-> ***
-> **Important:**
->
-> _Static filtering_ refers to the filters which comes from the filter lists, i.e. _EasyList_, _EasyPrivacy_, hpHosts, etc. _Dynamic filtering_ are those filtering rules which have an air of firewall rules. 
-> ***
+***
+
+### IMPORTANT
+
+_Static filtering_ refers to the filters which comes from the filter lists, i.e. _EasyList_, _EasyPrivacy_, URLhaus Blocklist, etc. _Dynamic filtering_ are those filtering rules which have an air of firewall rules. 
+
+**Dynamic filtering rules overrides static filtering.**
+
+This means a _block_ dynamic rule will override any existing _allow_ static filters. This means you can block with 100% certainty using dynamic filtering rules. Similarly, an _allow_ dynamic filtering rule will override any existing _block_ static filters, i.e. you can allow with 100% certainty with dynamic filtering (useful to un-break sites broken by some static filters).
+
+This may help understand how static and dynamic filtering interact: [Overview of uBlock's network filtering engine](./Overview-of-uBlock's-network-filtering-engine).
+
+***
+
+### The columns
 
 **First column**: what is to be dynamically filtered:
 
@@ -41,25 +51,23 @@ So there are **global** dynamic filtering rules, and **local** dynamic filtering
 
 By default, there are no dynamic filtering rules at install time, so nothing is blocked by default by the dynamic filtering engine. You will have to create your own rules, according to your own prerogatives.
 
+***
+
+### _Block_ rules
+
 Sensible security- and privacy-wise: blocking all 3rd-party frames by default everywhere: 
 
 ![figure 5](https://user-images.githubusercontent.com/585534/87428834-ebd8ee80-c5b0-11ea-9670-85a349a3b347.png)
-
-> ***
-> **Important:**
->
-> _Dynamic filtering_ overrides _static filtering_.
-> 
-> This means a _block_ dynamic rule will override any existing _allow_ static filters. This means you can block with 100% certainty using dynamic filtering rules. Similarly, an _allow_ dynamic filtering rule will override any existing _block_ static filters, i.e. you can allow with 100% certainty with dynamic filtering (useful to un-break sites broken by some static filters).
-> 
-> This may help understand how static and dynamic filtering interact: [Overview of uBlock's network filtering engine](./Overview-of-uBlock's-network-filtering-engine).
-> ***
 
 All embedded 3rd-party frames were blocked on the page. Good. However it appears there was an embedded YouTube video in the article:
 
 ![figure 6](https://user-images.githubusercontent.com/585534/87426719-a23ad480-c5ad-11ea-90ca-17b0e99bc09c.png)
 
 If you want to block all 3rd-party frames by default, except for embedded YouTube videos on that particular site, two solutions.
+
+***
+
+### _Noop_ rules
 
 ##### First solution
 
@@ -114,6 +122,8 @@ All dynamic rules are temporary by default: Click the padlock if you want to per
 
 ***
 
+### _Allow_ rules
+
 We covered the _block_ and _noop_ dynamic filtering rules. What about the _allow_ rule?
 
 The dynamic filtering _allow_ (green) rule is most useful to un-break sites broken by some static filters: **_allow_ rules will override all block filters from static filter lists**, and because of this, _allow_ rules are to be used only for exceptional cases and are rarely needed in the real world.
@@ -133,13 +143,11 @@ To reiterate, creating _allow_ rules will completely override related block filt
 
 Furthermore, when an _allow_ rule is set for the 1st-party domain, this will completely disable scriptlet injection and HTML filtering, again a behavior which is most useful to filter list maintainers. Scriptlet injection and HTML filtering are often used to deal with anti-blocker mechanisms.
 
-> ***
-> **Important:**
->
-> Typically, use only narrow _allow_ dynamic filtering rules to un-break sites. As these _allow_ rules override any static filtering, this means if you use a too broad _allow_ dynamic filtering rule you could start to allow in ads/trackers/annoyances.
-> ***
+**Important:** Typically, use only narrow _allow_ dynamic filtering rules to un-break sites. As these _allow_ rules override any static filtering, this means if you use a too broad _allow_ dynamic filtering rule you could start to allow in ads/trackers/annoyances.
 
 ***
+
+### _My rules_ pane
 
 All the rules you create through the dynamic filtering panel will appear in the _"My rules"_ pane in the dashboard:
 
