@@ -10,7 +10,7 @@ Dynamic filtering pane ([available only to advanced users](./Advanced-user-featu
 
 ### IMPORTANT
 
-_Static filtering_ refers to the filters which comes from the filter lists, i.e. _EasyList_, _EasyPrivacy_, URLhaus Blocklist, etc. _Dynamic filtering_ are those filtering rules which have an air of firewall rules. 
+_Static filtering_ refers to the filters which comes from the filter lists, i.e. _EasyList_, _EasyPrivacy_, _URLhaus Blocklist_, etc. _Dynamic filtering_ are those filtering rules which have an air of firewall rules. 
 
 **Dynamic filtering rules overrides static filtering.**
 
