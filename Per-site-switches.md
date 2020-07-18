@@ -4,7 +4,7 @@
 
 The per-site switches allows you to control uBlock's behavior on a per-site basis.
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46020955-8bac4c00-c0ad-11e8-8c33-33fc921cfcc6.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/87855338-9fa9e900-c8e5-11ea-96ac-59ec448d0e7f.png)
 
 New in [1.17.0](https://github.com/gorhill/uBlock/commit/6d34a52179aaa8fdf701b3bc7ab80f02ed5f0f23): 
 
@@ -31,7 +31,7 @@ However, when the overview panel is visible, toggling a per-site switch will cau
 
 By default popups are allowed unless there is a filter to block them. When this setting is enabled, **all** popups will be unconditionally blocked for the current site, regardless of filters:
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021121-e0e85d80-c0ad-11e8-96e7-874234cc3618.png)<br><sup>The badge shows the number of popups that have been closed on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/87855339-a0db1600-c8e5-11ea-987f-4445b8d83a1a.png)<br><sup>The badge shows the number of popups that have been closed on the page.</sup>
 
 No popups rules appear as `no-popups: [hostname] true` entries in the [_My rules_ pane](./Dashboard:-My-rules).
 
@@ -45,7 +45,7 @@ Blocking popups depends on whether the proper filters are present in the selecte
 
 The second icon is to toggle on/off the blocking of large media elements for the current site. The primary purpose of this feature is to save bandwidth. Side effect is to possibly speed up page load.
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021215-2573f900-c0ae-11e8-93ea-762cccfaa968.png)<br><sup>The badge shows the number of large media elements that have been blocked on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/87855343-a5073380-c8e5-11ea-88ef-13f8529fb369.png)<br><sup>The badge shows the number of large media elements that have been blocked on the page.</sup>
 
 By default, this setting is disabled. The global default can be enabled in the [_Settings_ pane](./Dashboard:-Settings) in the [dashboard](./Dashboard).
 
@@ -89,7 +89,7 @@ If the media elements do not have `Content-Length` header present, then this swi
 
 You can easily toggle on/off cosmetic filtering for a given site:
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021299-62d88680-c0ae-11e8-8280-5dcbf7019c85.png)<br><sup>The badge shows the number of DOM elements that have been hidden on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/87855347-a6d0f700-c8e5-11ea-84f8-d64ce9ddd08a.png)<br><sup>The badge shows the number of DOM elements that have been hidden on the page.</sup>
 
 When present, the badge number indicates the number of elements hidden on the page by uBO as a result of cosmetic filtering. If you disable cosmetic filtering while there are hidden elements on the page, these elements will become visible/hidden as you toggle off/on cosmetic filtering.
 
@@ -117,7 +117,7 @@ From then on, cosmetic filtering will be turned off everywhere by default, and t
 
 You can prevent web fonts from being downloaded for the current site:
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021462-b9de5b80-c0ae-11e8-82d9-f763bcd841ca.png)<br><sup>The badge shows the number of font resources that have been seen on the page.</sup>
+![Popup UI](https://user-images.githubusercontent.com/585534/87855349-a8022400-c8e5-11ea-92fb-b7cf6cc431fc.png)<br><sup>The badge shows the number of font resources that have been seen on the page.</sup>
 
 Because of security and privacy concerns, many prefer to block all web fonts by default -- toggle the appropriate default behavior in the [_Settings_ pane](./Dashboard:-Settings) in the [dashboard](./Dashboard):
 
@@ -141,7 +141,7 @@ New in [1.17.0](https://github.com/gorhill/uBlock/commit/3c85c0319462ca331d53c35
 
 Wholly disable JavaScript for a given site.
 
-![Popup UI](https://user-images.githubusercontent.com/585534/46021563-fa3dd980-c0ae-11e8-984c-a811dc5b2f75.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/87855351-a9cbe780-c8e5-11ea-87ed-ee6ea2693fad.png)
 <br>The badge shows approximate number of script resources which have
 been seen on the page (number is limited to 99 because of layout constraints)
 
