@@ -6,15 +6,9 @@ The per-site switches allows you to control uBlock's behavior on a per-site basi
 
 ![Popup UI](https://user-images.githubusercontent.com/585534/87855338-9fa9e900-c8e5-11ea-96ac-59ec448d0e7f.png)
 
-New in [1.17.0](https://github.com/gorhill/uBlock/commit/6d34a52179aaa8fdf701b3bc7ab80f02ed5f0f23): 
+Changes to the state of per-site switches are temporary until you make them permanent by clicking the padlock icon. Pressing <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) when toggling switches will make them permanent immediately.
 
-Changes to the state of per-site switches will be deemed temporary **if and only if** the [overview panel](./Quick-guide:-popup-user-interface#the-overview-panel) is visible.
- 
-When the overview panel is not visible, toggling a per-site switch will cause the change to be permanent (i.e. same behavior as before).
-
-However, when the overview panel is visible, toggling a per-site switch will cause the change to be temporary. In such case, there will be an eraser and a padlock icon in the overview pane, which can be used to revert or persist the current state of all the per-site switches. Pressing <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) when toggling switches will make them permanent immediately.
-
-![eraser and padlock](https://user-images.githubusercontent.com/886325/63635690-89f45b00-c665-11e9-9d35-2911b15a9c52.png)
+![eraser and padlock](https://user-images.githubusercontent.com/585534/87855454-8190b880-c8e6-11ea-9d8b-5b3a4baf120d.png)
 <br><sup>Eraser and padlock icons</sup>
 
 ***
