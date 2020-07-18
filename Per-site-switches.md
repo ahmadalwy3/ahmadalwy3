@@ -4,7 +4,7 @@
 
 The per-site switches allows you to control uBlock's behavior on a per-site basis.
 
-![Popup UI](https://user-images.githubusercontent.com/585534/87855338-9fa9e900-c8e5-11ea-96ac-59ec448d0e7f.png)
+![Popup UI](https://user-images.githubusercontent.com/585534/87855535-01b71e00-c8e7-11ea-9744-4e21429cfd7d.png)
 
 Changes to the state of per-site switches are temporary until you make them permanent by clicking the padlock icon. Pressing <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on Mac) when toggling switches will make them permanent immediately.
 
