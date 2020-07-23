@@ -10,3 +10,4 @@
     - See <https://github.com/uBlockOrigin/uBlock-issues/issues/803>
 - Popup filters will not close pages opened by direct user action
     - See <https://github.com/uBlockOrigin/uBlock-issues/issues/774>
+- Domain filter in uBO matches [_fully qualified domain name_](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) (FQDN, these with dot at the end), where in ABP match is exact.
