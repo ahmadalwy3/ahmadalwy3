@@ -8,7 +8,7 @@
     - "global" = 1st column
     - "allow" = green
 
-![allow all](https://user-images.githubusercontent.com/886325/88309421-9322f780-cd0e-11ea-960f-e2064e3b36ea.png)
+![allow all](https://user-images.githubusercontent.com/886325/88309904-4ab80980-cd0f-11ea-83ab-60bbd7a988fe.png)
 <br>After changes to [1.28.0](https://github.com/gorhill/uBlock/releases/tag/1.28.0) access to _allow_ rules is limited. Read [release notes](https://github.com/gorhill/uBlock/releases/tag/1.28.0) to learn how to make it available.
 
 Nothing will be blocked, static filtering is completely bypassed: "green" means "allow unconditionally".
